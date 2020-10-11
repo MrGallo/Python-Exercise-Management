@@ -1,5 +1,7 @@
 # Exercise Runner
 
+[![Run on Repl.it](https://repl.it/badge/github/MrGallo/Python-Exercises)](https://repl.it/github/MrGallo/Python-Exercises)
+
 - [Exercise Runner](#exercise-runner)
   * [Start a practice session](#start-a-practice-session)
   * [Get a new Exercise](#get-a-new-exercise)
