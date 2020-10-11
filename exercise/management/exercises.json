@@ -4,9 +4,9 @@
             "name": "Hello, World!",
             "topic": "output a message",
             "requirements": [],
-            "description": "One of the most important parts of a computer program is the ability for the computer to talk to the user (the person runnin the program). In Python, this is achieved using the `print()` function. The `print()` function will will output anything you want to the terminal screen (it does not activate your printer). \n\nRun the starter code to see an example of what it looks like to print something to the terminal.\n\n### Your task\nIn addition to the print statement that is already there, make the program print out `\"world!\"`. The result should look like:\n\n```\nHello,\nWorld!\n```\n\n\n\n\n\n\n",
-            "starter_code": "print(\"Hello,\")\nprint()\n\n\n\n\n\n",
-            "tests": "from exercise.fixtures import captured_output\n\n\ndef test_hello(captured_output):\n    assert captured_output() == \"Hello,\\nWorld!\"\n\n\n\n\n\n\n"
+            "description": "One of the most important parts of a computer program is the ability for the computer to talk to the user (the person running the program). In Python, this is achieved using the `print()` function. The `print()` function will will output anything you want to the terminal screen (it does not activate your printer). \n\nRun the starter code to see an example of what it looks like to print something to the terminal.\n\n### Your task\nIn addition to the print statement that is already there, make the program print out `\"world!\"`. The result should look like:\n\n```\nHello,\nWorld!\n```",
+            "starter_code": "print(\"Hello,\")\nprint()",
+            "tests": "from exercise.fixtures import captured_output\n\n\ndef test_hello(captured_output):\n    assert captured_output() == \"Hello,\\nWorld!\""
         }
     ]
 }

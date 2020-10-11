@@ -1,5 +1,7 @@
+print("Hello,")
+print("World!")
 
-a = int(input())
-b = int(input())
 
-print(a + b)
+
+
+

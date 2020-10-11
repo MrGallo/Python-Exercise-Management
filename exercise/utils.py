@@ -5,6 +5,13 @@ SectionConceptMap = Dict[str, Dict[str, List[str]]]
 ConceptMap = Dict[str, List[str]]
 
 
+def print_title(title: str, underline: str = "=", padding_top: bool = True) -> None:
+    if padding_top is True:
+        print()
+    print(title)
+    print(underline * len(title))
+    print()
+
 
 def calc_difficulty(prerequisets: List[str], concepts: SectionConceptMap) -> int:
     flat_concepts = flatten_concepts(concepts)

@@ -20,23 +20,10 @@ Hello,
 World!
 ```
 
-
-
-
-
-
-
-
 # starter code
 ```python
 print("Hello,")
 print()
-
-
-
-
-
-
 ```
 
 # tests
@@ -46,11 +33,4 @@ from exercise.fixtures import captured_output
 
 def test_hello(captured_output):
     assert captured_output() == "Hello,\nWorld!"
-
-
-
-
-
-
-
 ```

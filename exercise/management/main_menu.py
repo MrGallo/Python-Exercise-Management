@@ -15,6 +15,7 @@ class ExerciseNotFoundError(Exception):
 Exercise = Dict[str, str]
 
 FORM_FILE = "exercise/management/form.md"
+EXERCISE_FILE = "exercise/management/exercises.json"
 
 
 def menu_show_exercises(exercises: List[Exercise]) -> Callable:
@@ -64,7 +65,7 @@ def menu_update_exercise(exercises: List[Exercise]) -> Callable:
         if choice == "u":
             new_exercise = create_exercise(*parse_form(FORM_FILE))
             update_exercise(new_exercise, exercises, index=index)
-            write_exercises_to_file(exercises, "exercises.json")
+            write_exercises_to_file(exercises, EXERCISE_FILE)
             print(f"Updated #{index}: {new_exercise['name']}.")
 
     return inner
@@ -90,12 +91,12 @@ def get_valid_choice(exercises: List[Exercise], prompt: str) -> int:
 
 
 def write_to_form(exercise: Exercise, filename: str) -> None:
-    name = exercise.get("name", "")
-    topic = exercise.get("topic", "")
-    requirements = '\n'.join(exercise.get("requirements", ""))
-    description = exercise.get("description", "")
-    starter_code = exercise.get("starter_code", "")
-    tests = exercise.get("tests", "")
+    name = exercise.get("name", "").strip()
+    topic = exercise.get("topic", "").strip()
+    requirements = '\n'.join(exercise.get("requirements", "")).strip()
+    description = exercise.get("description", "").strip()
+    starter_code = exercise.get("starter_code", "").strip()
+    tests = exercise.get("tests", "").strip()
 
     contents = f"""# name
 {name}
@@ -129,22 +130,22 @@ def parse_form(filename: str) -> Tuple[str, str, str, str, str, str]:
         contents = f.read()
             
     regex = r"# name\n+(.+)"
-    name = re.search(regex, contents).group(1)
+    name = re.search(regex, contents).group(1).strip()
 
     regex = r"# topic\n+(.+)"
-    topic = re.search(regex, contents).group(1)
+    topic = re.search(regex, contents).group(1).strip()
 
     regex = r"# requirements\n+(.+?)\n# description"
-    requirements = re.search(regex, contents, re.DOTALL).group(1).strip()
+    requirements = re.search(regex, contents, re.DOTALL).group(1).strip().strip()
 
     regex = r"# description\n+(.+?)\n# starter code"
-    description = re.search(regex, contents, re.DOTALL).group(1)
+    description = re.search(regex, contents, re.DOTALL).group(1).strip()
 
     regex = r"# starter code\n+```python\n(.+?)```"
-    starter_code = re.search(regex, contents, re.DOTALL).group(1)
+    starter_code = re.search(regex, contents, re.DOTALL).group(1).strip()
 
     regex = r"# tests\n+```python\n(.+?)```"
-    tests = re.search(regex, contents, re.DOTALL).group(1)
+    tests = re.search(regex, contents, re.DOTALL).group(1).strip()
 
     return name, topic, requirements, description, starter_code, tests
 
@@ -188,9 +189,9 @@ def menu_add_exercise(exercises: List[Exercise]) -> None:
             choice = input("[y/n] > ").lower()
             if choice == "y":
                 update_exercise(exercise, exercises)
-                write_exercises_to_file(exercises, "exercises.json")
+                write_exercises_to_file(exercises, EXERCISE_FILE)
         else:
-            write_exercises_to_file(exercises, "exercises.json")
+            write_exercises_to_file(exercises, EXERCISE_FILE)
             print(f"Added {name}")
     
     return inner

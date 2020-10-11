@@ -1,9 +1,12 @@
-from typing import List, Dict, Tuple
-from itertools import count
-import requests
 import json
+import os
+from collections import defaultdict
+from itertools import count
+from typing import Dict, List, Tuple
 
+import requests
 
+from exercise.utils import print_title
 
 Exercise = Dict[str, str]
 EXERCISES_URL = "https://raw.githubusercontent.com/MrGallo/Python-Exercises/master/exercise/management/exercises.json"
@@ -50,6 +53,41 @@ def start_new_exercise():
             break
 
     return 1
+
+
+def invalid_menu_choice():
+    def inner():
+        print("Invalid menu choice")
+        return 0
+    return inner
+
+
+def test_solution():
+    while True:
+        result = os.system(f"pytest test_main.py -p no:cacheprovider")
+        print(f"{result = }")
+        print()
+        if result != 0:
+            # update_session("incorrect")
+            choice = input("Try again? [y/n]").lower()
+            if choice == "y":
+                os.system("clear")
+                continue
+        else:
+            pass
+            # update_session("completed")
+        break
+    
+    return 1
+    # 0 pass
+    # 256 fail
+    # 512 import error, syntax
+    # 1024 File not found
+
+
+def not_implemented():
+    print("Not implemented")
+    return 0
 
 
 def get_exercises(url: str) -> List[Exercise]:
