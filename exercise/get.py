@@ -1,10 +1,128 @@
-print("Get new exercise.")
+from typing import List, Dict, Tuple
+from itertools import count
+import requests
+import json
 
-from exercise.concepts import concepts
 
 
-for section, concept_dict in concepts.items():
-    print(section)
-    for name in concept_dict.keys():
-        print("\t", name)
+Exercise = Dict[str, str]
+EXERCISES_URL = "https://raw.githubusercontent.com/MrGallo/Python-Exercises/master/exercise/management/exercises.json"
 
+
+def main():
+    print("Get new exercise.")
+    start_new_exercise()
+
+
+def start_new_exercise():
+    # get exercises
+    exercises = get_exercises(EXERCISES_URL)
+
+    # start new exercise
+    choice, chosen_exercise = select_exercise(exercises)
+    write_exercise_to_files(choice, chosen_exercise)
+
+    # start_new_session(chosen_exercise)
+
+    print_title("Description")
+    print("The problem's description can be found in the description.md file.")
+    print("To view a formatted version of that file, click the \"preview\" in the top right corner after you open it.")
+
+    print_title("Attempt Solution")
+    print("Go edit solution.py")
+
+    print_title("Menu options", "-")
+    print("[1] Test your solution")
+    print("[2] Attempt a different exercise")
+    print()
+        
+    OPTIONS_FUNC = defaultdict(invalid_menu_choice)
+    OPTIONS_FUNC.update({
+        "1": test_solution,
+        "2": not_implemented
+    })
+
+
+    while True:
+        choice = input("> ")
+
+        if OPTIONS_FUNC[choice]():
+            break
+
+    return 1
+
+
+def get_exercises(url: str) -> List[Exercise]:
+    request = requests.get(url)
+    string_data = request.text
+    data = json.loads(string_data)
+    return data["exercises"]
+
+
+def select_exercise(exercises: List[Exercise]) -> Tuple[int, Exercise]:
+    """
+    
+    Returns:
+        Choice integer according to the menu options
+        and the chosen exercise.
+    """
+    print("Select an exercise to begin.\n")
+    exercise_mapping = dict(zip(count(1), exercises))
+
+    # Print Menu options
+    # completions = get_exercise_completions()
+    for n, ex in exercise_mapping.items():
+        # done = completions[ex["name"]]
+        done = 0
+        if done > 0:
+            remaining = done
+            bright_stars = remaining // 9
+            remaining = remaining % 9
+            stars = remaining // 3
+            single = remaining % 3
+
+            recognition = ("🌟 " * bright_stars +
+                           "⭐ " * stars +
+                           "✔️ " * single)
+            
+            print(f"[{n}] {ex['name']} {recognition}")
+        else:
+            print(f"[{n}] {ex['name']}")
+
+    print()
+
+    while True:
+        try:
+            choice = int(input("> "))
+            chosen_exercise = exercise_mapping[choice]
+        except ValueError:
+            print("Invalid input, must be a number.")
+        except KeyError:
+            print(f"Not a valid choice. Must be 1-{len(files_mapping)} inclusive.")
+        else:
+            break
+
+    print()
+    print(f"You chose '{chosen_exercise['name']}'")
+    return choice, chosen_exercise
+
+
+def write_exercise_to_files(choice: int, exercise: Exercise) -> None:
+    # Write tests to test file
+    with open('test_main.py', 'w') as f:
+        f.write("# Do not modify this file.\n")
+        f.write(exercise["tests"])
+
+    # Write starter code into main.py
+    with open('main.py', 'w') as f:
+        f.write(exercise["starter_code"])
+
+    # Write description to description.md
+    with open('description.md', 'w') as f:
+        f.write("\n\n\n[//]: # (     CLICK THE PREVIEW BUTTON   --->)\n\n\n\n\n")
+        f.write(f"# Exercise {choice}: {exercise['name']}\n")
+        f.write(exercise["description"])
+
+
+if __name__ == "__main__":
+    main()

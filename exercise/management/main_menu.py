@@ -56,7 +56,7 @@ def menu_update_exercise(exercises: List[Exercise]) -> Callable:
         write_to_form(exercise_choice, FORM_FILE)
 
         # edit the form
-        print("Edit the form.py file and choose an option:")
+        print("Edit the form.md file and choose an option:")
         print("[u]pdate the exercise from the file.")
         print("Enter anything else to cancel.")
 
@@ -75,7 +75,7 @@ def get_valid_choice(exercises: List[Exercise], prompt: str) -> int:
         print(prompt)
         
         try:
-            i = int(input("> "))
+            i = int(input("> ")) - 1
             exercises[i]
             assert i >= 0
         except IndexError:
@@ -86,7 +86,7 @@ def get_valid_choice(exercises: List[Exercise], prompt: str) -> int:
             print("Cannot be a negative index.")
         else:
             break
-    return i
+    return i + 1
 
 
 def write_to_form(exercise: Exercise, filename: str) -> None:

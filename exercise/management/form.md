@@ -8,7 +8,7 @@ output a message
 
 
 # description
-One of the most important parts of a computer program is the ability for the computer to talk to the user (the person runnin the program). In Python, this is achieved using the `print()` function. The `print()` function will will output anything you want to the terminal screen (it does not activate your printer). 
+One of the most important parts of a computer program is the ability for the computer to talk to the user (the person running the program). In Python, this is achieved using the `print()` function. The `print()` function will will output anything you want to the terminal screen (it does not activate your printer). 
 
 Run the starter code to see an example of what it looks like to print something to the terminal.
 
@@ -20,10 +20,23 @@ Hello,
 World!
 ```
 
+
+
+
+
+
+
+
 # starter code
 ```python
 print("Hello,")
 print()
+
+
+
+
+
+
 ```
 
 # tests
@@ -33,5 +46,11 @@ from exercise.fixtures import captured_output
 
 def test_hello(captured_output):
     assert captured_output() == "Hello,\nWorld!"
+
+
+
+
+
+
 
 ```
