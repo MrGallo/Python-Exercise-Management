@@ -23,6 +23,14 @@
             "description": "With the starter code (given in `main.py`) your program outputs an empty hamburger. You goal is to create a complete hamburger.\n\n1. Run the program and observe the output. It should be as follows:\n    ```\n    (--Bun--)\n\n    (--Bun--)\n    ```\n    Notice the empty space. This empty line comes from the empty `print()` function.\n2. Place the string `\"Hamburger\"` inside that empty `print()` function.",
             "starter_code": "print(\"(--Bun--)\")\nprint()\nprint(\"(--Bun--)\")",
             "tests": "from exercise.fixtures import captured_output\n\n\ndef test_hello(captured_output):\n    assert captured_output() == \"(--Bun--)\\nHamburger\\n(--Bun--)\""
+        },
+        {
+            "name": "One to Five",
+            "topic": "output a message",
+            "requirements": [],
+            "description": "With the starter code (given in `main.py`) your program outputs an incomplete and out-of-order list of numbers. You goal is to fix it so it outputs the numbers from one to five.\n\n1. Run the program and observe the incorrect output. It should start off as follows:\n    ```\n    three\n    five\n    four\n    ```\n    Notice that the strings `\"one\"` and `\"two\"` don't even show up. This is because those `print()` functions have been commented out using the pound-sign (\"hashtag\") and a space (`# `).\n2. Remove the comment characters (pound-sign and the space) and allow the words \"one\" and \"two\" to show up. It should look like:\n    ```\n    three\n    five\n    one\n    four\n    two\n    ```\n    **Warning:** If you do not *also* delete the space, you will get an `IndentationError`. Make sure all the `p`'s in the word `print` are lined up with *no space* in front of them.\n3. Rearrange the `print()` functions to correct the order of the words.\n    ```\n    one\n    two\n    three\n    four\n    five\n    ```",
+            "starter_code": "print(\"three\")\nprint(\"five\")\n# print(\"one\")\nprint(\"four\")\n# print(\"two\")",
+            "tests": "from exercise.fixtures import captured_output\n\n\ndef test_hello(captured_output):\n    assert captured_output() == \"one\\ntwo\\nthree\\nfour\\nfive\""
         }
     ]
 }
