@@ -1,8 +1,21 @@
-from typing import List, Union, Optional
-
 import io
+import re
+from typing import List, Optional, Union
+
 import pytest
 
+
+def get_solution_source(filename: str = "main.py") -> str:
+    with open(filename, 'r') as f:
+        return f.read()
+
+
+def solution_contains(target: str):
+    return target in get_solution_source()
+
+
+def solution_contains_regex(target: str):
+    return re.compile(target).search(get_solution_source()) is not None
 
 @pytest.fixture
 def captured_output(capsys, monkeypatch):
@@ -12,8 +25,8 @@ def captured_output(capsys, monkeypatch):
         else:
             input_string = user_input
         monkeypatch.setattr('sys.stdin', io.StringIO(input_string))
-        with open('main.py', 'r') as f:
-            exec(f.read())
+        solution_source = get_solution_source("main.py")
+        exec(solution_source)
         captured = capsys.readouterr()
         return captured.out.strip()
     return io_test

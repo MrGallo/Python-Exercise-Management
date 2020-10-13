@@ -17,6 +17,15 @@ Exercise = Dict[str, str]
 FORM_FILE = "exercise/management/form.md"
 EXERCISE_FILE = "exercise/management/exercises.json"
 
+def menu_clear_form():
+    def inner() -> None:
+        print("Are you sure?")
+        choice = input("[y/n] > ").lower()
+        if choice == "y":
+            write_to_form({}, FORM_FILE)
+
+    return inner
+
 
 def menu_show_exercises(exercises: List[Exercise]) -> Callable:
     def inner() -> None:
@@ -271,6 +280,7 @@ def get_menu_options(exercises: List[Exercise]) -> Dict[int, Exercise]:
         ("Add Exercise", menu_add_exercise(exercises)),
         ("Update Exercise", menu_update_exercise(exercises)),
         ("Move Exercise", menu_move_exercise(exercises)),
+        ("Clear form.md", menu_clear_form()),
         ("Quit", exit),
     ]))
 
