@@ -91,14 +91,7 @@ def get_valid_choice(exercises: List[Exercise], prompt: str) -> int:
 
 
 def write_to_form(exercise: Exercise, filename: str) -> None:
-    name = exercise.get("name", "").strip()
-    topic = exercise.get("topic", "").strip()
-    requirements = '\n'.join(exercise.get("requirements", "")).strip()
-    description = exercise.get("description", "").strip()
-    starter_code = exercise.get("starter_code", "").strip()
-    tests = exercise.get("tests", "").strip()
-
-    contents = f"""# name
+    template = """# name
 {name}
 
 # topic
@@ -120,6 +113,25 @@ def write_to_form(exercise: Exercise, filename: str) -> None:
 {tests}
 ```
 """
+
+    write_json_to_file(exercise, filename, template)
+    
+
+def write_json_to_file(exercise: Exercise, filename: str, template: str) -> None:
+    name = exercise.get("name", "").strip() 
+    topic = exercise.get("topic", "").strip()
+    requirements = '\n'.join(exercise.get("requirements", "")).strip()
+    description = exercise.get("description", "").strip()
+    starter_code = exercise.get("starter_code", "").strip()
+    tests = exercise.get("tests", "").strip()
+
+    contents = template.format(name=name,
+                               topic=topic,
+                               requirements=requirements,
+                               description=description,
+                               starter_code=starter_code,
+                               tests=tests)
+
     with open(filename, 'w') as f:
         f.write(contents)
 
