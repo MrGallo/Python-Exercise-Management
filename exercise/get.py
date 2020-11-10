@@ -27,12 +27,10 @@ def start_new_exercise():
 
     # start_new_session(chosen_exercise)
 
-    print_title("Description")
-    print("The problem's description can be found in the description.md file.")
+    print("\nEXERCISE DESCRIPTION can be found in the description.md file.")
     print("To view a formatted version of that file, click the \"preview\" in the top right corner after you open it.")
 
-    print_title("Attempt Solution")
-    print("Go edit solution.py")
+    print("\nATTEMPT SOLUTION by working in main.py")
 
     print_title("Menu options", "-")
     print("[1] Test your solution")
