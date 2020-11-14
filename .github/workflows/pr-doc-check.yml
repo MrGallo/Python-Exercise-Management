@@ -11,10 +11,10 @@ jobs:
       with:
         docs-folder: "./exercise/docs/"
         pre-build-command: pip install sphinx-rtd-theme
-        build-command: sphinx-build -b html exercise/docs/ exercise/docs/ docs
+        build-command: sphinx-build -b html exercise/docs/ exercise/docs/html/
     
     # Create an artifact of the html output.
     - uses: actions/upload-artifact@v1
       with:
         name: DocumentationHTML
-        path: docs/
+        path: exercise/docs/html/
