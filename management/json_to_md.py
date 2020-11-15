@@ -32,15 +32,30 @@ def write_exercises_to_md_files(exercises: List["Exercise"]):
 def write_json_to_file(exercise: "Exercise") -> None:
     name = exercise.get("name", "").strip() 
     topic = exercise.get("topic", "").strip()
-    requirements = '\n'.join(exercise.get("requirements", "")).strip()
+    requirements = ""
+    for req in exercise.get("requirements", ""):
+        requirements += f"- {req}\n"
     description = exercise.get("description", "").strip()
     starter_code = exercise.get("starter_code", "").strip()
     tests = exercise.get("tests", "").strip()
     filename = f"{slugify(name)}.md"
 
     content = f"""# {name}
+**Topic:** {topic}
+{"**Requirements:**" if requirements else ""}
+{requirements if requirements else ""}
 
 {description}
+
+## Starter Code
+```python
+{starter_code}
+```
+
+## Tests
+```python
+{tests}
+```
 """
 
     with open(f"exercises/{filename}", 'w') as f:
