@@ -87,7 +87,11 @@
 <li class="toctree-l1"><a class="reference internal" href="hello-world.html">Hello, World!</a></li>
 <li class="toctree-l1"><a class="reference internal" href="hello-goodbye.html">Hello, Goodbye</a></li>
 <li class="toctree-l1"><a class="reference internal" href="hamburger.html">Hamburger</a></li>
-<li class="toctree-l1 current"><a class="current reference internal" href="#">One to Five</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">One to Five</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#starter-code">Starter Code</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#tests">Tests</a></li>
+</ul>
+</li>
 <li class="toctree-l1"><a class="reference internal" href="escape-character.html">Escape character</a></li>
 </ul>
 
@@ -156,6 +160,7 @@
             
   <div class="section" id="one-to-five">
 <h1>One to Five<a class="headerlink" href="#one-to-five" title="Permalink to this headline">¶</a></h1>
+<p><strong>Topic:</strong> output a message</p>
 <p>With the starter code (given in <code class="docutils literal notranslate"><span class="pre">main.py</span></code>) your program outputs an incomplete and out-of-order list of numbers. You goal is to fix it so it outputs the numbers from one to five.</p>
 <ol>
 <li><p>Run the program and observe the incorrect output. It should start off as follows:</p>
@@ -186,6 +191,26 @@
 </div>
 </li>
 </ol>
+<div class="section" id="starter-code">
+<h2>Starter Code<a class="headerlink" href="#starter-code" title="Permalink to this headline">¶</a></h2>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="s2">&quot;three&quot;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;five&quot;</span><span class="p">)</span>
+<span class="c1"># print(&quot;one&quot;)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;four&quot;</span><span class="p">)</span>
+<span class="c1"># print(&quot;two&quot;)</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="tests">
+<h2>Tests<a class="headerlink" href="#tests" title="Permalink to this headline">¶</a></h2>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">exercise.fixtures</span> <span class="kn">import</span> <span class="n">captured_output</span>
+
+
+<span class="k">def</span> <span class="nf">test_one_to_five</span><span class="p">(</span><span class="n">captured_output</span><span class="p">):</span>
+    <span class="k">assert</span> <span class="n">captured_output</span><span class="p">()</span> <span class="o">==</span> <span class="s2">&quot;one</span><span class="se">\n</span><span class="s2">two</span><span class="se">\n</span><span class="s2">three</span><span class="se">\n</span><span class="s2">four</span><span class="se">\n</span><span class="s2">five&quot;</span>
+</pre></div>
+</div>
+</div>
 </div>
 
 

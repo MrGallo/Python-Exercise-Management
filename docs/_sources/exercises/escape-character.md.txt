@@ -1,4 +1,7 @@
 # Escape character
+**Topic:** output a message
+
+
 
 With the starter code (given in `main.py`) your program will encounter a `SyntaxError`.
 
@@ -24,3 +27,18 @@ With the starter code (given in `main.py`) your program will encounter a `Syntax
     She said "Hello" to her friend.
     Her friend said "Nice to see you!".
     ```
+
+## Starter Code
+```python
+print("She said \"Hello\" to her friend.")
+print("Her friend said "Nice to see you!".")
+```
+
+## Tests
+```python
+from exercise.fixtures import captured_output
+
+
+def test_escape_character(captured_output):
+    assert captured_output() == "She said \"Hello\" to her friend.\nHer friend said \"Nice to see you!\"."
+```

@@ -87,7 +87,11 @@
 <li class="toctree-l1"><a class="reference internal" href="hello-goodbye.html">Hello, Goodbye</a></li>
 <li class="toctree-l1"><a class="reference internal" href="hamburger.html">Hamburger</a></li>
 <li class="toctree-l1"><a class="reference internal" href="one-to-five.html">One to Five</a></li>
-<li class="toctree-l1 current"><a class="current reference internal" href="#">Escape character</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Escape character</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#starter-code">Starter Code</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#tests">Tests</a></li>
+</ul>
+</li>
 </ul>
 
             
@@ -155,6 +159,7 @@
             
   <div class="section" id="escape-character">
 <h1>Escape character<a class="headerlink" href="#escape-character" title="Permalink to this headline">¶</a></h1>
+<p><strong>Topic:</strong> output a message</p>
 <p>With the starter code (given in <code class="docutils literal notranslate"><span class="pre">main.py</span></code>) your program will encounter a <code class="docutils literal notranslate"><span class="pre">SyntaxError</span></code>.</p>
 <ol>
 <li><p>Run the program as is. Notice the <code class="docutils literal notranslate"><span class="pre">SyntaxError</span></code>. On what line of the code does the error tell you it found the problem?</p>
@@ -188,6 +193,23 @@ SyntaxError: invalid syntax
 </div>
 </li>
 </ol>
+<div class="section" id="starter-code">
+<h2>Starter Code<a class="headerlink" href="#starter-code" title="Permalink to this headline">¶</a></h2>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span>print(&quot;She said \&quot;Hello\&quot; to her friend.&quot;)
+print(&quot;Her friend said &quot;Nice to see you!&quot;.&quot;)
+</pre></div>
+</div>
+</div>
+<div class="section" id="tests">
+<h2>Tests<a class="headerlink" href="#tests" title="Permalink to this headline">¶</a></h2>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">exercise.fixtures</span> <span class="kn">import</span> <span class="n">captured_output</span>
+
+
+<span class="k">def</span> <span class="nf">test_escape_character</span><span class="p">(</span><span class="n">captured_output</span><span class="p">):</span>
+    <span class="k">assert</span> <span class="n">captured_output</span><span class="p">()</span> <span class="o">==</span> <span class="s2">&quot;She said </span><span class="se">\&quot;</span><span class="s2">Hello</span><span class="se">\&quot;</span><span class="s2"> to her friend.</span><span class="se">\n</span><span class="s2">Her friend said </span><span class="se">\&quot;</span><span class="s2">Nice to see you!</span><span class="se">\&quot;</span><span class="s2">.&quot;</span>
+</pre></div>
+</div>
+</div>
 </div>
 
 
