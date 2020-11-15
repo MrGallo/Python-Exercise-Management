@@ -1,4 +1,4 @@
-Python Exercises!
+Python Exercises
 =================
 
 .. toctree::
