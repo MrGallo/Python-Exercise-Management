@@ -10,4 +10,3 @@ Python Exercises
     exercises/hamburger
     exercises/one-to-five
     exercises/escape-character
-    exercises/blah
