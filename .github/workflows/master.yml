@@ -15,22 +15,19 @@ jobs:
     # Standard drop-in approach that should work for most people.
     - uses: ammaraskar/sphinx-action@master
       with:
-        docs-folder: "."
-        pre-build-command: pip install sphinx-rtd-theme
-        build-command: sphinx-build -b html exercise/docs/ exercise/docs/html
+        docs-folder: "./"
+        pre-build-command: pip install sphinx-rtd-theme recommonmark python-slugify
+        build-command: sphinx-build -b html . docs
 
     # Create an artifact of the html output.
     - uses: actions/upload-artifact@v1
       with:
         name: DocumentationHTML
-        path: exercise/docs/html
+        path: docs/
 
     # Publish built docs to master branch.
     - name: Commit documentation changes
       run: |
-        git clone https://github.com/mrgallo/python-exercises.git --branch gh-pages --single-branch gh-pages
-        cp -r exercise/docs/html/* gh-pages
-        cd gh-pages
         git config --local user.email "action@github.com"
         git config --local user.name "GitHub Action"
         git add .
@@ -40,7 +37,7 @@ jobs:
     - name: Push changes
       uses: ad-m/github-push-action@master
       with:
-        branch: gh-pages
-        directory: gh-pages
+        branch: master
+        directory: docs
         github_token: ${{ secrets.GITHUB_TOKEN }}
     # ===============================
