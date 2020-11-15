@@ -17,6 +17,8 @@ Exercise = Dict[str, str]
 FORM_FILE = "management/form.md"
 EXERCISE_FILE = "management/exercises.json"
 
+
+
 def menu_clear_form():
     def inner() -> None:
         print("Are you sure?")
@@ -78,6 +80,28 @@ def menu_update_exercise(exercises: List[Exercise]) -> Callable:
             print(f"Updated #{index}: {new_exercise['name']}.")
 
     return inner
+
+
+def menu_delete_exercise(exercises: List[Exercise]) -> Callable:
+    def inner():
+        print_exercise_list(exercises)
+        index = get_valid_choice(exercises, "Choose an exercise.") - 1
+        exercise_choice = exercises[index]
+        print(f"You chose '{exercise_choice['name']}'.")
+
+        # arer you sure?
+        choice = input("CONFIRM DELETE: TYPE \"YES\": ")
+        if choice == "YES":
+            delete_exercise(exercises, index)
+            print(f"Deleted '{exercise_choice['name']}'.")
+        else:
+            print("Aborted.")
+    return inner
+
+
+def delete_exercise(exercises: List[Exercise], index: int) -> None:
+    del exercises[index]
+    write_exercises_to_file(exercises, EXERCISE_FILE)
 
 
 def get_valid_choice(exercises: List[Exercise], prompt: str) -> int:
@@ -291,6 +315,7 @@ def get_menu_options(exercises: List[Exercise]) -> Dict[int, Exercise]:
         ("Show all exercises", menu_show_exercises(exercises)),
         ("Add Exercise", menu_add_exercise(exercises)),
         ("Update Exercise", menu_update_exercise(exercises)),
+        ("Delete Exercise", menu_delete_exercise(exercises)),
         ("Move Exercise", menu_move_exercise(exercises)),
         ("Clear form.md", menu_clear_form()),
         ("Quit", exit),
