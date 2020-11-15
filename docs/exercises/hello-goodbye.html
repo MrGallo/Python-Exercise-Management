@@ -85,7 +85,11 @@
               <p class="caption"><span class="caption-text">Contents:</span></p>
 <ul class="current">
 <li class="toctree-l1"><a class="reference internal" href="hello-world.html">Hello, World!</a></li>
-<li class="toctree-l1 current"><a class="current reference internal" href="#">Hello, Goodbye</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Hello, Goodbye</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#starter-code">Starter Code</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#tests">Tests</a></li>
+</ul>
+</li>
 <li class="toctree-l1"><a class="reference internal" href="hamburger.html">Hamburger</a></li>
 <li class="toctree-l1"><a class="reference internal" href="one-to-five.html">One to Five</a></li>
 <li class="toctree-l1"><a class="reference internal" href="escape-character.html">Escape character</a></li>
@@ -156,6 +160,7 @@
             
   <div class="section" id="hello-goodbye">
 <h1>Hello, Goodbye<a class="headerlink" href="#hello-goodbye" title="Permalink to this headline">¶</a></h1>
+<p><strong>Topic:</strong> output a message</p>
 <p>The print function in the starter code provided (<code class="docutils literal notranslate"><span class="pre">main.py</span></code>) currently prints out the string <code class="docutils literal notranslate"><span class="pre">&quot;Hello&quot;</span></code>. Modify the code, so instead of printing out <code class="docutils literal notranslate"><span class="pre">&quot;Hello&quot;</span></code>, it prints out <code class="docutils literal notranslate"><span class="pre">&quot;Goodbye&quot;</span></code>.</p>
 <ol>
 <li><p>Run the code and observe the fact the output says <code class="docutils literal notranslate"><span class="pre">&quot;Hello&quot;</span></code>.</p></li>
@@ -166,6 +171,22 @@
 </div>
 </li>
 </ol>
+<div class="section" id="starter-code">
+<h2>Starter Code<a class="headerlink" href="#starter-code" title="Permalink to this headline">¶</a></h2>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Hello&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="tests">
+<h2>Tests<a class="headerlink" href="#tests" title="Permalink to this headline">¶</a></h2>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">exercise.fixtures</span> <span class="kn">import</span> <span class="n">captured_output</span>
+
+
+<span class="k">def</span> <span class="nf">test_hello_goodbye</span><span class="p">(</span><span class="n">captured_output</span><span class="p">):</span>
+    <span class="k">assert</span> <span class="n">captured_output</span><span class="p">()</span> <span class="o">==</span> <span class="s2">&quot;Goodbye&quot;</span>
+</pre></div>
+</div>
+</div>
 </div>
 
 
