@@ -48,7 +48,7 @@ def write_json_to_file(exercise: "Exercise") -> None:
 
 
 def write_index_rst(exercises: List["Exercise"]):
-    content = """Python Exercises!
+    content = """Python Exercises
 =================
 
 .. toctree::
