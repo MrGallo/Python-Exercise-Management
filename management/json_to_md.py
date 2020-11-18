@@ -19,9 +19,9 @@ def main():
         write_series(data, series_name, settings.EXERCISE_DOCS_FOLDER)
     
     write_index_rst(item_list=series_list,
-                    title="Exercise Series",
+                    title="Python Exercises",
                     write_path=".",
-                    max_depth=3,
+                    max_depth=2,
                     ref_path=settings.EXERCISE_DOCS_FOLDER)
 
 
@@ -91,7 +91,7 @@ def write_chapter(series: Series, chapter_name: str, path: str) -> None:
     
     exercise_names = [ex["name"] for ex in exercises]
     write_index_rst(exercise_names,
-                    f"{chapter_name.title()} Exercises",
+                    chapter_name.title(),
                     chapter_path,
                     max_depth=1,
                     is_parent=False)
