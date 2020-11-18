@@ -1,5 +1,5 @@
-Introduction To Programming Exercises
-=====================================
+Introduction To Programming
+===========================
 
 .. toctree::
     :maxdepth: 1

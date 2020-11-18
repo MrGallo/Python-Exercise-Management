@@ -1,5 +1,5 @@
-Chapter 1 Exercises
-===================
+Chapter 1
+=========
 
 .. toctree::
     :maxdepth: 1
