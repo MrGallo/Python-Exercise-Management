@@ -5,14 +5,21 @@ import shutil
 
 from slugify import slugify
 
+import management.settings as settings
+from management.types import Series, Database, Exercise
+
 
 def main():
-    with open("management/exercises.json") as f:
+    with open(settings.DATABASE_FILE) as f:
         data = json.load(f)
     
-    clear_folder("exercises")
-    write_exercises_to_md_files(data["exercises"])
-    write_index_rst(data["exercises"])
+    clear_folder(settings.EXERCISE_DOCS_FOLDER)
+    series_list = data["series_list"]
+    for series_name in series_list:
+        write_series(data, series_name, settings.EXERCISE_DOCS_FOLDER)
+    
+    write_index_rst(series_list, "Exercise Series", settings.EXERCISE_DOCS_FOLDER)
+
 
 
 def clear_folder(folder: str):
@@ -23,13 +30,54 @@ def clear_folder(folder: str):
 
     os.mkdir(folder)
 
+def write_index_rst(item_list: List[str], title: str, path: str):
+    content = f"""{title}
+{"=" * len(title)}
 
-def write_exercises_to_md_files(exercises: List["Exercise"]):
+.. toctree::
+    :maxdepth: 2
+
+"""
+    for item in item_list:
+        name = slugify(item)
+        content += f"    {name}\n"
+    
+    with open(os.path.join(path, "index.rst"), "w") as f:
+        f.write(content)
+
+
+def write_series(db: Database, series_name: str, path: str) -> None:
+    series = db[series_name]
+    series_slug = slugify(series_name)
+    # create folder for series
+    series_path = os.path.join(path, series_slug)
+    os.mkdir(series_path)
+
+    # write chapters
+    chapter_list = series["chapter_list"]
+    for chapter_name in chapter_list:
+        write_chapter(series, chapter_name, series_path)
+    
+    write_index_rst(chapter_list, f"{series_name.title()} Chapters", series_path)
+
+
+def write_chapter(series: Series, chapter_name: str, path: str) -> None:
+    exercises = series[chapter_name]
+    chapter_slug = slugify(chapter_name)
+
+    # create folder for chapter
+    chapter_path = os.path.join(path, chapter_slug)
+    os.mkdir(chapter_path)
+
+    # write exercises
     for exercise in exercises:
-        write_json_to_file(exercise)
+        write_exercise(exercise, chapter_path)
+    
+    exercise_names = [ex["name"] for ex in exercises]
+    write_index_rst(exercise_names, f"{chapter_name.title()} Exercises", chapter_path)
 
 
-def write_json_to_file(exercise: "Exercise") -> None:
+def write_exercise(exercise: Exercise, path: str) -> None:
     name = exercise.get("name", "").strip() 
     topic = exercise.get("topic", "").strip()
     requirements = ""
@@ -39,6 +87,7 @@ def write_json_to_file(exercise: "Exercise") -> None:
     starter_code = exercise.get("starter_code", "").strip()
     tests = exercise.get("tests", "").strip()
     filename = f"{slugify(name)}.md"
+    exercise_path = os.path.join(path, filename)
 
     content = f"""# {name}
 **Topic:** {topic}
@@ -58,24 +107,7 @@ def write_json_to_file(exercise: "Exercise") -> None:
 ```
 """
 
-    with open(f"exercises/{filename}", 'w') as f:
-        f.write(content)
-
-
-def write_index_rst(exercises: List["Exercise"]):
-    content = """Python Exercises
-=================
-
-.. toctree::
-    :maxdepth: 2
-    :caption: Contents:
-
-"""
-    for exercise in exercises:
-        name = slugify(exercise.get("name", "").strip())
-        content += f"    exercises/{name}\n"
-    
-    with open("index.rst", "w") as f:
+    with open(exercise_path, 'w') as f:
         f.write(content)
 
 

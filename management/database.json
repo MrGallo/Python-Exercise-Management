@@ -1,0 +1,72 @@
+{
+    "series_list": [
+        "Fundamentals",
+        "Robotics"
+    ],
+    "Fundamentals": {
+        "chapter_list": [
+            "introduction to programming"
+        ],
+        "introduction to programming": [
+            {
+                "name": "Hello, World!",
+                "topic": "output a message",
+                "requirements": [],
+                "description": "One of the most important parts of a computer program is the ability for the computer to talk to the user (the person running the program). In Python, this is achieved using the `print()` function. The `print()` function will will output anything you want to the terminal screen (it does not activate your printer). \n\n\n### Your task\n1. Run the starter code to see an example of what it looks like to print something to the terminal. The code, as it is, should output the following:\n    ```\n    Hello,\n    ```\n2. In addition to the output that is already there, make the program print out `\"World!\"`. The result should look like:\n    ```\n    Hello,\n    World!\n    ```",
+                "starter_code": "print(\"Hello,\")\nprint()",
+                "tests": "from exercise.fixtures import captured_output\n\n\ndef test_hello_world(captured_output):\n    assert captured_output() == \"Hello,\\nWorld!\""
+            },
+            {
+                "name": "Hello, Goodbye",
+                "topic": "output a message",
+                "requirements": [],
+                "description": "The print function in the starter code provided (`main.py`) currently prints out the string `\"Hello\"`. Modify the code, so instead of printing out `\"Hello\"`, it prints out `\"Goodbye\"`. \n\n1. Run the code and observe the fact the output says `\"Hello\"`.\n2. Change the string in the `print()` function to `\"Goodbye\"`.\n3. Run the program again to observe the change. The output should no longer include `Hello`, only `Goodbye`. Expected output:\n    ```\n    Goodbye\n    ```",
+                "starter_code": "print(\"Hello\")",
+                "tests": "from exercise.fixtures import captured_output\n\n\ndef test_hello_goodbye(captured_output):\n    assert captured_output() == \"Goodbye\""
+            },
+            {
+                "name": "Hamburger",
+                "topic": "output a message",
+                "requirements": [],
+                "description": "With the starter code (given in `main.py`) your program outputs an empty hamburger. You goal is to create a complete hamburger.\n\n1. Run the program and observe the output. It should be as follows:\n    ```\n    (--Bun--)\n\n    (--Bun--)\n    ```\n    Notice the empty space. This empty line comes from the empty `print()` function.\n2. Place the string `\"Hamburger\"` inside that empty `print()` function.",
+                "starter_code": "print(\"(--Bun--)\")\nprint()\nprint(\"(--Bun--)\")",
+                "tests": "from exercise.fixtures import captured_output\n\n\ndef test_hamburger(captured_output):\n    assert captured_output() == \"(--Bun--)\\nHamburger\\n(--Bun--)\""
+            },
+            {
+                "name": "One to Five",
+                "topic": "output a message",
+                "requirements": [],
+                "description": "With the starter code (given in `main.py`) your program outputs an incomplete and out-of-order list of numbers. You goal is to fix it so it outputs the numbers from one to five.\n\n1. Run the program and observe the incorrect output. It should start off as follows:\n    ```\n    three\n    five\n    four\n    ```\n    Notice that the strings `\"one\"` and `\"two\"` don't even show up. This is because those `print()` functions have been commented out using the pound-sign (\"hashtag\") and a space (`# `).\n2. Remove the comment characters (pound-sign and the space) and allow the words \"one\" and \"two\" to show up. It should look like:\n    ```\n    three\n    five\n    one\n    four\n    two\n    ```\n    **Warning:** If you do not *also* delete the space, you will get an `IndentationError`. Make sure all the `p`'s in the word `print` are lined up with *no space* in front of them.\n3. Rearrange the `print()` functions to correct the order of the words.\n    ```\n    one\n    two\n    three\n    four\n    five\n    ```",
+                "starter_code": "print(\"three\")\nprint(\"five\")\n# print(\"one\")\nprint(\"four\")\n# print(\"two\")",
+                "tests": "from exercise.fixtures import captured_output\n\n\ndef test_one_to_five(captured_output):\n    assert captured_output() == \"one\\ntwo\\nthree\\nfour\\nfive\""
+            },
+            {
+                "name": "Escape character",
+                "topic": "output a message",
+                "requirements": [],
+                "description": "With the starter code (given in `main.py`) your program will encounter a `SyntaxError`.\n\n1. Run the program as is. Notice the `SyntaxError`. On what line of the code does the error tell you it found the problem?\n    ```\n      File \"main.py\", line 2\n        print(\"Her friend said \"Nice to see you!\".\")\n                                ^\n    SyntaxError: invalid syntax\n    ```\n    - Python gets confused with the extra quotes (`\"`) in the second print statement.\n    - Python uses quotes to determine where a string starts and where a string ends. If we want to actually include a quote in a string, we need to **escape** that quote with the escape character `\\`. This will tell Python to skip over that particular quote and to not use it to end the string.\n2. Comment-out the second print statement by putting a number-sign (hashtag) infront of the line. For example:\n    ```python\n    # print(...)\n    ```\n3. Run the program and observe what the first print statement outputs. Notice:\n    - there is no error,\n    - the output actually contains the quote characters\n    - what is output to the terminal doesn't actually contain the escape characters `\\`.\n4. Use the escape character (`\\`) to allow the second print statement to include the quotes. Be sure to use the first print statement as an example for how to do this correctly. Also, remember to un-comment the second print statement, when you are ready to run it. The final output should look like:\n    ```\n    She said \"Hello\" to her friend.\n    Her friend said \"Nice to see you!\".\n    ```",
+                "starter_code": "print(\"She said \\\"Hello\\\" to her friend.\")\nprint(\"Her friend said \"Nice to see you!\".\")",
+                "tests": "from exercise.fixtures import captured_output\n\n\ndef test_escape_character(captured_output):\n    assert captured_output() == \"She said \\\"Hello\\\" to her friend.\\nHer friend said \\\"Nice to see you!\\\".\""
+            }
+        ]
+    },
+    "Robotics": {
+        "chapter_list": [
+            "Chapter 1",
+            "Chapter 2",
+            "Chapter 3"
+        ],
+        "Chapter 1": [
+            {
+                "name": "Hello, World!",
+                "topic": "output a message",
+                "requirements": [],
+                "description": "One of the most important parts of a computer program is the ability for the computer to talk to the user (the person running the program). In Python, this is achieved using the `print()` function. The `print()` function will will output anything you want to the terminal screen (it does not activate your printer). \n\n\n### Your task\n1. Run the starter code to see an example of what it looks like to print something to the terminal. The code, as it is, should output the following:\n    ```\n    Hello,\n    ```\n2. In addition to the output that is already there, make the program print out `\"World!\"`. The result should look like:\n    ```\n    Hello,\n    World!\n    ```",
+                "starter_code": "print(\"Hello,\")\nprint()",
+                "tests": "from exercise.fixtures import captured_output\n\n\ndef test_hello_world(captured_output):\n    assert captured_output() == \"Hello,\\nWorld!\""
+            }
+        ],
+        "Chapter 2": [],
+        "Chapter 3": []
+    }
+}

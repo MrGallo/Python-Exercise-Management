@@ -2,11 +2,6 @@ Python Exercises
 =================
 
 .. toctree::
-    :maxdepth: 2
-    :caption: Contents:
+    :maxdepth: 3
 
-    exercises/hello-world
-    exercises/hello-goodbye
-    exercises/hamburger
-    exercises/one-to-five
-    exercises/escape-character
+    exercises
