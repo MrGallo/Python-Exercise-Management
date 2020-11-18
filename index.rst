@@ -1,7 +1,8 @@
-Python Exercises
-=================
+Exercise Series
+===============
 
 .. toctree::
     :maxdepth: 3
 
-    exercises/index
+    exercises/fundamentals/index
+    exercises/robotics/index

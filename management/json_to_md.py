@@ -18,7 +18,11 @@ def main():
     for series_name in series_list:
         write_series(data, series_name, settings.EXERCISE_DOCS_FOLDER)
     
-    write_index_rst(series_list, "Exercise Series", settings.EXERCISE_DOCS_FOLDER)
+    write_index_rst(item_list=series_list,
+                    title="Exercise Series",
+                    write_path=".",
+                    max_depth=3,
+                    ref_path=settings.EXERCISE_DOCS_FOLDER)
 
 
 
@@ -30,8 +34,12 @@ def clear_folder(folder: str):
 
     os.mkdir(folder)
 
-def write_index_rst(item_list: List[str], title: str, path: str, is_parent: bool = True):
-    max_depth = 2 if is_parent else 1
+def write_index_rst(item_list: List[str],
+                    title: str,
+                    write_path: str,
+                    max_depth: int = 2,
+                    ref_path: str = "",
+                    is_parent: bool = True):
 
     content = f"""{title}
 {"=" * len(title)}
@@ -44,11 +52,11 @@ def write_index_rst(item_list: List[str], title: str, path: str, is_parent: bool
     for item in item_list:
         item_path = slugify(item)
         if is_parent:
-            item_path = os.path.join(item_path, "index")
+            item_path = os.path.join(ref_path, slugify(item), "index")
 
         content += f"    {item_path}\n"
     
-    with open(os.path.join(path, "index.rst"), "w") as f:
+    with open(os.path.join(write_path, "index.rst"), "w") as f:
         f.write(content)
 
 
@@ -64,7 +72,9 @@ def write_series(db: Database, series_name: str, path: str) -> None:
     for chapter_name in chapter_list:
         write_chapter(series, chapter_name, series_path)
     
-    write_index_rst(chapter_list, f"{series_name.title()} Chapters", series_path)
+    write_index_rst(chapter_list,
+                    series_name.title(),
+                    series_path)
 
 
 def write_chapter(series: Series, chapter_name: str, path: str) -> None:
@@ -80,7 +90,11 @@ def write_chapter(series: Series, chapter_name: str, path: str) -> None:
         write_exercise(exercise, chapter_path)
     
     exercise_names = [ex["name"] for ex in exercises]
-    write_index_rst(exercise_names, f"{chapter_name.title()} Exercises", chapter_path, is_parent=False)
+    write_index_rst(exercise_names,
+                    f"{chapter_name.title()} Exercises",
+                    chapter_path,
+                    max_depth=1,
+                    is_parent=False)
 
 
 def write_exercise(exercise: Exercise, path: str) -> None:

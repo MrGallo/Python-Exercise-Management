@@ -1,5 +1,5 @@
-Fundamentals Chapters
-=====================
+Fundamentals
+============
 
 .. toctree::
     :maxdepth: 2

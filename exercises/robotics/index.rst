@@ -1,5 +1,5 @@
-Robotics Chapters
-=================
+Robotics
+========
 
 .. toctree::
     :maxdepth: 2
