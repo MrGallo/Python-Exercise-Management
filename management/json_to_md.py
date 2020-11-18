@@ -30,17 +30,23 @@ def clear_folder(folder: str):
 
     os.mkdir(folder)
 
-def write_index_rst(item_list: List[str], title: str, path: str):
+def write_index_rst(item_list: List[str], title: str, path: str, is_parent: bool = True):
+    max_depth = 2 if is_parent else 1
+
     content = f"""{title}
 {"=" * len(title)}
 
 .. toctree::
-    :maxdepth: 2
+    :maxdepth: {max_depth}
 
 """
+
     for item in item_list:
-        name = slugify(item)
-        content += f"    {name}\n"
+        item_path = slugify(item)
+        if is_parent:
+            item_path = os.path.join(item_path, "index")
+
+        content += f"    {item_path}\n"
     
     with open(os.path.join(path, "index.rst"), "w") as f:
         f.write(content)
@@ -74,7 +80,7 @@ def write_chapter(series: Series, chapter_name: str, path: str) -> None:
         write_exercise(exercise, chapter_path)
     
     exercise_names = [ex["name"] for ex in exercises]
-    write_index_rst(exercise_names, f"{chapter_name.title()} Exercises", chapter_path)
+    write_index_rst(exercise_names, f"{chapter_name.title()} Exercises", chapter_path, is_parent=False)
 
 
 def write_exercise(exercise: Exercise, path: str) -> None:

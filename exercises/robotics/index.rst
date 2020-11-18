@@ -4,6 +4,6 @@ Robotics Chapters
 .. toctree::
     :maxdepth: 2
 
-    chapter-1
-    chapter-2
-    chapter-3
+    chapter-1/index
+    chapter-2/index
+    chapter-3/index

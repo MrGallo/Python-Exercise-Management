@@ -4,4 +4,4 @@ Fundamentals Chapters
 .. toctree::
     :maxdepth: 2
 
-    introduction-to-programming
+    introduction-to-programming/index

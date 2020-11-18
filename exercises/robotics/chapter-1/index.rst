@@ -2,6 +2,6 @@ Chapter 1 Exercises
 ===================
 
 .. toctree::
-    :maxdepth: 2
+    :maxdepth: 1
 
     hello-world
