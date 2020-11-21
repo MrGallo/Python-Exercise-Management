@@ -177,7 +177,7 @@
 <p><strong>Topic:</strong> output a message</p>
 <p>With the starter code (given in <code class="docutils literal notranslate"><span class="pre">main.py</span></code>) your program will encounter a <code class="docutils literal notranslate"><span class="pre">SyntaxError</span></code>.</p>
 <ol>
-<li><p>Run the program as is. Notice the <code class="docutils literal notranslate"><span class="pre">SyntaxError</span></code>. On what line of the code does the error tell you it found the problem?</p>
+<li><p>Run the program as is. Notice the <code class="docutils literal notranslate"><span class="pre">SyntaxError</span></code>.</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span>  File &quot;main.py&quot;, line 2
     print(&quot;Her friend said &quot;Nice to see you!&quot;.&quot;)
                             ^
@@ -185,20 +185,21 @@ SyntaxError: invalid syntax
 </pre></div>
 </div>
 <ul class="simple">
-<li><p>Python gets confused with the extra quotes (<code class="docutils literal notranslate"><span class="pre">&quot;</span></code>) in the second print statement.</p></li>
-<li><p>Python uses quotes to determine where a string starts and where a string ends. If we want to actually include a quote in a string, we need to <strong>escape</strong> that quote with the escape character <code class="docutils literal notranslate"><span class="pre">\</span></code>. This will tell Python to skip over that particular quote and to not use it to end the string.</p></li>
+<li><p>On what line did the error happen?</p></li>
+<li><p>Python gets confused with the extra quotes (<code class="docutils literal notranslate"><span class="pre">&quot;</span></code>) in the second print statement (on line 2).</p></li>
+<li><p>Python uses quotes to determine where a string starts and where a string ends. If we want to actually include a quote in a string, we need to <strong>escape</strong> that quote with the escape character <code class="docutils literal notranslate"><span class="pre">\</span></code>. This will tell Python to skip over that particular quote and not to use it to end the string.</p></li>
 </ul>
 </li>
-<li><p>Comment-out the second print statement by putting a number-sign (hashtag) infront of the line. For example:</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="c1"># print(...)</span>
+<li><p>Go back to <code class="docutils literal notranslate"><span class="pre">main.py</span></code> and comment-out line 2 by putting a number-sign (hashtag) infront of the line. For example:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="c1"># print(&quot;Her friend said &quot;Nice to see you!&quot;.&quot;)</span>
 </pre></div>
 </div>
 </li>
 <li><p>Run the program and observe what the first print statement outputs. Notice:</p>
 <ul class="simple">
 <li><p>there is no error,</p></li>
-<li><p>the output actually contains the quote characters</p></li>
-<li><p>what is output to the terminal doesn’t actually contain the escape characters <code class="docutils literal notranslate"><span class="pre">\</span></code>.</p></li>
+<li><p>the output <em>actually contains</em> the quote characters</p></li>
+<li><p>the output doesn’t contain the escape characters <code class="docutils literal notranslate"><span class="pre">\</span></code>.</p></li>
 </ul>
 </li>
 <li><p>Use the escape character (<code class="docutils literal notranslate"><span class="pre">\</span></code>) to allow the second print statement to include the quotes. Be sure to use the first print statement as an example for how to do this correctly. Also, remember to un-comment the second print statement, when you are ready to run it. The final output should look like:</p>
