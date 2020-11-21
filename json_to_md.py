@@ -19,7 +19,8 @@ def main():
         write_series(data, series_name, settings.EXERCISE_DOCS_FOLDER)
     
     append = ("You can do these exercises and test them using "
-              "my `Python Exercise Runner <https://repl.it/@DanielGallo/Python-Exercise-Runner>`_.")
+              "my `Python Exercise Runner <https://repl.it/"
+              "@DanielGallo/Python-Exercise-Runner>`_.")
     
     write_index_rst(item_list=series_list,
                     title="Python Exercises",
