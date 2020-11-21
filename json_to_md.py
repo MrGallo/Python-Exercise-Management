@@ -1,4 +1,4 @@
-from typing import List
+from typing import List, Optional
 import json
 import os
 import shutil
@@ -18,12 +18,15 @@ def main():
     for series_name in series_list:
         write_series(data, series_name, settings.EXERCISE_DOCS_FOLDER)
     
+    append = ("You can do these exercises and test them using "
+              "my `Python Exercise Runner <https://repl.it/@DanielGallo/Python-Exercise-Runner>`_.")
+    
     write_index_rst(item_list=series_list,
                     title="Python Exercises",
                     write_path=".",
                     max_depth=2,
-                    ref_path=settings.EXERCISE_DOCS_FOLDER)
-
+                    ref_path=settings.EXERCISE_DOCS_FOLDER,
+                    append_text=append)
 
 
 def clear_folder(folder: str):
@@ -39,7 +42,8 @@ def write_index_rst(item_list: List[str],
                     write_path: str,
                     max_depth: int = 2,
                     ref_path: str = "",
-                    is_parent: bool = True):
+                    is_parent: bool = True,
+                    append_text: Optional[str] = None):
 
     content = f"""{title}
 {"=" * len(title)}
@@ -55,6 +59,9 @@ def write_index_rst(item_list: List[str],
             item_path = os.path.join(ref_path, slugify(item), "index")
 
         content += f"    {item_path}\n"
+    
+    if append_text is not None:
+        content += "\n" + append_text
     
     with open(os.path.join(write_path, "index.rst"), "w") as f:
         f.write(content)
