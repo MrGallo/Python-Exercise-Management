@@ -302,6 +302,20 @@ test = ["pytest", "pytest-cov", "html5lib", "typed-ast", "cython"]
 
 [[package]]
 category = "main"
+description = "Add a copy button to each of your code cells."
+name = "sphinx-copybutton"
+optional = false
+python-versions = "*"
+version = "0.3.1"
+
+[package.dependencies]
+sphinx = ">=1.8"
+
+[package.extras]
+code_style = ["flake8 (>=3.7.0,<3.8.0)", "black", "pre-commit (1.17.0)"]
+
+[[package]]
+category = "main"
 description = "Read the Docs theme for Sphinx"
 name = "sphinx-rtd-theme"
 optional = false
@@ -423,7 +437,7 @@ python-versions = ">=3.6"
 version = "1.0.1"
 
 [metadata]
-content-hash = "53654a586d952cd7195ec802e4846169c71d58bfe15b67c94f5a486f1a534903"
+content-hash = "14d9a9fc81e17ab275f7cb9c3dcc178860e7fab0bd59668976ae92e11419688d"
 python-versions = "^3.8"
 
 [metadata.files]
@@ -564,6 +578,10 @@ snowballstemmer = [
 sphinx = [
     {file = "Sphinx-3.3.1-py3-none-any.whl", hash = "sha256:d4e59ad4ea55efbb3c05cde3bfc83bfc14f0c95aa95c3d75346fcce186a47960"},
     {file = "Sphinx-3.3.1.tar.gz", hash = "sha256:1e8d592225447104d1172be415bc2972bd1357e3e12fdc76edf2261105db4300"},
+]
+sphinx-copybutton = [
+    {file = "sphinx-copybutton-0.3.1.tar.gz", hash = "sha256:0e0461df394515284e3907e3f418a0c60ef6ab6c9a27a800c8552772d0a402a2"},
+    {file = "sphinx_copybutton-0.3.1-py3-none-any.whl", hash = "sha256:5125c718e763596e6e52d92e15ee0d6f4800ad3817939be6dee51218870b3e3d"},
 ]
 sphinx-rtd-theme = [
     {file = "sphinx_rtd_theme-0.5.0-py2.py3-none-any.whl", hash = "sha256:373413d0f82425aaa28fb288009bf0d0964711d347763af2f1b65cafcb028c82"},
