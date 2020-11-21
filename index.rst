@@ -6,3 +6,4 @@ Python Exercises
 
     exercises/fundamentals/index
     exercises/robotics/index
+    exercises/blah/index

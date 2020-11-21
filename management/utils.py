@@ -50,3 +50,9 @@ def _calc_difficulty(prerequisets: List[str],
     
     return difficulty
 
+
+# def load_database(filename: str) -> Database:
+#     with open(filename, 'r') as f:
+#         data = json.load(f)
+
+#     return data

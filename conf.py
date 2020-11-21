@@ -17,7 +17,7 @@
 import os
 
 
-os.system("python management/json_to_md.py")
+os.system("python json_to_md.py")
 
 
 # -- Project information -----------------------------------------------------

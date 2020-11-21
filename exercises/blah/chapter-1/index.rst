@@ -1,6 +1,7 @@
-Chapter 3
+Chapter 1
 =========
 
 .. toctree::
     :maxdepth: 1
 
+    blah-namechange

@@ -6,4 +6,3 @@ Robotics
 
     chapter-1/index
     chapter-2/index
-    chapter-3/index

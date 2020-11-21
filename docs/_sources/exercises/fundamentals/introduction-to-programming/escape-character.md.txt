@@ -15,7 +15,7 @@ With the starter code (given in `main.py`) your program will encounter a `Syntax
     - Python gets confused with the extra quotes (`"`) in the second print statement.
     - Python uses quotes to determine where a string starts and where a string ends. If we want to actually include a quote in a string, we need to **escape** that quote with the escape character `\`. This will tell Python to skip over that particular quote and to not use it to end the string.
 2. Comment-out the second print statement by putting a number-sign (hashtag) infront of the line. For example:
-    ```python
+    ```
     # print(...)
     ```
 3. Run the program and observe what the first print statement outputs. Notice:
