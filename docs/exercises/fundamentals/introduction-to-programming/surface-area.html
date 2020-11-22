@@ -7,7 +7,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>Escape character &mdash; Python Exercises  documentation</title>
+  <title>Surface Area &mdash; Python Exercises  documentation</title>
   
 
   
@@ -39,8 +39,8 @@
     
     <link rel="index" title="Index" href="../../../genindex.html" />
     <link rel="search" title="Search" href="../../../search.html" />
-    <link rel="next" title="Surface Area" href="surface-area.html" />
-    <link rel="prev" title="One to Five" href="one-to-five.html" /> 
+    <link rel="next" title="Robotics" href="../../robotics/index.html" />
+    <link rel="prev" title="Escape character" href="escape-character.html" /> 
 </head>
 
 <body class="wy-body-for-nav">
@@ -92,12 +92,12 @@
 <li class="toctree-l3"><a class="reference internal" href="hello-goodbye.html">Hello, Goodbye</a></li>
 <li class="toctree-l3"><a class="reference internal" href="hamburger.html">Hamburger</a></li>
 <li class="toctree-l3"><a class="reference internal" href="one-to-five.html">One to Five</a></li>
-<li class="toctree-l3 current"><a class="current reference internal" href="#">Escape character</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="escape-character.html">Escape character</a></li>
+<li class="toctree-l3 current"><a class="current reference internal" href="#">Surface Area</a><ul>
 <li class="toctree-l4"><a class="reference internal" href="#starter-code">Starter Code</a></li>
 <li class="toctree-l4"><a class="reference internal" href="#tests">Tests</a></li>
 </ul>
 </li>
-<li class="toctree-l3"><a class="reference internal" href="surface-area.html">Surface Area</a></li>
 </ul>
 </li>
 </ul>
@@ -154,13 +154,13 @@
         
           <li><a href="index.html">Introduction To Programming</a> &raquo;</li>
         
-      <li>Escape character</li>
+      <li>Surface Area</li>
     
     
       <li class="wy-breadcrumbs-aside">
         
             
-            <a href="../../../_sources/exercises/fundamentals/introduction-to-programming/escape-character.md.txt" rel="nofollow"> View page source</a>
+            <a href="../../../_sources/exercises/fundamentals/introduction-to-programming/surface-area.md.txt" rel="nofollow"> View page source</a>
           
         
       </li>
@@ -173,47 +173,15 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
             
-  <div class="section" id="escape-character">
-<h1>Escape character<a class="headerlink" href="#escape-character" title="Permalink to this headline">¶</a></h1>
-<p><strong>Topic:</strong> output a message</p>
-<p>With the starter code (given in <code class="docutils literal notranslate"><span class="pre">main.py</span></code>) your program will encounter a <code class="docutils literal notranslate"><span class="pre">SyntaxError</span></code>.</p>
-<ol>
-<li><p>Run the program as is. Notice the <code class="docutils literal notranslate"><span class="pre">SyntaxError</span></code>.</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>  File &quot;main.py&quot;, line 2
-    print(&quot;Her friend said &quot;Nice to see you!&quot;.&quot;)
-                            ^
-SyntaxError: invalid syntax
-</pre></div>
-</div>
-<ul class="simple">
-<li><p>On what line did the error happen?</p></li>
-<li><p>Python gets confused with the extra quotes (<code class="docutils literal notranslate"><span class="pre">&quot;</span></code>) in the second print statement (on line 2).</p></li>
-<li><p>Python uses quotes to determine where a string starts and where a string ends. If we want to actually include a quote in a string, we need to <strong>escape</strong> that quote with the escape character <code class="docutils literal notranslate"><span class="pre">\</span></code>. This will tell Python to skip over that particular quote and not to use it to end the string.</p></li>
-</ul>
-</li>
-<li><p>Go back to <code class="docutils literal notranslate"><span class="pre">main.py</span></code> and comment-out line 2 by putting a number-sign (hashtag) infront of the line. For example:</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="c1"># print(&quot;Her friend said &quot;Nice to see you!&quot;.&quot;)</span>
-</pre></div>
-</div>
-</li>
-<li><p>Run the program and observe what the first print statement outputs. Notice:</p>
-<ul class="simple">
-<li><p>there is no error,</p></li>
-<li><p>the output <em>actually contains</em> the quote characters</p></li>
-<li><p>the output doesn’t contain the escape characters <code class="docutils literal notranslate"><span class="pre">\</span></code>.</p></li>
-</ul>
-</li>
-<li><p>Use the escape character (<code class="docutils literal notranslate"><span class="pre">\</span></code>) to allow the second print statement to include the quotes. Be sure to use the first print statement as an example for how to do this correctly. Also, remember to un-comment the second print statement, when you are ready to run it. The final output should look like:</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">She</span> <span class="n">said</span> <span class="s2">&quot;Hello&quot;</span> <span class="n">to</span> <span class="n">her</span> <span class="n">friend</span><span class="o">.</span>
-<span class="n">Her</span> <span class="n">friend</span> <span class="n">said</span> <span class="s2">&quot;Nice to see you!&quot;</span><span class="o">.</span>
-</pre></div>
-</div>
-</li>
-</ol>
+  <div class="section" id="surface-area">
+<h1>Surface Area<a class="headerlink" href="#surface-area" title="Permalink to this headline">¶</a></h1>
+<p><strong>Topic:</strong> mathematical calculations</p>
+<p>Multiplication in Python is done with the asterisk character (<code class="docutils literal notranslate"><span class="pre">*</span></code>). For example, in Python, the expression <code class="docutils literal notranslate"><span class="pre">5</span> <span class="pre">*</span> <span class="pre">3</span></code> will evaluate to <code class="docutils literal notranslate"><span class="pre">15</span></code>.</p>
+<p>The starter code shown below is quite wrong. It’s supposed to calulate the surface area of a <code class="docutils literal notranslate"><span class="pre">10</span> <span class="pre">cm</span></code> by <code class="docutils literal notranslate"><span class="pre">25</span> <span class="pre">cm</span></code> rectangle. Go and fix the equation on line 1.</p>
 <div class="section" id="starter-code">
 <h2>Starter Code<a class="headerlink" href="#starter-code" title="Permalink to this headline">¶</a></h2>
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span>print(&quot;She said \&quot;Hello\&quot; to her friend.&quot;)
-print(&quot;Her friend said &quot;Nice to see you!&quot;.&quot;)
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">surface_area</span> <span class="o">=</span> <span class="mi">10</span> <span class="o">+</span> <span class="mi">25</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;The surface area is </span><span class="si">{surface_area}</span><span class="s2"> cm^2&quot;</span><span class="p">)</span>
 </pre></div>
 </div>
 </div>
@@ -222,8 +190,8 @@ print(&quot;Her friend said &quot;Nice to see you!&quot;.&quot;)
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">exercise.fixtures</span> <span class="kn">import</span> <span class="n">captured_output</span>
 
 
-<span class="k">def</span> <span class="nf">test_escape_character</span><span class="p">(</span><span class="n">captured_output</span><span class="p">):</span>
-    <span class="k">assert</span> <span class="n">captured_output</span><span class="p">()</span> <span class="o">==</span> <span class="s2">&quot;She said </span><span class="se">\&quot;</span><span class="s2">Hello</span><span class="se">\&quot;</span><span class="s2"> to her friend.</span><span class="se">\n</span><span class="s2">Her friend said </span><span class="se">\&quot;</span><span class="s2">Nice to see you!</span><span class="se">\&quot;</span><span class="s2">.&quot;</span>
+<span class="k">def</span> <span class="nf">test_answer_should_be_250</span><span class="p">(</span><span class="n">captured_output</span><span class="p">):</span>
+    <span class="k">assert</span> <span class="n">captured_output</span><span class="p">()</span> <span class="o">==</span> <span class="s2">&quot;The surface area is 250 cm^2&quot;</span>
 </pre></div>
 </div>
 </div>
@@ -237,10 +205,10 @@ print(&quot;Her friend said &quot;Nice to see you!&quot;.&quot;)
   
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
       
-        <a href="surface-area.html" class="btn btn-neutral float-right" title="Surface Area" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+        <a href="../../robotics/index.html" class="btn btn-neutral float-right" title="Robotics" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
       
       
-        <a href="one-to-five.html" class="btn btn-neutral float-left" title="One to Five" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+        <a href="escape-character.html" class="btn btn-neutral float-left" title="Escape character" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
       
     </div>
   
