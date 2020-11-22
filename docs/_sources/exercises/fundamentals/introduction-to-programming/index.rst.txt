@@ -11,3 +11,4 @@ Introduction To Programming
     escape-character
     surface-area
     all-the-operators
+    student-groups
