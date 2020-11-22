@@ -53,6 +53,15 @@
                 "starter_code": "print(\"She said \\\"Hello\\\" to her friend.\")\nprint(\"Her friend said \"Nice to see you!\".\")\n\n",
                 "tests": "from exercise.fixtures import captured_output\n\n\ndef test_escape_character(captured_output):\n    assert captured_output() == \"She said \\\"Hello\\\" to her friend.\\nHer friend said \\\"Nice to see you!\\\".\"\n\n",
                 "solution": "print(\"She said \\\"Hello\\\" to her friend.\")\nprint(\"Her friend said \\\"Nice to see you!\\\".\")\n\n"
+            },
+            {
+                "name": "Surface Area",
+                "topic": "mathematical calculations",
+                "requirements": [],
+                "description": "Multiplication in Python is done with the asterisk character (`*`). For example, in Python, the expression `5 * 3` will evaluate to `15`.\n\nThe starter code shown below is quite wrong. It's supposed to calulate the surface area of a `10 cm` by `25 cm` rectangle. Go and fix the equation on line 1.\n\n",
+                "starter_code": "surface_area = 10 + 25\nprint(f\"The surface area is {surface_area} cm^2\")\n",
+                "tests": "from exercise.fixtures import captured_output\n\n\ndef test_answer_should_be_250(captured_output):\n    assert captured_output() == \"The surface area is 250 cm^2\"\n\n",
+                "solution": "surface_area = 10 * 25\nprint(f\"The surface area is {surface_area} cm^2\")\n"
             }
         ]
     },
