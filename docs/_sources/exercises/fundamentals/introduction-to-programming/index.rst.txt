@@ -10,3 +10,4 @@ Introduction To Programming
     one-to-five
     escape-character
     surface-area
+    all-the-operators
