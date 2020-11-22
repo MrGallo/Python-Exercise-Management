@@ -5,14 +5,7 @@
 
 Python can do mathematical evaluations, but some of the symbols are different than you might be used to.
 
-| Operation | Operator | Example | Result |
-|-|-|-|-|
-| Addition | `+` | `5 + 7` | `12` |
-| Subtraction | `-` | `33 - 3` | `30` |
-| Multiplication | `*` | `5 * 2` | `10` |
-| Division | `/` | `5 / 2` | `2.5` |
-| Floor Division | `//` | `5 // 2` | `2` |
-| Modulus (remainder) | `%` | `56 % 10` | `6` |
+Check out the Python Mathematical Operator
 
 The starter code is missing the mathematical equations. In the empty `print()` functions, place the appropriate math. The first one is done for you.
 
