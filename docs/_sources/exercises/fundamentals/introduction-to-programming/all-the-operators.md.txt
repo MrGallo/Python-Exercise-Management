@@ -5,7 +5,7 @@
 
 Python can do mathematical evaluations, but some of the symbols are different than you might be used to.
 
-Check out the Python Mathematical Operator
+Check out the [Python Mathematical Operators](https://gist.github.com/MrGallo/f6ef9b3ef06875761a675730e1095af6) table.
 
 The starter code is missing the mathematical equations. In the empty `print()` functions, place the appropriate math. The first one is done for you.
 
