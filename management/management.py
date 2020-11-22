@@ -487,16 +487,16 @@ class ChapterMenu(ItemMenu):
         requirements = re.search(regex, contents, re.DOTALL).group(1).strip()
 
         regex = r"# description\n+(.+?)\n# starter code"
-        description = re.search(regex, contents, re.DOTALL).group(1)
+        description = re.search(regex, contents, re.DOTALL).group(1).strip()
 
         regex = r"# starter code\n+```python\n(.+?)```"
-        starter_code = re.search(regex, contents, re.DOTALL).group(1)
+        starter_code = re.search(regex, contents, re.DOTALL).group(1).strip()
 
         regex = r"# tests\n+```python\n(.+?)```"
-        tests = re.search(regex, contents, re.DOTALL).group(1)
+        tests = re.search(regex, contents, re.DOTALL).group(1).strip()
 
         regex = r"# solution\n+```python\n(.+?)```"
-        solution = re.search(regex, contents, re.DOTALL).group(1)
+        solution = re.search(regex, contents, re.DOTALL).group(1).strip()
 
         return name, topic, requirements, description, starter_code, tests, solution
 
