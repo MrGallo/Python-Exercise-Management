@@ -87,6 +87,15 @@
                 "starter_code": "change_cents = 235\nquarters = 0\n\nprint(f\"You will get back {quarters} quarters.\")",
                 "tests": "from exercise.fixtures import captured_output, source_code_matches\n\n\ndef test_calculates_correct_quarters(captured_output):\n    assert \"You will get back 9 quarters.\" in captured_output()\n\n\ndef test_proper_calculation_for_quarters():\n    assert len(source_code_matches(r\"quarters\\s?=\\s?change_cents\\s?\\/\\/\\s?25\")) == 1, \"There should be a mathematical operation in your source code. Also, use the 'change_cents' variable to calculate this.\"",
                 "solution": "change_cents = 235\nquarters = change_cents // 25\n\nprint(f\"You will get back {quarters} quarters.\")"
+            },
+            {
+                "name": "Banquet Hall Chairs",
+                "topic": "store data in variables",
+                "requirements": [],
+                "description": "The program will calculate the total number of chairs in a banquet hall. This is determined by the number of tables and the number of chairs per table.\n\nInitialize a variable called `tables` and assign it a value of `32`.\n\nThen initialize a variable called `chairs_per_table`, and assign it a value of `9`.\n\nThe program will calculate the total chairs and then output a message.",
+                "starter_code": "# initialize tables here\n# initialize chairs_per_table here\n\n# do not modify the code below this line\ntotal_chairs = tables * chairs_per_table\nprint(f\"There are {total_chairs} chairs.\")",
+                "tests": "from exercise.fixtures import captured_output, source_code_matches\n\n\ndef test_bottom_code_isnt_modified():\n    assert len(source_code_matches(r'total_chairs = tables \\* chairs_per_table\\nprint\\(f\"There are {total_chairs} chairs.\"\\)')) == 1, \"You shouldn't modify the code at the bottom.\"\n\ndef test_calculates_correct_numner(captured_output):\n    assert captured_output() == \"There are 288 chairs.\"",
+                "solution": "tables = 32\nchairs_per_table = 9\n\n# do not modify the code below this line\ntotal_chairs = tables * chairs_per_table\nprint(f\"There are {total_chairs} chairs.\")"
             }
         ]
     }
