@@ -347,6 +347,20 @@ class ChapterMenu(ItemMenu):
     
     def add_child_item(self):
         print("ADD EXERCISE")
+
+        print("Clear the form.md file?")
+        choice = input("'yes' > ").lower()
+        if choice != "yes":
+            return ItemMenu.STAY
+
+        # clear the form
+        print("Clearing form.md")
+        self.write_exercise_to_form({})
+
+        print("Go and fill form.md.")
+        input("Press [ENTER] when done.")
+
+
         item_list = self.get_list()
 
         while True:
