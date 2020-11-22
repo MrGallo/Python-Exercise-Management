@@ -7,7 +7,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>One to Five &mdash; Python Exercises  documentation</title>
+  <title>How Many Quarters? &mdash; Python Exercises  documentation</title>
   
 
   
@@ -39,8 +39,7 @@
     
     <link rel="index" title="Index" href="../../../genindex.html" />
     <link rel="search" title="Search" href="../../../search.html" />
-    <link rel="next" title="Escape character" href="escape-character.html" />
-    <link rel="prev" title="Hamburger" href="hamburger.html" /> 
+    <link rel="prev" title="Student Groups" href="student-groups.html" /> 
 </head>
 
 <body class="wy-body-for-nav">
@@ -91,16 +90,16 @@
 <li class="toctree-l3"><a class="reference internal" href="hello-world.html">Hello, World!</a></li>
 <li class="toctree-l3"><a class="reference internal" href="hello-goodbye.html">Hello, Goodbye</a></li>
 <li class="toctree-l3"><a class="reference internal" href="hamburger.html">Hamburger</a></li>
-<li class="toctree-l3 current"><a class="current reference internal" href="#">One to Five</a><ul>
-<li class="toctree-l4"><a class="reference internal" href="#starter-code">Starter Code</a></li>
-<li class="toctree-l4"><a class="reference internal" href="#tests">Tests</a></li>
-</ul>
-</li>
+<li class="toctree-l3"><a class="reference internal" href="one-to-five.html">One to Five</a></li>
 <li class="toctree-l3"><a class="reference internal" href="escape-character.html">Escape character</a></li>
 <li class="toctree-l3"><a class="reference internal" href="surface-area.html">Surface Area</a></li>
 <li class="toctree-l3"><a class="reference internal" href="all-the-operators.html">All the Operators</a></li>
 <li class="toctree-l3"><a class="reference internal" href="student-groups.html">Student Groups</a></li>
-<li class="toctree-l3"><a class="reference internal" href="how-many-quarters.html">How Many Quarters?</a></li>
+<li class="toctree-l3 current"><a class="current reference internal" href="#">How Many Quarters?</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#starter-code">Starter Code</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#tests">Tests</a></li>
+</ul>
+</li>
 </ul>
 </li>
 </ul>
@@ -155,13 +154,13 @@
         
           <li><a href="index.html">Introduction To Programming</a> &raquo;</li>
         
-      <li>One to Five</li>
+      <li>How Many Quarters?</li>
     
     
       <li class="wy-breadcrumbs-aside">
         
             
-            <a href="../../../_sources/exercises/fundamentals/introduction-to-programming/one-to-five.md.txt" rel="nofollow"> View page source</a>
+            <a href="../../../_sources/exercises/fundamentals/introduction-to-programming/how-many-quarters.md.txt" rel="nofollow"> View page source</a>
           
         
       </li>
@@ -174,56 +173,33 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
             
-  <div class="section" id="one-to-five">
-<h1>One to Five<a class="headerlink" href="#one-to-five" title="Permalink to this headline">¶</a></h1>
-<p><strong>Topic:</strong> output a message</p>
-<p>With the starter code (given in <code class="docutils literal notranslate"><span class="pre">main.py</span></code>) your program outputs an incomplete and out-of-order list of numbers. You goal is to fix it so it outputs the numbers from one to five.</p>
-<ol>
-<li><p>Run the program and observe the incorrect output. It should start off as follows:</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">three</span>
-<span class="n">five</span>
-<span class="n">four</span>
-</pre></div>
-</div>
-<p>Notice that the strings <code class="docutils literal notranslate"><span class="pre">&quot;one&quot;</span></code> and <code class="docutils literal notranslate"><span class="pre">&quot;two&quot;</span></code> don’t even show up. This is because those <code class="docutils literal notranslate"><span class="pre">print()</span></code> functions have been commented out using the pound-sign (“hashtag”) and a space (<code class="docutils literal notranslate"><span class="pre">#</span> </code>).</p>
-</li>
-<li><p>Remove the comment characters (pound-sign and the space) and allow the words “one” and “two” to show up. It should look like:</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">three</span>
-<span class="n">five</span>
-<span class="n">one</span>
-<span class="n">four</span>
-<span class="n">two</span>
-</pre></div>
-</div>
-<p><strong>Warning:</strong> If you do not <em>also</em> delete the space, you will get an <code class="docutils literal notranslate"><span class="pre">IndentationError</span></code>. Make sure all the <code class="docutils literal notranslate"><span class="pre">p</span></code>’s in the word <code class="docutils literal notranslate"><span class="pre">print</span></code> are lined up with <em>no space</em> in front of them.</p>
-</li>
-<li><p>Rearrange the <code class="docutils literal notranslate"><span class="pre">print()</span></code> functions to correct the order of the words.</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">one</span>
-<span class="n">two</span>
-<span class="n">three</span>
-<span class="n">four</span>
-<span class="n">five</span>
-</pre></div>
-</div>
-</li>
-</ol>
+  <div class="section" id="how-many-quarters">
+<h1>How Many Quarters?<a class="headerlink" href="#how-many-quarters" title="Permalink to this headline">¶</a></h1>
+<p><strong>Topic:</strong> mathematical operations</p>
+<p>Floor division is useful when we need to know how many times we can evenly divide a particular number.</p>
+<p>Imagine you are at the store and you pay cash for something and the amount of money they need to give back to you is <code class="docutils literal notranslate"><span class="pre">$2.35</span></code>. Also imagine, for the sake of the exercise, the highest valued coins they have are quarters to give back to you.</p>
+<p>The starter code tries to determine how many quarters they will need to give back to you. Modify the line with <code class="docutils literal notranslate"><span class="pre">quarters</span> <span class="pre">=</span> <span class="pre">0</span></code> to determine the number of quarters required.</p>
+<p><em>Note: the code will handle currency in cents rather than dollars.</em></p>
 <div class="section" id="starter-code">
 <h2>Starter Code<a class="headerlink" href="#starter-code" title="Permalink to this headline">¶</a></h2>
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="s2">&quot;three&quot;</span><span class="p">)</span>
-<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;five&quot;</span><span class="p">)</span>
-<span class="c1"># print(&quot;one&quot;)</span>
-<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;four&quot;</span><span class="p">)</span>
-<span class="c1"># print(&quot;two&quot;)</span>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">change_cents</span> <span class="o">=</span> <span class="mi">235</span>
+<span class="n">quarters</span> <span class="o">=</span> <span class="mi">0</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;You will get back </span><span class="si">{quarters}</span><span class="s2"> quarters.&quot;</span><span class="p">)</span>
 </pre></div>
 </div>
 </div>
 <div class="section" id="tests">
 <h2>Tests<a class="headerlink" href="#tests" title="Permalink to this headline">¶</a></h2>
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">exercise.fixtures</span> <span class="kn">import</span> <span class="n">captured_output</span>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">exercise.fixtures</span> <span class="kn">import</span> <span class="n">captured_output</span><span class="p">,</span> <span class="n">source_code_matches</span>
 
 
-<span class="k">def</span> <span class="nf">test_one_to_five</span><span class="p">(</span><span class="n">captured_output</span><span class="p">):</span>
-    <span class="k">assert</span> <span class="n">captured_output</span><span class="p">()</span> <span class="o">==</span> <span class="s2">&quot;one</span><span class="se">\n</span><span class="s2">two</span><span class="se">\n</span><span class="s2">three</span><span class="se">\n</span><span class="s2">four</span><span class="se">\n</span><span class="s2">five&quot;</span>
+<span class="k">def</span> <span class="nf">test_calculates_correct_quarters</span><span class="p">(</span><span class="n">captured_output</span><span class="p">):</span>
+    <span class="k">assert</span> <span class="s2">&quot;You will get back 9 quarters.&quot;</span> <span class="ow">in</span> <span class="n">captured_output</span><span class="p">()</span>
+
+
+<span class="k">def</span> <span class="nf">test_proper_calculation_for_quarters</span><span class="p">():</span>
+    <span class="k">assert</span> <span class="nb">len</span><span class="p">(</span><span class="n">source_code_matches</span><span class="p">(</span><span class="sa">r</span><span class="s2">&quot;quarters\s?=\s?change_cents\s?\/\/\s?25&quot;</span><span class="p">))</span> <span class="o">==</span> <span class="mi">1</span><span class="p">,</span> <span class="s2">&quot;There should be a mathematical operation in your source code. Also, use the &#39;change_cents&#39; variable to calculate this.&quot;</span>
 </pre></div>
 </div>
 </div>
@@ -237,10 +213,8 @@
   
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
       
-        <a href="escape-character.html" class="btn btn-neutral float-right" title="Escape character" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
       
-      
-        <a href="hamburger.html" class="btn btn-neutral float-left" title="Hamburger" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+        <a href="student-groups.html" class="btn btn-neutral float-left" title="Student Groups" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
       
     </div>
   
