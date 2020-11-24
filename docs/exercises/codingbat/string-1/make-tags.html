@@ -128,6 +128,7 @@
 <li class="toctree-l3"><a class="reference internal" href="without-x-2.html">without_x_2</a></li>
 </ul>
 </li>
+<li class="toctree-l2"><a class="reference internal" href="../string-2/index.html">String-2</a></li>
 </ul>
 </li>
 </ul>
@@ -203,11 +204,12 @@
 <h1>make_tags<a class="headerlink" href="#make-tags" title="Permalink to this headline">¶</a></h1>
 <p><strong>Topic:</strong></p>
 <p>The web is built with HTML strings like “&lt;i&gt;Yay&lt;/i&gt;” which draws Yay as italic text. In this example, the “i” tag makes &lt;i&gt; and &lt;/i&gt; which surround the word “Yay”. Given tag and word strings, create the HTML string with tags around the word, e.g. “&lt;i&gt;Yay&lt;/i&gt;”.</p>
-<code>
-make_tags("i", "Yay") → "&lt;i&gt;Yay&lt;/i&gt;"
-make_tags("i", "Hello") → "&lt;i&gt;Hello&lt;/i&gt;"
-make_tags("cite", "Yay") → "&lt;cite&gt;Yay&lt;/cite&gt;"
-</code><p>This exercise was taken from <a class="reference external" href="https://codingbat.com/prob/p147483">codingbat.com</a> and has been adapted for the Python language. There are many great programming exercises there, but the majority are created for Java.</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>make_tags(&quot;i&quot;, &quot;Yay&quot;) → &quot;&amp;lt;i&amp;gt;Yay&amp;lt;/i&amp;gt;&quot;
+make_tags(&quot;i&quot;, &quot;Hello&quot;) → &quot;&amp;lt;i&amp;gt;Hello&amp;lt;/i&amp;gt;&quot;
+make_tags(&quot;cite&quot;, &quot;Yay&quot;) → &quot;&amp;lt;cite&amp;gt;Yay&amp;lt;/cite&amp;gt;&quot;
+</pre></div>
+</div>
+<p>This exercise was taken from <a class="reference external" href="https://codingbat.com/prob/p147483">codingbat.com</a> and has been adapted for the Python language. There are many great programming exercises there, but the majority are created for Java.</p>
 <div class="section" id="starter-code">
 <h2>Starter Code<a class="headerlink" href="#starter-code" title="Permalink to this headline">¶</a></h2>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">make_tags</span><span class="p">(</span><span class="n">tag</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span> <span class="n">word</span><span class="p">:</span> <span class="nb">str</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">str</span><span class="p">:</span>

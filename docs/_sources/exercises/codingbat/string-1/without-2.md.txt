@@ -5,11 +5,11 @@
 
 Given a string, if a length 2 substring appears at both its beginning and end, return a string without the substring at the beginning, so "HelloHe" yields "lloHe". The substring may overlap with itself, so "Hi" yields "". Otherwise, return the original string unchanged.
 
-<code>
+```
 without_2("HelloHe") → "lloHe"
 without_2("HelloHi") → "HelloHi"
 without_2("Hi") → ""
-</code>
+```
 
 This exercise was taken from [codingbat.com](https://codingbat.com/prob/p142247) and has been adapted for the Python language. There are many great programming exercises there, but the majority are created for Java.
 

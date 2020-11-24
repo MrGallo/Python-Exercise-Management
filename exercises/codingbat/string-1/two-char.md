@@ -5,11 +5,11 @@
 
 Given a string and an index, return a string length 2 starting at the given index. If the index is too big or too small to define a string length 2, use the first 2 chars. The string length will be at least 2.
 
-<code>
+```
 two_char("java", 0) → "ja"
 two_char("java", 2) → "va"
 two_char("java", 3) → "ja"
-</code>
+```
 
 This exercise was taken from [codingbat.com](https://codingbat.com/prob/p144623) and has been adapted for the Python language. There are many great programming exercises there, but the majority are created for Java.
 

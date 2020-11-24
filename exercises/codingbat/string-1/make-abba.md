@@ -5,11 +5,11 @@
 
 Given two strings, a and b, return the result of putting them together in the order abba, e.g. "Hi" and "Bye" returns "HiByeByeHi".
 
-<code>
+```
 make_abba("Hi", "Bye") → "HiByeByeHi"
 make_abba("Yo", "Alice") → "YoAliceAliceYo"
 make_abba("What", "Up") → "WhatUpUpWhat"
-</code>
+```
 
 This exercise was taken from [codingbat.com](https://codingbat.com/prob/p161056) and has been adapted for the Python language. There are many great programming exercises there, but the majority are created for Java.
 

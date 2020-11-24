@@ -5,11 +5,11 @@
 
 Given 2 strings, return their concatenation, except omit the first char of each. The strings will be at least length 1.
 
-<code>
+```
 non_start("Hello", "There") → "ellohere"
 non_start("java", "code") → "avaode"
 non_start("shotl", "java") → "hotlava"
-</code>
+```
 
 This exercise was taken from [codingbat.com](https://codingbat.com/prob/p143825) and has been adapted for the Python language. There are many great programming exercises there, but the majority are created for Java.
 

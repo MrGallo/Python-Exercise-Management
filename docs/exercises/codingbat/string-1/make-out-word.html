@@ -128,6 +128,7 @@
 <li class="toctree-l3"><a class="reference internal" href="without-x-2.html">without_x_2</a></li>
 </ul>
 </li>
+<li class="toctree-l2"><a class="reference internal" href="../string-2/index.html">String-2</a></li>
 </ul>
 </li>
 </ul>
@@ -203,11 +204,12 @@
 <h1>make_out_word<a class="headerlink" href="#make-out-word" title="Permalink to this headline">¶</a></h1>
 <p><strong>Topic:</strong></p>
 <p>Given an “out” string length 4, such as “&lt;&lt;&gt;&gt;”, and a word, return a new string where the word is in the middle of the out string, e.g. “&lt;&lt;word&gt;&gt;”. Note: use str.substring(i, j) to extract the String starting at index i and going up to but not including index j.</p>
-<code>
-make_out_word("&lt;&lt;&gt;&gt;", "Yay") → "&lt;&lt;Yay&gt;&gt;"
-make_out_word("&lt;&lt;&gt;&gt;", "WooHoo") → "&lt;&lt;WooHoo&gt;&gt;"
-make_out_word("[[]]", "word") → "[[word]]"
-</code><p>This exercise was taken from <a class="reference external" href="https://codingbat.com/prob/p184030">codingbat.com</a> and has been adapted for the Python language. There are many great programming exercises there, but the majority are created for Java.</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>make_out_word(&quot;&amp;lt;&amp;lt;&amp;gt;&amp;gt;&quot;, &quot;Yay&quot;) → &quot;&amp;lt;&amp;lt;Yay&amp;gt;&amp;gt;&quot;
+make_out_word(&quot;&amp;lt;&amp;lt;&amp;gt;&amp;gt;&quot;, &quot;WooHoo&quot;) → &quot;&amp;lt;&amp;lt;WooHoo&amp;gt;&amp;gt;&quot;
+make_out_word(&quot;[[]]&quot;, &quot;word&quot;) → &quot;[[word]]&quot;
+</pre></div>
+</div>
+<p>This exercise was taken from <a class="reference external" href="https://codingbat.com/prob/p184030">codingbat.com</a> and has been adapted for the Python language. There are many great programming exercises there, but the majority are created for Java.</p>
 <div class="section" id="starter-code">
 <h2>Starter Code<a class="headerlink" href="#starter-code" title="Permalink to this headline">¶</a></h2>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">make_out_word</span><span class="p">(</span><span class="n">out</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span> <span class="n">word</span><span class="p">:</span> <span class="nb">str</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">str</span><span class="p">:</span>

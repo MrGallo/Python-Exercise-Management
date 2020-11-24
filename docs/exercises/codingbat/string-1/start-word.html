@@ -128,6 +128,7 @@
 <li class="toctree-l3"><a class="reference internal" href="without-x-2.html">without_x_2</a></li>
 </ul>
 </li>
+<li class="toctree-l2"><a class="reference internal" href="../string-2/index.html">String-2</a></li>
 </ul>
 </li>
 </ul>
@@ -203,11 +204,12 @@
 <h1>start_word<a class="headerlink" href="#start-word" title="Permalink to this headline">¶</a></h1>
 <p><strong>Topic:</strong></p>
 <p>Given a string and a second “word” string, we’ll say that the word matches the string if it appears at the front of the string, except its first char does not need to match exactly. On a match, return the front of the string, or otherwise return the empty string. So, so with the string “hippo” the word “hi” returns “hi” and “xip” returns “hip”. The word will be at least length 1.</p>
-<code>
-start_word("hippo", "hi") → "hi"
-start_word("hippo", "xip") → "hip"
-start_word("hippo", "i") → "h"
-</code><p>This exercise was taken from <a class="reference external" href="https://codingbat.com/prob/p141494">codingbat.com</a> and has been adapted for the Python language. There are many great programming exercises there, but the majority are created for Java.</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>start_word(&quot;hippo&quot;, &quot;hi&quot;) → &quot;hi&quot;
+start_word(&quot;hippo&quot;, &quot;xip&quot;) → &quot;hip&quot;
+start_word(&quot;hippo&quot;, &quot;i&quot;) → &quot;h&quot;
+</pre></div>
+</div>
+<p>This exercise was taken from <a class="reference external" href="https://codingbat.com/prob/p141494">codingbat.com</a> and has been adapted for the Python language. There are many great programming exercises there, but the majority are created for Java.</p>
 <div class="section" id="starter-code">
 <h2>Starter Code<a class="headerlink" href="#starter-code" title="Permalink to this headline">¶</a></h2>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">start_word</span><span class="p">(</span><span class="nb">str</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span> <span class="n">word</span><span class="p">:</span> <span class="nb">str</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">str</span><span class="p">:</span>

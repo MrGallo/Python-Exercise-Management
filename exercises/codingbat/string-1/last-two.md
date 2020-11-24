@@ -5,11 +5,11 @@
 
 Given a string of any length, return a new string where the last 2 chars, if present, are swapped, so "coding" yields "codign".
 
-<code>
+```
 last_two("coding") → "codign"
 last_two("cat") → "cta"
 last_two("ab") → "ba"
-</code>
+```
 
 This exercise was taken from [codingbat.com](https://codingbat.com/prob/p194786) and has been adapted for the Python language. There are many great programming exercises there, but the majority are created for Java.
 

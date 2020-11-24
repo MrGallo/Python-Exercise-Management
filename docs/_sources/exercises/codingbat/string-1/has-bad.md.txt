@@ -5,11 +5,11 @@
 
 Given a string, return true if "bad" appears starting at index 0 or 1 in the string, such as with "badxxx" or "xbadxx" but not "xxbadxx". The string may be any length, including 0. Note: use .equals() to compare 2 strings.
 
-<code>
+```
 has_bad("badxx") → true
 has_bad("xbadxx") → true
 has_bad("xxbadxx") → false
-</code>
+```
 
 This exercise was taken from [codingbat.com](https://codingbat.com/prob/p139075) and has been adapted for the Python language. There are many great programming exercises there, but the majority are created for Java.
 

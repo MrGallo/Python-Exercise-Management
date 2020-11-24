@@ -5,11 +5,11 @@
 
 Given a string, return true if the first 2 chars in the string also appear at the end of the string, such as with "edited".
 
-<code>
+```
 front_again("edited") → true
 front_again("edit") → false
 front_again("ed") → true
-</code>
+```
 
 This exercise was taken from [codingbat.com](https://codingbat.com/prob/p196652) and has been adapted for the Python language. There are many great programming exercises there, but the majority are created for Java.
 

@@ -1,0 +1,88 @@
+# same_star_char
+**Topic:** 
+
+
+
+Returns true if for every '*' (star) in the string, if there are chars both immediately before and after the star, they are the same.
+
+```
+same_star_char("xy*yzz") → true
+same_star_char("xy*zzz") → false
+same_star_char("*xa*az") → true
+```
+
+This exercise was taken from [codingbat.com](https://codingbat.com/prob/p194491) and has been adapted for the Python language. There are many great programming exercises there, but the majority are created for Java.
+
+## Starter Code
+```python
+def same_star_char(str: str) -> bool:
+```
+
+## Tests
+```python
+from main import same_star_char
+
+
+def test_same_star_char_1():
+    assert same_star_char('xy*yzz') == True
+
+
+def test_same_star_char_2():
+    assert same_star_char('xy*zzz') == False
+
+
+def test_same_star_char_3():
+    assert same_star_char('*xa*az') == True
+
+
+def test_same_star_char_4():
+    assert same_star_char('*xa*bz') == False
+
+
+def test_same_star_char_5():
+    assert same_star_char('*xa*a*') == True
+
+
+def test_same_star_char_6():
+    assert same_star_char('') == True
+
+
+def test_same_star_char_7():
+    assert same_star_char('*xa*a*a') == True
+
+
+def test_same_star_char_8():
+    assert same_star_char('*xa*a*b') == False
+
+
+def test_same_star_char_9():
+    assert same_star_char('*12*2*2') == True
+
+
+def test_same_star_char_10():
+    assert same_star_char('12*2*3*') == False
+
+
+def test_same_star_char_11():
+    assert same_star_char('abcDEF') == True
+
+
+def test_same_star_char_12():
+    assert same_star_char('XY*YYYY*Z*') == False
+
+
+def test_same_star_char_13():
+    assert same_star_char('XY*YYYY*Y*') == True
+
+
+def test_same_star_char_14():
+    assert same_star_char('12*2*3*') == False
+
+
+def test_same_star_char_15():
+    assert same_star_char('*') == True
+
+
+def test_same_star_char_16():
+    assert same_star_char('**') == True
+```
