@@ -7,7 +7,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>non_start &mdash; Python Exercises  documentation</title>
+  <title>without_end_2 &mdash; Python Exercises  documentation</title>
   
 
   
@@ -39,8 +39,8 @@
     
     <link rel="index" title="Index" href="../../../genindex.html" />
     <link rel="search" title="Search" href="../../../search.html" />
-    <link rel="next" title="left_2" href="left-2.html" />
-    <link rel="prev" title="combo_string" href="combo-string.html" /> 
+    <link rel="next" title="middle_two" href="middle-two.html" />
+    <link rel="prev" title="the_end" href="the-end.html" /> 
 </head>
 
 <body class="wy-body-for-nav">
@@ -98,15 +98,15 @@
 <li class="toctree-l3"><a class="reference internal" href="first-half.html">first_half</a></li>
 <li class="toctree-l3"><a class="reference internal" href="without-end.html">without_end</a></li>
 <li class="toctree-l3"><a class="reference internal" href="combo-string.html">combo_string</a></li>
-<li class="toctree-l3 current"><a class="current reference internal" href="#">non_start</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="non-start.html">non_start</a></li>
+<li class="toctree-l3"><a class="reference internal" href="left-2.html">left_2</a></li>
+<li class="toctree-l3"><a class="reference internal" href="right-2.html">right_2</a></li>
+<li class="toctree-l3"><a class="reference internal" href="the-end.html">the_end</a></li>
+<li class="toctree-l3 current"><a class="current reference internal" href="#">without_end_2</a><ul>
 <li class="toctree-l4"><a class="reference internal" href="#starter-code">Starter Code</a></li>
 <li class="toctree-l4"><a class="reference internal" href="#tests">Tests</a></li>
 </ul>
 </li>
-<li class="toctree-l3"><a class="reference internal" href="left-2.html">left_2</a></li>
-<li class="toctree-l3"><a class="reference internal" href="right-2.html">right_2</a></li>
-<li class="toctree-l3"><a class="reference internal" href="the-end.html">the_end</a></li>
-<li class="toctree-l3"><a class="reference internal" href="without-end-2.html">without_end_2</a></li>
 <li class="toctree-l3"><a class="reference internal" href="middle-two.html">middle_two</a></li>
 <li class="toctree-l3"><a class="reference internal" href="ends-ly.html">ends_ly</a></li>
 <li class="toctree-l3"><a class="reference internal" href="n-twice.html">n_twice</a></li>
@@ -181,13 +181,13 @@
         
           <li><a href="index.html">String-1</a> &raquo;</li>
         
-      <li>non_start</li>
+      <li>without_end_2</li>
     
     
       <li class="wy-breadcrumbs-aside">
         
             
-            <a href="../../../_sources/exercises/codingbat/string-1/non-start.md.txt" rel="nofollow"> View page source</a>
+            <a href="../../../_sources/exercises/codingbat/string-1/without-end-2.md.txt" rel="nofollow"> View page source</a>
           
         
       </li>
@@ -200,61 +200,53 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
             
-  <div class="section" id="non-start">
-<h1>non_start<a class="headerlink" href="#non-start" title="Permalink to this headline">¶</a></h1>
+  <div class="section" id="without-end-2">
+<h1>without_end_2<a class="headerlink" href="#without-end-2" title="Permalink to this headline">¶</a></h1>
 <p><strong>Topic:</strong></p>
-<p>Given 2 strings, return their concatenation, except omit the first char of each. The strings will be at least length 1.</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>non_start(&quot;Hello&quot;, &quot;There&quot;) → &quot;ellohere&quot;
-non_start(&quot;java&quot;, &quot;code&quot;) → &quot;avaode&quot;
-non_start(&quot;shotl&quot;, &quot;java&quot;) → &quot;hotlava&quot;
+<p>Given a string, return a version without both the first and last char of the string. The string may be any length, including 0.</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>without_end_2(&quot;Hello&quot;) → &quot;ell&quot;
+without_end_2(&quot;abc&quot;) → &quot;b&quot;
+without_end_2(&quot;ab&quot;) → &quot;&quot;
 </pre></div>
 </div>
-<p>This exercise was taken from <a class="reference external" href="https://codingbat.com/prob/p143825">codingbat.com</a> and has been adapted for the Python language. There are many great programming exercises there, but the majority are created for Java.</p>
+<p>This exercise was taken from <a class="reference external" href="https://codingbat.com/prob/p174254">codingbat.com</a> and has been adapted for the Python language. There are many great programming exercises there, but the majority are created for Java.</p>
 <div class="section" id="starter-code">
 <h2>Starter Code<a class="headerlink" href="#starter-code" title="Permalink to this headline">¶</a></h2>
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">non_start</span><span class="p">(</span><span class="n">a</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span> <span class="n">b</span><span class="p">:</span> <span class="nb">str</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">str</span><span class="p">:</span>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">without_end_2</span><span class="p">(</span><span class="n">string</span><span class="p">:</span> <span class="nb">str</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">str</span><span class="p">:</span>
 </pre></div>
 </div>
 </div>
 <div class="section" id="tests">
 <h2>Tests<a class="headerlink" href="#tests" title="Permalink to this headline">¶</a></h2>
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">main</span> <span class="kn">import</span> <span class="n">non_start</span>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">main</span> <span class="kn">import</span> <span class="n">without_end_2</span>
 
 
-<span class="k">def</span> <span class="nf">test_non_start_1</span><span class="p">():</span>
-    <span class="k">assert</span> <span class="n">non_start</span><span class="p">(</span><span class="s1">&#39;Hello&#39;</span><span class="p">,</span> <span class="s1">&#39;There&#39;</span><span class="p">)</span> <span class="o">==</span> <span class="s1">&#39;ellohere&#39;</span>
+<span class="k">def</span> <span class="nf">test_without_end_2_1</span><span class="p">():</span>
+    <span class="k">assert</span> <span class="n">without_end_2</span><span class="p">(</span><span class="s1">&#39;Hello&#39;</span><span class="p">)</span> <span class="o">==</span> <span class="s1">&#39;ell&#39;</span>
 
 
-<span class="k">def</span> <span class="nf">test_non_start_2</span><span class="p">():</span>
-    <span class="k">assert</span> <span class="n">non_start</span><span class="p">(</span><span class="s1">&#39;java&#39;</span><span class="p">,</span> <span class="s1">&#39;code&#39;</span><span class="p">)</span> <span class="o">==</span> <span class="s1">&#39;avaode&#39;</span>
+<span class="k">def</span> <span class="nf">test_without_end_2_2</span><span class="p">():</span>
+    <span class="k">assert</span> <span class="n">without_end_2</span><span class="p">(</span><span class="s1">&#39;abc&#39;</span><span class="p">)</span> <span class="o">==</span> <span class="s1">&#39;b&#39;</span>
 
 
-<span class="k">def</span> <span class="nf">test_non_start_3</span><span class="p">():</span>
-    <span class="k">assert</span> <span class="n">non_start</span><span class="p">(</span><span class="s1">&#39;shotl&#39;</span><span class="p">,</span> <span class="s1">&#39;java&#39;</span><span class="p">)</span> <span class="o">==</span> <span class="s1">&#39;hotlava&#39;</span>
+<span class="k">def</span> <span class="nf">test_without_end_2_3</span><span class="p">():</span>
+    <span class="k">assert</span> <span class="n">without_end_2</span><span class="p">(</span><span class="s1">&#39;ab&#39;</span><span class="p">)</span> <span class="o">==</span> <span class="s1">&#39;&#39;</span>
 
 
-<span class="k">def</span> <span class="nf">test_non_start_4</span><span class="p">():</span>
-    <span class="k">assert</span> <span class="n">non_start</span><span class="p">(</span><span class="s1">&#39;ab&#39;</span><span class="p">,</span> <span class="s1">&#39;xy&#39;</span><span class="p">)</span> <span class="o">==</span> <span class="s1">&#39;by&#39;</span>
+<span class="k">def</span> <span class="nf">test_without_end_2_4</span><span class="p">():</span>
+    <span class="k">assert</span> <span class="n">without_end_2</span><span class="p">(</span><span class="s1">&#39;a&#39;</span><span class="p">)</span> <span class="o">==</span> <span class="s1">&#39;&#39;</span>
 
 
-<span class="k">def</span> <span class="nf">test_non_start_5</span><span class="p">():</span>
-    <span class="k">assert</span> <span class="n">non_start</span><span class="p">(</span><span class="s1">&#39;ab&#39;</span><span class="p">,</span> <span class="s1">&#39;x&#39;</span><span class="p">)</span> <span class="o">==</span> <span class="s1">&#39;b&#39;</span>
+<span class="k">def</span> <span class="nf">test_without_end_2_5</span><span class="p">():</span>
+    <span class="k">assert</span> <span class="n">without_end_2</span><span class="p">(</span><span class="s1">&#39;&#39;</span><span class="p">)</span> <span class="o">==</span> <span class="s1">&#39;&#39;</span>
 
 
-<span class="k">def</span> <span class="nf">test_non_start_6</span><span class="p">():</span>
-    <span class="k">assert</span> <span class="n">non_start</span><span class="p">(</span><span class="s1">&#39;x&#39;</span><span class="p">,</span> <span class="s1">&#39;ac&#39;</span><span class="p">)</span> <span class="o">==</span> <span class="s1">&#39;c&#39;</span>
+<span class="k">def</span> <span class="nf">test_without_end_2_6</span><span class="p">():</span>
+    <span class="k">assert</span> <span class="n">without_end_2</span><span class="p">(</span><span class="s1">&#39;coldy&#39;</span><span class="p">)</span> <span class="o">==</span> <span class="s1">&#39;old&#39;</span>
 
 
-<span class="k">def</span> <span class="nf">test_non_start_7</span><span class="p">():</span>
-    <span class="k">assert</span> <span class="n">non_start</span><span class="p">(</span><span class="s1">&#39;a&#39;</span><span class="p">,</span> <span class="s1">&#39;x&#39;</span><span class="p">)</span> <span class="o">==</span> <span class="s1">&#39;&#39;</span>
-
-
-<span class="k">def</span> <span class="nf">test_non_start_8</span><span class="p">():</span>
-    <span class="k">assert</span> <span class="n">non_start</span><span class="p">(</span><span class="s1">&#39;kit&#39;</span><span class="p">,</span> <span class="s1">&#39;kat&#39;</span><span class="p">)</span> <span class="o">==</span> <span class="s1">&#39;itat&#39;</span>
-
-
-<span class="k">def</span> <span class="nf">test_non_start_9</span><span class="p">():</span>
-    <span class="k">assert</span> <span class="n">non_start</span><span class="p">(</span><span class="s1">&#39;mart&#39;</span><span class="p">,</span> <span class="s1">&#39;dart&#39;</span><span class="p">)</span> <span class="o">==</span> <span class="s1">&#39;artart&#39;</span>
+<span class="k">def</span> <span class="nf">test_without_end_2_7</span><span class="p">():</span>
+    <span class="k">assert</span> <span class="n">without_end_2</span><span class="p">(</span><span class="s1">&#39;java code&#39;</span><span class="p">)</span> <span class="o">==</span> <span class="s1">&#39;ava cod&#39;</span>
 </pre></div>
 </div>
 </div>
@@ -268,10 +260,10 @@ non_start(&quot;shotl&quot;, &quot;java&quot;) → &quot;hotlava&quot;
   
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
       
-        <a href="left-2.html" class="btn btn-neutral float-right" title="left_2" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+        <a href="middle-two.html" class="btn btn-neutral float-right" title="middle_two" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
       
       
-        <a href="combo-string.html" class="btn btn-neutral float-left" title="combo_string" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+        <a href="the-end.html" class="btn btn-neutral float-left" title="the_end" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
       
     </div>
   

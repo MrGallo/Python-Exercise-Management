@@ -17,7 +17,7 @@ String-1
     left-2
     right-2
     the-end
-    withou-end-2
+    without-end-2
     middle-two
     ends-ly
     n-twice
