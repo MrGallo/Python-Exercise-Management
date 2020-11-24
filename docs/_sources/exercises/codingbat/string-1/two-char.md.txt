@@ -1,0 +1,84 @@
+# two_char
+**Topic:** 
+
+
+
+Given a string and an index, return a string length 2 starting at the given index. If the index is too big or too small to define a string length 2, use the first 2 chars. The string length will be at least 2.
+
+<code>
+two_char("java", 0) → "ja"
+two_char("java", 2) → "va"
+two_char("java", 3) → "ja"
+</code>
+
+This exercise was taken from [codingbat.com](https://codingbat.com/prob/p144623) and has been adapted for the Python language. There are many great programming exercises there, but the majority are created for Java.
+
+## Starter Code
+```python
+def two_char(str: str, index: int) -> str:
+```
+
+## Tests
+```python
+from main import two_char
+
+
+def test_two_char_1():
+    assert two_char('java', 0) == 'ja'
+
+
+def test_two_char_2():
+    assert two_char('java', 2) == 'va'
+
+
+def test_two_char_3():
+    assert two_char('java', 3) == 'ja'
+
+
+def test_two_char_4():
+    assert two_char('java', 4) == 'ja'
+
+
+def test_two_char_5():
+    assert two_char('java', -1) == 'ja'
+
+
+def test_two_char_6():
+    assert two_char('Hello', 0) == 'He'
+
+
+def test_two_char_7():
+    assert two_char('Hello', 1) == 'el'
+
+
+def test_two_char_8():
+    assert two_char('Hello', 99) == 'He'
+
+
+def test_two_char_9():
+    assert two_char('Hello', 3) == 'lo'
+
+
+def test_two_char_10():
+    assert two_char('Hello', 4) == 'He'
+
+
+def test_two_char_11():
+    assert two_char('Hello', 5) == 'He'
+
+
+def test_two_char_12():
+    assert two_char('Hello', -7) == 'He'
+
+
+def test_two_char_13():
+    assert two_char('Hello', 6) == 'He'
+
+
+def test_two_char_14():
+    assert two_char('Hello', -1) == 'He'
+
+
+def test_two_char_15():
+    assert two_char('yay', 0) == 'ya'
+```
