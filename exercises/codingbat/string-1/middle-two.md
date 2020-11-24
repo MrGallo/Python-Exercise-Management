@@ -1,0 +1,44 @@
+# middle_two
+**Topic:** 
+
+
+
+Given a string of even length, return a string made of the middle two chars, so the string "string" yields "ri". The string length will be at least 2.
+
+<code>
+middle_two("string") → "ri"
+middle_two("code") → "od"
+middle_two("Practice") → "ct"
+</code>
+
+This exercise was taken from [codingbat.com](https://codingbat.com/prob/p137729) and has been adapted for the Python language. There are many great programming exercises there, but the majority are created for Java.
+
+## Starter Code
+```python
+def middle_two(str: str) -> str:
+```
+
+## Tests
+```python
+from main import middle_two
+
+
+def test_middle_two_1():
+    assert middle_two('string') == 'ri'
+
+
+def test_middle_two_2():
+    assert middle_two('code') == 'od'
+
+
+def test_middle_two_3():
+    assert middle_two('Practice') == 'ct'
+
+
+def test_middle_two_4():
+    assert middle_two('ab') == 'ab'
+
+
+def test_middle_two_5():
+    assert middle_two('0123456789') == '45'
+```
