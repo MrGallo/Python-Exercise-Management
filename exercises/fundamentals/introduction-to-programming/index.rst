@@ -13,3 +13,4 @@ Introduction To Programming
     all-the-operators
     student-groups
     how-many-quarters
+    banquet-hall-chairs

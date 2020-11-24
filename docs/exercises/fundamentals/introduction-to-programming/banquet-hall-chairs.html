@@ -7,7 +7,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>Hello, World! &mdash; Python Exercises  documentation</title>
+  <title>Banquet Hall Chairs &mdash; Python Exercises  documentation</title>
   
 
   
@@ -39,8 +39,7 @@
     
     <link rel="index" title="Index" href="../../../genindex.html" />
     <link rel="search" title="Search" href="../../../search.html" />
-    <link rel="next" title="Hello, Goodbye" href="hello-goodbye.html" />
-    <link rel="prev" title="Introduction To Programming" href="index.html" /> 
+    <link rel="prev" title="How Many Quarters?" href="how-many-quarters.html" /> 
 </head>
 
 <body class="wy-body-for-nav">
@@ -88,12 +87,7 @@
               <ul class="current">
 <li class="toctree-l1 current"><a class="reference internal" href="../index.html">Fundamentals</a><ul class="current">
 <li class="toctree-l2 current"><a class="reference internal" href="index.html">Introduction To Programming</a><ul class="current">
-<li class="toctree-l3 current"><a class="current reference internal" href="#">Hello, World!</a><ul>
-<li class="toctree-l4"><a class="reference internal" href="#your-task">Your task</a></li>
-<li class="toctree-l4"><a class="reference internal" href="#starter-code">Starter Code</a></li>
-<li class="toctree-l4"><a class="reference internal" href="#tests">Tests</a></li>
-</ul>
-</li>
+<li class="toctree-l3"><a class="reference internal" href="hello-world.html">Hello, World!</a></li>
 <li class="toctree-l3"><a class="reference internal" href="hello-goodbye.html">Hello, Goodbye</a></li>
 <li class="toctree-l3"><a class="reference internal" href="hamburger.html">Hamburger</a></li>
 <li class="toctree-l3"><a class="reference internal" href="one-to-five.html">One to Five</a></li>
@@ -102,7 +96,11 @@
 <li class="toctree-l3"><a class="reference internal" href="all-the-operators.html">All the Operators</a></li>
 <li class="toctree-l3"><a class="reference internal" href="student-groups.html">Student Groups</a></li>
 <li class="toctree-l3"><a class="reference internal" href="how-many-quarters.html">How Many Quarters?</a></li>
-<li class="toctree-l3"><a class="reference internal" href="banquet-hall-chairs.html">Banquet Hall Chairs</a></li>
+<li class="toctree-l3 current"><a class="current reference internal" href="#">Banquet Hall Chairs</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#starter-code">Starter Code</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#tests">Tests</a></li>
+</ul>
+</li>
 </ul>
 </li>
 </ul>
@@ -157,13 +155,13 @@
         
           <li><a href="index.html">Introduction To Programming</a> &raquo;</li>
         
-      <li>Hello, World!</li>
+      <li>Banquet Hall Chairs</li>
     
     
       <li class="wy-breadcrumbs-aside">
         
             
-            <a href="../../../_sources/exercises/fundamentals/introduction-to-programming/hello-world.md.txt" rel="nofollow"> View page source</a>
+            <a href="../../../_sources/exercises/fundamentals/introduction-to-programming/banquet-hall-chairs.md.txt" rel="nofollow"> View page source</a>
           
         
       </li>
@@ -176,40 +174,34 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
             
-  <div class="section" id="hello-world">
-<h1>Hello, World!<a class="headerlink" href="#hello-world" title="Permalink to this headline">¶</a></h1>
-<p><strong>Topic:</strong> output a message</p>
-<p>One of the most important parts of a computer program is the ability for the computer to talk to the user (the person running the program). In Python, this is achieved using the <code class="docutils literal notranslate"><span class="pre">print()</span></code> function. The <code class="docutils literal notranslate"><span class="pre">print()</span></code> function will will output anything you want to the terminal screen (it does not activate your printer).</p>
-<div class="section" id="your-task">
-<h2>Your task<a class="headerlink" href="#your-task" title="Permalink to this headline">¶</a></h2>
-<ol>
-<li><p>Run the starter code to see an example of what it looks like to print something to the terminal. The code, as it is, should output the following:</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">Hello</span><span class="p">,</span>
-</pre></div>
-</div>
-</li>
-<li><p>In addition to the output that is already there, make the program print out <code class="docutils literal notranslate"><span class="pre">&quot;World!&quot;</span></code>. The result should look like:</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>Hello,
-World!
-</pre></div>
-</div>
-</li>
-</ol>
-</div>
+  <div class="section" id="banquet-hall-chairs">
+<h1>Banquet Hall Chairs<a class="headerlink" href="#banquet-hall-chairs" title="Permalink to this headline">¶</a></h1>
+<p><strong>Topic:</strong> store data in variables</p>
+<p>The program will calculate the total number of chairs in a banquet hall. This is determined by the number of tables and the number of chairs per table.</p>
+<p>Initialize a variable called <code class="docutils literal notranslate"><span class="pre">tables</span></code> and assign it a value of <code class="docutils literal notranslate"><span class="pre">32</span></code>.</p>
+<p>Then initialize a variable called <code class="docutils literal notranslate"><span class="pre">chairs_per_table</span></code>, and assign it a value of <code class="docutils literal notranslate"><span class="pre">9</span></code>.</p>
+<p>The program will calculate the total chairs and then output a message.</p>
 <div class="section" id="starter-code">
 <h2>Starter Code<a class="headerlink" href="#starter-code" title="Permalink to this headline">¶</a></h2>
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Hello,&quot;</span><span class="p">)</span>
-<span class="nb">print</span><span class="p">()</span>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># initialize tables here</span>
+<span class="c1"># initialize chairs_per_table here</span>
+
+<span class="c1"># do not modify the code below this line</span>
+<span class="n">total_chairs</span> <span class="o">=</span> <span class="n">tables</span> <span class="o">*</span> <span class="n">chairs_per_table</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;There are </span><span class="si">{total_chairs}</span><span class="s2"> chairs.&quot;</span><span class="p">)</span>
 </pre></div>
 </div>
 </div>
 <div class="section" id="tests">
 <h2>Tests<a class="headerlink" href="#tests" title="Permalink to this headline">¶</a></h2>
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">exercise.fixtures</span> <span class="kn">import</span> <span class="n">captured_output</span>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">exercise.fixtures</span> <span class="kn">import</span> <span class="n">captured_output</span><span class="p">,</span> <span class="n">source_code_matches</span>
 
 
-<span class="k">def</span> <span class="nf">test_hello_world</span><span class="p">(</span><span class="n">captured_output</span><span class="p">):</span>
-    <span class="k">assert</span> <span class="n">captured_output</span><span class="p">()</span> <span class="o">==</span> <span class="s2">&quot;Hello,</span><span class="se">\n</span><span class="s2">World!&quot;</span>
+<span class="k">def</span> <span class="nf">test_bottom_code_isnt_modified</span><span class="p">():</span>
+    <span class="k">assert</span> <span class="nb">len</span><span class="p">(</span><span class="n">source_code_matches</span><span class="p">(</span><span class="sa">r</span><span class="s1">&#39;total_chairs = tables \* chairs_per_table\nprint\(f&quot;There are </span><span class="si">{total_chairs}</span><span class="s1"> chairs.&quot;\)&#39;</span><span class="p">))</span> <span class="o">==</span> <span class="mi">1</span><span class="p">,</span> <span class="s2">&quot;You shouldn&#39;t modify the code at the bottom.&quot;</span>
+
+<span class="k">def</span> <span class="nf">test_calculates_correct_numner</span><span class="p">(</span><span class="n">captured_output</span><span class="p">):</span>
+    <span class="k">assert</span> <span class="n">captured_output</span><span class="p">()</span> <span class="o">==</span> <span class="s2">&quot;There are 288 chairs.&quot;</span>
 </pre></div>
 </div>
 </div>
@@ -223,10 +215,8 @@ World!
   
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
       
-        <a href="hello-goodbye.html" class="btn btn-neutral float-right" title="Hello, Goodbye" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
       
-      
-        <a href="index.html" class="btn btn-neutral float-left" title="Introduction To Programming" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+        <a href="how-many-quarters.html" class="btn btn-neutral float-left" title="How Many Quarters?" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
       
     </div>
   
