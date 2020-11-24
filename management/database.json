@@ -224,12 +224,12 @@
                 "solution": ""
             },
             {
-                "name": "withou_end_2",
+                "name": "without_end_2",
                 "topic": "",
                 "requirements": [],
-                "description": "Given a string, return a version without both the first and last char of the string. The string may be any length, including 0.\n\n```\nwithou_end_2(\"Hello\") \u2192 \"ell\"\nwithou_end_2(\"abc\") \u2192 \"b\"\nwithou_end_2(\"ab\") \u2192 \"\"\n```\n\nThis exercise was taken from [codingbat.com](https://codingbat.com/prob/p174254) and has been adapted for the Python language. There are many great programming exercises there, but the majority are created for Java.",
-                "starter_code": "def withou_end_2(string: str) -> str:\n    ",
-                "tests": "from main import withou_end_2\n\n\ndef test_withou_end_2_1():\n    assert withou_end_2('Hello') == 'ell'\n\n\ndef test_withou_end_2_2():\n    assert withou_end_2('abc') == 'b'\n\n\ndef test_withou_end_2_3():\n    assert withou_end_2('ab') == ''\n\n\ndef test_withou_end_2_4():\n    assert withou_end_2('a') == ''\n\n\ndef test_withou_end_2_5():\n    assert withou_end_2('') == ''\n\n\ndef test_withou_end_2_6():\n    assert withou_end_2('coldy') == 'old'\n\n\ndef test_withou_end_2_7():\n    assert withou_end_2('java code') == 'ava cod'\n\n\n",
+                "description": "Given a string, return a version without both the first and last char of the string. The string may be any length, including 0.\n\n```\nwithout_end_2(\"Hello\") \u2192 \"ell\"\nwithout_end_2(\"abc\") \u2192 \"b\"\nwithout_end_2(\"ab\") \u2192 \"\"\n```\n\nThis exercise was taken from [codingbat.com](https://codingbat.com/prob/p174254) and has been adapted for the Python language. There are many great programming exercises there, but the majority are created for Java.",
+                "starter_code": "def without_end_2(string: str) -> str:\n    ",
+                "tests": "from main import without_end_2\n\n\ndef test_without_end_2_1():\n    assert without_end_2('Hello') == 'ell'\n\n\ndef test_without_end_2_2():\n    assert without_end_2('abc') == 'b'\n\n\ndef test_without_end_2_3():\n    assert without_end_2('ab') == ''\n\n\ndef test_without_end_2_4():\n    assert without_end_2('a') == ''\n\n\ndef test_without_end_2_5():\n    assert without_end_2('') == ''\n\n\ndef test_without_end_2_6():\n    assert without_end_2('coldy') == 'old'\n\n\ndef test_without_end_2_7():\n    assert without_end_2('java code') == 'ava cod'\n\n\n",
                 "solution": ""
             },
             {
