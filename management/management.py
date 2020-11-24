@@ -494,8 +494,8 @@ class ChapterMenu(ItemMenu):
         regex = r"# name\n+(.+)"
         name = re.search(regex, contents).group(1)
 
-        regex = r"# topic\n+(.+)"
-        topic = re.search(regex, contents).group(1)
+        regex = r"# topic\n+(.+?)\n# requirements"
+        topic = re.search(regex, contents, re.DOTALL).group(1).strip()
 
         regex = r"# requirements\n+(.+?)\n# description"
         requirements = re.search(regex, contents, re.DOTALL).group(1).strip()
