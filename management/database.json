@@ -1,6 +1,7 @@
 {
     "series_list": [
-        "Fundamentals"
+        "Fundamentals",
+        "Codingbat"
     ],
     "Fundamentals": {
         "chapter_list": [
@@ -96,6 +97,310 @@
                 "starter_code": "# initialize tables here\n# initialize chairs_per_table here\n\n# do not modify the code below this line\ntotal_chairs = tables * chairs_per_table\nprint(f\"There are {total_chairs} chairs.\")",
                 "tests": "from exercise.fixtures import captured_output, source_code_matches\n\n\ndef test_bottom_code_isnt_modified():\n    assert len(source_code_matches(r'total_chairs = tables \\* chairs_per_table\\nprint\\(f\"There are {total_chairs} chairs.\"\\)')) == 1, \"You shouldn't modify the code at the bottom.\"\n\ndef test_calculates_correct_numner(captured_output):\n    assert captured_output() == \"There are 288 chairs.\"",
                 "solution": "tables = 32\nchairs_per_table = 9\n\n# do not modify the code below this line\ntotal_chairs = tables * chairs_per_table\nprint(f\"There are {total_chairs} chairs.\")"
+            }
+        ]
+    },
+    "Codingbat": {
+        "chapter_list": [
+            "String-1"
+        ],
+        "String-1": [
+            {
+                "name": "hello_name",
+                "topic": "",
+                "requirements": [],
+                "description": "Given a string name, e.g. \"Bob\", return a greeting of the form \"Hello Bob!\".\n\n<code>\nhello_name(\"Bob\") \u2192 \"Hello Bob!\"\nhello_name(\"Alice\") \u2192 \"Hello Alice!\"\nhello_name(\"X\") \u2192 \"Hello X!\"\n</code>\n\nThis exercise was taken from [codingbat.com](https://codingbat.com/prob/p171896) and has been adapted for the Python language. There are many great programming exercises there, but the majority are created for Java.",
+                "starter_code": "def hello_name(name: str) -> str:\n    ",
+                "tests": "from main import hello_name\n\n\ndef test_hello_name_1():\n    assert hello_name('Bob') == 'Hello Bob!'\n\n\ndef test_hello_name_2():\n    assert hello_name('Alice') == 'Hello Alice!'\n\n\ndef test_hello_name_3():\n    assert hello_name('X') == 'Hello X!'\n\n\ndef test_hello_name_4():\n    assert hello_name('Dolly') == 'Hello Dolly!'\n\n\ndef test_hello_name_5():\n    assert hello_name('Alpha') == 'Hello Alpha!'\n\n\ndef test_hello_name_6():\n    assert hello_name('Omega') == 'Hello Omega!'\n\n\ndef test_hello_name_7():\n    assert hello_name('Goodbye') == 'Hello Goodbye!'\n\n\ndef test_hello_name_8():\n    assert hello_name('ho ho ho') == 'Hello ho ho ho!'\n\n\ndef test_hello_name_9():\n    assert hello_name('xyz!') == 'Hello xyz!!'\n\n\ndef test_hello_name_10():\n    assert hello_name('Hello') == 'Hello Hello!'\n\n\n",
+                "solution": ""
+            },
+            {
+                "name": "make_abba",
+                "topic": "",
+                "requirements": [],
+                "description": "Given two strings, a and b, return the result of putting them together in the order abba, e.g. \"Hi\" and \"Bye\" returns \"HiByeByeHi\".\n\n<code>\nmake_abba(\"Hi\", \"Bye\") \u2192 \"HiByeByeHi\"\nmake_abba(\"Yo\", \"Alice\") \u2192 \"YoAliceAliceYo\"\nmake_abba(\"What\", \"Up\") \u2192 \"WhatUpUpWhat\"\n</code>\n\nThis exercise was taken from [codingbat.com](https://codingbat.com/prob/p161056) and has been adapted for the Python language. There are many great programming exercises there, but the majority are created for Java.",
+                "starter_code": "def make_abba(a: str, b: str) -> str:\n    ",
+                "tests": "from main import make_abba\n\n\ndef test_make_abba_1():\n    assert make_abba('Hi', 'Bye') == 'HiByeByeHi'\n\n\ndef test_make_abba_2():\n    assert make_abba('Yo', 'Alice') == 'YoAliceAliceYo'\n\n\ndef test_make_abba_3():\n    assert make_abba('What', 'Up') == 'WhatUpUpWhat'\n\n\ndef test_make_abba_4():\n    assert make_abba('aaa', 'bbb') == 'aaabbbbbbaaa'\n\n\ndef test_make_abba_5():\n    assert make_abba('x', 'y') == 'xyyx'\n\n\ndef test_make_abba_6():\n    assert make_abba('x', '') == 'xx'\n\n\ndef test_make_abba_7():\n    assert make_abba('', 'y') == 'yy'\n\n\ndef test_make_abba_8():\n    assert make_abba('Bo', 'Ya') == 'BoYaYaBo'\n\n\ndef test_make_abba_9():\n    assert make_abba('Ya', 'Ya') == 'YaYaYaYa'\n\n\n",
+                "solution": ""
+            },
+            {
+                "name": "make_tags",
+                "topic": "",
+                "requirements": [],
+                "description": "The web is built with HTML strings like \"&lt;i&gt;Yay&lt;/i&gt;\" which draws Yay as italic text. In this example, the \"i\" tag makes &lt;i&gt; and &lt;/i&gt; which surround the word \"Yay\". Given tag and word strings, create the HTML string with tags around the word, e.g. \"&lt;i&gt;Yay&lt;/i&gt;\".\n\n<code>\nmake_tags(\"i\", \"Yay\") \u2192 \"&lt;i&gt;Yay&lt;/i&gt;\"\nmake_tags(\"i\", \"Hello\") \u2192 \"&lt;i&gt;Hello&lt;/i&gt;\"\nmake_tags(\"cite\", \"Yay\") \u2192 \"&lt;cite&gt;Yay&lt;/cite&gt;\"\n</code>\n\nThis exercise was taken from [codingbat.com](https://codingbat.com/prob/p147483) and has been adapted for the Python language. There are many great programming exercises there, but the majority are created for Java.",
+                "starter_code": "def make_tags(tag: str, word: str) -> str:\n    ",
+                "tests": "from main import make_tags\n\n\ndef test_make_tags_1():\n    assert make_tags('i', 'Yay') == '<i>Yay</i>'\n\n\ndef test_make_tags_2():\n    assert make_tags('i', 'Hello') == '<i>Hello</i>'\n\n\ndef test_make_tags_3():\n    assert make_tags('cite', 'Yay') == '<cite>Yay</cite>'\n\n\ndef test_make_tags_4():\n    assert make_tags('address', 'here') == '<address>here</address>'\n\n\ndef test_make_tags_5():\n    assert make_tags('body', 'Heart') == '<body>Heart</body>'\n\n\ndef test_make_tags_6():\n    assert make_tags('i', 'i') == '<i>i</i>'\n\n\ndef test_make_tags_7():\n    assert make_tags('i', '') == '<i></i>'\n\n\n",
+                "solution": ""
+            },
+            {
+                "name": "make_out_word",
+                "topic": "",
+                "requirements": [],
+                "description": "Given an \"out\" string length 4, such as \"&lt;&lt;&gt;&gt;\", and a word, return a new string where the word is in the middle of the out string, e.g. \"&lt;&lt;word&gt;&gt;\". Note: use str.substring(i, j) to extract the String starting at index i and going up to but not including index j.\n\n<code>\nmake_out_word(\"&lt;&lt;&gt;&gt;\", \"Yay\") \u2192 \"&lt;&lt;Yay&gt;&gt;\"\nmake_out_word(\"&lt;&lt;&gt;&gt;\", \"WooHoo\") \u2192 \"&lt;&lt;WooHoo&gt;&gt;\"\nmake_out_word(\"[[]]\", \"word\") \u2192 \"[[word]]\"\n</code>\n\nThis exercise was taken from [codingbat.com](https://codingbat.com/prob/p184030) and has been adapted for the Python language. There are many great programming exercises there, but the majority are created for Java.",
+                "starter_code": "def make_out_word(out: str, word: str) -> str:\n    ",
+                "tests": "from main import make_out_word\n\n\ndef test_make_out_word_1():\n    assert make_out_word('<<>>', 'Yay') == '<<Yay>>'\n\n\ndef test_make_out_word_2():\n    assert make_out_word('<<>>', 'WooHoo') == '<<WooHoo>>'\n\n\ndef test_make_out_word_3():\n    assert make_out_word('[[]]', 'word') == '[[word]]'\n\n\ndef test_make_out_word_4():\n    assert make_out_word('HHoo', 'Hello') == 'HHHellooo'\n\n\ndef test_make_out_word_5():\n    assert make_out_word('abyz', 'YAY') == 'abYAYyz'\n\n\n",
+                "solution": ""
+            },
+            {
+                "name": "extra_end",
+                "topic": "",
+                "requirements": [],
+                "description": "Given a string, return a new string made of 3 copies of the last 2 chars of the original string. The string length will be at least 2.\n\n<code>\nextra_end(\"Hello\") \u2192 \"lololo\"\nextra_end(\"ab\") \u2192 \"ababab\"\nextra_end(\"Hi\") \u2192 \"HiHiHi\"\n</code>\n\nThis exercise was taken from [codingbat.com](https://codingbat.com/prob/p108853) and has been adapted for the Python language. There are many great programming exercises there, but the majority are created for Java.",
+                "starter_code": "def extra_end(str: str) -> str:\n    ",
+                "tests": "from main import extra_end\n\n\ndef test_extra_end_1():\n    assert extra_end('Hello') == 'lololo'\n\n\ndef test_extra_end_2():\n    assert extra_end('ab') == 'ababab'\n\n\ndef test_extra_end_3():\n    assert extra_end('Hi') == 'HiHiHi'\n\n\ndef test_extra_end_4():\n    assert extra_end('Candy') == 'dydydy'\n\n\ndef test_extra_end_5():\n    assert extra_end('Code') == 'dedede'\n\n\n",
+                "solution": ""
+            },
+            {
+                "name": "first_two",
+                "topic": "",
+                "requirements": [],
+                "description": "Given a string, return the string made of its first two chars, so the String \"Hello\" yields \"He\". If the string is shorter than length 2, return whatever there is, so \"X\" yields \"X\", and the empty string \"\" yields the empty string \"\". Note that str.length() returns the length of a string.\n\n<code>\nfirst_two(\"Hello\") \u2192 \"He\"\nfirst_two(\"abcdefg\") \u2192 \"ab\"\nfirst_two(\"ab\") \u2192 \"ab\"\n</code>\n\nThis exercise was taken from [codingbat.com](https://codingbat.com/prob/p163411) and has been adapted for the Python language. There are many great programming exercises there, but the majority are created for Java.",
+                "starter_code": "def first_two(str: str) -> str:\n    ",
+                "tests": "from main import first_two\n\n\ndef test_first_two_1():\n    assert first_two('Hello') == 'He'\n\n\ndef test_first_two_2():\n    assert first_two('abcdefg') == 'ab'\n\n\ndef test_first_two_3():\n    assert first_two('ab') == 'ab'\n\n\ndef test_first_two_4():\n    assert first_two('a') == 'a'\n\n\ndef test_first_two_5():\n    assert first_two('') == ''\n\n\ndef test_first_two_6():\n    assert first_two('Kitten') == 'Ki'\n\n\ndef test_first_two_7():\n    assert first_two('hi') == 'hi'\n\n\ndef test_first_two_8():\n    assert first_two('hiya') == 'hi'\n\n\n",
+                "solution": ""
+            },
+            {
+                "name": "first_half",
+                "topic": "",
+                "requirements": [],
+                "description": "Given a string of even length, return the first half. So the string \"WooHoo\" yields \"Woo\".\n\n<code>\nfirst_half(\"WooHoo\") \u2192 \"Woo\"\nfirst_half(\"HelloThere\") \u2192 \"Hello\"\nfirst_half(\"abcdef\") \u2192 \"abc\"\n</code>\n\nThis exercise was taken from [codingbat.com](https://codingbat.com/prob/p172267) and has been adapted for the Python language. There are many great programming exercises there, but the majority are created for Java.",
+                "starter_code": "def first_half(str: str) -> str:\n    ",
+                "tests": "from main import first_half\n\n\ndef test_first_half_1():\n    assert first_half('WooHoo') == 'Woo'\n\n\ndef test_first_half_2():\n    assert first_half('HelloThere') == 'Hello'\n\n\ndef test_first_half_3():\n    assert first_half('abcdef') == 'abc'\n\n\ndef test_first_half_4():\n    assert first_half('ab') == 'a'\n\n\ndef test_first_half_5():\n    assert first_half('') == ''\n\n\ndef test_first_half_6():\n    assert first_half('0123456789') == '01234'\n\n\ndef test_first_half_7():\n    assert first_half('kitten') == 'kit'\n\n\n",
+                "solution": ""
+            },
+            {
+                "name": "without_end",
+                "topic": "",
+                "requirements": [],
+                "description": "Given a string, return a version without the first and last char, so \"Hello\" yields \"ell\". The string length will be at least 2.\n\n<code>\nwithout_end(\"Hello\") \u2192 \"ell\"\nwithout_end(\"java\") \u2192 \"av\"\nwithout_end(\"coding\") \u2192 \"odin\"\n</code>\n\nThis exercise was taken from [codingbat.com](https://codingbat.com/prob/p130896) and has been adapted for the Python language. There are many great programming exercises there, but the majority are created for Java.",
+                "starter_code": "def without_end(str: str) -> str:\n    ",
+                "tests": "from main import without_end\n\n\ndef test_without_end_1():\n    assert without_end('Hello') == 'ell'\n\n\ndef test_without_end_2():\n    assert without_end('java') == 'av'\n\n\ndef test_without_end_3():\n    assert without_end('coding') == 'odin'\n\n\ndef test_without_end_4():\n    assert without_end('code') == 'od'\n\n\ndef test_without_end_5():\n    assert without_end('ab') == ''\n\n\ndef test_without_end_6():\n    assert without_end('Chocolate!') == 'hocolate'\n\n\ndef test_without_end_7():\n    assert without_end('kitten') == 'itte'\n\n\ndef test_without_end_8():\n    assert without_end('woohoo') == 'ooho'\n\n\n",
+                "solution": ""
+            },
+            {
+                "name": "combo_string",
+                "topic": "",
+                "requirements": [],
+                "description": "Given 2 strings, a and b, return a string of the form short+long+short, with the shorter string on the outside and the longer string on the inside. The strings will not be the same length, but they may be empty (length 0).\n\n<code>\ncombo_string(\"Hello\", \"hi\") \u2192 \"hiHellohi\"\ncombo_string(\"hi\", \"Hello\") \u2192 \"hiHellohi\"\ncombo_string(\"aaa\", \"b\") \u2192 \"baaab\"\n</code>\n\nThis exercise was taken from [codingbat.com](https://codingbat.com/prob/p168564) and has been adapted for the Python language. There are many great programming exercises there, but the majority are created for Java.",
+                "starter_code": "def combo_string(a: str, b: str) -> str:\n    ",
+                "tests": "from main import combo_string\n\n\ndef test_combo_string_1():\n    assert combo_string('Hello', 'hi') == 'hiHellohi'\n\n\ndef test_combo_string_2():\n    assert combo_string('hi', 'Hello') == 'hiHellohi'\n\n\ndef test_combo_string_3():\n    assert combo_string('aaa', 'b') == 'baaab'\n\n\ndef test_combo_string_4():\n    assert combo_string('b', 'aaa') == 'baaab'\n\n\ndef test_combo_string_5():\n    assert combo_string('aaa', '') == 'aaa'\n\n\ndef test_combo_string_6():\n    assert combo_string('', 'bb') == 'bb'\n\n\ndef test_combo_string_7():\n    assert combo_string('aaa', '1234') == 'aaa1234aaa'\n\n\ndef test_combo_string_8():\n    assert combo_string('aaa', 'bb') == 'bbaaabb'\n\n\ndef test_combo_string_9():\n    assert combo_string('a', 'bb') == 'abba'\n\n\ndef test_combo_string_10():\n    assert combo_string('bb', 'a') == 'abba'\n\n\ndef test_combo_string_11():\n    assert combo_string('xyz', 'ab') == 'abxyzab'\n\n\n",
+                "solution": ""
+            },
+            {
+                "name": "non_start",
+                "topic": "",
+                "requirements": [],
+                "description": "Given 2 strings, return their concatenation, except omit the first char of each. The strings will be at least length 1.\n\n<code>\nnon_start(\"Hello\", \"There\") \u2192 \"ellohere\"\nnon_start(\"java\", \"code\") \u2192 \"avaode\"\nnon_start(\"shotl\", \"java\") \u2192 \"hotlava\"\n</code>\n\nThis exercise was taken from [codingbat.com](https://codingbat.com/prob/p143825) and has been adapted for the Python language. There are many great programming exercises there, but the majority are created for Java.",
+                "starter_code": "def non_start(a: str, b: str) -> str:\n    ",
+                "tests": "from main import non_start\n\n\ndef test_non_start_1():\n    assert non_start('Hello', 'There') == 'ellohere'\n\n\ndef test_non_start_2():\n    assert non_start('java', 'code') == 'avaode'\n\n\ndef test_non_start_3():\n    assert non_start('shotl', 'java') == 'hotlava'\n\n\ndef test_non_start_4():\n    assert non_start('ab', 'xy') == 'by'\n\n\ndef test_non_start_5():\n    assert non_start('ab', 'x') == 'b'\n\n\ndef test_non_start_6():\n    assert non_start('x', 'ac') == 'c'\n\n\ndef test_non_start_7():\n    assert non_start('a', 'x') == ''\n\n\ndef test_non_start_8():\n    assert non_start('kit', 'kat') == 'itat'\n\n\ndef test_non_start_9():\n    assert non_start('mart', 'dart') == 'artart'\n\n\n",
+                "solution": ""
+            },
+            {
+                "name": "left_2",
+                "topic": "",
+                "requirements": [],
+                "description": "Given a string, return a \"rotated left 2\" version where the first 2 chars are moved to the end. The string length will be at least 2.\n\n<code>\nleft_2(\"Hello\") \u2192 \"lloHe\"\nleft_2(\"java\") \u2192 \"vaja\"\nleft_2(\"Hi\") \u2192 \"Hi\"\n</code>\n\nThis exercise was taken from [codingbat.com](https://codingbat.com/prob/p197720) and has been adapted for the Python language. There are many great programming exercises there, but the majority are created for Java.",
+                "starter_code": "def left_2(str: str) -> str:\n    ",
+                "tests": "from main import left_2\n\n\ndef test_left_2_1():\n    assert left_2('Hello') == 'lloHe'\n\n\ndef test_left_2_2():\n    assert left_2('java') == 'vaja'\n\n\ndef test_left_2_3():\n    assert left_2('Hi') == 'Hi'\n\n\ndef test_left_2_4():\n    assert left_2('code') == 'deco'\n\n\ndef test_left_2_5():\n    assert left_2('cat') == 'tca'\n\n\ndef test_left_2_6():\n    assert left_2('12345') == '34512'\n\n\ndef test_left_2_7():\n    assert left_2('Chocolate') == 'ocolateCh'\n\n\ndef test_left_2_8():\n    assert left_2('bricks') == 'icksbr'\n\n\n",
+                "solution": ""
+            },
+            {
+                "name": "right_2",
+                "topic": "",
+                "requirements": [],
+                "description": "Given a string, return a \"rotated right 2\" version where the last 2 chars are moved to the start. The string length will be at least 2.\n\n<code>\nright_2(\"Hello\") \u2192 \"loHel\"\nright_2(\"java\") \u2192 \"vaja\"\nright_2(\"Hi\") \u2192 \"Hi\"\n</code>\n\nThis exercise was taken from [codingbat.com](https://codingbat.com/prob/p130781) and has been adapted for the Python language. There are many great programming exercises there, but the majority are created for Java.",
+                "starter_code": "def right_2(str: str) -> str:\n    ",
+                "tests": "from main import right_2\n\n\ndef test_right_2_1():\n    assert right_2('Hello') == 'loHel'\n\n\ndef test_right_2_2():\n    assert right_2('java') == 'vaja'\n\n\ndef test_right_2_3():\n    assert right_2('Hi') == 'Hi'\n\n\ndef test_right_2_4():\n    assert right_2('code') == 'deco'\n\n\ndef test_right_2_5():\n    assert right_2('cat') == 'atc'\n\n\ndef test_right_2_6():\n    assert right_2('12345') == '45123'\n\n\n",
+                "solution": ""
+            },
+            {
+                "name": "the_end",
+                "topic": "",
+                "requirements": [],
+                "description": "Given a string, return a string length 1 from its front, unless <b>front</b> is false, in which case return a string length 1 from its back. The string will be non-empty.\n\n<code>\nthe_end(\"Hello\", true) \u2192 \"H\"\nthe_end(\"Hello\", false) \u2192 \"o\"\nthe_end(\"oh\", true) \u2192 \"o\"\n</code>\n\nThis exercise was taken from [codingbat.com](https://codingbat.com/prob/p162477) and has been adapted for the Python language. There are many great programming exercises there, but the majority are created for Java.",
+                "starter_code": "def the_end(str: str, front: bool) -> str:\n    ",
+                "tests": "from main import the_end\n\n\ndef test_the_end_1():\n    assert the_end('Hello', True) == 'H'\n\n\ndef test_the_end_2():\n    assert the_end('Hello', False) == 'o'\n\n\ndef test_the_end_3():\n    assert the_end('oh', True) == 'o'\n\n\ndef test_the_end_4():\n    assert the_end('oh', False) == 'h'\n\n\ndef test_the_end_5():\n    assert the_end('x', True) == 'x'\n\n\ndef test_the_end_6():\n    assert the_end('x', False) == 'x'\n\n\ndef test_the_end_7():\n    assert the_end('java', True) == 'j'\n\n\ndef test_the_end_8():\n    assert the_end('chocolate', False) == 'e'\n\n\ndef test_the_end_9():\n    assert the_end('1234', True) == '1'\n\n\ndef test_the_end_10():\n    assert the_end('code', False) == 'e'\n\n\n",
+                "solution": ""
+            },
+            {
+                "name": "withou_end_2",
+                "topic": "",
+                "requirements": [],
+                "description": "Given a string, return a version without both the first and last char of the string. The string may be any length, including 0.\n\n<code>\nwithou_end_2(\"Hello\") \u2192 \"ell\"\nwithou_end_2(\"abc\") \u2192 \"b\"\nwithou_end_2(\"ab\") \u2192 \"\"\n</code>\n\nThis exercise was taken from [codingbat.com](https://codingbat.com/prob/p174254) and has been adapted for the Python language. There are many great programming exercises there, but the majority are created for Java.",
+                "starter_code": "def withou_end_2(str: str) -> str:\n    ",
+                "tests": "from main import withou_end_2\n\n\ndef test_withou_end_2_1():\n    assert withou_end_2('Hello') == 'ell'\n\n\ndef test_withou_end_2_2():\n    assert withou_end_2('abc') == 'b'\n\n\ndef test_withou_end_2_3():\n    assert withou_end_2('ab') == ''\n\n\ndef test_withou_end_2_4():\n    assert withou_end_2('a') == ''\n\n\ndef test_withou_end_2_5():\n    assert withou_end_2('') == ''\n\n\ndef test_withou_end_2_6():\n    assert withou_end_2('coldy') == 'old'\n\n\ndef test_withou_end_2_7():\n    assert withou_end_2('java code') == 'ava cod'\n\n\n",
+                "solution": ""
+            },
+            {
+                "name": "middle_two",
+                "topic": "",
+                "requirements": [],
+                "description": "Given a string of even length, return a string made of the middle two chars, so the string \"string\" yields \"ri\". The string length will be at least 2.\n\n<code>\nmiddle_two(\"string\") \u2192 \"ri\"\nmiddle_two(\"code\") \u2192 \"od\"\nmiddle_two(\"Practice\") \u2192 \"ct\"\n</code>\n\nThis exercise was taken from [codingbat.com](https://codingbat.com/prob/p137729) and has been adapted for the Python language. There are many great programming exercises there, but the majority are created for Java.",
+                "starter_code": "def middle_two(str: str) -> str:\n    ",
+                "tests": "from main import middle_two\n\n\ndef test_middle_two_1():\n    assert middle_two('string') == 'ri'\n\n\ndef test_middle_two_2():\n    assert middle_two('code') == 'od'\n\n\ndef test_middle_two_3():\n    assert middle_two('Practice') == 'ct'\n\n\ndef test_middle_two_4():\n    assert middle_two('ab') == 'ab'\n\n\ndef test_middle_two_5():\n    assert middle_two('0123456789') == '45'\n\n\n",
+                "solution": ""
+            },
+            {
+                "name": "ends_ly",
+                "topic": "",
+                "requirements": [],
+                "description": "Given a string, return true if it ends in \"ly\".\n\n<code>\nends_ly(\"oddly\") \u2192 true\nends_ly(\"y\") \u2192 false\nends_ly(\"oddy\") \u2192 false\n</code>\n\nThis exercise was taken from [codingbat.com](https://codingbat.com/prob/p103895) and has been adapted for the Python language. There are many great programming exercises there, but the majority are created for Java.",
+                "starter_code": "def ends_ly(str: str) -> bool:\n    ",
+                "tests": "from main import ends_ly\n\n\ndef test_ends_ly_1():\n    assert ends_ly('oddly') == True\n\n\ndef test_ends_ly_2():\n    assert ends_ly('y') == False\n\n\ndef test_ends_ly_3():\n    assert ends_ly('oddy') == False\n\n\ndef test_ends_ly_4():\n    assert ends_ly('oddl') == False\n\n\ndef test_ends_ly_5():\n    assert ends_ly('olydd') == False\n\n\ndef test_ends_ly_6():\n    assert ends_ly('ly') == True\n\n\ndef test_ends_ly_7():\n    assert ends_ly('') == False\n\n\ndef test_ends_ly_8():\n    assert ends_ly('falsey') == False\n\n\ndef test_ends_ly_9():\n    assert ends_ly('evenly') == True\n\n\n",
+                "solution": ""
+            },
+            {
+                "name": "n_twice",
+                "topic": "",
+                "requirements": [],
+                "description": "Given a string and an int n, return a string made of the first and last n chars from the string. The string length will be at least n.\n\n<code>\nn_twice(\"Hello\", 2) \u2192 \"Helo\"\nn_twice(\"Chocolate\", 3) \u2192 \"Choate\"\nn_twice(\"Chocolate\", 1) \u2192 \"Ce\"\n</code>\n\nThis exercise was taken from [codingbat.com](https://codingbat.com/prob/p174148) and has been adapted for the Python language. There are many great programming exercises there, but the majority are created for Java.",
+                "starter_code": "def n_twice(str: str, n: int) -> str:\n    ",
+                "tests": "from main import n_twice\n\n\ndef test_n_twice_1():\n    assert n_twice('Hello', 2) == 'Helo'\n\n\ndef test_n_twice_2():\n    assert n_twice('Chocolate', 3) == 'Choate'\n\n\ndef test_n_twice_3():\n    assert n_twice('Chocolate', 1) == 'Ce'\n\n\ndef test_n_twice_4():\n    assert n_twice('Chocolate', 0) == ''\n\n\ndef test_n_twice_5():\n    assert n_twice('Hello', 4) == 'Hellello'\n\n\ndef test_n_twice_6():\n    assert n_twice('Code', 4) == 'CodeCode'\n\n\ndef test_n_twice_7():\n    assert n_twice('Code', 2) == 'Code'\n\n\n",
+                "solution": ""
+            },
+            {
+                "name": "two_char",
+                "topic": "",
+                "requirements": [],
+                "description": "Given a string and an index, return a string length 2 starting at the given index. If the index is too big or too small to define a string length 2, use the first 2 chars. The string length will be at least 2.\n\n<code>\ntwo_char(\"java\", 0) \u2192 \"ja\"\ntwo_char(\"java\", 2) \u2192 \"va\"\ntwo_char(\"java\", 3) \u2192 \"ja\"\n</code>\n\nThis exercise was taken from [codingbat.com](https://codingbat.com/prob/p144623) and has been adapted for the Python language. There are many great programming exercises there, but the majority are created for Java.",
+                "starter_code": "def two_char(str: str, index: int) -> str:\n    ",
+                "tests": "from main import two_char\n\n\ndef test_two_char_1():\n    assert two_char('java', 0) == 'ja'\n\n\ndef test_two_char_2():\n    assert two_char('java', 2) == 'va'\n\n\ndef test_two_char_3():\n    assert two_char('java', 3) == 'ja'\n\n\ndef test_two_char_4():\n    assert two_char('java', 4) == 'ja'\n\n\ndef test_two_char_5():\n    assert two_char('java', -1) == 'ja'\n\n\ndef test_two_char_6():\n    assert two_char('Hello', 0) == 'He'\n\n\ndef test_two_char_7():\n    assert two_char('Hello', 1) == 'el'\n\n\ndef test_two_char_8():\n    assert two_char('Hello', 99) == 'He'\n\n\ndef test_two_char_9():\n    assert two_char('Hello', 3) == 'lo'\n\n\ndef test_two_char_10():\n    assert two_char('Hello', 4) == 'He'\n\n\ndef test_two_char_11():\n    assert two_char('Hello', 5) == 'He'\n\n\ndef test_two_char_12():\n    assert two_char('Hello', -7) == 'He'\n\n\ndef test_two_char_13():\n    assert two_char('Hello', 6) == 'He'\n\n\ndef test_two_char_14():\n    assert two_char('Hello', -1) == 'He'\n\n\ndef test_two_char_15():\n    assert two_char('yay', 0) == 'ya'\n\n\n",
+                "solution": ""
+            },
+            {
+                "name": "middle_three",
+                "topic": "",
+                "requirements": [],
+                "description": "Given a string of odd length, return the string length 3 from its middle, so \"Candy\" yields \"and\". The string length will be at least 3.\n\n<code>\nmiddle_three(\"Candy\") \u2192 \"and\"\nmiddle_three(\"and\") \u2192 \"and\"\nmiddle_three(\"solving\") \u2192 \"lvi\"\n</code>\n\nThis exercise was taken from [codingbat.com](https://codingbat.com/prob/p115863) and has been adapted for the Python language. There are many great programming exercises there, but the majority are created for Java.",
+                "starter_code": "def middle_three(str: str) -> str:\n    ",
+                "tests": "from main import middle_three\n\n\ndef test_middle_three_1():\n    assert middle_three('Candy') == 'and'\n\n\ndef test_middle_three_2():\n    assert middle_three('and') == 'and'\n\n\ndef test_middle_three_3():\n    assert middle_three('solving') == 'lvi'\n\n\ndef test_middle_three_4():\n    assert middle_three('Hi yet Hi') == 'yet'\n\n\ndef test_middle_three_5():\n    assert middle_three('java yet java') == 'yet'\n\n\ndef test_middle_three_6():\n    assert middle_three('Chocolate') == 'col'\n\n\ndef test_middle_three_7():\n    assert middle_three('XabcxyzabcX') == 'xyz'\n\n\n",
+                "solution": ""
+            },
+            {
+                "name": "has_bad",
+                "topic": "",
+                "requirements": [],
+                "description": "Given a string, return true if \"bad\" appears starting at index 0 or 1 in the string, such as with \"badxxx\" or \"xbadxx\" but not \"xxbadxx\". The string may be any length, including 0. Note: use .equals() to compare 2 strings.\n\n<code>\nhas_bad(\"badxx\") \u2192 true\nhas_bad(\"xbadxx\") \u2192 true\nhas_bad(\"xxbadxx\") \u2192 false\n</code>\n\nThis exercise was taken from [codingbat.com](https://codingbat.com/prob/p139075) and has been adapted for the Python language. There are many great programming exercises there, but the majority are created for Java.",
+                "starter_code": "def has_bad(str: str) -> bool:\n    ",
+                "tests": "from main import has_bad\n\n\ndef test_has_bad_1():\n    assert has_bad('badxx') == True\n\n\ndef test_has_bad_2():\n    assert has_bad('xbadxx') == True\n\n\ndef test_has_bad_3():\n    assert has_bad('xxbadxx') == False\n\n\ndef test_has_bad_4():\n    assert has_bad('code') == False\n\n\ndef test_has_bad_5():\n    assert has_bad('bad') == True\n\n\ndef test_has_bad_6():\n    assert has_bad('ba') == False\n\n\ndef test_has_bad_7():\n    assert has_bad('xba') == False\n\n\ndef test_has_bad_8():\n    assert has_bad('xbad') == True\n\n\ndef test_has_bad_9():\n    assert has_bad('') == False\n\n\ndef test_has_bad_10():\n    assert has_bad('badyy') == True\n\n\n",
+                "solution": ""
+            },
+            {
+                "name": "at_first",
+                "topic": "",
+                "requirements": [],
+                "description": "Given a string, return a string length 2 made of its first 2 chars. If the string length is less than 2, use '@' for the missing chars.\n\n<code>\nat_first(\"hello\") \u2192 \"he\"\nat_first(\"hi\") \u2192 \"hi\"\nat_first(\"h\") \u2192 \"h@\"\n</code>\n\nThis exercise was taken from [codingbat.com](https://codingbat.com/prob/p139076) and has been adapted for the Python language. There are many great programming exercises there, but the majority are created for Java.",
+                "starter_code": "def at_first(str: str) -> str:\n    ",
+                "tests": "from main import at_first\n\n\ndef test_at_first_1():\n    assert at_first('hello') == 'he'\n\n\ndef test_at_first_2():\n    assert at_first('hi') == 'hi'\n\n\ndef test_at_first_3():\n    assert at_first('h') == 'h@'\n\n\ndef test_at_first_4():\n    assert at_first('') == '@@'\n\n\ndef test_at_first_5():\n    assert at_first('kitten') == 'ki'\n\n\ndef test_at_first_6():\n    assert at_first('java') == 'ja'\n\n\ndef test_at_first_7():\n    assert at_first('j') == 'j@'\n\n\n",
+                "solution": ""
+            },
+            {
+                "name": "last_chars",
+                "topic": "",
+                "requirements": [],
+                "description": "Given 2 strings, a and b, return a new string made of the first char of a and the last char of b, so \"yo\" and \"java\" yields \"ya\". If either string is length 0, use '@' for its missing char.\n\n<code>\nlast_chars(\"last\", \"chars\") \u2192 \"ls\"\nlast_chars(\"yo\", \"java\") \u2192 \"ya\"\nlast_chars(\"hi\", \"\") \u2192 \"h@\"\n</code>\n\nThis exercise was taken from [codingbat.com](https://codingbat.com/prob/p138183) and has been adapted for the Python language. There are many great programming exercises there, but the majority are created for Java.",
+                "starter_code": "def last_chars(a: str, b: str) -> str:\n    ",
+                "tests": "from main import last_chars\n\n\ndef test_last_chars_1():\n    assert last_chars('last', 'chars') == 'ls'\n\n\ndef test_last_chars_2():\n    assert last_chars('yo', 'java') == 'ya'\n\n\ndef test_last_chars_3():\n    assert last_chars('hi', '') == 'h@'\n\n\ndef test_last_chars_4():\n    assert last_chars('', 'hello') == '@o'\n\n\ndef test_last_chars_5():\n    assert last_chars('', '') == '@@'\n\n\ndef test_last_chars_6():\n    assert last_chars('kitten', 'hi') == 'ki'\n\n\ndef test_last_chars_7():\n    assert last_chars('k', 'zip') == 'kp'\n\n\ndef test_last_chars_8():\n    assert last_chars('kitten', '') == 'k@'\n\n\ndef test_last_chars_9():\n    assert last_chars('kitten', 'zip') == 'kp'\n\n\n",
+                "solution": ""
+            },
+            {
+                "name": "con_cat",
+                "topic": "",
+                "requirements": [],
+                "description": "Given two strings, append them together (known as \"concatenation\") and return the result. However, if the concatenation creates a double-char, then omit one of the chars, so \"abc\" and \"cat\" yields \"abcat\".\n\n<code>\ncon_cat(\"abc\", \"cat\") \u2192 \"abcat\"\ncon_cat(\"dog\", \"cat\") \u2192 \"dogcat\"\ncon_cat(\"abc\", \"\") \u2192 \"abc\"\n</code>\n\nThis exercise was taken from [codingbat.com](https://codingbat.com/prob/p132118) and has been adapted for the Python language. There are many great programming exercises there, but the majority are created for Java.",
+                "starter_code": "def con_cat(a: str, b: str) -> str:\n    ",
+                "tests": "from main import con_cat\n\n\ndef test_con_cat_1():\n    assert con_cat('abc', 'cat') == 'abcat'\n\n\ndef test_con_cat_2():\n    assert con_cat('dog', 'cat') == 'dogcat'\n\n\ndef test_con_cat_3():\n    assert con_cat('abc', '') == 'abc'\n\n\ndef test_con_cat_4():\n    assert con_cat('', 'cat') == 'cat'\n\n\ndef test_con_cat_5():\n    assert con_cat('pig', 'g') == 'pig'\n\n\ndef test_con_cat_6():\n    assert con_cat('pig', 'doggy') == 'pigdoggy'\n\n\n",
+                "solution": ""
+            },
+            {
+                "name": "last_two",
+                "topic": "",
+                "requirements": [],
+                "description": "Given a string of any length, return a new string where the last 2 chars, if present, are swapped, so \"coding\" yields \"codign\".\n\n<code>\nlast_two(\"coding\") \u2192 \"codign\"\nlast_two(\"cat\") \u2192 \"cta\"\nlast_two(\"ab\") \u2192 \"ba\"\n</code>\n\nThis exercise was taken from [codingbat.com](https://codingbat.com/prob/p194786) and has been adapted for the Python language. There are many great programming exercises there, but the majority are created for Java.",
+                "starter_code": "def last_two(str: str) -> str:\n    ",
+                "tests": "from main import last_two\n\n\ndef test_last_two_1():\n    assert last_two('coding') == 'codign'\n\n\ndef test_last_two_2():\n    assert last_two('cat') == 'cta'\n\n\ndef test_last_two_3():\n    assert last_two('ab') == 'ba'\n\n\ndef test_last_two_4():\n    assert last_two('a') == 'a'\n\n\ndef test_last_two_5():\n    assert last_two('') == ''\n\n\n",
+                "solution": ""
+            },
+            {
+                "name": "see_color",
+                "topic": "",
+                "requirements": [],
+                "description": "Given a string, if the string begins with \"red\" or \"blue\" return that color string, otherwise return the empty string.\n\n<code>\nsee_color(\"redxx\") \u2192 \"red\"\nsee_color(\"xxred\") \u2192 \"\"\nsee_color(\"blueTimes\") \u2192 \"blue\"\n</code>\n\nThis exercise was taken from [codingbat.com](https://codingbat.com/prob/p199216) and has been adapted for the Python language. There are many great programming exercises there, but the majority are created for Java.",
+                "starter_code": "def see_color(str: str) -> str:\n    ",
+                "tests": "from main import see_color\n\n\ndef test_see_color_1():\n    assert see_color('redxx') == 'red'\n\n\ndef test_see_color_2():\n    assert see_color('xxred') == ''\n\n\ndef test_see_color_3():\n    assert see_color('blueTimes') == 'blue'\n\n\ndef test_see_color_4():\n    assert see_color('NoColor') == ''\n\n\ndef test_see_color_5():\n    assert see_color('red') == 'red'\n\n\ndef test_see_color_6():\n    assert see_color('re') == ''\n\n\ndef test_see_color_7():\n    assert see_color('blu') == ''\n\n\ndef test_see_color_8():\n    assert see_color('blue') == 'blue'\n\n\ndef test_see_color_9():\n    assert see_color('a') == ''\n\n\ndef test_see_color_10():\n    assert see_color('') == ''\n\n\ndef test_see_color_11():\n    assert see_color('xyzred') == ''\n\n\n",
+                "solution": ""
+            },
+            {
+                "name": "front_again",
+                "topic": "",
+                "requirements": [],
+                "description": "Given a string, return true if the first 2 chars in the string also appear at the end of the string, such as with \"edited\".\n\n<code>\nfront_again(\"edited\") \u2192 true\nfront_again(\"edit\") \u2192 false\nfront_again(\"ed\") \u2192 true\n</code>\n\nThis exercise was taken from [codingbat.com](https://codingbat.com/prob/p196652) and has been adapted for the Python language. There are many great programming exercises there, but the majority are created for Java.",
+                "starter_code": "def front_again(str: str) -> bool:\n    ",
+                "tests": "from main import front_again\n\n\ndef test_front_again_1():\n    assert front_again('edited') == True\n\n\ndef test_front_again_2():\n    assert front_again('edit') == False\n\n\ndef test_front_again_3():\n    assert front_again('ed') == True\n\n\ndef test_front_again_4():\n    assert front_again('jj') == True\n\n\ndef test_front_again_5():\n    assert front_again('jjj') == True\n\n\ndef test_front_again_6():\n    assert front_again('jjjj') == True\n\n\ndef test_front_again_7():\n    assert front_again('jjjk') == False\n\n\ndef test_front_again_8():\n    assert front_again('x') == False\n\n\ndef test_front_again_9():\n    assert front_again('') == False\n\n\ndef test_front_again_10():\n    assert front_again('java') == False\n\n\ndef test_front_again_11():\n    assert front_again('javaja') == True\n\n\n",
+                "solution": ""
+            },
+            {
+                "name": "min_cat",
+                "topic": "",
+                "requirements": [],
+                "description": "Given two strings, append them together (known as \"concatenation\") and return the result. However, if the strings are different lengths, omit chars from the longer string so it is the same length as the shorter string. So \"Hello\" and \"Hi\" yield \"loHi\". The strings may be any length.\n\n<code>\nmin_cat(\"Hello\", \"Hi\") \u2192 \"loHi\"\nmin_cat(\"Hello\", \"java\") \u2192 \"ellojava\"\nmin_cat(\"java\", \"Hello\") \u2192 \"javaello\"\n</code>\n\nThis exercise was taken from [codingbat.com](https://codingbat.com/prob/p105745) and has been adapted for the Python language. There are many great programming exercises there, but the majority are created for Java.",
+                "starter_code": "def min_cat(a: str, b: str) -> str:\n    ",
+                "tests": "from main import min_cat\n\n\ndef test_min_cat_1():\n    assert min_cat('Hello', 'Hi') == 'loHi'\n\n\ndef test_min_cat_2():\n    assert min_cat('Hello', 'java') == 'ellojava'\n\n\ndef test_min_cat_3():\n    assert min_cat('java', 'Hello') == 'javaello'\n\n\ndef test_min_cat_4():\n    assert min_cat('abc', 'x') == 'cx'\n\n\ndef test_min_cat_5():\n    assert min_cat('x', 'abc') == 'xc'\n\n\ndef test_min_cat_6():\n    assert min_cat('abc', '') == ''\n\n\n",
+                "solution": ""
+            },
+            {
+                "name": "extra_front",
+                "topic": "",
+                "requirements": [],
+                "description": "Given a string, return a new string made of 3 copies of the first 2 chars of the original string. The string may be any length. If there are fewer than 2 chars, use whatever is there.\n\n<code>\nextra_front(\"Hello\") \u2192 \"HeHeHe\"\nextra_front(\"ab\") \u2192 \"ababab\"\nextra_front(\"H\") \u2192 \"HHH\"\n</code>\n\nThis exercise was taken from [codingbat.com](https://codingbat.com/prob/p172063) and has been adapted for the Python language. There are many great programming exercises there, but the majority are created for Java.",
+                "starter_code": "def extra_front(str: str) -> str:\n    ",
+                "tests": "from main import extra_front\n\n\ndef test_extra_front_1():\n    assert extra_front('Hello') == 'HeHeHe'\n\n\ndef test_extra_front_2():\n    assert extra_front('ab') == 'ababab'\n\n\ndef test_extra_front_3():\n    assert extra_front('H') == 'HHH'\n\n\ndef test_extra_front_4():\n    assert extra_front('') == ''\n\n\ndef test_extra_front_5():\n    assert extra_front('Candy') == 'CaCaCa'\n\n\ndef test_extra_front_6():\n    assert extra_front('Code') == 'CoCoCo'\n\n\n",
+                "solution": ""
+            },
+            {
+                "name": "without_2",
+                "topic": "",
+                "requirements": [],
+                "description": "Given a string, if a length 2 substring appears at both its beginning and end, return a string without the substring at the beginning, so \"HelloHe\" yields \"lloHe\". The substring may overlap with itself, so \"Hi\" yields \"\". Otherwise, return the original string unchanged.\n\n<code>\nwithout_2(\"HelloHe\") \u2192 \"lloHe\"\nwithout_2(\"HelloHi\") \u2192 \"HelloHi\"\nwithout_2(\"Hi\") \u2192 \"\"\n</code>\n\nThis exercise was taken from [codingbat.com](https://codingbat.com/prob/p142247) and has been adapted for the Python language. There are many great programming exercises there, but the majority are created for Java.",
+                "starter_code": "def without_2(str: str) -> str:\n    ",
+                "tests": "from main import without_2\n\n\ndef test_without_2_1():\n    assert without_2('HelloHe') == 'lloHe'\n\n\ndef test_without_2_2():\n    assert without_2('HelloHi') == 'HelloHi'\n\n\ndef test_without_2_3():\n    assert without_2('Hi') == ''\n\n\ndef test_without_2_4():\n    assert without_2('Chocolate') == 'Chocolate'\n\n\ndef test_without_2_5():\n    assert without_2('xxx') == 'x'\n\n\ndef test_without_2_6():\n    assert without_2('xx') == ''\n\n\ndef test_without_2_7():\n    assert without_2('x') == 'x'\n\n\ndef test_without_2_8():\n    assert without_2('') == ''\n\n\ndef test_without_2_9():\n    assert without_2('Fruits') == 'Fruits'\n\n\n",
+                "solution": ""
+            },
+            {
+                "name": "de_front",
+                "topic": "",
+                "requirements": [],
+                "description": "Given a string, return a version without the first 2 chars. Except keep the first char if it is 'a' and keep the second char if it is 'b'. The string may be any length. Harder than it looks.\n\n<code>\nde_front(\"Hello\") \u2192 \"llo\"\nde_front(\"java\") \u2192 \"va\"\nde_front(\"away\") \u2192 \"aay\"\n</code>\n\nThis exercise was taken from [codingbat.com](https://codingbat.com/prob/p110141) and has been adapted for the Python language. There are many great programming exercises there, but the majority are created for Java.",
+                "starter_code": "def de_front(str: str) -> str:\n    ",
+                "tests": "from main import de_front\n\n\ndef test_de_front_1():\n    assert de_front('Hello') == 'llo'\n\n\ndef test_de_front_2():\n    assert de_front('java') == 'va'\n\n\ndef test_de_front_3():\n    assert de_front('away') == 'aay'\n\n\ndef test_de_front_4():\n    assert de_front('axy') == 'ay'\n\n\ndef test_de_front_5():\n    assert de_front('abc') == 'abc'\n\n\ndef test_de_front_6():\n    assert de_front('xby') == 'by'\n\n\ndef test_de_front_7():\n    assert de_front('ab') == 'ab'\n\n\ndef test_de_front_8():\n    assert de_front('ax') == 'a'\n\n\ndef test_de_front_9():\n    assert de_front('axb') == 'ab'\n\n\ndef test_de_front_10():\n    assert de_front('aaa') == 'aa'\n\n\ndef test_de_front_11():\n    assert de_front('xbc') == 'bc'\n\n\ndef test_de_front_12():\n    assert de_front('bbb') == 'bb'\n\n\ndef test_de_front_13():\n    assert de_front('bazz') == 'zz'\n\n\ndef test_de_front_14():\n    assert de_front('ba') == ''\n\n\ndef test_de_front_15():\n    assert de_front('abxyz') == 'abxyz'\n\n\ndef test_de_front_16():\n    assert de_front('hi') == ''\n\n\ndef test_de_front_17():\n    assert de_front('his') == 's'\n\n\ndef test_de_front_18():\n    assert de_front('xz') == ''\n\n\ndef test_de_front_19():\n    assert de_front('zzz') == 'z'\n\n\n",
+                "solution": ""
+            },
+            {
+                "name": "start_word",
+                "topic": "",
+                "requirements": [],
+                "description": "Given a string and a second \"word\" string, we'll say that the word matches the string if it appears at the front of the string, except its first char does not need to match exactly. On a match, return the front of the string, or otherwise return the empty string. So, so with the string \"hippo\" the word \"hi\" returns \"hi\" and \"xip\" returns \"hip\". The word will be at least length 1.\n\n<code>\nstart_word(\"hippo\", \"hi\") \u2192 \"hi\"\nstart_word(\"hippo\", \"xip\") \u2192 \"hip\"\nstart_word(\"hippo\", \"i\") \u2192 \"h\"\n</code>\n\nThis exercise was taken from [codingbat.com](https://codingbat.com/prob/p141494) and has been adapted for the Python language. There are many great programming exercises there, but the majority are created for Java.",
+                "starter_code": "def start_word(str: str, word: str) -> str:\n    ",
+                "tests": "from main import start_word\n\n\ndef test_start_word_1():\n    assert start_word('hippo', 'hi') == 'hi'\n\n\ndef test_start_word_2():\n    assert start_word('hippo', 'xip') == 'hip'\n\n\ndef test_start_word_3():\n    assert start_word('hippo', 'i') == 'h'\n\n\ndef test_start_word_4():\n    assert start_word('hippo', 'ix') == ''\n\n\ndef test_start_word_5():\n    assert start_word('h', 'ix') == ''\n\n\ndef test_start_word_6():\n    assert start_word('', 'i') == ''\n\n\ndef test_start_word_7():\n    assert start_word('hip', 'zi') == 'hi'\n\n\ndef test_start_word_8():\n    assert start_word('hip', 'zip') == 'hip'\n\n\ndef test_start_word_9():\n    assert start_word('hip', 'zig') == ''\n\n\ndef test_start_word_10():\n    assert start_word('h', 'z') == 'h'\n\n\ndef test_start_word_11():\n    assert start_word('hippo', 'xippo') == 'hippo'\n\n\ndef test_start_word_12():\n    assert start_word('hippo', 'xyz') == ''\n\n\ndef test_start_word_13():\n    assert start_word('hippo', 'hip') == 'hip'\n\n\ndef test_start_word_14():\n    assert start_word('kitten', 'cit') == 'kit'\n\n\ndef test_start_word_15():\n    assert start_word('kit', 'cit') == 'kit'\n\n\n",
+                "solution": ""
+            },
+            {
+                "name": "without_x",
+                "topic": "",
+                "requirements": [],
+                "description": "Given a string, if the first or last chars are 'x', return the string without those 'x' chars, and otherwise return the string unchanged.\n\n<code>\nwithout_x(\"xHix\") \u2192 \"Hi\"\nwithout_x(\"xHi\") \u2192 \"Hi\"\nwithout_x(\"Hxix\") \u2192 \"Hxi\"\n</code>\n\nThis exercise was taken from [codingbat.com](https://codingbat.com/prob/p151940) and has been adapted for the Python language. There are many great programming exercises there, but the majority are created for Java.",
+                "starter_code": "def without_x(str: str) -> str:\n    ",
+                "tests": "from main import without_x\n\n\ndef test_without_x_1():\n    assert without_x('xHix') == 'Hi'\n\n\ndef test_without_x_2():\n    assert without_x('xHi') == 'Hi'\n\n\ndef test_without_x_3():\n    assert without_x('Hxix') == 'Hxi'\n\n\ndef test_without_x_4():\n    assert without_x('Hi') == 'Hi'\n\n\ndef test_without_x_5():\n    assert without_x('xxHi') == 'xHi'\n\n\ndef test_without_x_6():\n    assert without_x('Hix') == 'Hi'\n\n\ndef test_without_x_7():\n    assert without_x('xaxbx') == 'axb'\n\n\ndef test_without_x_8():\n    assert without_x('xx') == ''\n\n\ndef test_without_x_9():\n    assert without_x('x') == ''\n\n\ndef test_without_x_10():\n    assert without_x('') == ''\n\n\ndef test_without_x_11():\n    assert without_x('Hello') == 'Hello'\n\n\ndef test_without_x_12():\n    assert without_x('Hexllo') == 'Hexllo'\n\n\n",
+                "solution": ""
+            },
+            {
+                "name": "without_x_2",
+                "topic": "",
+                "requirements": [],
+                "description": "Given a string, if one or both of the first 2 chars is 'x', return the string without those 'x' chars, and otherwise return the string unchanged. This is a little harder than it looks.\n\n<code>\nwithout_x_2(\"xHi\") \u2192 \"Hi\"\nwithout_x_2(\"Hxi\") \u2192 \"Hi\"\nwithout_x_2(\"Hi\") \u2192 \"Hi\"\n</code>\n\nThis exercise was taken from [codingbat.com](https://codingbat.com/prob/p151359) and has been adapted for the Python language. There are many great programming exercises there, but the majority are created for Java.",
+                "starter_code": "def without_x_2(str: str) -> str:\n    ",
+                "tests": "from main import without_x_2\n\n\ndef test_without_x_2_1():\n    assert without_x_2('xHi') == 'Hi'\n\n\ndef test_without_x_2_2():\n    assert without_x_2('Hxi') == 'Hi'\n\n\ndef test_without_x_2_3():\n    assert without_x_2('Hi') == 'Hi'\n\n\ndef test_without_x_2_4():\n    assert without_x_2('xxHi') == 'Hi'\n\n\ndef test_without_x_2_5():\n    assert without_x_2('Hix') == 'Hix'\n\n\ndef test_without_x_2_6():\n    assert without_x_2('xaxb') == 'axb'\n\n\ndef test_without_x_2_7():\n    assert without_x_2('xx') == ''\n\n\ndef test_without_x_2_8():\n    assert without_x_2('x') == ''\n\n\ndef test_without_x_2_9():\n    assert without_x_2('') == ''\n\n\ndef test_without_x_2_10():\n    assert without_x_2('Hello') == 'Hello'\n\n\ndef test_without_x_2_11():\n    assert without_x_2('Hexllo') == 'Hexllo'\n\n\ndef test_without_x_2_12():\n    assert without_x_2('xHxllo') == 'Hxllo'\n\n\n",
+                "solution": ""
             }
         ]
     }
