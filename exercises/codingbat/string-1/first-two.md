@@ -15,7 +15,7 @@ This exercise was taken from [codingbat.com](https://codingbat.com/prob/p163411)
 
 ## Starter Code
 ```python
-def first_two(str: str) -> str:
+def first_two(string: str) -> str:
 ```
 
 ## Tests

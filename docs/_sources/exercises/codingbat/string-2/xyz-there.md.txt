@@ -15,7 +15,7 @@ This exercise was taken from [codingbat.com](https://codingbat.com/prob/p136594)
 
 ## Starter Code
 ```python
-def xyz_there(str: str) -> bool:
+def xyz_there(string: str) -> bool:
 ```
 
 ## Tests

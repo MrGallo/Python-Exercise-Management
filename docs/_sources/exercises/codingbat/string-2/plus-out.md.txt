@@ -15,7 +15,7 @@ This exercise was taken from [codingbat.com](https://codingbat.com/prob/p170829)
 
 ## Starter Code
 ```python
-def plus_out(str: str, word: str) -> str:
+def plus_out(string: str, word: str) -> str:
 ```
 
 ## Tests

@@ -15,7 +15,7 @@ This exercise was taken from [codingbat.com](https://codingbat.com/prob/p196652)
 
 ## Starter Code
 ```python
-def front_again(str: str) -> bool:
+def front_again(string: str) -> bool:
 ```
 
 ## Tests

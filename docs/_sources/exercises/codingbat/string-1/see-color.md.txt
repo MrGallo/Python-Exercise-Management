@@ -15,7 +15,7 @@ This exercise was taken from [codingbat.com](https://codingbat.com/prob/p199216)
 
 ## Starter Code
 ```python
-def see_color(str: str) -> str:
+def see_color(string: str) -> str:
 ```
 
 ## Tests

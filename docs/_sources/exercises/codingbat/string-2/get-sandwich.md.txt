@@ -15,7 +15,7 @@ This exercise was taken from [codingbat.com](https://codingbat.com/prob/p129952)
 
 ## Starter Code
 ```python
-def get_sandwich(str: str) -> str:
+def get_sandwich(string: str) -> str:
 ```
 
 ## Tests

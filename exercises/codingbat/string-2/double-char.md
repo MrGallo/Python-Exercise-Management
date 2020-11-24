@@ -15,7 +15,7 @@ This exercise was taken from [codingbat.com](https://codingbat.com/prob/p165312)
 
 ## Starter Code
 ```python
-def double_char(str: str) -> str:
+def double_char(string: str) -> str:
 ```
 
 ## Tests

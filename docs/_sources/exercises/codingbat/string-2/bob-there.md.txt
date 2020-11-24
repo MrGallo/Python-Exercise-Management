@@ -15,7 +15,7 @@ This exercise was taken from [codingbat.com](https://codingbat.com/prob/p175762)
 
 ## Starter Code
 ```python
-def bob_there(str: str) -> bool:
+def bob_there(string: str) -> bool:
 ```
 
 ## Tests

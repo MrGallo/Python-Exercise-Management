@@ -15,7 +15,7 @@ This exercise was taken from [codingbat.com](https://codingbat.com/prob/p180759)
 
 ## Starter Code
 ```python
-def zip_zap(str: str) -> str:
+def zip_zap(string: str) -> str:
 ```
 
 ## Tests

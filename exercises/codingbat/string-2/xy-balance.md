@@ -15,7 +15,7 @@ This exercise was taken from [codingbat.com](https://codingbat.com/prob/p134250)
 
 ## Starter Code
 ```python
-def xy_balance(str: str) -> bool:
+def xy_balance(string: str) -> bool:
 ```
 
 ## Tests

@@ -15,7 +15,7 @@ This exercise was taken from [codingbat.com](https://codingbat.com/prob/p130781)
 
 ## Starter Code
 ```python
-def right_2(str: str) -> str:
+def right_2(string: str) -> str:
 ```
 
 ## Tests

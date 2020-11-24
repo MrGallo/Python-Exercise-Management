@@ -15,7 +15,7 @@ This exercise was taken from [codingbat.com](https://codingbat.com/prob/p130896)
 
 ## Starter Code
 ```python
-def without_end(str: str) -> str:
+def without_end(string: str) -> str:
 ```
 
 ## Tests

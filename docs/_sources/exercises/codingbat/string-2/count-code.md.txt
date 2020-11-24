@@ -15,7 +15,7 @@ This exercise was taken from [codingbat.com](https://codingbat.com/prob/p123614)
 
 ## Starter Code
 ```python
-def count_code(str: str) -> int:
+def count_code(string: str) -> int:
 ```
 
 ## Tests

@@ -15,7 +15,7 @@ This exercise was taken from [codingbat.com](https://codingbat.com/prob/p159772)
 
 ## Starter Code
 ```python
-def xyz_middle(str: str) -> bool:
+def xyz_middle(string: str) -> bool:
 ```
 
 ## Tests

@@ -15,7 +15,7 @@ This exercise was taken from [codingbat.com](https://codingbat.com/prob/p174148)
 
 ## Starter Code
 ```python
-def n_twice(str: str, n: int) -> str:
+def n_twice(string: str, n: int) -> str:
 ```
 
 ## Tests

@@ -15,7 +15,7 @@ This exercise was taken from [codingbat.com](https://codingbat.com/prob/p172063)
 
 ## Starter Code
 ```python
-def extra_front(str: str) -> str:
+def extra_front(string: str) -> str:
 ```
 
 ## Tests

@@ -15,7 +15,7 @@ This exercise was taken from [codingbat.com](https://codingbat.com/prob/p115863)
 
 ## Starter Code
 ```python
-def middle_three(str: str) -> str:
+def middle_three(string: str) -> str:
 ```
 
 ## Tests

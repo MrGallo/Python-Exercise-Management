@@ -15,7 +15,7 @@ This exercise was taken from [codingbat.com](https://codingbat.com/prob/p142247)
 
 ## Starter Code
 ```python
-def without_2(str: str) -> str:
+def without_2(string: str) -> str:
 ```
 
 ## Tests

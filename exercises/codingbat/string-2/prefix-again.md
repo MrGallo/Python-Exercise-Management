@@ -15,7 +15,7 @@ This exercise was taken from [codingbat.com](https://codingbat.com/prob/p136417)
 
 ## Starter Code
 ```python
-def prefix_again(str: str, n: int) -> bool:
+def prefix_again(string: str, n: int) -> bool:
 ```
 
 ## Tests

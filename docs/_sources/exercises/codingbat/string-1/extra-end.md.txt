@@ -15,7 +15,7 @@ This exercise was taken from [codingbat.com](https://codingbat.com/prob/p108853)
 
 ## Starter Code
 ```python
-def extra_end(str: str) -> str:
+def extra_end(string: str) -> str:
 ```
 
 ## Tests

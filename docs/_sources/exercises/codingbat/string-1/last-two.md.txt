@@ -15,7 +15,7 @@ This exercise was taken from [codingbat.com](https://codingbat.com/prob/p194786)
 
 ## Starter Code
 ```python
-def last_two(str: str) -> str:
+def last_two(string: str) -> str:
 ```
 
 ## Tests

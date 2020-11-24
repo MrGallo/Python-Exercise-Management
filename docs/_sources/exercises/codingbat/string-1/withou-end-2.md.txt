@@ -15,7 +15,7 @@ This exercise was taken from [codingbat.com](https://codingbat.com/prob/p174254)
 
 ## Starter Code
 ```python
-def withou_end_2(str: str) -> str:
+def withou_end_2(string: str) -> str:
 ```
 
 ## Tests

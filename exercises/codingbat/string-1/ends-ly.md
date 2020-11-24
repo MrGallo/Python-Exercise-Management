@@ -15,7 +15,7 @@ This exercise was taken from [codingbat.com](https://codingbat.com/prob/p103895)
 
 ## Starter Code
 ```python
-def ends_ly(str: str) -> bool:
+def ends_ly(string: str) -> bool:
 ```
 
 ## Tests

@@ -15,7 +15,7 @@ This exercise was taken from [codingbat.com](https://codingbat.com/prob/p147448)
 
 ## Starter Code
 ```python
-def count_hi(str: str) -> int:
+def count_hi(string: str) -> int:
 ```
 
 ## Tests

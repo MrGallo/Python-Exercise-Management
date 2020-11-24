@@ -15,7 +15,7 @@ This exercise was taken from [codingbat.com](https://codingbat.com/prob/p144623)
 
 ## Starter Code
 ```python
-def two_char(str: str, index: int) -> str:
+def two_char(string: str, index: int) -> str:
 ```
 
 ## Tests

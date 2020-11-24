@@ -15,7 +15,7 @@ This exercise was taken from [codingbat.com](https://codingbat.com/prob/p172267)
 
 ## Starter Code
 ```python
-def first_half(str: str) -> str:
+def first_half(string: str) -> str:
 ```
 
 ## Tests

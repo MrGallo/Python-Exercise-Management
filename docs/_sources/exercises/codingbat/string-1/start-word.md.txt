@@ -15,7 +15,7 @@ This exercise was taken from [codingbat.com](https://codingbat.com/prob/p141494)
 
 ## Starter Code
 ```python
-def start_word(str: str, word: str) -> str:
+def start_word(string: str, word: str) -> str:
 ```
 
 ## Tests

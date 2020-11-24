@@ -15,7 +15,7 @@ This exercise was taken from [codingbat.com](https://codingbat.com/prob/p151940)
 
 ## Starter Code
 ```python
-def without_x(str: str) -> str:
+def without_x(string: str) -> str:
 ```
 
 ## Tests

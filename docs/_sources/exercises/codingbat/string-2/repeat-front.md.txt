@@ -15,7 +15,7 @@ This exercise was taken from [codingbat.com](https://codingbat.com/prob/p128796)
 
 ## Starter Code
 ```python
-def repeat_front(str: str, n: int) -> str:
+def repeat_front(string: str, n: int) -> str:
 ```
 
 ## Tests

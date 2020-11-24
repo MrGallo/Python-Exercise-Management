@@ -15,7 +15,7 @@ This exercise was taken from [codingbat.com](https://codingbat.com/prob/p147538)
 
 ## Starter Code
 ```python
-def word_ends(str: str, word: str) -> str:
+def word_ends(string: str, word: str) -> str:
 ```
 
 ## Tests

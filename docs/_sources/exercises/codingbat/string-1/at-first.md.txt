@@ -15,7 +15,7 @@ This exercise was taken from [codingbat.com](https://codingbat.com/prob/p139076)
 
 ## Starter Code
 ```python
-def at_first(str: str) -> str:
+def at_first(string: str) -> str:
 ```
 
 ## Tests

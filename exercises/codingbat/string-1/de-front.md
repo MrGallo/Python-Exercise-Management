@@ -15,7 +15,7 @@ This exercise was taken from [codingbat.com](https://codingbat.com/prob/p110141)
 
 ## Starter Code
 ```python
-def de_front(str: str) -> str:
+def de_front(string: str) -> str:
 ```
 
 ## Tests

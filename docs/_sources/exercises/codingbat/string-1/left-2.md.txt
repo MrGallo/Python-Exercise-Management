@@ -15,7 +15,7 @@ This exercise was taken from [codingbat.com](https://codingbat.com/prob/p197720)
 
 ## Starter Code
 ```python
-def left_2(str: str) -> str:
+def left_2(string: str) -> str:
 ```
 
 ## Tests

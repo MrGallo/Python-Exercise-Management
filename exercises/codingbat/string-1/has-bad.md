@@ -15,7 +15,7 @@ This exercise was taken from [codingbat.com](https://codingbat.com/prob/p139075)
 
 ## Starter Code
 ```python
-def has_bad(str: str) -> bool:
+def has_bad(string: str) -> bool:
 ```
 
 ## Tests
