@@ -7,7 +7,7 @@ concepts = {
         "output a message": [],
         "mathematical calculations": [],
         "store data in variables": [],
-        "format output text ": [
+        "format output text": [
             "output a message",
             "store data in variables"],
         "get input from the user": [
