@@ -3,7 +3,7 @@
 
 
 
-The web is built with HTML strings like "&lt;i&gt;Yay&lt;/i&gt;" which draws Yay as italic text. In this example, the "i" tag makes &lt;i&gt; and &lt;/i&gt; which surround the word "Yay". Given tag and word strings, create the HTML string with tags around the word, e.g. "&lt;i&gt;Yay&lt;/i&gt;".
+The web is built with HTML strings like "&lt;i&gt;Yay&lt;/i&gt;" which draws Yay as italic text. In this example, the "i" tag makes &lt;i&gt; and &lt;/i&gt; which surround the word "Yay". Ask the user for a tag string, then ask the user for a word string. Print out the HTML string with tags around the word, e.g. "&lt;i&gt;Yay&lt;/i&gt;".
 
 This exercise was taken from [codingbat.com](https://codingbat.com/prob/p147483) and has been adapted for the Python language. There are many great programming exercises there, but the majority are created for Java.
 
