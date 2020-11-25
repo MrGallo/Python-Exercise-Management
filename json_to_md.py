@@ -118,8 +118,8 @@ def write_exercise(exercise: Exercise, path: str) -> None:
     exercise_path = os.path.join(path, filename)
 
     content = f"""# {name}
-**Topic:** {topic}
-{"**Requirements:**" if requirements else ""}
+{"**Topic:** " if topic else ""}{topic if topic else ""}
+{"**Requirements:** " if requirements else ""}
 {requirements if requirements else ""}
 
 {description}
