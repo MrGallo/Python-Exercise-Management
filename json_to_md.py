@@ -117,6 +117,17 @@ def write_exercise(exercise: Exercise, path: str) -> None:
     filename = f"{slugify(name)}.md"
     exercise_path = os.path.join(path, filename)
 
+    if "tests_io" in exercise.keys():
+        io_tests = exercise['tests_io']
+        tests_content = ""
+        for i, (arg_list, result) in enumerate(io_tests, 1):
+            inputs = '\n'.join(map(repr, arg_list))
+            tests_content += f"### Test {i}\n"
+            tests_content += f"#### Input\n```\n{inputs}\n```\n"
+            tests_content += f"#### Output\n```\n{repr(result)}\n```\n"
+    else:
+        tests_content = f"```python\n{tests}\n```"
+
     content = f"""# {name}
 {"**Topic:** " if topic else ""}{topic if topic else ""}
 {"**Requirements:** " if requirements else ""}
@@ -124,15 +135,13 @@ def write_exercise(exercise: Exercise, path: str) -> None:
 
 {description}
 
-## Starter Code
-```python
-{starter_code}
-```
+{"## Starter Code" if starter_code else ""}
+{"```python" if starter_code else ""}
+{starter_code if starter_code else ""}
+{"```" if starter_code else ""}
 
 ## Tests
-```python
-{tests}
-```
+{tests_content}
 """
 
     with open(exercise_path, 'w') as f:
