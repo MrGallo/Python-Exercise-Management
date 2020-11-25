@@ -15,7 +15,7 @@ for chapter_name in chapter_names:
         tests_io = exercise['tests_io']
         for n, (arg_list, result) in enumerate(tests_io, 1):
             input_str = "\\n".join(map(str, arg_list))
-            test_code += f"def test_{n}():\n"
+            test_code += f"def test_{n}(captured_output):\n"
             test_code += f"    assert captured_output('{input_str}') == {repr(result)}\n\n\n"
 
         exercise['tests'] = test_code.strip()
