@@ -1,0 +1,63 @@
+# hello_name
+
+
+
+
+Given a string name, e.g. "Bob", return a greeting of the form "Hello Bob!".
+
+This exercise was taken from [codingbat.com](https://codingbat.com/prob/p171896) and has been adapted for the Python language. There are many great programming exercises there, but the majority are created for Java.
+
+## Starter Code
+```python
+def hello_name(name: str) -> str:
+    pass
+
+
+result = hello_name('Bob')
+print(result)
+```
+
+## Tests
+```python
+from main import hello_name
+
+
+def test_hello_name_1():
+    assert hello_name('Bob') == 'Hello Bob!'
+
+
+def test_hello_name_2():
+    assert hello_name('Alice') == 'Hello Alice!'
+
+
+def test_hello_name_3():
+    assert hello_name('X') == 'Hello X!'
+
+
+def test_hello_name_4():
+    assert hello_name('Dolly') == 'Hello Dolly!'
+
+
+def test_hello_name_5():
+    assert hello_name('Alpha') == 'Hello Alpha!'
+
+
+def test_hello_name_6():
+    assert hello_name('Omega') == 'Hello Omega!'
+
+
+def test_hello_name_7():
+    assert hello_name('Goodbye') == 'Hello Goodbye!'
+
+
+def test_hello_name_8():
+    assert hello_name('ho ho ho') == 'Hello ho ho ho!'
+
+
+def test_hello_name_9():
+    assert hello_name('xyz!') == 'Hello xyz!!'
+
+
+def test_hello_name_10():
+    assert hello_name('Hello') == 'Hello Hello!'
+```
