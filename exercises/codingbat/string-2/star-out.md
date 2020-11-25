@@ -1,5 +1,5 @@
 # star_out
-**Topic:** 
+
 
 
 
@@ -16,6 +16,11 @@ This exercise was taken from [codingbat.com](https://codingbat.com/prob/p139564)
 ## Starter Code
 ```python
 def star_out(string: str) -> str:
+    pass
+
+
+result = star_out('ab*cd')
+print(result)
 ```
 
 ## Tests

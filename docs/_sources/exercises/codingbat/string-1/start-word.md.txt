@@ -1,5 +1,5 @@
 # start_word
-**Topic:** 
+
 
 
 
@@ -16,6 +16,11 @@ This exercise was taken from [codingbat.com](https://codingbat.com/prob/p141494)
 ## Starter Code
 ```python
 def start_word(string: str, word: str) -> str:
+    pass
+
+
+result = start_word('hippo', 'hi')
+print(result)
 ```
 
 ## Tests

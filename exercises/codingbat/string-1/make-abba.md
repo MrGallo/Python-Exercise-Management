@@ -1,5 +1,5 @@
 # make_abba
-**Topic:** 
+
 
 
 
@@ -16,6 +16,11 @@ This exercise was taken from [codingbat.com](https://codingbat.com/prob/p161056)
 ## Starter Code
 ```python
 def make_abba(a: str, b: str) -> str:
+    pass
+
+
+result = make_abba('Hi', 'Bye')
+print(result)
 ```
 
 ## Tests

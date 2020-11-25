@@ -1,5 +1,5 @@
 # double_char
-**Topic:** 
+
 
 
 
@@ -16,6 +16,11 @@ This exercise was taken from [codingbat.com](https://codingbat.com/prob/p165312)
 ## Starter Code
 ```python
 def double_char(string: str) -> str:
+    pass
+
+
+result = double_char('The')
+print(result)
 ```
 
 ## Tests

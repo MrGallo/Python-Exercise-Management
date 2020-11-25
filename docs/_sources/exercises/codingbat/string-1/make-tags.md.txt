@@ -1,5 +1,5 @@
 # make_tags
-**Topic:** 
+
 
 
 
@@ -16,6 +16,11 @@ This exercise was taken from [codingbat.com](https://codingbat.com/prob/p147483)
 ## Starter Code
 ```python
 def make_tags(tag: str, word: str) -> str:
+    pass
+
+
+result = make_tags('i', 'Yay')
+print(result)
 ```
 
 ## Tests

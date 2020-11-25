@@ -1,5 +1,5 @@
 # con_cat
-**Topic:** 
+
 
 
 
@@ -16,6 +16,11 @@ This exercise was taken from [codingbat.com](https://codingbat.com/prob/p132118)
 ## Starter Code
 ```python
 def con_cat(a: str, b: str) -> str:
+    pass
+
+
+result = con_cat('abc', 'cat')
+print(result)
 ```
 
 ## Tests

@@ -1,5 +1,5 @@
 # front_again
-**Topic:** 
+
 
 
 
@@ -16,6 +16,11 @@ This exercise was taken from [codingbat.com](https://codingbat.com/prob/p196652)
 ## Starter Code
 ```python
 def front_again(string: str) -> bool:
+    pass
+
+
+result = front_again('edited')
+print(result)
 ```
 
 ## Tests

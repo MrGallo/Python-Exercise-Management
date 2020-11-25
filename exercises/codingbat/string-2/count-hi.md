@@ -1,5 +1,5 @@
 # count_hi
-**Topic:** 
+
 
 
 
@@ -16,6 +16,11 @@ This exercise was taken from [codingbat.com](https://codingbat.com/prob/p147448)
 ## Starter Code
 ```python
 def count_hi(string: str) -> int:
+    pass
+
+
+result = count_hi('abc hi ho')
+print(result)
 ```
 
 ## Tests

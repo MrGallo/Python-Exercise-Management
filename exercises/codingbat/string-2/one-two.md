@@ -1,5 +1,5 @@
 # one_two
-**Topic:** 
+
 
 
 
@@ -16,6 +16,11 @@ This exercise was taken from [codingbat.com](https://codingbat.com/prob/p122943)
 ## Starter Code
 ```python
 def one_two(string: str) -> str:
+    pass
+
+
+result = one_two('abc')
+print(result)
 ```
 
 ## Tests

@@ -1,5 +1,5 @@
 # extra_end
-**Topic:** 
+
 
 
 
@@ -16,6 +16,11 @@ This exercise was taken from [codingbat.com](https://codingbat.com/prob/p108853)
 ## Starter Code
 ```python
 def extra_end(string: str) -> str:
+    pass
+
+
+result = extra_end('Hello')
+print(result)
 ```
 
 ## Tests

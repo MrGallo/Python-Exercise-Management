@@ -1,5 +1,5 @@
 # last_two
-**Topic:** 
+
 
 
 
@@ -16,6 +16,11 @@ This exercise was taken from [codingbat.com](https://codingbat.com/prob/p194786)
 ## Starter Code
 ```python
 def last_two(string: str) -> str:
+    pass
+
+
+result = last_two('coding')
+print(result)
 ```
 
 ## Tests

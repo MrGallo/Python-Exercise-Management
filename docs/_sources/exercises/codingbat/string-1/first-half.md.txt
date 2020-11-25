@@ -1,5 +1,5 @@
 # first_half
-**Topic:** 
+
 
 
 
@@ -16,6 +16,11 @@ This exercise was taken from [codingbat.com](https://codingbat.com/prob/p172267)
 ## Starter Code
 ```python
 def first_half(string: str) -> str:
+    pass
+
+
+result = first_half('WooHoo')
+print(result)
 ```
 
 ## Tests

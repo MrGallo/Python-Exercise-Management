@@ -1,5 +1,5 @@
 # make_out_word
-**Topic:** 
+
 
 
 
@@ -16,6 +16,11 @@ This exercise was taken from [codingbat.com](https://codingbat.com/prob/p184030)
 ## Starter Code
 ```python
 def make_out_word(out: str, word: str) -> str:
+    pass
+
+
+result = make_out_word('<<>>', 'Yay')
+print(result)
 ```
 
 ## Tests

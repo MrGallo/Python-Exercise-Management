@@ -1,5 +1,5 @@
 # the_end
-**Topic:** 
+
 
 
 
@@ -16,6 +16,11 @@ This exercise was taken from [codingbat.com](https://codingbat.com/prob/p162477)
 ## Starter Code
 ```python
 def the_end(string: str, front: bool) -> str:
+    pass
+
+
+result = the_end('Hello', True)
+print(result)
 ```
 
 ## Tests

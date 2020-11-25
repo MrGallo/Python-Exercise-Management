@@ -1,5 +1,5 @@
 # bob_there
-**Topic:** 
+
 
 
 
@@ -16,6 +16,11 @@ This exercise was taken from [codingbat.com](https://codingbat.com/prob/p175762)
 ## Starter Code
 ```python
 def bob_there(string: str) -> bool:
+    pass
+
+
+result = bob_there('abcbob')
+print(result)
 ```
 
 ## Tests

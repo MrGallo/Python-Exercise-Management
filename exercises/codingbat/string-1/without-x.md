@@ -1,5 +1,5 @@
 # without_x
-**Topic:** 
+
 
 
 
@@ -16,6 +16,11 @@ This exercise was taken from [codingbat.com](https://codingbat.com/prob/p151940)
 ## Starter Code
 ```python
 def without_x(string: str) -> str:
+    pass
+
+
+result = without_x('xHix')
+print(result)
 ```
 
 ## Tests

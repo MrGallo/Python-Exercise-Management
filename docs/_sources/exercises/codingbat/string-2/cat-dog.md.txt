@@ -1,5 +1,5 @@
 # cat_dog
-**Topic:** 
+
 
 
 
@@ -16,6 +16,11 @@ This exercise was taken from [codingbat.com](https://codingbat.com/prob/p111624)
 ## Starter Code
 ```python
 def cat_dog(string: str) -> bool:
+    pass
+
+
+result = cat_dog('catdog')
+print(result)
 ```
 
 ## Tests

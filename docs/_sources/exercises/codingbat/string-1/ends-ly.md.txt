@@ -1,5 +1,5 @@
 # ends_ly
-**Topic:** 
+
 
 
 
@@ -16,6 +16,11 @@ This exercise was taken from [codingbat.com](https://codingbat.com/prob/p103895)
 ## Starter Code
 ```python
 def ends_ly(string: str) -> bool:
+    pass
+
+
+result = ends_ly('oddly')
+print(result)
 ```
 
 ## Tests

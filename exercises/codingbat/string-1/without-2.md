@@ -1,5 +1,5 @@
 # without_2
-**Topic:** 
+
 
 
 
@@ -16,6 +16,11 @@ This exercise was taken from [codingbat.com](https://codingbat.com/prob/p142247)
 ## Starter Code
 ```python
 def without_2(string: str) -> str:
+    pass
+
+
+result = without_2('HelloHe')
+print(result)
 ```
 
 ## Tests

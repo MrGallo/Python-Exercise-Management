@@ -1,5 +1,5 @@
 # word_ends
-**Topic:** 
+
 
 
 
@@ -16,6 +16,11 @@ This exercise was taken from [codingbat.com](https://codingbat.com/prob/p147538)
 ## Starter Code
 ```python
 def word_ends(string: str, word: str) -> str:
+    pass
+
+
+result = word_ends('abcXY123XYijk', 'XY')
+print(result)
 ```
 
 ## Tests

@@ -1,5 +1,5 @@
 # non_start
-**Topic:** 
+
 
 
 
@@ -16,6 +16,11 @@ This exercise was taken from [codingbat.com](https://codingbat.com/prob/p143825)
 ## Starter Code
 ```python
 def non_start(a: str, b: str) -> str:
+    pass
+
+
+result = non_start('Hello', 'There')
+print(result)
 ```
 
 ## Tests

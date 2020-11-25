@@ -1,5 +1,5 @@
 # xyz_middle
-**Topic:** 
+
 
 
 
@@ -16,6 +16,11 @@ This exercise was taken from [codingbat.com](https://codingbat.com/prob/p159772)
 ## Starter Code
 ```python
 def xyz_middle(string: str) -> bool:
+    pass
+
+
+result = xyz_middle('AAxyzBB')
+print(result)
 ```
 
 ## Tests

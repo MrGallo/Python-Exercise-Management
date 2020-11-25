@@ -1,5 +1,5 @@
 # zip_zap
-**Topic:** 
+
 
 
 
@@ -16,6 +16,11 @@ This exercise was taken from [codingbat.com](https://codingbat.com/prob/p180759)
 ## Starter Code
 ```python
 def zip_zap(string: str) -> str:
+    pass
+
+
+result = zip_zap('zipXzap')
+print(result)
 ```
 
 ## Tests

@@ -1,5 +1,5 @@
 # prefix_again
-**Topic:** 
+
 
 
 
@@ -16,6 +16,11 @@ This exercise was taken from [codingbat.com](https://codingbat.com/prob/p136417)
 ## Starter Code
 ```python
 def prefix_again(string: str, n: int) -> bool:
+    pass
+
+
+result = prefix_again('abXYabc', 1)
+print(result)
 ```
 
 ## Tests

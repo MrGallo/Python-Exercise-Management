@@ -1,5 +1,5 @@
 # at_first
-**Topic:** 
+
 
 
 
@@ -16,6 +16,11 @@ This exercise was taken from [codingbat.com](https://codingbat.com/prob/p139076)
 ## Starter Code
 ```python
 def at_first(string: str) -> str:
+    pass
+
+
+result = at_first('hello')
+print(result)
 ```
 
 ## Tests

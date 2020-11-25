@@ -1,5 +1,5 @@
 # first_two
-**Topic:** 
+
 
 
 
@@ -16,6 +16,11 @@ This exercise was taken from [codingbat.com](https://codingbat.com/prob/p163411)
 ## Starter Code
 ```python
 def first_two(string: str) -> str:
+    pass
+
+
+result = first_two('Hello')
+print(result)
 ```
 
 ## Tests

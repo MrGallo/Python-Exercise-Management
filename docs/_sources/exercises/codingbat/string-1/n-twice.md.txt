@@ -1,5 +1,5 @@
 # n_twice
-**Topic:** 
+
 
 
 
@@ -16,6 +16,11 @@ This exercise was taken from [codingbat.com](https://codingbat.com/prob/p174148)
 ## Starter Code
 ```python
 def n_twice(string: str, n: int) -> str:
+    pass
+
+
+result = n_twice('Hello', 2)
+print(result)
 ```
 
 ## Tests

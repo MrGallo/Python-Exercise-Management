@@ -1,5 +1,5 @@
 # two_char
-**Topic:** 
+
 
 
 
@@ -16,6 +16,11 @@ This exercise was taken from [codingbat.com](https://codingbat.com/prob/p144623)
 ## Starter Code
 ```python
 def two_char(string: str, index: int) -> str:
+    pass
+
+
+result = two_char('java', 0)
+print(result)
 ```
 
 ## Tests

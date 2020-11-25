@@ -1,5 +1,5 @@
 # same_star_char
-**Topic:** 
+
 
 
 
@@ -16,6 +16,11 @@ This exercise was taken from [codingbat.com](https://codingbat.com/prob/p194491)
 ## Starter Code
 ```python
 def same_star_char(string: str) -> bool:
+    pass
+
+
+result = same_star_char('xy*yzz')
+print(result)
 ```
 
 ## Tests

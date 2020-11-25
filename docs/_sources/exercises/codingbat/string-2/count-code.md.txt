@@ -1,5 +1,5 @@
 # count_code
-**Topic:** 
+
 
 
 
@@ -16,6 +16,11 @@ This exercise was taken from [codingbat.com](https://codingbat.com/prob/p123614)
 ## Starter Code
 ```python
 def count_code(string: str) -> int:
+    pass
+
+
+result = count_code('aaacodebbb')
+print(result)
 ```
 
 ## Tests

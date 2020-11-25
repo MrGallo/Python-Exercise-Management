@@ -1,5 +1,5 @@
 # left_2
-**Topic:** 
+
 
 
 
@@ -16,6 +16,11 @@ This exercise was taken from [codingbat.com](https://codingbat.com/prob/p197720)
 ## Starter Code
 ```python
 def left_2(string: str) -> str:
+    pass
+
+
+result = left_2('Hello')
+print(result)
 ```
 
 ## Tests

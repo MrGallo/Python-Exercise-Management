@@ -1,5 +1,5 @@
 # get_sandwich
-**Topic:** 
+
 
 
 
@@ -16,6 +16,11 @@ This exercise was taken from [codingbat.com](https://codingbat.com/prob/p129952)
 ## Starter Code
 ```python
 def get_sandwich(string: str) -> str:
+    pass
+
+
+result = get_sandwich('breadjambread')
+print(result)
 ```
 
 ## Tests

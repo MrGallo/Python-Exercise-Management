@@ -1,5 +1,5 @@
 # without_end_2
-**Topic:** 
+
 
 
 
@@ -16,6 +16,11 @@ This exercise was taken from [codingbat.com](https://codingbat.com/prob/p174254)
 ## Starter Code
 ```python
 def without_end_2(string: str) -> str:
+    pass
+
+
+result = without_end_2('Hello')
+print(result)
 ```
 
 ## Tests

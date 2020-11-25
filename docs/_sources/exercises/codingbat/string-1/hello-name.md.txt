@@ -1,7 +1,6 @@
 # hello_name
-**Topic:** 
-**Requirements:**
-- format output text
+
+
 
 
 Given a string name, e.g. "Bob", return a greeting of the form "Hello Bob!".
@@ -17,6 +16,11 @@ This exercise was taken from [codingbat.com](https://codingbat.com/prob/p171896)
 ## Starter Code
 ```python
 def hello_name(name: str) -> str:
+    pass
+
+
+result = hello_name('Bob')
+print(result)
 ```
 
 ## Tests

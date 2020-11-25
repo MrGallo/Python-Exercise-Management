@@ -1,5 +1,5 @@
 # repeat_front
-**Topic:** 
+
 
 
 
@@ -16,6 +16,11 @@ This exercise was taken from [codingbat.com](https://codingbat.com/prob/p128796)
 ## Starter Code
 ```python
 def repeat_front(string: str, n: int) -> str:
+    pass
+
+
+result = repeat_front('Chocolate', 4)
+print(result)
 ```
 
 ## Tests

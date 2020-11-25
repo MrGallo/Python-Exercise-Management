@@ -1,5 +1,5 @@
 # repeat_end
-**Topic:** 
+
 
 
 
@@ -16,6 +16,11 @@ This exercise was taken from [codingbat.com](https://codingbat.com/prob/p152339)
 ## Starter Code
 ```python
 def repeat_end(string: str, n: int) -> str:
+    pass
+
+
+result = repeat_end('Hello', 3)
+print(result)
 ```
 
 ## Tests

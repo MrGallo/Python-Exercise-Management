@@ -1,5 +1,5 @@
 # end_other
-**Topic:** 
+
 
 
 
@@ -16,6 +16,11 @@ This exercise was taken from [codingbat.com](https://codingbat.com/prob/p126880)
 ## Starter Code
 ```python
 def end_other(a: str, b: str) -> bool:
+    pass
+
+
+result = end_other('Hiabc', 'abc')
+print(result)
 ```
 
 ## Tests

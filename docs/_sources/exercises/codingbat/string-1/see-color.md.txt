@@ -1,5 +1,5 @@
 # see_color
-**Topic:** 
+
 
 
 
@@ -16,6 +16,11 @@ This exercise was taken from [codingbat.com](https://codingbat.com/prob/p199216)
 ## Starter Code
 ```python
 def see_color(string: str) -> str:
+    pass
+
+
+result = see_color('redxx')
+print(result)
 ```
 
 ## Tests

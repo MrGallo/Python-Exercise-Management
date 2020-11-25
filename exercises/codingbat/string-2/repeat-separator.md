@@ -1,5 +1,5 @@
 # repeat_separator
-**Topic:** 
+
 
 
 
@@ -16,6 +16,11 @@ This exercise was taken from [codingbat.com](https://codingbat.com/prob/p109637)
 ## Starter Code
 ```python
 def repeat_separator(word: str, sep: str, count: int) -> str:
+    pass
+
+
+result = repeat_separator('Word', 'X', 3)
+print(result)
 ```
 
 ## Tests

@@ -1,5 +1,5 @@
 # mix_string
-**Topic:** 
+
 
 
 
@@ -16,6 +16,11 @@ This exercise was taken from [codingbat.com](https://codingbat.com/prob/p125185)
 ## Starter Code
 ```python
 def mix_string(a: str, b: str) -> str:
+    pass
+
+
+result = mix_string('abc', 'xyz')
+print(result)
 ```
 
 ## Tests

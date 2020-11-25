@@ -1,5 +1,5 @@
 # xy_balance
-**Topic:** 
+
 
 
 
@@ -16,6 +16,11 @@ This exercise was taken from [codingbat.com](https://codingbat.com/prob/p134250)
 ## Starter Code
 ```python
 def xy_balance(string: str) -> bool:
+    pass
+
+
+result = xy_balance('aaxbby')
+print(result)
 ```
 
 ## Tests

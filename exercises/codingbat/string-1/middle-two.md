@@ -1,5 +1,5 @@
 # middle_two
-**Topic:** 
+
 
 
 
@@ -16,6 +16,11 @@ This exercise was taken from [codingbat.com](https://codingbat.com/prob/p137729)
 ## Starter Code
 ```python
 def middle_two(string: str) -> str:
+    pass
+
+
+result = middle_two('string')
+print(result)
 ```
 
 ## Tests

@@ -1,5 +1,5 @@
 # xyz_there
-**Topic:** 
+
 
 
 
@@ -16,6 +16,11 @@ This exercise was taken from [codingbat.com](https://codingbat.com/prob/p136594)
 ## Starter Code
 ```python
 def xyz_there(string: str) -> bool:
+    pass
+
+
+result = xyz_there('abcxyz')
+print(result)
 ```
 
 ## Tests

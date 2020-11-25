@@ -1,5 +1,5 @@
 # middle_three
-**Topic:** 
+
 
 
 
@@ -16,6 +16,11 @@ This exercise was taken from [codingbat.com](https://codingbat.com/prob/p115863)
 ## Starter Code
 ```python
 def middle_three(string: str) -> str:
+    pass
+
+
+result = middle_three('Candy')
+print(result)
 ```
 
 ## Tests

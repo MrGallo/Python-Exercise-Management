@@ -1,5 +1,5 @@
 # last_chars
-**Topic:** 
+
 
 
 
@@ -16,6 +16,11 @@ This exercise was taken from [codingbat.com](https://codingbat.com/prob/p138183)
 ## Starter Code
 ```python
 def last_chars(a: str, b: str) -> str:
+    pass
+
+
+result = last_chars('last', 'chars')
+print(result)
 ```
 
 ## Tests

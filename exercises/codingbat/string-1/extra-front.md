@@ -1,5 +1,5 @@
 # extra_front
-**Topic:** 
+
 
 
 
@@ -16,6 +16,11 @@ This exercise was taken from [codingbat.com](https://codingbat.com/prob/p172063)
 ## Starter Code
 ```python
 def extra_front(string: str) -> str:
+    pass
+
+
+result = extra_front('Hello')
+print(result)
 ```
 
 ## Tests

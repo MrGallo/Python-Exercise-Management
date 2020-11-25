@@ -1,5 +1,5 @@
 # plus_out
-**Topic:** 
+
 
 
 
@@ -16,6 +16,11 @@ This exercise was taken from [codingbat.com](https://codingbat.com/prob/p170829)
 ## Starter Code
 ```python
 def plus_out(string: str, word: str) -> str:
+    pass
+
+
+result = plus_out('12xy34', 'xy')
+print(result)
 ```
 
 ## Tests

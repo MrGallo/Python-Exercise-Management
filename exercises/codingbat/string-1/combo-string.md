@@ -1,5 +1,5 @@
 # combo_string
-**Topic:** 
+
 
 
 
@@ -16,6 +16,11 @@ This exercise was taken from [codingbat.com](https://codingbat.com/prob/p168564)
 ## Starter Code
 ```python
 def combo_string(a: str, b: str) -> str:
+    pass
+
+
+result = combo_string('Hello', 'hi')
+print(result)
 ```
 
 ## Tests

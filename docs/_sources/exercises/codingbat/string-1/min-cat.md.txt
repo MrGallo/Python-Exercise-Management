@@ -1,5 +1,5 @@
 # min_cat
-**Topic:** 
+
 
 
 
@@ -16,6 +16,11 @@ This exercise was taken from [codingbat.com](https://codingbat.com/prob/p105745)
 ## Starter Code
 ```python
 def min_cat(a: str, b: str) -> str:
+    pass
+
+
+result = min_cat('Hello', 'Hi')
+print(result)
 ```
 
 ## Tests
