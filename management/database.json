@@ -1,7 +1,8 @@
 {
     "series_list": [
         "Fundamentals",
-        "Codingbat"
+        "Codingbat",
+        "Codingbat (Input/Output)"
     ],
     "Fundamentals": {
         "chapter_list": [
@@ -595,5 +596,4215 @@
                 "solution": ""
             }
         ]
+    },
+    "Codingbat (Input/Output)": {
+        "chapter_list": [
+            "String-1",
+            "String-2"
+        ],
+        "String-1": [
+            {
+                "name": "hello_name",
+                "topic": "",
+                "requirements": [],
+                "description": "Given a string name, e.g. \"Bob\", return a greeting of the form \"Hello Bob!\".\n\nThis exercise was taken from [codingbat.com](https://codingbat.com/prob/p171896) and has been adapted for the Python language. There are many great programming exercises there, but the majority are created for Java.",
+                "starter_code": "def hello_name(name: str) -> str:\n    pass\n\n\nresult = hello_name('Bob')\nprint(result)\n",
+                "tests": "from main import hello_name\n\n\ndef test_hello_name_1():\n    assert hello_name('Bob') == 'Hello Bob!'\n\n\ndef test_hello_name_2():\n    assert hello_name('Alice') == 'Hello Alice!'\n\n\ndef test_hello_name_3():\n    assert hello_name('X') == 'Hello X!'\n\n\ndef test_hello_name_4():\n    assert hello_name('Dolly') == 'Hello Dolly!'\n\n\ndef test_hello_name_5():\n    assert hello_name('Alpha') == 'Hello Alpha!'\n\n\ndef test_hello_name_6():\n    assert hello_name('Omega') == 'Hello Omega!'\n\n\ndef test_hello_name_7():\n    assert hello_name('Goodbye') == 'Hello Goodbye!'\n\n\ndef test_hello_name_8():\n    assert hello_name('ho ho ho') == 'Hello ho ho ho!'\n\n\ndef test_hello_name_9():\n    assert hello_name('xyz!') == 'Hello xyz!!'\n\n\ndef test_hello_name_10():\n    assert hello_name('Hello') == 'Hello Hello!'\n\n\n",
+                "solution": "",
+                "tests_io": [
+                    [
+                        [
+                            "Bob"
+                        ],
+                        "Hello Bob!"
+                    ],
+                    [
+                        [
+                            "Alice"
+                        ],
+                        "Hello Alice!"
+                    ],
+                    [
+                        [
+                            "X"
+                        ],
+                        "Hello X!"
+                    ],
+                    [
+                        [
+                            "Dolly"
+                        ],
+                        "Hello Dolly!"
+                    ],
+                    [
+                        [
+                            "Alpha"
+                        ],
+                        "Hello Alpha!"
+                    ],
+                    [
+                        [
+                            "Omega"
+                        ],
+                        "Hello Omega!"
+                    ],
+                    [
+                        [
+                            "Goodbye"
+                        ],
+                        "Hello Goodbye!"
+                    ],
+                    [
+                        [
+                            "ho ho ho"
+                        ],
+                        "Hello ho ho ho!"
+                    ],
+                    [
+                        [
+                            "xyz!"
+                        ],
+                        "Hello xyz!!"
+                    ],
+                    [
+                        [
+                            "Hello"
+                        ],
+                        "Hello Hello!"
+                    ]
+                ]
+            },
+            {
+                "name": "make_abba",
+                "topic": "",
+                "requirements": [],
+                "description": "Given two strings, a and b, return the result of putting them together in the order abba, e.g. \"Hi\" and \"Bye\" returns \"HiByeByeHi\".\n\nThis exercise was taken from [codingbat.com](https://codingbat.com/prob/p161056) and has been adapted for the Python language. There are many great programming exercises there, but the majority are created for Java.",
+                "starter_code": "def make_abba(a: str, b: str) -> str:\n    pass\n\n\nresult = make_abba('Hi', 'Bye')\nprint(result)\n",
+                "tests": "from main import make_abba\n\n\ndef test_make_abba_1():\n    assert make_abba('Hi', 'Bye') == 'HiByeByeHi'\n\n\ndef test_make_abba_2():\n    assert make_abba('Yo', 'Alice') == 'YoAliceAliceYo'\n\n\ndef test_make_abba_3():\n    assert make_abba('What', 'Up') == 'WhatUpUpWhat'\n\n\ndef test_make_abba_4():\n    assert make_abba('aaa', 'bbb') == 'aaabbbbbbaaa'\n\n\ndef test_make_abba_5():\n    assert make_abba('x', 'y') == 'xyyx'\n\n\ndef test_make_abba_6():\n    assert make_abba('x', '') == 'xx'\n\n\ndef test_make_abba_7():\n    assert make_abba('', 'y') == 'yy'\n\n\ndef test_make_abba_8():\n    assert make_abba('Bo', 'Ya') == 'BoYaYaBo'\n\n\ndef test_make_abba_9():\n    assert make_abba('Ya', 'Ya') == 'YaYaYaYa'\n\n\n",
+                "solution": "",
+                "tests_io": [
+                    [
+                        [
+                            "Hi",
+                            "Bye"
+                        ],
+                        "HiByeByeHi"
+                    ],
+                    [
+                        [
+                            "Yo",
+                            "Alice"
+                        ],
+                        "YoAliceAliceYo"
+                    ],
+                    [
+                        [
+                            "What",
+                            "Up"
+                        ],
+                        "WhatUpUpWhat"
+                    ],
+                    [
+                        [
+                            "aaa",
+                            "bbb"
+                        ],
+                        "aaabbbbbbaaa"
+                    ],
+                    [
+                        [
+                            "x",
+                            "y"
+                        ],
+                        "xyyx"
+                    ],
+                    [
+                        [
+                            "x",
+                            ""
+                        ],
+                        "xx"
+                    ],
+                    [
+                        [
+                            "",
+                            "y"
+                        ],
+                        "yy"
+                    ],
+                    [
+                        [
+                            "Bo",
+                            "Ya"
+                        ],
+                        "BoYaYaBo"
+                    ],
+                    [
+                        [
+                            "Ya",
+                            "Ya"
+                        ],
+                        "YaYaYaYa"
+                    ]
+                ]
+            },
+            {
+                "name": "make_tags",
+                "topic": "",
+                "requirements": [],
+                "description": "The web is built with HTML strings like \"&lt;i&gt;Yay&lt;/i&gt;\" which draws Yay as italic text. In this example, the \"i\" tag makes &lt;i&gt; and &lt;/i&gt; which surround the word \"Yay\". Given tag and word strings, create the HTML string with tags around the word, e.g. \"&lt;i&gt;Yay&lt;/i&gt;\".\n\nThis exercise was taken from [codingbat.com](https://codingbat.com/prob/p147483) and has been adapted for the Python language. There are many great programming exercises there, but the majority are created for Java.",
+                "starter_code": "def make_tags(tag: str, word: str) -> str:\n    pass\n\n\nresult = make_tags('i', 'Yay')\nprint(result)\n",
+                "tests": "from main import make_tags\n\n\ndef test_make_tags_1():\n    assert make_tags('i', 'Yay') == '<i>Yay</i>'\n\n\ndef test_make_tags_2():\n    assert make_tags('i', 'Hello') == '<i>Hello</i>'\n\n\ndef test_make_tags_3():\n    assert make_tags('cite', 'Yay') == '<cite>Yay</cite>'\n\n\ndef test_make_tags_4():\n    assert make_tags('address', 'here') == '<address>here</address>'\n\n\ndef test_make_tags_5():\n    assert make_tags('body', 'Heart') == '<body>Heart</body>'\n\n\ndef test_make_tags_6():\n    assert make_tags('i', 'i') == '<i>i</i>'\n\n\ndef test_make_tags_7():\n    assert make_tags('i', '') == '<i></i>'\n\n\n",
+                "solution": "",
+                "tests_io": [
+                    [
+                        [
+                            "i",
+                            "Yay"
+                        ],
+                        "<i>Yay</i>"
+                    ],
+                    [
+                        [
+                            "i",
+                            "Hello"
+                        ],
+                        "<i>Hello</i>"
+                    ],
+                    [
+                        [
+                            "cite",
+                            "Yay"
+                        ],
+                        "<cite>Yay</cite>"
+                    ],
+                    [
+                        [
+                            "address",
+                            "here"
+                        ],
+                        "<address>here</address>"
+                    ],
+                    [
+                        [
+                            "body",
+                            "Heart"
+                        ],
+                        "<body>Heart</body>"
+                    ],
+                    [
+                        [
+                            "i",
+                            "i"
+                        ],
+                        "<i>i</i>"
+                    ],
+                    [
+                        [
+                            "i",
+                            ""
+                        ],
+                        "<i></i>"
+                    ]
+                ]
+            },
+            {
+                "name": "make_out_word",
+                "topic": "",
+                "requirements": [],
+                "description": "Given an \"out\" string length 4, such as \"&lt;&lt;&gt;&gt;\", and a word, return a new string where the word is in the middle of the out string, e.g. \"&lt;&lt;word&gt;&gt;\". Note: use str.substring(i, j) to extract the String starting at index i and going up to but not including index j.\n\nThis exercise was taken from [codingbat.com](https://codingbat.com/prob/p184030) and has been adapted for the Python language. There are many great programming exercises there, but the majority are created for Java.",
+                "starter_code": "def make_out_word(out: str, word: str) -> str:\n    pass\n\n\nresult = make_out_word('<<>>', 'Yay')\nprint(result)\n",
+                "tests": "from main import make_out_word\n\n\ndef test_make_out_word_1():\n    assert make_out_word('<<>>', 'Yay') == '<<Yay>>'\n\n\ndef test_make_out_word_2():\n    assert make_out_word('<<>>', 'WooHoo') == '<<WooHoo>>'\n\n\ndef test_make_out_word_3():\n    assert make_out_word('[[]]', 'word') == '[[word]]'\n\n\ndef test_make_out_word_4():\n    assert make_out_word('HHoo', 'Hello') == 'HHHellooo'\n\n\ndef test_make_out_word_5():\n    assert make_out_word('abyz', 'YAY') == 'abYAYyz'\n\n\n",
+                "solution": "",
+                "tests_io": [
+                    [
+                        [
+                            "<<>>",
+                            "Yay"
+                        ],
+                        "<<Yay>>"
+                    ],
+                    [
+                        [
+                            "<<>>",
+                            "WooHoo"
+                        ],
+                        "<<WooHoo>>"
+                    ],
+                    [
+                        [
+                            "[[]]",
+                            "word"
+                        ],
+                        "[[word]]"
+                    ],
+                    [
+                        [
+                            "HHoo",
+                            "Hello"
+                        ],
+                        "HHHellooo"
+                    ],
+                    [
+                        [
+                            "abyz",
+                            "YAY"
+                        ],
+                        "abYAYyz"
+                    ]
+                ]
+            },
+            {
+                "name": "extra_end",
+                "topic": "",
+                "requirements": [],
+                "description": "Given a string, return a new string made of 3 copies of the last 2 chars of the original string. The string length will be at least 2.\n\nThis exercise was taken from [codingbat.com](https://codingbat.com/prob/p108853) and has been adapted for the Python language. There are many great programming exercises there, but the majority are created for Java.",
+                "starter_code": "def extra_end(string: str) -> str:\n    pass\n\n\nresult = extra_end('Hello')\nprint(result)\n",
+                "tests": "from main import extra_end\n\n\ndef test_extra_end_1():\n    assert extra_end('Hello') == 'lololo'\n\n\ndef test_extra_end_2():\n    assert extra_end('ab') == 'ababab'\n\n\ndef test_extra_end_3():\n    assert extra_end('Hi') == 'HiHiHi'\n\n\ndef test_extra_end_4():\n    assert extra_end('Candy') == 'dydydy'\n\n\ndef test_extra_end_5():\n    assert extra_end('Code') == 'dedede'\n\n\n",
+                "solution": "",
+                "tests_io": [
+                    [
+                        [
+                            "Hello"
+                        ],
+                        "lololo"
+                    ],
+                    [
+                        [
+                            "ab"
+                        ],
+                        "ababab"
+                    ],
+                    [
+                        [
+                            "Hi"
+                        ],
+                        "HiHiHi"
+                    ],
+                    [
+                        [
+                            "Candy"
+                        ],
+                        "dydydy"
+                    ],
+                    [
+                        [
+                            "Code"
+                        ],
+                        "dedede"
+                    ]
+                ]
+            },
+            {
+                "name": "first_two",
+                "topic": "",
+                "requirements": [],
+                "description": "Given a string, return the string made of its first two chars, so the String \"Hello\" yields \"He\". If the string is shorter than length 2, return whatever there is, so \"X\" yields \"X\", and the empty string \"\" yields the empty string \"\". Note that str.length() returns the length of a string.\n\nThis exercise was taken from [codingbat.com](https://codingbat.com/prob/p163411) and has been adapted for the Python language. There are many great programming exercises there, but the majority are created for Java.",
+                "starter_code": "def first_two(string: str) -> str:\n    pass\n\n\nresult = first_two('Hello')\nprint(result)\n",
+                "tests": "from main import first_two\n\n\ndef test_first_two_1():\n    assert first_two('Hello') == 'He'\n\n\ndef test_first_two_2():\n    assert first_two('abcdefg') == 'ab'\n\n\ndef test_first_two_3():\n    assert first_two('ab') == 'ab'\n\n\ndef test_first_two_4():\n    assert first_two('a') == 'a'\n\n\ndef test_first_two_5():\n    assert first_two('') == ''\n\n\ndef test_first_two_6():\n    assert first_two('Kitten') == 'Ki'\n\n\ndef test_first_two_7():\n    assert first_two('hi') == 'hi'\n\n\ndef test_first_two_8():\n    assert first_two('hiya') == 'hi'\n\n\n",
+                "solution": "",
+                "tests_io": [
+                    [
+                        [
+                            "Hello"
+                        ],
+                        "He"
+                    ],
+                    [
+                        [
+                            "abcdefg"
+                        ],
+                        "ab"
+                    ],
+                    [
+                        [
+                            "ab"
+                        ],
+                        "ab"
+                    ],
+                    [
+                        [
+                            "a"
+                        ],
+                        "a"
+                    ],
+                    [
+                        [
+                            ""
+                        ],
+                        ""
+                    ],
+                    [
+                        [
+                            "Kitten"
+                        ],
+                        "Ki"
+                    ],
+                    [
+                        [
+                            "hi"
+                        ],
+                        "hi"
+                    ],
+                    [
+                        [
+                            "hiya"
+                        ],
+                        "hi"
+                    ]
+                ]
+            },
+            {
+                "name": "first_half",
+                "topic": "",
+                "requirements": [],
+                "description": "Given a string of even length, return the first half. So the string \"WooHoo\" yields \"Woo\".\n\nThis exercise was taken from [codingbat.com](https://codingbat.com/prob/p172267) and has been adapted for the Python language. There are many great programming exercises there, but the majority are created for Java.",
+                "starter_code": "def first_half(string: str) -> str:\n    pass\n\n\nresult = first_half('WooHoo')\nprint(result)\n",
+                "tests": "from main import first_half\n\n\ndef test_first_half_1():\n    assert first_half('WooHoo') == 'Woo'\n\n\ndef test_first_half_2():\n    assert first_half('HelloThere') == 'Hello'\n\n\ndef test_first_half_3():\n    assert first_half('abcdef') == 'abc'\n\n\ndef test_first_half_4():\n    assert first_half('ab') == 'a'\n\n\ndef test_first_half_5():\n    assert first_half('') == ''\n\n\ndef test_first_half_6():\n    assert first_half('0123456789') == '01234'\n\n\ndef test_first_half_7():\n    assert first_half('kitten') == 'kit'\n\n\n",
+                "solution": "",
+                "tests_io": [
+                    [
+                        [
+                            "WooHoo"
+                        ],
+                        "Woo"
+                    ],
+                    [
+                        [
+                            "HelloThere"
+                        ],
+                        "Hello"
+                    ],
+                    [
+                        [
+                            "abcdef"
+                        ],
+                        "abc"
+                    ],
+                    [
+                        [
+                            "ab"
+                        ],
+                        "a"
+                    ],
+                    [
+                        [
+                            ""
+                        ],
+                        ""
+                    ],
+                    [
+                        [
+                            "0123456789"
+                        ],
+                        "01234"
+                    ],
+                    [
+                        [
+                            "kitten"
+                        ],
+                        "kit"
+                    ]
+                ]
+            },
+            {
+                "name": "without_end",
+                "topic": "",
+                "requirements": [],
+                "description": "Given a string, return a version without the first and last char, so \"Hello\" yields \"ell\". The string length will be at least 2.\n\nThis exercise was taken from [codingbat.com](https://codingbat.com/prob/p130896) and has been adapted for the Python language. There are many great programming exercises there, but the majority are created for Java.",
+                "starter_code": "def without_end(string: str) -> str:\n    pass\n\n\nresult = without_end('Hello')\nprint(result)\n",
+                "tests": "from main import without_end\n\n\ndef test_without_end_1():\n    assert without_end('Hello') == 'ell'\n\n\ndef test_without_end_2():\n    assert without_end('java') == 'av'\n\n\ndef test_without_end_3():\n    assert without_end('coding') == 'odin'\n\n\ndef test_without_end_4():\n    assert without_end('code') == 'od'\n\n\ndef test_without_end_5():\n    assert without_end('ab') == ''\n\n\ndef test_without_end_6():\n    assert without_end('Chocolate!') == 'hocolate'\n\n\ndef test_without_end_7():\n    assert without_end('kitten') == 'itte'\n\n\ndef test_without_end_8():\n    assert without_end('woohoo') == 'ooho'\n\n\n",
+                "solution": "",
+                "tests_io": [
+                    [
+                        [
+                            "Hello"
+                        ],
+                        "ell"
+                    ],
+                    [
+                        [
+                            "java"
+                        ],
+                        "av"
+                    ],
+                    [
+                        [
+                            "coding"
+                        ],
+                        "odin"
+                    ],
+                    [
+                        [
+                            "code"
+                        ],
+                        "od"
+                    ],
+                    [
+                        [
+                            "ab"
+                        ],
+                        ""
+                    ],
+                    [
+                        [
+                            "Chocolate!"
+                        ],
+                        "hocolate"
+                    ],
+                    [
+                        [
+                            "kitten"
+                        ],
+                        "itte"
+                    ],
+                    [
+                        [
+                            "woohoo"
+                        ],
+                        "ooho"
+                    ]
+                ]
+            },
+            {
+                "name": "combo_string",
+                "topic": "",
+                "requirements": [],
+                "description": "Given 2 strings, a and b, return a string of the form short+long+short, with the shorter string on the outside and the longer string on the inside. The strings will not be the same length, but they may be empty (length 0).\n\nThis exercise was taken from [codingbat.com](https://codingbat.com/prob/p168564) and has been adapted for the Python language. There are many great programming exercises there, but the majority are created for Java.",
+                "starter_code": "def combo_string(a: str, b: str) -> str:\n    pass\n\n\nresult = combo_string('Hello', 'hi')\nprint(result)\n",
+                "tests": "from main import combo_string\n\n\ndef test_combo_string_1():\n    assert combo_string('Hello', 'hi') == 'hiHellohi'\n\n\ndef test_combo_string_2():\n    assert combo_string('hi', 'Hello') == 'hiHellohi'\n\n\ndef test_combo_string_3():\n    assert combo_string('aaa', 'b') == 'baaab'\n\n\ndef test_combo_string_4():\n    assert combo_string('b', 'aaa') == 'baaab'\n\n\ndef test_combo_string_5():\n    assert combo_string('aaa', '') == 'aaa'\n\n\ndef test_combo_string_6():\n    assert combo_string('', 'bb') == 'bb'\n\n\ndef test_combo_string_7():\n    assert combo_string('aaa', '1234') == 'aaa1234aaa'\n\n\ndef test_combo_string_8():\n    assert combo_string('aaa', 'bb') == 'bbaaabb'\n\n\ndef test_combo_string_9():\n    assert combo_string('a', 'bb') == 'abba'\n\n\ndef test_combo_string_10():\n    assert combo_string('bb', 'a') == 'abba'\n\n\ndef test_combo_string_11():\n    assert combo_string('xyz', 'ab') == 'abxyzab'\n\n\n",
+                "solution": "",
+                "tests_io": [
+                    [
+                        [
+                            "Hello",
+                            "hi"
+                        ],
+                        "hiHellohi"
+                    ],
+                    [
+                        [
+                            "hi",
+                            "Hello"
+                        ],
+                        "hiHellohi"
+                    ],
+                    [
+                        [
+                            "aaa",
+                            "b"
+                        ],
+                        "baaab"
+                    ],
+                    [
+                        [
+                            "b",
+                            "aaa"
+                        ],
+                        "baaab"
+                    ],
+                    [
+                        [
+                            "aaa",
+                            ""
+                        ],
+                        "aaa"
+                    ],
+                    [
+                        [
+                            "",
+                            "bb"
+                        ],
+                        "bb"
+                    ],
+                    [
+                        [
+                            "aaa",
+                            "1234"
+                        ],
+                        "aaa1234aaa"
+                    ],
+                    [
+                        [
+                            "aaa",
+                            "bb"
+                        ],
+                        "bbaaabb"
+                    ],
+                    [
+                        [
+                            "a",
+                            "bb"
+                        ],
+                        "abba"
+                    ],
+                    [
+                        [
+                            "bb",
+                            "a"
+                        ],
+                        "abba"
+                    ],
+                    [
+                        [
+                            "xyz",
+                            "ab"
+                        ],
+                        "abxyzab"
+                    ]
+                ]
+            },
+            {
+                "name": "non_start",
+                "topic": "",
+                "requirements": [],
+                "description": "Given 2 strings, return their concatenation, except omit the first char of each. The strings will be at least length 1.\n\nThis exercise was taken from [codingbat.com](https://codingbat.com/prob/p143825) and has been adapted for the Python language. There are many great programming exercises there, but the majority are created for Java.",
+                "starter_code": "def non_start(a: str, b: str) -> str:\n    pass\n\n\nresult = non_start('Hello', 'There')\nprint(result)\n",
+                "tests": "from main import non_start\n\n\ndef test_non_start_1():\n    assert non_start('Hello', 'There') == 'ellohere'\n\n\ndef test_non_start_2():\n    assert non_start('java', 'code') == 'avaode'\n\n\ndef test_non_start_3():\n    assert non_start('shotl', 'java') == 'hotlava'\n\n\ndef test_non_start_4():\n    assert non_start('ab', 'xy') == 'by'\n\n\ndef test_non_start_5():\n    assert non_start('ab', 'x') == 'b'\n\n\ndef test_non_start_6():\n    assert non_start('x', 'ac') == 'c'\n\n\ndef test_non_start_7():\n    assert non_start('a', 'x') == ''\n\n\ndef test_non_start_8():\n    assert non_start('kit', 'kat') == 'itat'\n\n\ndef test_non_start_9():\n    assert non_start('mart', 'dart') == 'artart'\n\n\n",
+                "solution": "",
+                "tests_io": [
+                    [
+                        [
+                            "Hello",
+                            "There"
+                        ],
+                        "ellohere"
+                    ],
+                    [
+                        [
+                            "java",
+                            "code"
+                        ],
+                        "avaode"
+                    ],
+                    [
+                        [
+                            "shotl",
+                            "java"
+                        ],
+                        "hotlava"
+                    ],
+                    [
+                        [
+                            "ab",
+                            "xy"
+                        ],
+                        "by"
+                    ],
+                    [
+                        [
+                            "ab",
+                            "x"
+                        ],
+                        "b"
+                    ],
+                    [
+                        [
+                            "x",
+                            "ac"
+                        ],
+                        "c"
+                    ],
+                    [
+                        [
+                            "a",
+                            "x"
+                        ],
+                        ""
+                    ],
+                    [
+                        [
+                            "kit",
+                            "kat"
+                        ],
+                        "itat"
+                    ],
+                    [
+                        [
+                            "mart",
+                            "dart"
+                        ],
+                        "artart"
+                    ]
+                ]
+            },
+            {
+                "name": "left_2",
+                "topic": "",
+                "requirements": [],
+                "description": "Given a string, return a \"rotated left 2\" version where the first 2 chars are moved to the end. The string length will be at least 2.\n\nThis exercise was taken from [codingbat.com](https://codingbat.com/prob/p197720) and has been adapted for the Python language. There are many great programming exercises there, but the majority are created for Java.",
+                "starter_code": "def left_2(string: str) -> str:\n    pass\n\n\nresult = left_2('Hello')\nprint(result)\n",
+                "tests": "from main import left_2\n\n\ndef test_left_2_1():\n    assert left_2('Hello') == 'lloHe'\n\n\ndef test_left_2_2():\n    assert left_2('java') == 'vaja'\n\n\ndef test_left_2_3():\n    assert left_2('Hi') == 'Hi'\n\n\ndef test_left_2_4():\n    assert left_2('code') == 'deco'\n\n\ndef test_left_2_5():\n    assert left_2('cat') == 'tca'\n\n\ndef test_left_2_6():\n    assert left_2('12345') == '34512'\n\n\ndef test_left_2_7():\n    assert left_2('Chocolate') == 'ocolateCh'\n\n\ndef test_left_2_8():\n    assert left_2('bricks') == 'icksbr'\n\n\n",
+                "solution": "",
+                "tests_io": [
+                    [
+                        [
+                            "Hello"
+                        ],
+                        "lloHe"
+                    ],
+                    [
+                        [
+                            "java"
+                        ],
+                        "vaja"
+                    ],
+                    [
+                        [
+                            "Hi"
+                        ],
+                        "Hi"
+                    ],
+                    [
+                        [
+                            "code"
+                        ],
+                        "deco"
+                    ],
+                    [
+                        [
+                            "cat"
+                        ],
+                        "tca"
+                    ],
+                    [
+                        [
+                            "12345"
+                        ],
+                        "34512"
+                    ],
+                    [
+                        [
+                            "Chocolate"
+                        ],
+                        "ocolateCh"
+                    ],
+                    [
+                        [
+                            "bricks"
+                        ],
+                        "icksbr"
+                    ]
+                ]
+            },
+            {
+                "name": "right_2",
+                "topic": "",
+                "requirements": [],
+                "description": "Given a string, return a \"rotated right 2\" version where the last 2 chars are moved to the start. The string length will be at least 2.\n\nThis exercise was taken from [codingbat.com](https://codingbat.com/prob/p130781) and has been adapted for the Python language. There are many great programming exercises there, but the majority are created for Java.",
+                "starter_code": "def right_2(string: str) -> str:\n    pass\n\n\nresult = right_2('Hello')\nprint(result)\n",
+                "tests": "from main import right_2\n\n\ndef test_right_2_1():\n    assert right_2('Hello') == 'loHel'\n\n\ndef test_right_2_2():\n    assert right_2('java') == 'vaja'\n\n\ndef test_right_2_3():\n    assert right_2('Hi') == 'Hi'\n\n\ndef test_right_2_4():\n    assert right_2('code') == 'deco'\n\n\ndef test_right_2_5():\n    assert right_2('cat') == 'atc'\n\n\ndef test_right_2_6():\n    assert right_2('12345') == '45123'\n\n\n",
+                "solution": "",
+                "tests_io": [
+                    [
+                        [
+                            "Hello"
+                        ],
+                        "loHel"
+                    ],
+                    [
+                        [
+                            "java"
+                        ],
+                        "vaja"
+                    ],
+                    [
+                        [
+                            "Hi"
+                        ],
+                        "Hi"
+                    ],
+                    [
+                        [
+                            "code"
+                        ],
+                        "deco"
+                    ],
+                    [
+                        [
+                            "cat"
+                        ],
+                        "atc"
+                    ],
+                    [
+                        [
+                            "12345"
+                        ],
+                        "45123"
+                    ]
+                ]
+            },
+            {
+                "name": "the_end",
+                "topic": "",
+                "requirements": [],
+                "description": "Given a string, return a string length 1 from its front, unless <b>front</b> is false, in which case return a string length 1 from its back. The string will be non-empty.\n\nThis exercise was taken from [codingbat.com](https://codingbat.com/prob/p162477) and has been adapted for the Python language. There are many great programming exercises there, but the majority are created for Java.",
+                "starter_code": "def the_end(string: str, front: bool) -> str:\n    pass\n\n\nresult = the_end('Hello', True)\nprint(result)\n",
+                "tests": "from main import the_end\n\n\ndef test_the_end_1():\n    assert the_end('Hello', True) == 'H'\n\n\ndef test_the_end_2():\n    assert the_end('Hello', False) == 'o'\n\n\ndef test_the_end_3():\n    assert the_end('oh', True) == 'o'\n\n\ndef test_the_end_4():\n    assert the_end('oh', False) == 'h'\n\n\ndef test_the_end_5():\n    assert the_end('x', True) == 'x'\n\n\ndef test_the_end_6():\n    assert the_end('x', False) == 'x'\n\n\ndef test_the_end_7():\n    assert the_end('java', True) == 'j'\n\n\ndef test_the_end_8():\n    assert the_end('chocolate', False) == 'e'\n\n\ndef test_the_end_9():\n    assert the_end('1234', True) == '1'\n\n\ndef test_the_end_10():\n    assert the_end('code', False) == 'e'\n\n\n",
+                "solution": "",
+                "tests_io": [
+                    [
+                        [
+                            "Hello",
+                            true
+                        ],
+                        "H"
+                    ],
+                    [
+                        [
+                            "Hello",
+                            false
+                        ],
+                        "o"
+                    ],
+                    [
+                        [
+                            "oh",
+                            true
+                        ],
+                        "o"
+                    ],
+                    [
+                        [
+                            "oh",
+                            false
+                        ],
+                        "h"
+                    ],
+                    [
+                        [
+                            "x",
+                            true
+                        ],
+                        "x"
+                    ],
+                    [
+                        [
+                            "x",
+                            false
+                        ],
+                        "x"
+                    ],
+                    [
+                        [
+                            "java",
+                            true
+                        ],
+                        "j"
+                    ],
+                    [
+                        [
+                            "chocolate",
+                            false
+                        ],
+                        "e"
+                    ],
+                    [
+                        [
+                            "1234",
+                            true
+                        ],
+                        "1"
+                    ],
+                    [
+                        [
+                            "code",
+                            false
+                        ],
+                        "e"
+                    ]
+                ]
+            },
+            {
+                "name": "withou_end_2",
+                "topic": "",
+                "requirements": [],
+                "description": "Given a string, return a version without both the first and last char of the string. The string may be any length, including 0.\n\nThis exercise was taken from [codingbat.com](https://codingbat.com/prob/p174254) and has been adapted for the Python language. There are many great programming exercises there, but the majority are created for Java.",
+                "starter_code": "def withou_end_2(string: str) -> str:\n    pass\n\n\nresult = withou_end_2('Hello')\nprint(result)\n",
+                "tests": "from main import withou_end_2\n\n\ndef test_withou_end_2_1():\n    assert withou_end_2('Hello') == 'ell'\n\n\ndef test_withou_end_2_2():\n    assert withou_end_2('abc') == 'b'\n\n\ndef test_withou_end_2_3():\n    assert withou_end_2('ab') == ''\n\n\ndef test_withou_end_2_4():\n    assert withou_end_2('a') == ''\n\n\ndef test_withou_end_2_5():\n    assert withou_end_2('') == ''\n\n\ndef test_withou_end_2_6():\n    assert withou_end_2('coldy') == 'old'\n\n\ndef test_withou_end_2_7():\n    assert withou_end_2('java code') == 'ava cod'\n\n\n",
+                "solution": "",
+                "tests_io": [
+                    [
+                        [
+                            "Hello"
+                        ],
+                        "ell"
+                    ],
+                    [
+                        [
+                            "abc"
+                        ],
+                        "b"
+                    ],
+                    [
+                        [
+                            "ab"
+                        ],
+                        ""
+                    ],
+                    [
+                        [
+                            "a"
+                        ],
+                        ""
+                    ],
+                    [
+                        [
+                            ""
+                        ],
+                        ""
+                    ],
+                    [
+                        [
+                            "coldy"
+                        ],
+                        "old"
+                    ],
+                    [
+                        [
+                            "java code"
+                        ],
+                        "ava cod"
+                    ]
+                ]
+            },
+            {
+                "name": "middle_two",
+                "topic": "",
+                "requirements": [],
+                "description": "Given a string of even length, return a string made of the middle two chars, so the string \"string\" yields \"ri\". The string length will be at least 2.\n\nThis exercise was taken from [codingbat.com](https://codingbat.com/prob/p137729) and has been adapted for the Python language. There are many great programming exercises there, but the majority are created for Java.",
+                "starter_code": "def middle_two(string: str) -> str:\n    pass\n\n\nresult = middle_two('string')\nprint(result)\n",
+                "tests": "from main import middle_two\n\n\ndef test_middle_two_1():\n    assert middle_two('string') == 'ri'\n\n\ndef test_middle_two_2():\n    assert middle_two('code') == 'od'\n\n\ndef test_middle_two_3():\n    assert middle_two('Practice') == 'ct'\n\n\ndef test_middle_two_4():\n    assert middle_two('ab') == 'ab'\n\n\ndef test_middle_two_5():\n    assert middle_two('0123456789') == '45'\n\n\n",
+                "solution": "",
+                "tests_io": [
+                    [
+                        [
+                            "string"
+                        ],
+                        "ri"
+                    ],
+                    [
+                        [
+                            "code"
+                        ],
+                        "od"
+                    ],
+                    [
+                        [
+                            "Practice"
+                        ],
+                        "ct"
+                    ],
+                    [
+                        [
+                            "ab"
+                        ],
+                        "ab"
+                    ],
+                    [
+                        [
+                            "0123456789"
+                        ],
+                        "45"
+                    ]
+                ]
+            },
+            {
+                "name": "ends_ly",
+                "topic": "",
+                "requirements": [],
+                "description": "Given a string, return true if it ends in \"ly\".\n\nThis exercise was taken from [codingbat.com](https://codingbat.com/prob/p103895) and has been adapted for the Python language. There are many great programming exercises there, but the majority are created for Java.",
+                "starter_code": "def ends_ly(string: str) -> bool:\n    pass\n\n\nresult = ends_ly('oddly')\nprint(result)\n",
+                "tests": "from main import ends_ly\n\n\ndef test_ends_ly_1():\n    assert ends_ly('oddly') == True\n\n\ndef test_ends_ly_2():\n    assert ends_ly('y') == False\n\n\ndef test_ends_ly_3():\n    assert ends_ly('oddy') == False\n\n\ndef test_ends_ly_4():\n    assert ends_ly('oddl') == False\n\n\ndef test_ends_ly_5():\n    assert ends_ly('olydd') == False\n\n\ndef test_ends_ly_6():\n    assert ends_ly('ly') == True\n\n\ndef test_ends_ly_7():\n    assert ends_ly('') == False\n\n\ndef test_ends_ly_8():\n    assert ends_ly('falsey') == False\n\n\ndef test_ends_ly_9():\n    assert ends_ly('evenly') == True\n\n\n",
+                "solution": "",
+                "tests_io": [
+                    [
+                        [
+                            "oddly"
+                        ],
+                        true
+                    ],
+                    [
+                        [
+                            "y"
+                        ],
+                        false
+                    ],
+                    [
+                        [
+                            "oddy"
+                        ],
+                        false
+                    ],
+                    [
+                        [
+                            "oddl"
+                        ],
+                        false
+                    ],
+                    [
+                        [
+                            "olydd"
+                        ],
+                        false
+                    ],
+                    [
+                        [
+                            "ly"
+                        ],
+                        true
+                    ],
+                    [
+                        [
+                            ""
+                        ],
+                        false
+                    ],
+                    [
+                        [
+                            "falsey"
+                        ],
+                        false
+                    ],
+                    [
+                        [
+                            "evenly"
+                        ],
+                        true
+                    ]
+                ]
+            },
+            {
+                "name": "n_twice",
+                "topic": "",
+                "requirements": [],
+                "description": "Given a string and an int n, return a string made of the first and last n chars from the string. The string length will be at least n.\n\nThis exercise was taken from [codingbat.com](https://codingbat.com/prob/p174148) and has been adapted for the Python language. There are many great programming exercises there, but the majority are created for Java.",
+                "starter_code": "def n_twice(string: str, n: int) -> str:\n    pass\n\n\nresult = n_twice('Hello', 2)\nprint(result)\n",
+                "tests": "from main import n_twice\n\n\ndef test_n_twice_1():\n    assert n_twice('Hello', 2) == 'Helo'\n\n\ndef test_n_twice_2():\n    assert n_twice('Chocolate', 3) == 'Choate'\n\n\ndef test_n_twice_3():\n    assert n_twice('Chocolate', 1) == 'Ce'\n\n\ndef test_n_twice_4():\n    assert n_twice('Chocolate', 0) == ''\n\n\ndef test_n_twice_5():\n    assert n_twice('Hello', 4) == 'Hellello'\n\n\ndef test_n_twice_6():\n    assert n_twice('Code', 4) == 'CodeCode'\n\n\ndef test_n_twice_7():\n    assert n_twice('Code', 2) == 'Code'\n\n\n",
+                "solution": "",
+                "tests_io": [
+                    [
+                        [
+                            "Hello",
+                            2
+                        ],
+                        "Helo"
+                    ],
+                    [
+                        [
+                            "Chocolate",
+                            3
+                        ],
+                        "Choate"
+                    ],
+                    [
+                        [
+                            "Chocolate",
+                            1
+                        ],
+                        "Ce"
+                    ],
+                    [
+                        [
+                            "Chocolate",
+                            0
+                        ],
+                        ""
+                    ],
+                    [
+                        [
+                            "Hello",
+                            4
+                        ],
+                        "Hellello"
+                    ],
+                    [
+                        [
+                            "Code",
+                            4
+                        ],
+                        "CodeCode"
+                    ],
+                    [
+                        [
+                            "Code",
+                            2
+                        ],
+                        "Code"
+                    ]
+                ]
+            },
+            {
+                "name": "two_char",
+                "topic": "",
+                "requirements": [],
+                "description": "Given a string and an index, return a string length 2 starting at the given index. If the index is too big or too small to define a string length 2, use the first 2 chars. The string length will be at least 2.\n\nThis exercise was taken from [codingbat.com](https://codingbat.com/prob/p144623) and has been adapted for the Python language. There are many great programming exercises there, but the majority are created for Java.",
+                "starter_code": "def two_char(string: str, index: int) -> str:\n    pass\n\n\nresult = two_char('java', 0)\nprint(result)\n",
+                "tests": "from main import two_char\n\n\ndef test_two_char_1():\n    assert two_char('java', 0) == 'ja'\n\n\ndef test_two_char_2():\n    assert two_char('java', 2) == 'va'\n\n\ndef test_two_char_3():\n    assert two_char('java', 3) == 'ja'\n\n\ndef test_two_char_4():\n    assert two_char('java', 4) == 'ja'\n\n\ndef test_two_char_5():\n    assert two_char('java', -1) == 'ja'\n\n\ndef test_two_char_6():\n    assert two_char('Hello', 0) == 'He'\n\n\ndef test_two_char_7():\n    assert two_char('Hello', 1) == 'el'\n\n\ndef test_two_char_8():\n    assert two_char('Hello', 99) == 'He'\n\n\ndef test_two_char_9():\n    assert two_char('Hello', 3) == 'lo'\n\n\ndef test_two_char_10():\n    assert two_char('Hello', 4) == 'He'\n\n\ndef test_two_char_11():\n    assert two_char('Hello', 5) == 'He'\n\n\ndef test_two_char_12():\n    assert two_char('Hello', -7) == 'He'\n\n\ndef test_two_char_13():\n    assert two_char('Hello', 6) == 'He'\n\n\ndef test_two_char_14():\n    assert two_char('Hello', -1) == 'He'\n\n\ndef test_two_char_15():\n    assert two_char('yay', 0) == 'ya'\n\n\n",
+                "solution": "",
+                "tests_io": [
+                    [
+                        [
+                            "java",
+                            0
+                        ],
+                        "ja"
+                    ],
+                    [
+                        [
+                            "java",
+                            2
+                        ],
+                        "va"
+                    ],
+                    [
+                        [
+                            "java",
+                            3
+                        ],
+                        "ja"
+                    ],
+                    [
+                        [
+                            "java",
+                            4
+                        ],
+                        "ja"
+                    ],
+                    [
+                        [
+                            "java",
+                            -1
+                        ],
+                        "ja"
+                    ],
+                    [
+                        [
+                            "Hello",
+                            0
+                        ],
+                        "He"
+                    ],
+                    [
+                        [
+                            "Hello",
+                            1
+                        ],
+                        "el"
+                    ],
+                    [
+                        [
+                            "Hello",
+                            99
+                        ],
+                        "He"
+                    ],
+                    [
+                        [
+                            "Hello",
+                            3
+                        ],
+                        "lo"
+                    ],
+                    [
+                        [
+                            "Hello",
+                            4
+                        ],
+                        "He"
+                    ],
+                    [
+                        [
+                            "Hello",
+                            5
+                        ],
+                        "He"
+                    ],
+                    [
+                        [
+                            "Hello",
+                            -7
+                        ],
+                        "He"
+                    ],
+                    [
+                        [
+                            "Hello",
+                            6
+                        ],
+                        "He"
+                    ],
+                    [
+                        [
+                            "Hello",
+                            -1
+                        ],
+                        "He"
+                    ],
+                    [
+                        [
+                            "yay",
+                            0
+                        ],
+                        "ya"
+                    ]
+                ]
+            },
+            {
+                "name": "middle_three",
+                "topic": "",
+                "requirements": [],
+                "description": "Given a string of odd length, return the string length 3 from its middle, so \"Candy\" yields \"and\". The string length will be at least 3.\n\nThis exercise was taken from [codingbat.com](https://codingbat.com/prob/p115863) and has been adapted for the Python language. There are many great programming exercises there, but the majority are created for Java.",
+                "starter_code": "def middle_three(string: str) -> str:\n    pass\n\n\nresult = middle_three('Candy')\nprint(result)\n",
+                "tests": "from main import middle_three\n\n\ndef test_middle_three_1():\n    assert middle_three('Candy') == 'and'\n\n\ndef test_middle_three_2():\n    assert middle_three('and') == 'and'\n\n\ndef test_middle_three_3():\n    assert middle_three('solving') == 'lvi'\n\n\ndef test_middle_three_4():\n    assert middle_three('Hi yet Hi') == 'yet'\n\n\ndef test_middle_three_5():\n    assert middle_three('java yet java') == 'yet'\n\n\ndef test_middle_three_6():\n    assert middle_three('Chocolate') == 'col'\n\n\ndef test_middle_three_7():\n    assert middle_three('XabcxyzabcX') == 'xyz'\n\n\n",
+                "solution": "",
+                "tests_io": [
+                    [
+                        [
+                            "Candy"
+                        ],
+                        "and"
+                    ],
+                    [
+                        [
+                            "and"
+                        ],
+                        "and"
+                    ],
+                    [
+                        [
+                            "solving"
+                        ],
+                        "lvi"
+                    ],
+                    [
+                        [
+                            "Hi yet Hi"
+                        ],
+                        "yet"
+                    ],
+                    [
+                        [
+                            "java yet java"
+                        ],
+                        "yet"
+                    ],
+                    [
+                        [
+                            "Chocolate"
+                        ],
+                        "col"
+                    ],
+                    [
+                        [
+                            "XabcxyzabcX"
+                        ],
+                        "xyz"
+                    ]
+                ]
+            },
+            {
+                "name": "has_bad",
+                "topic": "",
+                "requirements": [],
+                "description": "Given a string, return true if \"bad\" appears starting at index 0 or 1 in the string, such as with \"badxxx\" or \"xbadxx\" but not \"xxbadxx\". The string may be any length, including 0. Note: use .equals() to compare 2 strings.\n\nThis exercise was taken from [codingbat.com](https://codingbat.com/prob/p139075) and has been adapted for the Python language. There are many great programming exercises there, but the majority are created for Java.",
+                "starter_code": "def has_bad(string: str) -> bool:\n    pass\n\n\nresult = has_bad('badxx')\nprint(result)\n",
+                "tests": "from main import has_bad\n\n\ndef test_has_bad_1():\n    assert has_bad('badxx') == True\n\n\ndef test_has_bad_2():\n    assert has_bad('xbadxx') == True\n\n\ndef test_has_bad_3():\n    assert has_bad('xxbadxx') == False\n\n\ndef test_has_bad_4():\n    assert has_bad('code') == False\n\n\ndef test_has_bad_5():\n    assert has_bad('bad') == True\n\n\ndef test_has_bad_6():\n    assert has_bad('ba') == False\n\n\ndef test_has_bad_7():\n    assert has_bad('xba') == False\n\n\ndef test_has_bad_8():\n    assert has_bad('xbad') == True\n\n\ndef test_has_bad_9():\n    assert has_bad('') == False\n\n\ndef test_has_bad_10():\n    assert has_bad('badyy') == True\n\n\n",
+                "solution": "",
+                "tests_io": [
+                    [
+                        [
+                            "badxx"
+                        ],
+                        true
+                    ],
+                    [
+                        [
+                            "xbadxx"
+                        ],
+                        true
+                    ],
+                    [
+                        [
+                            "xxbadxx"
+                        ],
+                        false
+                    ],
+                    [
+                        [
+                            "code"
+                        ],
+                        false
+                    ],
+                    [
+                        [
+                            "bad"
+                        ],
+                        true
+                    ],
+                    [
+                        [
+                            "ba"
+                        ],
+                        false
+                    ],
+                    [
+                        [
+                            "xba"
+                        ],
+                        false
+                    ],
+                    [
+                        [
+                            "xbad"
+                        ],
+                        true
+                    ],
+                    [
+                        [
+                            ""
+                        ],
+                        false
+                    ],
+                    [
+                        [
+                            "badyy"
+                        ],
+                        true
+                    ]
+                ]
+            },
+            {
+                "name": "at_first",
+                "topic": "",
+                "requirements": [],
+                "description": "Given a string, return a string length 2 made of its first 2 chars. If the string length is less than 2, use '@' for the missing chars.\n\nThis exercise was taken from [codingbat.com](https://codingbat.com/prob/p139076) and has been adapted for the Python language. There are many great programming exercises there, but the majority are created for Java.",
+                "starter_code": "def at_first(string: str) -> str:\n    pass\n\n\nresult = at_first('hello')\nprint(result)\n",
+                "tests": "from main import at_first\n\n\ndef test_at_first_1():\n    assert at_first('hello') == 'he'\n\n\ndef test_at_first_2():\n    assert at_first('hi') == 'hi'\n\n\ndef test_at_first_3():\n    assert at_first('h') == 'h@'\n\n\ndef test_at_first_4():\n    assert at_first('') == '@@'\n\n\ndef test_at_first_5():\n    assert at_first('kitten') == 'ki'\n\n\ndef test_at_first_6():\n    assert at_first('java') == 'ja'\n\n\ndef test_at_first_7():\n    assert at_first('j') == 'j@'\n\n\n",
+                "solution": "",
+                "tests_io": [
+                    [
+                        [
+                            "hello"
+                        ],
+                        "he"
+                    ],
+                    [
+                        [
+                            "hi"
+                        ],
+                        "hi"
+                    ],
+                    [
+                        [
+                            "h"
+                        ],
+                        "h@"
+                    ],
+                    [
+                        [
+                            ""
+                        ],
+                        "@@"
+                    ],
+                    [
+                        [
+                            "kitten"
+                        ],
+                        "ki"
+                    ],
+                    [
+                        [
+                            "java"
+                        ],
+                        "ja"
+                    ],
+                    [
+                        [
+                            "j"
+                        ],
+                        "j@"
+                    ]
+                ]
+            },
+            {
+                "name": "last_chars",
+                "topic": "",
+                "requirements": [],
+                "description": "Given 2 strings, a and b, return a new string made of the first char of a and the last char of b, so \"yo\" and \"java\" yields \"ya\". If either string is length 0, use '@' for its missing char.\n\nThis exercise was taken from [codingbat.com](https://codingbat.com/prob/p138183) and has been adapted for the Python language. There are many great programming exercises there, but the majority are created for Java.",
+                "starter_code": "def last_chars(a: str, b: str) -> str:\n    pass\n\n\nresult = last_chars('last', 'chars')\nprint(result)\n",
+                "tests": "from main import last_chars\n\n\ndef test_last_chars_1():\n    assert last_chars('last', 'chars') == 'ls'\n\n\ndef test_last_chars_2():\n    assert last_chars('yo', 'java') == 'ya'\n\n\ndef test_last_chars_3():\n    assert last_chars('hi', '') == 'h@'\n\n\ndef test_last_chars_4():\n    assert last_chars('', 'hello') == '@o'\n\n\ndef test_last_chars_5():\n    assert last_chars('', '') == '@@'\n\n\ndef test_last_chars_6():\n    assert last_chars('kitten', 'hi') == 'ki'\n\n\ndef test_last_chars_7():\n    assert last_chars('k', 'zip') == 'kp'\n\n\ndef test_last_chars_8():\n    assert last_chars('kitten', '') == 'k@'\n\n\ndef test_last_chars_9():\n    assert last_chars('kitten', 'zip') == 'kp'\n\n\n",
+                "solution": "",
+                "tests_io": [
+                    [
+                        [
+                            "last",
+                            "chars"
+                        ],
+                        "ls"
+                    ],
+                    [
+                        [
+                            "yo",
+                            "java"
+                        ],
+                        "ya"
+                    ],
+                    [
+                        [
+                            "hi",
+                            ""
+                        ],
+                        "h@"
+                    ],
+                    [
+                        [
+                            "",
+                            "hello"
+                        ],
+                        "@o"
+                    ],
+                    [
+                        [
+                            "",
+                            ""
+                        ],
+                        "@@"
+                    ],
+                    [
+                        [
+                            "kitten",
+                            "hi"
+                        ],
+                        "ki"
+                    ],
+                    [
+                        [
+                            "k",
+                            "zip"
+                        ],
+                        "kp"
+                    ],
+                    [
+                        [
+                            "kitten",
+                            ""
+                        ],
+                        "k@"
+                    ],
+                    [
+                        [
+                            "kitten",
+                            "zip"
+                        ],
+                        "kp"
+                    ]
+                ]
+            },
+            {
+                "name": "con_cat",
+                "topic": "",
+                "requirements": [],
+                "description": "Given two strings, append them together (known as \"concatenation\") and return the result. However, if the concatenation creates a double-char, then omit one of the chars, so \"abc\" and \"cat\" yields \"abcat\".\n\nThis exercise was taken from [codingbat.com](https://codingbat.com/prob/p132118) and has been adapted for the Python language. There are many great programming exercises there, but the majority are created for Java.",
+                "starter_code": "def con_cat(a: str, b: str) -> str:\n    pass\n\n\nresult = con_cat('abc', 'cat')\nprint(result)\n",
+                "tests": "from main import con_cat\n\n\ndef test_con_cat_1():\n    assert con_cat('abc', 'cat') == 'abcat'\n\n\ndef test_con_cat_2():\n    assert con_cat('dog', 'cat') == 'dogcat'\n\n\ndef test_con_cat_3():\n    assert con_cat('abc', '') == 'abc'\n\n\ndef test_con_cat_4():\n    assert con_cat('', 'cat') == 'cat'\n\n\ndef test_con_cat_5():\n    assert con_cat('pig', 'g') == 'pig'\n\n\ndef test_con_cat_6():\n    assert con_cat('pig', 'doggy') == 'pigdoggy'\n\n\n",
+                "solution": "",
+                "tests_io": [
+                    [
+                        [
+                            "abc",
+                            "cat"
+                        ],
+                        "abcat"
+                    ],
+                    [
+                        [
+                            "dog",
+                            "cat"
+                        ],
+                        "dogcat"
+                    ],
+                    [
+                        [
+                            "abc",
+                            ""
+                        ],
+                        "abc"
+                    ],
+                    [
+                        [
+                            "",
+                            "cat"
+                        ],
+                        "cat"
+                    ],
+                    [
+                        [
+                            "pig",
+                            "g"
+                        ],
+                        "pig"
+                    ],
+                    [
+                        [
+                            "pig",
+                            "doggy"
+                        ],
+                        "pigdoggy"
+                    ]
+                ]
+            },
+            {
+                "name": "last_two",
+                "topic": "",
+                "requirements": [],
+                "description": "Given a string of any length, return a new string where the last 2 chars, if present, are swapped, so \"coding\" yields \"codign\".\n\nThis exercise was taken from [codingbat.com](https://codingbat.com/prob/p194786) and has been adapted for the Python language. There are many great programming exercises there, but the majority are created for Java.",
+                "starter_code": "def last_two(string: str) -> str:\n    pass\n\n\nresult = last_two('coding')\nprint(result)\n",
+                "tests": "from main import last_two\n\n\ndef test_last_two_1():\n    assert last_two('coding') == 'codign'\n\n\ndef test_last_two_2():\n    assert last_two('cat') == 'cta'\n\n\ndef test_last_two_3():\n    assert last_two('ab') == 'ba'\n\n\ndef test_last_two_4():\n    assert last_two('a') == 'a'\n\n\ndef test_last_two_5():\n    assert last_two('') == ''\n\n\n",
+                "solution": "",
+                "tests_io": [
+                    [
+                        [
+                            "coding"
+                        ],
+                        "codign"
+                    ],
+                    [
+                        [
+                            "cat"
+                        ],
+                        "cta"
+                    ],
+                    [
+                        [
+                            "ab"
+                        ],
+                        "ba"
+                    ],
+                    [
+                        [
+                            "a"
+                        ],
+                        "a"
+                    ],
+                    [
+                        [
+                            ""
+                        ],
+                        ""
+                    ]
+                ]
+            },
+            {
+                "name": "see_color",
+                "topic": "",
+                "requirements": [],
+                "description": "Given a string, if the string begins with \"red\" or \"blue\" return that color string, otherwise return the empty string.\n\nThis exercise was taken from [codingbat.com](https://codingbat.com/prob/p199216) and has been adapted for the Python language. There are many great programming exercises there, but the majority are created for Java.",
+                "starter_code": "def see_color(string: str) -> str:\n    pass\n\n\nresult = see_color('redxx')\nprint(result)\n",
+                "tests": "from main import see_color\n\n\ndef test_see_color_1():\n    assert see_color('redxx') == 'red'\n\n\ndef test_see_color_2():\n    assert see_color('xxred') == ''\n\n\ndef test_see_color_3():\n    assert see_color('blueTimes') == 'blue'\n\n\ndef test_see_color_4():\n    assert see_color('NoColor') == ''\n\n\ndef test_see_color_5():\n    assert see_color('red') == 'red'\n\n\ndef test_see_color_6():\n    assert see_color('re') == ''\n\n\ndef test_see_color_7():\n    assert see_color('blu') == ''\n\n\ndef test_see_color_8():\n    assert see_color('blue') == 'blue'\n\n\ndef test_see_color_9():\n    assert see_color('a') == ''\n\n\ndef test_see_color_10():\n    assert see_color('') == ''\n\n\ndef test_see_color_11():\n    assert see_color('xyzred') == ''\n\n\n",
+                "solution": "",
+                "tests_io": [
+                    [
+                        [
+                            "redxx"
+                        ],
+                        "red"
+                    ],
+                    [
+                        [
+                            "xxred"
+                        ],
+                        ""
+                    ],
+                    [
+                        [
+                            "blueTimes"
+                        ],
+                        "blue"
+                    ],
+                    [
+                        [
+                            "NoColor"
+                        ],
+                        ""
+                    ],
+                    [
+                        [
+                            "red"
+                        ],
+                        "red"
+                    ],
+                    [
+                        [
+                            "re"
+                        ],
+                        ""
+                    ],
+                    [
+                        [
+                            "blu"
+                        ],
+                        ""
+                    ],
+                    [
+                        [
+                            "blue"
+                        ],
+                        "blue"
+                    ],
+                    [
+                        [
+                            "a"
+                        ],
+                        ""
+                    ],
+                    [
+                        [
+                            ""
+                        ],
+                        ""
+                    ],
+                    [
+                        [
+                            "xyzred"
+                        ],
+                        ""
+                    ]
+                ]
+            },
+            {
+                "name": "front_again",
+                "topic": "",
+                "requirements": [],
+                "description": "Given a string, return true if the first 2 chars in the string also appear at the end of the string, such as with \"edited\".\n\nThis exercise was taken from [codingbat.com](https://codingbat.com/prob/p196652) and has been adapted for the Python language. There are many great programming exercises there, but the majority are created for Java.",
+                "starter_code": "def front_again(string: str) -> bool:\n    pass\n\n\nresult = front_again('edited')\nprint(result)\n",
+                "tests": "from main import front_again\n\n\ndef test_front_again_1():\n    assert front_again('edited') == True\n\n\ndef test_front_again_2():\n    assert front_again('edit') == False\n\n\ndef test_front_again_3():\n    assert front_again('ed') == True\n\n\ndef test_front_again_4():\n    assert front_again('jj') == True\n\n\ndef test_front_again_5():\n    assert front_again('jjj') == True\n\n\ndef test_front_again_6():\n    assert front_again('jjjj') == True\n\n\ndef test_front_again_7():\n    assert front_again('jjjk') == False\n\n\ndef test_front_again_8():\n    assert front_again('x') == False\n\n\ndef test_front_again_9():\n    assert front_again('') == False\n\n\ndef test_front_again_10():\n    assert front_again('java') == False\n\n\ndef test_front_again_11():\n    assert front_again('javaja') == True\n\n\n",
+                "solution": "",
+                "tests_io": [
+                    [
+                        [
+                            "edited"
+                        ],
+                        true
+                    ],
+                    [
+                        [
+                            "edit"
+                        ],
+                        false
+                    ],
+                    [
+                        [
+                            "ed"
+                        ],
+                        true
+                    ],
+                    [
+                        [
+                            "jj"
+                        ],
+                        true
+                    ],
+                    [
+                        [
+                            "jjj"
+                        ],
+                        true
+                    ],
+                    [
+                        [
+                            "jjjj"
+                        ],
+                        true
+                    ],
+                    [
+                        [
+                            "jjjk"
+                        ],
+                        false
+                    ],
+                    [
+                        [
+                            "x"
+                        ],
+                        false
+                    ],
+                    [
+                        [
+                            ""
+                        ],
+                        false
+                    ],
+                    [
+                        [
+                            "java"
+                        ],
+                        false
+                    ],
+                    [
+                        [
+                            "javaja"
+                        ],
+                        true
+                    ]
+                ]
+            },
+            {
+                "name": "min_cat",
+                "topic": "",
+                "requirements": [],
+                "description": "Given two strings, append them together (known as \"concatenation\") and return the result. However, if the strings are different lengths, omit chars from the longer string so it is the same length as the shorter string. So \"Hello\" and \"Hi\" yield \"loHi\". The strings may be any length.\n\nThis exercise was taken from [codingbat.com](https://codingbat.com/prob/p105745) and has been adapted for the Python language. There are many great programming exercises there, but the majority are created for Java.",
+                "starter_code": "def min_cat(a: str, b: str) -> str:\n    pass\n\n\nresult = min_cat('Hello', 'Hi')\nprint(result)\n",
+                "tests": "from main import min_cat\n\n\ndef test_min_cat_1():\n    assert min_cat('Hello', 'Hi') == 'loHi'\n\n\ndef test_min_cat_2():\n    assert min_cat('Hello', 'java') == 'ellojava'\n\n\ndef test_min_cat_3():\n    assert min_cat('java', 'Hello') == 'javaello'\n\n\ndef test_min_cat_4():\n    assert min_cat('abc', 'x') == 'cx'\n\n\ndef test_min_cat_5():\n    assert min_cat('x', 'abc') == 'xc'\n\n\ndef test_min_cat_6():\n    assert min_cat('abc', '') == ''\n\n\n",
+                "solution": "",
+                "tests_io": [
+                    [
+                        [
+                            "Hello",
+                            "Hi"
+                        ],
+                        "loHi"
+                    ],
+                    [
+                        [
+                            "Hello",
+                            "java"
+                        ],
+                        "ellojava"
+                    ],
+                    [
+                        [
+                            "java",
+                            "Hello"
+                        ],
+                        "javaello"
+                    ],
+                    [
+                        [
+                            "abc",
+                            "x"
+                        ],
+                        "cx"
+                    ],
+                    [
+                        [
+                            "x",
+                            "abc"
+                        ],
+                        "xc"
+                    ],
+                    [
+                        [
+                            "abc",
+                            ""
+                        ],
+                        ""
+                    ]
+                ]
+            },
+            {
+                "name": "extra_front",
+                "topic": "",
+                "requirements": [],
+                "description": "Given a string, return a new string made of 3 copies of the first 2 chars of the original string. The string may be any length. If there are fewer than 2 chars, use whatever is there.\n\nThis exercise was taken from [codingbat.com](https://codingbat.com/prob/p172063) and has been adapted for the Python language. There are many great programming exercises there, but the majority are created for Java.",
+                "starter_code": "def extra_front(string: str) -> str:\n    pass\n\n\nresult = extra_front('Hello')\nprint(result)\n",
+                "tests": "from main import extra_front\n\n\ndef test_extra_front_1():\n    assert extra_front('Hello') == 'HeHeHe'\n\n\ndef test_extra_front_2():\n    assert extra_front('ab') == 'ababab'\n\n\ndef test_extra_front_3():\n    assert extra_front('H') == 'HHH'\n\n\ndef test_extra_front_4():\n    assert extra_front('') == ''\n\n\ndef test_extra_front_5():\n    assert extra_front('Candy') == 'CaCaCa'\n\n\ndef test_extra_front_6():\n    assert extra_front('Code') == 'CoCoCo'\n\n\n",
+                "solution": "",
+                "tests_io": [
+                    [
+                        [
+                            "Hello"
+                        ],
+                        "HeHeHe"
+                    ],
+                    [
+                        [
+                            "ab"
+                        ],
+                        "ababab"
+                    ],
+                    [
+                        [
+                            "H"
+                        ],
+                        "HHH"
+                    ],
+                    [
+                        [
+                            ""
+                        ],
+                        ""
+                    ],
+                    [
+                        [
+                            "Candy"
+                        ],
+                        "CaCaCa"
+                    ],
+                    [
+                        [
+                            "Code"
+                        ],
+                        "CoCoCo"
+                    ]
+                ]
+            },
+            {
+                "name": "without_2",
+                "topic": "",
+                "requirements": [],
+                "description": "Given a string, if a length 2 substring appears at both its beginning and end, return a string without the substring at the beginning, so \"HelloHe\" yields \"lloHe\". The substring may overlap with itself, so \"Hi\" yields \"\". Otherwise, return the original string unchanged.\n\nThis exercise was taken from [codingbat.com](https://codingbat.com/prob/p142247) and has been adapted for the Python language. There are many great programming exercises there, but the majority are created for Java.",
+                "starter_code": "def without_2(string: str) -> str:\n    pass\n\n\nresult = without_2('HelloHe')\nprint(result)\n",
+                "tests": "from main import without_2\n\n\ndef test_without_2_1():\n    assert without_2('HelloHe') == 'lloHe'\n\n\ndef test_without_2_2():\n    assert without_2('HelloHi') == 'HelloHi'\n\n\ndef test_without_2_3():\n    assert without_2('Hi') == ''\n\n\ndef test_without_2_4():\n    assert without_2('Chocolate') == 'Chocolate'\n\n\ndef test_without_2_5():\n    assert without_2('xxx') == 'x'\n\n\ndef test_without_2_6():\n    assert without_2('xx') == ''\n\n\ndef test_without_2_7():\n    assert without_2('x') == 'x'\n\n\ndef test_without_2_8():\n    assert without_2('') == ''\n\n\ndef test_without_2_9():\n    assert without_2('Fruits') == 'Fruits'\n\n\n",
+                "solution": "",
+                "tests_io": [
+                    [
+                        [
+                            "HelloHe"
+                        ],
+                        "lloHe"
+                    ],
+                    [
+                        [
+                            "HelloHi"
+                        ],
+                        "HelloHi"
+                    ],
+                    [
+                        [
+                            "Hi"
+                        ],
+                        ""
+                    ],
+                    [
+                        [
+                            "Chocolate"
+                        ],
+                        "Chocolate"
+                    ],
+                    [
+                        [
+                            "xxx"
+                        ],
+                        "x"
+                    ],
+                    [
+                        [
+                            "xx"
+                        ],
+                        ""
+                    ],
+                    [
+                        [
+                            "x"
+                        ],
+                        "x"
+                    ],
+                    [
+                        [
+                            ""
+                        ],
+                        ""
+                    ],
+                    [
+                        [
+                            "Fruits"
+                        ],
+                        "Fruits"
+                    ]
+                ]
+            },
+            {
+                "name": "de_front",
+                "topic": "",
+                "requirements": [],
+                "description": "Given a string, return a version without the first 2 chars. Except keep the first char if it is 'a' and keep the second char if it is 'b'. The string may be any length. Harder than it looks.\n\nThis exercise was taken from [codingbat.com](https://codingbat.com/prob/p110141) and has been adapted for the Python language. There are many great programming exercises there, but the majority are created for Java.",
+                "starter_code": "def de_front(string: str) -> str:\n    pass\n\n\nresult = de_front('Hello')\nprint(result)\n",
+                "tests": "from main import de_front\n\n\ndef test_de_front_1():\n    assert de_front('Hello') == 'llo'\n\n\ndef test_de_front_2():\n    assert de_front('java') == 'va'\n\n\ndef test_de_front_3():\n    assert de_front('away') == 'aay'\n\n\ndef test_de_front_4():\n    assert de_front('axy') == 'ay'\n\n\ndef test_de_front_5():\n    assert de_front('abc') == 'abc'\n\n\ndef test_de_front_6():\n    assert de_front('xby') == 'by'\n\n\ndef test_de_front_7():\n    assert de_front('ab') == 'ab'\n\n\ndef test_de_front_8():\n    assert de_front('ax') == 'a'\n\n\ndef test_de_front_9():\n    assert de_front('axb') == 'ab'\n\n\ndef test_de_front_10():\n    assert de_front('aaa') == 'aa'\n\n\ndef test_de_front_11():\n    assert de_front('xbc') == 'bc'\n\n\ndef test_de_front_12():\n    assert de_front('bbb') == 'bb'\n\n\ndef test_de_front_13():\n    assert de_front('bazz') == 'zz'\n\n\ndef test_de_front_14():\n    assert de_front('ba') == ''\n\n\ndef test_de_front_15():\n    assert de_front('abxyz') == 'abxyz'\n\n\ndef test_de_front_16():\n    assert de_front('hi') == ''\n\n\ndef test_de_front_17():\n    assert de_front('his') == 's'\n\n\ndef test_de_front_18():\n    assert de_front('xz') == ''\n\n\ndef test_de_front_19():\n    assert de_front('zzz') == 'z'\n\n\n",
+                "solution": "",
+                "tests_io": [
+                    [
+                        [
+                            "Hello"
+                        ],
+                        "llo"
+                    ],
+                    [
+                        [
+                            "java"
+                        ],
+                        "va"
+                    ],
+                    [
+                        [
+                            "away"
+                        ],
+                        "aay"
+                    ],
+                    [
+                        [
+                            "axy"
+                        ],
+                        "ay"
+                    ],
+                    [
+                        [
+                            "abc"
+                        ],
+                        "abc"
+                    ],
+                    [
+                        [
+                            "xby"
+                        ],
+                        "by"
+                    ],
+                    [
+                        [
+                            "ab"
+                        ],
+                        "ab"
+                    ],
+                    [
+                        [
+                            "ax"
+                        ],
+                        "a"
+                    ],
+                    [
+                        [
+                            "axb"
+                        ],
+                        "ab"
+                    ],
+                    [
+                        [
+                            "aaa"
+                        ],
+                        "aa"
+                    ],
+                    [
+                        [
+                            "xbc"
+                        ],
+                        "bc"
+                    ],
+                    [
+                        [
+                            "bbb"
+                        ],
+                        "bb"
+                    ],
+                    [
+                        [
+                            "bazz"
+                        ],
+                        "zz"
+                    ],
+                    [
+                        [
+                            "ba"
+                        ],
+                        ""
+                    ],
+                    [
+                        [
+                            "abxyz"
+                        ],
+                        "abxyz"
+                    ],
+                    [
+                        [
+                            "hi"
+                        ],
+                        ""
+                    ],
+                    [
+                        [
+                            "his"
+                        ],
+                        "s"
+                    ],
+                    [
+                        [
+                            "xz"
+                        ],
+                        ""
+                    ],
+                    [
+                        [
+                            "zzz"
+                        ],
+                        "z"
+                    ]
+                ]
+            },
+            {
+                "name": "start_word",
+                "topic": "",
+                "requirements": [],
+                "description": "Given a string and a second \"word\" string, we'll say that the word matches the string if it appears at the front of the string, except its first char does not need to match exactly. On a match, return the front of the string, or otherwise return the empty string. So, so with the string \"hippo\" the word \"hi\" returns \"hi\" and \"xip\" returns \"hip\". The word will be at least length 1.\n\nThis exercise was taken from [codingbat.com](https://codingbat.com/prob/p141494) and has been adapted for the Python language. There are many great programming exercises there, but the majority are created for Java.",
+                "starter_code": "def start_word(string: str, word: str) -> str:\n    pass\n\n\nresult = start_word('hippo', 'hi')\nprint(result)\n",
+                "tests": "from main import start_word\n\n\ndef test_start_word_1():\n    assert start_word('hippo', 'hi') == 'hi'\n\n\ndef test_start_word_2():\n    assert start_word('hippo', 'xip') == 'hip'\n\n\ndef test_start_word_3():\n    assert start_word('hippo', 'i') == 'h'\n\n\ndef test_start_word_4():\n    assert start_word('hippo', 'ix') == ''\n\n\ndef test_start_word_5():\n    assert start_word('h', 'ix') == ''\n\n\ndef test_start_word_6():\n    assert start_word('', 'i') == ''\n\n\ndef test_start_word_7():\n    assert start_word('hip', 'zi') == 'hi'\n\n\ndef test_start_word_8():\n    assert start_word('hip', 'zip') == 'hip'\n\n\ndef test_start_word_9():\n    assert start_word('hip', 'zig') == ''\n\n\ndef test_start_word_10():\n    assert start_word('h', 'z') == 'h'\n\n\ndef test_start_word_11():\n    assert start_word('hippo', 'xippo') == 'hippo'\n\n\ndef test_start_word_12():\n    assert start_word('hippo', 'xyz') == ''\n\n\ndef test_start_word_13():\n    assert start_word('hippo', 'hip') == 'hip'\n\n\ndef test_start_word_14():\n    assert start_word('kitten', 'cit') == 'kit'\n\n\ndef test_start_word_15():\n    assert start_word('kit', 'cit') == 'kit'\n\n\n",
+                "solution": "",
+                "tests_io": [
+                    [
+                        [
+                            "hippo",
+                            "hi"
+                        ],
+                        "hi"
+                    ],
+                    [
+                        [
+                            "hippo",
+                            "xip"
+                        ],
+                        "hip"
+                    ],
+                    [
+                        [
+                            "hippo",
+                            "i"
+                        ],
+                        "h"
+                    ],
+                    [
+                        [
+                            "hippo",
+                            "ix"
+                        ],
+                        ""
+                    ],
+                    [
+                        [
+                            "h",
+                            "ix"
+                        ],
+                        ""
+                    ],
+                    [
+                        [
+                            "",
+                            "i"
+                        ],
+                        ""
+                    ],
+                    [
+                        [
+                            "hip",
+                            "zi"
+                        ],
+                        "hi"
+                    ],
+                    [
+                        [
+                            "hip",
+                            "zip"
+                        ],
+                        "hip"
+                    ],
+                    [
+                        [
+                            "hip",
+                            "zig"
+                        ],
+                        ""
+                    ],
+                    [
+                        [
+                            "h",
+                            "z"
+                        ],
+                        "h"
+                    ],
+                    [
+                        [
+                            "hippo",
+                            "xippo"
+                        ],
+                        "hippo"
+                    ],
+                    [
+                        [
+                            "hippo",
+                            "xyz"
+                        ],
+                        ""
+                    ],
+                    [
+                        [
+                            "hippo",
+                            "hip"
+                        ],
+                        "hip"
+                    ],
+                    [
+                        [
+                            "kitten",
+                            "cit"
+                        ],
+                        "kit"
+                    ],
+                    [
+                        [
+                            "kit",
+                            "cit"
+                        ],
+                        "kit"
+                    ]
+                ]
+            },
+            {
+                "name": "without_x",
+                "topic": "",
+                "requirements": [],
+                "description": "Given a string, if the first or last chars are 'x', return the string without those 'x' chars, and otherwise return the string unchanged.\n\nThis exercise was taken from [codingbat.com](https://codingbat.com/prob/p151940) and has been adapted for the Python language. There are many great programming exercises there, but the majority are created for Java.",
+                "starter_code": "def without_x(string: str) -> str:\n    pass\n\n\nresult = without_x('xHix')\nprint(result)\n",
+                "tests": "from main import without_x\n\n\ndef test_without_x_1():\n    assert without_x('xHix') == 'Hi'\n\n\ndef test_without_x_2():\n    assert without_x('xHi') == 'Hi'\n\n\ndef test_without_x_3():\n    assert without_x('Hxix') == 'Hxi'\n\n\ndef test_without_x_4():\n    assert without_x('Hi') == 'Hi'\n\n\ndef test_without_x_5():\n    assert without_x('xxHi') == 'xHi'\n\n\ndef test_without_x_6():\n    assert without_x('Hix') == 'Hi'\n\n\ndef test_without_x_7():\n    assert without_x('xaxbx') == 'axb'\n\n\ndef test_without_x_8():\n    assert without_x('xx') == ''\n\n\ndef test_without_x_9():\n    assert without_x('x') == ''\n\n\ndef test_without_x_10():\n    assert without_x('') == ''\n\n\ndef test_without_x_11():\n    assert without_x('Hello') == 'Hello'\n\n\ndef test_without_x_12():\n    assert without_x('Hexllo') == 'Hexllo'\n\n\n",
+                "solution": "",
+                "tests_io": [
+                    [
+                        [
+                            "xHix"
+                        ],
+                        "Hi"
+                    ],
+                    [
+                        [
+                            "xHi"
+                        ],
+                        "Hi"
+                    ],
+                    [
+                        [
+                            "Hxix"
+                        ],
+                        "Hxi"
+                    ],
+                    [
+                        [
+                            "Hi"
+                        ],
+                        "Hi"
+                    ],
+                    [
+                        [
+                            "xxHi"
+                        ],
+                        "xHi"
+                    ],
+                    [
+                        [
+                            "Hix"
+                        ],
+                        "Hi"
+                    ],
+                    [
+                        [
+                            "xaxbx"
+                        ],
+                        "axb"
+                    ],
+                    [
+                        [
+                            "xx"
+                        ],
+                        ""
+                    ],
+                    [
+                        [
+                            "x"
+                        ],
+                        ""
+                    ],
+                    [
+                        [
+                            ""
+                        ],
+                        ""
+                    ],
+                    [
+                        [
+                            "Hello"
+                        ],
+                        "Hello"
+                    ],
+                    [
+                        [
+                            "Hexllo"
+                        ],
+                        "Hexllo"
+                    ]
+                ]
+            },
+            {
+                "name": "without_x_2",
+                "topic": "",
+                "requirements": [],
+                "description": "Given a string, if one or both of the first 2 chars is 'x', return the string without those 'x' chars, and otherwise return the string unchanged. This is a little harder than it looks.\n\nThis exercise was taken from [codingbat.com](https://codingbat.com/prob/p151359) and has been adapted for the Python language. There are many great programming exercises there, but the majority are created for Java.",
+                "starter_code": "def without_x_2(string: str) -> str:\n    pass\n\n\nresult = without_x_2('xHi')\nprint(result)\n",
+                "tests": "from main import without_x_2\n\n\ndef test_without_x_2_1():\n    assert without_x_2('xHi') == 'Hi'\n\n\ndef test_without_x_2_2():\n    assert without_x_2('Hxi') == 'Hi'\n\n\ndef test_without_x_2_3():\n    assert without_x_2('Hi') == 'Hi'\n\n\ndef test_without_x_2_4():\n    assert without_x_2('xxHi') == 'Hi'\n\n\ndef test_without_x_2_5():\n    assert without_x_2('Hix') == 'Hix'\n\n\ndef test_without_x_2_6():\n    assert without_x_2('xaxb') == 'axb'\n\n\ndef test_without_x_2_7():\n    assert without_x_2('xx') == ''\n\n\ndef test_without_x_2_8():\n    assert without_x_2('x') == ''\n\n\ndef test_without_x_2_9():\n    assert without_x_2('') == ''\n\n\ndef test_without_x_2_10():\n    assert without_x_2('Hello') == 'Hello'\n\n\ndef test_without_x_2_11():\n    assert without_x_2('Hexllo') == 'Hexllo'\n\n\ndef test_without_x_2_12():\n    assert without_x_2('xHxllo') == 'Hxllo'\n\n\n",
+                "solution": "",
+                "tests_io": [
+                    [
+                        [
+                            "xHi"
+                        ],
+                        "Hi"
+                    ],
+                    [
+                        [
+                            "Hxi"
+                        ],
+                        "Hi"
+                    ],
+                    [
+                        [
+                            "Hi"
+                        ],
+                        "Hi"
+                    ],
+                    [
+                        [
+                            "xxHi"
+                        ],
+                        "Hi"
+                    ],
+                    [
+                        [
+                            "Hix"
+                        ],
+                        "Hix"
+                    ],
+                    [
+                        [
+                            "xaxb"
+                        ],
+                        "axb"
+                    ],
+                    [
+                        [
+                            "xx"
+                        ],
+                        ""
+                    ],
+                    [
+                        [
+                            "x"
+                        ],
+                        ""
+                    ],
+                    [
+                        [
+                            ""
+                        ],
+                        ""
+                    ],
+                    [
+                        [
+                            "Hello"
+                        ],
+                        "Hello"
+                    ],
+                    [
+                        [
+                            "Hexllo"
+                        ],
+                        "Hexllo"
+                    ],
+                    [
+                        [
+                            "xHxllo"
+                        ],
+                        "Hxllo"
+                    ]
+                ]
+            }
+        ],
+        "String-2": [
+            {
+                "name": "double_char",
+                "topic": "",
+                "requirements": [],
+                "description": "Given a string, return a string where for every char in the original, there are two chars.\n\nThis exercise was taken from [codingbat.com](https://codingbat.com/prob/p165312) and has been adapted for the Python language. There are many great programming exercises there, but the majority are created for Java.",
+                "starter_code": "def double_char(string: str) -> str:\n    pass\n\n\nresult = double_char('The')\nprint(result)\n",
+                "tests": "from main import double_char\n\n\ndef test_double_char_1():\n    assert double_char('The') == 'TThhee'\n\n\ndef test_double_char_2():\n    assert double_char('AAbb') == 'AAAAbbbb'\n\n\ndef test_double_char_3():\n    assert double_char('Hi-There') == 'HHii--TThheerree'\n\n\ndef test_double_char_4():\n    assert double_char('Word!') == 'WWoorrdd!!'\n\n\ndef test_double_char_5():\n    assert double_char('!!') == '!!!!'\n\n\ndef test_double_char_6():\n    assert double_char('') == ''\n\n\ndef test_double_char_7():\n    assert double_char('a') == 'aa'\n\n\ndef test_double_char_8():\n    assert double_char('.') == '..'\n\n\ndef test_double_char_9():\n    assert double_char('aa') == 'aaaa'\n\n\n",
+                "solution": "",
+                "tests_io": [
+                    [
+                        [
+                            "The"
+                        ],
+                        "TThhee"
+                    ],
+                    [
+                        [
+                            "AAbb"
+                        ],
+                        "AAAAbbbb"
+                    ],
+                    [
+                        [
+                            "Hi-There"
+                        ],
+                        "HHii--TThheerree"
+                    ],
+                    [
+                        [
+                            "Word!"
+                        ],
+                        "WWoorrdd!!"
+                    ],
+                    [
+                        [
+                            "!!"
+                        ],
+                        "!!!!"
+                    ],
+                    [
+                        [
+                            ""
+                        ],
+                        ""
+                    ],
+                    [
+                        [
+                            "a"
+                        ],
+                        "aa"
+                    ],
+                    [
+                        [
+                            "."
+                        ],
+                        ".."
+                    ],
+                    [
+                        [
+                            "aa"
+                        ],
+                        "aaaa"
+                    ]
+                ]
+            },
+            {
+                "name": "count_hi",
+                "topic": "",
+                "requirements": [],
+                "description": "Return the number of times that the string \"hi\" appears anywhere in the given string.\n\nThis exercise was taken from [codingbat.com](https://codingbat.com/prob/p147448) and has been adapted for the Python language. There are many great programming exercises there, but the majority are created for Java.",
+                "starter_code": "def count_hi(string: str) -> int:\n    pass\n\n\nresult = count_hi('abc hi ho')\nprint(result)\n",
+                "tests": "from main import count_hi\n\n\ndef test_count_hi_1():\n    assert count_hi('abc hi ho') == 1\n\n\ndef test_count_hi_2():\n    assert count_hi('ABChi hi') == 2\n\n\ndef test_count_hi_3():\n    assert count_hi('hihi') == 2\n\n\ndef test_count_hi_4():\n    assert count_hi('hiHIhi') == 2\n\n\ndef test_count_hi_5():\n    assert count_hi('') == 0\n\n\ndef test_count_hi_6():\n    assert count_hi('h') == 0\n\n\ndef test_count_hi_7():\n    assert count_hi('hi') == 1\n\n\ndef test_count_hi_8():\n    assert count_hi('Hi is no HI on ahI') == 0\n\n\ndef test_count_hi_9():\n    assert count_hi('hiho not HOHIhi') == 2\n\n\n",
+                "solution": "",
+                "tests_io": [
+                    [
+                        [
+                            "abc hi ho"
+                        ],
+                        1
+                    ],
+                    [
+                        [
+                            "ABChi hi"
+                        ],
+                        2
+                    ],
+                    [
+                        [
+                            "hihi"
+                        ],
+                        2
+                    ],
+                    [
+                        [
+                            "hiHIhi"
+                        ],
+                        2
+                    ],
+                    [
+                        [
+                            ""
+                        ],
+                        0
+                    ],
+                    [
+                        [
+                            "h"
+                        ],
+                        0
+                    ],
+                    [
+                        [
+                            "hi"
+                        ],
+                        1
+                    ],
+                    [
+                        [
+                            "Hi is no HI on ahI"
+                        ],
+                        0
+                    ],
+                    [
+                        [
+                            "hiho not HOHIhi"
+                        ],
+                        2
+                    ]
+                ]
+            },
+            {
+                "name": "cat_dog",
+                "topic": "",
+                "requirements": [],
+                "description": "Return true if the string \"cat\" and \"dog\" appear the same number of times in the given string.\n\nThis exercise was taken from [codingbat.com](https://codingbat.com/prob/p111624) and has been adapted for the Python language. There are many great programming exercises there, but the majority are created for Java.",
+                "starter_code": "def cat_dog(string: str) -> bool:\n    pass\n\n\nresult = cat_dog('catdog')\nprint(result)\n",
+                "tests": "from main import cat_dog\n\n\ndef test_cat_dog_1():\n    assert cat_dog('catdog') == True\n\n\ndef test_cat_dog_2():\n    assert cat_dog('catcat') == False\n\n\ndef test_cat_dog_3():\n    assert cat_dog('1cat1cadodog') == True\n\n\ndef test_cat_dog_4():\n    assert cat_dog('catxxdogxxxdog') == False\n\n\ndef test_cat_dog_5():\n    assert cat_dog('catxdogxdogxcat') == True\n\n\ndef test_cat_dog_6():\n    assert cat_dog('catxdogxdogxca') == False\n\n\ndef test_cat_dog_7():\n    assert cat_dog('dogdogcat') == False\n\n\ndef test_cat_dog_8():\n    assert cat_dog('dogogcat') == True\n\n\ndef test_cat_dog_9():\n    assert cat_dog('dog') == False\n\n\ndef test_cat_dog_10():\n    assert cat_dog('cat') == False\n\n\ndef test_cat_dog_11():\n    assert cat_dog('ca') == True\n\n\ndef test_cat_dog_12():\n    assert cat_dog('c') == True\n\n\ndef test_cat_dog_13():\n    assert cat_dog('') == True\n\n\n",
+                "solution": "",
+                "tests_io": [
+                    [
+                        [
+                            "catdog"
+                        ],
+                        true
+                    ],
+                    [
+                        [
+                            "catcat"
+                        ],
+                        false
+                    ],
+                    [
+                        [
+                            "1cat1cadodog"
+                        ],
+                        true
+                    ],
+                    [
+                        [
+                            "catxxdogxxxdog"
+                        ],
+                        false
+                    ],
+                    [
+                        [
+                            "catxdogxdogxcat"
+                        ],
+                        true
+                    ],
+                    [
+                        [
+                            "catxdogxdogxca"
+                        ],
+                        false
+                    ],
+                    [
+                        [
+                            "dogdogcat"
+                        ],
+                        false
+                    ],
+                    [
+                        [
+                            "dogogcat"
+                        ],
+                        true
+                    ],
+                    [
+                        [
+                            "dog"
+                        ],
+                        false
+                    ],
+                    [
+                        [
+                            "cat"
+                        ],
+                        false
+                    ],
+                    [
+                        [
+                            "ca"
+                        ],
+                        true
+                    ],
+                    [
+                        [
+                            "c"
+                        ],
+                        true
+                    ],
+                    [
+                        [
+                            ""
+                        ],
+                        true
+                    ]
+                ]
+            },
+            {
+                "name": "count_code",
+                "topic": "",
+                "requirements": [],
+                "description": "Return the number of times that the string \"code\" appears anywhere in the given string, except we'll accept any letter for the 'd', so \"cope\" and \"cooe\" count.\n\nThis exercise was taken from [codingbat.com](https://codingbat.com/prob/p123614) and has been adapted for the Python language. There are many great programming exercises there, but the majority are created for Java.",
+                "starter_code": "def count_code(string: str) -> int:\n    pass\n\n\nresult = count_code('aaacodebbb')\nprint(result)\n",
+                "tests": "from main import count_code\n\n\ndef test_count_code_1():\n    assert count_code('aaacodebbb') == 1\n\n\ndef test_count_code_2():\n    assert count_code('codexxcode') == 2\n\n\ndef test_count_code_3():\n    assert count_code('cozexxcope') == 2\n\n\ndef test_count_code_4():\n    assert count_code('cozfxxcope') == 1\n\n\ndef test_count_code_5():\n    assert count_code('xxcozeyycop') == 1\n\n\ndef test_count_code_6():\n    assert count_code('cozcop') == 0\n\n\ndef test_count_code_7():\n    assert count_code('abcxyz') == 0\n\n\ndef test_count_code_8():\n    assert count_code('code') == 1\n\n\ndef test_count_code_9():\n    assert count_code('ode') == 0\n\n\ndef test_count_code_10():\n    assert count_code('c') == 0\n\n\ndef test_count_code_11():\n    assert count_code('') == 0\n\n\ndef test_count_code_12():\n    assert count_code('AAcodeBBcoleCCccoreDD') == 3\n\n\ndef test_count_code_13():\n    assert count_code('AAcodeBBcoleCCccorfDD') == 2\n\n\ndef test_count_code_14():\n    assert count_code('coAcodeBcoleccoreDD') == 3\n\n\n",
+                "solution": "",
+                "tests_io": [
+                    [
+                        [
+                            "aaacodebbb"
+                        ],
+                        1
+                    ],
+                    [
+                        [
+                            "codexxcode"
+                        ],
+                        2
+                    ],
+                    [
+                        [
+                            "cozexxcope"
+                        ],
+                        2
+                    ],
+                    [
+                        [
+                            "cozfxxcope"
+                        ],
+                        1
+                    ],
+                    [
+                        [
+                            "xxcozeyycop"
+                        ],
+                        1
+                    ],
+                    [
+                        [
+                            "cozcop"
+                        ],
+                        0
+                    ],
+                    [
+                        [
+                            "abcxyz"
+                        ],
+                        0
+                    ],
+                    [
+                        [
+                            "code"
+                        ],
+                        1
+                    ],
+                    [
+                        [
+                            "ode"
+                        ],
+                        0
+                    ],
+                    [
+                        [
+                            "c"
+                        ],
+                        0
+                    ],
+                    [
+                        [
+                            ""
+                        ],
+                        0
+                    ],
+                    [
+                        [
+                            "AAcodeBBcoleCCccoreDD"
+                        ],
+                        3
+                    ],
+                    [
+                        [
+                            "AAcodeBBcoleCCccorfDD"
+                        ],
+                        2
+                    ],
+                    [
+                        [
+                            "coAcodeBcoleccoreDD"
+                        ],
+                        3
+                    ]
+                ]
+            },
+            {
+                "name": "end_other",
+                "topic": "",
+                "requirements": [],
+                "description": "Given two strings, return true if either of the strings appears at the very end of the other string, ignoring upper/lower case differences (in other words, the computation should not be \"case sensitive\"). Note:  str.toLowerCase() returns the lowercase version of a string.\n\nThis exercise was taken from [codingbat.com](https://codingbat.com/prob/p126880) and has been adapted for the Python language. There are many great programming exercises there, but the majority are created for Java.",
+                "starter_code": "def end_other(a: str, b: str) -> bool:\n    pass\n\n\nresult = end_other('Hiabc', 'abc')\nprint(result)\n",
+                "tests": "from main import end_other\n\n\ndef test_end_other_1():\n    assert end_other('Hiabc', 'abc') == True\n\n\ndef test_end_other_2():\n    assert end_other('AbC', 'HiaBc') == True\n\n\ndef test_end_other_3():\n    assert end_other('abc', 'abXabc') == True\n\n\ndef test_end_other_4():\n    assert end_other('Hiabc', 'abcd') == False\n\n\ndef test_end_other_5():\n    assert end_other('Hiabc', 'bc') == True\n\n\ndef test_end_other_6():\n    assert end_other('Hiabcx', 'bc') == False\n\n\ndef test_end_other_7():\n    assert end_other('abc', 'abc') == True\n\n\ndef test_end_other_8():\n    assert end_other('xyz', '12xyz') == True\n\n\ndef test_end_other_9():\n    assert end_other('yz', '12xz') == False\n\n\ndef test_end_other_10():\n    assert end_other('Z', '12xz') == True\n\n\ndef test_end_other_11():\n    assert end_other('12', '12') == True\n\n\ndef test_end_other_12():\n    assert end_other('abcXYZ', 'abcDEF') == False\n\n\ndef test_end_other_13():\n    assert end_other('ab', 'ab12') == False\n\n\ndef test_end_other_14():\n    assert end_other('ab', '12ab') == True\n\n\n",
+                "solution": "",
+                "tests_io": [
+                    [
+                        [
+                            "Hiabc",
+                            "abc"
+                        ],
+                        true
+                    ],
+                    [
+                        [
+                            "AbC",
+                            "HiaBc"
+                        ],
+                        true
+                    ],
+                    [
+                        [
+                            "abc",
+                            "abXabc"
+                        ],
+                        true
+                    ],
+                    [
+                        [
+                            "Hiabc",
+                            "abcd"
+                        ],
+                        false
+                    ],
+                    [
+                        [
+                            "Hiabc",
+                            "bc"
+                        ],
+                        true
+                    ],
+                    [
+                        [
+                            "Hiabcx",
+                            "bc"
+                        ],
+                        false
+                    ],
+                    [
+                        [
+                            "abc",
+                            "abc"
+                        ],
+                        true
+                    ],
+                    [
+                        [
+                            "xyz",
+                            "12xyz"
+                        ],
+                        true
+                    ],
+                    [
+                        [
+                            "yz",
+                            "12xz"
+                        ],
+                        false
+                    ],
+                    [
+                        [
+                            "Z",
+                            "12xz"
+                        ],
+                        true
+                    ],
+                    [
+                        [
+                            "12",
+                            "12"
+                        ],
+                        true
+                    ],
+                    [
+                        [
+                            "abcXYZ",
+                            "abcDEF"
+                        ],
+                        false
+                    ],
+                    [
+                        [
+                            "ab",
+                            "ab12"
+                        ],
+                        false
+                    ],
+                    [
+                        [
+                            "ab",
+                            "12ab"
+                        ],
+                        true
+                    ]
+                ]
+            },
+            {
+                "name": "xyz_there",
+                "topic": "",
+                "requirements": [],
+                "description": "Return true if the given string contains an appearance of \"xyz\" where the xyz is not directly preceeded by a period (.). So \"xxyz\" counts but \"x.xyz\" does not.\n\nThis exercise was taken from [codingbat.com](https://codingbat.com/prob/p136594) and has been adapted for the Python language. There are many great programming exercises there, but the majority are created for Java.",
+                "starter_code": "def xyz_there(string: str) -> bool:\n    pass\n\n\nresult = xyz_there('abcxyz')\nprint(result)\n",
+                "tests": "from main import xyz_there\n\n\ndef test_xyz_there_1():\n    assert xyz_there('abcxyz') == True\n\n\ndef test_xyz_there_2():\n    assert xyz_there('abc.xyz') == False\n\n\ndef test_xyz_there_3():\n    assert xyz_there('xyz.abc') == True\n\n\ndef test_xyz_there_4():\n    assert xyz_there('abcxy') == False\n\n\ndef test_xyz_there_5():\n    assert xyz_there('xyz') == True\n\n\ndef test_xyz_there_6():\n    assert xyz_there('xy') == False\n\n\ndef test_xyz_there_7():\n    assert xyz_there('x') == False\n\n\ndef test_xyz_there_8():\n    assert xyz_there('') == False\n\n\ndef test_xyz_there_9():\n    assert xyz_there('abc.xyzxyz') == True\n\n\ndef test_xyz_there_10():\n    assert xyz_there('abc.xxyz') == True\n\n\ndef test_xyz_there_11():\n    assert xyz_there('.xyz') == False\n\n\ndef test_xyz_there_12():\n    assert xyz_there('12.xyz') == False\n\n\ndef test_xyz_there_13():\n    assert xyz_there('12xyz') == True\n\n\ndef test_xyz_there_14():\n    assert xyz_there('1.xyz.xyz2.xyz') == False\n\n\n",
+                "solution": "",
+                "tests_io": [
+                    [
+                        [
+                            "abcxyz"
+                        ],
+                        true
+                    ],
+                    [
+                        [
+                            "abc.xyz"
+                        ],
+                        false
+                    ],
+                    [
+                        [
+                            "xyz.abc"
+                        ],
+                        true
+                    ],
+                    [
+                        [
+                            "abcxy"
+                        ],
+                        false
+                    ],
+                    [
+                        [
+                            "xyz"
+                        ],
+                        true
+                    ],
+                    [
+                        [
+                            "xy"
+                        ],
+                        false
+                    ],
+                    [
+                        [
+                            "x"
+                        ],
+                        false
+                    ],
+                    [
+                        [
+                            ""
+                        ],
+                        false
+                    ],
+                    [
+                        [
+                            "abc.xyzxyz"
+                        ],
+                        true
+                    ],
+                    [
+                        [
+                            "abc.xxyz"
+                        ],
+                        true
+                    ],
+                    [
+                        [
+                            ".xyz"
+                        ],
+                        false
+                    ],
+                    [
+                        [
+                            "12.xyz"
+                        ],
+                        false
+                    ],
+                    [
+                        [
+                            "12xyz"
+                        ],
+                        true
+                    ],
+                    [
+                        [
+                            "1.xyz.xyz2.xyz"
+                        ],
+                        false
+                    ]
+                ]
+            },
+            {
+                "name": "bob_there",
+                "topic": "",
+                "requirements": [],
+                "description": "Return true if the given string contains a \"bob\" string, but where the middle 'o' char can be any char.\n\nThis exercise was taken from [codingbat.com](https://codingbat.com/prob/p175762) and has been adapted for the Python language. There are many great programming exercises there, but the majority are created for Java.",
+                "starter_code": "def bob_there(string: str) -> bool:\n    pass\n\n\nresult = bob_there('abcbob')\nprint(result)\n",
+                "tests": "from main import bob_there\n\n\ndef test_bob_there_1():\n    assert bob_there('abcbob') == True\n\n\ndef test_bob_there_2():\n    assert bob_there('b9b') == True\n\n\ndef test_bob_there_3():\n    assert bob_there('bac') == False\n\n\ndef test_bob_there_4():\n    assert bob_there('bbb') == True\n\n\ndef test_bob_there_5():\n    assert bob_there('abcdefb') == False\n\n\ndef test_bob_there_6():\n    assert bob_there('123abcbcdbabxyz') == True\n\n\ndef test_bob_there_7():\n    assert bob_there('b12') == False\n\n\ndef test_bob_there_8():\n    assert bob_there('b1b') == True\n\n\ndef test_bob_there_9():\n    assert bob_there('b12b1b') == True\n\n\ndef test_bob_there_10():\n    assert bob_there('bbc') == False\n\n\ndef test_bob_there_11():\n    assert bob_there('bbb') == True\n\n\ndef test_bob_there_12():\n    assert bob_there('bb') == False\n\n\ndef test_bob_there_13():\n    assert bob_there('b') == False\n\n\n",
+                "solution": "",
+                "tests_io": [
+                    [
+                        [
+                            "abcbob"
+                        ],
+                        true
+                    ],
+                    [
+                        [
+                            "b9b"
+                        ],
+                        true
+                    ],
+                    [
+                        [
+                            "bac"
+                        ],
+                        false
+                    ],
+                    [
+                        [
+                            "bbb"
+                        ],
+                        true
+                    ],
+                    [
+                        [
+                            "abcdefb"
+                        ],
+                        false
+                    ],
+                    [
+                        [
+                            "123abcbcdbabxyz"
+                        ],
+                        true
+                    ],
+                    [
+                        [
+                            "b12"
+                        ],
+                        false
+                    ],
+                    [
+                        [
+                            "b1b"
+                        ],
+                        true
+                    ],
+                    [
+                        [
+                            "b12b1b"
+                        ],
+                        true
+                    ],
+                    [
+                        [
+                            "bbc"
+                        ],
+                        false
+                    ],
+                    [
+                        [
+                            "bbb"
+                        ],
+                        true
+                    ],
+                    [
+                        [
+                            "bb"
+                        ],
+                        false
+                    ],
+                    [
+                        [
+                            "b"
+                        ],
+                        false
+                    ]
+                ]
+            },
+            {
+                "name": "xy_balance",
+                "topic": "",
+                "requirements": [],
+                "description": "We'll say that a String is xy-balanced if for all the 'x' chars in the string, there exists a 'y' char somewhere later in the string. So \"xxy\" is balanced, but \"xyx\" is not. One 'y' can balance multiple 'x's. Return true if the given string is xy-balanced.\n\nThis exercise was taken from [codingbat.com](https://codingbat.com/prob/p134250) and has been adapted for the Python language. There are many great programming exercises there, but the majority are created for Java.",
+                "starter_code": "def xy_balance(string: str) -> bool:\n    pass\n\n\nresult = xy_balance('aaxbby')\nprint(result)\n",
+                "tests": "from main import xy_balance\n\n\ndef test_xy_balance_1():\n    assert xy_balance('aaxbby') == True\n\n\ndef test_xy_balance_2():\n    assert xy_balance('aaxbb') == False\n\n\ndef test_xy_balance_3():\n    assert xy_balance('yaaxbb') == False\n\n\ndef test_xy_balance_4():\n    assert xy_balance('yaaxbby') == True\n\n\ndef test_xy_balance_5():\n    assert xy_balance('xaxxbby') == True\n\n\ndef test_xy_balance_6():\n    assert xy_balance('xaxxbbyx') == False\n\n\ndef test_xy_balance_7():\n    assert xy_balance('xxbxy') == True\n\n\ndef test_xy_balance_8():\n    assert xy_balance('xxbx') == False\n\n\ndef test_xy_balance_9():\n    assert xy_balance('bbb') == True\n\n\ndef test_xy_balance_10():\n    assert xy_balance('bxbb') == False\n\n\ndef test_xy_balance_11():\n    assert xy_balance('bxyb') == True\n\n\ndef test_xy_balance_12():\n    assert xy_balance('xy') == True\n\n\ndef test_xy_balance_13():\n    assert xy_balance('y') == True\n\n\ndef test_xy_balance_14():\n    assert xy_balance('x') == False\n\n\ndef test_xy_balance_15():\n    assert xy_balance('') == True\n\n\ndef test_xy_balance_16():\n    assert xy_balance('yxyxyxyx') == False\n\n\ndef test_xy_balance_17():\n    assert xy_balance('yxyxyxyxy') == True\n\n\ndef test_xy_balance_18():\n    assert xy_balance('12xabxxydxyxyzz') == True\n\n\n",
+                "solution": "",
+                "tests_io": [
+                    [
+                        [
+                            "aaxbby"
+                        ],
+                        true
+                    ],
+                    [
+                        [
+                            "aaxbb"
+                        ],
+                        false
+                    ],
+                    [
+                        [
+                            "yaaxbb"
+                        ],
+                        false
+                    ],
+                    [
+                        [
+                            "yaaxbby"
+                        ],
+                        true
+                    ],
+                    [
+                        [
+                            "xaxxbby"
+                        ],
+                        true
+                    ],
+                    [
+                        [
+                            "xaxxbbyx"
+                        ],
+                        false
+                    ],
+                    [
+                        [
+                            "xxbxy"
+                        ],
+                        true
+                    ],
+                    [
+                        [
+                            "xxbx"
+                        ],
+                        false
+                    ],
+                    [
+                        [
+                            "bbb"
+                        ],
+                        true
+                    ],
+                    [
+                        [
+                            "bxbb"
+                        ],
+                        false
+                    ],
+                    [
+                        [
+                            "bxyb"
+                        ],
+                        true
+                    ],
+                    [
+                        [
+                            "xy"
+                        ],
+                        true
+                    ],
+                    [
+                        [
+                            "y"
+                        ],
+                        true
+                    ],
+                    [
+                        [
+                            "x"
+                        ],
+                        false
+                    ],
+                    [
+                        [
+                            ""
+                        ],
+                        true
+                    ],
+                    [
+                        [
+                            "yxyxyxyx"
+                        ],
+                        false
+                    ],
+                    [
+                        [
+                            "yxyxyxyxy"
+                        ],
+                        true
+                    ],
+                    [
+                        [
+                            "12xabxxydxyxyzz"
+                        ],
+                        true
+                    ]
+                ]
+            },
+            {
+                "name": "mix_string",
+                "topic": "",
+                "requirements": [],
+                "description": "Given two strings, <b>a</b> and <b>b</b>, create a bigger string made of the first char of a, the first char of b, the second char of a, the second char of b, and so on. Any leftover chars go at the end of the result.\n\nThis exercise was taken from [codingbat.com](https://codingbat.com/prob/p125185) and has been adapted for the Python language. There are many great programming exercises there, but the majority are created for Java.",
+                "starter_code": "def mix_string(a: str, b: str) -> str:\n    pass\n\n\nresult = mix_string('abc', 'xyz')\nprint(result)\n",
+                "tests": "from main import mix_string\n\n\ndef test_mix_string_1():\n    assert mix_string('abc', 'xyz') == 'axbycz'\n\n\ndef test_mix_string_2():\n    assert mix_string('Hi', 'There') == 'HTihere'\n\n\ndef test_mix_string_3():\n    assert mix_string('xxxx', 'There') == 'xTxhxexre'\n\n\ndef test_mix_string_4():\n    assert mix_string('xxx', 'X') == 'xXxx'\n\n\ndef test_mix_string_5():\n    assert mix_string('2/', '27 around') == '22/7 around'\n\n\ndef test_mix_string_6():\n    assert mix_string('', 'Hello') == 'Hello'\n\n\ndef test_mix_string_7():\n    assert mix_string('Abc', '') == 'Abc'\n\n\ndef test_mix_string_8():\n    assert mix_string('', '') == ''\n\n\ndef test_mix_string_9():\n    assert mix_string('a', 'b') == 'ab'\n\n\ndef test_mix_string_10():\n    assert mix_string('ax', 'b') == 'abx'\n\n\ndef test_mix_string_11():\n    assert mix_string('a', 'bx') == 'abx'\n\n\ndef test_mix_string_12():\n    assert mix_string('So', 'Long') == 'SLoong'\n\n\ndef test_mix_string_13():\n    assert mix_string('Long', 'So') == 'LSoong'\n\n\n",
+                "solution": "",
+                "tests_io": [
+                    [
+                        [
+                            "abc",
+                            "xyz"
+                        ],
+                        "axbycz"
+                    ],
+                    [
+                        [
+                            "Hi",
+                            "There"
+                        ],
+                        "HTihere"
+                    ],
+                    [
+                        [
+                            "xxxx",
+                            "There"
+                        ],
+                        "xTxhxexre"
+                    ],
+                    [
+                        [
+                            "xxx",
+                            "X"
+                        ],
+                        "xXxx"
+                    ],
+                    [
+                        [
+                            "2/",
+                            "27 around"
+                        ],
+                        "22/7 around"
+                    ],
+                    [
+                        [
+                            "",
+                            "Hello"
+                        ],
+                        "Hello"
+                    ],
+                    [
+                        [
+                            "Abc",
+                            ""
+                        ],
+                        "Abc"
+                    ],
+                    [
+                        [
+                            "",
+                            ""
+                        ],
+                        ""
+                    ],
+                    [
+                        [
+                            "a",
+                            "b"
+                        ],
+                        "ab"
+                    ],
+                    [
+                        [
+                            "ax",
+                            "b"
+                        ],
+                        "abx"
+                    ],
+                    [
+                        [
+                            "a",
+                            "bx"
+                        ],
+                        "abx"
+                    ],
+                    [
+                        [
+                            "So",
+                            "Long"
+                        ],
+                        "SLoong"
+                    ],
+                    [
+                        [
+                            "Long",
+                            "So"
+                        ],
+                        "LSoong"
+                    ]
+                ]
+            },
+            {
+                "name": "repeat_end",
+                "topic": "",
+                "requirements": [],
+                "description": "Given a string and an int n, return a string made of n repetitions of the last n characters of the string. You may assume that n is between 0 and the length of the string, inclusive.\n\nThis exercise was taken from [codingbat.com](https://codingbat.com/prob/p152339) and has been adapted for the Python language. There are many great programming exercises there, but the majority are created for Java.",
+                "starter_code": "def repeat_end(string: str, n: int) -> str:\n    pass\n\n\nresult = repeat_end('Hello', 3)\nprint(result)\n",
+                "tests": "from main import repeat_end\n\n\ndef test_repeat_end_1():\n    assert repeat_end('Hello', 3) == 'llollollo'\n\n\ndef test_repeat_end_2():\n    assert repeat_end('Hello', 2) == 'lolo'\n\n\ndef test_repeat_end_3():\n    assert repeat_end('Hello', 1) == 'o'\n\n\ndef test_repeat_end_4():\n    assert repeat_end('Hello', 0) == ''\n\n\ndef test_repeat_end_5():\n    assert repeat_end('abc', 3) == 'abcabcabc'\n\n\ndef test_repeat_end_6():\n    assert repeat_end('1234', 2) == '3434'\n\n\ndef test_repeat_end_7():\n    assert repeat_end('1234', 3) == '234234234'\n\n\ndef test_repeat_end_8():\n    assert repeat_end('', 0) == ''\n\n\n",
+                "solution": "",
+                "tests_io": [
+                    [
+                        [
+                            "Hello",
+                            3
+                        ],
+                        "llollollo"
+                    ],
+                    [
+                        [
+                            "Hello",
+                            2
+                        ],
+                        "lolo"
+                    ],
+                    [
+                        [
+                            "Hello",
+                            1
+                        ],
+                        "o"
+                    ],
+                    [
+                        [
+                            "Hello",
+                            0
+                        ],
+                        ""
+                    ],
+                    [
+                        [
+                            "abc",
+                            3
+                        ],
+                        "abcabcabc"
+                    ],
+                    [
+                        [
+                            "1234",
+                            2
+                        ],
+                        "3434"
+                    ],
+                    [
+                        [
+                            "1234",
+                            3
+                        ],
+                        "234234234"
+                    ],
+                    [
+                        [
+                            "",
+                            0
+                        ],
+                        ""
+                    ]
+                ]
+            },
+            {
+                "name": "repeat_front",
+                "topic": "",
+                "requirements": [],
+                "description": "Given a string and an int n, return a string made of the first n characters of the string, followed by the first n-1 characters of the string, and so on. You may assume that n is between 0 and the length of the string, inclusive (i.e. n &gt;= 0 and n &lt;= str.length()).\n\nThis exercise was taken from [codingbat.com](https://codingbat.com/prob/p128796) and has been adapted for the Python language. There are many great programming exercises there, but the majority are created for Java.",
+                "starter_code": "def repeat_front(string: str, n: int) -> str:\n    pass\n\n\nresult = repeat_front('Chocolate', 4)\nprint(result)\n",
+                "tests": "from main import repeat_front\n\n\ndef test_repeat_front_1():\n    assert repeat_front('Chocolate', 4) == 'ChocChoChC'\n\n\ndef test_repeat_front_2():\n    assert repeat_front('Chocolate', 3) == 'ChoChC'\n\n\ndef test_repeat_front_3():\n    assert repeat_front('Ice Cream', 2) == 'IcI'\n\n\ndef test_repeat_front_4():\n    assert repeat_front('Ice Cream', 1) == 'I'\n\n\ndef test_repeat_front_5():\n    assert repeat_front('Ice Cream', 0) == ''\n\n\ndef test_repeat_front_6():\n    assert repeat_front('xyz', 3) == 'xyzxyx'\n\n\ndef test_repeat_front_7():\n    assert repeat_front('', 0) == ''\n\n\ndef test_repeat_front_8():\n    assert repeat_front('Java', 4) == 'JavaJavJaJ'\n\n\ndef test_repeat_front_9():\n    assert repeat_front('Java', 1) == 'J'\n\n\n",
+                "solution": "",
+                "tests_io": [
+                    [
+                        [
+                            "Chocolate",
+                            4
+                        ],
+                        "ChocChoChC"
+                    ],
+                    [
+                        [
+                            "Chocolate",
+                            3
+                        ],
+                        "ChoChC"
+                    ],
+                    [
+                        [
+                            "Ice Cream",
+                            2
+                        ],
+                        "IcI"
+                    ],
+                    [
+                        [
+                            "Ice Cream",
+                            1
+                        ],
+                        "I"
+                    ],
+                    [
+                        [
+                            "Ice Cream",
+                            0
+                        ],
+                        ""
+                    ],
+                    [
+                        [
+                            "xyz",
+                            3
+                        ],
+                        "xyzxyx"
+                    ],
+                    [
+                        [
+                            "",
+                            0
+                        ],
+                        ""
+                    ],
+                    [
+                        [
+                            "Java",
+                            4
+                        ],
+                        "JavaJavJaJ"
+                    ],
+                    [
+                        [
+                            "Java",
+                            1
+                        ],
+                        "J"
+                    ]
+                ]
+            },
+            {
+                "name": "repeat_separator",
+                "topic": "",
+                "requirements": [],
+                "description": "Given two strings, <b>word</b> and a separator <b>sep</b>, return a big string made of <b>count</b> occurrences of the word, separated by the separator string.\n\nThis exercise was taken from [codingbat.com](https://codingbat.com/prob/p109637) and has been adapted for the Python language. There are many great programming exercises there, but the majority are created for Java.",
+                "starter_code": "def repeat_separator(word: str, sep: str, count: int) -> str:\n    pass\n\n\nresult = repeat_separator('Word', 'X', 3)\nprint(result)\n",
+                "tests": "from main import repeat_separator\n\n\ndef test_repeat_separator_1():\n    assert repeat_separator('Word', 'X', 3) == 'WordXWordXWord'\n\n\ndef test_repeat_separator_2():\n    assert repeat_separator('This', 'And', 2) == 'ThisAndThis'\n\n\ndef test_repeat_separator_3():\n    assert repeat_separator('This', 'And', 1) == 'This'\n\n\ndef test_repeat_separator_4():\n    assert repeat_separator('Hi', '-n-', 2) == 'Hi-n-Hi'\n\n\ndef test_repeat_separator_5():\n    assert repeat_separator('AAA', '', 1) == 'AAA'\n\n\ndef test_repeat_separator_6():\n    assert repeat_separator('AAA', '', 0) == ''\n\n\ndef test_repeat_separator_7():\n    assert repeat_separator('A', 'B', 5) == 'ABABABABA'\n\n\ndef test_repeat_separator_8():\n    assert repeat_separator('abc', 'XX', 3) == 'abcXXabcXXabc'\n\n\ndef test_repeat_separator_9():\n    assert repeat_separator('abc', 'XX', 2) == 'abcXXabc'\n\n\ndef test_repeat_separator_10():\n    assert repeat_separator('abc', 'XX', 1) == 'abc'\n\n\ndef test_repeat_separator_11():\n    assert repeat_separator('XYZ', 'a', 2) == 'XYZaXYZ'\n\n\n",
+                "solution": "",
+                "tests_io": [
+                    [
+                        [
+                            "Word",
+                            "X",
+                            3
+                        ],
+                        "WordXWordXWord"
+                    ],
+                    [
+                        [
+                            "This",
+                            "And",
+                            2
+                        ],
+                        "ThisAndThis"
+                    ],
+                    [
+                        [
+                            "This",
+                            "And",
+                            1
+                        ],
+                        "This"
+                    ],
+                    [
+                        [
+                            "Hi",
+                            "-n-",
+                            2
+                        ],
+                        "Hi-n-Hi"
+                    ],
+                    [
+                        [
+                            "AAA",
+                            "",
+                            1
+                        ],
+                        "AAA"
+                    ],
+                    [
+                        [
+                            "AAA",
+                            "",
+                            0
+                        ],
+                        ""
+                    ],
+                    [
+                        [
+                            "A",
+                            "B",
+                            5
+                        ],
+                        "ABABABABA"
+                    ],
+                    [
+                        [
+                            "abc",
+                            "XX",
+                            3
+                        ],
+                        "abcXXabcXXabc"
+                    ],
+                    [
+                        [
+                            "abc",
+                            "XX",
+                            2
+                        ],
+                        "abcXXabc"
+                    ],
+                    [
+                        [
+                            "abc",
+                            "XX",
+                            1
+                        ],
+                        "abc"
+                    ],
+                    [
+                        [
+                            "XYZ",
+                            "a",
+                            2
+                        ],
+                        "XYZaXYZ"
+                    ]
+                ]
+            },
+            {
+                "name": "prefix_again",
+                "topic": "",
+                "requirements": [],
+                "description": "Given a string, consider the prefix string made of the first N chars of the string. Does that prefix string appear somewhere else in the string? Assume that the string is not empty and that N is in the range 1..str.length().\n\nThis exercise was taken from [codingbat.com](https://codingbat.com/prob/p136417) and has been adapted for the Python language. There are many great programming exercises there, but the majority are created for Java.",
+                "starter_code": "def prefix_again(string: str, n: int) -> bool:\n    pass\n\n\nresult = prefix_again('abXYabc', 1)\nprint(result)\n",
+                "tests": "from main import prefix_again\n\n\ndef test_prefix_again_1():\n    assert prefix_again('abXYabc', 1) == True\n\n\ndef test_prefix_again_2():\n    assert prefix_again('abXYabc', 2) == True\n\n\ndef test_prefix_again_3():\n    assert prefix_again('abXYabc', 3) == False\n\n\ndef test_prefix_again_4():\n    assert prefix_again('xyzxyxyxy', 2) == True\n\n\ndef test_prefix_again_5():\n    assert prefix_again('xyzxyxyxy', 3) == False\n\n\ndef test_prefix_again_6():\n    assert prefix_again('Hi12345Hi6789Hi10', 1) == True\n\n\ndef test_prefix_again_7():\n    assert prefix_again('Hi12345Hi6789Hi10', 2) == True\n\n\ndef test_prefix_again_8():\n    assert prefix_again('Hi12345Hi6789Hi10', 3) == True\n\n\ndef test_prefix_again_9():\n    assert prefix_again('Hi12345Hi6789Hi10', 4) == False\n\n\ndef test_prefix_again_10():\n    assert prefix_again('a', 1) == False\n\n\ndef test_prefix_again_11():\n    assert prefix_again('aa', 1) == True\n\n\ndef test_prefix_again_12():\n    assert prefix_again('ab', 1) == False\n\n\n",
+                "solution": "",
+                "tests_io": [
+                    [
+                        [
+                            "abXYabc",
+                            1
+                        ],
+                        true
+                    ],
+                    [
+                        [
+                            "abXYabc",
+                            2
+                        ],
+                        true
+                    ],
+                    [
+                        [
+                            "abXYabc",
+                            3
+                        ],
+                        false
+                    ],
+                    [
+                        [
+                            "xyzxyxyxy",
+                            2
+                        ],
+                        true
+                    ],
+                    [
+                        [
+                            "xyzxyxyxy",
+                            3
+                        ],
+                        false
+                    ],
+                    [
+                        [
+                            "Hi12345Hi6789Hi10",
+                            1
+                        ],
+                        true
+                    ],
+                    [
+                        [
+                            "Hi12345Hi6789Hi10",
+                            2
+                        ],
+                        true
+                    ],
+                    [
+                        [
+                            "Hi12345Hi6789Hi10",
+                            3
+                        ],
+                        true
+                    ],
+                    [
+                        [
+                            "Hi12345Hi6789Hi10",
+                            4
+                        ],
+                        false
+                    ],
+                    [
+                        [
+                            "a",
+                            1
+                        ],
+                        false
+                    ],
+                    [
+                        [
+                            "aa",
+                            1
+                        ],
+                        true
+                    ],
+                    [
+                        [
+                            "ab",
+                            1
+                        ],
+                        false
+                    ]
+                ]
+            },
+            {
+                "name": "xyz_middle",
+                "topic": "",
+                "requirements": [],
+                "description": "Given a string, does \"xyz\" appear in the middle of the string? To define middle, we'll say that the number of chars to the left and right of the \"xyz\" must differ by at most one. This problem is harder than it looks.\n\nThis exercise was taken from [codingbat.com](https://codingbat.com/prob/p159772) and has been adapted for the Python language. There are many great programming exercises there, but the majority are created for Java.",
+                "starter_code": "def xyz_middle(string: str) -> bool:\n    pass\n\n\nresult = xyz_middle('AAxyzBB')\nprint(result)\n",
+                "tests": "from main import xyz_middle\n\n\ndef test_xyz_middle_1():\n    assert xyz_middle('AAxyzBB') == True\n\n\ndef test_xyz_middle_2():\n    assert xyz_middle('AxyzBB') == True\n\n\ndef test_xyz_middle_3():\n    assert xyz_middle('AxyzBBB') == False\n\n\ndef test_xyz_middle_4():\n    assert xyz_middle('AxyzBBBB') == False\n\n\ndef test_xyz_middle_5():\n    assert xyz_middle('AAAxyzB') == False\n\n\ndef test_xyz_middle_6():\n    assert xyz_middle('AAAxyzBB') == True\n\n\ndef test_xyz_middle_7():\n    assert xyz_middle('AAAAxyzBB') == False\n\n\ndef test_xyz_middle_8():\n    assert xyz_middle('AAAAAxyzBBB') == False\n\n\ndef test_xyz_middle_9():\n    assert xyz_middle('1x345xyz12x4') == True\n\n\ndef test_xyz_middle_10():\n    assert xyz_middle('xyzAxyzBBB') == True\n\n\ndef test_xyz_middle_11():\n    assert xyz_middle('xyzAxyzBxyz') == True\n\n\ndef test_xyz_middle_12():\n    assert xyz_middle('xyzxyzAxyzBxyzxyz') == True\n\n\ndef test_xyz_middle_13():\n    assert xyz_middle('xyzxyzxyzBxyzxyz') == True\n\n\ndef test_xyz_middle_14():\n    assert xyz_middle('xyzxyzAxyzxyzxyz') == True\n\n\ndef test_xyz_middle_15():\n    assert xyz_middle('xyzxyzAxyzxyzxy') == False\n\n\ndef test_xyz_middle_16():\n    assert xyz_middle('AxyzxyzBB') == False\n\n\ndef test_xyz_middle_17():\n    assert xyz_middle('') == False\n\n\ndef test_xyz_middle_18():\n    assert xyz_middle('x') == False\n\n\ndef test_xyz_middle_19():\n    assert xyz_middle('xy') == False\n\n\ndef test_xyz_middle_20():\n    assert xyz_middle('xyz') == True\n\n\ndef test_xyz_middle_21():\n    assert xyz_middle('xyzz') == True\n\n\n",
+                "solution": "",
+                "tests_io": [
+                    [
+                        [
+                            "AAxyzBB"
+                        ],
+                        true
+                    ],
+                    [
+                        [
+                            "AxyzBB"
+                        ],
+                        true
+                    ],
+                    [
+                        [
+                            "AxyzBBB"
+                        ],
+                        false
+                    ],
+                    [
+                        [
+                            "AxyzBBBB"
+                        ],
+                        false
+                    ],
+                    [
+                        [
+                            "AAAxyzB"
+                        ],
+                        false
+                    ],
+                    [
+                        [
+                            "AAAxyzBB"
+                        ],
+                        true
+                    ],
+                    [
+                        [
+                            "AAAAxyzBB"
+                        ],
+                        false
+                    ],
+                    [
+                        [
+                            "AAAAAxyzBBB"
+                        ],
+                        false
+                    ],
+                    [
+                        [
+                            "1x345xyz12x4"
+                        ],
+                        true
+                    ],
+                    [
+                        [
+                            "xyzAxyzBBB"
+                        ],
+                        true
+                    ],
+                    [
+                        [
+                            "xyzAxyzBxyz"
+                        ],
+                        true
+                    ],
+                    [
+                        [
+                            "xyzxyzAxyzBxyzxyz"
+                        ],
+                        true
+                    ],
+                    [
+                        [
+                            "xyzxyzxyzBxyzxyz"
+                        ],
+                        true
+                    ],
+                    [
+                        [
+                            "xyzxyzAxyzxyzxyz"
+                        ],
+                        true
+                    ],
+                    [
+                        [
+                            "xyzxyzAxyzxyzxy"
+                        ],
+                        false
+                    ],
+                    [
+                        [
+                            "AxyzxyzBB"
+                        ],
+                        false
+                    ],
+                    [
+                        [
+                            ""
+                        ],
+                        false
+                    ],
+                    [
+                        [
+                            "x"
+                        ],
+                        false
+                    ],
+                    [
+                        [
+                            "xy"
+                        ],
+                        false
+                    ],
+                    [
+                        [
+                            "xyz"
+                        ],
+                        true
+                    ],
+                    [
+                        [
+                            "xyzz"
+                        ],
+                        true
+                    ]
+                ]
+            },
+            {
+                "name": "get_sandwich",
+                "topic": "",
+                "requirements": [],
+                "description": "A sandwich is two pieces of bread with something in between. Return the string that is between the first and last appearance of \"bread\" in the given string, or return the empty string \"\" if there are not two pieces of bread.\n\nThis exercise was taken from [codingbat.com](https://codingbat.com/prob/p129952) and has been adapted for the Python language. There are many great programming exercises there, but the majority are created for Java.",
+                "starter_code": "def get_sandwich(string: str) -> str:\n    pass\n\n\nresult = get_sandwich('breadjambread')\nprint(result)\n",
+                "tests": "from main import get_sandwich\n\n\ndef test_get_sandwich_1():\n    assert get_sandwich('breadjambread') == 'jam'\n\n\ndef test_get_sandwich_2():\n    assert get_sandwich('xxbreadjambreadyy') == 'jam'\n\n\ndef test_get_sandwich_3():\n    assert get_sandwich('xxbreadyy') == ''\n\n\ndef test_get_sandwich_4():\n    assert get_sandwich('xxbreadbreadjambreadyy') == 'breadjam'\n\n\ndef test_get_sandwich_5():\n    assert get_sandwich('breadAbread') == 'A'\n\n\ndef test_get_sandwich_6():\n    assert get_sandwich('breadbread') == ''\n\n\ndef test_get_sandwich_7():\n    assert get_sandwich('abcbreaz') == ''\n\n\ndef test_get_sandwich_8():\n    assert get_sandwich('xyz') == ''\n\n\ndef test_get_sandwich_9():\n    assert get_sandwich('') == ''\n\n\ndef test_get_sandwich_10():\n    assert get_sandwich('breadbreaxbread') == 'breax'\n\n\ndef test_get_sandwich_11():\n    assert get_sandwich('breaxbreadybread') == 'y'\n\n\ndef test_get_sandwich_12():\n    assert get_sandwich('breadbreadbreadbread') == 'breadbread'\n\n\n",
+                "solution": "",
+                "tests_io": [
+                    [
+                        [
+                            "breadjambread"
+                        ],
+                        "jam"
+                    ],
+                    [
+                        [
+                            "xxbreadjambreadyy"
+                        ],
+                        "jam"
+                    ],
+                    [
+                        [
+                            "xxbreadyy"
+                        ],
+                        ""
+                    ],
+                    [
+                        [
+                            "xxbreadbreadjambreadyy"
+                        ],
+                        "breadjam"
+                    ],
+                    [
+                        [
+                            "breadAbread"
+                        ],
+                        "A"
+                    ],
+                    [
+                        [
+                            "breadbread"
+                        ],
+                        ""
+                    ],
+                    [
+                        [
+                            "abcbreaz"
+                        ],
+                        ""
+                    ],
+                    [
+                        [
+                            "xyz"
+                        ],
+                        ""
+                    ],
+                    [
+                        [
+                            ""
+                        ],
+                        ""
+                    ],
+                    [
+                        [
+                            "breadbreaxbread"
+                        ],
+                        "breax"
+                    ],
+                    [
+                        [
+                            "breaxbreadybread"
+                        ],
+                        "y"
+                    ],
+                    [
+                        [
+                            "breadbreadbreadbread"
+                        ],
+                        "breadbread"
+                    ]
+                ]
+            },
+            {
+                "name": "same_star_char",
+                "topic": "",
+                "requirements": [],
+                "description": "Returns true if for every '*' (star) in the string, if there are chars both immediately before and after the star, they are the same.\n\nThis exercise was taken from [codingbat.com](https://codingbat.com/prob/p194491) and has been adapted for the Python language. There are many great programming exercises there, but the majority are created for Java.",
+                "starter_code": "def same_star_char(string: str) -> bool:\n    pass\n\n\nresult = same_star_char('xy*yzz')\nprint(result)\n",
+                "tests": "from main import same_star_char\n\n\ndef test_same_star_char_1():\n    assert same_star_char('xy*yzz') == True\n\n\ndef test_same_star_char_2():\n    assert same_star_char('xy*zzz') == False\n\n\ndef test_same_star_char_3():\n    assert same_star_char('*xa*az') == True\n\n\ndef test_same_star_char_4():\n    assert same_star_char('*xa*bz') == False\n\n\ndef test_same_star_char_5():\n    assert same_star_char('*xa*a*') == True\n\n\ndef test_same_star_char_6():\n    assert same_star_char('') == True\n\n\ndef test_same_star_char_7():\n    assert same_star_char('*xa*a*a') == True\n\n\ndef test_same_star_char_8():\n    assert same_star_char('*xa*a*b') == False\n\n\ndef test_same_star_char_9():\n    assert same_star_char('*12*2*2') == True\n\n\ndef test_same_star_char_10():\n    assert same_star_char('12*2*3*') == False\n\n\ndef test_same_star_char_11():\n    assert same_star_char('abcDEF') == True\n\n\ndef test_same_star_char_12():\n    assert same_star_char('XY*YYYY*Z*') == False\n\n\ndef test_same_star_char_13():\n    assert same_star_char('XY*YYYY*Y*') == True\n\n\ndef test_same_star_char_14():\n    assert same_star_char('12*2*3*') == False\n\n\ndef test_same_star_char_15():\n    assert same_star_char('*') == True\n\n\ndef test_same_star_char_16():\n    assert same_star_char('**') == True\n\n\n",
+                "solution": "",
+                "tests_io": [
+                    [
+                        [
+                            "xy*yzz"
+                        ],
+                        true
+                    ],
+                    [
+                        [
+                            "xy*zzz"
+                        ],
+                        false
+                    ],
+                    [
+                        [
+                            "*xa*az"
+                        ],
+                        true
+                    ],
+                    [
+                        [
+                            "*xa*bz"
+                        ],
+                        false
+                    ],
+                    [
+                        [
+                            "*xa*a*"
+                        ],
+                        true
+                    ],
+                    [
+                        [
+                            ""
+                        ],
+                        true
+                    ],
+                    [
+                        [
+                            "*xa*a*a"
+                        ],
+                        true
+                    ],
+                    [
+                        [
+                            "*xa*a*b"
+                        ],
+                        false
+                    ],
+                    [
+                        [
+                            "*12*2*2"
+                        ],
+                        true
+                    ],
+                    [
+                        [
+                            "12*2*3*"
+                        ],
+                        false
+                    ],
+                    [
+                        [
+                            "abcDEF"
+                        ],
+                        true
+                    ],
+                    [
+                        [
+                            "XY*YYYY*Z*"
+                        ],
+                        false
+                    ],
+                    [
+                        [
+                            "XY*YYYY*Y*"
+                        ],
+                        true
+                    ],
+                    [
+                        [
+                            "12*2*3*"
+                        ],
+                        false
+                    ],
+                    [
+                        [
+                            "*"
+                        ],
+                        true
+                    ],
+                    [
+                        [
+                            "**"
+                        ],
+                        true
+                    ]
+                ]
+            },
+            {
+                "name": "one_two",
+                "topic": "",
+                "requirements": [],
+                "description": "Given a string, compute a new string by moving the first char to come after the next two chars, so \"abc\" yields \"bca\". Repeat this process for each subsequent group of 3 chars, so \"abcdef\" yields \"bcaefd\". Ignore any group of fewer than 3 chars at the end.\n\nThis exercise was taken from [codingbat.com](https://codingbat.com/prob/p122943) and has been adapted for the Python language. There are many great programming exercises there, but the majority are created for Java.",
+                "starter_code": "def one_two(string: str) -> str:\n    pass\n\n\nresult = one_two('abc')\nprint(result)\n",
+                "tests": "from main import one_two\n\n\ndef test_one_two_1():\n    assert one_two('abc') == 'bca'\n\n\ndef test_one_two_2():\n    assert one_two('tca') == 'cat'\n\n\ndef test_one_two_3():\n    assert one_two('tcagdo') == 'catdog'\n\n\ndef test_one_two_4():\n    assert one_two('chocolate') == 'hocolctea'\n\n\ndef test_one_two_5():\n    assert one_two('1234567890') == '231564897'\n\n\ndef test_one_two_6():\n    assert one_two('xabxabxabxabxabxabxab') == 'abxabxabxabxabxabxabx'\n\n\ndef test_one_two_7():\n    assert one_two('abcdefx') == 'bcaefd'\n\n\ndef test_one_two_8():\n    assert one_two('abcdefxy') == 'bcaefd'\n\n\ndef test_one_two_9():\n    assert one_two('abcdefxyz') == 'bcaefdyzx'\n\n\ndef test_one_two_10():\n    assert one_two('') == ''\n\n\ndef test_one_two_11():\n    assert one_two('x') == ''\n\n\ndef test_one_two_12():\n    assert one_two('xy') == ''\n\n\ndef test_one_two_13():\n    assert one_two('xyz') == 'yzx'\n\n\ndef test_one_two_14():\n    assert one_two('abcdefghijklkmnopqrstuvwxyz1234567890') == 'bcaefdhigkljmnkpqostrvwuyzx231564897'\n\n\ndef test_one_two_15():\n    assert one_two('abcdefghijklkmnopqrstuvwxyz123456789') == 'bcaefdhigkljmnkpqostrvwuyzx231564897'\n\n\ndef test_one_two_16():\n    assert one_two('abcdefghijklkmnopqrstuvwxyz12345678') == 'bcaefdhigkljmnkpqostrvwuyzx231564'\n\n\n",
+                "solution": "",
+                "tests_io": [
+                    [
+                        [
+                            "abc"
+                        ],
+                        "bca"
+                    ],
+                    [
+                        [
+                            "tca"
+                        ],
+                        "cat"
+                    ],
+                    [
+                        [
+                            "tcagdo"
+                        ],
+                        "catdog"
+                    ],
+                    [
+                        [
+                            "chocolate"
+                        ],
+                        "hocolctea"
+                    ],
+                    [
+                        [
+                            "1234567890"
+                        ],
+                        "231564897"
+                    ],
+                    [
+                        [
+                            "xabxabxabxabxabxabxab"
+                        ],
+                        "abxabxabxabxabxabxabx"
+                    ],
+                    [
+                        [
+                            "abcdefx"
+                        ],
+                        "bcaefd"
+                    ],
+                    [
+                        [
+                            "abcdefxy"
+                        ],
+                        "bcaefd"
+                    ],
+                    [
+                        [
+                            "abcdefxyz"
+                        ],
+                        "bcaefdyzx"
+                    ],
+                    [
+                        [
+                            ""
+                        ],
+                        ""
+                    ],
+                    [
+                        [
+                            "x"
+                        ],
+                        ""
+                    ],
+                    [
+                        [
+                            "xy"
+                        ],
+                        ""
+                    ],
+                    [
+                        [
+                            "xyz"
+                        ],
+                        "yzx"
+                    ],
+                    [
+                        [
+                            "abcdefghijklkmnopqrstuvwxyz1234567890"
+                        ],
+                        "bcaefdhigkljmnkpqostrvwuyzx231564897"
+                    ],
+                    [
+                        [
+                            "abcdefghijklkmnopqrstuvwxyz123456789"
+                        ],
+                        "bcaefdhigkljmnkpqostrvwuyzx231564897"
+                    ],
+                    [
+                        [
+                            "abcdefghijklkmnopqrstuvwxyz12345678"
+                        ],
+                        "bcaefdhigkljmnkpqostrvwuyzx231564"
+                    ]
+                ]
+            },
+            {
+                "name": "zip_zap",
+                "topic": "",
+                "requirements": [],
+                "description": "Look for patterns like \"zip\" and \"zap\" in the string -- length-3, starting with 'z' and ending with 'p'. Return a string where for all such words, the middle letter is gone, so \"zipXzap\" yields \"zpXzp\".\n\nThis exercise was taken from [codingbat.com](https://codingbat.com/prob/p180759) and has been adapted for the Python language. There are many great programming exercises there, but the majority are created for Java.",
+                "starter_code": "def zip_zap(string: str) -> str:\n    pass\n\n\nresult = zip_zap('zipXzap')\nprint(result)\n",
+                "tests": "from main import zip_zap\n\n\ndef test_zip_zap_1():\n    assert zip_zap('zipXzap') == 'zpXzp'\n\n\ndef test_zip_zap_2():\n    assert zip_zap('zopzop') == 'zpzp'\n\n\ndef test_zip_zap_3():\n    assert zip_zap('zzzopzop') == 'zzzpzp'\n\n\ndef test_zip_zap_4():\n    assert zip_zap('zibzap') == 'zibzp'\n\n\ndef test_zip_zap_5():\n    assert zip_zap('zip') == 'zp'\n\n\ndef test_zip_zap_6():\n    assert zip_zap('zi') == 'zi'\n\n\ndef test_zip_zap_7():\n    assert zip_zap('z') == 'z'\n\n\ndef test_zip_zap_8():\n    assert zip_zap('') == ''\n\n\ndef test_zip_zap_9():\n    assert zip_zap('zzp') == 'zp'\n\n\ndef test_zip_zap_10():\n    assert zip_zap('abcppp') == 'abcppp'\n\n\ndef test_zip_zap_11():\n    assert zip_zap('azbcppp') == 'azbcppp'\n\n\ndef test_zip_zap_12():\n    assert zip_zap('azbcpzpp') == 'azbcpzp'\n\n\n",
+                "solution": "",
+                "tests_io": [
+                    [
+                        [
+                            "zipXzap"
+                        ],
+                        "zpXzp"
+                    ],
+                    [
+                        [
+                            "zopzop"
+                        ],
+                        "zpzp"
+                    ],
+                    [
+                        [
+                            "zzzopzop"
+                        ],
+                        "zzzpzp"
+                    ],
+                    [
+                        [
+                            "zibzap"
+                        ],
+                        "zibzp"
+                    ],
+                    [
+                        [
+                            "zip"
+                        ],
+                        "zp"
+                    ],
+                    [
+                        [
+                            "zi"
+                        ],
+                        "zi"
+                    ],
+                    [
+                        [
+                            "z"
+                        ],
+                        "z"
+                    ],
+                    [
+                        [
+                            ""
+                        ],
+                        ""
+                    ],
+                    [
+                        [
+                            "zzp"
+                        ],
+                        "zp"
+                    ],
+                    [
+                        [
+                            "abcppp"
+                        ],
+                        "abcppp"
+                    ],
+                    [
+                        [
+                            "azbcppp"
+                        ],
+                        "azbcppp"
+                    ],
+                    [
+                        [
+                            "azbcpzpp"
+                        ],
+                        "azbcpzp"
+                    ]
+                ]
+            },
+            {
+                "name": "star_out",
+                "topic": "",
+                "requirements": [],
+                "description": "Return a version of the given string, where for every star (*) in the string the star and the chars immediately to its left and right are gone. So \"ab*cd\" yields \"ad\" and \"ab**cd\" also yields \"ad\".\n\nThis exercise was taken from [codingbat.com](https://codingbat.com/prob/p139564) and has been adapted for the Python language. There are many great programming exercises there, but the majority are created for Java.",
+                "starter_code": "def star_out(string: str) -> str:\n    pass\n\n\nresult = star_out('ab*cd')\nprint(result)\n",
+                "tests": "from main import star_out\n\n\ndef test_star_out_1():\n    assert star_out('ab*cd') == 'ad'\n\n\ndef test_star_out_2():\n    assert star_out('ab**cd') == 'ad'\n\n\ndef test_star_out_3():\n    assert star_out('sm*eilly') == 'silly'\n\n\ndef test_star_out_4():\n    assert star_out('sm*eil*ly') == 'siy'\n\n\ndef test_star_out_5():\n    assert star_out('sm**eil*ly') == 'siy'\n\n\ndef test_star_out_6():\n    assert star_out('sm***eil*ly') == 'siy'\n\n\ndef test_star_out_7():\n    assert star_out('stringy*') == 'string'\n\n\ndef test_star_out_8():\n    assert star_out('*stringy') == 'tringy'\n\n\ndef test_star_out_9():\n    assert star_out('*str*in*gy') == 'ty'\n\n\ndef test_star_out_10():\n    assert star_out('abc') == 'abc'\n\n\ndef test_star_out_11():\n    assert star_out('a*bc') == 'c'\n\n\ndef test_star_out_12():\n    assert star_out('ab') == 'ab'\n\n\ndef test_star_out_13():\n    assert star_out('a*b') == ''\n\n\ndef test_star_out_14():\n    assert star_out('a') == 'a'\n\n\ndef test_star_out_15():\n    assert star_out('a*') == ''\n\n\ndef test_star_out_16():\n    assert star_out('*a') == ''\n\n\ndef test_star_out_17():\n    assert star_out('*') == ''\n\n\ndef test_star_out_18():\n    assert star_out('') == ''\n\n\n",
+                "solution": "",
+                "tests_io": [
+                    [
+                        [
+                            "ab*cd"
+                        ],
+                        "ad"
+                    ],
+                    [
+                        [
+                            "ab**cd"
+                        ],
+                        "ad"
+                    ],
+                    [
+                        [
+                            "sm*eilly"
+                        ],
+                        "silly"
+                    ],
+                    [
+                        [
+                            "sm*eil*ly"
+                        ],
+                        "siy"
+                    ],
+                    [
+                        [
+                            "sm**eil*ly"
+                        ],
+                        "siy"
+                    ],
+                    [
+                        [
+                            "sm***eil*ly"
+                        ],
+                        "siy"
+                    ],
+                    [
+                        [
+                            "stringy*"
+                        ],
+                        "string"
+                    ],
+                    [
+                        [
+                            "*stringy"
+                        ],
+                        "tringy"
+                    ],
+                    [
+                        [
+                            "*str*in*gy"
+                        ],
+                        "ty"
+                    ],
+                    [
+                        [
+                            "abc"
+                        ],
+                        "abc"
+                    ],
+                    [
+                        [
+                            "a*bc"
+                        ],
+                        "c"
+                    ],
+                    [
+                        [
+                            "ab"
+                        ],
+                        "ab"
+                    ],
+                    [
+                        [
+                            "a*b"
+                        ],
+                        ""
+                    ],
+                    [
+                        [
+                            "a"
+                        ],
+                        "a"
+                    ],
+                    [
+                        [
+                            "a*"
+                        ],
+                        ""
+                    ],
+                    [
+                        [
+                            "*a"
+                        ],
+                        ""
+                    ],
+                    [
+                        [
+                            "*"
+                        ],
+                        ""
+                    ],
+                    [
+                        [
+                            ""
+                        ],
+                        ""
+                    ]
+                ]
+            },
+            {
+                "name": "plus_out",
+                "topic": "",
+                "requirements": [],
+                "description": "Given a string and a non-empty <b>word</b> string, return a version of the original String where all chars have been replaced by pluses (\"+\"), except for appearances of the word string which are preserved unchanged.\n\nThis exercise was taken from [codingbat.com](https://codingbat.com/prob/p170829) and has been adapted for the Python language. There are many great programming exercises there, but the majority are created for Java.",
+                "starter_code": "def plus_out(string: str, word: str) -> str:\n    pass\n\n\nresult = plus_out('12xy34', 'xy')\nprint(result)\n",
+                "tests": "from main import plus_out\n\n\ndef test_plus_out_1():\n    assert plus_out('12xy34', 'xy') == '++xy++'\n\n\ndef test_plus_out_2():\n    assert plus_out('12xy34', '1') == '1+++++'\n\n\ndef test_plus_out_3():\n    assert plus_out('12xy34xyabcxy', 'xy') == '++xy++xy+++xy'\n\n\ndef test_plus_out_4():\n    assert plus_out('abXYabcXYZ', 'ab') == 'ab++ab++++'\n\n\ndef test_plus_out_5():\n    assert plus_out('abXYabcXYZ', 'abc') == '++++abc+++'\n\n\ndef test_plus_out_6():\n    assert plus_out('abXYabcXYZ', 'XY') == '++XY+++XY+'\n\n\ndef test_plus_out_7():\n    assert plus_out('abXYxyzXYZ', 'XYZ') == '+++++++XYZ'\n\n\ndef test_plus_out_8():\n    assert plus_out('--++ab', '++') == '++++++'\n\n\ndef test_plus_out_9():\n    assert plus_out('aaxxxxbb', 'xx') == '++xxxx++'\n\n\ndef test_plus_out_10():\n    assert plus_out('123123', '3') == '++3++3'\n\n\n",
+                "solution": "",
+                "tests_io": [
+                    [
+                        [
+                            "12xy34",
+                            "xy"
+                        ],
+                        "++xy++"
+                    ],
+                    [
+                        [
+                            "12xy34",
+                            "1"
+                        ],
+                        "1+++++"
+                    ],
+                    [
+                        [
+                            "12xy34xyabcxy",
+                            "xy"
+                        ],
+                        "++xy++xy+++xy"
+                    ],
+                    [
+                        [
+                            "abXYabcXYZ",
+                            "ab"
+                        ],
+                        "ab++ab++++"
+                    ],
+                    [
+                        [
+                            "abXYabcXYZ",
+                            "abc"
+                        ],
+                        "++++abc+++"
+                    ],
+                    [
+                        [
+                            "abXYabcXYZ",
+                            "XY"
+                        ],
+                        "++XY+++XY+"
+                    ],
+                    [
+                        [
+                            "abXYxyzXYZ",
+                            "XYZ"
+                        ],
+                        "+++++++XYZ"
+                    ],
+                    [
+                        [
+                            "--++ab",
+                            "++"
+                        ],
+                        "++++++"
+                    ],
+                    [
+                        [
+                            "aaxxxxbb",
+                            "xx"
+                        ],
+                        "++xxxx++"
+                    ],
+                    [
+                        [
+                            "123123",
+                            "3"
+                        ],
+                        "++3++3"
+                    ]
+                ]
+            },
+            {
+                "name": "word_ends",
+                "topic": "",
+                "requirements": [],
+                "description": "Given a string and a non-empty <b>word</b> string, return a string made of each char just before and just after every appearance of the word in the string. Ignore cases where there is no char before or after the word, and a char may be included twice if it is between two words.\n\nThis exercise was taken from [codingbat.com](https://codingbat.com/prob/p147538) and has been adapted for the Python language. There are many great programming exercises there, but the majority are created for Java.",
+                "starter_code": "def word_ends(string: str, word: str) -> str:\n    pass\n\n\nresult = word_ends('abcXY123XYijk', 'XY')\nprint(result)\n",
+                "tests": "from main import word_ends\n\n\ndef test_word_ends_1():\n    assert word_ends('abcXY123XYijk', 'XY') == 'c13i'\n\n\ndef test_word_ends_2():\n    assert word_ends('XY123XY', 'XY') == '13'\n\n\ndef test_word_ends_3():\n    assert word_ends('XY1XY', 'XY') == '11'\n\n\ndef test_word_ends_4():\n    assert word_ends('XYXY', 'XY') == 'XY'\n\n\ndef test_word_ends_5():\n    assert word_ends('XY', 'XY') == ''\n\n\ndef test_word_ends_6():\n    assert word_ends('Hi', 'XY') == ''\n\n\ndef test_word_ends_7():\n    assert word_ends('', 'XY') == ''\n\n\ndef test_word_ends_8():\n    assert word_ends('abc1xyz1i1j', '1') == 'cxziij'\n\n\ndef test_word_ends_9():\n    assert word_ends('abc1xyz1', '1') == 'cxz'\n\n\ndef test_word_ends_10():\n    assert word_ends('abc1xyz11', '1') == 'cxz11'\n\n\ndef test_word_ends_11():\n    assert word_ends('abc1xyz1abc', 'abc') == '11'\n\n\ndef test_word_ends_12():\n    assert word_ends('abc1xyz1abc', 'b') == 'acac'\n\n\ndef test_word_ends_13():\n    assert word_ends('abc1abc1abc', 'abc') == '1111'\n\n\n",
+                "solution": "",
+                "tests_io": [
+                    [
+                        [
+                            "abcXY123XYijk",
+                            "XY"
+                        ],
+                        "c13i"
+                    ],
+                    [
+                        [
+                            "XY123XY",
+                            "XY"
+                        ],
+                        "13"
+                    ],
+                    [
+                        [
+                            "XY1XY",
+                            "XY"
+                        ],
+                        "11"
+                    ],
+                    [
+                        [
+                            "XYXY",
+                            "XY"
+                        ],
+                        "XY"
+                    ],
+                    [
+                        [
+                            "XY",
+                            "XY"
+                        ],
+                        ""
+                    ],
+                    [
+                        [
+                            "Hi",
+                            "XY"
+                        ],
+                        ""
+                    ],
+                    [
+                        [
+                            "",
+                            "XY"
+                        ],
+                        ""
+                    ],
+                    [
+                        [
+                            "abc1xyz1i1j",
+                            "1"
+                        ],
+                        "cxziij"
+                    ],
+                    [
+                        [
+                            "abc1xyz1",
+                            "1"
+                        ],
+                        "cxz"
+                    ],
+                    [
+                        [
+                            "abc1xyz11",
+                            "1"
+                        ],
+                        "cxz11"
+                    ],
+                    [
+                        [
+                            "abc1xyz1abc",
+                            "abc"
+                        ],
+                        "11"
+                    ],
+                    [
+                        [
+                            "abc1xyz1abc",
+                            "b"
+                        ],
+                        "acac"
+                    ],
+                    [
+                        [
+                            "abc1abc1abc",
+                            "abc"
+                        ],
+                        "1111"
+                    ]
+                ]
+            }
+        ]        
     }
 }
