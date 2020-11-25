@@ -7,65 +7,130 @@ Given a string, consider the prefix string made of the first N chars of the stri
 
 This exercise was taken from [codingbat.com](https://codingbat.com/prob/p136417) and has been adapted for the Python language. There are many great programming exercises there, but the majority are created for Java.
 
-## Starter Code
-```python
-def prefix_again(string: str, n: int) -> bool:
-    pass
 
 
-result = prefix_again('abXYabc', 1)
-print(result)
-```
+
+
 
 ## Tests
-```python
-from main import prefix_again
-
-
-def test_prefix_again_1():
-    assert prefix_again('abXYabc', 1) == True
-
-
-def test_prefix_again_2():
-    assert prefix_again('abXYabc', 2) == True
-
-
-def test_prefix_again_3():
-    assert prefix_again('abXYabc', 3) == False
-
-
-def test_prefix_again_4():
-    assert prefix_again('xyzxyxyxy', 2) == True
-
-
-def test_prefix_again_5():
-    assert prefix_again('xyzxyxyxy', 3) == False
-
-
-def test_prefix_again_6():
-    assert prefix_again('Hi12345Hi6789Hi10', 1) == True
-
-
-def test_prefix_again_7():
-    assert prefix_again('Hi12345Hi6789Hi10', 2) == True
-
-
-def test_prefix_again_8():
-    assert prefix_again('Hi12345Hi6789Hi10', 3) == True
-
-
-def test_prefix_again_9():
-    assert prefix_again('Hi12345Hi6789Hi10', 4) == False
-
-
-def test_prefix_again_10():
-    assert prefix_again('a', 1) == False
-
-
-def test_prefix_again_11():
-    assert prefix_again('aa', 1) == True
-
-
-def test_prefix_again_12():
-    assert prefix_again('ab', 1) == False
+### Test 1
+#### Input
 ```
+'abXYabc'
+1
+```
+#### Output
+```
+True
+```
+### Test 2
+#### Input
+```
+'abXYabc'
+2
+```
+#### Output
+```
+True
+```
+### Test 3
+#### Input
+```
+'abXYabc'
+3
+```
+#### Output
+```
+False
+```
+### Test 4
+#### Input
+```
+'xyzxyxyxy'
+2
+```
+#### Output
+```
+True
+```
+### Test 5
+#### Input
+```
+'xyzxyxyxy'
+3
+```
+#### Output
+```
+False
+```
+### Test 6
+#### Input
+```
+'Hi12345Hi6789Hi10'
+1
+```
+#### Output
+```
+True
+```
+### Test 7
+#### Input
+```
+'Hi12345Hi6789Hi10'
+2
+```
+#### Output
+```
+True
+```
+### Test 8
+#### Input
+```
+'Hi12345Hi6789Hi10'
+3
+```
+#### Output
+```
+True
+```
+### Test 9
+#### Input
+```
+'Hi12345Hi6789Hi10'
+4
+```
+#### Output
+```
+False
+```
+### Test 10
+#### Input
+```
+'a'
+1
+```
+#### Output
+```
+False
+```
+### Test 11
+#### Input
+```
+'aa'
+1
+```
+#### Output
+```
+True
+```
+### Test 12
+#### Input
+```
+'ab'
+1
+```
+#### Output
+```
+False
+```
+

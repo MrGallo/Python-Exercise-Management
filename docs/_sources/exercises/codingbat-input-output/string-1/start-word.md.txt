@@ -7,77 +7,160 @@ Given a string and a second "word" string, we'll say that the word matches the s
 
 This exercise was taken from [codingbat.com](https://codingbat.com/prob/p141494) and has been adapted for the Python language. There are many great programming exercises there, but the majority are created for Java.
 
-## Starter Code
-```python
-def start_word(string: str, word: str) -> str:
-    pass
 
 
-result = start_word('hippo', 'hi')
-print(result)
-```
+
+
 
 ## Tests
-```python
-from main import start_word
-
-
-def test_start_word_1():
-    assert start_word('hippo', 'hi') == 'hi'
-
-
-def test_start_word_2():
-    assert start_word('hippo', 'xip') == 'hip'
-
-
-def test_start_word_3():
-    assert start_word('hippo', 'i') == 'h'
-
-
-def test_start_word_4():
-    assert start_word('hippo', 'ix') == ''
-
-
-def test_start_word_5():
-    assert start_word('h', 'ix') == ''
-
-
-def test_start_word_6():
-    assert start_word('', 'i') == ''
-
-
-def test_start_word_7():
-    assert start_word('hip', 'zi') == 'hi'
-
-
-def test_start_word_8():
-    assert start_word('hip', 'zip') == 'hip'
-
-
-def test_start_word_9():
-    assert start_word('hip', 'zig') == ''
-
-
-def test_start_word_10():
-    assert start_word('h', 'z') == 'h'
-
-
-def test_start_word_11():
-    assert start_word('hippo', 'xippo') == 'hippo'
-
-
-def test_start_word_12():
-    assert start_word('hippo', 'xyz') == ''
-
-
-def test_start_word_13():
-    assert start_word('hippo', 'hip') == 'hip'
-
-
-def test_start_word_14():
-    assert start_word('kitten', 'cit') == 'kit'
-
-
-def test_start_word_15():
-    assert start_word('kit', 'cit') == 'kit'
+### Test 1
+#### Input
 ```
+'hippo'
+'hi'
+```
+#### Output
+```
+'hi'
+```
+### Test 2
+#### Input
+```
+'hippo'
+'xip'
+```
+#### Output
+```
+'hip'
+```
+### Test 3
+#### Input
+```
+'hippo'
+'i'
+```
+#### Output
+```
+'h'
+```
+### Test 4
+#### Input
+```
+'hippo'
+'ix'
+```
+#### Output
+```
+''
+```
+### Test 5
+#### Input
+```
+'h'
+'ix'
+```
+#### Output
+```
+''
+```
+### Test 6
+#### Input
+```
+''
+'i'
+```
+#### Output
+```
+''
+```
+### Test 7
+#### Input
+```
+'hip'
+'zi'
+```
+#### Output
+```
+'hi'
+```
+### Test 8
+#### Input
+```
+'hip'
+'zip'
+```
+#### Output
+```
+'hip'
+```
+### Test 9
+#### Input
+```
+'hip'
+'zig'
+```
+#### Output
+```
+''
+```
+### Test 10
+#### Input
+```
+'h'
+'z'
+```
+#### Output
+```
+'h'
+```
+### Test 11
+#### Input
+```
+'hippo'
+'xippo'
+```
+#### Output
+```
+'hippo'
+```
+### Test 12
+#### Input
+```
+'hippo'
+'xyz'
+```
+#### Output
+```
+''
+```
+### Test 13
+#### Input
+```
+'hippo'
+'hip'
+```
+#### Output
+```
+'hip'
+```
+### Test 14
+#### Input
+```
+'kitten'
+'cit'
+```
+#### Output
+```
+'kit'
+```
+### Test 15
+#### Input
+```
+'kit'
+'cit'
+```
+#### Output
+```
+'kit'
+```
+

@@ -115,7 +115,6 @@
 <li class="toctree-l3"><a class="reference internal" href="con-cat.html">con_cat</a></li>
 <li class="toctree-l3"><a class="reference internal" href="last-two.html">last_two</a></li>
 <li class="toctree-l3 current"><a class="current reference internal" href="#">see_color</a><ul>
-<li class="toctree-l4"><a class="reference internal" href="#starter-code">Starter Code</a></li>
 <li class="toctree-l4"><a class="reference internal" href="#tests">Tests</a></li>
 </ul>
 </li>
@@ -205,65 +204,172 @@
 <h1>see_color<a class="headerlink" href="#see-color" title="Permalink to this headline">¶</a></h1>
 <p>Given a string, if the string begins with “red” or “blue” return that color string, otherwise return the empty string.</p>
 <p>This exercise was taken from <a class="reference external" href="https://codingbat.com/prob/p199216">codingbat.com</a> and has been adapted for the Python language. There are many great programming exercises there, but the majority are created for Java.</p>
-<div class="section" id="starter-code">
-<h2>Starter Code<a class="headerlink" href="#starter-code" title="Permalink to this headline">¶</a></h2>
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">see_color</span><span class="p">(</span><span class="n">string</span><span class="p">:</span> <span class="nb">str</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">str</span><span class="p">:</span>
-    <span class="k">pass</span>
-
-
-<span class="n">result</span> <span class="o">=</span> <span class="n">see_color</span><span class="p">(</span><span class="s1">&#39;redxx&#39;</span><span class="p">)</span>
-<span class="nb">print</span><span class="p">(</span><span class="n">result</span><span class="p">)</span>
-</pre></div>
-</div>
-</div>
 <div class="section" id="tests">
 <h2>Tests<a class="headerlink" href="#tests" title="Permalink to this headline">¶</a></h2>
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">main</span> <span class="kn">import</span> <span class="n">see_color</span>
-
-
-<span class="k">def</span> <span class="nf">test_see_color_1</span><span class="p">():</span>
-    <span class="k">assert</span> <span class="n">see_color</span><span class="p">(</span><span class="s1">&#39;redxx&#39;</span><span class="p">)</span> <span class="o">==</span> <span class="s1">&#39;red&#39;</span>
-
-
-<span class="k">def</span> <span class="nf">test_see_color_2</span><span class="p">():</span>
-    <span class="k">assert</span> <span class="n">see_color</span><span class="p">(</span><span class="s1">&#39;xxred&#39;</span><span class="p">)</span> <span class="o">==</span> <span class="s1">&#39;&#39;</span>
-
-
-<span class="k">def</span> <span class="nf">test_see_color_3</span><span class="p">():</span>
-    <span class="k">assert</span> <span class="n">see_color</span><span class="p">(</span><span class="s1">&#39;blueTimes&#39;</span><span class="p">)</span> <span class="o">==</span> <span class="s1">&#39;blue&#39;</span>
-
-
-<span class="k">def</span> <span class="nf">test_see_color_4</span><span class="p">():</span>
-    <span class="k">assert</span> <span class="n">see_color</span><span class="p">(</span><span class="s1">&#39;NoColor&#39;</span><span class="p">)</span> <span class="o">==</span> <span class="s1">&#39;&#39;</span>
-
-
-<span class="k">def</span> <span class="nf">test_see_color_5</span><span class="p">():</span>
-    <span class="k">assert</span> <span class="n">see_color</span><span class="p">(</span><span class="s1">&#39;red&#39;</span><span class="p">)</span> <span class="o">==</span> <span class="s1">&#39;red&#39;</span>
-
-
-<span class="k">def</span> <span class="nf">test_see_color_6</span><span class="p">():</span>
-    <span class="k">assert</span> <span class="n">see_color</span><span class="p">(</span><span class="s1">&#39;re&#39;</span><span class="p">)</span> <span class="o">==</span> <span class="s1">&#39;&#39;</span>
-
-
-<span class="k">def</span> <span class="nf">test_see_color_7</span><span class="p">():</span>
-    <span class="k">assert</span> <span class="n">see_color</span><span class="p">(</span><span class="s1">&#39;blu&#39;</span><span class="p">)</span> <span class="o">==</span> <span class="s1">&#39;&#39;</span>
-
-
-<span class="k">def</span> <span class="nf">test_see_color_8</span><span class="p">():</span>
-    <span class="k">assert</span> <span class="n">see_color</span><span class="p">(</span><span class="s1">&#39;blue&#39;</span><span class="p">)</span> <span class="o">==</span> <span class="s1">&#39;blue&#39;</span>
-
-
-<span class="k">def</span> <span class="nf">test_see_color_9</span><span class="p">():</span>
-    <span class="k">assert</span> <span class="n">see_color</span><span class="p">(</span><span class="s1">&#39;a&#39;</span><span class="p">)</span> <span class="o">==</span> <span class="s1">&#39;&#39;</span>
-
-
-<span class="k">def</span> <span class="nf">test_see_color_10</span><span class="p">():</span>
-    <span class="k">assert</span> <span class="n">see_color</span><span class="p">(</span><span class="s1">&#39;&#39;</span><span class="p">)</span> <span class="o">==</span> <span class="s1">&#39;&#39;</span>
-
-
-<span class="k">def</span> <span class="nf">test_see_color_11</span><span class="p">():</span>
-    <span class="k">assert</span> <span class="n">see_color</span><span class="p">(</span><span class="s1">&#39;xyzred&#39;</span><span class="p">)</span> <span class="o">==</span> <span class="s1">&#39;&#39;</span>
+<div class="section" id="test-1">
+<h3>Test 1<a class="headerlink" href="#test-1" title="Permalink to this headline">¶</a></h3>
+<div class="section" id="input">
+<h4>Input<a class="headerlink" href="#input" title="Permalink to this headline">¶</a></h4>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="s1">&#39;redxx&#39;</span>
 </pre></div>
+</div>
+</div>
+<div class="section" id="output">
+<h4>Output<a class="headerlink" href="#output" title="Permalink to this headline">¶</a></h4>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="s1">&#39;red&#39;</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="section" id="test-2">
+<h3>Test 2<a class="headerlink" href="#test-2" title="Permalink to this headline">¶</a></h3>
+<div class="section" id="id1">
+<h4>Input<a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h4>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="s1">&#39;xxred&#39;</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="id2">
+<h4>Output<a class="headerlink" href="#id2" title="Permalink to this headline">¶</a></h4>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="s1">&#39;&#39;</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="section" id="test-3">
+<h3>Test 3<a class="headerlink" href="#test-3" title="Permalink to this headline">¶</a></h3>
+<div class="section" id="id3">
+<h4>Input<a class="headerlink" href="#id3" title="Permalink to this headline">¶</a></h4>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="s1">&#39;blueTimes&#39;</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="id4">
+<h4>Output<a class="headerlink" href="#id4" title="Permalink to this headline">¶</a></h4>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="s1">&#39;blue&#39;</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="section" id="test-4">
+<h3>Test 4<a class="headerlink" href="#test-4" title="Permalink to this headline">¶</a></h3>
+<div class="section" id="id5">
+<h4>Input<a class="headerlink" href="#id5" title="Permalink to this headline">¶</a></h4>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="s1">&#39;NoColor&#39;</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="id6">
+<h4>Output<a class="headerlink" href="#id6" title="Permalink to this headline">¶</a></h4>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="s1">&#39;&#39;</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="section" id="test-5">
+<h3>Test 5<a class="headerlink" href="#test-5" title="Permalink to this headline">¶</a></h3>
+<div class="section" id="id7">
+<h4>Input<a class="headerlink" href="#id7" title="Permalink to this headline">¶</a></h4>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="s1">&#39;red&#39;</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="id8">
+<h4>Output<a class="headerlink" href="#id8" title="Permalink to this headline">¶</a></h4>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="s1">&#39;red&#39;</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="section" id="test-6">
+<h3>Test 6<a class="headerlink" href="#test-6" title="Permalink to this headline">¶</a></h3>
+<div class="section" id="id9">
+<h4>Input<a class="headerlink" href="#id9" title="Permalink to this headline">¶</a></h4>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="s1">&#39;re&#39;</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="id10">
+<h4>Output<a class="headerlink" href="#id10" title="Permalink to this headline">¶</a></h4>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="s1">&#39;&#39;</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="section" id="test-7">
+<h3>Test 7<a class="headerlink" href="#test-7" title="Permalink to this headline">¶</a></h3>
+<div class="section" id="id11">
+<h4>Input<a class="headerlink" href="#id11" title="Permalink to this headline">¶</a></h4>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="s1">&#39;blu&#39;</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="id12">
+<h4>Output<a class="headerlink" href="#id12" title="Permalink to this headline">¶</a></h4>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="s1">&#39;&#39;</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="section" id="test-8">
+<h3>Test 8<a class="headerlink" href="#test-8" title="Permalink to this headline">¶</a></h3>
+<div class="section" id="id13">
+<h4>Input<a class="headerlink" href="#id13" title="Permalink to this headline">¶</a></h4>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="s1">&#39;blue&#39;</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="id14">
+<h4>Output<a class="headerlink" href="#id14" title="Permalink to this headline">¶</a></h4>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="s1">&#39;blue&#39;</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="section" id="test-9">
+<h3>Test 9<a class="headerlink" href="#test-9" title="Permalink to this headline">¶</a></h3>
+<div class="section" id="id15">
+<h4>Input<a class="headerlink" href="#id15" title="Permalink to this headline">¶</a></h4>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="s1">&#39;a&#39;</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="id16">
+<h4>Output<a class="headerlink" href="#id16" title="Permalink to this headline">¶</a></h4>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="s1">&#39;&#39;</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="section" id="test-10">
+<h3>Test 10<a class="headerlink" href="#test-10" title="Permalink to this headline">¶</a></h3>
+<div class="section" id="id17">
+<h4>Input<a class="headerlink" href="#id17" title="Permalink to this headline">¶</a></h4>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="s1">&#39;&#39;</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="id18">
+<h4>Output<a class="headerlink" href="#id18" title="Permalink to this headline">¶</a></h4>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="s1">&#39;&#39;</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="section" id="test-11">
+<h3>Test 11<a class="headerlink" href="#test-11" title="Permalink to this headline">¶</a></h3>
+<div class="section" id="id19">
+<h4>Input<a class="headerlink" href="#id19" title="Permalink to this headline">¶</a></h4>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="s1">&#39;xyzred&#39;</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="id20">
+<h4>Output<a class="headerlink" href="#id20" title="Permalink to this headline">¶</a></h4>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="s1">&#39;&#39;</span>
+</pre></div>
+</div>
+</div>
 </div>
 </div>
 </div>

@@ -7,45 +7,73 @@ Given a string, return a string length 2 made of its first 2 chars. If the strin
 
 This exercise was taken from [codingbat.com](https://codingbat.com/prob/p139076) and has been adapted for the Python language. There are many great programming exercises there, but the majority are created for Java.
 
-## Starter Code
-```python
-def at_first(string: str) -> str:
-    pass
 
 
-result = at_first('hello')
-print(result)
-```
+
+
 
 ## Tests
-```python
-from main import at_first
-
-
-def test_at_first_1():
-    assert at_first('hello') == 'he'
-
-
-def test_at_first_2():
-    assert at_first('hi') == 'hi'
-
-
-def test_at_first_3():
-    assert at_first('h') == 'h@'
-
-
-def test_at_first_4():
-    assert at_first('') == '@@'
-
-
-def test_at_first_5():
-    assert at_first('kitten') == 'ki'
-
-
-def test_at_first_6():
-    assert at_first('java') == 'ja'
-
-
-def test_at_first_7():
-    assert at_first('j') == 'j@'
+### Test 1
+#### Input
 ```
+'hello'
+```
+#### Output
+```
+'he'
+```
+### Test 2
+#### Input
+```
+'hi'
+```
+#### Output
+```
+'hi'
+```
+### Test 3
+#### Input
+```
+'h'
+```
+#### Output
+```
+'h@'
+```
+### Test 4
+#### Input
+```
+''
+```
+#### Output
+```
+'@@'
+```
+### Test 5
+#### Input
+```
+'kitten'
+```
+#### Output
+```
+'ki'
+```
+### Test 6
+#### Input
+```
+'java'
+```
+#### Output
+```
+'ja'
+```
+### Test 7
+#### Input
+```
+'j'
+```
+#### Output
+```
+'j@'
+```
+

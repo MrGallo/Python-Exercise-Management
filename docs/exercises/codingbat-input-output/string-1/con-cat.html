@@ -113,7 +113,6 @@
 <li class="toctree-l3"><a class="reference internal" href="at-first.html">at_first</a></li>
 <li class="toctree-l3"><a class="reference internal" href="last-chars.html">last_chars</a></li>
 <li class="toctree-l3 current"><a class="current reference internal" href="#">con_cat</a><ul>
-<li class="toctree-l4"><a class="reference internal" href="#starter-code">Starter Code</a></li>
 <li class="toctree-l4"><a class="reference internal" href="#tests">Tests</a></li>
 </ul>
 </li>
@@ -205,45 +204,103 @@
 <h1>con_cat<a class="headerlink" href="#con-cat" title="Permalink to this headline">¶</a></h1>
 <p>Given two strings, append them together (known as “concatenation”) and return the result. However, if the concatenation creates a double-char, then omit one of the chars, so “abc” and “cat” yields “abcat”.</p>
 <p>This exercise was taken from <a class="reference external" href="https://codingbat.com/prob/p132118">codingbat.com</a> and has been adapted for the Python language. There are many great programming exercises there, but the majority are created for Java.</p>
-<div class="section" id="starter-code">
-<h2>Starter Code<a class="headerlink" href="#starter-code" title="Permalink to this headline">¶</a></h2>
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">con_cat</span><span class="p">(</span><span class="n">a</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span> <span class="n">b</span><span class="p">:</span> <span class="nb">str</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">str</span><span class="p">:</span>
-    <span class="k">pass</span>
-
-
-<span class="n">result</span> <span class="o">=</span> <span class="n">con_cat</span><span class="p">(</span><span class="s1">&#39;abc&#39;</span><span class="p">,</span> <span class="s1">&#39;cat&#39;</span><span class="p">)</span>
-<span class="nb">print</span><span class="p">(</span><span class="n">result</span><span class="p">)</span>
-</pre></div>
-</div>
-</div>
 <div class="section" id="tests">
 <h2>Tests<a class="headerlink" href="#tests" title="Permalink to this headline">¶</a></h2>
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">main</span> <span class="kn">import</span> <span class="n">con_cat</span>
-
-
-<span class="k">def</span> <span class="nf">test_con_cat_1</span><span class="p">():</span>
-    <span class="k">assert</span> <span class="n">con_cat</span><span class="p">(</span><span class="s1">&#39;abc&#39;</span><span class="p">,</span> <span class="s1">&#39;cat&#39;</span><span class="p">)</span> <span class="o">==</span> <span class="s1">&#39;abcat&#39;</span>
-
-
-<span class="k">def</span> <span class="nf">test_con_cat_2</span><span class="p">():</span>
-    <span class="k">assert</span> <span class="n">con_cat</span><span class="p">(</span><span class="s1">&#39;dog&#39;</span><span class="p">,</span> <span class="s1">&#39;cat&#39;</span><span class="p">)</span> <span class="o">==</span> <span class="s1">&#39;dogcat&#39;</span>
-
-
-<span class="k">def</span> <span class="nf">test_con_cat_3</span><span class="p">():</span>
-    <span class="k">assert</span> <span class="n">con_cat</span><span class="p">(</span><span class="s1">&#39;abc&#39;</span><span class="p">,</span> <span class="s1">&#39;&#39;</span><span class="p">)</span> <span class="o">==</span> <span class="s1">&#39;abc&#39;</span>
-
-
-<span class="k">def</span> <span class="nf">test_con_cat_4</span><span class="p">():</span>
-    <span class="k">assert</span> <span class="n">con_cat</span><span class="p">(</span><span class="s1">&#39;&#39;</span><span class="p">,</span> <span class="s1">&#39;cat&#39;</span><span class="p">)</span> <span class="o">==</span> <span class="s1">&#39;cat&#39;</span>
-
-
-<span class="k">def</span> <span class="nf">test_con_cat_5</span><span class="p">():</span>
-    <span class="k">assert</span> <span class="n">con_cat</span><span class="p">(</span><span class="s1">&#39;pig&#39;</span><span class="p">,</span> <span class="s1">&#39;g&#39;</span><span class="p">)</span> <span class="o">==</span> <span class="s1">&#39;pig&#39;</span>
-
-
-<span class="k">def</span> <span class="nf">test_con_cat_6</span><span class="p">():</span>
-    <span class="k">assert</span> <span class="n">con_cat</span><span class="p">(</span><span class="s1">&#39;pig&#39;</span><span class="p">,</span> <span class="s1">&#39;doggy&#39;</span><span class="p">)</span> <span class="o">==</span> <span class="s1">&#39;pigdoggy&#39;</span>
+<div class="section" id="test-1">
+<h3>Test 1<a class="headerlink" href="#test-1" title="Permalink to this headline">¶</a></h3>
+<div class="section" id="input">
+<h4>Input<a class="headerlink" href="#input" title="Permalink to this headline">¶</a></h4>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="s1">&#39;abc&#39;</span>
+<span class="s1">&#39;cat&#39;</span>
 </pre></div>
+</div>
+</div>
+<div class="section" id="output">
+<h4>Output<a class="headerlink" href="#output" title="Permalink to this headline">¶</a></h4>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="s1">&#39;abcat&#39;</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="section" id="test-2">
+<h3>Test 2<a class="headerlink" href="#test-2" title="Permalink to this headline">¶</a></h3>
+<div class="section" id="id1">
+<h4>Input<a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h4>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="s1">&#39;dog&#39;</span>
+<span class="s1">&#39;cat&#39;</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="id2">
+<h4>Output<a class="headerlink" href="#id2" title="Permalink to this headline">¶</a></h4>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="s1">&#39;dogcat&#39;</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="section" id="test-3">
+<h3>Test 3<a class="headerlink" href="#test-3" title="Permalink to this headline">¶</a></h3>
+<div class="section" id="id3">
+<h4>Input<a class="headerlink" href="#id3" title="Permalink to this headline">¶</a></h4>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="s1">&#39;abc&#39;</span>
+<span class="s1">&#39;&#39;</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="id4">
+<h4>Output<a class="headerlink" href="#id4" title="Permalink to this headline">¶</a></h4>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="s1">&#39;abc&#39;</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="section" id="test-4">
+<h3>Test 4<a class="headerlink" href="#test-4" title="Permalink to this headline">¶</a></h3>
+<div class="section" id="id5">
+<h4>Input<a class="headerlink" href="#id5" title="Permalink to this headline">¶</a></h4>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="s1">&#39;&#39;</span>
+<span class="s1">&#39;cat&#39;</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="id6">
+<h4>Output<a class="headerlink" href="#id6" title="Permalink to this headline">¶</a></h4>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="s1">&#39;cat&#39;</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="section" id="test-5">
+<h3>Test 5<a class="headerlink" href="#test-5" title="Permalink to this headline">¶</a></h3>
+<div class="section" id="id7">
+<h4>Input<a class="headerlink" href="#id7" title="Permalink to this headline">¶</a></h4>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="s1">&#39;pig&#39;</span>
+<span class="s1">&#39;g&#39;</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="id8">
+<h4>Output<a class="headerlink" href="#id8" title="Permalink to this headline">¶</a></h4>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="s1">&#39;pig&#39;</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="section" id="test-6">
+<h3>Test 6<a class="headerlink" href="#test-6" title="Permalink to this headline">¶</a></h3>
+<div class="section" id="id9">
+<h4>Input<a class="headerlink" href="#id9" title="Permalink to this headline">¶</a></h4>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="s1">&#39;pig&#39;</span>
+<span class="s1">&#39;doggy&#39;</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="id10">
+<h4>Output<a class="headerlink" href="#id10" title="Permalink to this headline">¶</a></h4>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="s1">&#39;pigdoggy&#39;</span>
+</pre></div>
+</div>
+</div>
 </div>
 </div>
 </div>

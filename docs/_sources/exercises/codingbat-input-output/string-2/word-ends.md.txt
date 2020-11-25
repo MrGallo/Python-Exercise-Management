@@ -7,69 +7,140 @@ Given a string and a non-empty <b>word</b> string, return a string made of each 
 
 This exercise was taken from [codingbat.com](https://codingbat.com/prob/p147538) and has been adapted for the Python language. There are many great programming exercises there, but the majority are created for Java.
 
-## Starter Code
-```python
-def word_ends(string: str, word: str) -> str:
-    pass
 
 
-result = word_ends('abcXY123XYijk', 'XY')
-print(result)
-```
+
+
 
 ## Tests
-```python
-from main import word_ends
-
-
-def test_word_ends_1():
-    assert word_ends('abcXY123XYijk', 'XY') == 'c13i'
-
-
-def test_word_ends_2():
-    assert word_ends('XY123XY', 'XY') == '13'
-
-
-def test_word_ends_3():
-    assert word_ends('XY1XY', 'XY') == '11'
-
-
-def test_word_ends_4():
-    assert word_ends('XYXY', 'XY') == 'XY'
-
-
-def test_word_ends_5():
-    assert word_ends('XY', 'XY') == ''
-
-
-def test_word_ends_6():
-    assert word_ends('Hi', 'XY') == ''
-
-
-def test_word_ends_7():
-    assert word_ends('', 'XY') == ''
-
-
-def test_word_ends_8():
-    assert word_ends('abc1xyz1i1j', '1') == 'cxziij'
-
-
-def test_word_ends_9():
-    assert word_ends('abc1xyz1', '1') == 'cxz'
-
-
-def test_word_ends_10():
-    assert word_ends('abc1xyz11', '1') == 'cxz11'
-
-
-def test_word_ends_11():
-    assert word_ends('abc1xyz1abc', 'abc') == '11'
-
-
-def test_word_ends_12():
-    assert word_ends('abc1xyz1abc', 'b') == 'acac'
-
-
-def test_word_ends_13():
-    assert word_ends('abc1abc1abc', 'abc') == '1111'
+### Test 1
+#### Input
 ```
+'abcXY123XYijk'
+'XY'
+```
+#### Output
+```
+'c13i'
+```
+### Test 2
+#### Input
+```
+'XY123XY'
+'XY'
+```
+#### Output
+```
+'13'
+```
+### Test 3
+#### Input
+```
+'XY1XY'
+'XY'
+```
+#### Output
+```
+'11'
+```
+### Test 4
+#### Input
+```
+'XYXY'
+'XY'
+```
+#### Output
+```
+'XY'
+```
+### Test 5
+#### Input
+```
+'XY'
+'XY'
+```
+#### Output
+```
+''
+```
+### Test 6
+#### Input
+```
+'Hi'
+'XY'
+```
+#### Output
+```
+''
+```
+### Test 7
+#### Input
+```
+''
+'XY'
+```
+#### Output
+```
+''
+```
+### Test 8
+#### Input
+```
+'abc1xyz1i1j'
+'1'
+```
+#### Output
+```
+'cxziij'
+```
+### Test 9
+#### Input
+```
+'abc1xyz1'
+'1'
+```
+#### Output
+```
+'cxz'
+```
+### Test 10
+#### Input
+```
+'abc1xyz11'
+'1'
+```
+#### Output
+```
+'cxz11'
+```
+### Test 11
+#### Input
+```
+'abc1xyz1abc'
+'abc'
+```
+#### Output
+```
+'11'
+```
+### Test 12
+#### Input
+```
+'abc1xyz1abc'
+'b'
+```
+#### Output
+```
+'acac'
+```
+### Test 13
+#### Input
+```
+'abc1abc1abc'
+'abc'
+```
+#### Output
+```
+'1111'
+```
+

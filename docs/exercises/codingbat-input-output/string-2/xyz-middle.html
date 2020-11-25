@@ -105,7 +105,6 @@
 <li class="toctree-l3"><a class="reference internal" href="repeat-separator.html">repeat_separator</a></li>
 <li class="toctree-l3"><a class="reference internal" href="prefix-again.html">prefix_again</a></li>
 <li class="toctree-l3 current"><a class="current reference internal" href="#">xyz_middle</a><ul>
-<li class="toctree-l4"><a class="reference internal" href="#starter-code">Starter Code</a></li>
 <li class="toctree-l4"><a class="reference internal" href="#tests">Tests</a></li>
 </ul>
 </li>
@@ -193,105 +192,322 @@
 <h1>xyz_middle<a class="headerlink" href="#xyz-middle" title="Permalink to this headline">¶</a></h1>
 <p>Given a string, does “xyz” appear in the middle of the string? To define middle, we’ll say that the number of chars to the left and right of the “xyz” must differ by at most one. This problem is harder than it looks.</p>
 <p>This exercise was taken from <a class="reference external" href="https://codingbat.com/prob/p159772">codingbat.com</a> and has been adapted for the Python language. There are many great programming exercises there, but the majority are created for Java.</p>
-<div class="section" id="starter-code">
-<h2>Starter Code<a class="headerlink" href="#starter-code" title="Permalink to this headline">¶</a></h2>
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">xyz_middle</span><span class="p">(</span><span class="n">string</span><span class="p">:</span> <span class="nb">str</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">bool</span><span class="p">:</span>
-    <span class="k">pass</span>
-
-
-<span class="n">result</span> <span class="o">=</span> <span class="n">xyz_middle</span><span class="p">(</span><span class="s1">&#39;AAxyzBB&#39;</span><span class="p">)</span>
-<span class="nb">print</span><span class="p">(</span><span class="n">result</span><span class="p">)</span>
-</pre></div>
-</div>
-</div>
 <div class="section" id="tests">
 <h2>Tests<a class="headerlink" href="#tests" title="Permalink to this headline">¶</a></h2>
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">main</span> <span class="kn">import</span> <span class="n">xyz_middle</span>
-
-
-<span class="k">def</span> <span class="nf">test_xyz_middle_1</span><span class="p">():</span>
-    <span class="k">assert</span> <span class="n">xyz_middle</span><span class="p">(</span><span class="s1">&#39;AAxyzBB&#39;</span><span class="p">)</span> <span class="o">==</span> <span class="kc">True</span>
-
-
-<span class="k">def</span> <span class="nf">test_xyz_middle_2</span><span class="p">():</span>
-    <span class="k">assert</span> <span class="n">xyz_middle</span><span class="p">(</span><span class="s1">&#39;AxyzBB&#39;</span><span class="p">)</span> <span class="o">==</span> <span class="kc">True</span>
-
-
-<span class="k">def</span> <span class="nf">test_xyz_middle_3</span><span class="p">():</span>
-    <span class="k">assert</span> <span class="n">xyz_middle</span><span class="p">(</span><span class="s1">&#39;AxyzBBB&#39;</span><span class="p">)</span> <span class="o">==</span> <span class="kc">False</span>
-
-
-<span class="k">def</span> <span class="nf">test_xyz_middle_4</span><span class="p">():</span>
-    <span class="k">assert</span> <span class="n">xyz_middle</span><span class="p">(</span><span class="s1">&#39;AxyzBBBB&#39;</span><span class="p">)</span> <span class="o">==</span> <span class="kc">False</span>
-
-
-<span class="k">def</span> <span class="nf">test_xyz_middle_5</span><span class="p">():</span>
-    <span class="k">assert</span> <span class="n">xyz_middle</span><span class="p">(</span><span class="s1">&#39;AAAxyzB&#39;</span><span class="p">)</span> <span class="o">==</span> <span class="kc">False</span>
-
-
-<span class="k">def</span> <span class="nf">test_xyz_middle_6</span><span class="p">():</span>
-    <span class="k">assert</span> <span class="n">xyz_middle</span><span class="p">(</span><span class="s1">&#39;AAAxyzBB&#39;</span><span class="p">)</span> <span class="o">==</span> <span class="kc">True</span>
-
-
-<span class="k">def</span> <span class="nf">test_xyz_middle_7</span><span class="p">():</span>
-    <span class="k">assert</span> <span class="n">xyz_middle</span><span class="p">(</span><span class="s1">&#39;AAAAxyzBB&#39;</span><span class="p">)</span> <span class="o">==</span> <span class="kc">False</span>
-
-
-<span class="k">def</span> <span class="nf">test_xyz_middle_8</span><span class="p">():</span>
-    <span class="k">assert</span> <span class="n">xyz_middle</span><span class="p">(</span><span class="s1">&#39;AAAAAxyzBBB&#39;</span><span class="p">)</span> <span class="o">==</span> <span class="kc">False</span>
-
-
-<span class="k">def</span> <span class="nf">test_xyz_middle_9</span><span class="p">():</span>
-    <span class="k">assert</span> <span class="n">xyz_middle</span><span class="p">(</span><span class="s1">&#39;1x345xyz12x4&#39;</span><span class="p">)</span> <span class="o">==</span> <span class="kc">True</span>
-
-
-<span class="k">def</span> <span class="nf">test_xyz_middle_10</span><span class="p">():</span>
-    <span class="k">assert</span> <span class="n">xyz_middle</span><span class="p">(</span><span class="s1">&#39;xyzAxyzBBB&#39;</span><span class="p">)</span> <span class="o">==</span> <span class="kc">True</span>
-
-
-<span class="k">def</span> <span class="nf">test_xyz_middle_11</span><span class="p">():</span>
-    <span class="k">assert</span> <span class="n">xyz_middle</span><span class="p">(</span><span class="s1">&#39;xyzAxyzBxyz&#39;</span><span class="p">)</span> <span class="o">==</span> <span class="kc">True</span>
-
-
-<span class="k">def</span> <span class="nf">test_xyz_middle_12</span><span class="p">():</span>
-    <span class="k">assert</span> <span class="n">xyz_middle</span><span class="p">(</span><span class="s1">&#39;xyzxyzAxyzBxyzxyz&#39;</span><span class="p">)</span> <span class="o">==</span> <span class="kc">True</span>
-
-
-<span class="k">def</span> <span class="nf">test_xyz_middle_13</span><span class="p">():</span>
-    <span class="k">assert</span> <span class="n">xyz_middle</span><span class="p">(</span><span class="s1">&#39;xyzxyzxyzBxyzxyz&#39;</span><span class="p">)</span> <span class="o">==</span> <span class="kc">True</span>
-
-
-<span class="k">def</span> <span class="nf">test_xyz_middle_14</span><span class="p">():</span>
-    <span class="k">assert</span> <span class="n">xyz_middle</span><span class="p">(</span><span class="s1">&#39;xyzxyzAxyzxyzxyz&#39;</span><span class="p">)</span> <span class="o">==</span> <span class="kc">True</span>
-
-
-<span class="k">def</span> <span class="nf">test_xyz_middle_15</span><span class="p">():</span>
-    <span class="k">assert</span> <span class="n">xyz_middle</span><span class="p">(</span><span class="s1">&#39;xyzxyzAxyzxyzxy&#39;</span><span class="p">)</span> <span class="o">==</span> <span class="kc">False</span>
-
-
-<span class="k">def</span> <span class="nf">test_xyz_middle_16</span><span class="p">():</span>
-    <span class="k">assert</span> <span class="n">xyz_middle</span><span class="p">(</span><span class="s1">&#39;AxyzxyzBB&#39;</span><span class="p">)</span> <span class="o">==</span> <span class="kc">False</span>
-
-
-<span class="k">def</span> <span class="nf">test_xyz_middle_17</span><span class="p">():</span>
-    <span class="k">assert</span> <span class="n">xyz_middle</span><span class="p">(</span><span class="s1">&#39;&#39;</span><span class="p">)</span> <span class="o">==</span> <span class="kc">False</span>
-
-
-<span class="k">def</span> <span class="nf">test_xyz_middle_18</span><span class="p">():</span>
-    <span class="k">assert</span> <span class="n">xyz_middle</span><span class="p">(</span><span class="s1">&#39;x&#39;</span><span class="p">)</span> <span class="o">==</span> <span class="kc">False</span>
-
-
-<span class="k">def</span> <span class="nf">test_xyz_middle_19</span><span class="p">():</span>
-    <span class="k">assert</span> <span class="n">xyz_middle</span><span class="p">(</span><span class="s1">&#39;xy&#39;</span><span class="p">)</span> <span class="o">==</span> <span class="kc">False</span>
-
-
-<span class="k">def</span> <span class="nf">test_xyz_middle_20</span><span class="p">():</span>
-    <span class="k">assert</span> <span class="n">xyz_middle</span><span class="p">(</span><span class="s1">&#39;xyz&#39;</span><span class="p">)</span> <span class="o">==</span> <span class="kc">True</span>
-
-
-<span class="k">def</span> <span class="nf">test_xyz_middle_21</span><span class="p">():</span>
-    <span class="k">assert</span> <span class="n">xyz_middle</span><span class="p">(</span><span class="s1">&#39;xyzz&#39;</span><span class="p">)</span> <span class="o">==</span> <span class="kc">True</span>
+<div class="section" id="test-1">
+<h3>Test 1<a class="headerlink" href="#test-1" title="Permalink to this headline">¶</a></h3>
+<div class="section" id="input">
+<h4>Input<a class="headerlink" href="#input" title="Permalink to this headline">¶</a></h4>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="s1">&#39;AAxyzBB&#39;</span>
 </pre></div>
+</div>
+</div>
+<div class="section" id="output">
+<h4>Output<a class="headerlink" href="#output" title="Permalink to this headline">¶</a></h4>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="kc">True</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="section" id="test-2">
+<h3>Test 2<a class="headerlink" href="#test-2" title="Permalink to this headline">¶</a></h3>
+<div class="section" id="id1">
+<h4>Input<a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h4>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="s1">&#39;AxyzBB&#39;</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="id2">
+<h4>Output<a class="headerlink" href="#id2" title="Permalink to this headline">¶</a></h4>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="kc">True</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="section" id="test-3">
+<h3>Test 3<a class="headerlink" href="#test-3" title="Permalink to this headline">¶</a></h3>
+<div class="section" id="id3">
+<h4>Input<a class="headerlink" href="#id3" title="Permalink to this headline">¶</a></h4>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="s1">&#39;AxyzBBB&#39;</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="id4">
+<h4>Output<a class="headerlink" href="#id4" title="Permalink to this headline">¶</a></h4>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="kc">False</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="section" id="test-4">
+<h3>Test 4<a class="headerlink" href="#test-4" title="Permalink to this headline">¶</a></h3>
+<div class="section" id="id5">
+<h4>Input<a class="headerlink" href="#id5" title="Permalink to this headline">¶</a></h4>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="s1">&#39;AxyzBBBB&#39;</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="id6">
+<h4>Output<a class="headerlink" href="#id6" title="Permalink to this headline">¶</a></h4>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="kc">False</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="section" id="test-5">
+<h3>Test 5<a class="headerlink" href="#test-5" title="Permalink to this headline">¶</a></h3>
+<div class="section" id="id7">
+<h4>Input<a class="headerlink" href="#id7" title="Permalink to this headline">¶</a></h4>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="s1">&#39;AAAxyzB&#39;</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="id8">
+<h4>Output<a class="headerlink" href="#id8" title="Permalink to this headline">¶</a></h4>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="kc">False</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="section" id="test-6">
+<h3>Test 6<a class="headerlink" href="#test-6" title="Permalink to this headline">¶</a></h3>
+<div class="section" id="id9">
+<h4>Input<a class="headerlink" href="#id9" title="Permalink to this headline">¶</a></h4>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="s1">&#39;AAAxyzBB&#39;</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="id10">
+<h4>Output<a class="headerlink" href="#id10" title="Permalink to this headline">¶</a></h4>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="kc">True</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="section" id="test-7">
+<h3>Test 7<a class="headerlink" href="#test-7" title="Permalink to this headline">¶</a></h3>
+<div class="section" id="id11">
+<h4>Input<a class="headerlink" href="#id11" title="Permalink to this headline">¶</a></h4>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="s1">&#39;AAAAxyzBB&#39;</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="id12">
+<h4>Output<a class="headerlink" href="#id12" title="Permalink to this headline">¶</a></h4>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="kc">False</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="section" id="test-8">
+<h3>Test 8<a class="headerlink" href="#test-8" title="Permalink to this headline">¶</a></h3>
+<div class="section" id="id13">
+<h4>Input<a class="headerlink" href="#id13" title="Permalink to this headline">¶</a></h4>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="s1">&#39;AAAAAxyzBBB&#39;</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="id14">
+<h4>Output<a class="headerlink" href="#id14" title="Permalink to this headline">¶</a></h4>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="kc">False</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="section" id="test-9">
+<h3>Test 9<a class="headerlink" href="#test-9" title="Permalink to this headline">¶</a></h3>
+<div class="section" id="id15">
+<h4>Input<a class="headerlink" href="#id15" title="Permalink to this headline">¶</a></h4>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="s1">&#39;1x345xyz12x4&#39;</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="id16">
+<h4>Output<a class="headerlink" href="#id16" title="Permalink to this headline">¶</a></h4>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="kc">True</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="section" id="test-10">
+<h3>Test 10<a class="headerlink" href="#test-10" title="Permalink to this headline">¶</a></h3>
+<div class="section" id="id17">
+<h4>Input<a class="headerlink" href="#id17" title="Permalink to this headline">¶</a></h4>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="s1">&#39;xyzAxyzBBB&#39;</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="id18">
+<h4>Output<a class="headerlink" href="#id18" title="Permalink to this headline">¶</a></h4>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="kc">True</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="section" id="test-11">
+<h3>Test 11<a class="headerlink" href="#test-11" title="Permalink to this headline">¶</a></h3>
+<div class="section" id="id19">
+<h4>Input<a class="headerlink" href="#id19" title="Permalink to this headline">¶</a></h4>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="s1">&#39;xyzAxyzBxyz&#39;</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="id20">
+<h4>Output<a class="headerlink" href="#id20" title="Permalink to this headline">¶</a></h4>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="kc">True</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="section" id="test-12">
+<h3>Test 12<a class="headerlink" href="#test-12" title="Permalink to this headline">¶</a></h3>
+<div class="section" id="id21">
+<h4>Input<a class="headerlink" href="#id21" title="Permalink to this headline">¶</a></h4>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="s1">&#39;xyzxyzAxyzBxyzxyz&#39;</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="id22">
+<h4>Output<a class="headerlink" href="#id22" title="Permalink to this headline">¶</a></h4>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="kc">True</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="section" id="test-13">
+<h3>Test 13<a class="headerlink" href="#test-13" title="Permalink to this headline">¶</a></h3>
+<div class="section" id="id23">
+<h4>Input<a class="headerlink" href="#id23" title="Permalink to this headline">¶</a></h4>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="s1">&#39;xyzxyzxyzBxyzxyz&#39;</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="id24">
+<h4>Output<a class="headerlink" href="#id24" title="Permalink to this headline">¶</a></h4>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="kc">True</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="section" id="test-14">
+<h3>Test 14<a class="headerlink" href="#test-14" title="Permalink to this headline">¶</a></h3>
+<div class="section" id="id25">
+<h4>Input<a class="headerlink" href="#id25" title="Permalink to this headline">¶</a></h4>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="s1">&#39;xyzxyzAxyzxyzxyz&#39;</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="id26">
+<h4>Output<a class="headerlink" href="#id26" title="Permalink to this headline">¶</a></h4>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="kc">True</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="section" id="test-15">
+<h3>Test 15<a class="headerlink" href="#test-15" title="Permalink to this headline">¶</a></h3>
+<div class="section" id="id27">
+<h4>Input<a class="headerlink" href="#id27" title="Permalink to this headline">¶</a></h4>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="s1">&#39;xyzxyzAxyzxyzxy&#39;</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="id28">
+<h4>Output<a class="headerlink" href="#id28" title="Permalink to this headline">¶</a></h4>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="kc">False</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="section" id="test-16">
+<h3>Test 16<a class="headerlink" href="#test-16" title="Permalink to this headline">¶</a></h3>
+<div class="section" id="id29">
+<h4>Input<a class="headerlink" href="#id29" title="Permalink to this headline">¶</a></h4>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="s1">&#39;AxyzxyzBB&#39;</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="id30">
+<h4>Output<a class="headerlink" href="#id30" title="Permalink to this headline">¶</a></h4>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="kc">False</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="section" id="test-17">
+<h3>Test 17<a class="headerlink" href="#test-17" title="Permalink to this headline">¶</a></h3>
+<div class="section" id="id31">
+<h4>Input<a class="headerlink" href="#id31" title="Permalink to this headline">¶</a></h4>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="s1">&#39;&#39;</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="id32">
+<h4>Output<a class="headerlink" href="#id32" title="Permalink to this headline">¶</a></h4>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="kc">False</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="section" id="test-18">
+<h3>Test 18<a class="headerlink" href="#test-18" title="Permalink to this headline">¶</a></h3>
+<div class="section" id="id33">
+<h4>Input<a class="headerlink" href="#id33" title="Permalink to this headline">¶</a></h4>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="s1">&#39;x&#39;</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="id34">
+<h4>Output<a class="headerlink" href="#id34" title="Permalink to this headline">¶</a></h4>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="kc">False</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="section" id="test-19">
+<h3>Test 19<a class="headerlink" href="#test-19" title="Permalink to this headline">¶</a></h3>
+<div class="section" id="id35">
+<h4>Input<a class="headerlink" href="#id35" title="Permalink to this headline">¶</a></h4>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="s1">&#39;xy&#39;</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="id36">
+<h4>Output<a class="headerlink" href="#id36" title="Permalink to this headline">¶</a></h4>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="kc">False</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="section" id="test-20">
+<h3>Test 20<a class="headerlink" href="#test-20" title="Permalink to this headline">¶</a></h3>
+<div class="section" id="id37">
+<h4>Input<a class="headerlink" href="#id37" title="Permalink to this headline">¶</a></h4>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="s1">&#39;xyz&#39;</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="id38">
+<h4>Output<a class="headerlink" href="#id38" title="Permalink to this headline">¶</a></h4>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="kc">True</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="section" id="test-21">
+<h3>Test 21<a class="headerlink" href="#test-21" title="Permalink to this headline">¶</a></h3>
+<div class="section" id="id39">
+<h4>Input<a class="headerlink" href="#id39" title="Permalink to this headline">¶</a></h4>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="s1">&#39;xyzz&#39;</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="id40">
+<h4>Output<a class="headerlink" href="#id40" title="Permalink to this headline">¶</a></h4>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="kc">True</span>
+</pre></div>
+</div>
+</div>
 </div>
 </div>
 </div>

@@ -7,61 +7,109 @@ Given a string, return true if the first 2 chars in the string also appear at th
 
 This exercise was taken from [codingbat.com](https://codingbat.com/prob/p196652) and has been adapted for the Python language. There are many great programming exercises there, but the majority are created for Java.
 
-## Starter Code
-```python
-def front_again(string: str) -> bool:
-    pass
 
 
-result = front_again('edited')
-print(result)
-```
+
+
 
 ## Tests
-```python
-from main import front_again
-
-
-def test_front_again_1():
-    assert front_again('edited') == True
-
-
-def test_front_again_2():
-    assert front_again('edit') == False
-
-
-def test_front_again_3():
-    assert front_again('ed') == True
-
-
-def test_front_again_4():
-    assert front_again('jj') == True
-
-
-def test_front_again_5():
-    assert front_again('jjj') == True
-
-
-def test_front_again_6():
-    assert front_again('jjjj') == True
-
-
-def test_front_again_7():
-    assert front_again('jjjk') == False
-
-
-def test_front_again_8():
-    assert front_again('x') == False
-
-
-def test_front_again_9():
-    assert front_again('') == False
-
-
-def test_front_again_10():
-    assert front_again('java') == False
-
-
-def test_front_again_11():
-    assert front_again('javaja') == True
+### Test 1
+#### Input
 ```
+'edited'
+```
+#### Output
+```
+True
+```
+### Test 2
+#### Input
+```
+'edit'
+```
+#### Output
+```
+False
+```
+### Test 3
+#### Input
+```
+'ed'
+```
+#### Output
+```
+True
+```
+### Test 4
+#### Input
+```
+'jj'
+```
+#### Output
+```
+True
+```
+### Test 5
+#### Input
+```
+'jjj'
+```
+#### Output
+```
+True
+```
+### Test 6
+#### Input
+```
+'jjjj'
+```
+#### Output
+```
+True
+```
+### Test 7
+#### Input
+```
+'jjjk'
+```
+#### Output
+```
+False
+```
+### Test 8
+#### Input
+```
+'x'
+```
+#### Output
+```
+False
+```
+### Test 9
+#### Input
+```
+''
+```
+#### Output
+```
+False
+```
+### Test 10
+#### Input
+```
+'java'
+```
+#### Output
+```
+False
+```
+### Test 11
+#### Input
+```
+'javaja'
+```
+#### Output
+```
+True
+```
+

@@ -7,69 +7,127 @@ Return true if the given string contains a "bob" string, but where the middle 'o
 
 This exercise was taken from [codingbat.com](https://codingbat.com/prob/p175762) and has been adapted for the Python language. There are many great programming exercises there, but the majority are created for Java.
 
-## Starter Code
-```python
-def bob_there(string: str) -> bool:
-    pass
 
 
-result = bob_there('abcbob')
-print(result)
-```
+
+
 
 ## Tests
-```python
-from main import bob_there
-
-
-def test_bob_there_1():
-    assert bob_there('abcbob') == True
-
-
-def test_bob_there_2():
-    assert bob_there('b9b') == True
-
-
-def test_bob_there_3():
-    assert bob_there('bac') == False
-
-
-def test_bob_there_4():
-    assert bob_there('bbb') == True
-
-
-def test_bob_there_5():
-    assert bob_there('abcdefb') == False
-
-
-def test_bob_there_6():
-    assert bob_there('123abcbcdbabxyz') == True
-
-
-def test_bob_there_7():
-    assert bob_there('b12') == False
-
-
-def test_bob_there_8():
-    assert bob_there('b1b') == True
-
-
-def test_bob_there_9():
-    assert bob_there('b12b1b') == True
-
-
-def test_bob_there_10():
-    assert bob_there('bbc') == False
-
-
-def test_bob_there_11():
-    assert bob_there('bbb') == True
-
-
-def test_bob_there_12():
-    assert bob_there('bb') == False
-
-
-def test_bob_there_13():
-    assert bob_there('b') == False
+### Test 1
+#### Input
 ```
+'abcbob'
+```
+#### Output
+```
+True
+```
+### Test 2
+#### Input
+```
+'b9b'
+```
+#### Output
+```
+True
+```
+### Test 3
+#### Input
+```
+'bac'
+```
+#### Output
+```
+False
+```
+### Test 4
+#### Input
+```
+'bbb'
+```
+#### Output
+```
+True
+```
+### Test 5
+#### Input
+```
+'abcdefb'
+```
+#### Output
+```
+False
+```
+### Test 6
+#### Input
+```
+'123abcbcdbabxyz'
+```
+#### Output
+```
+True
+```
+### Test 7
+#### Input
+```
+'b12'
+```
+#### Output
+```
+False
+```
+### Test 8
+#### Input
+```
+'b1b'
+```
+#### Output
+```
+True
+```
+### Test 9
+#### Input
+```
+'b12b1b'
+```
+#### Output
+```
+True
+```
+### Test 10
+#### Input
+```
+'bbc'
+```
+#### Output
+```
+False
+```
+### Test 11
+#### Input
+```
+'bbb'
+```
+#### Output
+```
+True
+```
+### Test 12
+#### Input
+```
+'bb'
+```
+#### Output
+```
+False
+```
+### Test 13
+#### Input
+```
+'b'
+```
+#### Output
+```
+False
+```
+

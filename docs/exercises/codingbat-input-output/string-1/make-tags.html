@@ -93,7 +93,6 @@
 <li class="toctree-l3"><a class="reference internal" href="hello-name.html">hello_name</a></li>
 <li class="toctree-l3"><a class="reference internal" href="make-abba.html">make_abba</a></li>
 <li class="toctree-l3 current"><a class="current reference internal" href="#">make_tags</a><ul>
-<li class="toctree-l4"><a class="reference internal" href="#starter-code">Starter Code</a></li>
 <li class="toctree-l4"><a class="reference internal" href="#tests">Tests</a></li>
 </ul>
 </li>
@@ -205,49 +204,119 @@
 <h1>make_tags<a class="headerlink" href="#make-tags" title="Permalink to this headline">¶</a></h1>
 <p>The web is built with HTML strings like “&lt;i&gt;Yay&lt;/i&gt;” which draws Yay as italic text. In this example, the “i” tag makes &lt;i&gt; and &lt;/i&gt; which surround the word “Yay”. Given tag and word strings, create the HTML string with tags around the word, e.g. “&lt;i&gt;Yay&lt;/i&gt;”.</p>
 <p>This exercise was taken from <a class="reference external" href="https://codingbat.com/prob/p147483">codingbat.com</a> and has been adapted for the Python language. There are many great programming exercises there, but the majority are created for Java.</p>
-<div class="section" id="starter-code">
-<h2>Starter Code<a class="headerlink" href="#starter-code" title="Permalink to this headline">¶</a></h2>
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">make_tags</span><span class="p">(</span><span class="n">tag</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span> <span class="n">word</span><span class="p">:</span> <span class="nb">str</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">str</span><span class="p">:</span>
-    <span class="k">pass</span>
-
-
-<span class="n">result</span> <span class="o">=</span> <span class="n">make_tags</span><span class="p">(</span><span class="s1">&#39;i&#39;</span><span class="p">,</span> <span class="s1">&#39;Yay&#39;</span><span class="p">)</span>
-<span class="nb">print</span><span class="p">(</span><span class="n">result</span><span class="p">)</span>
-</pre></div>
-</div>
-</div>
 <div class="section" id="tests">
 <h2>Tests<a class="headerlink" href="#tests" title="Permalink to this headline">¶</a></h2>
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">main</span> <span class="kn">import</span> <span class="n">make_tags</span>
-
-
-<span class="k">def</span> <span class="nf">test_make_tags_1</span><span class="p">():</span>
-    <span class="k">assert</span> <span class="n">make_tags</span><span class="p">(</span><span class="s1">&#39;i&#39;</span><span class="p">,</span> <span class="s1">&#39;Yay&#39;</span><span class="p">)</span> <span class="o">==</span> <span class="s1">&#39;&lt;i&gt;Yay&lt;/i&gt;&#39;</span>
-
-
-<span class="k">def</span> <span class="nf">test_make_tags_2</span><span class="p">():</span>
-    <span class="k">assert</span> <span class="n">make_tags</span><span class="p">(</span><span class="s1">&#39;i&#39;</span><span class="p">,</span> <span class="s1">&#39;Hello&#39;</span><span class="p">)</span> <span class="o">==</span> <span class="s1">&#39;&lt;i&gt;Hello&lt;/i&gt;&#39;</span>
-
-
-<span class="k">def</span> <span class="nf">test_make_tags_3</span><span class="p">():</span>
-    <span class="k">assert</span> <span class="n">make_tags</span><span class="p">(</span><span class="s1">&#39;cite&#39;</span><span class="p">,</span> <span class="s1">&#39;Yay&#39;</span><span class="p">)</span> <span class="o">==</span> <span class="s1">&#39;&lt;cite&gt;Yay&lt;/cite&gt;&#39;</span>
-
-
-<span class="k">def</span> <span class="nf">test_make_tags_4</span><span class="p">():</span>
-    <span class="k">assert</span> <span class="n">make_tags</span><span class="p">(</span><span class="s1">&#39;address&#39;</span><span class="p">,</span> <span class="s1">&#39;here&#39;</span><span class="p">)</span> <span class="o">==</span> <span class="s1">&#39;&lt;address&gt;here&lt;/address&gt;&#39;</span>
-
-
-<span class="k">def</span> <span class="nf">test_make_tags_5</span><span class="p">():</span>
-    <span class="k">assert</span> <span class="n">make_tags</span><span class="p">(</span><span class="s1">&#39;body&#39;</span><span class="p">,</span> <span class="s1">&#39;Heart&#39;</span><span class="p">)</span> <span class="o">==</span> <span class="s1">&#39;&lt;body&gt;Heart&lt;/body&gt;&#39;</span>
-
-
-<span class="k">def</span> <span class="nf">test_make_tags_6</span><span class="p">():</span>
-    <span class="k">assert</span> <span class="n">make_tags</span><span class="p">(</span><span class="s1">&#39;i&#39;</span><span class="p">,</span> <span class="s1">&#39;i&#39;</span><span class="p">)</span> <span class="o">==</span> <span class="s1">&#39;&lt;i&gt;i&lt;/i&gt;&#39;</span>
-
-
-<span class="k">def</span> <span class="nf">test_make_tags_7</span><span class="p">():</span>
-    <span class="k">assert</span> <span class="n">make_tags</span><span class="p">(</span><span class="s1">&#39;i&#39;</span><span class="p">,</span> <span class="s1">&#39;&#39;</span><span class="p">)</span> <span class="o">==</span> <span class="s1">&#39;&lt;i&gt;&lt;/i&gt;&#39;</span>
+<div class="section" id="test-1">
+<h3>Test 1<a class="headerlink" href="#test-1" title="Permalink to this headline">¶</a></h3>
+<div class="section" id="input">
+<h4>Input<a class="headerlink" href="#input" title="Permalink to this headline">¶</a></h4>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="s1">&#39;i&#39;</span>
+<span class="s1">&#39;Yay&#39;</span>
 </pre></div>
+</div>
+</div>
+<div class="section" id="output">
+<h4>Output<a class="headerlink" href="#output" title="Permalink to this headline">¶</a></h4>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="s1">&#39;&lt;i&gt;Yay&lt;/i&gt;&#39;</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="section" id="test-2">
+<h3>Test 2<a class="headerlink" href="#test-2" title="Permalink to this headline">¶</a></h3>
+<div class="section" id="id1">
+<h4>Input<a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h4>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="s1">&#39;i&#39;</span>
+<span class="s1">&#39;Hello&#39;</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="id2">
+<h4>Output<a class="headerlink" href="#id2" title="Permalink to this headline">¶</a></h4>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="s1">&#39;&lt;i&gt;Hello&lt;/i&gt;&#39;</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="section" id="test-3">
+<h3>Test 3<a class="headerlink" href="#test-3" title="Permalink to this headline">¶</a></h3>
+<div class="section" id="id3">
+<h4>Input<a class="headerlink" href="#id3" title="Permalink to this headline">¶</a></h4>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="s1">&#39;cite&#39;</span>
+<span class="s1">&#39;Yay&#39;</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="id4">
+<h4>Output<a class="headerlink" href="#id4" title="Permalink to this headline">¶</a></h4>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="s1">&#39;&lt;cite&gt;Yay&lt;/cite&gt;&#39;</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="section" id="test-4">
+<h3>Test 4<a class="headerlink" href="#test-4" title="Permalink to this headline">¶</a></h3>
+<div class="section" id="id5">
+<h4>Input<a class="headerlink" href="#id5" title="Permalink to this headline">¶</a></h4>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="s1">&#39;address&#39;</span>
+<span class="s1">&#39;here&#39;</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="id6">
+<h4>Output<a class="headerlink" href="#id6" title="Permalink to this headline">¶</a></h4>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="s1">&#39;&lt;address&gt;here&lt;/address&gt;&#39;</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="section" id="test-5">
+<h3>Test 5<a class="headerlink" href="#test-5" title="Permalink to this headline">¶</a></h3>
+<div class="section" id="id7">
+<h4>Input<a class="headerlink" href="#id7" title="Permalink to this headline">¶</a></h4>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="s1">&#39;body&#39;</span>
+<span class="s1">&#39;Heart&#39;</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="id8">
+<h4>Output<a class="headerlink" href="#id8" title="Permalink to this headline">¶</a></h4>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="s1">&#39;&lt;body&gt;Heart&lt;/body&gt;&#39;</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="section" id="test-6">
+<h3>Test 6<a class="headerlink" href="#test-6" title="Permalink to this headline">¶</a></h3>
+<div class="section" id="id9">
+<h4>Input<a class="headerlink" href="#id9" title="Permalink to this headline">¶</a></h4>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="s1">&#39;i&#39;</span>
+<span class="s1">&#39;i&#39;</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="id10">
+<h4>Output<a class="headerlink" href="#id10" title="Permalink to this headline">¶</a></h4>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="s1">&#39;&lt;i&gt;i&lt;/i&gt;&#39;</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="section" id="test-7">
+<h3>Test 7<a class="headerlink" href="#test-7" title="Permalink to this headline">¶</a></h3>
+<div class="section" id="id11">
+<h4>Input<a class="headerlink" href="#id11" title="Permalink to this headline">¶</a></h4>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="s1">&#39;i&#39;</span>
+<span class="s1">&#39;&#39;</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="id12">
+<h4>Output<a class="headerlink" href="#id12" title="Permalink to this headline">¶</a></h4>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="s1">&#39;&lt;i&gt;&lt;/i&gt;&#39;</span>
+</pre></div>
+</div>
+</div>
 </div>
 </div>
 </div>

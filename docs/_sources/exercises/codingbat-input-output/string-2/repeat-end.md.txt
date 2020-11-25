@@ -7,49 +7,90 @@ Given a string and an int n, return a string made of n repetitions of the last n
 
 This exercise was taken from [codingbat.com](https://codingbat.com/prob/p152339) and has been adapted for the Python language. There are many great programming exercises there, but the majority are created for Java.
 
-## Starter Code
-```python
-def repeat_end(string: str, n: int) -> str:
-    pass
 
 
-result = repeat_end('Hello', 3)
-print(result)
-```
+
+
 
 ## Tests
-```python
-from main import repeat_end
-
-
-def test_repeat_end_1():
-    assert repeat_end('Hello', 3) == 'llollollo'
-
-
-def test_repeat_end_2():
-    assert repeat_end('Hello', 2) == 'lolo'
-
-
-def test_repeat_end_3():
-    assert repeat_end('Hello', 1) == 'o'
-
-
-def test_repeat_end_4():
-    assert repeat_end('Hello', 0) == ''
-
-
-def test_repeat_end_5():
-    assert repeat_end('abc', 3) == 'abcabcabc'
-
-
-def test_repeat_end_6():
-    assert repeat_end('1234', 2) == '3434'
-
-
-def test_repeat_end_7():
-    assert repeat_end('1234', 3) == '234234234'
-
-
-def test_repeat_end_8():
-    assert repeat_end('', 0) == ''
+### Test 1
+#### Input
 ```
+'Hello'
+3
+```
+#### Output
+```
+'llollollo'
+```
+### Test 2
+#### Input
+```
+'Hello'
+2
+```
+#### Output
+```
+'lolo'
+```
+### Test 3
+#### Input
+```
+'Hello'
+1
+```
+#### Output
+```
+'o'
+```
+### Test 4
+#### Input
+```
+'Hello'
+0
+```
+#### Output
+```
+''
+```
+### Test 5
+#### Input
+```
+'abc'
+3
+```
+#### Output
+```
+'abcabcabc'
+```
+### Test 6
+#### Input
+```
+'1234'
+2
+```
+#### Output
+```
+'3434'
+```
+### Test 7
+#### Input
+```
+'1234'
+3
+```
+#### Output
+```
+'234234234'
+```
+### Test 8
+#### Input
+```
+''
+0
+```
+#### Output
+```
+''
+```
+

@@ -7,69 +7,140 @@ Given two strings, <b>a</b> and <b>b</b>, create a bigger string made of the fir
 
 This exercise was taken from [codingbat.com](https://codingbat.com/prob/p125185) and has been adapted for the Python language. There are many great programming exercises there, but the majority are created for Java.
 
-## Starter Code
-```python
-def mix_string(a: str, b: str) -> str:
-    pass
 
 
-result = mix_string('abc', 'xyz')
-print(result)
-```
+
+
 
 ## Tests
-```python
-from main import mix_string
-
-
-def test_mix_string_1():
-    assert mix_string('abc', 'xyz') == 'axbycz'
-
-
-def test_mix_string_2():
-    assert mix_string('Hi', 'There') == 'HTihere'
-
-
-def test_mix_string_3():
-    assert mix_string('xxxx', 'There') == 'xTxhxexre'
-
-
-def test_mix_string_4():
-    assert mix_string('xxx', 'X') == 'xXxx'
-
-
-def test_mix_string_5():
-    assert mix_string('2/', '27 around') == '22/7 around'
-
-
-def test_mix_string_6():
-    assert mix_string('', 'Hello') == 'Hello'
-
-
-def test_mix_string_7():
-    assert mix_string('Abc', '') == 'Abc'
-
-
-def test_mix_string_8():
-    assert mix_string('', '') == ''
-
-
-def test_mix_string_9():
-    assert mix_string('a', 'b') == 'ab'
-
-
-def test_mix_string_10():
-    assert mix_string('ax', 'b') == 'abx'
-
-
-def test_mix_string_11():
-    assert mix_string('a', 'bx') == 'abx'
-
-
-def test_mix_string_12():
-    assert mix_string('So', 'Long') == 'SLoong'
-
-
-def test_mix_string_13():
-    assert mix_string('Long', 'So') == 'LSoong'
+### Test 1
+#### Input
 ```
+'abc'
+'xyz'
+```
+#### Output
+```
+'axbycz'
+```
+### Test 2
+#### Input
+```
+'Hi'
+'There'
+```
+#### Output
+```
+'HTihere'
+```
+### Test 3
+#### Input
+```
+'xxxx'
+'There'
+```
+#### Output
+```
+'xTxhxexre'
+```
+### Test 4
+#### Input
+```
+'xxx'
+'X'
+```
+#### Output
+```
+'xXxx'
+```
+### Test 5
+#### Input
+```
+'2/'
+'27 around'
+```
+#### Output
+```
+'22/7 around'
+```
+### Test 6
+#### Input
+```
+''
+'Hello'
+```
+#### Output
+```
+'Hello'
+```
+### Test 7
+#### Input
+```
+'Abc'
+''
+```
+#### Output
+```
+'Abc'
+```
+### Test 8
+#### Input
+```
+''
+''
+```
+#### Output
+```
+''
+```
+### Test 9
+#### Input
+```
+'a'
+'b'
+```
+#### Output
+```
+'ab'
+```
+### Test 10
+#### Input
+```
+'ax'
+'b'
+```
+#### Output
+```
+'abx'
+```
+### Test 11
+#### Input
+```
+'a'
+'bx'
+```
+#### Output
+```
+'abx'
+```
+### Test 12
+#### Input
+```
+'So'
+'Long'
+```
+#### Output
+```
+'SLoong'
+```
+### Test 13
+#### Input
+```
+'Long'
+'So'
+```
+#### Output
+```
+'LSoong'
+```
+

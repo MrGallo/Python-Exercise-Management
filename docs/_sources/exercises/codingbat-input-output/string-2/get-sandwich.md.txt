@@ -7,65 +7,118 @@ A sandwich is two pieces of bread with something in between. Return the string t
 
 This exercise was taken from [codingbat.com](https://codingbat.com/prob/p129952) and has been adapted for the Python language. There are many great programming exercises there, but the majority are created for Java.
 
-## Starter Code
-```python
-def get_sandwich(string: str) -> str:
-    pass
 
 
-result = get_sandwich('breadjambread')
-print(result)
-```
+
+
 
 ## Tests
-```python
-from main import get_sandwich
-
-
-def test_get_sandwich_1():
-    assert get_sandwich('breadjambread') == 'jam'
-
-
-def test_get_sandwich_2():
-    assert get_sandwich('xxbreadjambreadyy') == 'jam'
-
-
-def test_get_sandwich_3():
-    assert get_sandwich('xxbreadyy') == ''
-
-
-def test_get_sandwich_4():
-    assert get_sandwich('xxbreadbreadjambreadyy') == 'breadjam'
-
-
-def test_get_sandwich_5():
-    assert get_sandwich('breadAbread') == 'A'
-
-
-def test_get_sandwich_6():
-    assert get_sandwich('breadbread') == ''
-
-
-def test_get_sandwich_7():
-    assert get_sandwich('abcbreaz') == ''
-
-
-def test_get_sandwich_8():
-    assert get_sandwich('xyz') == ''
-
-
-def test_get_sandwich_9():
-    assert get_sandwich('') == ''
-
-
-def test_get_sandwich_10():
-    assert get_sandwich('breadbreaxbread') == 'breax'
-
-
-def test_get_sandwich_11():
-    assert get_sandwich('breaxbreadybread') == 'y'
-
-
-def test_get_sandwich_12():
-    assert get_sandwich('breadbreadbreadbread') == 'breadbread'
+### Test 1
+#### Input
 ```
+'breadjambread'
+```
+#### Output
+```
+'jam'
+```
+### Test 2
+#### Input
+```
+'xxbreadjambreadyy'
+```
+#### Output
+```
+'jam'
+```
+### Test 3
+#### Input
+```
+'xxbreadyy'
+```
+#### Output
+```
+''
+```
+### Test 4
+#### Input
+```
+'xxbreadbreadjambreadyy'
+```
+#### Output
+```
+'breadjam'
+```
+### Test 5
+#### Input
+```
+'breadAbread'
+```
+#### Output
+```
+'A'
+```
+### Test 6
+#### Input
+```
+'breadbread'
+```
+#### Output
+```
+''
+```
+### Test 7
+#### Input
+```
+'abcbreaz'
+```
+#### Output
+```
+''
+```
+### Test 8
+#### Input
+```
+'xyz'
+```
+#### Output
+```
+''
+```
+### Test 9
+#### Input
+```
+''
+```
+#### Output
+```
+''
+```
+### Test 10
+#### Input
+```
+'breadbreaxbread'
+```
+#### Output
+```
+'breax'
+```
+### Test 11
+#### Input
+```
+'breaxbreadybread'
+```
+#### Output
+```
+'y'
+```
+### Test 12
+#### Input
+```
+'breadbreadbreadbread'
+```
+#### Output
+```
+'breadbread'
+```
+

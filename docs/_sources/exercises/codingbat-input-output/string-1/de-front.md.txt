@@ -7,93 +7,181 @@ Given a string, return a version without the first 2 chars. Except keep the firs
 
 This exercise was taken from [codingbat.com](https://codingbat.com/prob/p110141) and has been adapted for the Python language. There are many great programming exercises there, but the majority are created for Java.
 
-## Starter Code
-```python
-def de_front(string: str) -> str:
-    pass
 
 
-result = de_front('Hello')
-print(result)
-```
+
+
 
 ## Tests
-```python
-from main import de_front
-
-
-def test_de_front_1():
-    assert de_front('Hello') == 'llo'
-
-
-def test_de_front_2():
-    assert de_front('java') == 'va'
-
-
-def test_de_front_3():
-    assert de_front('away') == 'aay'
-
-
-def test_de_front_4():
-    assert de_front('axy') == 'ay'
-
-
-def test_de_front_5():
-    assert de_front('abc') == 'abc'
-
-
-def test_de_front_6():
-    assert de_front('xby') == 'by'
-
-
-def test_de_front_7():
-    assert de_front('ab') == 'ab'
-
-
-def test_de_front_8():
-    assert de_front('ax') == 'a'
-
-
-def test_de_front_9():
-    assert de_front('axb') == 'ab'
-
-
-def test_de_front_10():
-    assert de_front('aaa') == 'aa'
-
-
-def test_de_front_11():
-    assert de_front('xbc') == 'bc'
-
-
-def test_de_front_12():
-    assert de_front('bbb') == 'bb'
-
-
-def test_de_front_13():
-    assert de_front('bazz') == 'zz'
-
-
-def test_de_front_14():
-    assert de_front('ba') == ''
-
-
-def test_de_front_15():
-    assert de_front('abxyz') == 'abxyz'
-
-
-def test_de_front_16():
-    assert de_front('hi') == ''
-
-
-def test_de_front_17():
-    assert de_front('his') == 's'
-
-
-def test_de_front_18():
-    assert de_front('xz') == ''
-
-
-def test_de_front_19():
-    assert de_front('zzz') == 'z'
+### Test 1
+#### Input
 ```
+'Hello'
+```
+#### Output
+```
+'llo'
+```
+### Test 2
+#### Input
+```
+'java'
+```
+#### Output
+```
+'va'
+```
+### Test 3
+#### Input
+```
+'away'
+```
+#### Output
+```
+'aay'
+```
+### Test 4
+#### Input
+```
+'axy'
+```
+#### Output
+```
+'ay'
+```
+### Test 5
+#### Input
+```
+'abc'
+```
+#### Output
+```
+'abc'
+```
+### Test 6
+#### Input
+```
+'xby'
+```
+#### Output
+```
+'by'
+```
+### Test 7
+#### Input
+```
+'ab'
+```
+#### Output
+```
+'ab'
+```
+### Test 8
+#### Input
+```
+'ax'
+```
+#### Output
+```
+'a'
+```
+### Test 9
+#### Input
+```
+'axb'
+```
+#### Output
+```
+'ab'
+```
+### Test 10
+#### Input
+```
+'aaa'
+```
+#### Output
+```
+'aa'
+```
+### Test 11
+#### Input
+```
+'xbc'
+```
+#### Output
+```
+'bc'
+```
+### Test 12
+#### Input
+```
+'bbb'
+```
+#### Output
+```
+'bb'
+```
+### Test 13
+#### Input
+```
+'bazz'
+```
+#### Output
+```
+'zz'
+```
+### Test 14
+#### Input
+```
+'ba'
+```
+#### Output
+```
+''
+```
+### Test 15
+#### Input
+```
+'abxyz'
+```
+#### Output
+```
+'abxyz'
+```
+### Test 16
+#### Input
+```
+'hi'
+```
+#### Output
+```
+''
+```
+### Test 17
+#### Input
+```
+'his'
+```
+#### Output
+```
+'s'
+```
+### Test 18
+#### Input
+```
+'xz'
+```
+#### Output
+```
+''
+```
+### Test 19
+#### Input
+```
+'zzz'
+```
+#### Output
+```
+'z'
+```
+

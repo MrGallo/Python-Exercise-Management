@@ -7,37 +7,60 @@ Given an "out" string length 4, such as "&lt;&lt;&gt;&gt;", and a word, return a
 
 This exercise was taken from [codingbat.com](https://codingbat.com/prob/p184030) and has been adapted for the Python language. There are many great programming exercises there, but the majority are created for Java.
 
-## Starter Code
-```python
-def make_out_word(out: str, word: str) -> str:
-    pass
 
 
-result = make_out_word('<<>>', 'Yay')
-print(result)
-```
+
+
 
 ## Tests
-```python
-from main import make_out_word
-
-
-def test_make_out_word_1():
-    assert make_out_word('<<>>', 'Yay') == '<<Yay>>'
-
-
-def test_make_out_word_2():
-    assert make_out_word('<<>>', 'WooHoo') == '<<WooHoo>>'
-
-
-def test_make_out_word_3():
-    assert make_out_word('[[]]', 'word') == '[[word]]'
-
-
-def test_make_out_word_4():
-    assert make_out_word('HHoo', 'Hello') == 'HHHellooo'
-
-
-def test_make_out_word_5():
-    assert make_out_word('abyz', 'YAY') == 'abYAYyz'
+### Test 1
+#### Input
 ```
+'<<>>'
+'Yay'
+```
+#### Output
+```
+'<<Yay>>'
+```
+### Test 2
+#### Input
+```
+'<<>>'
+'WooHoo'
+```
+#### Output
+```
+'<<WooHoo>>'
+```
+### Test 3
+#### Input
+```
+'[[]]'
+'word'
+```
+#### Output
+```
+'[[word]]'
+```
+### Test 4
+#### Input
+```
+'HHoo'
+'Hello'
+```
+#### Output
+```
+'HHHellooo'
+```
+### Test 5
+#### Input
+```
+'abyz'
+'YAY'
+```
+#### Output
+```
+'abYAYyz'
+```
+
