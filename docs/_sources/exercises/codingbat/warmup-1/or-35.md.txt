@@ -1,0 +1,117 @@
+# or_35
+
+
+
+
+Return true if the given non-negative number is a multiple of 3 or a multiple of 5. Use the % "mod" operator -- see <a href=/doc/practice/mod-introduction.html>Introduction to Mod</a>
+
+```
+or_35(3) → true
+or_35(10) → true
+or_35(8) → false
+```
+
+This exercise was taken from [codingbat.com](https://codingbat.com/prob/p112564) and has been adapted for the Python language. There are many great programming exercises there, but the majority are created for Java.
+
+## Starter Code
+```python
+def or_35(n: int) -> bool:
+    pass
+
+
+result = or_35(3)
+print(result)
+```
+
+## Tests
+```python
+from main import or_35
+
+
+def test_or_35_1():
+    assert or_35(3) == True
+
+
+def test_or_35_2():
+    assert or_35(10) == True
+
+
+def test_or_35_3():
+    assert or_35(8) == False
+
+
+def test_or_35_4():
+    assert or_35(15) == True
+
+
+def test_or_35_5():
+    assert or_35(5) == True
+
+
+def test_or_35_6():
+    assert or_35(9) == True
+
+
+def test_or_35_7():
+    assert or_35(4) == False
+
+
+def test_or_35_8():
+    assert or_35(7) == False
+
+
+def test_or_35_9():
+    assert or_35(6) == True
+
+
+def test_or_35_10():
+    assert or_35(17) == False
+
+
+def test_or_35_11():
+    assert or_35(18) == True
+
+
+def test_or_35_12():
+    assert or_35(29) == False
+
+
+def test_or_35_13():
+    assert or_35(20) == True
+
+
+def test_or_35_14():
+    assert or_35(21) == True
+
+
+def test_or_35_15():
+    assert or_35(22) == False
+
+
+def test_or_35_16():
+    assert or_35(45) == True
+
+
+def test_or_35_17():
+    assert or_35(99) == True
+
+
+def test_or_35_18():
+    assert or_35(100) == True
+
+
+def test_or_35_19():
+    assert or_35(101) == False
+
+
+def test_or_35_20():
+    assert or_35(121) == False
+
+
+def test_or_35_21():
+    assert or_35(122) == False
+
+
+def test_or_35_22():
+    assert or_35(123) == True
+```

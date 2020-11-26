@@ -1,0 +1,363 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>pos_neg &mdash; Python Exercises  documentation</title>
+  
+
+  
+  <link rel="stylesheet" href="../../../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../../../_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="../../../_static/copybutton.css" type="text/css" />
+
+  
+  
+  
+  
+
+  
+  <!--[if lt IE 9]>
+    <script src="../../../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../../../" src="../../../_static/documentation_options.js"></script>
+        <script src="../../../_static/jquery.js"></script>
+        <script src="../../../_static/underscore.js"></script>
+        <script src="../../../_static/doctools.js"></script>
+        <script src="../../../_static/language_data.js"></script>
+        <script src="../../../_static/clipboard.min.js"></script>
+        <script src="../../../_static/copybutton.js"></script>
+    
+    <script type="text/javascript" src="../../../_static/js/theme.js"></script>
+
+    
+    <link rel="index" title="Index" href="../../../genindex.html" />
+    <link rel="search" title="Search" href="../../../search.html" />
+    <link rel="next" title="not_string" href="not-string.html" />
+    <link rel="prev" title="near_hundred" href="near-hundred.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="../../../index.html" class="icon icon-home" alt="Documentation Home"> Python Exercises
+          
+
+          
+          </a>
+
+          
+            
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../../fundamentals/index.html">Fundamentals</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="../index.html">Codingbat</a><ul class="current">
+<li class="toctree-l2 current"><a class="reference internal" href="index.html">Warmup-1</a><ul class="current">
+<li class="toctree-l3"><a class="reference internal" href="sleep-in.html">sleep_in</a></li>
+<li class="toctree-l3"><a class="reference internal" href="monkey-trouble.html">monkey_trouble</a></li>
+<li class="toctree-l3"><a class="reference internal" href="sum-double.html">sum_double</a></li>
+<li class="toctree-l3"><a class="reference internal" href="diff-21.html">diff_21</a></li>
+<li class="toctree-l3"><a class="reference internal" href="parrot-trouble.html">parrot_trouble</a></li>
+<li class="toctree-l3"><a class="reference internal" href="makes-10.html">makes_10</a></li>
+<li class="toctree-l3"><a class="reference internal" href="near-hundred.html">near_hundred</a></li>
+<li class="toctree-l3 current"><a class="current reference internal" href="#">pos_neg</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#starter-code">Starter Code</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#tests">Tests</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="not-string.html">not_string</a></li>
+<li class="toctree-l3"><a class="reference internal" href="missing-char.html">missing_char</a></li>
+<li class="toctree-l3"><a class="reference internal" href="front-back.html">front_back</a></li>
+<li class="toctree-l3"><a class="reference internal" href="front-3.html">front_3</a></li>
+<li class="toctree-l3"><a class="reference internal" href="back-around.html">back_around</a></li>
+<li class="toctree-l3"><a class="reference internal" href="or-35.html">or_35</a></li>
+<li class="toctree-l3"><a class="reference internal" href="front-22.html">front_22</a></li>
+<li class="toctree-l3"><a class="reference internal" href="start-hi.html">start_hi</a></li>
+<li class="toctree-l3"><a class="reference internal" href="icy-hot.html">icy_hot</a></li>
+<li class="toctree-l3"><a class="reference internal" href="in-1020.html">in_1020</a></li>
+<li class="toctree-l3"><a class="reference internal" href="has-teen.html">has_teen</a></li>
+<li class="toctree-l3"><a class="reference internal" href="lone-teen.html">lone_teen</a></li>
+<li class="toctree-l3"><a class="reference internal" href="del-del.html">del_del</a></li>
+<li class="toctree-l3"><a class="reference internal" href="mix-start.html">mix_start</a></li>
+<li class="toctree-l3"><a class="reference internal" href="start-oz.html">start_oz</a></li>
+<li class="toctree-l3"><a class="reference internal" href="int-max.html">int_max</a></li>
+<li class="toctree-l3"><a class="reference internal" href="close-10.html">close_10</a></li>
+<li class="toctree-l3"><a class="reference internal" href="in-3050.html">in_3050</a></li>
+<li class="toctree-l3"><a class="reference internal" href="max-1020.html">max_1020</a></li>
+<li class="toctree-l3"><a class="reference internal" href="string-e.html">string_e</a></li>
+<li class="toctree-l3"><a class="reference internal" href="last-digit.html">last_digit</a></li>
+<li class="toctree-l3"><a class="reference internal" href="end-up.html">end_up</a></li>
+<li class="toctree-l3"><a class="reference internal" href="every-nth.html">every_nth</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../string-1/index.html">String-1</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../string-2/index.html">String-2</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../../codingbat-input-output/index.html">Codingbat (Input/Output)</a></li>
+</ul>
+
+            
+          
+        </div>
+        
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../../index.html">Python Exercises</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../../../index.html" class="icon icon-home"></a> &raquo;</li>
+        
+          <li><a href="../index.html">Codingbat</a> &raquo;</li>
+        
+          <li><a href="index.html">Warmup-1</a> &raquo;</li>
+        
+      <li>pos_neg</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="../../../_sources/exercises/codingbat/warmup-1/pos-neg.md.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="pos-neg">
+<h1>pos_neg<a class="headerlink" href="#pos-neg" title="Permalink to this headline">¶</a></h1>
+<p>Given 2 int values, return true if one is negative and one is positive. Except if the parameter “negative” is true, then return true only if both are negative.</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>pos_neg(1, -1, false) → true
+pos_neg(-1, 1, false) → true
+pos_neg(-4, -5, true) → true
+</pre></div>
+</div>
+<p>This exercise was taken from <a class="reference external" href="https://codingbat.com/prob/p159227">codingbat.com</a> and has been adapted for the Python language. There are many great programming exercises there, but the majority are created for Java.</p>
+<div class="section" id="starter-code">
+<h2>Starter Code<a class="headerlink" href="#starter-code" title="Permalink to this headline">¶</a></h2>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">pos_neg</span><span class="p">(</span><span class="n">a</span><span class="p">:</span> <span class="nb">int</span><span class="p">,</span> <span class="n">b</span><span class="p">:</span> <span class="nb">int</span><span class="p">,</span> <span class="n">negative</span><span class="p">:</span> <span class="nb">bool</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">bool</span><span class="p">:</span>
+    <span class="k">pass</span>
+
+
+<span class="n">result</span> <span class="o">=</span> <span class="n">pos_neg</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="o">-</span><span class="mi">1</span><span class="p">,</span> <span class="kc">False</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">result</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="tests">
+<h2>Tests<a class="headerlink" href="#tests" title="Permalink to this headline">¶</a></h2>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">main</span> <span class="kn">import</span> <span class="n">pos_neg</span>
+
+
+<span class="k">def</span> <span class="nf">test_pos_neg_1</span><span class="p">():</span>
+    <span class="k">assert</span> <span class="n">pos_neg</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="o">-</span><span class="mi">1</span><span class="p">,</span> <span class="kc">False</span><span class="p">)</span> <span class="o">==</span> <span class="kc">True</span>
+
+
+<span class="k">def</span> <span class="nf">test_pos_neg_2</span><span class="p">():</span>
+    <span class="k">assert</span> <span class="n">pos_neg</span><span class="p">(</span><span class="o">-</span><span class="mi">1</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="kc">False</span><span class="p">)</span> <span class="o">==</span> <span class="kc">True</span>
+
+
+<span class="k">def</span> <span class="nf">test_pos_neg_3</span><span class="p">():</span>
+    <span class="k">assert</span> <span class="n">pos_neg</span><span class="p">(</span><span class="o">-</span><span class="mi">4</span><span class="p">,</span> <span class="o">-</span><span class="mi">5</span><span class="p">,</span> <span class="kc">True</span><span class="p">)</span> <span class="o">==</span> <span class="kc">True</span>
+
+
+<span class="k">def</span> <span class="nf">test_pos_neg_4</span><span class="p">():</span>
+    <span class="k">assert</span> <span class="n">pos_neg</span><span class="p">(</span><span class="o">-</span><span class="mi">4</span><span class="p">,</span> <span class="o">-</span><span class="mi">5</span><span class="p">,</span> <span class="kc">False</span><span class="p">)</span> <span class="o">==</span> <span class="kc">False</span>
+
+
+<span class="k">def</span> <span class="nf">test_pos_neg_5</span><span class="p">():</span>
+    <span class="k">assert</span> <span class="n">pos_neg</span><span class="p">(</span><span class="o">-</span><span class="mi">4</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="kc">False</span><span class="p">)</span> <span class="o">==</span> <span class="kc">True</span>
+
+
+<span class="k">def</span> <span class="nf">test_pos_neg_6</span><span class="p">():</span>
+    <span class="k">assert</span> <span class="n">pos_neg</span><span class="p">(</span><span class="o">-</span><span class="mi">4</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="kc">True</span><span class="p">)</span> <span class="o">==</span> <span class="kc">False</span>
+
+
+<span class="k">def</span> <span class="nf">test_pos_neg_7</span><span class="p">():</span>
+    <span class="k">assert</span> <span class="n">pos_neg</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="kc">False</span><span class="p">)</span> <span class="o">==</span> <span class="kc">False</span>
+
+
+<span class="k">def</span> <span class="nf">test_pos_neg_8</span><span class="p">():</span>
+    <span class="k">assert</span> <span class="n">pos_neg</span><span class="p">(</span><span class="o">-</span><span class="mi">1</span><span class="p">,</span> <span class="o">-</span><span class="mi">1</span><span class="p">,</span> <span class="kc">False</span><span class="p">)</span> <span class="o">==</span> <span class="kc">False</span>
+
+
+<span class="k">def</span> <span class="nf">test_pos_neg_9</span><span class="p">():</span>
+    <span class="k">assert</span> <span class="n">pos_neg</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="o">-</span><span class="mi">1</span><span class="p">,</span> <span class="kc">True</span><span class="p">)</span> <span class="o">==</span> <span class="kc">False</span>
+
+
+<span class="k">def</span> <span class="nf">test_pos_neg_10</span><span class="p">():</span>
+    <span class="k">assert</span> <span class="n">pos_neg</span><span class="p">(</span><span class="o">-</span><span class="mi">1</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="kc">True</span><span class="p">)</span> <span class="o">==</span> <span class="kc">False</span>
+
+
+<span class="k">def</span> <span class="nf">test_pos_neg_11</span><span class="p">():</span>
+    <span class="k">assert</span> <span class="n">pos_neg</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="kc">True</span><span class="p">)</span> <span class="o">==</span> <span class="kc">False</span>
+
+
+<span class="k">def</span> <span class="nf">test_pos_neg_12</span><span class="p">():</span>
+    <span class="k">assert</span> <span class="n">pos_neg</span><span class="p">(</span><span class="o">-</span><span class="mi">1</span><span class="p">,</span> <span class="o">-</span><span class="mi">1</span><span class="p">,</span> <span class="kc">True</span><span class="p">)</span> <span class="o">==</span> <span class="kc">True</span>
+
+
+<span class="k">def</span> <span class="nf">test_pos_neg_13</span><span class="p">():</span>
+    <span class="k">assert</span> <span class="n">pos_neg</span><span class="p">(</span><span class="mi">5</span><span class="p">,</span> <span class="o">-</span><span class="mi">5</span><span class="p">,</span> <span class="kc">False</span><span class="p">)</span> <span class="o">==</span> <span class="kc">True</span>
+
+
+<span class="k">def</span> <span class="nf">test_pos_neg_14</span><span class="p">():</span>
+    <span class="k">assert</span> <span class="n">pos_neg</span><span class="p">(</span><span class="o">-</span><span class="mi">6</span><span class="p">,</span> <span class="mi">6</span><span class="p">,</span> <span class="kc">False</span><span class="p">)</span> <span class="o">==</span> <span class="kc">True</span>
+
+
+<span class="k">def</span> <span class="nf">test_pos_neg_15</span><span class="p">():</span>
+    <span class="k">assert</span> <span class="n">pos_neg</span><span class="p">(</span><span class="o">-</span><span class="mi">5</span><span class="p">,</span> <span class="o">-</span><span class="mi">6</span><span class="p">,</span> <span class="kc">False</span><span class="p">)</span> <span class="o">==</span> <span class="kc">False</span>
+
+
+<span class="k">def</span> <span class="nf">test_pos_neg_16</span><span class="p">():</span>
+    <span class="k">assert</span> <span class="n">pos_neg</span><span class="p">(</span><span class="o">-</span><span class="mi">2</span><span class="p">,</span> <span class="o">-</span><span class="mi">1</span><span class="p">,</span> <span class="kc">False</span><span class="p">)</span> <span class="o">==</span> <span class="kc">False</span>
+
+
+<span class="k">def</span> <span class="nf">test_pos_neg_17</span><span class="p">():</span>
+    <span class="k">assert</span> <span class="n">pos_neg</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="kc">False</span><span class="p">)</span> <span class="o">==</span> <span class="kc">False</span>
+
+
+<span class="k">def</span> <span class="nf">test_pos_neg_18</span><span class="p">():</span>
+    <span class="k">assert</span> <span class="n">pos_neg</span><span class="p">(</span><span class="o">-</span><span class="mi">5</span><span class="p">,</span> <span class="mi">6</span><span class="p">,</span> <span class="kc">True</span><span class="p">)</span> <span class="o">==</span> <span class="kc">False</span>
+
+
+<span class="k">def</span> <span class="nf">test_pos_neg_19</span><span class="p">():</span>
+    <span class="k">assert</span> <span class="n">pos_neg</span><span class="p">(</span><span class="o">-</span><span class="mi">5</span><span class="p">,</span> <span class="o">-</span><span class="mi">5</span><span class="p">,</span> <span class="kc">True</span><span class="p">)</span> <span class="o">==</span> <span class="kc">True</span>
+</pre></div>
+</div>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="not-string.html" class="btn btn-neutral float-right" title="not_string" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="near-hundred.html" class="btn btn-neutral float-left" title="near_hundred" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        
+        &copy; Copyright 2020, Mr. Gallo
+
+    </p>
+  </div>
+    
+    
+    
+    Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a
+    
+    <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a>
+    
+    provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>

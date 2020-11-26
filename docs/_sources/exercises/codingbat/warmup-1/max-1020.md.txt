@@ -1,0 +1,73 @@
+# max_1020
+
+
+
+
+Given 2 positive int values, return the larger value that is in the range 10..20 inclusive, or return 0 if neither is in that range.
+
+```
+max_1020(11, 19) → 19
+max_1020(19, 11) → 19
+max_1020(11, 9) → 11
+```
+
+This exercise was taken from [codingbat.com](https://codingbat.com/prob/p177372) and has been adapted for the Python language. There are many great programming exercises there, but the majority are created for Java.
+
+## Starter Code
+```python
+def max_1020(a: int, b: int) -> int:
+    pass
+
+
+result = max_1020(11, 19)
+print(result)
+```
+
+## Tests
+```python
+from main import max_1020
+
+
+def test_max_1020_1():
+    assert max_1020(11, 19) == 19
+
+
+def test_max_1020_2():
+    assert max_1020(19, 11) == 19
+
+
+def test_max_1020_3():
+    assert max_1020(11, 9) == 11
+
+
+def test_max_1020_4():
+    assert max_1020(9, 21) == 0
+
+
+def test_max_1020_5():
+    assert max_1020(10, 21) == 10
+
+
+def test_max_1020_6():
+    assert max_1020(21, 10) == 10
+
+
+def test_max_1020_7():
+    assert max_1020(9, 11) == 11
+
+
+def test_max_1020_8():
+    assert max_1020(23, 10) == 10
+
+
+def test_max_1020_9():
+    assert max_1020(20, 10) == 20
+
+
+def test_max_1020_10():
+    assert max_1020(7, 20) == 20
+
+
+def test_max_1020_11():
+    assert max_1020(17, 16) == 17
+```

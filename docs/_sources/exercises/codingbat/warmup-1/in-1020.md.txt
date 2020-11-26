@@ -1,0 +1,57 @@
+# in_1020
+
+
+
+
+Given 2 int values, return true if either of them is in the range 10..20 inclusive.
+
+```
+in_1020(12, 99) → true
+in_1020(21, 12) → true
+in_1020(8, 99) → false
+```
+
+This exercise was taken from [codingbat.com](https://codingbat.com/prob/p144535) and has been adapted for the Python language. There are many great programming exercises there, but the majority are created for Java.
+
+## Starter Code
+```python
+def in_1020(a: int, b: int) -> bool:
+    pass
+
+
+result = in_1020(12, 99)
+print(result)
+```
+
+## Tests
+```python
+from main import in_1020
+
+
+def test_in_1020_1():
+    assert in_1020(12, 99) == True
+
+
+def test_in_1020_2():
+    assert in_1020(21, 12) == True
+
+
+def test_in_1020_3():
+    assert in_1020(8, 99) == False
+
+
+def test_in_1020_4():
+    assert in_1020(99, 10) == True
+
+
+def test_in_1020_5():
+    assert in_1020(20, 20) == True
+
+
+def test_in_1020_6():
+    assert in_1020(21, 21) == False
+
+
+def test_in_1020_7():
+    assert in_1020(9, 9) == False
+```

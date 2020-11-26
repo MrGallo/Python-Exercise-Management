@@ -1,0 +1,214 @@
+# or_35
+
+
+
+
+Return true if the given non-negative number is a multiple of 3 or a multiple of 5. Use the % "mod" operator -- see <a href=/doc/practice/mod-introduction.html>Introduction to Mod</a>
+
+This exercise was taken from [codingbat.com](https://codingbat.com/prob/p112564) and has been adapted for the Python language. There are many great programming exercises there, but the majority are created for Java.
+
+
+
+
+
+
+## Tests
+### Test 1
+**Input:**
+```
+3
+```
+**Output:**
+```
+True
+```
+### Test 2
+**Input:**
+```
+10
+```
+**Output:**
+```
+True
+```
+### Test 3
+**Input:**
+```
+8
+```
+**Output:**
+```
+False
+```
+### Test 4
+**Input:**
+```
+15
+```
+**Output:**
+```
+True
+```
+### Test 5
+**Input:**
+```
+5
+```
+**Output:**
+```
+True
+```
+### Test 6
+**Input:**
+```
+9
+```
+**Output:**
+```
+True
+```
+### Test 7
+**Input:**
+```
+4
+```
+**Output:**
+```
+False
+```
+### Test 8
+**Input:**
+```
+7
+```
+**Output:**
+```
+False
+```
+### Test 9
+**Input:**
+```
+6
+```
+**Output:**
+```
+True
+```
+### Test 10
+**Input:**
+```
+17
+```
+**Output:**
+```
+False
+```
+### Test 11
+**Input:**
+```
+18
+```
+**Output:**
+```
+True
+```
+### Test 12
+**Input:**
+```
+29
+```
+**Output:**
+```
+False
+```
+### Test 13
+**Input:**
+```
+20
+```
+**Output:**
+```
+True
+```
+### Test 14
+**Input:**
+```
+21
+```
+**Output:**
+```
+True
+```
+### Test 15
+**Input:**
+```
+22
+```
+**Output:**
+```
+False
+```
+### Test 16
+**Input:**
+```
+45
+```
+**Output:**
+```
+True
+```
+### Test 17
+**Input:**
+```
+99
+```
+**Output:**
+```
+True
+```
+### Test 18
+**Input:**
+```
+100
+```
+**Output:**
+```
+True
+```
+### Test 19
+**Input:**
+```
+101
+```
+**Output:**
+```
+False
+```
+### Test 20
+**Input:**
+```
+121
+```
+**Output:**
+```
+False
+```
+### Test 21
+**Input:**
+```
+122
+```
+**Output:**
+```
+False
+```
+### Test 22
+**Input:**
+```
+123
+```
+**Output:**
+```
+True
+```
+

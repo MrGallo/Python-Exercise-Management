@@ -1,0 +1,136 @@
+# in_3050
+
+
+
+
+Given 2 int values, return true if they are both in the range 30..40 inclusive, or they are both in the range 40..50 inclusive.
+
+This exercise was taken from [codingbat.com](https://codingbat.com/prob/p132134) and has been adapted for the Python language. There are many great programming exercises there, but the majority are created for Java.
+
+
+
+
+
+
+## Tests
+### Test 1
+**Input:**
+```
+30
+31
+```
+**Output:**
+```
+True
+```
+### Test 2
+**Input:**
+```
+30
+41
+```
+**Output:**
+```
+False
+```
+### Test 3
+**Input:**
+```
+40
+50
+```
+**Output:**
+```
+True
+```
+### Test 4
+**Input:**
+```
+40
+51
+```
+**Output:**
+```
+False
+```
+### Test 5
+**Input:**
+```
+39
+50
+```
+**Output:**
+```
+False
+```
+### Test 6
+**Input:**
+```
+50
+39
+```
+**Output:**
+```
+False
+```
+### Test 7
+**Input:**
+```
+40
+39
+```
+**Output:**
+```
+True
+```
+### Test 8
+**Input:**
+```
+49
+48
+```
+**Output:**
+```
+True
+```
+### Test 9
+**Input:**
+```
+50
+40
+```
+**Output:**
+```
+True
+```
+### Test 10
+**Input:**
+```
+50
+51
+```
+**Output:**
+```
+False
+```
+### Test 11
+**Input:**
+```
+35
+36
+```
+**Output:**
+```
+True
+```
+### Test 12
+**Input:**
+```
+35
+45
+```
+**Output:**
+```
+False
+```
+
