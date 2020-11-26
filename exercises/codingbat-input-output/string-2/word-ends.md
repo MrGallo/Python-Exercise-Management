@@ -14,132 +14,132 @@ This exercise was taken from [codingbat.com](https://codingbat.com/prob/p147538)
 
 ## Tests
 ### Test 1
-#### Input
+**Input:**
 ```
 'abcXY123XYijk'
 'XY'
 ```
-#### Output
+**Output:**
 ```
 'c13i'
 ```
 ### Test 2
-#### Input
+**Input:**
 ```
 'XY123XY'
 'XY'
 ```
-#### Output
+**Output:**
 ```
 '13'
 ```
 ### Test 3
-#### Input
+**Input:**
 ```
 'XY1XY'
 'XY'
 ```
-#### Output
+**Output:**
 ```
 '11'
 ```
 ### Test 4
-#### Input
+**Input:**
 ```
 'XYXY'
 'XY'
 ```
-#### Output
+**Output:**
 ```
 'XY'
 ```
 ### Test 5
-#### Input
+**Input:**
 ```
 'XY'
 'XY'
 ```
-#### Output
+**Output:**
 ```
 ''
 ```
 ### Test 6
-#### Input
+**Input:**
 ```
 'Hi'
 'XY'
 ```
-#### Output
+**Output:**
 ```
 ''
 ```
 ### Test 7
-#### Input
+**Input:**
 ```
 ''
 'XY'
 ```
-#### Output
+**Output:**
 ```
 ''
 ```
 ### Test 8
-#### Input
+**Input:**
 ```
 'abc1xyz1i1j'
 '1'
 ```
-#### Output
+**Output:**
 ```
 'cxziij'
 ```
 ### Test 9
-#### Input
+**Input:**
 ```
 'abc1xyz1'
 '1'
 ```
-#### Output
+**Output:**
 ```
 'cxz'
 ```
 ### Test 10
-#### Input
+**Input:**
 ```
 'abc1xyz11'
 '1'
 ```
-#### Output
+**Output:**
 ```
 'cxz11'
 ```
 ### Test 11
-#### Input
+**Input:**
 ```
 'abc1xyz1abc'
 'abc'
 ```
-#### Output
+**Output:**
 ```
 '11'
 ```
 ### Test 12
-#### Input
+**Input:**
 ```
 'abc1xyz1abc'
 'b'
 ```
-#### Output
+**Output:**
 ```
 'acac'
 ```
 ### Test 13
-#### Input
+**Input:**
 ```
 'abc1abc1abc'
 'abc'
 ```
-#### Output
+**Output:**
 ```
 '1111'
 ```

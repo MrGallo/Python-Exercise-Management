@@ -14,146 +14,146 @@ This exercise was taken from [codingbat.com](https://codingbat.com/prob/p122943)
 
 ## Tests
 ### Test 1
-#### Input
+**Input:**
 ```
 'abc'
 ```
-#### Output
+**Output:**
 ```
 'bca'
 ```
 ### Test 2
-#### Input
+**Input:**
 ```
 'tca'
 ```
-#### Output
+**Output:**
 ```
 'cat'
 ```
 ### Test 3
-#### Input
+**Input:**
 ```
 'tcagdo'
 ```
-#### Output
+**Output:**
 ```
 'catdog'
 ```
 ### Test 4
-#### Input
+**Input:**
 ```
 'chocolate'
 ```
-#### Output
+**Output:**
 ```
 'hocolctea'
 ```
 ### Test 5
-#### Input
+**Input:**
 ```
 '1234567890'
 ```
-#### Output
+**Output:**
 ```
 '231564897'
 ```
 ### Test 6
-#### Input
+**Input:**
 ```
 'xabxabxabxabxabxabxab'
 ```
-#### Output
+**Output:**
 ```
 'abxabxabxabxabxabxabx'
 ```
 ### Test 7
-#### Input
+**Input:**
 ```
 'abcdefx'
 ```
-#### Output
+**Output:**
 ```
 'bcaefd'
 ```
 ### Test 8
-#### Input
+**Input:**
 ```
 'abcdefxy'
 ```
-#### Output
+**Output:**
 ```
 'bcaefd'
 ```
 ### Test 9
-#### Input
+**Input:**
 ```
 'abcdefxyz'
 ```
-#### Output
+**Output:**
 ```
 'bcaefdyzx'
 ```
 ### Test 10
-#### Input
+**Input:**
 ```
 ''
 ```
-#### Output
+**Output:**
 ```
 ''
 ```
 ### Test 11
-#### Input
+**Input:**
 ```
 'x'
 ```
-#### Output
+**Output:**
 ```
 ''
 ```
 ### Test 12
-#### Input
+**Input:**
 ```
 'xy'
 ```
-#### Output
+**Output:**
 ```
 ''
 ```
 ### Test 13
-#### Input
+**Input:**
 ```
 'xyz'
 ```
-#### Output
+**Output:**
 ```
 'yzx'
 ```
 ### Test 14
-#### Input
+**Input:**
 ```
 'abcdefghijklkmnopqrstuvwxyz1234567890'
 ```
-#### Output
+**Output:**
 ```
 'bcaefdhigkljmnkpqostrvwuyzx231564897'
 ```
 ### Test 15
-#### Input
+**Input:**
 ```
 'abcdefghijklkmnopqrstuvwxyz123456789'
 ```
-#### Output
+**Output:**
 ```
 'bcaefdhigkljmnkpqostrvwuyzx231564897'
 ```
 ### Test 16
-#### Input
+**Input:**
 ```
 'abcdefghijklkmnopqrstuvwxyz12345678'
 ```
-#### Output
+**Output:**
 ```
 'bcaefdhigkljmnkpqostrvwuyzx231564'
 ```

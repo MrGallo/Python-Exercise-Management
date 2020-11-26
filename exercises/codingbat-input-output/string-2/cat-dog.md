@@ -14,119 +14,119 @@ This exercise was taken from [codingbat.com](https://codingbat.com/prob/p111624)
 
 ## Tests
 ### Test 1
-#### Input
+**Input:**
 ```
 'catdog'
 ```
-#### Output
+**Output:**
 ```
 True
 ```
 ### Test 2
-#### Input
+**Input:**
 ```
 'catcat'
 ```
-#### Output
+**Output:**
 ```
 False
 ```
 ### Test 3
-#### Input
+**Input:**
 ```
 '1cat1cadodog'
 ```
-#### Output
+**Output:**
 ```
 True
 ```
 ### Test 4
-#### Input
+**Input:**
 ```
 'catxxdogxxxdog'
 ```
-#### Output
+**Output:**
 ```
 False
 ```
 ### Test 5
-#### Input
+**Input:**
 ```
 'catxdogxdogxcat'
 ```
-#### Output
+**Output:**
 ```
 True
 ```
 ### Test 6
-#### Input
+**Input:**
 ```
 'catxdogxdogxca'
 ```
-#### Output
+**Output:**
 ```
 False
 ```
 ### Test 7
-#### Input
+**Input:**
 ```
 'dogdogcat'
 ```
-#### Output
+**Output:**
 ```
 False
 ```
 ### Test 8
-#### Input
+**Input:**
 ```
 'dogogcat'
 ```
-#### Output
+**Output:**
 ```
 True
 ```
 ### Test 9
-#### Input
+**Input:**
 ```
 'dog'
 ```
-#### Output
+**Output:**
 ```
 False
 ```
 ### Test 10
-#### Input
+**Input:**
 ```
 'cat'
 ```
-#### Output
+**Output:**
 ```
 False
 ```
 ### Test 11
-#### Input
+**Input:**
 ```
 'ca'
 ```
-#### Output
+**Output:**
 ```
 True
 ```
 ### Test 12
-#### Input
+**Input:**
 ```
 'c'
 ```
-#### Output
+**Output:**
 ```
 True
 ```
 ### Test 13
-#### Input
+**Input:**
 ```
 ''
 ```
-#### Output
+**Output:**
 ```
 True
 ```

@@ -14,92 +14,92 @@ This exercise was taken from [codingbat.com](https://codingbat.com/prob/p138183)
 
 ## Tests
 ### Test 1
-#### Input
+**Input:**
 ```
 'last'
 'chars'
 ```
-#### Output
+**Output:**
 ```
 'ls'
 ```
 ### Test 2
-#### Input
+**Input:**
 ```
 'yo'
 'java'
 ```
-#### Output
+**Output:**
 ```
 'ya'
 ```
 ### Test 3
-#### Input
+**Input:**
 ```
 'hi'
 ''
 ```
-#### Output
+**Output:**
 ```
 'h@'
 ```
 ### Test 4
-#### Input
+**Input:**
 ```
 ''
 'hello'
 ```
-#### Output
+**Output:**
 ```
 '@o'
 ```
 ### Test 5
-#### Input
+**Input:**
 ```
 ''
 ''
 ```
-#### Output
+**Output:**
 ```
 '@@'
 ```
 ### Test 6
-#### Input
+**Input:**
 ```
 'kitten'
 'hi'
 ```
-#### Output
+**Output:**
 ```
 'ki'
 ```
 ### Test 7
-#### Input
+**Input:**
 ```
 'k'
 'zip'
 ```
-#### Output
+**Output:**
 ```
 'kp'
 ```
 ### Test 8
-#### Input
+**Input:**
 ```
 'kitten'
 ''
 ```
-#### Output
+**Output:**
 ```
 'k@'
 ```
 ### Test 9
-#### Input
+**Input:**
 ```
 'kitten'
 'zip'
 ```
-#### Output
+**Output:**
 ```
 'kp'
 ```

@@ -14,92 +14,92 @@ This exercise was taken from [codingbat.com](https://codingbat.com/prob/p171896)
 
 ## Tests
 ### Test 1
-#### Input
+**Input:**
 ```
 'Bob'
 ```
-#### Output
+**Output:**
 ```
 'Hello Bob!'
 ```
 ### Test 2
-#### Input
+**Input:**
 ```
 'Alice'
 ```
-#### Output
+**Output:**
 ```
 'Hello Alice!'
 ```
 ### Test 3
-#### Input
+**Input:**
 ```
 'X'
 ```
-#### Output
+**Output:**
 ```
 'Hello X!'
 ```
 ### Test 4
-#### Input
+**Input:**
 ```
 'Dolly'
 ```
-#### Output
+**Output:**
 ```
 'Hello Dolly!'
 ```
 ### Test 5
-#### Input
+**Input:**
 ```
 'Alpha'
 ```
-#### Output
+**Output:**
 ```
 'Hello Alpha!'
 ```
 ### Test 6
-#### Input
+**Input:**
 ```
 'Omega'
 ```
-#### Output
+**Output:**
 ```
 'Hello Omega!'
 ```
 ### Test 7
-#### Input
+**Input:**
 ```
 'Goodbye'
 ```
-#### Output
+**Output:**
 ```
 'Hello Goodbye!'
 ```
 ### Test 8
-#### Input
+**Input:**
 ```
 'ho ho ho'
 ```
-#### Output
+**Output:**
 ```
 'Hello ho ho ho!'
 ```
 ### Test 9
-#### Input
+**Input:**
 ```
 'xyz!'
 ```
-#### Output
+**Output:**
 ```
 'Hello xyz!!'
 ```
 ### Test 10
-#### Input
+**Input:**
 ```
 'Hello'
 ```
-#### Output
+**Output:**
 ```
 'Hello Hello!'
 ```

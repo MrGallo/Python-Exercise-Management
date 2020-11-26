@@ -14,110 +14,110 @@ This exercise was taken from [codingbat.com](https://codingbat.com/prob/p129952)
 
 ## Tests
 ### Test 1
-#### Input
+**Input:**
 ```
 'breadjambread'
 ```
-#### Output
+**Output:**
 ```
 'jam'
 ```
 ### Test 2
-#### Input
+**Input:**
 ```
 'xxbreadjambreadyy'
 ```
-#### Output
+**Output:**
 ```
 'jam'
 ```
 ### Test 3
-#### Input
+**Input:**
 ```
 'xxbreadyy'
 ```
-#### Output
+**Output:**
 ```
 ''
 ```
 ### Test 4
-#### Input
+**Input:**
 ```
 'xxbreadbreadjambreadyy'
 ```
-#### Output
+**Output:**
 ```
 'breadjam'
 ```
 ### Test 5
-#### Input
+**Input:**
 ```
 'breadAbread'
 ```
-#### Output
+**Output:**
 ```
 'A'
 ```
 ### Test 6
-#### Input
+**Input:**
 ```
 'breadbread'
 ```
-#### Output
+**Output:**
 ```
 ''
 ```
 ### Test 7
-#### Input
+**Input:**
 ```
 'abcbreaz'
 ```
-#### Output
+**Output:**
 ```
 ''
 ```
 ### Test 8
-#### Input
+**Input:**
 ```
 'xyz'
 ```
-#### Output
+**Output:**
 ```
 ''
 ```
 ### Test 9
-#### Input
+**Input:**
 ```
 ''
 ```
-#### Output
+**Output:**
 ```
 ''
 ```
 ### Test 10
-#### Input
+**Input:**
 ```
 'breadbreaxbread'
 ```
-#### Output
+**Output:**
 ```
 'breax'
 ```
 ### Test 11
-#### Input
+**Input:**
 ```
 'breaxbreadybread'
 ```
-#### Output
+**Output:**
 ```
 'y'
 ```
 ### Test 12
-#### Input
+**Input:**
 ```
 'breadbreadbreadbread'
 ```
-#### Output
+**Output:**
 ```
 'breadbread'
 ```

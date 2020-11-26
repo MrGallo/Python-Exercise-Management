@@ -14,65 +14,65 @@ This exercise was taken from [codingbat.com](https://codingbat.com/prob/p172267)
 
 ## Tests
 ### Test 1
-#### Input
+**Input:**
 ```
 'WooHoo'
 ```
-#### Output
+**Output:**
 ```
 'Woo'
 ```
 ### Test 2
-#### Input
+**Input:**
 ```
 'HelloThere'
 ```
-#### Output
+**Output:**
 ```
 'Hello'
 ```
 ### Test 3
-#### Input
+**Input:**
 ```
 'abcdef'
 ```
-#### Output
+**Output:**
 ```
 'abc'
 ```
 ### Test 4
-#### Input
+**Input:**
 ```
 'ab'
 ```
-#### Output
+**Output:**
 ```
 'a'
 ```
 ### Test 5
-#### Input
+**Input:**
 ```
 ''
 ```
-#### Output
+**Output:**
 ```
 ''
 ```
 ### Test 6
-#### Input
+**Input:**
 ```
 '0123456789'
 ```
-#### Output
+**Output:**
 ```
 '01234'
 ```
 ### Test 7
-#### Input
+**Input:**
 ```
 'kitten'
 ```
-#### Output
+**Output:**
 ```
 'kit'
 ```

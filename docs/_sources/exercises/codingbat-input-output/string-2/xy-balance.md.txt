@@ -14,164 +14,164 @@ This exercise was taken from [codingbat.com](https://codingbat.com/prob/p134250)
 
 ## Tests
 ### Test 1
-#### Input
+**Input:**
 ```
 'aaxbby'
 ```
-#### Output
+**Output:**
 ```
 True
 ```
 ### Test 2
-#### Input
+**Input:**
 ```
 'aaxbb'
 ```
-#### Output
+**Output:**
 ```
 False
 ```
 ### Test 3
-#### Input
+**Input:**
 ```
 'yaaxbb'
 ```
-#### Output
+**Output:**
 ```
 False
 ```
 ### Test 4
-#### Input
+**Input:**
 ```
 'yaaxbby'
 ```
-#### Output
+**Output:**
 ```
 True
 ```
 ### Test 5
-#### Input
+**Input:**
 ```
 'xaxxbby'
 ```
-#### Output
+**Output:**
 ```
 True
 ```
 ### Test 6
-#### Input
+**Input:**
 ```
 'xaxxbbyx'
 ```
-#### Output
+**Output:**
 ```
 False
 ```
 ### Test 7
-#### Input
+**Input:**
 ```
 'xxbxy'
 ```
-#### Output
+**Output:**
 ```
 True
 ```
 ### Test 8
-#### Input
+**Input:**
 ```
 'xxbx'
 ```
-#### Output
+**Output:**
 ```
 False
 ```
 ### Test 9
-#### Input
+**Input:**
 ```
 'bbb'
 ```
-#### Output
+**Output:**
 ```
 True
 ```
 ### Test 10
-#### Input
+**Input:**
 ```
 'bxbb'
 ```
-#### Output
+**Output:**
 ```
 False
 ```
 ### Test 11
-#### Input
+**Input:**
 ```
 'bxyb'
 ```
-#### Output
+**Output:**
 ```
 True
 ```
 ### Test 12
-#### Input
+**Input:**
 ```
 'xy'
 ```
-#### Output
+**Output:**
 ```
 True
 ```
 ### Test 13
-#### Input
+**Input:**
 ```
 'y'
 ```
-#### Output
+**Output:**
 ```
 True
 ```
 ### Test 14
-#### Input
+**Input:**
 ```
 'x'
 ```
-#### Output
+**Output:**
 ```
 False
 ```
 ### Test 15
-#### Input
+**Input:**
 ```
 ''
 ```
-#### Output
+**Output:**
 ```
 True
 ```
 ### Test 16
-#### Input
+**Input:**
 ```
 'yxyxyxyx'
 ```
-#### Output
+**Output:**
 ```
 False
 ```
 ### Test 17
-#### Input
+**Input:**
 ```
 'yxyxyxyxy'
 ```
-#### Output
+**Output:**
 ```
 True
 ```
 ### Test 18
-#### Input
+**Input:**
 ```
 '12xabxxydxyxyzz'
 ```
-#### Output
+**Output:**
 ```
 True
 ```

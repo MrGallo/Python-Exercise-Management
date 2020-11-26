@@ -14,92 +14,92 @@ This exercise was taken from [codingbat.com](https://codingbat.com/prob/p128796)
 
 ## Tests
 ### Test 1
-#### Input
+**Input:**
 ```
 'Chocolate'
 4
 ```
-#### Output
+**Output:**
 ```
 'ChocChoChC'
 ```
 ### Test 2
-#### Input
+**Input:**
 ```
 'Chocolate'
 3
 ```
-#### Output
+**Output:**
 ```
 'ChoChC'
 ```
 ### Test 3
-#### Input
+**Input:**
 ```
 'Ice Cream'
 2
 ```
-#### Output
+**Output:**
 ```
 'IcI'
 ```
 ### Test 4
-#### Input
+**Input:**
 ```
 'Ice Cream'
 1
 ```
-#### Output
+**Output:**
 ```
 'I'
 ```
 ### Test 5
-#### Input
+**Input:**
 ```
 'Ice Cream'
 0
 ```
-#### Output
+**Output:**
 ```
 ''
 ```
 ### Test 6
-#### Input
+**Input:**
 ```
 'xyz'
 3
 ```
-#### Output
+**Output:**
 ```
 'xyzxyx'
 ```
 ### Test 7
-#### Input
+**Input:**
 ```
 ''
 0
 ```
-#### Output
+**Output:**
 ```
 ''
 ```
 ### Test 8
-#### Input
+**Input:**
 ```
 'Java'
 4
 ```
-#### Output
+**Output:**
 ```
 'JavaJavJaJ'
 ```
 ### Test 9
-#### Input
+**Input:**
 ```
 'Java'
 1
 ```
-#### Output
+**Output:**
 ```
 'J'
 ```

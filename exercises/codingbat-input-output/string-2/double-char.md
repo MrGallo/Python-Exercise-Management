@@ -14,83 +14,83 @@ This exercise was taken from [codingbat.com](https://codingbat.com/prob/p165312)
 
 ## Tests
 ### Test 1
-#### Input
+**Input:**
 ```
 'The'
 ```
-#### Output
+**Output:**
 ```
 'TThhee'
 ```
 ### Test 2
-#### Input
+**Input:**
 ```
 'AAbb'
 ```
-#### Output
+**Output:**
 ```
 'AAAAbbbb'
 ```
 ### Test 3
-#### Input
+**Input:**
 ```
 'Hi-There'
 ```
-#### Output
+**Output:**
 ```
 'HHii--TThheerree'
 ```
 ### Test 4
-#### Input
+**Input:**
 ```
 'Word!'
 ```
-#### Output
+**Output:**
 ```
 'WWoorrdd!!'
 ```
 ### Test 5
-#### Input
+**Input:**
 ```
 '!!'
 ```
-#### Output
+**Output:**
 ```
 '!!!!'
 ```
 ### Test 6
-#### Input
+**Input:**
 ```
 ''
 ```
-#### Output
+**Output:**
 ```
 ''
 ```
 ### Test 7
-#### Input
+**Input:**
 ```
 'a'
 ```
-#### Output
+**Output:**
 ```
 'aa'
 ```
 ### Test 8
-#### Input
+**Input:**
 ```
 '.'
 ```
-#### Output
+**Output:**
 ```
 '..'
 ```
 ### Test 9
-#### Input
+**Input:**
 ```
 'aa'
 ```
-#### Output
+**Output:**
 ```
 'aaaa'
 ```

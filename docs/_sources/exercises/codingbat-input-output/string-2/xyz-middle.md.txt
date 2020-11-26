@@ -14,191 +14,191 @@ This exercise was taken from [codingbat.com](https://codingbat.com/prob/p159772)
 
 ## Tests
 ### Test 1
-#### Input
+**Input:**
 ```
 'AAxyzBB'
 ```
-#### Output
+**Output:**
 ```
 True
 ```
 ### Test 2
-#### Input
+**Input:**
 ```
 'AxyzBB'
 ```
-#### Output
+**Output:**
 ```
 True
 ```
 ### Test 3
-#### Input
+**Input:**
 ```
 'AxyzBBB'
 ```
-#### Output
+**Output:**
 ```
 False
 ```
 ### Test 4
-#### Input
+**Input:**
 ```
 'AxyzBBBB'
 ```
-#### Output
+**Output:**
 ```
 False
 ```
 ### Test 5
-#### Input
+**Input:**
 ```
 'AAAxyzB'
 ```
-#### Output
+**Output:**
 ```
 False
 ```
 ### Test 6
-#### Input
+**Input:**
 ```
 'AAAxyzBB'
 ```
-#### Output
+**Output:**
 ```
 True
 ```
 ### Test 7
-#### Input
+**Input:**
 ```
 'AAAAxyzBB'
 ```
-#### Output
+**Output:**
 ```
 False
 ```
 ### Test 8
-#### Input
+**Input:**
 ```
 'AAAAAxyzBBB'
 ```
-#### Output
+**Output:**
 ```
 False
 ```
 ### Test 9
-#### Input
+**Input:**
 ```
 '1x345xyz12x4'
 ```
-#### Output
+**Output:**
 ```
 True
 ```
 ### Test 10
-#### Input
+**Input:**
 ```
 'xyzAxyzBBB'
 ```
-#### Output
+**Output:**
 ```
 True
 ```
 ### Test 11
-#### Input
+**Input:**
 ```
 'xyzAxyzBxyz'
 ```
-#### Output
+**Output:**
 ```
 True
 ```
 ### Test 12
-#### Input
+**Input:**
 ```
 'xyzxyzAxyzBxyzxyz'
 ```
-#### Output
+**Output:**
 ```
 True
 ```
 ### Test 13
-#### Input
+**Input:**
 ```
 'xyzxyzxyzBxyzxyz'
 ```
-#### Output
+**Output:**
 ```
 True
 ```
 ### Test 14
-#### Input
+**Input:**
 ```
 'xyzxyzAxyzxyzxyz'
 ```
-#### Output
+**Output:**
 ```
 True
 ```
 ### Test 15
-#### Input
+**Input:**
 ```
 'xyzxyzAxyzxyzxy'
 ```
-#### Output
+**Output:**
 ```
 False
 ```
 ### Test 16
-#### Input
+**Input:**
 ```
 'AxyzxyzBB'
 ```
-#### Output
+**Output:**
 ```
 False
 ```
 ### Test 17
-#### Input
+**Input:**
 ```
 ''
 ```
-#### Output
+**Output:**
 ```
 False
 ```
 ### Test 18
-#### Input
+**Input:**
 ```
 'x'
 ```
-#### Output
+**Output:**
 ```
 False
 ```
 ### Test 19
-#### Input
+**Input:**
 ```
 'xy'
 ```
-#### Output
+**Output:**
 ```
 False
 ```
 ### Test 20
-#### Input
+**Input:**
 ```
 'xyz'
 ```
-#### Output
+**Output:**
 ```
 True
 ```
 ### Test 21
-#### Input
+**Input:**
 ```
 'xyzz'
 ```
-#### Output
+**Output:**
 ```
 True
 ```

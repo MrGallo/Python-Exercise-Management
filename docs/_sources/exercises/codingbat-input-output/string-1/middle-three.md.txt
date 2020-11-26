@@ -14,65 +14,65 @@ This exercise was taken from [codingbat.com](https://codingbat.com/prob/p115863)
 
 ## Tests
 ### Test 1
-#### Input
+**Input:**
 ```
 'Candy'
 ```
-#### Output
+**Output:**
 ```
 'and'
 ```
 ### Test 2
-#### Input
+**Input:**
 ```
 'and'
 ```
-#### Output
+**Output:**
 ```
 'and'
 ```
 ### Test 3
-#### Input
+**Input:**
 ```
 'solving'
 ```
-#### Output
+**Output:**
 ```
 'lvi'
 ```
 ### Test 4
-#### Input
+**Input:**
 ```
 'Hi yet Hi'
 ```
-#### Output
+**Output:**
 ```
 'yet'
 ```
 ### Test 5
-#### Input
+**Input:**
 ```
 'java yet java'
 ```
-#### Output
+**Output:**
 ```
 'yet'
 ```
 ### Test 6
-#### Input
+**Input:**
 ```
 'Chocolate'
 ```
-#### Output
+**Output:**
 ```
 'col'
 ```
 ### Test 7
-#### Input
+**Input:**
 ```
 'XabcxyzabcX'
 ```
-#### Output
+**Output:**
 ```
 'xyz'
 ```

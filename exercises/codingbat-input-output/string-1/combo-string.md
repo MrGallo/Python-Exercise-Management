@@ -14,112 +14,112 @@ This exercise was taken from [codingbat.com](https://codingbat.com/prob/p168564)
 
 ## Tests
 ### Test 1
-#### Input
+**Input:**
 ```
 'Hello'
 'hi'
 ```
-#### Output
+**Output:**
 ```
 'hiHellohi'
 ```
 ### Test 2
-#### Input
+**Input:**
 ```
 'hi'
 'Hello'
 ```
-#### Output
+**Output:**
 ```
 'hiHellohi'
 ```
 ### Test 3
-#### Input
+**Input:**
 ```
 'aaa'
 'b'
 ```
-#### Output
+**Output:**
 ```
 'baaab'
 ```
 ### Test 4
-#### Input
+**Input:**
 ```
 'b'
 'aaa'
 ```
-#### Output
+**Output:**
 ```
 'baaab'
 ```
 ### Test 5
-#### Input
+**Input:**
 ```
 'aaa'
 ''
 ```
-#### Output
+**Output:**
 ```
 'aaa'
 ```
 ### Test 6
-#### Input
+**Input:**
 ```
 ''
 'bb'
 ```
-#### Output
+**Output:**
 ```
 'bb'
 ```
 ### Test 7
-#### Input
+**Input:**
 ```
 'aaa'
 '1234'
 ```
-#### Output
+**Output:**
 ```
 'aaa1234aaa'
 ```
 ### Test 8
-#### Input
+**Input:**
 ```
 'aaa'
 'bb'
 ```
-#### Output
+**Output:**
 ```
 'bbaaabb'
 ```
 ### Test 9
-#### Input
+**Input:**
 ```
 'a'
 'bb'
 ```
-#### Output
+**Output:**
 ```
 'abba'
 ```
 ### Test 10
-#### Input
+**Input:**
 ```
 'bb'
 'a'
 ```
-#### Output
+**Output:**
 ```
 'abba'
 ```
 ### Test 11
-#### Input
+**Input:**
 ```
 'xyz'
 'ab'
 ```
-#### Output
+**Output:**
 ```
 'abxyzab'
 ```

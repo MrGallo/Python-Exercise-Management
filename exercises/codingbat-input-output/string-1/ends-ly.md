@@ -14,83 +14,83 @@ This exercise was taken from [codingbat.com](https://codingbat.com/prob/p103895)
 
 ## Tests
 ### Test 1
-#### Input
+**Input:**
 ```
 'oddly'
 ```
-#### Output
+**Output:**
 ```
 True
 ```
 ### Test 2
-#### Input
+**Input:**
 ```
 'y'
 ```
-#### Output
+**Output:**
 ```
 False
 ```
 ### Test 3
-#### Input
+**Input:**
 ```
 'oddy'
 ```
-#### Output
+**Output:**
 ```
 False
 ```
 ### Test 4
-#### Input
+**Input:**
 ```
 'oddl'
 ```
-#### Output
+**Output:**
 ```
 False
 ```
 ### Test 5
-#### Input
+**Input:**
 ```
 'olydd'
 ```
-#### Output
+**Output:**
 ```
 False
 ```
 ### Test 6
-#### Input
+**Input:**
 ```
 'ly'
 ```
-#### Output
+**Output:**
 ```
 True
 ```
 ### Test 7
-#### Input
+**Input:**
 ```
 ''
 ```
-#### Output
+**Output:**
 ```
 False
 ```
 ### Test 8
-#### Input
+**Input:**
 ```
 'falsey'
 ```
-#### Output
+**Output:**
 ```
 False
 ```
 ### Test 9
-#### Input
+**Input:**
 ```
 'evenly'
 ```
-#### Output
+**Output:**
 ```
 True
 ```

@@ -14,101 +14,101 @@ This exercise was taken from [codingbat.com](https://codingbat.com/prob/p199216)
 
 ## Tests
 ### Test 1
-#### Input
+**Input:**
 ```
 'redxx'
 ```
-#### Output
+**Output:**
 ```
 'red'
 ```
 ### Test 2
-#### Input
+**Input:**
 ```
 'xxred'
 ```
-#### Output
+**Output:**
 ```
 ''
 ```
 ### Test 3
-#### Input
+**Input:**
 ```
 'blueTimes'
 ```
-#### Output
+**Output:**
 ```
 'blue'
 ```
 ### Test 4
-#### Input
+**Input:**
 ```
 'NoColor'
 ```
-#### Output
+**Output:**
 ```
 ''
 ```
 ### Test 5
-#### Input
+**Input:**
 ```
 'red'
 ```
-#### Output
+**Output:**
 ```
 'red'
 ```
 ### Test 6
-#### Input
+**Input:**
 ```
 're'
 ```
-#### Output
+**Output:**
 ```
 ''
 ```
 ### Test 7
-#### Input
+**Input:**
 ```
 'blu'
 ```
-#### Output
+**Output:**
 ```
 ''
 ```
 ### Test 8
-#### Input
+**Input:**
 ```
 'blue'
 ```
-#### Output
+**Output:**
 ```
 'blue'
 ```
 ### Test 9
-#### Input
+**Input:**
 ```
 'a'
 ```
-#### Output
+**Output:**
 ```
 ''
 ```
 ### Test 10
-#### Input
+**Input:**
 ```
 ''
 ```
-#### Output
+**Output:**
 ```
 ''
 ```
 ### Test 11
-#### Input
+**Input:**
 ```
 'xyzred'
 ```
-#### Output
+**Output:**
 ```
 ''
 ```

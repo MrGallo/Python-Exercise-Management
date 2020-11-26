@@ -14,128 +14,128 @@ This exercise was taken from [codingbat.com](https://codingbat.com/prob/p123614)
 
 ## Tests
 ### Test 1
-#### Input
+**Input:**
 ```
 'aaacodebbb'
 ```
-#### Output
+**Output:**
 ```
 1
 ```
 ### Test 2
-#### Input
+**Input:**
 ```
 'codexxcode'
 ```
-#### Output
+**Output:**
 ```
 2
 ```
 ### Test 3
-#### Input
+**Input:**
 ```
 'cozexxcope'
 ```
-#### Output
+**Output:**
 ```
 2
 ```
 ### Test 4
-#### Input
+**Input:**
 ```
 'cozfxxcope'
 ```
-#### Output
+**Output:**
 ```
 1
 ```
 ### Test 5
-#### Input
+**Input:**
 ```
 'xxcozeyycop'
 ```
-#### Output
+**Output:**
 ```
 1
 ```
 ### Test 6
-#### Input
+**Input:**
 ```
 'cozcop'
 ```
-#### Output
+**Output:**
 ```
 0
 ```
 ### Test 7
-#### Input
+**Input:**
 ```
 'abcxyz'
 ```
-#### Output
+**Output:**
 ```
 0
 ```
 ### Test 8
-#### Input
+**Input:**
 ```
 'code'
 ```
-#### Output
+**Output:**
 ```
 1
 ```
 ### Test 9
-#### Input
+**Input:**
 ```
 'ode'
 ```
-#### Output
+**Output:**
 ```
 0
 ```
 ### Test 10
-#### Input
+**Input:**
 ```
 'c'
 ```
-#### Output
+**Output:**
 ```
 0
 ```
 ### Test 11
-#### Input
+**Input:**
 ```
 ''
 ```
-#### Output
+**Output:**
 ```
 0
 ```
 ### Test 12
-#### Input
+**Input:**
 ```
 'AAcodeBBcoleCCccoreDD'
 ```
-#### Output
+**Output:**
 ```
 3
 ```
 ### Test 13
-#### Input
+**Input:**
 ```
 'AAcodeBBcoleCCccorfDD'
 ```
-#### Output
+**Output:**
 ```
 2
 ```
 ### Test 14
-#### Input
+**Input:**
 ```
 'coAcodeBcoleccoreDD'
 ```
-#### Output
+**Output:**
 ```
 3
 ```

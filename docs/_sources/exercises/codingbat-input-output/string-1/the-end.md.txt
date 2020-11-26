@@ -14,102 +14,102 @@ This exercise was taken from [codingbat.com](https://codingbat.com/prob/p162477)
 
 ## Tests
 ### Test 1
-#### Input
+**Input:**
 ```
 'Hello'
 True
 ```
-#### Output
+**Output:**
 ```
 'H'
 ```
 ### Test 2
-#### Input
+**Input:**
 ```
 'Hello'
 False
 ```
-#### Output
+**Output:**
 ```
 'o'
 ```
 ### Test 3
-#### Input
+**Input:**
 ```
 'oh'
 True
 ```
-#### Output
+**Output:**
 ```
 'o'
 ```
 ### Test 4
-#### Input
+**Input:**
 ```
 'oh'
 False
 ```
-#### Output
+**Output:**
 ```
 'h'
 ```
 ### Test 5
-#### Input
+**Input:**
 ```
 'x'
 True
 ```
-#### Output
+**Output:**
 ```
 'x'
 ```
 ### Test 6
-#### Input
+**Input:**
 ```
 'x'
 False
 ```
-#### Output
+**Output:**
 ```
 'x'
 ```
 ### Test 7
-#### Input
+**Input:**
 ```
 'java'
 True
 ```
-#### Output
+**Output:**
 ```
 'j'
 ```
 ### Test 8
-#### Input
+**Input:**
 ```
 'chocolate'
 False
 ```
-#### Output
+**Output:**
 ```
 'e'
 ```
 ### Test 9
-#### Input
+**Input:**
 ```
 '1234'
 True
 ```
-#### Output
+**Output:**
 ```
 '1'
 ```
 ### Test 10
-#### Input
+**Input:**
 ```
 'code'
 False
 ```
-#### Output
+**Output:**
 ```
 'e'
 ```

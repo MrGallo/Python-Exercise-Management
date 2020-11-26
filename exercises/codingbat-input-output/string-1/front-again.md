@@ -14,101 +14,101 @@ This exercise was taken from [codingbat.com](https://codingbat.com/prob/p196652)
 
 ## Tests
 ### Test 1
-#### Input
+**Input:**
 ```
 'edited'
 ```
-#### Output
+**Output:**
 ```
 True
 ```
 ### Test 2
-#### Input
+**Input:**
 ```
 'edit'
 ```
-#### Output
+**Output:**
 ```
 False
 ```
 ### Test 3
-#### Input
+**Input:**
 ```
 'ed'
 ```
-#### Output
+**Output:**
 ```
 True
 ```
 ### Test 4
-#### Input
+**Input:**
 ```
 'jj'
 ```
-#### Output
+**Output:**
 ```
 True
 ```
 ### Test 5
-#### Input
+**Input:**
 ```
 'jjj'
 ```
-#### Output
+**Output:**
 ```
 True
 ```
 ### Test 6
-#### Input
+**Input:**
 ```
 'jjjj'
 ```
-#### Output
+**Output:**
 ```
 True
 ```
 ### Test 7
-#### Input
+**Input:**
 ```
 'jjjk'
 ```
-#### Output
+**Output:**
 ```
 False
 ```
 ### Test 8
-#### Input
+**Input:**
 ```
 'x'
 ```
-#### Output
+**Output:**
 ```
 False
 ```
 ### Test 9
-#### Input
+**Input:**
 ```
 ''
 ```
-#### Output
+**Output:**
 ```
 False
 ```
 ### Test 10
-#### Input
+**Input:**
 ```
 'java'
 ```
-#### Output
+**Output:**
 ```
 False
 ```
 ### Test 11
-#### Input
+**Input:**
 ```
 'javaja'
 ```
-#### Output
+**Output:**
 ```
 True
 ```

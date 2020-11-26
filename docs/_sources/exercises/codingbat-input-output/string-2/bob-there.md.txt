@@ -14,119 +14,119 @@ This exercise was taken from [codingbat.com](https://codingbat.com/prob/p175762)
 
 ## Tests
 ### Test 1
-#### Input
+**Input:**
 ```
 'abcbob'
 ```
-#### Output
+**Output:**
 ```
 True
 ```
 ### Test 2
-#### Input
+**Input:**
 ```
 'b9b'
 ```
-#### Output
+**Output:**
 ```
 True
 ```
 ### Test 3
-#### Input
+**Input:**
 ```
 'bac'
 ```
-#### Output
+**Output:**
 ```
 False
 ```
 ### Test 4
-#### Input
+**Input:**
 ```
 'bbb'
 ```
-#### Output
+**Output:**
 ```
 True
 ```
 ### Test 5
-#### Input
+**Input:**
 ```
 'abcdefb'
 ```
-#### Output
+**Output:**
 ```
 False
 ```
 ### Test 6
-#### Input
+**Input:**
 ```
 '123abcbcdbabxyz'
 ```
-#### Output
+**Output:**
 ```
 True
 ```
 ### Test 7
-#### Input
+**Input:**
 ```
 'b12'
 ```
-#### Output
+**Output:**
 ```
 False
 ```
 ### Test 8
-#### Input
+**Input:**
 ```
 'b1b'
 ```
-#### Output
+**Output:**
 ```
 True
 ```
 ### Test 9
-#### Input
+**Input:**
 ```
 'b12b1b'
 ```
-#### Output
+**Output:**
 ```
 True
 ```
 ### Test 10
-#### Input
+**Input:**
 ```
 'bbc'
 ```
-#### Output
+**Output:**
 ```
 False
 ```
 ### Test 11
-#### Input
+**Input:**
 ```
 'bbb'
 ```
-#### Output
+**Output:**
 ```
 True
 ```
 ### Test 12
-#### Input
+**Input:**
 ```
 'bb'
 ```
-#### Output
+**Output:**
 ```
 False
 ```
 ### Test 13
-#### Input
+**Input:**
 ```
 'b'
 ```
-#### Output
+**Output:**
 ```
 False
 ```
