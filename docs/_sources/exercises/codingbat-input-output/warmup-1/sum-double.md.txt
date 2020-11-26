@@ -3,7 +3,7 @@
 
 
 
-Given two int values, return their sum. Unless the two values are the same, then return double their sum.
+Get two int values from the user, output their sum. Unless the two values are the same, then output double their sum.
 
 This exercise was taken from [codingbat.com](https://codingbat.com/prob/p154485) and has been adapted for the Python language. There are many great programming exercises there, but the majority are created for Java.
 
@@ -12,7 +12,6 @@ This exercise was taken from [codingbat.com](https://codingbat.com/prob/p154485)
 
 
 
-## Tests
 ### Test 1
 **Input:**
 ```

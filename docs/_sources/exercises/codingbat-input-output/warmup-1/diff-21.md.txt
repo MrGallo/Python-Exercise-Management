@@ -3,7 +3,7 @@
 
 
 
-Given an int n, return the absolute difference between n and 21, except return double the absolute difference if n is over 21.
+Get an integer from the user. Output the absolute difference between the integer and `21`, except output double the absolute difference if the integer is greater than 21. Use the `abs()` function to get the absolute value. For a greater challenge, you can find the absolute value using if statements.
 
 This exercise was taken from [codingbat.com](https://codingbat.com/prob/p116624) and has been adapted for the Python language. There are many great programming exercises there, but the majority are created for Java.
 
@@ -12,7 +12,6 @@ This exercise was taken from [codingbat.com](https://codingbat.com/prob/p116624)
 
 
 
-## Tests
 ### Test 1
 **Input:**
 ```

@@ -12,7 +12,6 @@ This exercise was taken from [codingbat.com](https://codingbat.com/prob/p199216)
 
 
 
-## Tests
 ### Test 1
 **Input:**
 ```
