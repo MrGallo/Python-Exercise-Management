@@ -123,8 +123,8 @@ def write_exercise(exercise: Exercise, path: str) -> None:
         for i, (arg_list, result) in enumerate(io_tests, 1):
             inputs = '\n'.join(map(repr, arg_list))
             tests_content += f"### Test {i}\n"
-            tests_content += f"#### Input\n```\n{inputs}\n```\n"
-            tests_content += f"#### Output\n```\n{repr(result)}\n```\n"
+            tests_content += f"**Input:**\n```\n{inputs}\n```\n"
+            tests_content += f"**Output:**\n```\n{repr(result)}\n```\n"
     else:
         tests_content = f"```python\n{tests}\n```"
 
