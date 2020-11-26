@@ -103,6 +103,7 @@
     },
     "Codingbat": {
         "chapter_list": [
+            "Warmup-1",
             "String-1",
             "String-2"
         ],
@@ -595,10 +596,292 @@
                 "tests": "from main import word_ends\n\n\ndef test_word_ends_1():\n    assert word_ends('abcXY123XYijk', 'XY') == 'c13i'\n\n\ndef test_word_ends_2():\n    assert word_ends('XY123XY', 'XY') == '13'\n\n\ndef test_word_ends_3():\n    assert word_ends('XY1XY', 'XY') == '11'\n\n\ndef test_word_ends_4():\n    assert word_ends('XYXY', 'XY') == 'XY'\n\n\ndef test_word_ends_5():\n    assert word_ends('XY', 'XY') == ''\n\n\ndef test_word_ends_6():\n    assert word_ends('Hi', 'XY') == ''\n\n\ndef test_word_ends_7():\n    assert word_ends('', 'XY') == ''\n\n\ndef test_word_ends_8():\n    assert word_ends('abc1xyz1i1j', '1') == 'cxziij'\n\n\ndef test_word_ends_9():\n    assert word_ends('abc1xyz1', '1') == 'cxz'\n\n\ndef test_word_ends_10():\n    assert word_ends('abc1xyz11', '1') == 'cxz11'\n\n\ndef test_word_ends_11():\n    assert word_ends('abc1xyz1abc', 'abc') == '11'\n\n\ndef test_word_ends_12():\n    assert word_ends('abc1xyz1abc', 'b') == 'acac'\n\n\ndef test_word_ends_13():\n    assert word_ends('abc1abc1abc', 'abc') == '1111'\n\n\n",
                 "solution": ""
             }
+        ],
+        "Warmup-1": [
+            {
+                "name": "sleep_in",
+                "topic": "",
+                "requirements": [],
+                "description": "The parameter weekday is true if it is a weekday, and the parameter vacation is true if we are on vacation. We sleep in if it is not a weekday or we're on vacation. Return true if we sleep in.\n\n```\nsleep_in(false, false) \u2192 true\nsleep_in(true, false) \u2192 false\nsleep_in(false, true) \u2192 true\n```\n\nThis exercise was taken from [codingbat.com](https://codingbat.com/prob/p187868) and has been adapted for the Python language. There are many great programming exercises there, but the majority are created for Java.",
+                "starter_code": "def sleep_in(weekday: bool, vacation: bool) -> bool:\n    pass\n\n\nresult = sleep_in(False, False)\nprint(result)\n",
+                "tests": "from main import sleep_in\n\n\ndef test_sleep_in_1():\n    assert sleep_in(False, False) == True\n\n\ndef test_sleep_in_2():\n    assert sleep_in(True, False) == False\n\n\ndef test_sleep_in_3():\n    assert sleep_in(False, True) == True\n\n\ndef test_sleep_in_4():\n    assert sleep_in(True, True) == True\n\n\n",
+                "solution": ""
+            },
+            {
+                "name": "monkey_trouble",
+                "topic": "",
+                "requirements": [],
+                "description": "We have two monkeys, a and b, and the parameters aSmile and bSmile indicate if each is smiling. We are in trouble if they are both smiling or if neither of them is smiling. Return true if we are in trouble.\n\n```\nmonkey_trouble(true, true) \u2192 true\nmonkey_trouble(false, false) \u2192 true\nmonkey_trouble(true, false) \u2192 false\n```\n\nThis exercise was taken from [codingbat.com](https://codingbat.com/prob/p181646) and has been adapted for the Python language. There are many great programming exercises there, but the majority are created for Java.",
+                "starter_code": "def monkey_trouble(a_smile: bool, b_smile: bool) -> bool:\n    pass\n\n\nresult = monkey_trouble(True, True)\nprint(result)\n",
+                "tests": "from main import monkey_trouble\n\n\ndef test_monkey_trouble_1():\n    assert monkey_trouble(True, True) == True\n\n\ndef test_monkey_trouble_2():\n    assert monkey_trouble(False, False) == True\n\n\ndef test_monkey_trouble_3():\n    assert monkey_trouble(True, False) == False\n\n\ndef test_monkey_trouble_4():\n    assert monkey_trouble(False, True) == False\n\n\n",
+                "solution": ""
+            },
+            {
+                "name": "sum_double",
+                "topic": "",
+                "requirements": [],
+                "description": "Given two int values, return their sum. Unless the two values are the same, then return double their sum.\n\n```\nsum_double(1, 2) \u2192 3\nsum_double(3, 2) \u2192 5\nsum_double(2, 2) \u2192 8\n```\n\nThis exercise was taken from [codingbat.com](https://codingbat.com/prob/p154485) and has been adapted for the Python language. There are many great programming exercises there, but the majority are created for Java.",
+                "starter_code": "def sum_double(a: int, b: int) -> int:\n    pass\n\n\nresult = sum_double(1, 2)\nprint(result)\n",
+                "tests": "from main import sum_double\n\n\ndef test_sum_double_1():\n    assert sum_double(1, 2) == 3\n\n\ndef test_sum_double_2():\n    assert sum_double(3, 2) == 5\n\n\ndef test_sum_double_3():\n    assert sum_double(2, 2) == 8\n\n\ndef test_sum_double_4():\n    assert sum_double(-1, 0) == -1\n\n\ndef test_sum_double_5():\n    assert sum_double(3, 3) == 12\n\n\ndef test_sum_double_6():\n    assert sum_double(0, 0) == 0\n\n\ndef test_sum_double_7():\n    assert sum_double(0, 1) == 1\n\n\ndef test_sum_double_8():\n    assert sum_double(3, 4) == 7\n\n\n",
+                "solution": ""
+            },
+            {
+                "name": "diff_21",
+                "topic": "",
+                "requirements": [],
+                "description": "Given an int n, return the absolute difference between n and 21, except return double the absolute difference if n is over 21.\n\n```\ndiff_21(19) \u2192 2\ndiff_21(10) \u2192 11\ndiff_21(21) \u2192 0\n```\n\nThis exercise was taken from [codingbat.com](https://codingbat.com/prob/p116624) and has been adapted for the Python language. There are many great programming exercises there, but the majority are created for Java.",
+                "starter_code": "def diff_21(n: int) -> int:\n    pass\n\n\nresult = diff_21(19)\nprint(result)\n",
+                "tests": "from main import diff_21\n\n\ndef test_diff_21_1():\n    assert diff_21(19) == 2\n\n\ndef test_diff_21_2():\n    assert diff_21(10) == 11\n\n\ndef test_diff_21_3():\n    assert diff_21(21) == 0\n\n\ndef test_diff_21_4():\n    assert diff_21(22) == 2\n\n\ndef test_diff_21_5():\n    assert diff_21(25) == 8\n\n\ndef test_diff_21_6():\n    assert diff_21(30) == 18\n\n\ndef test_diff_21_7():\n    assert diff_21(0) == 21\n\n\ndef test_diff_21_8():\n    assert diff_21(1) == 20\n\n\ndef test_diff_21_9():\n    assert diff_21(2) == 19\n\n\ndef test_diff_21_10():\n    assert diff_21(-1) == 22\n\n\ndef test_diff_21_11():\n    assert diff_21(-2) == 23\n\n\ndef test_diff_21_12():\n    assert diff_21(50) == 58\n\n\n",
+                "solution": ""
+            },
+            {
+                "name": "parrot_trouble",
+                "topic": "",
+                "requirements": [],
+                "description": "We have a loud talking parrot. The \"hour\" parameter is the current hour time in the range 0..23. We are in trouble if the parrot is talking and the hour is before 7 or after 20. Return true if we are in trouble.\n\n```\nparrot_trouble(true, 6) \u2192 true\nparrot_trouble(true, 7) \u2192 false\nparrot_trouble(false, 6) \u2192 false\n```\n\nThis exercise was taken from [codingbat.com](https://codingbat.com/prob/p140449) and has been adapted for the Python language. There are many great programming exercises there, but the majority are created for Java.",
+                "starter_code": "def parrot_trouble(talking: bool, hour: int) -> bool:\n    pass\n\n\nresult = parrot_trouble(True, 6)\nprint(result)\n",
+                "tests": "from main import parrot_trouble\n\n\ndef test_parrot_trouble_1():\n    assert parrot_trouble(True, 6) == True\n\n\ndef test_parrot_trouble_2():\n    assert parrot_trouble(True, 7) == False\n\n\ndef test_parrot_trouble_3():\n    assert parrot_trouble(False, 6) == False\n\n\ndef test_parrot_trouble_4():\n    assert parrot_trouble(True, 21) == True\n\n\ndef test_parrot_trouble_5():\n    assert parrot_trouble(False, 21) == False\n\n\ndef test_parrot_trouble_6():\n    assert parrot_trouble(False, 20) == False\n\n\ndef test_parrot_trouble_7():\n    assert parrot_trouble(True, 23) == True\n\n\ndef test_parrot_trouble_8():\n    assert parrot_trouble(False, 23) == False\n\n\ndef test_parrot_trouble_9():\n    assert parrot_trouble(True, 20) == False\n\n\ndef test_parrot_trouble_10():\n    assert parrot_trouble(False, 12) == False\n\n\n",
+                "solution": ""
+            },
+            {
+                "name": "makes_10",
+                "topic": "",
+                "requirements": [],
+                "description": "Given 2 ints, a and b, return true if one if them is 10 or if their sum is 10.\n\n```\nmakes_10(9, 10) \u2192 true\nmakes_10(9, 9) \u2192 false\nmakes_10(1, 9) \u2192 true\n```\n\nThis exercise was taken from [codingbat.com](https://codingbat.com/prob/p182873) and has been adapted for the Python language. There are many great programming exercises there, but the majority are created for Java.",
+                "starter_code": "def makes_10(a: int, b: int) -> bool:\n    pass\n\n\nresult = makes_10(9, 10)\nprint(result)\n",
+                "tests": "from main import makes_10\n\n\ndef test_makes_10_1():\n    assert makes_10(9, 10) == True\n\n\ndef test_makes_10_2():\n    assert makes_10(9, 9) == False\n\n\ndef test_makes_10_3():\n    assert makes_10(1, 9) == True\n\n\ndef test_makes_10_4():\n    assert makes_10(10, 1) == True\n\n\ndef test_makes_10_5():\n    assert makes_10(10, 10) == True\n\n\ndef test_makes_10_6():\n    assert makes_10(8, 2) == True\n\n\ndef test_makes_10_7():\n    assert makes_10(8, 3) == False\n\n\ndef test_makes_10_8():\n    assert makes_10(10, 42) == True\n\n\ndef test_makes_10_9():\n    assert makes_10(12, -2) == True\n\n\n",
+                "solution": ""
+            },
+            {
+                "name": "near_hundred",
+                "topic": "",
+                "requirements": [],
+                "description": "Given an int n, return true if it is within 10 of 100 or 200. Note: Math.abs(num) computes the absolute value of a number.\n\n```\nnear_hundred(93) \u2192 true\nnear_hundred(90) \u2192 true\nnear_hundred(89) \u2192 false\n```\n\nThis exercise was taken from [codingbat.com](https://codingbat.com/prob/p184004) and has been adapted for the Python language. There are many great programming exercises there, but the majority are created for Java.",
+                "starter_code": "def near_hundred(n: int) -> bool:\n    pass\n\n\nresult = near_hundred(93)\nprint(result)\n",
+                "tests": "from main import near_hundred\n\n\ndef test_near_hundred_1():\n    assert near_hundred(93) == True\n\n\ndef test_near_hundred_2():\n    assert near_hundred(90) == True\n\n\ndef test_near_hundred_3():\n    assert near_hundred(89) == False\n\n\ndef test_near_hundred_4():\n    assert near_hundred(110) == True\n\n\ndef test_near_hundred_5():\n    assert near_hundred(111) == False\n\n\ndef test_near_hundred_6():\n    assert near_hundred(121) == False\n\n\ndef test_near_hundred_7():\n    assert near_hundred(-101) == False\n\n\ndef test_near_hundred_8():\n    assert near_hundred(-209) == False\n\n\ndef test_near_hundred_9():\n    assert near_hundred(190) == True\n\n\ndef test_near_hundred_10():\n    assert near_hundred(209) == True\n\n\ndef test_near_hundred_11():\n    assert near_hundred(0) == False\n\n\ndef test_near_hundred_12():\n    assert near_hundred(5) == False\n\n\ndef test_near_hundred_13():\n    assert near_hundred(-50) == False\n\n\ndef test_near_hundred_14():\n    assert near_hundred(191) == True\n\n\ndef test_near_hundred_15():\n    assert near_hundred(189) == False\n\n\ndef test_near_hundred_16():\n    assert near_hundred(200) == True\n\n\ndef test_near_hundred_17():\n    assert near_hundred(210) == True\n\n\ndef test_near_hundred_18():\n    assert near_hundred(211) == False\n\n\ndef test_near_hundred_19():\n    assert near_hundred(290) == False\n\n\n",
+                "solution": ""
+            },
+            {
+                "name": "pos_neg",
+                "topic": "",
+                "requirements": [],
+                "description": "Given 2 int values, return true if one is negative and one is positive. Except if the parameter \"negative\" is true, then return true only if both are negative.\n\n```\npos_neg(1, -1, false) \u2192 true\npos_neg(-1, 1, false) \u2192 true\npos_neg(-4, -5, true) \u2192 true\n```\n\nThis exercise was taken from [codingbat.com](https://codingbat.com/prob/p159227) and has been adapted for the Python language. There are many great programming exercises there, but the majority are created for Java.",
+                "starter_code": "def pos_neg(a: int, b: int, negative: bool) -> bool:\n    pass\n\n\nresult = pos_neg(1, -1, False)\nprint(result)\n",
+                "tests": "from main import pos_neg\n\n\ndef test_pos_neg_1():\n    assert pos_neg(1, -1, False) == True\n\n\ndef test_pos_neg_2():\n    assert pos_neg(-1, 1, False) == True\n\n\ndef test_pos_neg_3():\n    assert pos_neg(-4, -5, True) == True\n\n\ndef test_pos_neg_4():\n    assert pos_neg(-4, -5, False) == False\n\n\ndef test_pos_neg_5():\n    assert pos_neg(-4, 5, False) == True\n\n\ndef test_pos_neg_6():\n    assert pos_neg(-4, 5, True) == False\n\n\ndef test_pos_neg_7():\n    assert pos_neg(1, 1, False) == False\n\n\ndef test_pos_neg_8():\n    assert pos_neg(-1, -1, False) == False\n\n\ndef test_pos_neg_9():\n    assert pos_neg(1, -1, True) == False\n\n\ndef test_pos_neg_10():\n    assert pos_neg(-1, 1, True) == False\n\n\ndef test_pos_neg_11():\n    assert pos_neg(1, 1, True) == False\n\n\ndef test_pos_neg_12():\n    assert pos_neg(-1, -1, True) == True\n\n\ndef test_pos_neg_13():\n    assert pos_neg(5, -5, False) == True\n\n\ndef test_pos_neg_14():\n    assert pos_neg(-6, 6, False) == True\n\n\ndef test_pos_neg_15():\n    assert pos_neg(-5, -6, False) == False\n\n\ndef test_pos_neg_16():\n    assert pos_neg(-2, -1, False) == False\n\n\ndef test_pos_neg_17():\n    assert pos_neg(1, 2, False) == False\n\n\ndef test_pos_neg_18():\n    assert pos_neg(-5, 6, True) == False\n\n\ndef test_pos_neg_19():\n    assert pos_neg(-5, -5, True) == True\n\n\n",
+                "solution": ""
+            },
+            {
+                "name": "not_string",
+                "topic": "",
+                "requirements": [],
+                "description": "Given a string, return a new string where \"not \" has been added to the front. However, if the string already begins with \"not\", return the string unchanged. Note: use .equals() to compare 2 strings.\n\n```\nnot_string(\"candy\") \u2192 \"not candy\"\nnot_string(\"x\") \u2192 \"not x\"\nnot_string(\"not bad\") \u2192 \"not bad\"\n```\n\nThis exercise was taken from [codingbat.com](https://codingbat.com/prob/p191914) and has been adapted for the Python language. There are many great programming exercises there, but the majority are created for Java.",
+                "starter_code": "def not_string(string: str) -> str:\n    pass\n\n\nresult = not_string('candy')\nprint(result)\n",
+                "tests": "from main import not_string\n\n\ndef test_not_string_1():\n    assert not_string('candy') == 'not candy'\n\n\ndef test_not_string_2():\n    assert not_string('x') == 'not x'\n\n\ndef test_not_string_3():\n    assert not_string('not bad') == 'not bad'\n\n\ndef test_not_string_4():\n    assert not_string('bad') == 'not bad'\n\n\ndef test_not_string_5():\n    assert not_string('not') == 'not'\n\n\ndef test_not_string_6():\n    assert not_string('is not') == 'not is not'\n\n\ndef test_not_string_7():\n    assert not_string('no') == 'not no'\n\n\n",
+                "solution": ""
+            },
+            {
+                "name": "missing_char",
+                "topic": "",
+                "requirements": [],
+                "description": "Given a non-empty string and an int n, return a new string where the char at index n has been removed. The value of n will be a valid index of a char in the original string (i.e. n will be in the range 0..str.length()-1 inclusive).\n\n```\nmissing_char(\"kitten\", 1) \u2192 \"ktten\"\nmissing_char(\"kitten\", 0) \u2192 \"itten\"\nmissing_char(\"kitten\", 4) \u2192 \"kittn\"\n```\n\nThis exercise was taken from [codingbat.com](https://codingbat.com/prob/p190570) and has been adapted for the Python language. There are many great programming exercises there, but the majority are created for Java.",
+                "starter_code": "def missing_char(string: str, n: int) -> str:\n    pass\n\n\nresult = missing_char('kitten', 1)\nprint(result)\n",
+                "tests": "from main import missing_char\n\n\ndef test_missing_char_1():\n    assert missing_char('kitten', 1) == 'ktten'\n\n\ndef test_missing_char_2():\n    assert missing_char('kitten', 0) == 'itten'\n\n\ndef test_missing_char_3():\n    assert missing_char('kitten', 4) == 'kittn'\n\n\ndef test_missing_char_4():\n    assert missing_char('Hi', 0) == 'i'\n\n\ndef test_missing_char_5():\n    assert missing_char('Hi', 1) == 'H'\n\n\ndef test_missing_char_6():\n    assert missing_char('code', 0) == 'ode'\n\n\ndef test_missing_char_7():\n    assert missing_char('code', 1) == 'cde'\n\n\ndef test_missing_char_8():\n    assert missing_char('code', 2) == 'coe'\n\n\ndef test_missing_char_9():\n    assert missing_char('code', 3) == 'cod'\n\n\ndef test_missing_char_10():\n    assert missing_char('chocolate', 8) == 'chocolat'\n\n\n",
+                "solution": ""
+            },
+            {
+                "name": "front_back",
+                "topic": "",
+                "requirements": [],
+                "description": "Given a string, return a new string where the first and last chars have been exchanged.\n\n```\nfront_back(\"code\") \u2192 \"eodc\"\nfront_back(\"a\") \u2192 \"a\"\nfront_back(\"ab\") \u2192 \"ba\"\n```\n\nThis exercise was taken from [codingbat.com](https://codingbat.com/prob/p123384) and has been adapted for the Python language. There are many great programming exercises there, but the majority are created for Java.",
+                "starter_code": "def front_back(string: str) -> str:\n    pass\n\n\nresult = front_back('code')\nprint(result)\n",
+                "tests": "from main import front_back\n\n\ndef test_front_back_1():\n    assert front_back('code') == 'eodc'\n\n\ndef test_front_back_2():\n    assert front_back('a') == 'a'\n\n\ndef test_front_back_3():\n    assert front_back('ab') == 'ba'\n\n\ndef test_front_back_4():\n    assert front_back('abc') == 'cba'\n\n\ndef test_front_back_5():\n    assert front_back('') == ''\n\n\ndef test_front_back_6():\n    assert front_back('Chocolate') == 'ehocolatC'\n\n\ndef test_front_back_7():\n    assert front_back('aavJ') == 'Java'\n\n\ndef test_front_back_8():\n    assert front_back('hello') == 'oellh'\n\n\n",
+                "solution": ""
+            },
+            {
+                "name": "front_3",
+                "topic": "",
+                "requirements": [],
+                "description": "Given a string, we'll say that the front is the first 3 chars of the string. If the string length is less than 3, the front is whatever is there. Return a new string which is 3 copies of the front.\n\n```\nfront_3(\"Java\") \u2192 \"JavJavJav\"\nfront_3(\"Chocolate\") \u2192 \"ChoChoCho\"\nfront_3(\"abc\") \u2192 \"abcabcabc\"\n```\n\nThis exercise was taken from [codingbat.com](https://codingbat.com/prob/p136351) and has been adapted for the Python language. There are many great programming exercises there, but the majority are created for Java.",
+                "starter_code": "def front_3(string: str) -> str:\n    pass\n\n\nresult = front_3('Java')\nprint(result)\n",
+                "tests": "from main import front_3\n\n\ndef test_front_3_1():\n    assert front_3('Java') == 'JavJavJav'\n\n\ndef test_front_3_2():\n    assert front_3('Chocolate') == 'ChoChoCho'\n\n\ndef test_front_3_3():\n    assert front_3('abc') == 'abcabcabc'\n\n\ndef test_front_3_4():\n    assert front_3('abcXYZ') == 'abcabcabc'\n\n\ndef test_front_3_5():\n    assert front_3('ab') == 'ababab'\n\n\ndef test_front_3_6():\n    assert front_3('a') == 'aaa'\n\n\ndef test_front_3_7():\n    assert front_3('') == ''\n\n\n",
+                "solution": ""
+            },
+            {
+                "name": "back_around",
+                "topic": "",
+                "requirements": [],
+                "description": "Given a string, take the last char and return a new string with the last char added at the front and back, so \"cat\" yields \"tcatt\". The original string will be length 1 or more.\n\n```\nback_around(\"cat\") \u2192 \"tcatt\"\nback_around(\"Hello\") \u2192 \"oHelloo\"\nback_around(\"a\") \u2192 \"aaa\"\n```\n\nThis exercise was taken from [codingbat.com](https://codingbat.com/prob/p161642) and has been adapted for the Python language. There are many great programming exercises there, but the majority are created for Java.",
+                "starter_code": "def back_around(string: str) -> str:\n    pass\n\n\nresult = back_around('cat')\nprint(result)\n",
+                "tests": "from main import back_around\n\n\ndef test_back_around_1():\n    assert back_around('cat') == 'tcatt'\n\n\ndef test_back_around_2():\n    assert back_around('Hello') == 'oHelloo'\n\n\ndef test_back_around_3():\n    assert back_around('a') == 'aaa'\n\n\ndef test_back_around_4():\n    assert back_around('abc') == 'cabcc'\n\n\ndef test_back_around_5():\n    assert back_around('read') == 'dreadd'\n\n\ndef test_back_around_6():\n    assert back_around('boo') == 'obooo'\n\n\n",
+                "solution": ""
+            },
+            {
+                "name": "or_35",
+                "topic": "",
+                "requirements": [],
+                "description": "Return true if the given non-negative number is a multiple of 3 or a multiple of 5. Use the % \"mod\" operator -- see <a href=/doc/practice/mod-introduction.html>Introduction to Mod</a>\n\n```\nor_35(3) \u2192 true\nor_35(10) \u2192 true\nor_35(8) \u2192 false\n```\n\nThis exercise was taken from [codingbat.com](https://codingbat.com/prob/p112564) and has been adapted for the Python language. There are many great programming exercises there, but the majority are created for Java.",
+                "starter_code": "def or_35(n: int) -> bool:\n    pass\n\n\nresult = or_35(3)\nprint(result)\n",
+                "tests": "from main import or_35\n\n\ndef test_or_35_1():\n    assert or_35(3) == True\n\n\ndef test_or_35_2():\n    assert or_35(10) == True\n\n\ndef test_or_35_3():\n    assert or_35(8) == False\n\n\ndef test_or_35_4():\n    assert or_35(15) == True\n\n\ndef test_or_35_5():\n    assert or_35(5) == True\n\n\ndef test_or_35_6():\n    assert or_35(9) == True\n\n\ndef test_or_35_7():\n    assert or_35(4) == False\n\n\ndef test_or_35_8():\n    assert or_35(7) == False\n\n\ndef test_or_35_9():\n    assert or_35(6) == True\n\n\ndef test_or_35_10():\n    assert or_35(17) == False\n\n\ndef test_or_35_11():\n    assert or_35(18) == True\n\n\ndef test_or_35_12():\n    assert or_35(29) == False\n\n\ndef test_or_35_13():\n    assert or_35(20) == True\n\n\ndef test_or_35_14():\n    assert or_35(21) == True\n\n\ndef test_or_35_15():\n    assert or_35(22) == False\n\n\ndef test_or_35_16():\n    assert or_35(45) == True\n\n\ndef test_or_35_17():\n    assert or_35(99) == True\n\n\ndef test_or_35_18():\n    assert or_35(100) == True\n\n\ndef test_or_35_19():\n    assert or_35(101) == False\n\n\ndef test_or_35_20():\n    assert or_35(121) == False\n\n\ndef test_or_35_21():\n    assert or_35(122) == False\n\n\ndef test_or_35_22():\n    assert or_35(123) == True\n\n\n",
+                "solution": ""
+            },
+            {
+                "name": "front_22",
+                "topic": "",
+                "requirements": [],
+                "description": "Given a string, take the first 2 chars and return the string with the 2 chars added at both the front and back, so \"kitten\" yields\"kikittenki\". If the string length is less than 2, use whatever chars are there.\n\n```\nfront_22(\"kitten\") \u2192 \"kikittenki\"\nfront_22(\"Ha\") \u2192 \"HaHaHa\"\nfront_22(\"abc\") \u2192 \"ababcab\"\n```\n\nThis exercise was taken from [codingbat.com](https://codingbat.com/prob/p183592) and has been adapted for the Python language. There are many great programming exercises there, but the majority are created for Java.",
+                "starter_code": "def front_22(string: str) -> str:\n    pass\n\n\nresult = front_22('kitten')\nprint(result)\n",
+                "tests": "from main import front_22\n\n\ndef test_front_22_1():\n    assert front_22('kitten') == 'kikittenki'\n\n\ndef test_front_22_2():\n    assert front_22('Ha') == 'HaHaHa'\n\n\ndef test_front_22_3():\n    assert front_22('abc') == 'ababcab'\n\n\ndef test_front_22_4():\n    assert front_22('ab') == 'ababab'\n\n\ndef test_front_22_5():\n    assert front_22('a') == 'aaa'\n\n\ndef test_front_22_6():\n    assert front_22('') == ''\n\n\ndef test_front_22_7():\n    assert front_22('Logic') == 'LoLogicLo'\n\n\n",
+                "solution": ""
+            },
+            {
+                "name": "start_hi",
+                "topic": "",
+                "requirements": [],
+                "description": "Given a string, return true if the string starts with \"hi\" and false otherwise.\n\n```\nstart_hi(\"hi there\") \u2192 true\nstart_hi(\"hi\") \u2192 true\nstart_hi(\"hello hi\") \u2192 false\n```\n\nThis exercise was taken from [codingbat.com](https://codingbat.com/prob/p191022) and has been adapted for the Python language. There are many great programming exercises there, but the majority are created for Java.",
+                "starter_code": "def start_hi(string: str) -> bool:\n    pass\n\n\nresult = start_hi('hi there')\nprint(result)\n",
+                "tests": "from main import start_hi\n\n\ndef test_start_hi_1():\n    assert start_hi('hi there') == True\n\n\ndef test_start_hi_2():\n    assert start_hi('hi') == True\n\n\ndef test_start_hi_3():\n    assert start_hi('hello hi') == False\n\n\ndef test_start_hi_4():\n    assert start_hi('he') == False\n\n\ndef test_start_hi_5():\n    assert start_hi('h') == False\n\n\ndef test_start_hi_6():\n    assert start_hi('') == False\n\n\ndef test_start_hi_7():\n    assert start_hi('ho hi') == False\n\n\ndef test_start_hi_8():\n    assert start_hi('hi ho') == True\n\n\n",
+                "solution": ""
+            },
+            {
+                "name": "icy_hot",
+                "topic": "",
+                "requirements": [],
+                "description": "Given two temperatures, return true if one is less than 0 and the other is greater than 100.\n\n```\nicy_hot(120, -1) \u2192 true\nicy_hot(-1, 120) \u2192 true\nicy_hot(2, 120) \u2192 false\n```\n\nThis exercise was taken from [codingbat.com](https://codingbat.com/prob/p192082) and has been adapted for the Python language. There are many great programming exercises there, but the majority are created for Java.",
+                "starter_code": "def icy_hot(temp_1: int, temp_2: int) -> bool:\n    pass\n\n\nresult = icy_hot(120, -1)\nprint(result)\n",
+                "tests": "from main import icy_hot\n\n\ndef test_icy_hot_1():\n    assert icy_hot(120, -1) == True\n\n\ndef test_icy_hot_2():\n    assert icy_hot(-1, 120) == True\n\n\ndef test_icy_hot_3():\n    assert icy_hot(2, 120) == False\n\n\ndef test_icy_hot_4():\n    assert icy_hot(-1, 100) == False\n\n\ndef test_icy_hot_5():\n    assert icy_hot(-2, -2) == False\n\n\ndef test_icy_hot_6():\n    assert icy_hot(120, 120) == False\n\n\n",
+                "solution": ""
+            },
+            {
+                "name": "in_1020",
+                "topic": "",
+                "requirements": [],
+                "description": "Given 2 int values, return true if either of them is in the range 10..20 inclusive.\n\n```\nin_1020(12, 99) \u2192 true\nin_1020(21, 12) \u2192 true\nin_1020(8, 99) \u2192 false\n```\n\nThis exercise was taken from [codingbat.com](https://codingbat.com/prob/p144535) and has been adapted for the Python language. There are many great programming exercises there, but the majority are created for Java.",
+                "starter_code": "def in_1020(a: int, b: int) -> bool:\n    pass\n\n\nresult = in_1020(12, 99)\nprint(result)\n",
+                "tests": "from main import in_1020\n\n\ndef test_in_1020_1():\n    assert in_1020(12, 99) == True\n\n\ndef test_in_1020_2():\n    assert in_1020(21, 12) == True\n\n\ndef test_in_1020_3():\n    assert in_1020(8, 99) == False\n\n\ndef test_in_1020_4():\n    assert in_1020(99, 10) == True\n\n\ndef test_in_1020_5():\n    assert in_1020(20, 20) == True\n\n\ndef test_in_1020_6():\n    assert in_1020(21, 21) == False\n\n\ndef test_in_1020_7():\n    assert in_1020(9, 9) == False\n\n\n",
+                "solution": ""
+            },
+            {
+                "name": "has_teen",
+                "topic": "",
+                "requirements": [],
+                "description": "We'll say that a number is \"teen\" if it is in the range 13..19 inclusive. Given 3 int values, return true if 1 or more of them are teen.\n\n```\nhas_teen(13, 20, 10) \u2192 true\nhas_teen(20, 19, 10) \u2192 true\nhas_teen(20, 10, 13) \u2192 true\n```\n\nThis exercise was taken from [codingbat.com](https://codingbat.com/prob/p178986) and has been adapted for the Python language. There are many great programming exercises there, but the majority are created for Java.",
+                "starter_code": "def has_teen(a: int, b: int, c: int) -> bool:\n    pass\n\n\nresult = has_teen(13, 20, 10)\nprint(result)\n",
+                "tests": "from main import has_teen\n\n\ndef test_has_teen_1():\n    assert has_teen(13, 20, 10) == True\n\n\ndef test_has_teen_2():\n    assert has_teen(20, 19, 10) == True\n\n\ndef test_has_teen_3():\n    assert has_teen(20, 10, 13) == True\n\n\ndef test_has_teen_4():\n    assert has_teen(1, 20, 12) == False\n\n\ndef test_has_teen_5():\n    assert has_teen(19, 20, 12) == True\n\n\ndef test_has_teen_6():\n    assert has_teen(12, 20, 19) == True\n\n\ndef test_has_teen_7():\n    assert has_teen(12, 9, 20) == False\n\n\ndef test_has_teen_8():\n    assert has_teen(12, 18, 20) == True\n\n\ndef test_has_teen_9():\n    assert has_teen(14, 2, 20) == True\n\n\ndef test_has_teen_10():\n    assert has_teen(4, 2, 20) == False\n\n\ndef test_has_teen_11():\n    assert has_teen(11, 22, 22) == False\n\n\n",
+                "solution": ""
+            },
+            {
+                "name": "lone_teen",
+                "topic": "",
+                "requirements": [],
+                "description": "We'll say that a number is \"teen\" if it is in the range 13..19 inclusive. Given 2 int values, return true if one or the other is teen, but not both.\n\n```\nlone_teen(13, 99) \u2192 true\nlone_teen(21, 19) \u2192 true\nlone_teen(13, 13) \u2192 false\n```\n\nThis exercise was taken from [codingbat.com](https://codingbat.com/prob/p165701) and has been adapted for the Python language. There are many great programming exercises there, but the majority are created for Java.",
+                "starter_code": "def lone_teen(a: int, b: int) -> bool:\n    pass\n\n\nresult = lone_teen(13, 99)\nprint(result)\n",
+                "tests": "from main import lone_teen\n\n\ndef test_lone_teen_1():\n    assert lone_teen(13, 99) == True\n\n\ndef test_lone_teen_2():\n    assert lone_teen(21, 19) == True\n\n\ndef test_lone_teen_3():\n    assert lone_teen(13, 13) == False\n\n\ndef test_lone_teen_4():\n    assert lone_teen(14, 20) == True\n\n\ndef test_lone_teen_5():\n    assert lone_teen(20, 15) == True\n\n\ndef test_lone_teen_6():\n    assert lone_teen(16, 17) == False\n\n\ndef test_lone_teen_7():\n    assert lone_teen(16, 9) == True\n\n\ndef test_lone_teen_8():\n    assert lone_teen(16, 18) == False\n\n\ndef test_lone_teen_9():\n    assert lone_teen(13, 19) == False\n\n\ndef test_lone_teen_10():\n    assert lone_teen(13, 20) == True\n\n\ndef test_lone_teen_11():\n    assert lone_teen(6, 18) == True\n\n\ndef test_lone_teen_12():\n    assert lone_teen(99, 13) == True\n\n\ndef test_lone_teen_13():\n    assert lone_teen(99, 99) == False\n\n\n",
+                "solution": ""
+            },
+            {
+                "name": "del_del",
+                "topic": "",
+                "requirements": [],
+                "description": "Given a string, if the string \"del\" appears starting at index 1, return a string where that \"del\" has been deleted. Otherwise, return the string unchanged.\n\n```\ndel_del(\"adelbc\") \u2192 \"abc\"\ndel_del(\"adelHello\") \u2192 \"aHello\"\ndel_del(\"adedbc\") \u2192 \"adedbc\"\n```\n\nThis exercise was taken from [codingbat.com](https://codingbat.com/prob/p100905) and has been adapted for the Python language. There are many great programming exercises there, but the majority are created for Java.",
+                "starter_code": "def del_del(string: str) -> str:\n    pass\n\n\nresult = del_del('adelbc')\nprint(result)\n",
+                "tests": "from main import del_del\n\n\ndef test_del_del_1():\n    assert del_del('adelbc') == 'abc'\n\n\ndef test_del_del_2():\n    assert del_del('adelHello') == 'aHello'\n\n\ndef test_del_del_3():\n    assert del_del('adedbc') == 'adedbc'\n\n\ndef test_del_del_4():\n    assert del_del('abcdel') == 'abcdel'\n\n\ndef test_del_del_5():\n    assert del_del('add') == 'add'\n\n\ndef test_del_del_6():\n    assert del_del('ad') == 'ad'\n\n\ndef test_del_del_7():\n    assert del_del('a') == 'a'\n\n\ndef test_del_del_8():\n    assert del_del('') == ''\n\n\ndef test_del_del_9():\n    assert del_del('del') == 'del'\n\n\ndef test_del_del_10():\n    assert del_del('adel') == 'a'\n\n\ndef test_del_del_11():\n    assert del_del('aadelbb') == 'aadelbb'\n\n\n",
+                "solution": ""
+            },
+            {
+                "name": "mix_start",
+                "topic": "",
+                "requirements": [],
+                "description": "Return true if the given string begins with \"mix\", except the 'm' can be anything, so \"pix\", \"9ix\" .. all count.\n\n```\nmix_start(\"mix snacks\") \u2192 true\nmix_start(\"pix snacks\") \u2192 true\nmix_start(\"piz snacks\") \u2192 false\n```\n\nThis exercise was taken from [codingbat.com](https://codingbat.com/prob/p151713) and has been adapted for the Python language. There are many great programming exercises there, but the majority are created for Java.",
+                "starter_code": "def mix_start(string: str) -> bool:\n    pass\n\n\nresult = mix_start('mix snacks')\nprint(result)\n",
+                "tests": "from main import mix_start\n\n\ndef test_mix_start_1():\n    assert mix_start('mix snacks') == True\n\n\ndef test_mix_start_2():\n    assert mix_start('pix snacks') == True\n\n\ndef test_mix_start_3():\n    assert mix_start('piz snacks') == False\n\n\ndef test_mix_start_4():\n    assert mix_start('nix') == True\n\n\ndef test_mix_start_5():\n    assert mix_start('ni') == False\n\n\ndef test_mix_start_6():\n    assert mix_start('n') == False\n\n\ndef test_mix_start_7():\n    assert mix_start('') == False\n\n\n",
+                "solution": ""
+            },
+            {
+                "name": "start_oz",
+                "topic": "",
+                "requirements": [],
+                "description": "Given a string, return a string made of the first 2 chars (if present), however include first char only if it is 'o' and include the second only if it is 'z', so \"ozymandias\" yields \"oz\".\n\n```\nstart_oz(\"ozymandias\") \u2192 \"oz\"\nstart_oz(\"bzoo\") \u2192 \"z\"\nstart_oz(\"oxx\") \u2192 \"o\"\n```\n\nThis exercise was taken from [codingbat.com](https://codingbat.com/prob/p199720) and has been adapted for the Python language. There are many great programming exercises there, but the majority are created for Java.",
+                "starter_code": "def start_oz(string: str) -> str:\n    pass\n\n\nresult = start_oz('ozymandias')\nprint(result)\n",
+                "tests": "from main import start_oz\n\n\ndef test_start_oz_1():\n    assert start_oz('ozymandias') == 'oz'\n\n\ndef test_start_oz_2():\n    assert start_oz('bzoo') == 'z'\n\n\ndef test_start_oz_3():\n    assert start_oz('oxx') == 'o'\n\n\ndef test_start_oz_4():\n    assert start_oz('oz') == 'oz'\n\n\ndef test_start_oz_5():\n    assert start_oz('ounce') == 'o'\n\n\ndef test_start_oz_6():\n    assert start_oz('o') == 'o'\n\n\ndef test_start_oz_7():\n    assert start_oz('abc') == ''\n\n\ndef test_start_oz_8():\n    assert start_oz('') == ''\n\n\ndef test_start_oz_9():\n    assert start_oz('zoo') == ''\n\n\ndef test_start_oz_10():\n    assert start_oz('aztec') == 'z'\n\n\ndef test_start_oz_11():\n    assert start_oz('zzzz') == 'z'\n\n\ndef test_start_oz_12():\n    assert start_oz('oznic') == 'oz'\n\n\n",
+                "solution": ""
+            },
+            {
+                "name": "int_max",
+                "topic": "",
+                "requirements": [],
+                "description": "Given three int values, a b c, return the largest.\n\n```\nint_max(1, 2, 3) \u2192 3\nint_max(1, 3, 2) \u2192 3\nint_max(3, 2, 1) \u2192 3\n```\n\nThis exercise was taken from [codingbat.com](https://codingbat.com/prob/p101887) and has been adapted for the Python language. There are many great programming exercises there, but the majority are created for Java.",
+                "starter_code": "def int_max(a: int, b: int, c: int) -> int:\n    pass\n\n\nresult = int_max(1, 2, 3)\nprint(result)\n",
+                "tests": "from main import int_max\n\n\ndef test_int_max_1():\n    assert int_max(1, 2, 3) == 3\n\n\ndef test_int_max_2():\n    assert int_max(1, 3, 2) == 3\n\n\ndef test_int_max_3():\n    assert int_max(3, 2, 1) == 3\n\n\ndef test_int_max_4():\n    assert int_max(9, 3, 3) == 9\n\n\ndef test_int_max_5():\n    assert int_max(3, 9, 3) == 9\n\n\ndef test_int_max_6():\n    assert int_max(3, 3, 9) == 9\n\n\ndef test_int_max_7():\n    assert int_max(8, 2, 3) == 8\n\n\ndef test_int_max_8():\n    assert int_max(-3, -1, -2) == -1\n\n\ndef test_int_max_9():\n    assert int_max(6, 2, 5) == 6\n\n\ndef test_int_max_10():\n    assert int_max(5, 6, 2) == 6\n\n\ndef test_int_max_11():\n    assert int_max(5, 2, 6) == 6\n\n\n",
+                "solution": ""
+            },
+            {
+                "name": "close_10",
+                "topic": "",
+                "requirements": [],
+                "description": "Given 2 int values, return whichever value is nearest to the value 10, or return 0 in the event of a tie. Note that Math.abs(n) returns the absolute value of a number.\n\n```\nclose_10(8, 13) \u2192 8\nclose_10(13, 8) \u2192 8\nclose_10(13, 7) \u2192 0\n```\n\nThis exercise was taken from [codingbat.com](https://codingbat.com/prob/p172021) and has been adapted for the Python language. There are many great programming exercises there, but the majority are created for Java.",
+                "starter_code": "def close_10(a: int, b: int) -> int:\n    pass\n\n\nresult = close_10(8, 13)\nprint(result)\n",
+                "tests": "from main import close_10\n\n\ndef test_close_10_1():\n    assert close_10(8, 13) == 8\n\n\ndef test_close_10_2():\n    assert close_10(13, 8) == 8\n\n\ndef test_close_10_3():\n    assert close_10(13, 7) == 0\n\n\ndef test_close_10_4():\n    assert close_10(7, 13) == 0\n\n\ndef test_close_10_5():\n    assert close_10(9, 13) == 9\n\n\ndef test_close_10_6():\n    assert close_10(13, 8) == 8\n\n\ndef test_close_10_7():\n    assert close_10(10, 12) == 10\n\n\ndef test_close_10_8():\n    assert close_10(11, 10) == 10\n\n\ndef test_close_10_9():\n    assert close_10(5, 21) == 5\n\n\ndef test_close_10_10():\n    assert close_10(0, 20) == 0\n\n\ndef test_close_10_11():\n    assert close_10(10, 10) == 0\n\n\n",
+                "solution": ""
+            },
+            {
+                "name": "in_3050",
+                "topic": "",
+                "requirements": [],
+                "description": "Given 2 int values, return true if they are both in the range 30..40 inclusive, or they are both in the range 40..50 inclusive.\n\n```\nin_3050(30, 31) \u2192 true\nin_3050(30, 41) \u2192 false\nin_3050(40, 50) \u2192 true\n```\n\nThis exercise was taken from [codingbat.com](https://codingbat.com/prob/p132134) and has been adapted for the Python language. There are many great programming exercises there, but the majority are created for Java.",
+                "starter_code": "def in_3050(a: int, b: int) -> bool:\n    pass\n\n\nresult = in_3050(30, 31)\nprint(result)\n",
+                "tests": "from main import in_3050\n\n\ndef test_in_3050_1():\n    assert in_3050(30, 31) == True\n\n\ndef test_in_3050_2():\n    assert in_3050(30, 41) == False\n\n\ndef test_in_3050_3():\n    assert in_3050(40, 50) == True\n\n\ndef test_in_3050_4():\n    assert in_3050(40, 51) == False\n\n\ndef test_in_3050_5():\n    assert in_3050(39, 50) == False\n\n\ndef test_in_3050_6():\n    assert in_3050(50, 39) == False\n\n\ndef test_in_3050_7():\n    assert in_3050(40, 39) == True\n\n\ndef test_in_3050_8():\n    assert in_3050(49, 48) == True\n\n\ndef test_in_3050_9():\n    assert in_3050(50, 40) == True\n\n\ndef test_in_3050_10():\n    assert in_3050(50, 51) == False\n\n\ndef test_in_3050_11():\n    assert in_3050(35, 36) == True\n\n\ndef test_in_3050_12():\n    assert in_3050(35, 45) == False\n\n\n",
+                "solution": ""
+            },
+            {
+                "name": "max_1020",
+                "topic": "",
+                "requirements": [],
+                "description": "Given 2 positive int values, return the larger value that is in the range 10..20 inclusive, or return 0 if neither is in that range.\n\n```\nmax_1020(11, 19) \u2192 19\nmax_1020(19, 11) \u2192 19\nmax_1020(11, 9) \u2192 11\n```\n\nThis exercise was taken from [codingbat.com](https://codingbat.com/prob/p177372) and has been adapted for the Python language. There are many great programming exercises there, but the majority are created for Java.",
+                "starter_code": "def max_1020(a: int, b: int) -> int:\n    pass\n\n\nresult = max_1020(11, 19)\nprint(result)\n",
+                "tests": "from main import max_1020\n\n\ndef test_max_1020_1():\n    assert max_1020(11, 19) == 19\n\n\ndef test_max_1020_2():\n    assert max_1020(19, 11) == 19\n\n\ndef test_max_1020_3():\n    assert max_1020(11, 9) == 11\n\n\ndef test_max_1020_4():\n    assert max_1020(9, 21) == 0\n\n\ndef test_max_1020_5():\n    assert max_1020(10, 21) == 10\n\n\ndef test_max_1020_6():\n    assert max_1020(21, 10) == 10\n\n\ndef test_max_1020_7():\n    assert max_1020(9, 11) == 11\n\n\ndef test_max_1020_8():\n    assert max_1020(23, 10) == 10\n\n\ndef test_max_1020_9():\n    assert max_1020(20, 10) == 20\n\n\ndef test_max_1020_10():\n    assert max_1020(7, 20) == 20\n\n\ndef test_max_1020_11():\n    assert max_1020(17, 16) == 17\n\n\n",
+                "solution": ""
+            },
+            {
+                "name": "string_e",
+                "topic": "",
+                "requirements": [],
+                "description": "Return true if the given string contains between 1 and 3 'e' chars.\n\n```\nstring_e(\"Hello\") \u2192 true\nstring_e(\"Heelle\") \u2192 true\nstring_e(\"Heelele\") \u2192 false\n```\n\nThis exercise was taken from [codingbat.com](https://codingbat.com/prob/p173784) and has been adapted for the Python language. There are many great programming exercises there, but the majority are created for Java.",
+                "starter_code": "def string_e(string: str) -> bool:\n    pass\n\n\nresult = string_e('Hello')\nprint(result)\n",
+                "tests": "from main import string_e\n\n\ndef test_string_e_1():\n    assert string_e('Hello') == True\n\n\ndef test_string_e_2():\n    assert string_e('Heelle') == True\n\n\ndef test_string_e_3():\n    assert string_e('Heelele') == False\n\n\ndef test_string_e_4():\n    assert string_e('Hll') == False\n\n\ndef test_string_e_5():\n    assert string_e('e') == True\n\n\ndef test_string_e_6():\n    assert string_e('') == False\n\n\n",
+                "solution": ""
+            },
+            {
+                "name": "last_digit",
+                "topic": "",
+                "requirements": [],
+                "description": "Given two non-negative int values, return true if they have the same last digit, such as with 27 and 57. Note that the % \"mod\" operator computes remainders, so 17 % 10 is 7.\n\n```\nlast_digit(7, 17) \u2192 true\nlast_digit(6, 17) \u2192 false\nlast_digit(3, 113) \u2192 true\n```\n\nThis exercise was taken from [codingbat.com](https://codingbat.com/prob/p125339) and has been adapted for the Python language. There are many great programming exercises there, but the majority are created for Java.",
+                "starter_code": "def last_digit(a: int, b: int) -> bool:\n    pass\n\n\nresult = last_digit(7, 17)\nprint(result)\n",
+                "tests": "from main import last_digit\n\n\ndef test_last_digit_1():\n    assert last_digit(7, 17) == True\n\n\ndef test_last_digit_2():\n    assert last_digit(6, 17) == False\n\n\ndef test_last_digit_3():\n    assert last_digit(3, 113) == True\n\n\ndef test_last_digit_4():\n    assert last_digit(114, 113) == False\n\n\ndef test_last_digit_5():\n    assert last_digit(114, 4) == True\n\n\ndef test_last_digit_6():\n    assert last_digit(10, 0) == True\n\n\ndef test_last_digit_7():\n    assert last_digit(11, 0) == False\n\n\n",
+                "solution": ""
+            },
+            {
+                "name": "end_up",
+                "topic": "",
+                "requirements": [],
+                "description": "Given a string, return a new string where the last 3 chars are now in upper case. If the string has less than 3 chars, uppercase whatever is there. Note that str.toUpperCase() returns the uppercase version of a string.\n\n```\nend_up(\"Hello\") \u2192 \"HeLLO\"\nend_up(\"hi there\") \u2192 \"hi thERE\"\nend_up(\"hi\") \u2192 \"HI\"\n```\n\nThis exercise was taken from [codingbat.com](https://codingbat.com/prob/p125268) and has been adapted for the Python language. There are many great programming exercises there, but the majority are created for Java.",
+                "starter_code": "def end_up(string: str) -> str:\n    pass\n\n\nresult = end_up('Hello')\nprint(result)\n",
+                "tests": "from main import end_up\n\n\ndef test_end_up_1():\n    assert end_up('Hello') == 'HeLLO'\n\n\ndef test_end_up_2():\n    assert end_up('hi there') == 'hi thERE'\n\n\ndef test_end_up_3():\n    assert end_up('hi') == 'HI'\n\n\ndef test_end_up_4():\n    assert end_up('woo hoo') == 'woo HOO'\n\n\ndef test_end_up_5():\n    assert end_up('xyz12') == 'xyZ12'\n\n\ndef test_end_up_6():\n    assert end_up('x') == 'X'\n\n\ndef test_end_up_7():\n    assert end_up('') == ''\n\n\n",
+                "solution": ""
+            },
+            {
+                "name": "every_nth",
+                "topic": "",
+                "requirements": [],
+                "description": "Given a non-empty string and an int N, return the string made starting with char 0, and then every Nth char of the string. So if N is 3, use char 0, 3, 6, ... and so on. N is 1 or more.\n\n```\nevery_nth(\"Miracle\", 2) \u2192 \"Mrce\"\nevery_nth(\"abcdefg\", 2) \u2192 \"aceg\"\nevery_nth(\"abcdefg\", 3) \u2192 \"adg\"\n```\n\nThis exercise was taken from [codingbat.com](https://codingbat.com/prob/p196441) and has been adapted for the Python language. There are many great programming exercises there, but the majority are created for Java.",
+                "starter_code": "def every_nth(string: str, n: int) -> str:\n    pass\n\n\nresult = every_nth('Miracle', 2)\nprint(result)\n",
+                "tests": "from main import every_nth\n\n\ndef test_every_nth_1():\n    assert every_nth('Miracle', 2) == 'Mrce'\n\n\ndef test_every_nth_2():\n    assert every_nth('abcdefg', 2) == 'aceg'\n\n\ndef test_every_nth_3():\n    assert every_nth('abcdefg', 3) == 'adg'\n\n\ndef test_every_nth_4():\n    assert every_nth('Chocolate', 3) == 'Cca'\n\n\ndef test_every_nth_5():\n    assert every_nth('Chocolates', 3) == 'Ccas'\n\n\ndef test_every_nth_6():\n    assert every_nth('Chocolates', 4) == 'Coe'\n\n\ndef test_every_nth_7():\n    assert every_nth('Chocolates', 100) == 'C'\n\n\n",
+                "solution": ""
+            }
         ]
     },
     "Codingbat (Input/Output)": {
         "chapter_list": [
+            "Warmup-1",
             "String-1",
             "String-2"
         ],
@@ -4802,6 +5085,2344 @@
                             "abc"
                         ],
                         "1111"
+                    ]
+                ]
+            }
+        ],
+        "Warmup-1": [
+            {
+                "name": "sleep_in",
+                "topic": "",
+                "requirements": [],
+                "description": "The parameter weekday is true if it is a weekday, and the parameter vacation is true if we are on vacation. We sleep in if it is not a weekday or we're on vacation. Return true if we sleep in.\n\nThis exercise was taken from [codingbat.com](https://codingbat.com/prob/p187868) and has been adapted for the Python language. There are many great programming exercises there, but the majority are created for Java.",
+                "starter_code": "",
+                "tests": "from exercise.fixtures import captured_output\n\n\ndef test_1(captured_output):\n    assert captured_output('False\\nFalse') == True\n\n\ndef test_2(captured_output):\n    assert captured_output('True\\nFalse') == False\n\n\ndef test_3(captured_output):\n    assert captured_output('False\\nTrue') == True\n\n\ndef test_4(captured_output):\n    assert captured_output('True\\nTrue') == True\n\n\n",
+                "solution": "",
+                "tests_io": [
+                    [
+                        [
+                            false,
+                            false
+                        ],
+                        true
+                    ],
+                    [
+                        [
+                            true,
+                            false
+                        ],
+                        false
+                    ],
+                    [
+                        [
+                            false,
+                            true
+                        ],
+                        true
+                    ],
+                    [
+                        [
+                            true,
+                            true
+                        ],
+                        true
+                    ]
+                ]
+            },
+            {
+                "name": "monkey_trouble",
+                "topic": "",
+                "requirements": [],
+                "description": "We have two monkeys, a and b, and the parameters aSmile and bSmile indicate if each is smiling. We are in trouble if they are both smiling or if neither of them is smiling. Return true if we are in trouble.\n\nThis exercise was taken from [codingbat.com](https://codingbat.com/prob/p181646) and has been adapted for the Python language. There are many great programming exercises there, but the majority are created for Java.",
+                "starter_code": "",
+                "tests": "from exercise.fixtures import captured_output\n\n\ndef test_1(captured_output):\n    assert captured_output('True\\nTrue') == True\n\n\ndef test_2(captured_output):\n    assert captured_output('False\\nFalse') == True\n\n\ndef test_3(captured_output):\n    assert captured_output('True\\nFalse') == False\n\n\ndef test_4(captured_output):\n    assert captured_output('False\\nTrue') == False\n\n\n",
+                "solution": "",
+                "tests_io": [
+                    [
+                        [
+                            true,
+                            true
+                        ],
+                        true
+                    ],
+                    [
+                        [
+                            false,
+                            false
+                        ],
+                        true
+                    ],
+                    [
+                        [
+                            true,
+                            false
+                        ],
+                        false
+                    ],
+                    [
+                        [
+                            false,
+                            true
+                        ],
+                        false
+                    ]
+                ]
+            },
+            {
+                "name": "sum_double",
+                "topic": "",
+                "requirements": [],
+                "description": "Given two int values, return their sum. Unless the two values are the same, then return double their sum.\n\nThis exercise was taken from [codingbat.com](https://codingbat.com/prob/p154485) and has been adapted for the Python language. There are many great programming exercises there, but the majority are created for Java.",
+                "starter_code": "",
+                "tests": "from exercise.fixtures import captured_output\n\n\ndef test_1(captured_output):\n    assert captured_output('1\\n2') == 3\n\n\ndef test_2(captured_output):\n    assert captured_output('3\\n2') == 5\n\n\ndef test_3(captured_output):\n    assert captured_output('2\\n2') == 8\n\n\ndef test_4(captured_output):\n    assert captured_output('-1\\n0') == -1\n\n\ndef test_5(captured_output):\n    assert captured_output('3\\n3') == 12\n\n\ndef test_6(captured_output):\n    assert captured_output('0\\n0') == 0\n\n\ndef test_7(captured_output):\n    assert captured_output('0\\n1') == 1\n\n\ndef test_8(captured_output):\n    assert captured_output('3\\n4') == 7\n\n\n",
+                "solution": "",
+                "tests_io": [
+                    [
+                        [
+                            1,
+                            2
+                        ],
+                        3
+                    ],
+                    [
+                        [
+                            3,
+                            2
+                        ],
+                        5
+                    ],
+                    [
+                        [
+                            2,
+                            2
+                        ],
+                        8
+                    ],
+                    [
+                        [
+                            -1,
+                            0
+                        ],
+                        -1
+                    ],
+                    [
+                        [
+                            3,
+                            3
+                        ],
+                        12
+                    ],
+                    [
+                        [
+                            0,
+                            0
+                        ],
+                        0
+                    ],
+                    [
+                        [
+                            0,
+                            1
+                        ],
+                        1
+                    ],
+                    [
+                        [
+                            3,
+                            4
+                        ],
+                        7
+                    ]
+                ]
+            },
+            {
+                "name": "diff_21",
+                "topic": "",
+                "requirements": [],
+                "description": "Given an int n, return the absolute difference between n and 21, except return double the absolute difference if n is over 21.\n\nThis exercise was taken from [codingbat.com](https://codingbat.com/prob/p116624) and has been adapted for the Python language. There are many great programming exercises there, but the majority are created for Java.",
+                "starter_code": "",
+                "tests": "from exercise.fixtures import captured_output\n\n\ndef test_1(captured_output):\n    assert captured_output('19') == 2\n\n\ndef test_2(captured_output):\n    assert captured_output('10') == 11\n\n\ndef test_3(captured_output):\n    assert captured_output('21') == 0\n\n\ndef test_4(captured_output):\n    assert captured_output('22') == 2\n\n\ndef test_5(captured_output):\n    assert captured_output('25') == 8\n\n\ndef test_6(captured_output):\n    assert captured_output('30') == 18\n\n\ndef test_7(captured_output):\n    assert captured_output('0') == 21\n\n\ndef test_8(captured_output):\n    assert captured_output('1') == 20\n\n\ndef test_9(captured_output):\n    assert captured_output('2') == 19\n\n\ndef test_10(captured_output):\n    assert captured_output('-1') == 22\n\n\ndef test_11(captured_output):\n    assert captured_output('-2') == 23\n\n\ndef test_12(captured_output):\n    assert captured_output('50') == 58\n\n\n",
+                "solution": "",
+                "tests_io": [
+                    [
+                        [
+                            19
+                        ],
+                        2
+                    ],
+                    [
+                        [
+                            10
+                        ],
+                        11
+                    ],
+                    [
+                        [
+                            21
+                        ],
+                        0
+                    ],
+                    [
+                        [
+                            22
+                        ],
+                        2
+                    ],
+                    [
+                        [
+                            25
+                        ],
+                        8
+                    ],
+                    [
+                        [
+                            30
+                        ],
+                        18
+                    ],
+                    [
+                        [
+                            0
+                        ],
+                        21
+                    ],
+                    [
+                        [
+                            1
+                        ],
+                        20
+                    ],
+                    [
+                        [
+                            2
+                        ],
+                        19
+                    ],
+                    [
+                        [
+                            -1
+                        ],
+                        22
+                    ],
+                    [
+                        [
+                            -2
+                        ],
+                        23
+                    ],
+                    [
+                        [
+                            50
+                        ],
+                        58
+                    ]
+                ]
+            },
+            {
+                "name": "parrot_trouble",
+                "topic": "",
+                "requirements": [],
+                "description": "We have a loud talking parrot. The \"hour\" parameter is the current hour time in the range 0..23. We are in trouble if the parrot is talking and the hour is before 7 or after 20. Return true if we are in trouble.\n\nThis exercise was taken from [codingbat.com](https://codingbat.com/prob/p140449) and has been adapted for the Python language. There are many great programming exercises there, but the majority are created for Java.",
+                "starter_code": "",
+                "tests": "from exercise.fixtures import captured_output\n\n\ndef test_1(captured_output):\n    assert captured_output('True\\n6') == True\n\n\ndef test_2(captured_output):\n    assert captured_output('True\\n7') == False\n\n\ndef test_3(captured_output):\n    assert captured_output('False\\n6') == False\n\n\ndef test_4(captured_output):\n    assert captured_output('True\\n21') == True\n\n\ndef test_5(captured_output):\n    assert captured_output('False\\n21') == False\n\n\ndef test_6(captured_output):\n    assert captured_output('False\\n20') == False\n\n\ndef test_7(captured_output):\n    assert captured_output('True\\n23') == True\n\n\ndef test_8(captured_output):\n    assert captured_output('False\\n23') == False\n\n\ndef test_9(captured_output):\n    assert captured_output('True\\n20') == False\n\n\ndef test_10(captured_output):\n    assert captured_output('False\\n12') == False\n\n\n",
+                "solution": "",
+                "tests_io": [
+                    [
+                        [
+                            true,
+                            6
+                        ],
+                        true
+                    ],
+                    [
+                        [
+                            true,
+                            7
+                        ],
+                        false
+                    ],
+                    [
+                        [
+                            false,
+                            6
+                        ],
+                        false
+                    ],
+                    [
+                        [
+                            true,
+                            21
+                        ],
+                        true
+                    ],
+                    [
+                        [
+                            false,
+                            21
+                        ],
+                        false
+                    ],
+                    [
+                        [
+                            false,
+                            20
+                        ],
+                        false
+                    ],
+                    [
+                        [
+                            true,
+                            23
+                        ],
+                        true
+                    ],
+                    [
+                        [
+                            false,
+                            23
+                        ],
+                        false
+                    ],
+                    [
+                        [
+                            true,
+                            20
+                        ],
+                        false
+                    ],
+                    [
+                        [
+                            false,
+                            12
+                        ],
+                        false
+                    ]
+                ]
+            },
+            {
+                "name": "makes_10",
+                "topic": "",
+                "requirements": [],
+                "description": "Given 2 ints, a and b, return true if one if them is 10 or if their sum is 10.\n\nThis exercise was taken from [codingbat.com](https://codingbat.com/prob/p182873) and has been adapted for the Python language. There are many great programming exercises there, but the majority are created for Java.",
+                "starter_code": "",
+                "tests": "from exercise.fixtures import captured_output\n\n\ndef test_1(captured_output):\n    assert captured_output('9\\n10') == True\n\n\ndef test_2(captured_output):\n    assert captured_output('9\\n9') == False\n\n\ndef test_3(captured_output):\n    assert captured_output('1\\n9') == True\n\n\ndef test_4(captured_output):\n    assert captured_output('10\\n1') == True\n\n\ndef test_5(captured_output):\n    assert captured_output('10\\n10') == True\n\n\ndef test_6(captured_output):\n    assert captured_output('8\\n2') == True\n\n\ndef test_7(captured_output):\n    assert captured_output('8\\n3') == False\n\n\ndef test_8(captured_output):\n    assert captured_output('10\\n42') == True\n\n\ndef test_9(captured_output):\n    assert captured_output('12\\n-2') == True\n\n\n",
+                "solution": "",
+                "tests_io": [
+                    [
+                        [
+                            9,
+                            10
+                        ],
+                        true
+                    ],
+                    [
+                        [
+                            9,
+                            9
+                        ],
+                        false
+                    ],
+                    [
+                        [
+                            1,
+                            9
+                        ],
+                        true
+                    ],
+                    [
+                        [
+                            10,
+                            1
+                        ],
+                        true
+                    ],
+                    [
+                        [
+                            10,
+                            10
+                        ],
+                        true
+                    ],
+                    [
+                        [
+                            8,
+                            2
+                        ],
+                        true
+                    ],
+                    [
+                        [
+                            8,
+                            3
+                        ],
+                        false
+                    ],
+                    [
+                        [
+                            10,
+                            42
+                        ],
+                        true
+                    ],
+                    [
+                        [
+                            12,
+                            -2
+                        ],
+                        true
+                    ]
+                ]
+            },
+            {
+                "name": "near_hundred",
+                "topic": "",
+                "requirements": [],
+                "description": "Given an int n, return true if it is within 10 of 100 or 200. Note: Math.abs(num) computes the absolute value of a number.\n\nThis exercise was taken from [codingbat.com](https://codingbat.com/prob/p184004) and has been adapted for the Python language. There are many great programming exercises there, but the majority are created for Java.",
+                "starter_code": "",
+                "tests": "from exercise.fixtures import captured_output\n\n\ndef test_1(captured_output):\n    assert captured_output('93') == True\n\n\ndef test_2(captured_output):\n    assert captured_output('90') == True\n\n\ndef test_3(captured_output):\n    assert captured_output('89') == False\n\n\ndef test_4(captured_output):\n    assert captured_output('110') == True\n\n\ndef test_5(captured_output):\n    assert captured_output('111') == False\n\n\ndef test_6(captured_output):\n    assert captured_output('121') == False\n\n\ndef test_7(captured_output):\n    assert captured_output('-101') == False\n\n\ndef test_8(captured_output):\n    assert captured_output('-209') == False\n\n\ndef test_9(captured_output):\n    assert captured_output('190') == True\n\n\ndef test_10(captured_output):\n    assert captured_output('209') == True\n\n\ndef test_11(captured_output):\n    assert captured_output('0') == False\n\n\ndef test_12(captured_output):\n    assert captured_output('5') == False\n\n\ndef test_13(captured_output):\n    assert captured_output('-50') == False\n\n\ndef test_14(captured_output):\n    assert captured_output('191') == True\n\n\ndef test_15(captured_output):\n    assert captured_output('189') == False\n\n\ndef test_16(captured_output):\n    assert captured_output('200') == True\n\n\ndef test_17(captured_output):\n    assert captured_output('210') == True\n\n\ndef test_18(captured_output):\n    assert captured_output('211') == False\n\n\ndef test_19(captured_output):\n    assert captured_output('290') == False\n\n\n",
+                "solution": "",
+                "tests_io": [
+                    [
+                        [
+                            93
+                        ],
+                        true
+                    ],
+                    [
+                        [
+                            90
+                        ],
+                        true
+                    ],
+                    [
+                        [
+                            89
+                        ],
+                        false
+                    ],
+                    [
+                        [
+                            110
+                        ],
+                        true
+                    ],
+                    [
+                        [
+                            111
+                        ],
+                        false
+                    ],
+                    [
+                        [
+                            121
+                        ],
+                        false
+                    ],
+                    [
+                        [
+                            -101
+                        ],
+                        false
+                    ],
+                    [
+                        [
+                            -209
+                        ],
+                        false
+                    ],
+                    [
+                        [
+                            190
+                        ],
+                        true
+                    ],
+                    [
+                        [
+                            209
+                        ],
+                        true
+                    ],
+                    [
+                        [
+                            0
+                        ],
+                        false
+                    ],
+                    [
+                        [
+                            5
+                        ],
+                        false
+                    ],
+                    [
+                        [
+                            -50
+                        ],
+                        false
+                    ],
+                    [
+                        [
+                            191
+                        ],
+                        true
+                    ],
+                    [
+                        [
+                            189
+                        ],
+                        false
+                    ],
+                    [
+                        [
+                            200
+                        ],
+                        true
+                    ],
+                    [
+                        [
+                            210
+                        ],
+                        true
+                    ],
+                    [
+                        [
+                            211
+                        ],
+                        false
+                    ],
+                    [
+                        [
+                            290
+                        ],
+                        false
+                    ]
+                ]
+            },
+            {
+                "name": "pos_neg",
+                "topic": "",
+                "requirements": [],
+                "description": "Given 2 int values, return true if one is negative and one is positive. Except if the parameter \"negative\" is true, then return true only if both are negative.\n\nThis exercise was taken from [codingbat.com](https://codingbat.com/prob/p159227) and has been adapted for the Python language. There are many great programming exercises there, but the majority are created for Java.",
+                "starter_code": "",
+                "tests": "from exercise.fixtures import captured_output\n\n\ndef test_1(captured_output):\n    assert captured_output('1\\n-1\\nFalse') == True\n\n\ndef test_2(captured_output):\n    assert captured_output('-1\\n1\\nFalse') == True\n\n\ndef test_3(captured_output):\n    assert captured_output('-4\\n-5\\nTrue') == True\n\n\ndef test_4(captured_output):\n    assert captured_output('-4\\n-5\\nFalse') == False\n\n\ndef test_5(captured_output):\n    assert captured_output('-4\\n5\\nFalse') == True\n\n\ndef test_6(captured_output):\n    assert captured_output('-4\\n5\\nTrue') == False\n\n\ndef test_7(captured_output):\n    assert captured_output('1\\n1\\nFalse') == False\n\n\ndef test_8(captured_output):\n    assert captured_output('-1\\n-1\\nFalse') == False\n\n\ndef test_9(captured_output):\n    assert captured_output('1\\n-1\\nTrue') == False\n\n\ndef test_10(captured_output):\n    assert captured_output('-1\\n1\\nTrue') == False\n\n\ndef test_11(captured_output):\n    assert captured_output('1\\n1\\nTrue') == False\n\n\ndef test_12(captured_output):\n    assert captured_output('-1\\n-1\\nTrue') == True\n\n\ndef test_13(captured_output):\n    assert captured_output('5\\n-5\\nFalse') == True\n\n\ndef test_14(captured_output):\n    assert captured_output('-6\\n6\\nFalse') == True\n\n\ndef test_15(captured_output):\n    assert captured_output('-5\\n-6\\nFalse') == False\n\n\ndef test_16(captured_output):\n    assert captured_output('-2\\n-1\\nFalse') == False\n\n\ndef test_17(captured_output):\n    assert captured_output('1\\n2\\nFalse') == False\n\n\ndef test_18(captured_output):\n    assert captured_output('-5\\n6\\nTrue') == False\n\n\ndef test_19(captured_output):\n    assert captured_output('-5\\n-5\\nTrue') == True\n\n\n",
+                "solution": "",
+                "tests_io": [
+                    [
+                        [
+                            1,
+                            -1,
+                            false
+                        ],
+                        true
+                    ],
+                    [
+                        [
+                            -1,
+                            1,
+                            false
+                        ],
+                        true
+                    ],
+                    [
+                        [
+                            -4,
+                            -5,
+                            true
+                        ],
+                        true
+                    ],
+                    [
+                        [
+                            -4,
+                            -5,
+                            false
+                        ],
+                        false
+                    ],
+                    [
+                        [
+                            -4,
+                            5,
+                            false
+                        ],
+                        true
+                    ],
+                    [
+                        [
+                            -4,
+                            5,
+                            true
+                        ],
+                        false
+                    ],
+                    [
+                        [
+                            1,
+                            1,
+                            false
+                        ],
+                        false
+                    ],
+                    [
+                        [
+                            -1,
+                            -1,
+                            false
+                        ],
+                        false
+                    ],
+                    [
+                        [
+                            1,
+                            -1,
+                            true
+                        ],
+                        false
+                    ],
+                    [
+                        [
+                            -1,
+                            1,
+                            true
+                        ],
+                        false
+                    ],
+                    [
+                        [
+                            1,
+                            1,
+                            true
+                        ],
+                        false
+                    ],
+                    [
+                        [
+                            -1,
+                            -1,
+                            true
+                        ],
+                        true
+                    ],
+                    [
+                        [
+                            5,
+                            -5,
+                            false
+                        ],
+                        true
+                    ],
+                    [
+                        [
+                            -6,
+                            6,
+                            false
+                        ],
+                        true
+                    ],
+                    [
+                        [
+                            -5,
+                            -6,
+                            false
+                        ],
+                        false
+                    ],
+                    [
+                        [
+                            -2,
+                            -1,
+                            false
+                        ],
+                        false
+                    ],
+                    [
+                        [
+                            1,
+                            2,
+                            false
+                        ],
+                        false
+                    ],
+                    [
+                        [
+                            -5,
+                            6,
+                            true
+                        ],
+                        false
+                    ],
+                    [
+                        [
+                            -5,
+                            -5,
+                            true
+                        ],
+                        true
+                    ]
+                ]
+            },
+            {
+                "name": "not_string",
+                "topic": "",
+                "requirements": [],
+                "description": "Given a string, return a new string where \"not \" has been added to the front. However, if the string already begins with \"not\", return the string unchanged. Note: use .equals() to compare 2 strings.\n\nThis exercise was taken from [codingbat.com](https://codingbat.com/prob/p191914) and has been adapted for the Python language. There are many great programming exercises there, but the majority are created for Java.",
+                "starter_code": "",
+                "tests": "from exercise.fixtures import captured_output\n\n\ndef test_1(captured_output):\n    assert captured_output('candy') == 'not candy'\n\n\ndef test_2(captured_output):\n    assert captured_output('x') == 'not x'\n\n\ndef test_3(captured_output):\n    assert captured_output('not bad') == 'not bad'\n\n\ndef test_4(captured_output):\n    assert captured_output('bad') == 'not bad'\n\n\ndef test_5(captured_output):\n    assert captured_output('not') == 'not'\n\n\ndef test_6(captured_output):\n    assert captured_output('is not') == 'not is not'\n\n\ndef test_7(captured_output):\n    assert captured_output('no') == 'not no'\n\n\n",
+                "solution": "",
+                "tests_io": [
+                    [
+                        [
+                            "candy"
+                        ],
+                        "not candy"
+                    ],
+                    [
+                        [
+                            "x"
+                        ],
+                        "not x"
+                    ],
+                    [
+                        [
+                            "not bad"
+                        ],
+                        "not bad"
+                    ],
+                    [
+                        [
+                            "bad"
+                        ],
+                        "not bad"
+                    ],
+                    [
+                        [
+                            "not"
+                        ],
+                        "not"
+                    ],
+                    [
+                        [
+                            "is not"
+                        ],
+                        "not is not"
+                    ],
+                    [
+                        [
+                            "no"
+                        ],
+                        "not no"
+                    ]
+                ]
+            },
+            {
+                "name": "missing_char",
+                "topic": "",
+                "requirements": [],
+                "description": "Given a non-empty string and an int n, return a new string where the char at index n has been removed. The value of n will be a valid index of a char in the original string (i.e. n will be in the range 0..str.length()-1 inclusive).\n\nThis exercise was taken from [codingbat.com](https://codingbat.com/prob/p190570) and has been adapted for the Python language. There are many great programming exercises there, but the majority are created for Java.",
+                "starter_code": "",
+                "tests": "from exercise.fixtures import captured_output\n\n\ndef test_1(captured_output):\n    assert captured_output('kitten\\n1') == 'ktten'\n\n\ndef test_2(captured_output):\n    assert captured_output('kitten\\n0') == 'itten'\n\n\ndef test_3(captured_output):\n    assert captured_output('kitten\\n4') == 'kittn'\n\n\ndef test_4(captured_output):\n    assert captured_output('Hi\\n0') == 'i'\n\n\ndef test_5(captured_output):\n    assert captured_output('Hi\\n1') == 'H'\n\n\ndef test_6(captured_output):\n    assert captured_output('code\\n0') == 'ode'\n\n\ndef test_7(captured_output):\n    assert captured_output('code\\n1') == 'cde'\n\n\ndef test_8(captured_output):\n    assert captured_output('code\\n2') == 'coe'\n\n\ndef test_9(captured_output):\n    assert captured_output('code\\n3') == 'cod'\n\n\ndef test_10(captured_output):\n    assert captured_output('chocolate\\n8') == 'chocolat'\n\n\n",
+                "solution": "",
+                "tests_io": [
+                    [
+                        [
+                            "kitten",
+                            1
+                        ],
+                        "ktten"
+                    ],
+                    [
+                        [
+                            "kitten",
+                            0
+                        ],
+                        "itten"
+                    ],
+                    [
+                        [
+                            "kitten",
+                            4
+                        ],
+                        "kittn"
+                    ],
+                    [
+                        [
+                            "Hi",
+                            0
+                        ],
+                        "i"
+                    ],
+                    [
+                        [
+                            "Hi",
+                            1
+                        ],
+                        "H"
+                    ],
+                    [
+                        [
+                            "code",
+                            0
+                        ],
+                        "ode"
+                    ],
+                    [
+                        [
+                            "code",
+                            1
+                        ],
+                        "cde"
+                    ],
+                    [
+                        [
+                            "code",
+                            2
+                        ],
+                        "coe"
+                    ],
+                    [
+                        [
+                            "code",
+                            3
+                        ],
+                        "cod"
+                    ],
+                    [
+                        [
+                            "chocolate",
+                            8
+                        ],
+                        "chocolat"
+                    ]
+                ]
+            },
+            {
+                "name": "front_back",
+                "topic": "",
+                "requirements": [],
+                "description": "Given a string, return a new string where the first and last chars have been exchanged.\n\nThis exercise was taken from [codingbat.com](https://codingbat.com/prob/p123384) and has been adapted for the Python language. There are many great programming exercises there, but the majority are created for Java.",
+                "starter_code": "",
+                "tests": "from exercise.fixtures import captured_output\n\n\ndef test_1(captured_output):\n    assert captured_output('code') == 'eodc'\n\n\ndef test_2(captured_output):\n    assert captured_output('a') == 'a'\n\n\ndef test_3(captured_output):\n    assert captured_output('ab') == 'ba'\n\n\ndef test_4(captured_output):\n    assert captured_output('abc') == 'cba'\n\n\ndef test_5(captured_output):\n    assert captured_output('') == ''\n\n\ndef test_6(captured_output):\n    assert captured_output('Chocolate') == 'ehocolatC'\n\n\ndef test_7(captured_output):\n    assert captured_output('aavJ') == 'Java'\n\n\ndef test_8(captured_output):\n    assert captured_output('hello') == 'oellh'\n\n\n",
+                "solution": "",
+                "tests_io": [
+                    [
+                        [
+                            "code"
+                        ],
+                        "eodc"
+                    ],
+                    [
+                        [
+                            "a"
+                        ],
+                        "a"
+                    ],
+                    [
+                        [
+                            "ab"
+                        ],
+                        "ba"
+                    ],
+                    [
+                        [
+                            "abc"
+                        ],
+                        "cba"
+                    ],
+                    [
+                        [
+                            ""
+                        ],
+                        ""
+                    ],
+                    [
+                        [
+                            "Chocolate"
+                        ],
+                        "ehocolatC"
+                    ],
+                    [
+                        [
+                            "aavJ"
+                        ],
+                        "Java"
+                    ],
+                    [
+                        [
+                            "hello"
+                        ],
+                        "oellh"
+                    ]
+                ]
+            },
+            {
+                "name": "front_3",
+                "topic": "",
+                "requirements": [],
+                "description": "Given a string, we'll say that the front is the first 3 chars of the string. If the string length is less than 3, the front is whatever is there. Return a new string which is 3 copies of the front.\n\nThis exercise was taken from [codingbat.com](https://codingbat.com/prob/p136351) and has been adapted for the Python language. There are many great programming exercises there, but the majority are created for Java.",
+                "starter_code": "",
+                "tests": "from exercise.fixtures import captured_output\n\n\ndef test_1(captured_output):\n    assert captured_output('Java') == 'JavJavJav'\n\n\ndef test_2(captured_output):\n    assert captured_output('Chocolate') == 'ChoChoCho'\n\n\ndef test_3(captured_output):\n    assert captured_output('abc') == 'abcabcabc'\n\n\ndef test_4(captured_output):\n    assert captured_output('abcXYZ') == 'abcabcabc'\n\n\ndef test_5(captured_output):\n    assert captured_output('ab') == 'ababab'\n\n\ndef test_6(captured_output):\n    assert captured_output('a') == 'aaa'\n\n\ndef test_7(captured_output):\n    assert captured_output('') == ''\n\n\n",
+                "solution": "",
+                "tests_io": [
+                    [
+                        [
+                            "Java"
+                        ],
+                        "JavJavJav"
+                    ],
+                    [
+                        [
+                            "Chocolate"
+                        ],
+                        "ChoChoCho"
+                    ],
+                    [
+                        [
+                            "abc"
+                        ],
+                        "abcabcabc"
+                    ],
+                    [
+                        [
+                            "abcXYZ"
+                        ],
+                        "abcabcabc"
+                    ],
+                    [
+                        [
+                            "ab"
+                        ],
+                        "ababab"
+                    ],
+                    [
+                        [
+                            "a"
+                        ],
+                        "aaa"
+                    ],
+                    [
+                        [
+                            ""
+                        ],
+                        ""
+                    ]
+                ]
+            },
+            {
+                "name": "back_around",
+                "topic": "",
+                "requirements": [],
+                "description": "Given a string, take the last char and return a new string with the last char added at the front and back, so \"cat\" yields \"tcatt\". The original string will be length 1 or more.\n\nThis exercise was taken from [codingbat.com](https://codingbat.com/prob/p161642) and has been adapted for the Python language. There are many great programming exercises there, but the majority are created for Java.",
+                "starter_code": "",
+                "tests": "from exercise.fixtures import captured_output\n\n\ndef test_1(captured_output):\n    assert captured_output('cat') == 'tcatt'\n\n\ndef test_2(captured_output):\n    assert captured_output('Hello') == 'oHelloo'\n\n\ndef test_3(captured_output):\n    assert captured_output('a') == 'aaa'\n\n\ndef test_4(captured_output):\n    assert captured_output('abc') == 'cabcc'\n\n\ndef test_5(captured_output):\n    assert captured_output('read') == 'dreadd'\n\n\ndef test_6(captured_output):\n    assert captured_output('boo') == 'obooo'\n\n\n",
+                "solution": "",
+                "tests_io": [
+                    [
+                        [
+                            "cat"
+                        ],
+                        "tcatt"
+                    ],
+                    [
+                        [
+                            "Hello"
+                        ],
+                        "oHelloo"
+                    ],
+                    [
+                        [
+                            "a"
+                        ],
+                        "aaa"
+                    ],
+                    [
+                        [
+                            "abc"
+                        ],
+                        "cabcc"
+                    ],
+                    [
+                        [
+                            "read"
+                        ],
+                        "dreadd"
+                    ],
+                    [
+                        [
+                            "boo"
+                        ],
+                        "obooo"
+                    ]
+                ]
+            },
+            {
+                "name": "or_35",
+                "topic": "",
+                "requirements": [],
+                "description": "Return true if the given non-negative number is a multiple of 3 or a multiple of 5. Use the % \"mod\" operator -- see <a href=/doc/practice/mod-introduction.html>Introduction to Mod</a>\n\nThis exercise was taken from [codingbat.com](https://codingbat.com/prob/p112564) and has been adapted for the Python language. There are many great programming exercises there, but the majority are created for Java.",
+                "starter_code": "",
+                "tests": "from exercise.fixtures import captured_output\n\n\ndef test_1(captured_output):\n    assert captured_output('3') == True\n\n\ndef test_2(captured_output):\n    assert captured_output('10') == True\n\n\ndef test_3(captured_output):\n    assert captured_output('8') == False\n\n\ndef test_4(captured_output):\n    assert captured_output('15') == True\n\n\ndef test_5(captured_output):\n    assert captured_output('5') == True\n\n\ndef test_6(captured_output):\n    assert captured_output('9') == True\n\n\ndef test_7(captured_output):\n    assert captured_output('4') == False\n\n\ndef test_8(captured_output):\n    assert captured_output('7') == False\n\n\ndef test_9(captured_output):\n    assert captured_output('6') == True\n\n\ndef test_10(captured_output):\n    assert captured_output('17') == False\n\n\ndef test_11(captured_output):\n    assert captured_output('18') == True\n\n\ndef test_12(captured_output):\n    assert captured_output('29') == False\n\n\ndef test_13(captured_output):\n    assert captured_output('20') == True\n\n\ndef test_14(captured_output):\n    assert captured_output('21') == True\n\n\ndef test_15(captured_output):\n    assert captured_output('22') == False\n\n\ndef test_16(captured_output):\n    assert captured_output('45') == True\n\n\ndef test_17(captured_output):\n    assert captured_output('99') == True\n\n\ndef test_18(captured_output):\n    assert captured_output('100') == True\n\n\ndef test_19(captured_output):\n    assert captured_output('101') == False\n\n\ndef test_20(captured_output):\n    assert captured_output('121') == False\n\n\ndef test_21(captured_output):\n    assert captured_output('122') == False\n\n\ndef test_22(captured_output):\n    assert captured_output('123') == True\n\n\n",
+                "solution": "",
+                "tests_io": [
+                    [
+                        [
+                            3
+                        ],
+                        true
+                    ],
+                    [
+                        [
+                            10
+                        ],
+                        true
+                    ],
+                    [
+                        [
+                            8
+                        ],
+                        false
+                    ],
+                    [
+                        [
+                            15
+                        ],
+                        true
+                    ],
+                    [
+                        [
+                            5
+                        ],
+                        true
+                    ],
+                    [
+                        [
+                            9
+                        ],
+                        true
+                    ],
+                    [
+                        [
+                            4
+                        ],
+                        false
+                    ],
+                    [
+                        [
+                            7
+                        ],
+                        false
+                    ],
+                    [
+                        [
+                            6
+                        ],
+                        true
+                    ],
+                    [
+                        [
+                            17
+                        ],
+                        false
+                    ],
+                    [
+                        [
+                            18
+                        ],
+                        true
+                    ],
+                    [
+                        [
+                            29
+                        ],
+                        false
+                    ],
+                    [
+                        [
+                            20
+                        ],
+                        true
+                    ],
+                    [
+                        [
+                            21
+                        ],
+                        true
+                    ],
+                    [
+                        [
+                            22
+                        ],
+                        false
+                    ],
+                    [
+                        [
+                            45
+                        ],
+                        true
+                    ],
+                    [
+                        [
+                            99
+                        ],
+                        true
+                    ],
+                    [
+                        [
+                            100
+                        ],
+                        true
+                    ],
+                    [
+                        [
+                            101
+                        ],
+                        false
+                    ],
+                    [
+                        [
+                            121
+                        ],
+                        false
+                    ],
+                    [
+                        [
+                            122
+                        ],
+                        false
+                    ],
+                    [
+                        [
+                            123
+                        ],
+                        true
+                    ]
+                ]
+            },
+            {
+                "name": "front_22",
+                "topic": "",
+                "requirements": [],
+                "description": "Given a string, take the first 2 chars and return the string with the 2 chars added at both the front and back, so \"kitten\" yields\"kikittenki\". If the string length is less than 2, use whatever chars are there.\n\nThis exercise was taken from [codingbat.com](https://codingbat.com/prob/p183592) and has been adapted for the Python language. There are many great programming exercises there, but the majority are created for Java.",
+                "starter_code": "",
+                "tests": "from exercise.fixtures import captured_output\n\n\ndef test_1(captured_output):\n    assert captured_output('kitten') == 'kikittenki'\n\n\ndef test_2(captured_output):\n    assert captured_output('Ha') == 'HaHaHa'\n\n\ndef test_3(captured_output):\n    assert captured_output('abc') == 'ababcab'\n\n\ndef test_4(captured_output):\n    assert captured_output('ab') == 'ababab'\n\n\ndef test_5(captured_output):\n    assert captured_output('a') == 'aaa'\n\n\ndef test_6(captured_output):\n    assert captured_output('') == ''\n\n\ndef test_7(captured_output):\n    assert captured_output('Logic') == 'LoLogicLo'\n\n\n",
+                "solution": "",
+                "tests_io": [
+                    [
+                        [
+                            "kitten"
+                        ],
+                        "kikittenki"
+                    ],
+                    [
+                        [
+                            "Ha"
+                        ],
+                        "HaHaHa"
+                    ],
+                    [
+                        [
+                            "abc"
+                        ],
+                        "ababcab"
+                    ],
+                    [
+                        [
+                            "ab"
+                        ],
+                        "ababab"
+                    ],
+                    [
+                        [
+                            "a"
+                        ],
+                        "aaa"
+                    ],
+                    [
+                        [
+                            ""
+                        ],
+                        ""
+                    ],
+                    [
+                        [
+                            "Logic"
+                        ],
+                        "LoLogicLo"
+                    ]
+                ]
+            },
+            {
+                "name": "start_hi",
+                "topic": "",
+                "requirements": [],
+                "description": "Given a string, return true if the string starts with \"hi\" and false otherwise.\n\nThis exercise was taken from [codingbat.com](https://codingbat.com/prob/p191022) and has been adapted for the Python language. There are many great programming exercises there, but the majority are created for Java.",
+                "starter_code": "",
+                "tests": "from exercise.fixtures import captured_output\n\n\ndef test_1(captured_output):\n    assert captured_output('hi there') == True\n\n\ndef test_2(captured_output):\n    assert captured_output('hi') == True\n\n\ndef test_3(captured_output):\n    assert captured_output('hello hi') == False\n\n\ndef test_4(captured_output):\n    assert captured_output('he') == False\n\n\ndef test_5(captured_output):\n    assert captured_output('h') == False\n\n\ndef test_6(captured_output):\n    assert captured_output('') == False\n\n\ndef test_7(captured_output):\n    assert captured_output('ho hi') == False\n\n\ndef test_8(captured_output):\n    assert captured_output('hi ho') == True\n\n\n",
+                "solution": "",
+                "tests_io": [
+                    [
+                        [
+                            "hi there"
+                        ],
+                        true
+                    ],
+                    [
+                        [
+                            "hi"
+                        ],
+                        true
+                    ],
+                    [
+                        [
+                            "hello hi"
+                        ],
+                        false
+                    ],
+                    [
+                        [
+                            "he"
+                        ],
+                        false
+                    ],
+                    [
+                        [
+                            "h"
+                        ],
+                        false
+                    ],
+                    [
+                        [
+                            ""
+                        ],
+                        false
+                    ],
+                    [
+                        [
+                            "ho hi"
+                        ],
+                        false
+                    ],
+                    [
+                        [
+                            "hi ho"
+                        ],
+                        true
+                    ]
+                ]
+            },
+            {
+                "name": "icy_hot",
+                "topic": "",
+                "requirements": [],
+                "description": "Given two temperatures, return true if one is less than 0 and the other is greater than 100.\n\nThis exercise was taken from [codingbat.com](https://codingbat.com/prob/p192082) and has been adapted for the Python language. There are many great programming exercises there, but the majority are created for Java.",
+                "starter_code": "",
+                "tests": "from exercise.fixtures import captured_output\n\n\ndef test_1(captured_output):\n    assert captured_output('120\\n-1') == True\n\n\ndef test_2(captured_output):\n    assert captured_output('-1\\n120') == True\n\n\ndef test_3(captured_output):\n    assert captured_output('2\\n120') == False\n\n\ndef test_4(captured_output):\n    assert captured_output('-1\\n100') == False\n\n\ndef test_5(captured_output):\n    assert captured_output('-2\\n-2') == False\n\n\ndef test_6(captured_output):\n    assert captured_output('120\\n120') == False\n\n\n",
+                "solution": "",
+                "tests_io": [
+                    [
+                        [
+                            120,
+                            -1
+                        ],
+                        true
+                    ],
+                    [
+                        [
+                            -1,
+                            120
+                        ],
+                        true
+                    ],
+                    [
+                        [
+                            2,
+                            120
+                        ],
+                        false
+                    ],
+                    [
+                        [
+                            -1,
+                            100
+                        ],
+                        false
+                    ],
+                    [
+                        [
+                            -2,
+                            -2
+                        ],
+                        false
+                    ],
+                    [
+                        [
+                            120,
+                            120
+                        ],
+                        false
+                    ]
+                ]
+            },
+            {
+                "name": "in_1020",
+                "topic": "",
+                "requirements": [],
+                "description": "Given 2 int values, return true if either of them is in the range 10..20 inclusive.\n\nThis exercise was taken from [codingbat.com](https://codingbat.com/prob/p144535) and has been adapted for the Python language. There are many great programming exercises there, but the majority are created for Java.",
+                "starter_code": "",
+                "tests": "from exercise.fixtures import captured_output\n\n\ndef test_1(captured_output):\n    assert captured_output('12\\n99') == True\n\n\ndef test_2(captured_output):\n    assert captured_output('21\\n12') == True\n\n\ndef test_3(captured_output):\n    assert captured_output('8\\n99') == False\n\n\ndef test_4(captured_output):\n    assert captured_output('99\\n10') == True\n\n\ndef test_5(captured_output):\n    assert captured_output('20\\n20') == True\n\n\ndef test_6(captured_output):\n    assert captured_output('21\\n21') == False\n\n\ndef test_7(captured_output):\n    assert captured_output('9\\n9') == False\n\n\n",
+                "solution": "",
+                "tests_io": [
+                    [
+                        [
+                            12,
+                            99
+                        ],
+                        true
+                    ],
+                    [
+                        [
+                            21,
+                            12
+                        ],
+                        true
+                    ],
+                    [
+                        [
+                            8,
+                            99
+                        ],
+                        false
+                    ],
+                    [
+                        [
+                            99,
+                            10
+                        ],
+                        true
+                    ],
+                    [
+                        [
+                            20,
+                            20
+                        ],
+                        true
+                    ],
+                    [
+                        [
+                            21,
+                            21
+                        ],
+                        false
+                    ],
+                    [
+                        [
+                            9,
+                            9
+                        ],
+                        false
+                    ]
+                ]
+            },
+            {
+                "name": "has_teen",
+                "topic": "",
+                "requirements": [],
+                "description": "We'll say that a number is \"teen\" if it is in the range 13..19 inclusive. Given 3 int values, return true if 1 or more of them are teen.\n\nThis exercise was taken from [codingbat.com](https://codingbat.com/prob/p178986) and has been adapted for the Python language. There are many great programming exercises there, but the majority are created for Java.",
+                "starter_code": "",
+                "tests": "from exercise.fixtures import captured_output\n\n\ndef test_1(captured_output):\n    assert captured_output('13\\n20\\n10') == True\n\n\ndef test_2(captured_output):\n    assert captured_output('20\\n19\\n10') == True\n\n\ndef test_3(captured_output):\n    assert captured_output('20\\n10\\n13') == True\n\n\ndef test_4(captured_output):\n    assert captured_output('1\\n20\\n12') == False\n\n\ndef test_5(captured_output):\n    assert captured_output('19\\n20\\n12') == True\n\n\ndef test_6(captured_output):\n    assert captured_output('12\\n20\\n19') == True\n\n\ndef test_7(captured_output):\n    assert captured_output('12\\n9\\n20') == False\n\n\ndef test_8(captured_output):\n    assert captured_output('12\\n18\\n20') == True\n\n\ndef test_9(captured_output):\n    assert captured_output('14\\n2\\n20') == True\n\n\ndef test_10(captured_output):\n    assert captured_output('4\\n2\\n20') == False\n\n\ndef test_11(captured_output):\n    assert captured_output('11\\n22\\n22') == False\n\n\n",
+                "solution": "",
+                "tests_io": [
+                    [
+                        [
+                            13,
+                            20,
+                            10
+                        ],
+                        true
+                    ],
+                    [
+                        [
+                            20,
+                            19,
+                            10
+                        ],
+                        true
+                    ],
+                    [
+                        [
+                            20,
+                            10,
+                            13
+                        ],
+                        true
+                    ],
+                    [
+                        [
+                            1,
+                            20,
+                            12
+                        ],
+                        false
+                    ],
+                    [
+                        [
+                            19,
+                            20,
+                            12
+                        ],
+                        true
+                    ],
+                    [
+                        [
+                            12,
+                            20,
+                            19
+                        ],
+                        true
+                    ],
+                    [
+                        [
+                            12,
+                            9,
+                            20
+                        ],
+                        false
+                    ],
+                    [
+                        [
+                            12,
+                            18,
+                            20
+                        ],
+                        true
+                    ],
+                    [
+                        [
+                            14,
+                            2,
+                            20
+                        ],
+                        true
+                    ],
+                    [
+                        [
+                            4,
+                            2,
+                            20
+                        ],
+                        false
+                    ],
+                    [
+                        [
+                            11,
+                            22,
+                            22
+                        ],
+                        false
+                    ]
+                ]
+            },
+            {
+                "name": "lone_teen",
+                "topic": "",
+                "requirements": [],
+                "description": "We'll say that a number is \"teen\" if it is in the range 13..19 inclusive. Given 2 int values, return true if one or the other is teen, but not both.\n\nThis exercise was taken from [codingbat.com](https://codingbat.com/prob/p165701) and has been adapted for the Python language. There are many great programming exercises there, but the majority are created for Java.",
+                "starter_code": "",
+                "tests": "from exercise.fixtures import captured_output\n\n\ndef test_1(captured_output):\n    assert captured_output('13\\n99') == True\n\n\ndef test_2(captured_output):\n    assert captured_output('21\\n19') == True\n\n\ndef test_3(captured_output):\n    assert captured_output('13\\n13') == False\n\n\ndef test_4(captured_output):\n    assert captured_output('14\\n20') == True\n\n\ndef test_5(captured_output):\n    assert captured_output('20\\n15') == True\n\n\ndef test_6(captured_output):\n    assert captured_output('16\\n17') == False\n\n\ndef test_7(captured_output):\n    assert captured_output('16\\n9') == True\n\n\ndef test_8(captured_output):\n    assert captured_output('16\\n18') == False\n\n\ndef test_9(captured_output):\n    assert captured_output('13\\n19') == False\n\n\ndef test_10(captured_output):\n    assert captured_output('13\\n20') == True\n\n\ndef test_11(captured_output):\n    assert captured_output('6\\n18') == True\n\n\ndef test_12(captured_output):\n    assert captured_output('99\\n13') == True\n\n\ndef test_13(captured_output):\n    assert captured_output('99\\n99') == False\n\n\n",
+                "solution": "",
+                "tests_io": [
+                    [
+                        [
+                            13,
+                            99
+                        ],
+                        true
+                    ],
+                    [
+                        [
+                            21,
+                            19
+                        ],
+                        true
+                    ],
+                    [
+                        [
+                            13,
+                            13
+                        ],
+                        false
+                    ],
+                    [
+                        [
+                            14,
+                            20
+                        ],
+                        true
+                    ],
+                    [
+                        [
+                            20,
+                            15
+                        ],
+                        true
+                    ],
+                    [
+                        [
+                            16,
+                            17
+                        ],
+                        false
+                    ],
+                    [
+                        [
+                            16,
+                            9
+                        ],
+                        true
+                    ],
+                    [
+                        [
+                            16,
+                            18
+                        ],
+                        false
+                    ],
+                    [
+                        [
+                            13,
+                            19
+                        ],
+                        false
+                    ],
+                    [
+                        [
+                            13,
+                            20
+                        ],
+                        true
+                    ],
+                    [
+                        [
+                            6,
+                            18
+                        ],
+                        true
+                    ],
+                    [
+                        [
+                            99,
+                            13
+                        ],
+                        true
+                    ],
+                    [
+                        [
+                            99,
+                            99
+                        ],
+                        false
+                    ]
+                ]
+            },
+            {
+                "name": "del_del",
+                "topic": "",
+                "requirements": [],
+                "description": "Given a string, if the string \"del\" appears starting at index 1, return a string where that \"del\" has been deleted. Otherwise, return the string unchanged.\n\nThis exercise was taken from [codingbat.com](https://codingbat.com/prob/p100905) and has been adapted for the Python language. There are many great programming exercises there, but the majority are created for Java.",
+                "starter_code": "",
+                "tests": "from exercise.fixtures import captured_output\n\n\ndef test_1(captured_output):\n    assert captured_output('adelbc') == 'abc'\n\n\ndef test_2(captured_output):\n    assert captured_output('adelHello') == 'aHello'\n\n\ndef test_3(captured_output):\n    assert captured_output('adedbc') == 'adedbc'\n\n\ndef test_4(captured_output):\n    assert captured_output('abcdel') == 'abcdel'\n\n\ndef test_5(captured_output):\n    assert captured_output('add') == 'add'\n\n\ndef test_6(captured_output):\n    assert captured_output('ad') == 'ad'\n\n\ndef test_7(captured_output):\n    assert captured_output('a') == 'a'\n\n\ndef test_8(captured_output):\n    assert captured_output('') == ''\n\n\ndef test_9(captured_output):\n    assert captured_output('del') == 'del'\n\n\ndef test_10(captured_output):\n    assert captured_output('adel') == 'a'\n\n\ndef test_11(captured_output):\n    assert captured_output('aadelbb') == 'aadelbb'\n\n\n",
+                "solution": "",
+                "tests_io": [
+                    [
+                        [
+                            "adelbc"
+                        ],
+                        "abc"
+                    ],
+                    [
+                        [
+                            "adelHello"
+                        ],
+                        "aHello"
+                    ],
+                    [
+                        [
+                            "adedbc"
+                        ],
+                        "adedbc"
+                    ],
+                    [
+                        [
+                            "abcdel"
+                        ],
+                        "abcdel"
+                    ],
+                    [
+                        [
+                            "add"
+                        ],
+                        "add"
+                    ],
+                    [
+                        [
+                            "ad"
+                        ],
+                        "ad"
+                    ],
+                    [
+                        [
+                            "a"
+                        ],
+                        "a"
+                    ],
+                    [
+                        [
+                            ""
+                        ],
+                        ""
+                    ],
+                    [
+                        [
+                            "del"
+                        ],
+                        "del"
+                    ],
+                    [
+                        [
+                            "adel"
+                        ],
+                        "a"
+                    ],
+                    [
+                        [
+                            "aadelbb"
+                        ],
+                        "aadelbb"
+                    ]
+                ]
+            },
+            {
+                "name": "mix_start",
+                "topic": "",
+                "requirements": [],
+                "description": "Return true if the given string begins with \"mix\", except the 'm' can be anything, so \"pix\", \"9ix\" .. all count.\n\nThis exercise was taken from [codingbat.com](https://codingbat.com/prob/p151713) and has been adapted for the Python language. There are many great programming exercises there, but the majority are created for Java.",
+                "starter_code": "",
+                "tests": "from exercise.fixtures import captured_output\n\n\ndef test_1(captured_output):\n    assert captured_output('mix snacks') == True\n\n\ndef test_2(captured_output):\n    assert captured_output('pix snacks') == True\n\n\ndef test_3(captured_output):\n    assert captured_output('piz snacks') == False\n\n\ndef test_4(captured_output):\n    assert captured_output('nix') == True\n\n\ndef test_5(captured_output):\n    assert captured_output('ni') == False\n\n\ndef test_6(captured_output):\n    assert captured_output('n') == False\n\n\ndef test_7(captured_output):\n    assert captured_output('') == False\n\n\n",
+                "solution": "",
+                "tests_io": [
+                    [
+                        [
+                            "mix snacks"
+                        ],
+                        true
+                    ],
+                    [
+                        [
+                            "pix snacks"
+                        ],
+                        true
+                    ],
+                    [
+                        [
+                            "piz snacks"
+                        ],
+                        false
+                    ],
+                    [
+                        [
+                            "nix"
+                        ],
+                        true
+                    ],
+                    [
+                        [
+                            "ni"
+                        ],
+                        false
+                    ],
+                    [
+                        [
+                            "n"
+                        ],
+                        false
+                    ],
+                    [
+                        [
+                            ""
+                        ],
+                        false
+                    ]
+                ]
+            },
+            {
+                "name": "start_oz",
+                "topic": "",
+                "requirements": [],
+                "description": "Given a string, return a string made of the first 2 chars (if present), however include first char only if it is 'o' and include the second only if it is 'z', so \"ozymandias\" yields \"oz\".\n\nThis exercise was taken from [codingbat.com](https://codingbat.com/prob/p199720) and has been adapted for the Python language. There are many great programming exercises there, but the majority are created for Java.",
+                "starter_code": "",
+                "tests": "from exercise.fixtures import captured_output\n\n\ndef test_1(captured_output):\n    assert captured_output('ozymandias') == 'oz'\n\n\ndef test_2(captured_output):\n    assert captured_output('bzoo') == 'z'\n\n\ndef test_3(captured_output):\n    assert captured_output('oxx') == 'o'\n\n\ndef test_4(captured_output):\n    assert captured_output('oz') == 'oz'\n\n\ndef test_5(captured_output):\n    assert captured_output('ounce') == 'o'\n\n\ndef test_6(captured_output):\n    assert captured_output('o') == 'o'\n\n\ndef test_7(captured_output):\n    assert captured_output('abc') == ''\n\n\ndef test_8(captured_output):\n    assert captured_output('') == ''\n\n\ndef test_9(captured_output):\n    assert captured_output('zoo') == ''\n\n\ndef test_10(captured_output):\n    assert captured_output('aztec') == 'z'\n\n\ndef test_11(captured_output):\n    assert captured_output('zzzz') == 'z'\n\n\ndef test_12(captured_output):\n    assert captured_output('oznic') == 'oz'\n\n\n",
+                "solution": "",
+                "tests_io": [
+                    [
+                        [
+                            "ozymandias"
+                        ],
+                        "oz"
+                    ],
+                    [
+                        [
+                            "bzoo"
+                        ],
+                        "z"
+                    ],
+                    [
+                        [
+                            "oxx"
+                        ],
+                        "o"
+                    ],
+                    [
+                        [
+                            "oz"
+                        ],
+                        "oz"
+                    ],
+                    [
+                        [
+                            "ounce"
+                        ],
+                        "o"
+                    ],
+                    [
+                        [
+                            "o"
+                        ],
+                        "o"
+                    ],
+                    [
+                        [
+                            "abc"
+                        ],
+                        ""
+                    ],
+                    [
+                        [
+                            ""
+                        ],
+                        ""
+                    ],
+                    [
+                        [
+                            "zoo"
+                        ],
+                        ""
+                    ],
+                    [
+                        [
+                            "aztec"
+                        ],
+                        "z"
+                    ],
+                    [
+                        [
+                            "zzzz"
+                        ],
+                        "z"
+                    ],
+                    [
+                        [
+                            "oznic"
+                        ],
+                        "oz"
+                    ]
+                ]
+            },
+            {
+                "name": "int_max",
+                "topic": "",
+                "requirements": [],
+                "description": "Given three int values, a b c, return the largest.\n\nThis exercise was taken from [codingbat.com](https://codingbat.com/prob/p101887) and has been adapted for the Python language. There are many great programming exercises there, but the majority are created for Java.",
+                "starter_code": "",
+                "tests": "from exercise.fixtures import captured_output\n\n\ndef test_1(captured_output):\n    assert captured_output('1\\n2\\n3') == 3\n\n\ndef test_2(captured_output):\n    assert captured_output('1\\n3\\n2') == 3\n\n\ndef test_3(captured_output):\n    assert captured_output('3\\n2\\n1') == 3\n\n\ndef test_4(captured_output):\n    assert captured_output('9\\n3\\n3') == 9\n\n\ndef test_5(captured_output):\n    assert captured_output('3\\n9\\n3') == 9\n\n\ndef test_6(captured_output):\n    assert captured_output('3\\n3\\n9') == 9\n\n\ndef test_7(captured_output):\n    assert captured_output('8\\n2\\n3') == 8\n\n\ndef test_8(captured_output):\n    assert captured_output('-3\\n-1\\n-2') == -1\n\n\ndef test_9(captured_output):\n    assert captured_output('6\\n2\\n5') == 6\n\n\ndef test_10(captured_output):\n    assert captured_output('5\\n6\\n2') == 6\n\n\ndef test_11(captured_output):\n    assert captured_output('5\\n2\\n6') == 6\n\n\n",
+                "solution": "",
+                "tests_io": [
+                    [
+                        [
+                            1,
+                            2,
+                            3
+                        ],
+                        3
+                    ],
+                    [
+                        [
+                            1,
+                            3,
+                            2
+                        ],
+                        3
+                    ],
+                    [
+                        [
+                            3,
+                            2,
+                            1
+                        ],
+                        3
+                    ],
+                    [
+                        [
+                            9,
+                            3,
+                            3
+                        ],
+                        9
+                    ],
+                    [
+                        [
+                            3,
+                            9,
+                            3
+                        ],
+                        9
+                    ],
+                    [
+                        [
+                            3,
+                            3,
+                            9
+                        ],
+                        9
+                    ],
+                    [
+                        [
+                            8,
+                            2,
+                            3
+                        ],
+                        8
+                    ],
+                    [
+                        [
+                            -3,
+                            -1,
+                            -2
+                        ],
+                        -1
+                    ],
+                    [
+                        [
+                            6,
+                            2,
+                            5
+                        ],
+                        6
+                    ],
+                    [
+                        [
+                            5,
+                            6,
+                            2
+                        ],
+                        6
+                    ],
+                    [
+                        [
+                            5,
+                            2,
+                            6
+                        ],
+                        6
+                    ]
+                ]
+            },
+            {
+                "name": "close_10",
+                "topic": "",
+                "requirements": [],
+                "description": "Given 2 int values, return whichever value is nearest to the value 10, or return 0 in the event of a tie. Note that Math.abs(n) returns the absolute value of a number.\n\nThis exercise was taken from [codingbat.com](https://codingbat.com/prob/p172021) and has been adapted for the Python language. There are many great programming exercises there, but the majority are created for Java.",
+                "starter_code": "",
+                "tests": "from exercise.fixtures import captured_output\n\n\ndef test_1(captured_output):\n    assert captured_output('8\\n13') == 8\n\n\ndef test_2(captured_output):\n    assert captured_output('13\\n8') == 8\n\n\ndef test_3(captured_output):\n    assert captured_output('13\\n7') == 0\n\n\ndef test_4(captured_output):\n    assert captured_output('7\\n13') == 0\n\n\ndef test_5(captured_output):\n    assert captured_output('9\\n13') == 9\n\n\ndef test_6(captured_output):\n    assert captured_output('13\\n8') == 8\n\n\ndef test_7(captured_output):\n    assert captured_output('10\\n12') == 10\n\n\ndef test_8(captured_output):\n    assert captured_output('11\\n10') == 10\n\n\ndef test_9(captured_output):\n    assert captured_output('5\\n21') == 5\n\n\ndef test_10(captured_output):\n    assert captured_output('0\\n20') == 0\n\n\ndef test_11(captured_output):\n    assert captured_output('10\\n10') == 0\n\n\n",
+                "solution": "",
+                "tests_io": [
+                    [
+                        [
+                            8,
+                            13
+                        ],
+                        8
+                    ],
+                    [
+                        [
+                            13,
+                            8
+                        ],
+                        8
+                    ],
+                    [
+                        [
+                            13,
+                            7
+                        ],
+                        0
+                    ],
+                    [
+                        [
+                            7,
+                            13
+                        ],
+                        0
+                    ],
+                    [
+                        [
+                            9,
+                            13
+                        ],
+                        9
+                    ],
+                    [
+                        [
+                            13,
+                            8
+                        ],
+                        8
+                    ],
+                    [
+                        [
+                            10,
+                            12
+                        ],
+                        10
+                    ],
+                    [
+                        [
+                            11,
+                            10
+                        ],
+                        10
+                    ],
+                    [
+                        [
+                            5,
+                            21
+                        ],
+                        5
+                    ],
+                    [
+                        [
+                            0,
+                            20
+                        ],
+                        0
+                    ],
+                    [
+                        [
+                            10,
+                            10
+                        ],
+                        0
+                    ]
+                ]
+            },
+            {
+                "name": "in_3050",
+                "topic": "",
+                "requirements": [],
+                "description": "Given 2 int values, return true if they are both in the range 30..40 inclusive, or they are both in the range 40..50 inclusive.\n\nThis exercise was taken from [codingbat.com](https://codingbat.com/prob/p132134) and has been adapted for the Python language. There are many great programming exercises there, but the majority are created for Java.",
+                "starter_code": "",
+                "tests": "from exercise.fixtures import captured_output\n\n\ndef test_1(captured_output):\n    assert captured_output('30\\n31') == True\n\n\ndef test_2(captured_output):\n    assert captured_output('30\\n41') == False\n\n\ndef test_3(captured_output):\n    assert captured_output('40\\n50') == True\n\n\ndef test_4(captured_output):\n    assert captured_output('40\\n51') == False\n\n\ndef test_5(captured_output):\n    assert captured_output('39\\n50') == False\n\n\ndef test_6(captured_output):\n    assert captured_output('50\\n39') == False\n\n\ndef test_7(captured_output):\n    assert captured_output('40\\n39') == True\n\n\ndef test_8(captured_output):\n    assert captured_output('49\\n48') == True\n\n\ndef test_9(captured_output):\n    assert captured_output('50\\n40') == True\n\n\ndef test_10(captured_output):\n    assert captured_output('50\\n51') == False\n\n\ndef test_11(captured_output):\n    assert captured_output('35\\n36') == True\n\n\ndef test_12(captured_output):\n    assert captured_output('35\\n45') == False\n\n\n",
+                "solution": "",
+                "tests_io": [
+                    [
+                        [
+                            30,
+                            31
+                        ],
+                        true
+                    ],
+                    [
+                        [
+                            30,
+                            41
+                        ],
+                        false
+                    ],
+                    [
+                        [
+                            40,
+                            50
+                        ],
+                        true
+                    ],
+                    [
+                        [
+                            40,
+                            51
+                        ],
+                        false
+                    ],
+                    [
+                        [
+                            39,
+                            50
+                        ],
+                        false
+                    ],
+                    [
+                        [
+                            50,
+                            39
+                        ],
+                        false
+                    ],
+                    [
+                        [
+                            40,
+                            39
+                        ],
+                        true
+                    ],
+                    [
+                        [
+                            49,
+                            48
+                        ],
+                        true
+                    ],
+                    [
+                        [
+                            50,
+                            40
+                        ],
+                        true
+                    ],
+                    [
+                        [
+                            50,
+                            51
+                        ],
+                        false
+                    ],
+                    [
+                        [
+                            35,
+                            36
+                        ],
+                        true
+                    ],
+                    [
+                        [
+                            35,
+                            45
+                        ],
+                        false
+                    ]
+                ]
+            },
+            {
+                "name": "max_1020",
+                "topic": "",
+                "requirements": [],
+                "description": "Given 2 positive int values, return the larger value that is in the range 10..20 inclusive, or return 0 if neither is in that range.\n\nThis exercise was taken from [codingbat.com](https://codingbat.com/prob/p177372) and has been adapted for the Python language. There are many great programming exercises there, but the majority are created for Java.",
+                "starter_code": "",
+                "tests": "from exercise.fixtures import captured_output\n\n\ndef test_1(captured_output):\n    assert captured_output('11\\n19') == 19\n\n\ndef test_2(captured_output):\n    assert captured_output('19\\n11') == 19\n\n\ndef test_3(captured_output):\n    assert captured_output('11\\n9') == 11\n\n\ndef test_4(captured_output):\n    assert captured_output('9\\n21') == 0\n\n\ndef test_5(captured_output):\n    assert captured_output('10\\n21') == 10\n\n\ndef test_6(captured_output):\n    assert captured_output('21\\n10') == 10\n\n\ndef test_7(captured_output):\n    assert captured_output('9\\n11') == 11\n\n\ndef test_8(captured_output):\n    assert captured_output('23\\n10') == 10\n\n\ndef test_9(captured_output):\n    assert captured_output('20\\n10') == 20\n\n\ndef test_10(captured_output):\n    assert captured_output('7\\n20') == 20\n\n\ndef test_11(captured_output):\n    assert captured_output('17\\n16') == 17\n\n\n",
+                "solution": "",
+                "tests_io": [
+                    [
+                        [
+                            11,
+                            19
+                        ],
+                        19
+                    ],
+                    [
+                        [
+                            19,
+                            11
+                        ],
+                        19
+                    ],
+                    [
+                        [
+                            11,
+                            9
+                        ],
+                        11
+                    ],
+                    [
+                        [
+                            9,
+                            21
+                        ],
+                        0
+                    ],
+                    [
+                        [
+                            10,
+                            21
+                        ],
+                        10
+                    ],
+                    [
+                        [
+                            21,
+                            10
+                        ],
+                        10
+                    ],
+                    [
+                        [
+                            9,
+                            11
+                        ],
+                        11
+                    ],
+                    [
+                        [
+                            23,
+                            10
+                        ],
+                        10
+                    ],
+                    [
+                        [
+                            20,
+                            10
+                        ],
+                        20
+                    ],
+                    [
+                        [
+                            7,
+                            20
+                        ],
+                        20
+                    ],
+                    [
+                        [
+                            17,
+                            16
+                        ],
+                        17
+                    ]
+                ]
+            },
+            {
+                "name": "string_e",
+                "topic": "",
+                "requirements": [],
+                "description": "Return true if the given string contains between 1 and 3 'e' chars.\n\nThis exercise was taken from [codingbat.com](https://codingbat.com/prob/p173784) and has been adapted for the Python language. There are many great programming exercises there, but the majority are created for Java.",
+                "starter_code": "",
+                "tests": "from exercise.fixtures import captured_output\n\n\ndef test_1(captured_output):\n    assert captured_output('Hello') == True\n\n\ndef test_2(captured_output):\n    assert captured_output('Heelle') == True\n\n\ndef test_3(captured_output):\n    assert captured_output('Heelele') == False\n\n\ndef test_4(captured_output):\n    assert captured_output('Hll') == False\n\n\ndef test_5(captured_output):\n    assert captured_output('e') == True\n\n\ndef test_6(captured_output):\n    assert captured_output('') == False\n\n\n",
+                "solution": "",
+                "tests_io": [
+                    [
+                        [
+                            "Hello"
+                        ],
+                        true
+                    ],
+                    [
+                        [
+                            "Heelle"
+                        ],
+                        true
+                    ],
+                    [
+                        [
+                            "Heelele"
+                        ],
+                        false
+                    ],
+                    [
+                        [
+                            "Hll"
+                        ],
+                        false
+                    ],
+                    [
+                        [
+                            "e"
+                        ],
+                        true
+                    ],
+                    [
+                        [
+                            ""
+                        ],
+                        false
+                    ]
+                ]
+            },
+            {
+                "name": "last_digit",
+                "topic": "",
+                "requirements": [],
+                "description": "Given two non-negative int values, return true if they have the same last digit, such as with 27 and 57. Note that the % \"mod\" operator computes remainders, so 17 % 10 is 7.\n\nThis exercise was taken from [codingbat.com](https://codingbat.com/prob/p125339) and has been adapted for the Python language. There are many great programming exercises there, but the majority are created for Java.",
+                "starter_code": "",
+                "tests": "from exercise.fixtures import captured_output\n\n\ndef test_1(captured_output):\n    assert captured_output('7\\n17') == True\n\n\ndef test_2(captured_output):\n    assert captured_output('6\\n17') == False\n\n\ndef test_3(captured_output):\n    assert captured_output('3\\n113') == True\n\n\ndef test_4(captured_output):\n    assert captured_output('114\\n113') == False\n\n\ndef test_5(captured_output):\n    assert captured_output('114\\n4') == True\n\n\ndef test_6(captured_output):\n    assert captured_output('10\\n0') == True\n\n\ndef test_7(captured_output):\n    assert captured_output('11\\n0') == False\n\n\n",
+                "solution": "",
+                "tests_io": [
+                    [
+                        [
+                            7,
+                            17
+                        ],
+                        true
+                    ],
+                    [
+                        [
+                            6,
+                            17
+                        ],
+                        false
+                    ],
+                    [
+                        [
+                            3,
+                            113
+                        ],
+                        true
+                    ],
+                    [
+                        [
+                            114,
+                            113
+                        ],
+                        false
+                    ],
+                    [
+                        [
+                            114,
+                            4
+                        ],
+                        true
+                    ],
+                    [
+                        [
+                            10,
+                            0
+                        ],
+                        true
+                    ],
+                    [
+                        [
+                            11,
+                            0
+                        ],
+                        false
+                    ]
+                ]
+            },
+            {
+                "name": "end_up",
+                "topic": "",
+                "requirements": [],
+                "description": "Given a string, return a new string where the last 3 chars are now in upper case. If the string has less than 3 chars, uppercase whatever is there. Note that str.toUpperCase() returns the uppercase version of a string.\n\nThis exercise was taken from [codingbat.com](https://codingbat.com/prob/p125268) and has been adapted for the Python language. There are many great programming exercises there, but the majority are created for Java.",
+                "starter_code": "",
+                "tests": "from exercise.fixtures import captured_output\n\n\ndef test_1(captured_output):\n    assert captured_output('Hello') == 'HeLLO'\n\n\ndef test_2(captured_output):\n    assert captured_output('hi there') == 'hi thERE'\n\n\ndef test_3(captured_output):\n    assert captured_output('hi') == 'HI'\n\n\ndef test_4(captured_output):\n    assert captured_output('woo hoo') == 'woo HOO'\n\n\ndef test_5(captured_output):\n    assert captured_output('xyz12') == 'xyZ12'\n\n\ndef test_6(captured_output):\n    assert captured_output('x') == 'X'\n\n\ndef test_7(captured_output):\n    assert captured_output('') == ''\n\n\n",
+                "solution": "",
+                "tests_io": [
+                    [
+                        [
+                            "Hello"
+                        ],
+                        "HeLLO"
+                    ],
+                    [
+                        [
+                            "hi there"
+                        ],
+                        "hi thERE"
+                    ],
+                    [
+                        [
+                            "hi"
+                        ],
+                        "HI"
+                    ],
+                    [
+                        [
+                            "woo hoo"
+                        ],
+                        "woo HOO"
+                    ],
+                    [
+                        [
+                            "xyz12"
+                        ],
+                        "xyZ12"
+                    ],
+                    [
+                        [
+                            "x"
+                        ],
+                        "X"
+                    ],
+                    [
+                        [
+                            ""
+                        ],
+                        ""
+                    ]
+                ]
+            },
+            {
+                "name": "every_nth",
+                "topic": "",
+                "requirements": [],
+                "description": "Given a non-empty string and an int N, return the string made starting with char 0, and then every Nth char of the string. So if N is 3, use char 0, 3, 6, ... and so on. N is 1 or more.\n\nThis exercise was taken from [codingbat.com](https://codingbat.com/prob/p196441) and has been adapted for the Python language. There are many great programming exercises there, but the majority are created for Java.",
+                "starter_code": "",
+                "tests": "from exercise.fixtures import captured_output\n\n\ndef test_1(captured_output):\n    assert captured_output('Miracle\\n2') == 'Mrce'\n\n\ndef test_2(captured_output):\n    assert captured_output('abcdefg\\n2') == 'aceg'\n\n\ndef test_3(captured_output):\n    assert captured_output('abcdefg\\n3') == 'adg'\n\n\ndef test_4(captured_output):\n    assert captured_output('Chocolate\\n3') == 'Cca'\n\n\ndef test_5(captured_output):\n    assert captured_output('Chocolates\\n3') == 'Ccas'\n\n\ndef test_6(captured_output):\n    assert captured_output('Chocolates\\n4') == 'Coe'\n\n\ndef test_7(captured_output):\n    assert captured_output('Chocolates\\n100') == 'C'\n\n\n",
+                "solution": "",
+                "tests_io": [
+                    [
+                        [
+                            "Miracle",
+                            2
+                        ],
+                        "Mrce"
+                    ],
+                    [
+                        [
+                            "abcdefg",
+                            2
+                        ],
+                        "aceg"
+                    ],
+                    [
+                        [
+                            "abcdefg",
+                            3
+                        ],
+                        "adg"
+                    ],
+                    [
+                        [
+                            "Chocolate",
+                            3
+                        ],
+                        "Cca"
+                    ],
+                    [
+                        [
+                            "Chocolates",
+                            3
+                        ],
+                        "Ccas"
+                    ],
+                    [
+                        [
+                            "Chocolates",
+                            4
+                        ],
+                        "Coe"
+                    ],
+                    [
+                        [
+                            "Chocolates",
+                            100
+                        ],
+                        "C"
                     ]
                 ]
             }
