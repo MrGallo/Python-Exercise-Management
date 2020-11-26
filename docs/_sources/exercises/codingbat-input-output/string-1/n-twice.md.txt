@@ -14,72 +14,72 @@ This exercise was taken from [codingbat.com](https://codingbat.com/prob/p174148)
 
 ## Tests
 ### Test 1
-#### Input
+**Input:**
 ```
 'Hello'
 2
 ```
-#### Output
+**Output:**
 ```
 'Helo'
 ```
 ### Test 2
-#### Input
+**Input:**
 ```
 'Chocolate'
 3
 ```
-#### Output
+**Output:**
 ```
 'Choate'
 ```
 ### Test 3
-#### Input
+**Input:**
 ```
 'Chocolate'
 1
 ```
-#### Output
+**Output:**
 ```
 'Ce'
 ```
 ### Test 4
-#### Input
+**Input:**
 ```
 'Chocolate'
 0
 ```
-#### Output
+**Output:**
 ```
 ''
 ```
 ### Test 5
-#### Input
+**Input:**
 ```
 'Hello'
 4
 ```
-#### Output
+**Output:**
 ```
 'Hellello'
 ```
 ### Test 6
-#### Input
+**Input:**
 ```
 'Code'
 4
 ```
-#### Output
+**Output:**
 ```
 'CodeCode'
 ```
 ### Test 7
-#### Input
+**Input:**
 ```
 'Code'
 2
 ```
-#### Output
+**Output:**
 ```
 'Code'
 ```

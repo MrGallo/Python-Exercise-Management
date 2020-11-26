@@ -14,47 +14,47 @@ This exercise was taken from [codingbat.com](https://codingbat.com/prob/p137729)
 
 ## Tests
 ### Test 1
-#### Input
+**Input:**
 ```
 'string'
 ```
-#### Output
+**Output:**
 ```
 'ri'
 ```
 ### Test 2
-#### Input
+**Input:**
 ```
 'code'
 ```
-#### Output
+**Output:**
 ```
 'od'
 ```
 ### Test 3
-#### Input
+**Input:**
 ```
 'Practice'
 ```
-#### Output
+**Output:**
 ```
 'ct'
 ```
 ### Test 4
-#### Input
+**Input:**
 ```
 'ab'
 ```
-#### Output
+**Output:**
 ```
 'ab'
 ```
 ### Test 5
-#### Input
+**Input:**
 ```
 '0123456789'
 ```
-#### Output
+**Output:**
 ```
 '45'
 ```

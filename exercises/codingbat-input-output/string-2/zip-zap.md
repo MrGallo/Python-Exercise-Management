@@ -14,110 +14,110 @@ This exercise was taken from [codingbat.com](https://codingbat.com/prob/p180759)
 
 ## Tests
 ### Test 1
-#### Input
+**Input:**
 ```
 'zipXzap'
 ```
-#### Output
+**Output:**
 ```
 'zpXzp'
 ```
 ### Test 2
-#### Input
+**Input:**
 ```
 'zopzop'
 ```
-#### Output
+**Output:**
 ```
 'zpzp'
 ```
 ### Test 3
-#### Input
+**Input:**
 ```
 'zzzopzop'
 ```
-#### Output
+**Output:**
 ```
 'zzzpzp'
 ```
 ### Test 4
-#### Input
+**Input:**
 ```
 'zibzap'
 ```
-#### Output
+**Output:**
 ```
 'zibzp'
 ```
 ### Test 5
-#### Input
+**Input:**
 ```
 'zip'
 ```
-#### Output
+**Output:**
 ```
 'zp'
 ```
 ### Test 6
-#### Input
+**Input:**
 ```
 'zi'
 ```
-#### Output
+**Output:**
 ```
 'zi'
 ```
 ### Test 7
-#### Input
+**Input:**
 ```
 'z'
 ```
-#### Output
+**Output:**
 ```
 'z'
 ```
 ### Test 8
-#### Input
+**Input:**
 ```
 ''
 ```
-#### Output
+**Output:**
 ```
 ''
 ```
 ### Test 9
-#### Input
+**Input:**
 ```
 'zzp'
 ```
-#### Output
+**Output:**
 ```
 'zp'
 ```
 ### Test 10
-#### Input
+**Input:**
 ```
 'abcppp'
 ```
-#### Output
+**Output:**
 ```
 'abcppp'
 ```
 ### Test 11
-#### Input
+**Input:**
 ```
 'azbcppp'
 ```
-#### Output
+**Output:**
 ```
 'azbcppp'
 ```
 ### Test 12
-#### Input
+**Input:**
 ```
 'azbcpzpp'
 ```
-#### Output
+**Output:**
 ```
 'azbcpzp'
 ```

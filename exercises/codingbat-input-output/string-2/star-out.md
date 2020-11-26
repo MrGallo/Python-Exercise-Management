@@ -14,164 +14,164 @@ This exercise was taken from [codingbat.com](https://codingbat.com/prob/p139564)
 
 ## Tests
 ### Test 1
-#### Input
+**Input:**
 ```
 'ab*cd'
 ```
-#### Output
+**Output:**
 ```
 'ad'
 ```
 ### Test 2
-#### Input
+**Input:**
 ```
 'ab**cd'
 ```
-#### Output
+**Output:**
 ```
 'ad'
 ```
 ### Test 3
-#### Input
+**Input:**
 ```
 'sm*eilly'
 ```
-#### Output
+**Output:**
 ```
 'silly'
 ```
 ### Test 4
-#### Input
+**Input:**
 ```
 'sm*eil*ly'
 ```
-#### Output
+**Output:**
 ```
 'siy'
 ```
 ### Test 5
-#### Input
+**Input:**
 ```
 'sm**eil*ly'
 ```
-#### Output
+**Output:**
 ```
 'siy'
 ```
 ### Test 6
-#### Input
+**Input:**
 ```
 'sm***eil*ly'
 ```
-#### Output
+**Output:**
 ```
 'siy'
 ```
 ### Test 7
-#### Input
+**Input:**
 ```
 'stringy*'
 ```
-#### Output
+**Output:**
 ```
 'string'
 ```
 ### Test 8
-#### Input
+**Input:**
 ```
 '*stringy'
 ```
-#### Output
+**Output:**
 ```
 'tringy'
 ```
 ### Test 9
-#### Input
+**Input:**
 ```
 '*str*in*gy'
 ```
-#### Output
+**Output:**
 ```
 'ty'
 ```
 ### Test 10
-#### Input
+**Input:**
 ```
 'abc'
 ```
-#### Output
+**Output:**
 ```
 'abc'
 ```
 ### Test 11
-#### Input
+**Input:**
 ```
 'a*bc'
 ```
-#### Output
+**Output:**
 ```
 'c'
 ```
 ### Test 12
-#### Input
+**Input:**
 ```
 'ab'
 ```
-#### Output
+**Output:**
 ```
 'ab'
 ```
 ### Test 13
-#### Input
+**Input:**
 ```
 'a*b'
 ```
-#### Output
+**Output:**
 ```
 ''
 ```
 ### Test 14
-#### Input
+**Input:**
 ```
 'a'
 ```
-#### Output
+**Output:**
 ```
 'a'
 ```
 ### Test 15
-#### Input
+**Input:**
 ```
 'a*'
 ```
-#### Output
+**Output:**
 ```
 ''
 ```
 ### Test 16
-#### Input
+**Input:**
 ```
 '*a'
 ```
-#### Output
+**Output:**
 ```
 ''
 ```
 ### Test 17
-#### Input
+**Input:**
 ```
 '*'
 ```
-#### Output
+**Output:**
 ```
 ''
 ```
 ### Test 18
-#### Input
+**Input:**
 ```
 ''
 ```
-#### Output
+**Output:**
 ```
 ''
 ```

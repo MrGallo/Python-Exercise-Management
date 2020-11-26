@@ -14,102 +14,102 @@ This exercise was taken from [codingbat.com](https://codingbat.com/prob/p170829)
 
 ## Tests
 ### Test 1
-#### Input
+**Input:**
 ```
 '12xy34'
 'xy'
 ```
-#### Output
+**Output:**
 ```
 '++xy++'
 ```
 ### Test 2
-#### Input
+**Input:**
 ```
 '12xy34'
 '1'
 ```
-#### Output
+**Output:**
 ```
 '1+++++'
 ```
 ### Test 3
-#### Input
+**Input:**
 ```
 '12xy34xyabcxy'
 'xy'
 ```
-#### Output
+**Output:**
 ```
 '++xy++xy+++xy'
 ```
 ### Test 4
-#### Input
+**Input:**
 ```
 'abXYabcXYZ'
 'ab'
 ```
-#### Output
+**Output:**
 ```
 'ab++ab++++'
 ```
 ### Test 5
-#### Input
+**Input:**
 ```
 'abXYabcXYZ'
 'abc'
 ```
-#### Output
+**Output:**
 ```
 '++++abc+++'
 ```
 ### Test 6
-#### Input
+**Input:**
 ```
 'abXYabcXYZ'
 'XY'
 ```
-#### Output
+**Output:**
 ```
 '++XY+++XY+'
 ```
 ### Test 7
-#### Input
+**Input:**
 ```
 'abXYxyzXYZ'
 'XYZ'
 ```
-#### Output
+**Output:**
 ```
 '+++++++XYZ'
 ```
 ### Test 8
-#### Input
+**Input:**
 ```
 '--++ab'
 '++'
 ```
-#### Output
+**Output:**
 ```
 '++++++'
 ```
 ### Test 9
-#### Input
+**Input:**
 ```
 'aaxxxxbb'
 'xx'
 ```
-#### Output
+**Output:**
 ```
 '++xxxx++'
 ```
 ### Test 10
-#### Input
+**Input:**
 ```
 '123123'
 '3'
 ```
-#### Output
+**Output:**
 ```
 '++3++3'
 ```

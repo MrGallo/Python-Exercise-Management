@@ -14,146 +14,146 @@ This exercise was taken from [codingbat.com](https://codingbat.com/prob/p194491)
 
 ## Tests
 ### Test 1
-#### Input
+**Input:**
 ```
 'xy*yzz'
 ```
-#### Output
+**Output:**
 ```
 True
 ```
 ### Test 2
-#### Input
+**Input:**
 ```
 'xy*zzz'
 ```
-#### Output
+**Output:**
 ```
 False
 ```
 ### Test 3
-#### Input
+**Input:**
 ```
 '*xa*az'
 ```
-#### Output
+**Output:**
 ```
 True
 ```
 ### Test 4
-#### Input
+**Input:**
 ```
 '*xa*bz'
 ```
-#### Output
+**Output:**
 ```
 False
 ```
 ### Test 5
-#### Input
+**Input:**
 ```
 '*xa*a*'
 ```
-#### Output
+**Output:**
 ```
 True
 ```
 ### Test 6
-#### Input
+**Input:**
 ```
 ''
 ```
-#### Output
+**Output:**
 ```
 True
 ```
 ### Test 7
-#### Input
+**Input:**
 ```
 '*xa*a*a'
 ```
-#### Output
+**Output:**
 ```
 True
 ```
 ### Test 8
-#### Input
+**Input:**
 ```
 '*xa*a*b'
 ```
-#### Output
+**Output:**
 ```
 False
 ```
 ### Test 9
-#### Input
+**Input:**
 ```
 '*12*2*2'
 ```
-#### Output
+**Output:**
 ```
 True
 ```
 ### Test 10
-#### Input
+**Input:**
 ```
 '12*2*3*'
 ```
-#### Output
+**Output:**
 ```
 False
 ```
 ### Test 11
-#### Input
+**Input:**
 ```
 'abcDEF'
 ```
-#### Output
+**Output:**
 ```
 True
 ```
 ### Test 12
-#### Input
+**Input:**
 ```
 'XY*YYYY*Z*'
 ```
-#### Output
+**Output:**
 ```
 False
 ```
 ### Test 13
-#### Input
+**Input:**
 ```
 'XY*YYYY*Y*'
 ```
-#### Output
+**Output:**
 ```
 True
 ```
 ### Test 14
-#### Input
+**Input:**
 ```
 '12*2*3*'
 ```
-#### Output
+**Output:**
 ```
 False
 ```
 ### Test 15
-#### Input
+**Input:**
 ```
 '*'
 ```
-#### Output
+**Output:**
 ```
 True
 ```
 ### Test 16
-#### Input
+**Input:**
 ```
 '**'
 ```
-#### Output
+**Output:**
 ```
 True
 ```

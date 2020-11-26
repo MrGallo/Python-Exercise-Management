@@ -14,82 +14,82 @@ This exercise was taken from [codingbat.com](https://codingbat.com/prob/p152339)
 
 ## Tests
 ### Test 1
-#### Input
+**Input:**
 ```
 'Hello'
 3
 ```
-#### Output
+**Output:**
 ```
 'llollollo'
 ```
 ### Test 2
-#### Input
+**Input:**
 ```
 'Hello'
 2
 ```
-#### Output
+**Output:**
 ```
 'lolo'
 ```
 ### Test 3
-#### Input
+**Input:**
 ```
 'Hello'
 1
 ```
-#### Output
+**Output:**
 ```
 'o'
 ```
 ### Test 4
-#### Input
+**Input:**
 ```
 'Hello'
 0
 ```
-#### Output
+**Output:**
 ```
 ''
 ```
 ### Test 5
-#### Input
+**Input:**
 ```
 'abc'
 3
 ```
-#### Output
+**Output:**
 ```
 'abcabcabc'
 ```
 ### Test 6
-#### Input
+**Input:**
 ```
 '1234'
 2
 ```
-#### Output
+**Output:**
 ```
 '3434'
 ```
 ### Test 7
-#### Input
+**Input:**
 ```
 '1234'
 3
 ```
-#### Output
+**Output:**
 ```
 '234234234'
 ```
 ### Test 8
-#### Input
+**Input:**
 ```
 ''
 0
 ```
-#### Output
+**Output:**
 ```
 ''
 ```

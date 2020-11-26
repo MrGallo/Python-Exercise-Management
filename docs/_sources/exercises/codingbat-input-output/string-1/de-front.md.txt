@@ -14,173 +14,173 @@ This exercise was taken from [codingbat.com](https://codingbat.com/prob/p110141)
 
 ## Tests
 ### Test 1
-#### Input
+**Input:**
 ```
 'Hello'
 ```
-#### Output
+**Output:**
 ```
 'llo'
 ```
 ### Test 2
-#### Input
+**Input:**
 ```
 'java'
 ```
-#### Output
+**Output:**
 ```
 'va'
 ```
 ### Test 3
-#### Input
+**Input:**
 ```
 'away'
 ```
-#### Output
+**Output:**
 ```
 'aay'
 ```
 ### Test 4
-#### Input
+**Input:**
 ```
 'axy'
 ```
-#### Output
+**Output:**
 ```
 'ay'
 ```
 ### Test 5
-#### Input
+**Input:**
 ```
 'abc'
 ```
-#### Output
+**Output:**
 ```
 'abc'
 ```
 ### Test 6
-#### Input
+**Input:**
 ```
 'xby'
 ```
-#### Output
+**Output:**
 ```
 'by'
 ```
 ### Test 7
-#### Input
+**Input:**
 ```
 'ab'
 ```
-#### Output
+**Output:**
 ```
 'ab'
 ```
 ### Test 8
-#### Input
+**Input:**
 ```
 'ax'
 ```
-#### Output
+**Output:**
 ```
 'a'
 ```
 ### Test 9
-#### Input
+**Input:**
 ```
 'axb'
 ```
-#### Output
+**Output:**
 ```
 'ab'
 ```
 ### Test 10
-#### Input
+**Input:**
 ```
 'aaa'
 ```
-#### Output
+**Output:**
 ```
 'aa'
 ```
 ### Test 11
-#### Input
+**Input:**
 ```
 'xbc'
 ```
-#### Output
+**Output:**
 ```
 'bc'
 ```
 ### Test 12
-#### Input
+**Input:**
 ```
 'bbb'
 ```
-#### Output
+**Output:**
 ```
 'bb'
 ```
 ### Test 13
-#### Input
+**Input:**
 ```
 'bazz'
 ```
-#### Output
+**Output:**
 ```
 'zz'
 ```
 ### Test 14
-#### Input
+**Input:**
 ```
 'ba'
 ```
-#### Output
+**Output:**
 ```
 ''
 ```
 ### Test 15
-#### Input
+**Input:**
 ```
 'abxyz'
 ```
-#### Output
+**Output:**
 ```
 'abxyz'
 ```
 ### Test 16
-#### Input
+**Input:**
 ```
 'hi'
 ```
-#### Output
+**Output:**
 ```
 ''
 ```
 ### Test 17
-#### Input
+**Input:**
 ```
 'his'
 ```
-#### Output
+**Output:**
 ```
 's'
 ```
 ### Test 18
-#### Input
+**Input:**
 ```
 'xz'
 ```
-#### Output
+**Output:**
 ```
 ''
 ```
 ### Test 19
-#### Input
+**Input:**
 ```
 'zzz'
 ```
-#### Output
+**Output:**
 ```
 'z'
 ```

@@ -14,74 +14,74 @@ This exercise was taken from [codingbat.com](https://codingbat.com/prob/p163411)
 
 ## Tests
 ### Test 1
-#### Input
+**Input:**
 ```
 'Hello'
 ```
-#### Output
+**Output:**
 ```
 'He'
 ```
 ### Test 2
-#### Input
+**Input:**
 ```
 'abcdefg'
 ```
-#### Output
+**Output:**
 ```
 'ab'
 ```
 ### Test 3
-#### Input
+**Input:**
 ```
 'ab'
 ```
-#### Output
+**Output:**
 ```
 'ab'
 ```
 ### Test 4
-#### Input
+**Input:**
 ```
 'a'
 ```
-#### Output
+**Output:**
 ```
 'a'
 ```
 ### Test 5
-#### Input
+**Input:**
 ```
 ''
 ```
-#### Output
+**Output:**
 ```
 ''
 ```
 ### Test 6
-#### Input
+**Input:**
 ```
 'Kitten'
 ```
-#### Output
+**Output:**
 ```
 'Ki'
 ```
 ### Test 7
-#### Input
+**Input:**
 ```
 'hi'
 ```
-#### Output
+**Output:**
 ```
 'hi'
 ```
 ### Test 8
-#### Input
+**Input:**
 ```
 'hiya'
 ```
-#### Output
+**Output:**
 ```
 'hi'
 ```

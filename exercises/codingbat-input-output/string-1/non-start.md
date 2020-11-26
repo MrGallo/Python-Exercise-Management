@@ -14,92 +14,92 @@ This exercise was taken from [codingbat.com](https://codingbat.com/prob/p143825)
 
 ## Tests
 ### Test 1
-#### Input
+**Input:**
 ```
 'Hello'
 'There'
 ```
-#### Output
+**Output:**
 ```
 'ellohere'
 ```
 ### Test 2
-#### Input
+**Input:**
 ```
 'java'
 'code'
 ```
-#### Output
+**Output:**
 ```
 'avaode'
 ```
 ### Test 3
-#### Input
+**Input:**
 ```
 'shotl'
 'java'
 ```
-#### Output
+**Output:**
 ```
 'hotlava'
 ```
 ### Test 4
-#### Input
+**Input:**
 ```
 'ab'
 'xy'
 ```
-#### Output
+**Output:**
 ```
 'by'
 ```
 ### Test 5
-#### Input
+**Input:**
 ```
 'ab'
 'x'
 ```
-#### Output
+**Output:**
 ```
 'b'
 ```
 ### Test 6
-#### Input
+**Input:**
 ```
 'x'
 'ac'
 ```
-#### Output
+**Output:**
 ```
 'c'
 ```
 ### Test 7
-#### Input
+**Input:**
 ```
 'a'
 'x'
 ```
-#### Output
+**Output:**
 ```
 ''
 ```
 ### Test 8
-#### Input
+**Input:**
 ```
 'kit'
 'kat'
 ```
-#### Output
+**Output:**
 ```
 'itat'
 ```
 ### Test 9
-#### Input
+**Input:**
 ```
 'mart'
 'dart'
 ```
-#### Output
+**Output:**
 ```
 'artart'
 ```

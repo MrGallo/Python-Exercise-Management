@@ -14,152 +14,152 @@ This exercise was taken from [codingbat.com](https://codingbat.com/prob/p141494)
 
 ## Tests
 ### Test 1
-#### Input
+**Input:**
 ```
 'hippo'
 'hi'
 ```
-#### Output
+**Output:**
 ```
 'hi'
 ```
 ### Test 2
-#### Input
+**Input:**
 ```
 'hippo'
 'xip'
 ```
-#### Output
+**Output:**
 ```
 'hip'
 ```
 ### Test 3
-#### Input
+**Input:**
 ```
 'hippo'
 'i'
 ```
-#### Output
+**Output:**
 ```
 'h'
 ```
 ### Test 4
-#### Input
+**Input:**
 ```
 'hippo'
 'ix'
 ```
-#### Output
+**Output:**
 ```
 ''
 ```
 ### Test 5
-#### Input
+**Input:**
 ```
 'h'
 'ix'
 ```
-#### Output
+**Output:**
 ```
 ''
 ```
 ### Test 6
-#### Input
+**Input:**
 ```
 ''
 'i'
 ```
-#### Output
+**Output:**
 ```
 ''
 ```
 ### Test 7
-#### Input
+**Input:**
 ```
 'hip'
 'zi'
 ```
-#### Output
+**Output:**
 ```
 'hi'
 ```
 ### Test 8
-#### Input
+**Input:**
 ```
 'hip'
 'zip'
 ```
-#### Output
+**Output:**
 ```
 'hip'
 ```
 ### Test 9
-#### Input
+**Input:**
 ```
 'hip'
 'zig'
 ```
-#### Output
+**Output:**
 ```
 ''
 ```
 ### Test 10
-#### Input
+**Input:**
 ```
 'h'
 'z'
 ```
-#### Output
+**Output:**
 ```
 'h'
 ```
 ### Test 11
-#### Input
+**Input:**
 ```
 'hippo'
 'xippo'
 ```
-#### Output
+**Output:**
 ```
 'hippo'
 ```
 ### Test 12
-#### Input
+**Input:**
 ```
 'hippo'
 'xyz'
 ```
-#### Output
+**Output:**
 ```
 ''
 ```
 ### Test 13
-#### Input
+**Input:**
 ```
 'hippo'
 'hip'
 ```
-#### Output
+**Output:**
 ```
 'hip'
 ```
 ### Test 14
-#### Input
+**Input:**
 ```
 'kitten'
 'cit'
 ```
-#### Output
+**Output:**
 ```
 'kit'
 ```
 ### Test 15
-#### Input
+**Input:**
 ```
 'kit'
 'cit'
 ```
-#### Output
+**Output:**
 ```
 'kit'
 ```

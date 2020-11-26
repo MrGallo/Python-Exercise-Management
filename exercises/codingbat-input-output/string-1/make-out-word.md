@@ -14,52 +14,52 @@ This exercise was taken from [codingbat.com](https://codingbat.com/prob/p184030)
 
 ## Tests
 ### Test 1
-#### Input
+**Input:**
 ```
 '<<>>'
 'Yay'
 ```
-#### Output
+**Output:**
 ```
 '<<Yay>>'
 ```
 ### Test 2
-#### Input
+**Input:**
 ```
 '<<>>'
 'WooHoo'
 ```
-#### Output
+**Output:**
 ```
 '<<WooHoo>>'
 ```
 ### Test 3
-#### Input
+**Input:**
 ```
 '[[]]'
 'word'
 ```
-#### Output
+**Output:**
 ```
 '[[word]]'
 ```
 ### Test 4
-#### Input
+**Input:**
 ```
 'HHoo'
 'Hello'
 ```
-#### Output
+**Output:**
 ```
 'HHHellooo'
 ```
 ### Test 5
-#### Input
+**Input:**
 ```
 'abyz'
 'YAY'
 ```
-#### Output
+**Output:**
 ```
 'abYAYyz'
 ```

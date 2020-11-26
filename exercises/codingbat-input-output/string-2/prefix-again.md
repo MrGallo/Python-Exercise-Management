@@ -14,122 +14,122 @@ This exercise was taken from [codingbat.com](https://codingbat.com/prob/p136417)
 
 ## Tests
 ### Test 1
-#### Input
+**Input:**
 ```
 'abXYabc'
 1
 ```
-#### Output
+**Output:**
 ```
 True
 ```
 ### Test 2
-#### Input
+**Input:**
 ```
 'abXYabc'
 2
 ```
-#### Output
+**Output:**
 ```
 True
 ```
 ### Test 3
-#### Input
+**Input:**
 ```
 'abXYabc'
 3
 ```
-#### Output
+**Output:**
 ```
 False
 ```
 ### Test 4
-#### Input
+**Input:**
 ```
 'xyzxyxyxy'
 2
 ```
-#### Output
+**Output:**
 ```
 True
 ```
 ### Test 5
-#### Input
+**Input:**
 ```
 'xyzxyxyxy'
 3
 ```
-#### Output
+**Output:**
 ```
 False
 ```
 ### Test 6
-#### Input
+**Input:**
 ```
 'Hi12345Hi6789Hi10'
 1
 ```
-#### Output
+**Output:**
 ```
 True
 ```
 ### Test 7
-#### Input
+**Input:**
 ```
 'Hi12345Hi6789Hi10'
 2
 ```
-#### Output
+**Output:**
 ```
 True
 ```
 ### Test 8
-#### Input
+**Input:**
 ```
 'Hi12345Hi6789Hi10'
 3
 ```
-#### Output
+**Output:**
 ```
 True
 ```
 ### Test 9
-#### Input
+**Input:**
 ```
 'Hi12345Hi6789Hi10'
 4
 ```
-#### Output
+**Output:**
 ```
 False
 ```
 ### Test 10
-#### Input
+**Input:**
 ```
 'a'
 1
 ```
-#### Output
+**Output:**
 ```
 False
 ```
 ### Test 11
-#### Input
+**Input:**
 ```
 'aa'
 1
 ```
-#### Output
+**Output:**
 ```
 True
 ```
 ### Test 12
-#### Input
+**Input:**
 ```
 'ab'
 1
 ```
-#### Output
+**Output:**
 ```
 False
 ```

@@ -14,83 +14,83 @@ This exercise was taken from [codingbat.com](https://codingbat.com/prob/p142247)
 
 ## Tests
 ### Test 1
-#### Input
+**Input:**
 ```
 'HelloHe'
 ```
-#### Output
+**Output:**
 ```
 'lloHe'
 ```
 ### Test 2
-#### Input
+**Input:**
 ```
 'HelloHi'
 ```
-#### Output
+**Output:**
 ```
 'HelloHi'
 ```
 ### Test 3
-#### Input
+**Input:**
 ```
 'Hi'
 ```
-#### Output
+**Output:**
 ```
 ''
 ```
 ### Test 4
-#### Input
+**Input:**
 ```
 'Chocolate'
 ```
-#### Output
+**Output:**
 ```
 'Chocolate'
 ```
 ### Test 5
-#### Input
+**Input:**
 ```
 'xxx'
 ```
-#### Output
+**Output:**
 ```
 'x'
 ```
 ### Test 6
-#### Input
+**Input:**
 ```
 'xx'
 ```
-#### Output
+**Output:**
 ```
 ''
 ```
 ### Test 7
-#### Input
+**Input:**
 ```
 'x'
 ```
-#### Output
+**Output:**
 ```
 'x'
 ```
 ### Test 8
-#### Input
+**Input:**
 ```
 ''
 ```
-#### Output
+**Output:**
 ```
 ''
 ```
 ### Test 9
-#### Input
+**Input:**
 ```
 'Fruits'
 ```
-#### Output
+**Output:**
 ```
 'Fruits'
 ```

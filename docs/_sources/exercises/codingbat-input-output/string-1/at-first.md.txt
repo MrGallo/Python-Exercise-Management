@@ -14,65 +14,65 @@ This exercise was taken from [codingbat.com](https://codingbat.com/prob/p139076)
 
 ## Tests
 ### Test 1
-#### Input
+**Input:**
 ```
 'hello'
 ```
-#### Output
+**Output:**
 ```
 'he'
 ```
 ### Test 2
-#### Input
+**Input:**
 ```
 'hi'
 ```
-#### Output
+**Output:**
 ```
 'hi'
 ```
 ### Test 3
-#### Input
+**Input:**
 ```
 'h'
 ```
-#### Output
+**Output:**
 ```
 'h@'
 ```
 ### Test 4
-#### Input
+**Input:**
 ```
 ''
 ```
-#### Output
+**Output:**
 ```
 '@@'
 ```
 ### Test 5
-#### Input
+**Input:**
 ```
 'kitten'
 ```
-#### Output
+**Output:**
 ```
 'ki'
 ```
 ### Test 6
-#### Input
+**Input:**
 ```
 'java'
 ```
-#### Output
+**Output:**
 ```
 'ja'
 ```
 ### Test 7
-#### Input
+**Input:**
 ```
 'j'
 ```
-#### Output
+**Output:**
 ```
 'j@'
 ```

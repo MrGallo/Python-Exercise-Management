@@ -14,62 +14,62 @@ This exercise was taken from [codingbat.com](https://codingbat.com/prob/p132118)
 
 ## Tests
 ### Test 1
-#### Input
+**Input:**
 ```
 'abc'
 'cat'
 ```
-#### Output
+**Output:**
 ```
 'abcat'
 ```
 ### Test 2
-#### Input
+**Input:**
 ```
 'dog'
 'cat'
 ```
-#### Output
+**Output:**
 ```
 'dogcat'
 ```
 ### Test 3
-#### Input
+**Input:**
 ```
 'abc'
 ''
 ```
-#### Output
+**Output:**
 ```
 'abc'
 ```
 ### Test 4
-#### Input
+**Input:**
 ```
 ''
 'cat'
 ```
-#### Output
+**Output:**
 ```
 'cat'
 ```
 ### Test 5
-#### Input
+**Input:**
 ```
 'pig'
 'g'
 ```
-#### Output
+**Output:**
 ```
 'pig'
 ```
 ### Test 6
-#### Input
+**Input:**
 ```
 'pig'
 'doggy'
 ```
-#### Output
+**Output:**
 ```
 'pigdoggy'
 ```

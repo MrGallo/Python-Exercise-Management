@@ -14,142 +14,142 @@ This exercise was taken from [codingbat.com](https://codingbat.com/prob/p126880)
 
 ## Tests
 ### Test 1
-#### Input
+**Input:**
 ```
 'Hiabc'
 'abc'
 ```
-#### Output
+**Output:**
 ```
 True
 ```
 ### Test 2
-#### Input
+**Input:**
 ```
 'AbC'
 'HiaBc'
 ```
-#### Output
+**Output:**
 ```
 True
 ```
 ### Test 3
-#### Input
+**Input:**
 ```
 'abc'
 'abXabc'
 ```
-#### Output
+**Output:**
 ```
 True
 ```
 ### Test 4
-#### Input
+**Input:**
 ```
 'Hiabc'
 'abcd'
 ```
-#### Output
+**Output:**
 ```
 False
 ```
 ### Test 5
-#### Input
+**Input:**
 ```
 'Hiabc'
 'bc'
 ```
-#### Output
+**Output:**
 ```
 True
 ```
 ### Test 6
-#### Input
+**Input:**
 ```
 'Hiabcx'
 'bc'
 ```
-#### Output
+**Output:**
 ```
 False
 ```
 ### Test 7
-#### Input
+**Input:**
 ```
 'abc'
 'abc'
 ```
-#### Output
+**Output:**
 ```
 True
 ```
 ### Test 8
-#### Input
+**Input:**
 ```
 'xyz'
 '12xyz'
 ```
-#### Output
+**Output:**
 ```
 True
 ```
 ### Test 9
-#### Input
+**Input:**
 ```
 'yz'
 '12xz'
 ```
-#### Output
+**Output:**
 ```
 False
 ```
 ### Test 10
-#### Input
+**Input:**
 ```
 'Z'
 '12xz'
 ```
-#### Output
+**Output:**
 ```
 True
 ```
 ### Test 11
-#### Input
+**Input:**
 ```
 '12'
 '12'
 ```
-#### Output
+**Output:**
 ```
 True
 ```
 ### Test 12
-#### Input
+**Input:**
 ```
 'abcXYZ'
 'abcDEF'
 ```
-#### Output
+**Output:**
 ```
 False
 ```
 ### Test 13
-#### Input
+**Input:**
 ```
 'ab'
 'ab12'
 ```
-#### Output
+**Output:**
 ```
 False
 ```
 ### Test 14
-#### Input
+**Input:**
 ```
 'ab'
 '12ab'
 ```
-#### Output
+**Output:**
 ```
 True
 ```

@@ -14,110 +14,110 @@ This exercise was taken from [codingbat.com](https://codingbat.com/prob/p151940)
 
 ## Tests
 ### Test 1
-#### Input
+**Input:**
 ```
 'xHix'
 ```
-#### Output
+**Output:**
 ```
 'Hi'
 ```
 ### Test 2
-#### Input
+**Input:**
 ```
 'xHi'
 ```
-#### Output
+**Output:**
 ```
 'Hi'
 ```
 ### Test 3
-#### Input
+**Input:**
 ```
 'Hxix'
 ```
-#### Output
+**Output:**
 ```
 'Hxi'
 ```
 ### Test 4
-#### Input
+**Input:**
 ```
 'Hi'
 ```
-#### Output
+**Output:**
 ```
 'Hi'
 ```
 ### Test 5
-#### Input
+**Input:**
 ```
 'xxHi'
 ```
-#### Output
+**Output:**
 ```
 'xHi'
 ```
 ### Test 6
-#### Input
+**Input:**
 ```
 'Hix'
 ```
-#### Output
+**Output:**
 ```
 'Hi'
 ```
 ### Test 7
-#### Input
+**Input:**
 ```
 'xaxbx'
 ```
-#### Output
+**Output:**
 ```
 'axb'
 ```
 ### Test 8
-#### Input
+**Input:**
 ```
 'xx'
 ```
-#### Output
+**Output:**
 ```
 ''
 ```
 ### Test 9
-#### Input
+**Input:**
 ```
 'x'
 ```
-#### Output
+**Output:**
 ```
 ''
 ```
 ### Test 10
-#### Input
+**Input:**
 ```
 ''
 ```
-#### Output
+**Output:**
 ```
 ''
 ```
 ### Test 11
-#### Input
+**Input:**
 ```
 'Hello'
 ```
-#### Output
+**Output:**
 ```
 'Hello'
 ```
 ### Test 12
-#### Input
+**Input:**
 ```
 'Hexllo'
 ```
-#### Output
+**Output:**
 ```
 'Hexllo'
 ```

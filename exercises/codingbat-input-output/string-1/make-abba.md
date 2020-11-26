@@ -14,92 +14,92 @@ This exercise was taken from [codingbat.com](https://codingbat.com/prob/p161056)
 
 ## Tests
 ### Test 1
-#### Input
+**Input:**
 ```
 'Hi'
 'Bye'
 ```
-#### Output
+**Output:**
 ```
 'HiByeByeHi'
 ```
 ### Test 2
-#### Input
+**Input:**
 ```
 'Yo'
 'Alice'
 ```
-#### Output
+**Output:**
 ```
 'YoAliceAliceYo'
 ```
 ### Test 3
-#### Input
+**Input:**
 ```
 'What'
 'Up'
 ```
-#### Output
+**Output:**
 ```
 'WhatUpUpWhat'
 ```
 ### Test 4
-#### Input
+**Input:**
 ```
 'aaa'
 'bbb'
 ```
-#### Output
+**Output:**
 ```
 'aaabbbbbbaaa'
 ```
 ### Test 5
-#### Input
+**Input:**
 ```
 'x'
 'y'
 ```
-#### Output
+**Output:**
 ```
 'xyyx'
 ```
 ### Test 6
-#### Input
+**Input:**
 ```
 'x'
 ''
 ```
-#### Output
+**Output:**
 ```
 'xx'
 ```
 ### Test 7
-#### Input
+**Input:**
 ```
 ''
 'y'
 ```
-#### Output
+**Output:**
 ```
 'yy'
 ```
 ### Test 8
-#### Input
+**Input:**
 ```
 'Bo'
 'Ya'
 ```
-#### Output
+**Output:**
 ```
 'BoYaYaBo'
 ```
 ### Test 9
-#### Input
+**Input:**
 ```
 'Ya'
 'Ya'
 ```
-#### Output
+**Output:**
 ```
 'YaYaYaYa'
 ```

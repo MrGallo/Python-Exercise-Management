@@ -14,47 +14,47 @@ This exercise was taken from [codingbat.com](https://codingbat.com/prob/p194786)
 
 ## Tests
 ### Test 1
-#### Input
+**Input:**
 ```
 'coding'
 ```
-#### Output
+**Output:**
 ```
 'codign'
 ```
 ### Test 2
-#### Input
+**Input:**
 ```
 'cat'
 ```
-#### Output
+**Output:**
 ```
 'cta'
 ```
 ### Test 3
-#### Input
+**Input:**
 ```
 'ab'
 ```
-#### Output
+**Output:**
 ```
 'ba'
 ```
 ### Test 4
-#### Input
+**Input:**
 ```
 'a'
 ```
-#### Output
+**Output:**
 ```
 'a'
 ```
 ### Test 5
-#### Input
+**Input:**
 ```
 ''
 ```
-#### Output
+**Output:**
 ```
 ''
 ```

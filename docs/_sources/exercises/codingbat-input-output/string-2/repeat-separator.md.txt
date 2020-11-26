@@ -14,123 +14,123 @@ This exercise was taken from [codingbat.com](https://codingbat.com/prob/p109637)
 
 ## Tests
 ### Test 1
-#### Input
+**Input:**
 ```
 'Word'
 'X'
 3
 ```
-#### Output
+**Output:**
 ```
 'WordXWordXWord'
 ```
 ### Test 2
-#### Input
+**Input:**
 ```
 'This'
 'And'
 2
 ```
-#### Output
+**Output:**
 ```
 'ThisAndThis'
 ```
 ### Test 3
-#### Input
+**Input:**
 ```
 'This'
 'And'
 1
 ```
-#### Output
+**Output:**
 ```
 'This'
 ```
 ### Test 4
-#### Input
+**Input:**
 ```
 'Hi'
 '-n-'
 2
 ```
-#### Output
+**Output:**
 ```
 'Hi-n-Hi'
 ```
 ### Test 5
-#### Input
+**Input:**
 ```
 'AAA'
 ''
 1
 ```
-#### Output
+**Output:**
 ```
 'AAA'
 ```
 ### Test 6
-#### Input
+**Input:**
 ```
 'AAA'
 ''
 0
 ```
-#### Output
+**Output:**
 ```
 ''
 ```
 ### Test 7
-#### Input
+**Input:**
 ```
 'A'
 'B'
 5
 ```
-#### Output
+**Output:**
 ```
 'ABABABABA'
 ```
 ### Test 8
-#### Input
+**Input:**
 ```
 'abc'
 'XX'
 3
 ```
-#### Output
+**Output:**
 ```
 'abcXXabcXXabc'
 ```
 ### Test 9
-#### Input
+**Input:**
 ```
 'abc'
 'XX'
 2
 ```
-#### Output
+**Output:**
 ```
 'abcXXabc'
 ```
 ### Test 10
-#### Input
+**Input:**
 ```
 'abc'
 'XX'
 1
 ```
-#### Output
+**Output:**
 ```
 'abc'
 ```
 ### Test 11
-#### Input
+**Input:**
 ```
 'XYZ'
 'a'
 2
 ```
-#### Output
+**Output:**
 ```
 'XYZaXYZ'
 ```

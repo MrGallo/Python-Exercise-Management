@@ -14,72 +14,72 @@ This exercise was taken from [codingbat.com](https://codingbat.com/prob/p147483)
 
 ## Tests
 ### Test 1
-#### Input
+**Input:**
 ```
 'i'
 'Yay'
 ```
-#### Output
+**Output:**
 ```
 '<i>Yay</i>'
 ```
 ### Test 2
-#### Input
+**Input:**
 ```
 'i'
 'Hello'
 ```
-#### Output
+**Output:**
 ```
 '<i>Hello</i>'
 ```
 ### Test 3
-#### Input
+**Input:**
 ```
 'cite'
 'Yay'
 ```
-#### Output
+**Output:**
 ```
 '<cite>Yay</cite>'
 ```
 ### Test 4
-#### Input
+**Input:**
 ```
 'address'
 'here'
 ```
-#### Output
+**Output:**
 ```
 '<address>here</address>'
 ```
 ### Test 5
-#### Input
+**Input:**
 ```
 'body'
 'Heart'
 ```
-#### Output
+**Output:**
 ```
 '<body>Heart</body>'
 ```
 ### Test 6
-#### Input
+**Input:**
 ```
 'i'
 'i'
 ```
-#### Output
+**Output:**
 ```
 '<i>i</i>'
 ```
 ### Test 7
-#### Input
+**Input:**
 ```
 'i'
 ''
 ```
-#### Output
+**Output:**
 ```
 '<i></i>'
 ```

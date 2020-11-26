@@ -14,56 +14,56 @@ This exercise was taken from [codingbat.com](https://codingbat.com/prob/p172063)
 
 ## Tests
 ### Test 1
-#### Input
+**Input:**
 ```
 'Hello'
 ```
-#### Output
+**Output:**
 ```
 'HeHeHe'
 ```
 ### Test 2
-#### Input
+**Input:**
 ```
 'ab'
 ```
-#### Output
+**Output:**
 ```
 'ababab'
 ```
 ### Test 3
-#### Input
+**Input:**
 ```
 'H'
 ```
-#### Output
+**Output:**
 ```
 'HHH'
 ```
 ### Test 4
-#### Input
+**Input:**
 ```
 ''
 ```
-#### Output
+**Output:**
 ```
 ''
 ```
 ### Test 5
-#### Input
+**Input:**
 ```
 'Candy'
 ```
-#### Output
+**Output:**
 ```
 'CaCaCa'
 ```
 ### Test 6
-#### Input
+**Input:**
 ```
 'Code'
 ```
-#### Output
+**Output:**
 ```
 'CoCoCo'
 ```

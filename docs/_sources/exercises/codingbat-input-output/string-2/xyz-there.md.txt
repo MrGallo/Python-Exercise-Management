@@ -14,128 +14,128 @@ This exercise was taken from [codingbat.com](https://codingbat.com/prob/p136594)
 
 ## Tests
 ### Test 1
-#### Input
+**Input:**
 ```
 'abcxyz'
 ```
-#### Output
+**Output:**
 ```
 True
 ```
 ### Test 2
-#### Input
+**Input:**
 ```
 'abc.xyz'
 ```
-#### Output
+**Output:**
 ```
 False
 ```
 ### Test 3
-#### Input
+**Input:**
 ```
 'xyz.abc'
 ```
-#### Output
+**Output:**
 ```
 True
 ```
 ### Test 4
-#### Input
+**Input:**
 ```
 'abcxy'
 ```
-#### Output
+**Output:**
 ```
 False
 ```
 ### Test 5
-#### Input
+**Input:**
 ```
 'xyz'
 ```
-#### Output
+**Output:**
 ```
 True
 ```
 ### Test 6
-#### Input
+**Input:**
 ```
 'xy'
 ```
-#### Output
+**Output:**
 ```
 False
 ```
 ### Test 7
-#### Input
+**Input:**
 ```
 'x'
 ```
-#### Output
+**Output:**
 ```
 False
 ```
 ### Test 8
-#### Input
+**Input:**
 ```
 ''
 ```
-#### Output
+**Output:**
 ```
 False
 ```
 ### Test 9
-#### Input
+**Input:**
 ```
 'abc.xyzxyz'
 ```
-#### Output
+**Output:**
 ```
 True
 ```
 ### Test 10
-#### Input
+**Input:**
 ```
 'abc.xxyz'
 ```
-#### Output
+**Output:**
 ```
 True
 ```
 ### Test 11
-#### Input
+**Input:**
 ```
 '.xyz'
 ```
-#### Output
+**Output:**
 ```
 False
 ```
 ### Test 12
-#### Input
+**Input:**
 ```
 '12.xyz'
 ```
-#### Output
+**Output:**
 ```
 False
 ```
 ### Test 13
-#### Input
+**Input:**
 ```
 '12xyz'
 ```
-#### Output
+**Output:**
 ```
 True
 ```
 ### Test 14
-#### Input
+**Input:**
 ```
 '1.xyz.xyz2.xyz'
 ```
-#### Output
+**Output:**
 ```
 False
 ```

@@ -14,56 +14,56 @@ This exercise was taken from [codingbat.com](https://codingbat.com/prob/p130781)
 
 ## Tests
 ### Test 1
-#### Input
+**Input:**
 ```
 'Hello'
 ```
-#### Output
+**Output:**
 ```
 'loHel'
 ```
 ### Test 2
-#### Input
+**Input:**
 ```
 'java'
 ```
-#### Output
+**Output:**
 ```
 'vaja'
 ```
 ### Test 3
-#### Input
+**Input:**
 ```
 'Hi'
 ```
-#### Output
+**Output:**
 ```
 'Hi'
 ```
 ### Test 4
-#### Input
+**Input:**
 ```
 'code'
 ```
-#### Output
+**Output:**
 ```
 'deco'
 ```
 ### Test 5
-#### Input
+**Input:**
 ```
 'cat'
 ```
-#### Output
+**Output:**
 ```
 'atc'
 ```
 ### Test 6
-#### Input
+**Input:**
 ```
 '12345'
 ```
-#### Output
+**Output:**
 ```
 '45123'
 ```

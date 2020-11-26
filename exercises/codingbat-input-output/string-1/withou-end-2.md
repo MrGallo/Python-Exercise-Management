@@ -14,65 +14,65 @@ This exercise was taken from [codingbat.com](https://codingbat.com/prob/p174254)
 
 ## Tests
 ### Test 1
-#### Input
+**Input:**
 ```
 'Hello'
 ```
-#### Output
+**Output:**
 ```
 'ell'
 ```
 ### Test 2
-#### Input
+**Input:**
 ```
 'abc'
 ```
-#### Output
+**Output:**
 ```
 'b'
 ```
 ### Test 3
-#### Input
+**Input:**
 ```
 'ab'
 ```
-#### Output
+**Output:**
 ```
 ''
 ```
 ### Test 4
-#### Input
+**Input:**
 ```
 'a'
 ```
-#### Output
+**Output:**
 ```
 ''
 ```
 ### Test 5
-#### Input
+**Input:**
 ```
 ''
 ```
-#### Output
+**Output:**
 ```
 ''
 ```
 ### Test 6
-#### Input
+**Input:**
 ```
 'coldy'
 ```
-#### Output
+**Output:**
 ```
 'old'
 ```
 ### Test 7
-#### Input
+**Input:**
 ```
 'java code'
 ```
-#### Output
+**Output:**
 ```
 'ava cod'
 ```

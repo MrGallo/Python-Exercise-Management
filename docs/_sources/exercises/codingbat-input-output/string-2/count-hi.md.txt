@@ -14,83 +14,83 @@ This exercise was taken from [codingbat.com](https://codingbat.com/prob/p147448)
 
 ## Tests
 ### Test 1
-#### Input
+**Input:**
 ```
 'abc hi ho'
 ```
-#### Output
+**Output:**
 ```
 1
 ```
 ### Test 2
-#### Input
+**Input:**
 ```
 'ABChi hi'
 ```
-#### Output
+**Output:**
 ```
 2
 ```
 ### Test 3
-#### Input
+**Input:**
 ```
 'hihi'
 ```
-#### Output
+**Output:**
 ```
 2
 ```
 ### Test 4
-#### Input
+**Input:**
 ```
 'hiHIhi'
 ```
-#### Output
+**Output:**
 ```
 2
 ```
 ### Test 5
-#### Input
+**Input:**
 ```
 ''
 ```
-#### Output
+**Output:**
 ```
 0
 ```
 ### Test 6
-#### Input
+**Input:**
 ```
 'h'
 ```
-#### Output
+**Output:**
 ```
 0
 ```
 ### Test 7
-#### Input
+**Input:**
 ```
 'hi'
 ```
-#### Output
+**Output:**
 ```
 1
 ```
 ### Test 8
-#### Input
+**Input:**
 ```
 'Hi is no HI on ahI'
 ```
-#### Output
+**Output:**
 ```
 0
 ```
 ### Test 9
-#### Input
+**Input:**
 ```
 'hiho not HOHIhi'
 ```
-#### Output
+**Output:**
 ```
 2
 ```

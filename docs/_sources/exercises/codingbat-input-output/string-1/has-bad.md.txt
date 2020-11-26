@@ -14,92 +14,92 @@ This exercise was taken from [codingbat.com](https://codingbat.com/prob/p139075)
 
 ## Tests
 ### Test 1
-#### Input
+**Input:**
 ```
 'badxx'
 ```
-#### Output
+**Output:**
 ```
 True
 ```
 ### Test 2
-#### Input
+**Input:**
 ```
 'xbadxx'
 ```
-#### Output
+**Output:**
 ```
 True
 ```
 ### Test 3
-#### Input
+**Input:**
 ```
 'xxbadxx'
 ```
-#### Output
+**Output:**
 ```
 False
 ```
 ### Test 4
-#### Input
+**Input:**
 ```
 'code'
 ```
-#### Output
+**Output:**
 ```
 False
 ```
 ### Test 5
-#### Input
+**Input:**
 ```
 'bad'
 ```
-#### Output
+**Output:**
 ```
 True
 ```
 ### Test 6
-#### Input
+**Input:**
 ```
 'ba'
 ```
-#### Output
+**Output:**
 ```
 False
 ```
 ### Test 7
-#### Input
+**Input:**
 ```
 'xba'
 ```
-#### Output
+**Output:**
 ```
 False
 ```
 ### Test 8
-#### Input
+**Input:**
 ```
 'xbad'
 ```
-#### Output
+**Output:**
 ```
 True
 ```
 ### Test 9
-#### Input
+**Input:**
 ```
 ''
 ```
-#### Output
+**Output:**
 ```
 False
 ```
 ### Test 10
-#### Input
+**Input:**
 ```
 'badyy'
 ```
-#### Output
+**Output:**
 ```
 True
 ```

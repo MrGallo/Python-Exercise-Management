@@ -14,132 +14,132 @@ This exercise was taken from [codingbat.com](https://codingbat.com/prob/p125185)
 
 ## Tests
 ### Test 1
-#### Input
+**Input:**
 ```
 'abc'
 'xyz'
 ```
-#### Output
+**Output:**
 ```
 'axbycz'
 ```
 ### Test 2
-#### Input
+**Input:**
 ```
 'Hi'
 'There'
 ```
-#### Output
+**Output:**
 ```
 'HTihere'
 ```
 ### Test 3
-#### Input
+**Input:**
 ```
 'xxxx'
 'There'
 ```
-#### Output
+**Output:**
 ```
 'xTxhxexre'
 ```
 ### Test 4
-#### Input
+**Input:**
 ```
 'xxx'
 'X'
 ```
-#### Output
+**Output:**
 ```
 'xXxx'
 ```
 ### Test 5
-#### Input
+**Input:**
 ```
 '2/'
 '27 around'
 ```
-#### Output
+**Output:**
 ```
 '22/7 around'
 ```
 ### Test 6
-#### Input
+**Input:**
 ```
 ''
 'Hello'
 ```
-#### Output
+**Output:**
 ```
 'Hello'
 ```
 ### Test 7
-#### Input
+**Input:**
 ```
 'Abc'
 ''
 ```
-#### Output
+**Output:**
 ```
 'Abc'
 ```
 ### Test 8
-#### Input
+**Input:**
 ```
 ''
 ''
 ```
-#### Output
+**Output:**
 ```
 ''
 ```
 ### Test 9
-#### Input
+**Input:**
 ```
 'a'
 'b'
 ```
-#### Output
+**Output:**
 ```
 'ab'
 ```
 ### Test 10
-#### Input
+**Input:**
 ```
 'ax'
 'b'
 ```
-#### Output
+**Output:**
 ```
 'abx'
 ```
 ### Test 11
-#### Input
+**Input:**
 ```
 'a'
 'bx'
 ```
-#### Output
+**Output:**
 ```
 'abx'
 ```
 ### Test 12
-#### Input
+**Input:**
 ```
 'So'
 'Long'
 ```
-#### Output
+**Output:**
 ```
 'SLoong'
 ```
 ### Test 13
-#### Input
+**Input:**
 ```
 'Long'
 'So'
 ```
-#### Output
+**Output:**
 ```
 'LSoong'
 ```

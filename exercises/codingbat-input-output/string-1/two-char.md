@@ -14,152 +14,152 @@ This exercise was taken from [codingbat.com](https://codingbat.com/prob/p144623)
 
 ## Tests
 ### Test 1
-#### Input
+**Input:**
 ```
 'java'
 0
 ```
-#### Output
+**Output:**
 ```
 'ja'
 ```
 ### Test 2
-#### Input
+**Input:**
 ```
 'java'
 2
 ```
-#### Output
+**Output:**
 ```
 'va'
 ```
 ### Test 3
-#### Input
+**Input:**
 ```
 'java'
 3
 ```
-#### Output
+**Output:**
 ```
 'ja'
 ```
 ### Test 4
-#### Input
+**Input:**
 ```
 'java'
 4
 ```
-#### Output
+**Output:**
 ```
 'ja'
 ```
 ### Test 5
-#### Input
+**Input:**
 ```
 'java'
 -1
 ```
-#### Output
+**Output:**
 ```
 'ja'
 ```
 ### Test 6
-#### Input
+**Input:**
 ```
 'Hello'
 0
 ```
-#### Output
+**Output:**
 ```
 'He'
 ```
 ### Test 7
-#### Input
+**Input:**
 ```
 'Hello'
 1
 ```
-#### Output
+**Output:**
 ```
 'el'
 ```
 ### Test 8
-#### Input
+**Input:**
 ```
 'Hello'
 99
 ```
-#### Output
+**Output:**
 ```
 'He'
 ```
 ### Test 9
-#### Input
+**Input:**
 ```
 'Hello'
 3
 ```
-#### Output
+**Output:**
 ```
 'lo'
 ```
 ### Test 10
-#### Input
+**Input:**
 ```
 'Hello'
 4
 ```
-#### Output
+**Output:**
 ```
 'He'
 ```
 ### Test 11
-#### Input
+**Input:**
 ```
 'Hello'
 5
 ```
-#### Output
+**Output:**
 ```
 'He'
 ```
 ### Test 12
-#### Input
+**Input:**
 ```
 'Hello'
 -7
 ```
-#### Output
+**Output:**
 ```
 'He'
 ```
 ### Test 13
-#### Input
+**Input:**
 ```
 'Hello'
 6
 ```
-#### Output
+**Output:**
 ```
 'He'
 ```
 ### Test 14
-#### Input
+**Input:**
 ```
 'Hello'
 -1
 ```
-#### Output
+**Output:**
 ```
 'He'
 ```
 ### Test 15
-#### Input
+**Input:**
 ```
 'yay'
 0
 ```
-#### Output
+**Output:**
 ```
 'ya'
 ```
