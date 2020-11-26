@@ -126,7 +126,7 @@ def write_exercise(exercise: Exercise, path: str) -> None:
             tests_content += f"**Input:**\n```\n{inputs}\n```\n"
             tests_content += f"**Output:**\n```\n{repr(result)}\n```\n"
     else:
-        tests_content = f"```python\n{tests}\n```"
+        tests_content = f"## Tests\n```python\n{tests}\n```"
 
     content = f"""# {name}
 {"**Topic:** " if topic else ""}{topic if topic else ""}
@@ -140,7 +140,6 @@ def write_exercise(exercise: Exercise, path: str) -> None:
 {starter_code if starter_code else ""}
 {"```" if starter_code else ""}
 
-## Tests
 {tests_content}
 """
 
