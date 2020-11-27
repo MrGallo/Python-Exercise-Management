@@ -2,7 +2,7 @@
 
 **Topic:** 
 ```eval_rst
-:ref:`fundamentals:mathematical calculations`
+:ref:`fundamentals:mathematical operations`
 
 ```
 
