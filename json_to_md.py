@@ -1,5 +1,6 @@
 from typing import List, Optional
 import json
+from pathlib import PurePosixPath
 import os
 import shutil
 
@@ -57,14 +58,14 @@ def write_index_rst(item_list: List[str],
     for item in item_list:
         item_path = slugify(item)
         if is_parent:
-            item_path = os.path.join(ref_path, slugify(item), "index")
+            item_path = PurePosixPath(ref_path, slugify(item), "index")
 
         content += f"    {item_path}\n"
     
     if append_text is not None:
         content += "\n" + append_text
     
-    with open(os.path.join(write_path, "index.rst"), "w") as f:
+    with open(PurePosixPath(write_path, "index.rst"), "w") as f:
         f.write(content)
 
 
@@ -72,7 +73,7 @@ def write_series(db: Database, series_name: str, path: str) -> None:
     series = db[series_name]
     series_slug = slugify(series_name)
     # create folder for series
-    series_path = os.path.join(path, series_slug)
+    series_path = PurePosixPath(path, series_slug)
     os.mkdir(series_path)
 
     # write chapters
@@ -90,7 +91,7 @@ def write_chapter(series: Series, chapter_name: str, path: str) -> None:
     chapter_slug = slugify(chapter_name)
 
     # create folder for chapter
-    chapter_path = os.path.join(path, chapter_slug)
+    chapter_path = PurePosixPath(path, chapter_slug)
     os.mkdir(chapter_path)
 
     # write exercises
@@ -113,7 +114,7 @@ def write_exercise(exercise: Exercise, path: str) -> None:
     starter_code = exercise.get("starter_code", "").strip()
     tests = exercise.get("tests", "").strip()
     filename = f"{slugify(name)}.md"
-    exercise_path = os.path.join(path, filename)
+    exercise_path = PurePosixPath(path, filename)
 
     if "tests_io" in exercise.keys():
         io_tests = exercise['tests_io']

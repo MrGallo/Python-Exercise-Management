@@ -5,7 +5,7 @@ from .utils import calc_difficulty, flatten_concepts
 concepts = {
     "introduction to programming": {
         "output a message": [],
-        "mathematical calculations": [],
+        "mathematical operations": [],
         "storing data in variables": [],
         "format output text": [
             "output a message",
