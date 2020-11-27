@@ -24,17 +24,16 @@ std:doc
 	strings                                  Strings                                 : strings.html
 	testing                                  Testing                                 : testing.html
 std:label
-	1-1                                      Create a Python file and output a message: intro.html#id1
+	1-1                                      Output a message                        : intro.html#id1
 	1-2                                      Storing data in variables               : intro.html#id2
 	1-3                                      Get input from the user                 : intro.html#id3
 	1-4                                      Convert strings to numbers              : intro.html#id4
 	1-5                                      Format output text                      : intro.html#id5
 	11-1                                     Unified Modeling Language (UML)         : classes.html#id1
 	11-10                                    Class method                            : classes.html#id10
-	11-11                                    Inheritance                             : classes.html#id11
-	11-12                                    Polymorphism                            : classes.html#id12
-	11-13                                    Refactor multiple classes               : classes.html#id13
-	11-14                                    Function/Method Overloading             : classes.html#id14
+	11-12                                    Polymorphism                            : classes.html#id11
+	11-13                                    Refactor multiple classes               : classes.html#id12
+	11-14                                    Function/Method Overloading             : classes.html#id13
 	11-2                                     __init__ method                         : classes.html#id2
 	11-3                                     Classes vs. objects                     : classes.html#id3
 	11-4                                     Object pointers                         : classes.html#id4
@@ -78,19 +77,18 @@ std:label
 	4-7                                      Loop through a string (while)           : loops.html#id7
 	4-8                                      Loop through a list (while)             : loops.html#id8
 	4-9                                      Loop through a string (for)             : loops.html#id9
-	5-1                                      Accessing list elements                 : lists.html#id1
-	5-10                                     Check if a value is in a list           : lists.html#id10
-	5-11                                     Find the largest item in a list         : lists.html#id11
-	5-12                                     Filter a list                           : lists.html#id12
-	5-13                                     Insert a value in a sorted list         : lists.html#id13
-	5-2                                      Slicing a list                          : lists.html#id2
-	5-3                                      Appending elements to a list            : lists.html#id3
-	5-4                                      Reassign element at list index          : lists.html#id4
-	5-5                                      Remove list element using .remove       : lists.html#id5
-	5-6                                      Remove list element at index using del  : lists.html#id6
-	5-7                                      Insert element at index                 : lists.html#id7
-	5-8                                      Append user input to a list using a loop: lists.html#id8
-	5-9                                      Count words that start/end with a substring: lists.html#id9
+	5-10                                     Check if a value is in a list           : lists.html#id9
+	5-11                                     Find the largest item in a list         : lists.html#id10
+	5-12                                     Filter a list                           : lists.html#id11
+	5-13                                     Insert a value in a sorted list         : lists.html#id12
+	5-2                                      Slicing a list                          : lists.html#id1
+	5-3                                      Appending elements to a list            : lists.html#id2
+	5-4                                      Reassign element at list index          : lists.html#id3
+	5-5                                      Remove list element using .remove       : lists.html#id4
+	5-6                                      Remove list element at index using del  : lists.html#id5
+	5-7                                      Insert element at index                 : lists.html#id6
+	5-8                                      Append user input to a list using a loop: lists.html#id7
+	5-9                                      Count words that start/end with a substring: lists.html#id8
 	[indiana jones](https://github.com/ics3u-gallo/cpt-2019-coka-cola) [Indiana Jones](https://github.com/ICS3U-Gallo/cpt-2019-coka-cola): cpt_hall_of_fame.html#indiana-jones-https-github-com-ics3u-gallo-cpt-2019-coka-cola
 	``__init__`` method                      __init__ method                         : classes.html#init-method
 	about-python-shell                       The Python Shell                        : python_shell.html#about-python-shell
@@ -119,7 +117,6 @@ std:label
 	convert to lower/upper case              Convert to lower/upper case             : strings.html#convert-to-lower-upper-case
 	count words that start/end with a substring Count words that start/end with a substring: lists.html#count-words-that-start-end-with-a-substring
 	cpt hall of fame                         CPT Hall of Fame                        : cpt_hall_of_fame.html#cpt-hall-of-fame
-	create a python file and output a message Create a Python file and output a message: intro.html#create-a-python-file-and-output-a-message
 	dictionaries                             Dictionaries                            : dictionaries.html#dictionaries
 	encapsulation                            Encapsulation                           : classes.html#encapsulation
 	exceptions                               Exceptions                              : exceptions.html#exceptions
@@ -182,6 +179,7 @@ std:label
 	not                                      NOT                                     : if_statements.html#not
 	object pointers                          Object pointers                         : classes.html#object-pointers
 	or                                       OR                                      : if_statements.html#or
+	output a message                         Output a message                        : intro.html#output-a-message
 	parsing                                  Parsing                                 : strings.html#parsing
 	polymorphism                             Polymorphism                            : classes.html#polymorphism
 	problems                                 Problems                                : ccc/index.html#problems
