@@ -22,7 +22,7 @@ from recommonmark.transform import AutoStructify
 
 
 result = os.system("python json_to_md.py")
-assert rersult == 0, "There was an error running json_to_md.py"
+assert result == 0, "There was an error running json_to_md.py"
 
 # -- Project information -----------------------------------------------------
 
