@@ -3,6 +3,7 @@
 
 
 
+
 Given a string, return true if it ends in "ly".
 
 This exercise was taken from [codingbat.com](https://codingbat.com/prob/p103895) and has been adapted for the Python language. There are many great programming exercises there, but the majority are created for Java.

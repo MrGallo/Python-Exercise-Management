@@ -129,13 +129,19 @@ def write_exercise(exercise: Exercise, path: str) -> None:
 
     requirements_content = ""
     if requirements:
-        requirements_content += **Requirements:**\n```eval_rst\n"
+        requirements_content += "**Requirements:**\n```eval_rst\n"
         for req in requirements:
             requirements_content += f"- :ref:`fundamentals:{req}`\n"
         requirements_content += "\n```\n"
+    
+    topic_content = ""
+    if topic:
+        topic_content = "**Topic:** "
+        topic_content += f"```eval_rst\n:ref:`fundamentals:{topic}`\n\n```"
 
     content = f"""# {name}
-{"**Topic:** " if topic else ""}{f"```eval_rst\n:ref:`fundamentals:{topic}`\n```" if topic else ""}
+
+{topic_content}
 
 {requirements_content}
 

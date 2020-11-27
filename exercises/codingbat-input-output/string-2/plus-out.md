@@ -3,6 +3,7 @@
 
 
 
+
 Given a string and a non-empty <b>word</b> string, return a version of the original String where all chars have been replaced by pluses ("+"), except for appearances of the word string which are preserved unchanged.
 
 This exercise was taken from [codingbat.com](https://codingbat.com/prob/p170829) and has been adapted for the Python language. There are many great programming exercises there, but the majority are created for Java.

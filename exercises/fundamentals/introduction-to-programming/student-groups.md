@@ -1,5 +1,9 @@
 # Student Groups
-**Topic:** mathematical calculations
+
+**Topic:** ```eval_rst
+:ref:`fundamentals:mathematical calculations`
+
+```
 
 
 

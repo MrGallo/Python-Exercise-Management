@@ -3,6 +3,7 @@
 
 
 
+
 Get a name from the user, e.g. "Bob", then output a greeting of the form "Hello Bob!".
 
 This exercise was taken from [codingbat.com](https://codingbat.com/prob/p171896) and has been adapted for the Python language. There are many great programming exercises there, but the majority are created for Java.

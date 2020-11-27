@@ -3,6 +3,7 @@
 
 
 
+
 Get two strings strings from the user, then output the result of putting them together in the order abba, e.g. `"Hi"` and `"Bye"` results in `"HiByeByeHi"`.
 
 This exercise was taken from [codingbat.com](https://codingbat.com/prob/p161056) and has been adapted for the Python language. There are many great programming exercises there, but the majority are created for Java.

@@ -2,6 +2,12 @@
 
 
 
+**Requirements:**
+```eval_rst
+- :ref:`fundamentals:format output text`
+
+```
+
 
 Given a string name, e.g. "Bob", return a greeting of the form "Hello Bob!".
 

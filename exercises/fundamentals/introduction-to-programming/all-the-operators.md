@@ -1,5 +1,9 @@
 # All the Operators
-**Topic:** mathematical calculations
+
+**Topic:** ```eval_rst
+:ref:`fundamentals:mathematical calculations`
+
+```
 
 
 

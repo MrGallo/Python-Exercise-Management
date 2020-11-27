@@ -3,6 +3,7 @@
 
 
 
+
 Given a string, return a version without the first 2 chars. Except keep the first char if it is 'a' and keep the second char if it is 'b'. The string may be any length. Harder than it looks.
 
 This exercise was taken from [codingbat.com](https://codingbat.com/prob/p110141) and has been adapted for the Python language. There are many great programming exercises there, but the majority are created for Java.
