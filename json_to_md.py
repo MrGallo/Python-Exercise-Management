@@ -109,8 +109,6 @@ def write_exercise(exercise: Exercise, path: str) -> None:
     name = exercise.get("name", "").strip() 
     topic = exercise.get("topic", "").strip()
     requirements = exercise.get("requirements", "")
-    for req in :
-        requirements += f"- {req}\n"
     description = exercise.get("description", "").strip()
     starter_code = exercise.get("starter_code", "").strip()
     tests = exercise.get("tests", "").strip()
