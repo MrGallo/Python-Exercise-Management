@@ -73,6 +73,7 @@ class ItemMenu:
 
         self.insert_item(item_name, insert)
         self.db.write_to_file()
+        self.spawn_children()
         return ItemMenu.STAY
     
     def confirm_item_name_and_location(self, item_name: str, existing_items: List[str]):
