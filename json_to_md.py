@@ -136,7 +136,7 @@ def write_exercise(exercise: Exercise, path: str) -> None:
     
     topic_content = ""
     if topic:
-        topic_content = "**Topic:** "
+        topic_content = "**Topic:** \n"
         topic_content += f"```eval_rst\n:ref:`fundamentals:{topic}`\n\n```"
 
     content = f"""# {name}
