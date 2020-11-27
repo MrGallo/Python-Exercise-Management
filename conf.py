@@ -16,6 +16,10 @@
 
 import os
 
+import recommonmark
+from recommonmark.transform import AutoStructify
+
+
 
 os.system("python json_to_md.py")
 
