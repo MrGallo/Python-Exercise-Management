@@ -1,0 +1,215 @@
+std:doc
+	algorithms                               Algorithms                              : algorithms.html
+	ccc/2020-j1                              2020 J1: Dog Treats                     : ccc/2020-j1.html
+	ccc/2020-j2                              2020 J2: Epidemiology                   : ccc/2020-j2.html
+	ccc/2020-j3                              2020 J3: Art                            : ccc/2020-j3.html
+	ccc/2020-j4                              2020 J4: Cyclic Shifts                  : ccc/2020-j4.html
+	ccc/2020-j5s2                            2020 J5/S2: Escape Room                 : ccc/2020-j5s2.html
+	ccc/index                                Canadian Computing Competition (CCC)    : ccc/index.html
+	classes                                  Classes                                 : classes.html
+	cpt_hall_of_fame                         CPT Hall of Fame                        : cpt_hall_of_fame.html
+	dictionaries                             Dictionaries                            : dictionaries.html
+	exceptions                               Exceptions                              : exceptions.html
+	exercises                                Exercises                               : exercises.html
+	file-rw                                  File R/W                                : file-rw.html
+	functions                                Functions                               : functions.html
+	if_statements                            If Statements                           : if_statements.html
+	index                                    Python Fundamentals                     : index.html
+	intro                                    Introduction to Programming             : intro.html
+	lists                                    Lists                                   : lists.html
+	loops                                    Loops                                   : loops.html
+	python_shell                             The Python Shell                        : python_shell.html
+	python_work_book                         The Python Workbook Solutions           : python_work_book.html
+	sandbox                                  Sandbox                                 : sandbox.html
+	strings                                  Strings                                 : strings.html
+	testing                                  Testing                                 : testing.html
+std:label
+	1-1                                      Create a Python file and output a message: intro.html#id1
+	1-2                                      Storing data in variables               : intro.html#id2
+	1-3                                      Get input from the user                 : intro.html#id3
+	1-4                                      Convert strings to numbers              : intro.html#id4
+	1-5                                      Format output text                      : intro.html#id5
+	11-1                                     Unified Modeling Language (UML)         : classes.html#id1
+	11-10                                    Class method                            : classes.html#id10
+	11-11                                    Inheritance                             : classes.html#id11
+	11-12                                    Polymorphism                            : classes.html#id12
+	11-13                                    Refactor multiple classes               : classes.html#id13
+	11-14                                    Function/Method Overloading             : classes.html#id14
+	11-2                                     __init__ method                         : classes.html#id2
+	11-3                                     Classes vs. objects                     : classes.html#id3
+	11-4                                     Object pointers                         : classes.html#id4
+	11-5                                     Loop through a list of objects          : classes.html#id5
+	11-6                                     Instance method                         : classes.html#id6
+	11-7                                     Encapsulation                           : classes.html#id7
+	11-8                                     Aggregate class                         : classes.html#id8
+	11-9                                     Class field (variable)                  : classes.html#id9
+	12-1                                     Linear Search                           : algorithms.html#id1
+	2-1                                      String Concatenation                    : strings.html#id1
+	2-2                                      Get a single character                  : strings.html#id2
+	2-3                                      Substrings and slicing                  : strings.html#id3
+	2-4                                      Convert to lower/upper case             : strings.html#id4
+	2-5                                      Replace characters or substrings        : strings.html#id5
+	2-6                                      Split a string into a list              : strings.html#id6
+	2-7                                      Parsing                                 : strings.html#id7
+	2019-2020                                cpt_hall_of_fame.html#id2
+	2020 j1: dog treats                      2020 J1: Dog Treats                     : ccc/2020-j1.html#j1-dog-treats
+	2020 j2: epidemiology                    2020 J2: Epidemiology                   : ccc/2020-j2.html#j2-epidemiology
+	2020 j3: art                             2020 J3: Art                            : ccc/2020-j3.html#j3-art
+	2020 j4: cyclic shifts                   2020 J4: Cyclic Shifts                  : ccc/2020-j4.html#j4-cyclic-shifts
+	2020 j5/s2: escape room                  2020 J5/S2: Escape Room                 : ccc/2020-j5s2.html#j5-s2-escape-room
+	2020-2021                                cpt_hall_of_fame.html#id1
+	3-1                                      Comparison operators                    : if_statements.html#id1
+	3-2                                      if, else                                : if_statements.html#id2
+	3-3                                      if, elif, else                          : if_statements.html#id3
+	3-4                                      Multiple elif                           : if_statements.html#id4
+	3-5                                      Boolean values in variables             : if_statements.html#id5
+	3-6                                      Boolean operators                       : if_statements.html#id6
+	3-7                                      Boolean operators in if statements      : if_statements.html#id7
+	4-1                                      Loop with a counter variable            : loops.html#id1
+	4-10                                     Loop through a list (for)               : loops.html#id10
+	4-11                                     Loop using range                        : loops.html#id11
+	4-12                                     Loop using enumerate                    : loops.html#id12
+	4-13                                     String building and filtering           : loops.html#id13
+	4-2                                      Loop with an accumulator variable       : loops.html#id2
+	4-3                                      break                                   : loops.html#id3
+	4-4                                      continue                                : loops.html#id4
+	4-5                                      Get user input in a loop                : loops.html#id5
+	4-6                                      Quit loop with sentinel value           : loops.html#id6
+	4-7                                      Loop through a string (while)           : loops.html#id7
+	4-8                                      Loop through a list (while)             : loops.html#id8
+	4-9                                      Loop through a string (for)             : loops.html#id9
+	5-1                                      Accessing list elements                 : lists.html#id1
+	5-10                                     Check if a value is in a list           : lists.html#id10
+	5-11                                     Find the largest item in a list         : lists.html#id11
+	5-12                                     Filter a list                           : lists.html#id12
+	5-13                                     Insert a value in a sorted list         : lists.html#id13
+	5-2                                      Slicing a list                          : lists.html#id2
+	5-3                                      Appending elements to a list            : lists.html#id3
+	5-4                                      Reassign element at list index          : lists.html#id4
+	5-5                                      Remove list element using .remove       : lists.html#id5
+	5-6                                      Remove list element at index using del  : lists.html#id6
+	5-7                                      Insert element at index                 : lists.html#id7
+	5-8                                      Append user input to a list using a loop: lists.html#id8
+	5-9                                      Count words that start/end with a substring: lists.html#id9
+	[indiana jones](https://github.com/ics3u-gallo/cpt-2019-coka-cola) [Indiana Jones](https://github.com/ICS3U-Gallo/cpt-2019-coka-cola): cpt_hall_of_fame.html#indiana-jones-https-github-com-ics3u-gallo-cpt-2019-coka-cola
+	``__init__`` method                      __init__ method                         : classes.html#init-method
+	about-python-shell                       The Python Shell                        : python_shell.html#about-python-shell
+	accessing list elements                  Accessing list elements                 : lists.html#accessing-list-elements
+	accessing the python shell               Accessing the Python Shell              : python_shell.html#accessing-the-python-shell
+	aggregate class                          Aggregate class                         : classes.html#aggregate-class
+	algorithms                               Algorithms                              : algorithms.html#algorithms
+	and                                      AND                                     : if_statements.html#and
+	append user input to a list using a loop Append user input to a list using a loop: lists.html#append-user-input-to-a-list-using-a-loop
+	appending elements to a list             Appending elements to a list            : lists.html#appending-elements-to-a-list
+	boolean operators                        Boolean operators                       : if_statements.html#boolean-operators
+	boolean operators in if statements       Boolean operators in if statements      : if_statements.html#boolean-operators-in-if-statements
+	boolean values in variables              Boolean values in variables             : if_statements.html#boolean-values-in-variables
+	break                                    loops.html#break
+	bubble sort                              Bubble Sort                             : algorithms.html#bubble-sort
+	canadian computing competition (ccc)     Canadian Computing Competition (CCC)    : ccc/index.html#canadian-computing-competition-ccc
+	ccc-index                                Canadian Computing Competition (CCC)    : ccc/index.html#ccc-index
+	check if a value is in a list            Check if a value is in a list           : lists.html#check-if-a-value-is-in-a-list
+	class field (variable)                   Class field (variable)                  : classes.html#class-field-variable
+	class method                             Class method                            : classes.html#class-method
+	classes                                  Classes                                 : classes.html#classes
+	classes vs. objects                      Classes vs. objects                     : classes.html#classes-vs-objects
+	comparison operators                     Comparison operators                    : if_statements.html#comparison-operators
+	continue                                 loops.html#continue
+	convert strings to numbers               Convert strings to numbers              : intro.html#convert-strings-to-numbers
+	convert to lower/upper case              Convert to lower/upper case             : strings.html#convert-to-lower-upper-case
+	count words that start/end with a substring Count words that start/end with a substring: lists.html#count-words-that-start-end-with-a-substring
+	cpt hall of fame                         CPT Hall of Fame                        : cpt_hall_of_fame.html#cpt-hall-of-fame
+	create a python file and output a message Create a Python file and output a message: intro.html#create-a-python-file-and-output-a-message
+	dictionaries                             Dictionaries                            : dictionaries.html#dictionaries
+	encapsulation                            Encapsulation                           : classes.html#encapsulation
+	exceptions                               Exceptions                              : exceptions.html#exceptions
+	exercise 105: reverse order              Exercise 105: Reverse Order             : python_work_book.html#exercise-105-reverse-order
+	exercise 1: mailing address              Exercise 1: Mailing Address             : python_work_book.html#exercise-1-mailing-address
+	exercise 2: hello                        Exercise 2: Hello                       : python_work_book.html#exercise-2-hello
+	exercise 34: even or odd?                Exercise 34: Even or odd?               : python_work_book.html#exercise-34-even-or-odd
+	exercise 35: dog years                   Exercise 35: Dog Years                  : python_work_book.html#exercise-35-dog-years
+	exercise 36: vowel or consonant          Exercise 36: Vowel or Consonant         : python_work_book.html#exercise-36-vowel-or-consonant
+	exercise 37: name that shape             Exercise 37: Name that Shape            : python_work_book.html#exercise-37-name-that-shape
+	exercise 4: area of a field              Exercise 4: Area of a Field             : python_work_book.html#exercise-4-area-of-a-field
+	exercise 5: bottle deposits              Exercise 5: Bottle Deposits             : python_work_book.html#exercise-5-bottle-deposits
+	exercise 81: compute the hypotenuse      Exercise 81: Compute the Hypotenuse     : python_work_book.html#exercise-81-compute-the-hypotenuse
+	exercise 82: taxi fare                   Exercise 82: Taxi Fare                  : python_work_book.html#exercise-82-taxi-fare
+	exercises                                Exercises                               : exercises.html#exercises
+	exiting the python shell                 Exiting the Python Shell                : python_shell.html#exiting-the-python-shell
+	file r/w                                 File R/W                                : file-rw.html#file-r-w
+	filter a list                            Filter a list                           : lists.html#filter-a-list
+	find the largest item in a list          Find the largest item in a list         : lists.html#find-the-largest-item-in-a-list
+	format output text                       Format output text                      : intro.html#format-output-text
+	function/method overloading              Function/Method Overloading             : classes.html#function-method-overloading
+	functions - tpw                          Functions - TPW                         : python_work_book.html#functions-tpw
+	genindex                                 Index                                   : genindex.html
+	get a single character                   Get a single character                  : strings.html#get-a-single-character
+	get input from the user                  Get input from the user                 : intro.html#get-input-from-the-user
+	get rear characters                      Get rear characters                     : strings.html#get-rear-characters
+	get user input in a loop                 Get user input in a loop                : loops.html#get-user-input-in-a-loop
+	home                                     Python Fundamentals                     : index.html#home
+	if statements                            If Statements                           : if_statements.html#if-statements
+	if statements - tpw                      If Statements - TPW                     : python_work_book.html#if-statements-tpw
+	if, elif, else                           if_statements.html#if-elif-else
+	if, else                                 if_statements.html#if-else
+	inheritance                              Inheritance                             : classes.html#inheritance
+	insert a value in a sorted list          Insert a value in a sorted list         : lists.html#insert-a-value-in-a-sorted-list
+	insert element at index                  Insert element at index                 : lists.html#insert-element-at-index
+	instance method                          Instance method                         : classes.html#instance-method
+	intro                                    Introduction to Programming             : intro.html#intro
+	introduction to programming              Introduction to Programming             : intro.html#introduction-to-programming
+	introduction to programming - tpw        Introduction to Programming - TPW       : python_work_book.html#introduction-to-programming-tpw
+	linear search                            Linear Search                           : algorithms.html#linear-search
+	list building and filtering              List building and filtering             : lists.html#list-building-and-filtering
+	lists                                    Lists                                   : lists.html#lists
+	lists - tpw                              Lists - TPW                             : python_work_book.html#lists-tpw
+	loop through a list (for)                Loop through a list (for)               : loops.html#loop-through-a-list-for
+	loop through a list (while)              Loop through a list (while)             : loops.html#loop-through-a-list-while
+	loop through a list of objects           Loop through a list of objects          : classes.html#loop-through-a-list-of-objects
+	loop through a string (for)              Loop through a string (for)             : loops.html#loop-through-a-string-for
+	loop through a string (while)            Loop through a string (while)           : loops.html#loop-through-a-string-while
+	loop using enumerate                     Loop using enumerate                    : loops.html#loop-using-enumerate
+	loop using range                         Loop using range                        : loops.html#loop-using-range
+	loop with a counter variable             Loop with a counter variable            : loops.html#loop-with-a-counter-variable
+	loop with an accumulator variable        Loop with an accumulator variable       : loops.html#loop-with-an-accumulator-variable
+	loops                                    Loops                                   : loops.html#loops
+	make getters and setters                 Make getters and setters                : classes.html#make-getters-and-setters
+	making attributes private                Making attributes private               : classes.html#making-attributes-private
+	mathematical calculations                Mathematical calculations               : intro.html#mathematical-calculations
+	modindex                                 Module Index                            : py-modindex.html
+	multiple elif                            Multiple elif                           : if_statements.html#multiple-elif
+	negative index                           Negative Index                          : strings.html#negative-index
+	not                                      NOT                                     : if_statements.html#not
+	object pointers                          Object pointers                         : classes.html#object-pointers
+	or                                       OR                                      : if_statements.html#or
+	parsing                                  Parsing                                 : strings.html#parsing
+	polymorphism                             Polymorphism                            : classes.html#polymorphism
+	problems                                 Problems                                : ccc/index.html#problems
+	provide data validation                  Provide data validation                 : classes.html#provide-data-validation
+	py-modindex                              Python Module Index                     : py-modindex.html
+	python fundamentals                      Python Fundamentals                     : index.html#python-fundamentals
+	quit loop with sentinel value            Quit loop with sentinel value           : loops.html#quit-loop-with-sentinel-value
+	reassign element at list index           Reassign element at list index          : lists.html#reassign-element-at-list-index
+	refactor multiple classes                Refactor multiple classes               : classes.html#refactor-multiple-classes
+	remove list element at index using del   Remove list element at index using del  : lists.html#remove-list-element-at-index-using-del
+	remove list element using .remove        Remove list element using .remove       : lists.html#remove-list-element-using-remove
+	replace characters or substrings         Replace characters or substrings        : strings.html#replace-characters-or-substrings
+	running commands                         Running commands                        : python_shell.html#running-commands
+	sandbox                                  Sandbox                                 : sandbox.html#sandbox
+	search                                   Search Page                             : search.html
+	slice by step                            Slice by step                           : strings.html#slice-by-step
+	slicing a list                           Slicing a list                          : lists.html#slicing-a-list
+	split a string into a list               Split a string into a list              : strings.html#split-a-string-into-a-list
+	storing data in variables                Storing data in variables               : intro.html#storing-data-in-variables
+	string building and filtering            String building and filtering           : loops.html#string-building-and-filtering
+	string concatenation                     String Concatenation                    : strings.html#string-concatenation
+	strings                                  Strings                                 : strings.html#strings
+	subsection                               Subsection                              : sandbox.html#subsection
+	substrings and slicing                   Substrings and slicing                  : strings.html#substrings-and-slicing
+	testing                                  Testing                                 : testing.html#testing
+	testing object attributes                Testing Object Attributes               : testing.html#testing-object-attributes
+	testing object methods                   Testing Object Methods                  : testing.html#testing-object-methods
+	the python shell                         The Python Shell                        : python_shell.html#the-python-shell
+	the python workbook solutions            The Python Workbook Solutions           : python_work_book.html#the-python-workbook-solutions
+	unified modeling language (uml)          Unified Modeling Language (UML)         : classes.html#unified-modeling-language-uml
+	use the ``len()`` function               Use the len() function                  : strings.html#use-the-len-function

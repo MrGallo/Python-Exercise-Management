@@ -1,5 +1,5 @@
 # Banquet Hall Chairs
-**Topic:** store data in variables
+**Topic:** storing data in variables
 
 
 

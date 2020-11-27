@@ -92,7 +92,7 @@
             },
             {
                 "name": "Banquet Hall Chairs",
-                "topic": "store data in variables",
+                "topic": "storing data in variables",
                 "requirements": [],
                 "description": "The program will calculate the total number of chairs in a banquet hall. This is determined by the number of tables and the number of chairs per table.\n\nInitialize a variable called `tables` and assign it a value of `32`.\n\nThen initialize a variable called `chairs_per_table`, and assign it a value of `9`.\n\nThe program will calculate the total chairs and then output a message.",
                 "starter_code": "# initialize tables here\n# initialize chairs_per_table here\n\n# do not modify the code below this line\ntotal_chairs = tables * chairs_per_table\nprint(f\"There are {total_chairs} chairs.\")",

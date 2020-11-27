@@ -6,13 +6,13 @@ concepts = {
     "introduction to programming": {
         "output a message": [],
         "mathematical calculations": [],
-        "store data in variables": [],
+        "storing data in variables": [],
         "format output text": [
             "output a message",
-            "store data in variables"],
+            "storing data in variables"],
         "get input from the user": [
             "output a message",
-            "store data in variables"],
+            "storing data in variables"],
         "convert strings to numbers": [
             "get input from the user"],
     },
@@ -34,7 +34,7 @@ concepts = {
         "boolean operators": ["if, else"]
     },
     "loops": {
-        "loop with a counter variable": ["store data in variables"],
+        "loop with a counter variable": ["storing data in variables"],
         "loop with an accumulator variable": ["loop with a counter variable"],
         "break": ["loop with a counter variable", "if, else"],
         "continue": ["loop with a counter variable", "if, else"],

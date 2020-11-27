@@ -35,7 +35,8 @@ author = 'Mr. Gallo'
 extensions = [
     'recommonmark',
     "sphinx_rtd_theme",
-    "sphinx_copybutton"
+    "sphinx_copybutton",
+    'sphinx.ext.intersphinx'
 ]
 
 # Add any paths that contain templates here, relative to this directory.
@@ -71,3 +72,5 @@ source_suffix = {
     '.txt': 'markdown',
     '.md': 'markdown',
 }
+
+intersphinx_mapping = {'fundamentals': ('https://mrgallo.github.io/fundamentals/', None)}
