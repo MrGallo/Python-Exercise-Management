@@ -90,7 +90,27 @@ concepts = {
             "loop through a list (for)"]
     },
     "exceptions": {},
-    "functions": {},
+    "functions": {
+        "calling a function": [],
+        "passing arguments": [
+            "calling a function"
+        ],
+        "handling return values": [
+            "calling a function"
+        ],
+        "defining a function": [
+            "calling a function"
+        ],
+        "returning a value": [
+            "handling return values",
+            "defining a function"
+        ],
+        "defining parameters": [
+            "defining a function",
+            "returning a value",
+            "passing arguments"
+        ]
+    },
     "testing": {},
     "dictionaries": {},
     "file r/w": {},

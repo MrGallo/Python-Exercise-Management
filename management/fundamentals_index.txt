@@ -104,6 +104,7 @@ std:label
 	boolean values in variables              Boolean values in variables             : if_statements.html#boolean-values-in-variables
 	break                                    loops.html#break
 	bubble sort                              Bubble Sort                             : algorithms.html#bubble-sort
+	calling a function                       Calling a function                      : functions.html#calling-a-function
 	canadian computing competition (ccc)     Canadian Computing Competition (CCC)    : ccc/index.html#canadian-computing-competition-ccc
 	ccc-index                                Canadian Computing Competition (CCC)    : ccc/index.html#ccc-index
 	check if a value is in a list            Check if a value is in a list           : lists.html#check-if-a-value-is-in-a-list
@@ -117,6 +118,8 @@ std:label
 	convert to lower/upper case              Convert to lower/upper case             : strings.html#convert-to-lower-upper-case
 	count words that start/end with a substring Count words that start/end with a substring: lists.html#count-words-that-start-end-with-a-substring
 	cpt hall of fame                         CPT Hall of Fame                        : cpt_hall_of_fame.html#cpt-hall-of-fame
+	defining a function                      Defining a Function                     : functions.html#defining-a-function
+	defining parameters                      Defining parameters                     : functions.html#defining-parameters
 	dictionaries                             Dictionaries                            : dictionaries.html#dictionaries
 	encapsulation                            Encapsulation                           : classes.html#encapsulation
 	exceptions                               Exceptions                              : exceptions.html#exceptions
@@ -138,12 +141,14 @@ std:label
 	find the largest item in a list          Find the largest item in a list         : lists.html#find-the-largest-item-in-a-list
 	format output text                       Format output text                      : intro.html#format-output-text
 	function/method overloading              Function/Method Overloading             : classes.html#function-method-overloading
+	functions                                Functions                               : functions.html#functions
 	functions - tpw                          Functions - TPW                         : python_work_book.html#functions-tpw
 	genindex                                 Index                                   : genindex.html
 	get a single character                   Get a single character                  : strings.html#get-a-single-character
 	get input from the user                  Get input from the user                 : intro.html#get-input-from-the-user
 	get rear characters                      Get rear characters                     : strings.html#get-rear-characters
 	get user input in a loop                 Get user input in a loop                : loops.html#get-user-input-in-a-loop
+	handling return values                   Handling return values                  : functions.html#handling-return-values
 	home                                     Python Fundamentals                     : index.html#home
 	if statements                            If Statements                           : if_statements.html#if-statements
 	if statements - tpw                      If Statements - TPW                     : python_work_book.html#if-statements-tpw
@@ -153,7 +158,6 @@ std:label
 	insert a value in a sorted list          Insert a value in a sorted list         : lists.html#insert-a-value-in-a-sorted-list
 	insert element at index                  Insert element at index                 : lists.html#insert-element-at-index
 	instance method                          Instance method                         : classes.html#instance-method
-	intro                                    Introduction to Programming             : intro.html#intro
 	introduction to programming              Introduction to Programming             : intro.html#introduction-to-programming
 	introduction to programming - tpw        Introduction to Programming - TPW       : python_work_book.html#introduction-to-programming-tpw
 	linear search                            Linear Search                           : algorithms.html#linear-search
@@ -172,7 +176,7 @@ std:label
 	loops                                    Loops                                   : loops.html#loops
 	make getters and setters                 Make getters and setters                : classes.html#make-getters-and-setters
 	making attributes private                Making attributes private               : classes.html#making-attributes-private
-	mathematical calculations                Mathematical calculations               : intro.html#mathematical-calculations
+	mathematical operations                  Mathematical operations                 : intro.html#mathematical-operations
 	modindex                                 Module Index                            : py-modindex.html
 	multiple elif                            Multiple elif                           : if_statements.html#multiple-elif
 	negative index                           Negative Index                          : strings.html#negative-index
@@ -181,6 +185,7 @@ std:label
 	or                                       OR                                      : if_statements.html#or
 	output a message                         Output a message                        : intro.html#output-a-message
 	parsing                                  Parsing                                 : strings.html#parsing
+	passing arguments                        Passing arguments                       : functions.html#passing-arguments
 	polymorphism                             Polymorphism                            : classes.html#polymorphism
 	problems                                 Problems                                : ccc/index.html#problems
 	provide data validation                  Provide data validation                 : classes.html#provide-data-validation
@@ -192,6 +197,7 @@ std:label
 	remove list element at index using del   Remove list element at index using del  : lists.html#remove-list-element-at-index-using-del
 	remove list element using .remove        Remove list element using .remove       : lists.html#remove-list-element-using-remove
 	replace characters or substrings         Replace characters or substrings        : strings.html#replace-characters-or-substrings
+	returning a value                        Returning a value                       : functions.html#returning-a-value
 	running commands                         Running commands                        : python_shell.html#running-commands
 	sandbox                                  Sandbox                                 : sandbox.html#sandbox
 	search                                   Search Page                             : search.html
