@@ -92,6 +92,7 @@
 <li class="toctree-l3"><a class="reference internal" href="hello-goodbye.html">Hello, Goodbye</a></li>
 <li class="toctree-l3"><a class="reference internal" href="hamburger.html">Hamburger</a></li>
 <li class="toctree-l3 current"><a class="current reference internal" href="#">One to Five</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#starter-code">Starter Code</a></li>
 <li class="toctree-l4"><a class="reference internal" href="#tests">Tests</a></li>
 </ul>
 </li>
@@ -178,46 +179,47 @@
             
   <div class="section" id="one-to-five">
 <h1>One to Five<a class="headerlink" href="#one-to-five" title="Permalink to this headline">¶</a></h1>
-<p><strong>Topic:</strong> ```eval_rst
-:ref:<code class="docutils literal notranslate"><span class="pre">fundamentals:output</span> <span class="pre">a</span> <span class="pre">message</span></code></p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>
-
-
-With the starter code (given in `main.py`) your program outputs an incomplete and out-of-order list of numbers. You goal is to fix it so it outputs the numbers from one to five.
-
-1. Run the program and observe the incorrect output. It should start off as follows:
-    ```
-    three
-    five
-    four
-    ```
-    Notice that the strings `&quot;one&quot;` and `&quot;two&quot;` don&#39;t even show up. This is because those `print()` functions have been commented out using the pound-sign (&quot;hashtag&quot;) and a space (`# `).
-2. Remove the comment characters (pound-sign and the space) and allow the words &quot;one&quot; and &quot;two&quot; to show up. It should look like:
-    ```
-    three
-    five
-    one
-    four
-    two
-    ```
-    **Warning:** If you do not *also* delete the space, you will get an `IndentationError`. Make sure all the `p`&#39;s in the word `print` are lined up with *no space* in front of them.
-3. Rearrange the `print()` functions to correct the order of the words.
-    ```
-    one
-    two
-    three
-    four
-    five
-    ```
-
-## Starter Code
-```python
-print(&quot;three&quot;)
-print(&quot;five&quot;)
-# print(&quot;one&quot;)
-print(&quot;four&quot;)
-# print(&quot;two&quot;)
+<p><strong>Topic:</strong></p>
+<p><span class="xref std std-ref">output a message</span></p>
+<p>With the starter code (given in <code class="docutils literal notranslate"><span class="pre">main.py</span></code>) your program outputs an incomplete and out-of-order list of numbers. You goal is to fix it so it outputs the numbers from one to five.</p>
+<ol>
+<li><p>Run the program and observe the incorrect output. It should start off as follows:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">three</span>
+<span class="n">five</span>
+<span class="n">four</span>
 </pre></div>
+</div>
+<p>Notice that the strings <code class="docutils literal notranslate"><span class="pre">&quot;one&quot;</span></code> and <code class="docutils literal notranslate"><span class="pre">&quot;two&quot;</span></code> don’t even show up. This is because those <code class="docutils literal notranslate"><span class="pre">print()</span></code> functions have been commented out using the pound-sign (“hashtag”) and a space (<code class="docutils literal notranslate"><span class="pre">#</span> </code>).</p>
+</li>
+<li><p>Remove the comment characters (pound-sign and the space) and allow the words “one” and “two” to show up. It should look like:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">three</span>
+<span class="n">five</span>
+<span class="n">one</span>
+<span class="n">four</span>
+<span class="n">two</span>
+</pre></div>
+</div>
+<p><strong>Warning:</strong> If you do not <em>also</em> delete the space, you will get an <code class="docutils literal notranslate"><span class="pre">IndentationError</span></code>. Make sure all the <code class="docutils literal notranslate"><span class="pre">p</span></code>’s in the word <code class="docutils literal notranslate"><span class="pre">print</span></code> are lined up with <em>no space</em> in front of them.</p>
+</li>
+<li><p>Rearrange the <code class="docutils literal notranslate"><span class="pre">print()</span></code> functions to correct the order of the words.</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">one</span>
+<span class="n">two</span>
+<span class="n">three</span>
+<span class="n">four</span>
+<span class="n">five</span>
+</pre></div>
+</div>
+</li>
+</ol>
+<div class="section" id="starter-code">
+<h2>Starter Code<a class="headerlink" href="#starter-code" title="Permalink to this headline">¶</a></h2>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="s2">&quot;three&quot;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;five&quot;</span><span class="p">)</span>
+<span class="c1"># print(&quot;one&quot;)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;four&quot;</span><span class="p">)</span>
+<span class="c1"># print(&quot;two&quot;)</span>
+</pre></div>
+</div>
 </div>
 <div class="section" id="tests">
 <h2>Tests<a class="headerlink" href="#tests" title="Permalink to this headline">¶</a></h2>

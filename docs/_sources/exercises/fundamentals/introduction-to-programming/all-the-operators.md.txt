@@ -1,6 +1,7 @@
 # All the Operators
 
-**Topic:** ```eval_rst
+**Topic:** 
+```eval_rst
 :ref:`fundamentals:mathematical calculations`
 
 ```
