@@ -108,8 +108,8 @@ def write_chapter(series: Series, chapter_name: str, path: str) -> None:
 def write_exercise(exercise: Exercise, path: str) -> None:
     name = exercise.get("name", "").strip() 
     topic = exercise.get("topic", "").strip()
-    requirements = ""
-    for req in exercise.get("requirements", ""):
+    requirements = exercise.get("requirements", "")
+    for req in :
         requirements += f"- {req}\n"
     description = exercise.get("description", "").strip()
     starter_code = exercise.get("starter_code", "").strip()
@@ -127,11 +127,19 @@ def write_exercise(exercise: Exercise, path: str) -> None:
             tests_content += f"**Output:**\n```\n{repr(result)}\n```\n"
     else:
         tests_content = f"## Tests\n```python\n{tests}\n```"
+    
+
+    requirements_content = ""
+    if requirements:
+        requirements_content += **Requirements:**\n```eval_rst\n"
+        for req in requirements:
+            requirements_content += f"- :ref:`fundamentals:{req}`\n"
+        requirements_content += "\n```\n"
 
     content = f"""# {name}
-{"**Topic:** " if topic else ""}{topic if topic else ""}
-{"**Requirements:** " if requirements else ""}
-{requirements if requirements else ""}
+{"**Topic:** " if topic else ""}{f"```eval_rst\n:ref:`fundamentals:{topic}`\n```" if topic else ""}
+
+{requirements_content}
 
 {description}
 

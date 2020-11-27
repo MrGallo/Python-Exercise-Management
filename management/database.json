@@ -111,7 +111,7 @@
             {
                 "name": "hello_name",
                 "topic": "",
-                "requirements": [],
+                "requirements": ["format output text"],
                 "description": "Given a string name, e.g. \"Bob\", return a greeting of the form \"Hello Bob!\".\n\n```\nhello_name(\"Bob\") \u2192 \"Hello Bob!\"\nhello_name(\"Alice\") \u2192 \"Hello Alice!\"\nhello_name(\"X\") \u2192 \"Hello X!\"\n```\n\nThis exercise was taken from [codingbat.com](https://codingbat.com/prob/p171896) and has been adapted for the Python language. There are many great programming exercises there, but the majority are created for Java.",
                 "starter_code": "def hello_name(name: str) -> str:\n    pass\n\n\nresult = hello_name('Bob')\nprint(result)\n",
                 "tests": "from main import hello_name\n\n\ndef test_hello_name_1():\n    assert hello_name('Bob') == 'Hello Bob!'\n\n\ndef test_hello_name_2():\n    assert hello_name('Alice') == 'Hello Alice!'\n\n\ndef test_hello_name_3():\n    assert hello_name('X') == 'Hello X!'\n\n\ndef test_hello_name_4():\n    assert hello_name('Dolly') == 'Hello Dolly!'\n\n\ndef test_hello_name_5():\n    assert hello_name('Alpha') == 'Hello Alpha!'\n\n\ndef test_hello_name_6():\n    assert hello_name('Omega') == 'Hello Omega!'\n\n\ndef test_hello_name_7():\n    assert hello_name('Goodbye') == 'Hello Goodbye!'\n\n\ndef test_hello_name_8():\n    assert hello_name('ho ho ho') == 'Hello ho ho ho!'\n\n\ndef test_hello_name_9():\n    assert hello_name('xyz!') == 'Hello xyz!!'\n\n\ndef test_hello_name_10():\n    assert hello_name('Hello') == 'Hello Hello!'\n\n\n",
