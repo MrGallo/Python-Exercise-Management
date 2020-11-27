@@ -1,7 +1,9 @@
 # Test
 
 ```eval_rst
-:ref:`fundamentals:accessing list elements`
+- :ref:`fundamentals:accessing list elements`
+- :ref:`fundamentals:inheritance`
+
 ```
 
 ``` :ref:`fundamentals:accessing list elements`
