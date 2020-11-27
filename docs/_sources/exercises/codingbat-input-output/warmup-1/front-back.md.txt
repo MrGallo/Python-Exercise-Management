@@ -3,6 +3,7 @@
 
 
 
+
 Given a string, return a new string where the first and last chars have been exchanged.
 
 This exercise was taken from [codingbat.com](https://codingbat.com/prob/p123384) and has been adapted for the Python language. There are many great programming exercises there, but the majority are created for Java.

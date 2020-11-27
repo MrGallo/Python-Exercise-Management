@@ -93,7 +93,6 @@
 <li class="toctree-l3"><a class="reference internal" href="hamburger.html">Hamburger</a></li>
 <li class="toctree-l3"><a class="reference internal" href="one-to-five.html">One to Five</a></li>
 <li class="toctree-l3 current"><a class="current reference internal" href="#">Escape character</a><ul>
-<li class="toctree-l4"><a class="reference internal" href="#starter-code">Starter Code</a></li>
 <li class="toctree-l4"><a class="reference internal" href="#tests">Tests</a></li>
 </ul>
 </li>
@@ -179,47 +178,42 @@
             
   <div class="section" id="escape-character">
 <h1>Escape character<a class="headerlink" href="#escape-character" title="Permalink to this headline">¶</a></h1>
-<p><strong>Topic:</strong> output a message</p>
-<p>With the starter code (given in <code class="docutils literal notranslate"><span class="pre">main.py</span></code>) your program will encounter a <code class="docutils literal notranslate"><span class="pre">SyntaxError</span></code>.</p>
-<ol>
-<li><p>Run the program as is. Notice the <code class="docutils literal notranslate"><span class="pre">SyntaxError</span></code>.</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>  File &quot;main.py&quot;, line 2
-    print(&quot;Her friend said &quot;Nice to see you!&quot;.&quot;)
-                            ^
-SyntaxError: invalid syntax
-</pre></div>
-</div>
-<ul class="simple">
-<li><p>On what line did the error happen?</p></li>
-<li><p>Python gets confused with the extra quotes (<code class="docutils literal notranslate"><span class="pre">&quot;</span></code>) in the second print statement (on line 2).</p></li>
-<li><p>Python uses quotes to determine where a string starts and where a string ends. If we want to actually include a quote in a string, we need to <strong>escape</strong> that quote with the escape character <code class="docutils literal notranslate"><span class="pre">\</span></code>. This will tell Python to skip over that particular quote and not to use it to end the string.</p></li>
-</ul>
-</li>
-<li><p>Go back to <code class="docutils literal notranslate"><span class="pre">main.py</span></code> and comment-out line 2 by putting a number-sign (hashtag) infront of the line. For example:</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="c1"># print(&quot;Her friend said &quot;Nice to see you!&quot;.&quot;)</span>
-</pre></div>
-</div>
-</li>
-<li><p>Run the program and observe what the first print statement outputs. Notice:</p>
-<ul class="simple">
-<li><p>there is no error,</p></li>
-<li><p>the output <em>actually contains</em> the quote characters</p></li>
-<li><p>the output doesn’t contain the escape characters <code class="docutils literal notranslate"><span class="pre">\</span></code>.</p></li>
-</ul>
-</li>
-<li><p>Use the escape character (<code class="docutils literal notranslate"><span class="pre">\</span></code>) to allow the second print statement to include the quotes. Be sure to use the first print statement as an example for how to do this correctly. Also, remember to un-comment the second print statement, when you are ready to run it. The final output should look like:</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">She</span> <span class="n">said</span> <span class="s2">&quot;Hello&quot;</span> <span class="n">to</span> <span class="n">her</span> <span class="n">friend</span><span class="o">.</span>
-<span class="n">Her</span> <span class="n">friend</span> <span class="n">said</span> <span class="s2">&quot;Nice to see you!&quot;</span><span class="o">.</span>
-</pre></div>
-</div>
-</li>
-</ol>
-<div class="section" id="starter-code">
-<h2>Starter Code<a class="headerlink" href="#starter-code" title="Permalink to this headline">¶</a></h2>
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span>print(&quot;She said \&quot;Hello\&quot; to her friend.&quot;)
+<p><strong>Topic:</strong> ```eval_rst
+:ref:<code class="docutils literal notranslate"><span class="pre">fundamentals:output</span> <span class="pre">a</span> <span class="pre">message</span></code></p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>
+
+
+With the starter code (given in `main.py`) your program will encounter a `SyntaxError`.
+
+1. Run the program as is. Notice the `SyntaxError`.
+    ```
+      File &quot;main.py&quot;, line 2
+        print(&quot;Her friend said &quot;Nice to see you!&quot;.&quot;)
+                                ^
+    SyntaxError: invalid syntax
+    ```
+    - On what line did the error happen?
+    - Python gets confused with the extra quotes (`&quot;`) in the second print statement (on line 2).
+    - Python uses quotes to determine where a string starts and where a string ends. If we want to actually include a quote in a string, we need to **escape** that quote with the escape character `\`. This will tell Python to skip over that particular quote and not to use it to end the string.
+2. Go back to `main.py` and comment-out line 2 by putting a number-sign (hashtag) infront of the line. For example:
+    ```
+    # print(&quot;Her friend said &quot;Nice to see you!&quot;.&quot;)
+    ```
+3. Run the program and observe what the first print statement outputs. Notice:
+    - there is no error,
+    - the output *actually contains* the quote characters
+    - the output doesn&#39;t contain the escape characters `\`.
+4. Use the escape character (`\`) to allow the second print statement to include the quotes. Be sure to use the first print statement as an example for how to do this correctly. Also, remember to un-comment the second print statement, when you are ready to run it. The final output should look like:
+    ```
+    She said &quot;Hello&quot; to her friend.
+    Her friend said &quot;Nice to see you!&quot;.
+    ```
+
+## Starter Code
+```python
+print(&quot;She said \&quot;Hello\&quot; to her friend.&quot;)
 print(&quot;Her friend said &quot;Nice to see you!&quot;.&quot;)
 </pre></div>
-</div>
 </div>
 <div class="section" id="tests">
 <h2>Tests<a class="headerlink" href="#tests" title="Permalink to this headline">¶</a></h2>

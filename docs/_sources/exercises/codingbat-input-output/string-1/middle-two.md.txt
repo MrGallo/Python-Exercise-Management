@@ -3,6 +3,7 @@
 
 
 
+
 Given a string of even length, return a string made of the middle two chars, so the string "string" yields "ri". The string length will be at least 2.
 
 This exercise was taken from [codingbat.com](https://codingbat.com/prob/p137729) and has been adapted for the Python language. There are many great programming exercises there, but the majority are created for Java.

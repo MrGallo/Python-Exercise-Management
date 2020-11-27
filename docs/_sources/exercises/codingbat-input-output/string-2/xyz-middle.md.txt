@@ -3,6 +3,7 @@
 
 
 
+
 Given a string, does "xyz" appear in the middle of the string? To define middle, we'll say that the number of chars to the left and right of the "xyz" must differ by at most one. This problem is harder than it looks.
 
 This exercise was taken from [codingbat.com](https://codingbat.com/prob/p159772) and has been adapted for the Python language. There are many great programming exercises there, but the majority are created for Java.

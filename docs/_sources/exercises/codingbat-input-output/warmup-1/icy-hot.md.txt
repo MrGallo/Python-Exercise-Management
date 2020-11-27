@@ -3,6 +3,7 @@
 
 
 
+
 Given two temperatures, return true if one is less than 0 and the other is greater than 100.
 
 This exercise was taken from [codingbat.com](https://codingbat.com/prob/p192082) and has been adapted for the Python language. There are many great programming exercises there, but the majority are created for Java.

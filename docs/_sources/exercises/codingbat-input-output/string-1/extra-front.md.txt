@@ -3,6 +3,7 @@
 
 
 
+
 Given a string, return a new string made of 3 copies of the first 2 chars of the original string. The string may be any length. If there are fewer than 2 chars, use whatever is there.
 
 This exercise was taken from [codingbat.com](https://codingbat.com/prob/p172063) and has been adapted for the Python language. There are many great programming exercises there, but the majority are created for Java.

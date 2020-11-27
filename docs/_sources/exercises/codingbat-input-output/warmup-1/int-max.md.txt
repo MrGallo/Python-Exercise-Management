@@ -3,6 +3,7 @@
 
 
 
+
 Given three int values, a b c, return the largest.
 
 This exercise was taken from [codingbat.com](https://codingbat.com/prob/p101887) and has been adapted for the Python language. There are many great programming exercises there, but the majority are created for Java.

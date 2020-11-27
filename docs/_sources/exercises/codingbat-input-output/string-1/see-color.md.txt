@@ -3,6 +3,7 @@
 
 
 
+
 Given a string, if the string begins with "red" or "blue" return that color string, otherwise return the empty string.
 
 This exercise was taken from [codingbat.com](https://codingbat.com/prob/p199216) and has been adapted for the Python language. There are many great programming exercises there, but the majority are created for Java.

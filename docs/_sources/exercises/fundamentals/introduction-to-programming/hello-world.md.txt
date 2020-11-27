@@ -1,5 +1,9 @@
 # Hello, World!
-**Topic:** output a message
+
+**Topic:** ```eval_rst
+:ref:`fundamentals:output a message`
+
+```
 
 
 

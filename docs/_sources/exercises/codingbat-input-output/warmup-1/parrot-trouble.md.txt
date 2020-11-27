@@ -3,6 +3,7 @@
 
 
 
+
 We have a loud talking parrot. Get an hour from the user. The "hour" is the current hour time in the range `0..23`. We are in trouble if the parrot is talking and the hour is before `7` or after `20`. Output if we are in trouble or not. For the test cases below, `False` means "no" and `True` means "yes".
 
 This exercise was taken from [codingbat.com](https://codingbat.com/prob/p140449) and has been adapted for the Python language. There are many great programming exercises there, but the majority are created for Java.

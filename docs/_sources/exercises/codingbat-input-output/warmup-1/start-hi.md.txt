@@ -3,6 +3,7 @@
 
 
 
+
 Given a string, return true if the string starts with "hi" and false otherwise.
 
 This exercise was taken from [codingbat.com](https://codingbat.com/prob/p191022) and has been adapted for the Python language. There are many great programming exercises there, but the majority are created for Java.

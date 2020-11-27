@@ -3,6 +3,7 @@
 
 
 
+
 Given two strings, <b>word</b> and a separator <b>sep</b>, return a big string made of <b>count</b> occurrences of the word, separated by the separator string.
 
 This exercise was taken from [codingbat.com](https://codingbat.com/prob/p109637) and has been adapted for the Python language. There are many great programming exercises there, but the majority are created for Java.

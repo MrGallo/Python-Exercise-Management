@@ -3,6 +3,7 @@
 
 
 
+
 Get any string from the user, output a string where for every char in the original, there are two chars.
 
 This exercise was taken from [codingbat.com](https://codingbat.com/prob/p165312) and has been adapted for the Python language. There are many great programming exercises there, but the majority are created for Java.

@@ -3,6 +3,7 @@
 
 
 
+
 Look for patterns like "zip" and "zap" in the string -- length-3, starting with 'z' and ending with 'p'. Return a string where for all such words, the middle letter is gone, so "zipXzap" yields "zpXzp".
 
 This exercise was taken from [codingbat.com](https://codingbat.com/prob/p180759) and has been adapted for the Python language. There are many great programming exercises there, but the majority are created for Java.

@@ -3,6 +3,7 @@
 
 
 
+
 Given a string, take the first 2 chars and return the string with the 2 chars added at both the front and back, so "kitten" yields"kikittenki". If the string length is less than 2, use whatever chars are there.
 
 This exercise was taken from [codingbat.com](https://codingbat.com/prob/p183592) and has been adapted for the Python language. There are many great programming exercises there, but the majority are created for Java.

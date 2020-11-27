@@ -3,6 +3,7 @@
 
 
 
+
 Given a string, if the string "del" appears starting at index 1, return a string where that "del" has been deleted. Otherwise, return the string unchanged.
 
 This exercise was taken from [codingbat.com](https://codingbat.com/prob/p100905) and has been adapted for the Python language. There are many great programming exercises there, but the majority are created for Java.

@@ -3,6 +3,7 @@
 
 
 
+
 Take a string as input, print out the string made of its first two chars, so the String `"Hello"` yields `"He"`. If the string is shorter than length 2, return whatever there is, so `"X"` yields `"X"`, and the empty string `""` yields the empty string `""`. Note that `len()` returns the length of a string.
 
 This exercise was taken from [codingbat.com](https://codingbat.com/prob/p163411) and has been adapted for the Python language. There are many great programming exercises there, but the majority are created for Java.

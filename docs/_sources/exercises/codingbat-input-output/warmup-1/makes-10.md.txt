@@ -3,6 +3,7 @@
 
 
 
+
 Get two integers from the user. Output `'True'` if one if them is `10` or if their sum is `10`. For the test cases below, `False` means "no" and `True` means "yes".
 
 This exercise was taken from [codingbat.com](https://codingbat.com/prob/p182873) and has been adapted for the Python language. There are many great programming exercises there, but the majority are created for Java.

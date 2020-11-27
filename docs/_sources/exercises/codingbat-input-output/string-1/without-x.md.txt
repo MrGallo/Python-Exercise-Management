@@ -3,6 +3,7 @@
 
 
 
+
 Given a string, if the first or last chars are 'x', return the string without those 'x' chars, and otherwise return the string unchanged.
 
 This exercise was taken from [codingbat.com](https://codingbat.com/prob/p151940) and has been adapted for the Python language. There are many great programming exercises there, but the majority are created for Java.

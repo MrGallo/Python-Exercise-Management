@@ -3,6 +3,7 @@
 
 
 
+
 Given a string and a non-empty <b>word</b> string, return a version of the original String where all chars have been replaced by pluses ("+"), except for appearances of the word string which are preserved unchanged.
 
 ```
