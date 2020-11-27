@@ -7,9 +7,9 @@
 Given 2 ints, a and b, return true if one if them is 10 or if their sum is 10.
 
 ```
-makes_10(9, 10) â†’ true
-makes_10(9, 9) â†’ false
-makes_10(1, 9) â†’ true
+makes_10(9, 10) → true
+makes_10(9, 9) → false
+makes_10(1, 9) → true
 ```
 
 This exercise was taken from [codingbat.com](https://codingbat.com/prob/p182873) and has been adapted for the Python language. There are many great programming exercises there, but the majority are created for Java.

@@ -12,9 +12,9 @@
 Given a string name, e.g. "Bob", return a greeting of the form "Hello Bob!".
 
 ```
-hello_name("Bob") â†’ "Hello Bob!"
-hello_name("Alice") â†’ "Hello Alice!"
-hello_name("X") â†’ "Hello X!"
+hello_name("Bob") → "Hello Bob!"
+hello_name("Alice") → "Hello Alice!"
+hello_name("X") → "Hello X!"
 ```
 
 This exercise was taken from [codingbat.com](https://codingbat.com/prob/p171896) and has been adapted for the Python language. There are many great programming exercises there, but the majority are created for Java.

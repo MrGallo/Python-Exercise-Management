@@ -7,9 +7,9 @@
 We have two monkeys, a and b, and the parameters aSmile and bSmile indicate if each is smiling. We are in trouble if they are both smiling or if neither of them is smiling. Return true if we are in trouble.
 
 ```
-monkey_trouble(true, true) â†’ true
-monkey_trouble(false, false) â†’ true
-monkey_trouble(true, false) â†’ false
+monkey_trouble(true, true) → true
+monkey_trouble(false, false) → true
+monkey_trouble(true, false) → false
 ```
 
 This exercise was taken from [codingbat.com](https://codingbat.com/prob/p181646) and has been adapted for the Python language. There are many great programming exercises there, but the majority are created for Java.

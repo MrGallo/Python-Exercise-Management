@@ -7,9 +7,9 @@
 Given two strings, a and b, return the result of putting them together in the order abba, e.g. "Hi" and "Bye" returns "HiByeByeHi".
 
 ```
-make_abba("Hi", "Bye") â†’ "HiByeByeHi"
-make_abba("Yo", "Alice") â†’ "YoAliceAliceYo"
-make_abba("What", "Up") â†’ "WhatUpUpWhat"
+make_abba("Hi", "Bye") → "HiByeByeHi"
+make_abba("Yo", "Alice") → "YoAliceAliceYo"
+make_abba("What", "Up") → "WhatUpUpWhat"
 ```
 
 This exercise was taken from [codingbat.com](https://codingbat.com/prob/p161056) and has been adapted for the Python language. There are many great programming exercises there, but the majority are created for Java.

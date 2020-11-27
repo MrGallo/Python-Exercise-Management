@@ -7,9 +7,9 @@
 Given a string and a non-empty <b>word</b> string, return a version of the original String where all chars have been replaced by pluses ("+"), except for appearances of the word string which are preserved unchanged.
 
 ```
-plus_out("12xy34", "xy") â†’ "++xy++"
-plus_out("12xy34", "1") â†’ "1+++++"
-plus_out("12xy34xyabcxy", "xy") â†’ "++xy++xy+++xy"
+plus_out("12xy34", "xy") → "++xy++"
+plus_out("12xy34", "1") → "1+++++"
+plus_out("12xy34xyabcxy", "xy") → "++xy++xy+++xy"
 ```
 
 This exercise was taken from [codingbat.com](https://codingbat.com/prob/p170829) and has been adapted for the Python language. There are many great programming exercises there, but the majority are created for Java.

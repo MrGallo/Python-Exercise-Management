@@ -7,9 +7,9 @@
 Given a string, if the string "del" appears starting at index 1, return a string where that "del" has been deleted. Otherwise, return the string unchanged.
 
 ```
-del_del("adelbc") â†’ "abc"
-del_del("adelHello") â†’ "aHello"
-del_del("adedbc") â†’ "adedbc"
+del_del("adelbc") → "abc"
+del_del("adelHello") → "aHello"
+del_del("adedbc") → "adedbc"
 ```
 
 This exercise was taken from [codingbat.com](https://codingbat.com/prob/p100905) and has been adapted for the Python language. There are many great programming exercises there, but the majority are created for Java.

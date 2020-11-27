@@ -7,9 +7,9 @@
 Given a string, return a new string where the last 3 chars are now in upper case. If the string has less than 3 chars, uppercase whatever is there. Note that str.toUpperCase() returns the uppercase version of a string.
 
 ```
-end_up("Hello") â†’ "HeLLO"
-end_up("hi there") â†’ "hi thERE"
-end_up("hi") â†’ "HI"
+end_up("Hello") → "HeLLO"
+end_up("hi there") → "hi thERE"
+end_up("hi") → "HI"
 ```
 
 This exercise was taken from [codingbat.com](https://codingbat.com/prob/p125268) and has been adapted for the Python language. There are many great programming exercises there, but the majority are created for Java.

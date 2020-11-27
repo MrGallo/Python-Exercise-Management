@@ -7,9 +7,9 @@
 Given two strings, return true if either of the strings appears at the very end of the other string, ignoring upper/lower case differences (in other words, the computation should not be "case sensitive"). Note:  str.toLowerCase() returns the lowercase version of a string.
 
 ```
-end_other("Hiabc", "abc") â†’ true
-end_other("AbC", "HiaBc") â†’ true
-end_other("abc", "abXabc") â†’ true
+end_other("Hiabc", "abc") → true
+end_other("AbC", "HiaBc") → true
+end_other("abc", "abXabc") → true
 ```
 
 This exercise was taken from [codingbat.com](https://codingbat.com/prob/p126880) and has been adapted for the Python language. There are many great programming exercises there, but the majority are created for Java.

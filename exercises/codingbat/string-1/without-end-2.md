@@ -7,9 +7,9 @@
 Given a string, return a version without both the first and last char of the string. The string may be any length, including 0.
 
 ```
-without_end_2("Hello") â†’ "ell"
-without_end_2("abc") â†’ "b"
-without_end_2("ab") â†’ ""
+without_end_2("Hello") → "ell"
+without_end_2("abc") → "b"
+without_end_2("ab") → ""
 ```
 
 This exercise was taken from [codingbat.com](https://codingbat.com/prob/p174254) and has been adapted for the Python language. There are many great programming exercises there, but the majority are created for Java.

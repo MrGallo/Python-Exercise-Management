@@ -7,9 +7,9 @@
 Given a string, if one or both of the first 2 chars is 'x', return the string without those 'x' chars, and otherwise return the string unchanged. This is a little harder than it looks.
 
 ```
-without_x_2("xHi") â†’ "Hi"
-without_x_2("Hxi") â†’ "Hi"
-without_x_2("Hi") â†’ "Hi"
+without_x_2("xHi") → "Hi"
+without_x_2("Hxi") → "Hi"
+without_x_2("Hi") → "Hi"
 ```
 
 This exercise was taken from [codingbat.com](https://codingbat.com/prob/p151359) and has been adapted for the Python language. There are many great programming exercises there, but the majority are created for Java.

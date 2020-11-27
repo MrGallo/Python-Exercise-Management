@@ -7,9 +7,9 @@
 We have a loud talking parrot. The "hour" parameter is the current hour time in the range 0..23. We are in trouble if the parrot is talking and the hour is before 7 or after 20. Return true if we are in trouble.
 
 ```
-parrot_trouble(true, 6) â†’ true
-parrot_trouble(true, 7) â†’ false
-parrot_trouble(false, 6) â†’ false
+parrot_trouble(true, 6) → true
+parrot_trouble(true, 7) → false
+parrot_trouble(false, 6) → false
 ```
 
 This exercise was taken from [codingbat.com](https://codingbat.com/prob/p140449) and has been adapted for the Python language. There are many great programming exercises there, but the majority are created for Java.

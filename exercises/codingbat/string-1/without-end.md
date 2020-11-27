@@ -7,9 +7,9 @@
 Given a string, return a version without the first and last char, so "Hello" yields "ell". The string length will be at least 2.
 
 ```
-without_end("Hello") â†’ "ell"
-without_end("java") â†’ "av"
-without_end("coding") â†’ "odin"
+without_end("Hello") → "ell"
+without_end("java") → "av"
+without_end("coding") → "odin"
 ```
 
 This exercise was taken from [codingbat.com](https://codingbat.com/prob/p130896) and has been adapted for the Python language. There are many great programming exercises there, but the majority are created for Java.

@@ -7,9 +7,9 @@
 Given a string, return the string made of its first two chars, so the String "Hello" yields "He". If the string is shorter than length 2, return whatever there is, so "X" yields "X", and the empty string "" yields the empty string "". Note that `len()` returns the length of a string.
 
 ```
-first_two("Hello") â†’ "He"
-first_two("abcdefg") â†’ "ab"
-first_two("ab") â†’ "ab"
+first_two("Hello") → "He"
+first_two("abcdefg") → "ab"
+first_two("ab") → "ab"
 ```
 
 This exercise was taken from [codingbat.com](https://codingbat.com/prob/p163411) and has been adapted for the Python language. There are many great programming exercises there, but the majority are created for Java.

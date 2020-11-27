@@ -7,9 +7,9 @@
 Given a string of any length, return a new string where the last 2 chars, if present, are swapped, so "coding" yields "codign".
 
 ```
-last_two("coding") â†’ "codign"
-last_two("cat") â†’ "cta"
-last_two("ab") â†’ "ba"
+last_two("coding") → "codign"
+last_two("cat") → "cta"
+last_two("ab") → "ba"
 ```
 
 This exercise was taken from [codingbat.com](https://codingbat.com/prob/p194786) and has been adapted for the Python language. There are many great programming exercises there, but the majority are created for Java.

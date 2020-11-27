@@ -7,9 +7,9 @@
 Return the number of times that the string "code" appears anywhere in the given string, except we'll accept any letter for the 'd', so "cope" and "cooe" count.
 
 ```
-count_code("aaacodebbb") â†’ 1
-count_code("codexxcode") â†’ 2
-count_code("cozexxcope") â†’ 2
+count_code("aaacodebbb") → 1
+count_code("codexxcode") → 2
+count_code("cozexxcope") → 2
 ```
 
 This exercise was taken from [codingbat.com](https://codingbat.com/prob/p123614) and has been adapted for the Python language. There are many great programming exercises there, but the majority are created for Java.

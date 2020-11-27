@@ -7,9 +7,9 @@
 A sandwich is two pieces of bread with something in between. Return the string that is between the first and last appearance of "bread" in the given string, or return the empty string "" if there are not two pieces of bread.
 
 ```
-get_sandwich("breadjambread") â†’ "jam"
-get_sandwich("xxbreadjambreadyy") â†’ "jam"
-get_sandwich("xxbreadyy") â†’ ""
+get_sandwich("breadjambread") → "jam"
+get_sandwich("xxbreadjambreadyy") → "jam"
+get_sandwich("xxbreadyy") → ""
 ```
 
 This exercise was taken from [codingbat.com](https://codingbat.com/prob/p129952) and has been adapted for the Python language. There are many great programming exercises there, but the majority are created for Java.
