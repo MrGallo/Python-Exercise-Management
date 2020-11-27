@@ -7,9 +7,9 @@
 Given a string, return a string where for every char in the original, there are two chars.
 
 ```
-double_char("The") → "TThhee"
-double_char("AAbb") → "AAAAbbbb"
-double_char("Hi-There") → "HHii--TThheerree"
+double_char("The") â†’ "TThhee"
+double_char("AAbb") â†’ "AAAAbbbb"
+double_char("Hi-There") â†’ "HHii--TThheerree"
 ```
 
 This exercise was taken from [codingbat.com](https://codingbat.com/prob/p165312) and has been adapted for the Python language. There are many great programming exercises there, but the majority are created for Java.

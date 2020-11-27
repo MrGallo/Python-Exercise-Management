@@ -7,9 +7,9 @@
 Given two strings, <b>a</b> and <b>b</b>, create a bigger string made of the first char of a, the first char of b, the second char of a, the second char of b, and so on. Any leftover chars go at the end of the result.
 
 ```
-mix_string("abc", "xyz") → "axbycz"
-mix_string("Hi", "There") → "HTihere"
-mix_string("xxxx", "There") → "xTxhxexre"
+mix_string("abc", "xyz") â†’ "axbycz"
+mix_string("Hi", "There") â†’ "HTihere"
+mix_string("xxxx", "There") â†’ "xTxhxexre"
 ```
 
 This exercise was taken from [codingbat.com](https://codingbat.com/prob/p125185) and has been adapted for the Python language. There are many great programming exercises there, but the majority are created for Java.

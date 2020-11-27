@@ -7,9 +7,9 @@
 Given a string, consider the prefix string made of the first N chars of the string. Does that prefix string appear somewhere else in the string? Assume that the string is not empty and that N is in the range 1..str.length().
 
 ```
-prefix_again("abXYabc", 1) → true
-prefix_again("abXYabc", 2) → true
-prefix_again("abXYabc", 3) → false
+prefix_again("abXYabc", 1) â†’ true
+prefix_again("abXYabc", 2) â†’ true
+prefix_again("abXYabc", 3) â†’ false
 ```
 
 This exercise was taken from [codingbat.com](https://codingbat.com/prob/p136417) and has been adapted for the Python language. There are many great programming exercises there, but the majority are created for Java.

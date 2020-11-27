@@ -7,9 +7,9 @@
 Given two strings, append them together (known as "concatenation") and return the result. However, if the concatenation creates a double-char, then omit one of the chars, so "abc" and "cat" yields "abcat".
 
 ```
-con_cat("abc", "cat") → "abcat"
-con_cat("dog", "cat") → "dogcat"
-con_cat("abc", "") → "abc"
+con_cat("abc", "cat") â†’ "abcat"
+con_cat("dog", "cat") â†’ "dogcat"
+con_cat("abc", "") â†’ "abc"
 ```
 
 This exercise was taken from [codingbat.com](https://codingbat.com/prob/p132118) and has been adapted for the Python language. There are many great programming exercises there, but the majority are created for Java.

@@ -7,9 +7,9 @@
 Given a string, compute a new string by moving the first char to come after the next two chars, so "abc" yields "bca". Repeat this process for each subsequent group of 3 chars, so "abcdef" yields "bcaefd". Ignore any group of fewer than 3 chars at the end.
 
 ```
-one_two("abc") → "bca"
-one_two("tca") → "cat"
-one_two("tcagdo") → "catdog"
+one_two("abc") â†’ "bca"
+one_two("tca") â†’ "cat"
+one_two("tcagdo") â†’ "catdog"
 ```
 
 This exercise was taken from [codingbat.com](https://codingbat.com/prob/p122943) and has been adapted for the Python language. There are many great programming exercises there, but the majority are created for Java.

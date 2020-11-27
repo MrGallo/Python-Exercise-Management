@@ -7,9 +7,9 @@
 Given two strings, append them together (known as "concatenation") and return the result. However, if the strings are different lengths, omit chars from the longer string so it is the same length as the shorter string. So "Hello" and "Hi" yield "loHi". The strings may be any length.
 
 ```
-min_cat("Hello", "Hi") → "loHi"
-min_cat("Hello", "java") → "ellojava"
-min_cat("java", "Hello") → "javaello"
+min_cat("Hello", "Hi") â†’ "loHi"
+min_cat("Hello", "java") â†’ "ellojava"
+min_cat("java", "Hello") â†’ "javaello"
 ```
 
 This exercise was taken from [codingbat.com](https://codingbat.com/prob/p105745) and has been adapted for the Python language. There are many great programming exercises there, but the majority are created for Java.
