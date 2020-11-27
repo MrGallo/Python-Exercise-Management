@@ -1,6 +1,7 @@
 # How Many Quarters?
 
-**Topic:** ```eval_rst
+**Topic:** 
+```eval_rst
 :ref:`fundamentals:mathematical operations`
 
 ```
