@@ -7,9 +7,9 @@
 Given two temperatures, return true if one is less than 0 and the other is greater than 100.
 
 ```
-icy_hot(120, -1) → true
-icy_hot(-1, 120) → true
-icy_hot(2, 120) → false
+icy_hot(120, -1) â†’ true
+icy_hot(-1, 120) â†’ true
+icy_hot(2, 120) â†’ false
 ```
 
 This exercise was taken from [codingbat.com](https://codingbat.com/prob/p192082) and has been adapted for the Python language. There are many great programming exercises there, but the majority are created for Java.

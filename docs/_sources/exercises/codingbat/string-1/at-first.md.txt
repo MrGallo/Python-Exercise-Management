@@ -7,9 +7,9 @@
 Given a string, return a string length 2 made of its first 2 chars. If the string length is less than 2, use '@' for the missing chars.
 
 ```
-at_first("hello") → "he"
-at_first("hi") → "hi"
-at_first("h") → "h@"
+at_first("hello") â†’ "he"
+at_first("hi") â†’ "hi"
+at_first("h") â†’ "h@"
 ```
 
 This exercise was taken from [codingbat.com](https://codingbat.com/prob/p139076) and has been adapted for the Python language. There are many great programming exercises there, but the majority are created for Java.

@@ -5,3 +5,4 @@ Fundamentals
     :maxdepth: 2
 
     introduction-to-programming/index
+    functions/index

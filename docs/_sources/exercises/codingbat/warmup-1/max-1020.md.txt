@@ -7,9 +7,9 @@
 Given 2 positive int values, return the larger value that is in the range 10..20 inclusive, or return 0 if neither is in that range.
 
 ```
-max_1020(11, 19) → 19
-max_1020(19, 11) → 19
-max_1020(11, 9) → 11
+max_1020(11, 19) â†’ 19
+max_1020(19, 11) â†’ 19
+max_1020(11, 9) â†’ 11
 ```
 
 This exercise was taken from [codingbat.com](https://codingbat.com/prob/p177372) and has been adapted for the Python language. There are many great programming exercises there, but the majority are created for Java.

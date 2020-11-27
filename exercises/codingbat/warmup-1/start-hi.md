@@ -7,9 +7,9 @@
 Given a string, return true if the string starts with "hi" and false otherwise.
 
 ```
-start_hi("hi there") → true
-start_hi("hi") → true
-start_hi("hello hi") → false
+start_hi("hi there") â†’ true
+start_hi("hi") â†’ true
+start_hi("hello hi") â†’ false
 ```
 
 This exercise was taken from [codingbat.com](https://codingbat.com/prob/p191022) and has been adapted for the Python language. There are many great programming exercises there, but the majority are created for Java.

@@ -7,9 +7,9 @@
 Given a string and a non-empty <b>word</b> string, return a string made of each char just before and just after every appearance of the word in the string. Ignore cases where there is no char before or after the word, and a char may be included twice if it is between two words.
 
 ```
-word_ends("abcXY123XYijk", "XY") → "c13i"
-word_ends("XY123XY", "XY") → "13"
-word_ends("XY1XY", "XY") → "11"
+word_ends("abcXY123XYijk", "XY") â†’ "c13i"
+word_ends("XY123XY", "XY") â†’ "13"
+word_ends("XY1XY", "XY") â†’ "11"
 ```
 
 This exercise was taken from [codingbat.com](https://codingbat.com/prob/p147538) and has been adapted for the Python language. There are many great programming exercises there, but the majority are created for Java.

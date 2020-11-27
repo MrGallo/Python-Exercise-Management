@@ -7,9 +7,9 @@
 Return true if the string "cat" and "dog" appear the same number of times in the given string.
 
 ```
-cat_dog("catdog") → true
-cat_dog("catcat") → false
-cat_dog("1cat1cadodog") → true
+cat_dog("catdog") â†’ true
+cat_dog("catcat") â†’ false
+cat_dog("1cat1cadodog") â†’ true
 ```
 
 This exercise was taken from [codingbat.com](https://codingbat.com/prob/p111624) and has been adapted for the Python language. There are many great programming exercises there, but the majority are created for Java.

@@ -7,9 +7,9 @@
 Given 2 strings, a and b, return a new string made of the first char of a and the last char of b, so "yo" and "java" yields "ya". If either string is length 0, use '@' for its missing char.
 
 ```
-last_chars("last", "chars") → "ls"
-last_chars("yo", "java") → "ya"
-last_chars("hi", "") → "h@"
+last_chars("last", "chars") â†’ "ls"
+last_chars("yo", "java") â†’ "ya"
+last_chars("hi", "") â†’ "h@"
 ```
 
 This exercise was taken from [codingbat.com](https://codingbat.com/prob/p138183) and has been adapted for the Python language. There are many great programming exercises there, but the majority are created for Java.

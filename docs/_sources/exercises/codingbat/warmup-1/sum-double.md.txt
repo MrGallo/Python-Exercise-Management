@@ -7,9 +7,9 @@
 Given two int values, return their sum. Unless the two values are the same, then return double their sum.
 
 ```
-sum_double(1, 2) → 3
-sum_double(3, 2) → 5
-sum_double(2, 2) → 8
+sum_double(1, 2) â†’ 3
+sum_double(3, 2) â†’ 5
+sum_double(2, 2) â†’ 8
 ```
 
 This exercise was taken from [codingbat.com](https://codingbat.com/prob/p154485) and has been adapted for the Python language. There are many great programming exercises there, but the majority are created for Java.

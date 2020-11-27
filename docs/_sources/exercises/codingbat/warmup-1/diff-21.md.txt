@@ -7,9 +7,9 @@
 Given an int n, return the absolute difference between n and 21, except return double the absolute difference if n is over 21.
 
 ```
-diff_21(19) → 2
-diff_21(10) → 11
-diff_21(21) → 0
+diff_21(19) â†’ 2
+diff_21(10) â†’ 11
+diff_21(21) â†’ 0
 ```
 
 This exercise was taken from [codingbat.com](https://codingbat.com/prob/p116624) and has been adapted for the Python language. There are many great programming exercises there, but the majority are created for Java.

@@ -7,9 +7,9 @@
 Given a string, if the first or last chars are 'x', return the string without those 'x' chars, and otherwise return the string unchanged.
 
 ```
-without_x("xHix") → "Hi"
-without_x("xHi") → "Hi"
-without_x("Hxix") → "Hxi"
+without_x("xHix") â†’ "Hi"
+without_x("xHi") â†’ "Hi"
+without_x("Hxix") â†’ "Hxi"
 ```
 
 This exercise was taken from [codingbat.com](https://codingbat.com/prob/p151940) and has been adapted for the Python language. There are many great programming exercises there, but the majority are created for Java.

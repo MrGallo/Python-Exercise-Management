@@ -7,9 +7,9 @@
 Return true if the given string contains an appearance of "xyz" where the xyz is not directly preceeded by a period (.). So "xxyz" counts but "x.xyz" does not.
 
 ```
-xyz_there("abcxyz") → true
-xyz_there("abc.xyz") → false
-xyz_there("xyz.abc") → true
+xyz_there("abcxyz") â†’ true
+xyz_there("abc.xyz") â†’ false
+xyz_there("xyz.abc") â†’ true
 ```
 
 This exercise was taken from [codingbat.com](https://codingbat.com/prob/p136594) and has been adapted for the Python language. There are many great programming exercises there, but the majority are created for Java.
