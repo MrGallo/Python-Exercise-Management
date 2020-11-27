@@ -3,6 +3,7 @@
 
 
 
+
 We'll say that a number is "teen" if it is in the range 13..19 inclusive. Given 3 int values, return true if 1 or more of them are teen.
 
 This exercise was taken from [codingbat.com](https://codingbat.com/prob/p178986) and has been adapted for the Python language. There are many great programming exercises there, but the majority are created for Java.

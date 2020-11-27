@@ -3,6 +3,7 @@
 
 
 
+
 Given a string of odd length, return the string length 3 from its middle, so "Candy" yields "and". The string length will be at least 3.
 
 This exercise was taken from [codingbat.com](https://codingbat.com/prob/p115863) and has been adapted for the Python language. There are many great programming exercises there, but the majority are created for Java.

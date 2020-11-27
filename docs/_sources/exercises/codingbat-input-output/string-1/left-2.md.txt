@@ -3,6 +3,7 @@
 
 
 
+
 Given a string, return a "rotated left 2" version where the first 2 chars are moved to the end. The string length will be at least 2.
 
 This exercise was taken from [codingbat.com](https://codingbat.com/prob/p197720) and has been adapted for the Python language. There are many great programming exercises there, but the majority are created for Java.

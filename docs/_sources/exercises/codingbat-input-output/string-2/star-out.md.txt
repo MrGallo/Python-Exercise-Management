@@ -3,6 +3,7 @@
 
 
 
+
 Return a version of the given string, where for every star (*) in the string the star and the chars immediately to its left and right are gone. So "ab*cd" yields "ad" and "ab**cd" also yields "ad".
 
 This exercise was taken from [codingbat.com](https://codingbat.com/prob/p139564) and has been adapted for the Python language. There are many great programming exercises there, but the majority are created for Java.

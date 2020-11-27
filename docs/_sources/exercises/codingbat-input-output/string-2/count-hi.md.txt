@@ -3,6 +3,7 @@
 
 
 
+
 Return the number of times that the string "hi" appears anywhere in the given string.
 
 This exercise was taken from [codingbat.com](https://codingbat.com/prob/p147448) and has been adapted for the Python language. There are many great programming exercises there, but the majority are created for Java.

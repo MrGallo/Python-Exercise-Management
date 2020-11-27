@@ -3,6 +3,7 @@
 
 
 
+
 Given a string, return a string length 1 from its front, unless <b>front</b> is false, in which case return a string length 1 from its back. The string will be non-empty.
 
 This exercise was taken from [codingbat.com](https://codingbat.com/prob/p162477) and has been adapted for the Python language. There are many great programming exercises there, but the majority are created for Java.

@@ -3,6 +3,7 @@
 
 
 
+
 Given an "out" string length 4, such as "&lt;&lt;&gt;&gt;", and a word, return a new string where the word is in the middle of the out string, e.g. "&lt;&lt;word&gt;&gt;". Note: use `str[i:j]` to extract the String starting at index i and going up to but not including index j.
 
 ```

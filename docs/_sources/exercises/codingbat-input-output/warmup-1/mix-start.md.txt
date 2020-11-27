@@ -3,6 +3,7 @@
 
 
 
+
 Return true if the given string begins with "mix", except the 'm' can be anything, so "pix", "9ix" .. all count.
 
 This exercise was taken from [codingbat.com](https://codingbat.com/prob/p151713) and has been adapted for the Python language. There are many great programming exercises there, but the majority are created for Java.

@@ -1,5 +1,9 @@
 # Banquet Hall Chairs
-**Topic:** storing data in variables
+
+**Topic:** ```eval_rst
+:ref:`fundamentals:storing data in variables`
+
+```
 
 
 

@@ -3,6 +3,7 @@
 
 
 
+
 Return true if the string "cat" and "dog" appear the same number of times in the given string.
 
 This exercise was taken from [codingbat.com](https://codingbat.com/prob/p111624) and has been adapted for the Python language. There are many great programming exercises there, but the majority are created for Java.

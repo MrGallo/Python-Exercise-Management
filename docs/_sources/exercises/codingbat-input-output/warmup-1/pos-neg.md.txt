@@ -3,6 +3,7 @@
 
 
 
+
 Given 2 int values, return true if one is negative and one is positive. Except if the parameter "negative" is true, then return true only if both are negative.
 
 This exercise was taken from [codingbat.com](https://codingbat.com/prob/p159227) and has been adapted for the Python language. There are many great programming exercises there, but the majority are created for Java.
