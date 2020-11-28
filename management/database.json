@@ -433,7 +433,9 @@
             {
                 "name": "double_char",
                 "topic": "",
-                "requirements": [],
+                "requirements": [
+                    "string building and filtering"
+                ],
                 "description": "Given a string, return a string where for every char in the original, there are two chars.\n\n```\ndouble_char(\"The\") -> \"TThhee\"\ndouble_char(\"AAbb\") -> \"AAAAbbbb\"\ndouble_char(\"Hi-There\") -> \"HHii--TThheerree\"\n```\n\nThis exercise was taken from [codingbat.com](https://codingbat.com/prob/p165312) and has been adapted for the Python language. There are many great programming exercises there, but the majority are created for Java.",
                 "starter_code": "def double_char(string: str) -> str:\n    pass\n\n\nresult = double_char('The')\nprint(result)",
                 "tests": "from main import double_char\n\n\ndef test_double_char_1():\n    assert double_char('The') == 'TThhee'\n\n\ndef test_double_char_2():\n    assert double_char('AAbb') == 'AAAAbbbb'\n\n\ndef test_double_char_3():\n    assert double_char('Hi-There') == 'HHii--TThheerree'\n\n\ndef test_double_char_4():\n    assert double_char('Word!') == 'WWoorrdd!!'\n\n\ndef test_double_char_5():\n    assert double_char('!!') == '!!!!'\n\n\ndef test_double_char_6():\n    assert double_char('') == ''\n\n\ndef test_double_char_7():\n    assert double_char('a') == 'aa'\n\n\ndef test_double_char_8():\n    assert double_char('.') == '..'\n\n\ndef test_double_char_9():\n    assert double_char('aa') == 'aaaa'",
@@ -442,11 +444,15 @@
             {
                 "name": "count_hi",
                 "topic": "",
-                "requirements": [],
+                "requirements": [
+                    "substrings and slicing",
+                    "loop through a string (while)",
+                    "loop with an accumulator variable"
+                ],
                 "description": "Return the number of times that the string \"hi\" appears anywhere in the given string.\n\n```\ncount_hi(\"abc hi ho\") -> 1\ncount_hi(\"ABChi hi\") -> 2\ncount_hi(\"hihi\") -> 2\n```\n\nThis exercise was taken from [codingbat.com](https://codingbat.com/prob/p147448) and has been adapted for the Python language. There are many great programming exercises there, but the majority are created for Java.",
-                "starter_code": "def count_hi(string: str) -> int:\n    pass\n\n\nresult = count_hi('abc hi ho')\nprint(result)\n",
-                "tests": "from main import count_hi\n\n\ndef test_count_hi_1():\n    assert count_hi('abc hi ho') == 1\n\n\ndef test_count_hi_2():\n    assert count_hi('ABChi hi') == 2\n\n\ndef test_count_hi_3():\n    assert count_hi('hihi') == 2\n\n\ndef test_count_hi_4():\n    assert count_hi('hiHIhi') == 2\n\n\ndef test_count_hi_5():\n    assert count_hi('') == 0\n\n\ndef test_count_hi_6():\n    assert count_hi('h') == 0\n\n\ndef test_count_hi_7():\n    assert count_hi('hi') == 1\n\n\ndef test_count_hi_8():\n    assert count_hi('Hi is no HI on ahI') == 0\n\n\ndef test_count_hi_9():\n    assert count_hi('hiho not HOHIhi') == 2\n\n\n",
-                "solution": ""
+                "starter_code": "def count_hi(string: str) -> int:\n    pass\n\n\nresult = count_hi('abc hi ho')\nprint(result)",
+                "tests": "from main import count_hi\n\n\ndef test_count_hi_1():\n    assert count_hi('abc hi ho') == 1\n\n\ndef test_count_hi_2():\n    assert count_hi('ABChi hi') == 2\n\n\ndef test_count_hi_3():\n    assert count_hi('hihi') == 2\n\n\ndef test_count_hi_4():\n    assert count_hi('hiHIhi') == 2\n\n\ndef test_count_hi_5():\n    assert count_hi('') == 0\n\n\ndef test_count_hi_6():\n    assert count_hi('h') == 0\n\n\ndef test_count_hi_7():\n    assert count_hi('hi') == 1\n\n\ndef test_count_hi_8():\n    assert count_hi('Hi is no HI on ahI') == 0\n\n\ndef test_count_hi_9():\n    assert count_hi('hiho not HOHIhi') == 2",
+                "solution": "def count_hi(string: str) -> int:\n    hi_count = 0\n    i = 0\n    while i < len(string) - 1:\n        if string[i:i+2] == \"hi\":\n            hi_count += 1\n        \n        i += 1\n    \n    return hi_count"
             },
             {
                 "name": "cat_dog",
@@ -3201,11 +3207,15 @@
             {
                 "name": "count_hi",
                 "topic": "",
-                "requirements": [],
+                "requirements": [
+                    "substrings and slicing",
+                    "loop through a string (while)",
+                    "loop with an accumulator variable"
+                ],
                 "description": "Return the number of times that the string \"hi\" appears anywhere in the given string.\n\nThis exercise was taken from [codingbat.com](https://codingbat.com/prob/p147448) and has been adapted for the Python language. There are many great programming exercises there, but the majority are created for Java.",
                 "starter_code": "",
                 "tests": "from exercise.fixtures import captured_output\n\n\ndef test_1(captured_output):\n    assert captured_output('abc hi ho') == 1\n\n\ndef test_2(captured_output):\n    assert captured_output('ABChi hi') == 2\n\n\ndef test_3(captured_output):\n    assert captured_output('hihi') == 2\n\n\ndef test_4(captured_output):\n    assert captured_output('hiHIhi') == 2\n\n\ndef test_5(captured_output):\n    assert captured_output('') == 0\n\n\ndef test_6(captured_output):\n    assert captured_output('h') == 0\n\n\ndef test_7(captured_output):\n    assert captured_output('hi') == 1\n\n\ndef test_8(captured_output):\n    assert captured_output('Hi is no HI on ahI') == 0\n\n\ndef test_9(captured_output):\n    assert captured_output('hiho not HOHIhi') == 2",
-                "solution": "",
+                "solution": "string = input()\n\nhi_count = 0\ni = 0\nwhile i < len(string) - 1:\n    if string[i:i+2] == \"hi\":\n        hi_count += 1\n\n    i += 1\n\nprint(hi_count)",
                 "tests_io": [
                     [
                         [
