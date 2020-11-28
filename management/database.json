@@ -435,9 +435,9 @@
                 "topic": "",
                 "requirements": [],
                 "description": "Given a string, return a string where for every char in the original, there are two chars.\n\n```\ndouble_char(\"The\") \u00e2\u2020\u2019 \"TThhee\"\ndouble_char(\"AAbb\") \u00e2\u2020\u2019 \"AAAAbbbb\"\ndouble_char(\"Hi-There\") \u00e2\u2020\u2019 \"HHii--TThheerree\"\n```\n\nThis exercise was taken from [codingbat.com](https://codingbat.com/prob/p165312) and has been adapted for the Python language. There are many great programming exercises there, but the majority are created for Java.",
-                "starter_code": "def double_char(string: str) -> str:\n    pass\n\n\nresult = double_char('The')\nprint(result)\n",
-                "tests": "from main import double_char\n\n\ndef test_double_char_1():\n    assert double_char('The') == 'TThhee'\n\n\ndef test_double_char_2():\n    assert double_char('AAbb') == 'AAAAbbbb'\n\n\ndef test_double_char_3():\n    assert double_char('Hi-There') == 'HHii--TThheerree'\n\n\ndef test_double_char_4():\n    assert double_char('Word!') == 'WWoorrdd!!'\n\n\ndef test_double_char_5():\n    assert double_char('!!') == '!!!!'\n\n\ndef test_double_char_6():\n    assert double_char('') == ''\n\n\ndef test_double_char_7():\n    assert double_char('a') == 'aa'\n\n\ndef test_double_char_8():\n    assert double_char('.') == '..'\n\n\ndef test_double_char_9():\n    assert double_char('aa') == 'aaaa'\n\n\n",
-                "solution": ""
+                "starter_code": "def double_char(string: str) -> str:\n    pass\n\n\nresult = double_char('The')\nprint(result)",
+                "tests": "from main import double_char\n\n\ndef test_double_char_1():\n    assert double_char('The') == 'TThhee'\n\n\ndef test_double_char_2():\n    assert double_char('AAbb') == 'AAAAbbbb'\n\n\ndef test_double_char_3():\n    assert double_char('Hi-There') == 'HHii--TThheerree'\n\n\ndef test_double_char_4():\n    assert double_char('Word!') == 'WWoorrdd!!'\n\n\ndef test_double_char_5():\n    assert double_char('!!') == '!!!!'\n\n\ndef test_double_char_6():\n    assert double_char('') == ''\n\n\ndef test_double_char_7():\n    assert double_char('a') == 'aa'\n\n\ndef test_double_char_8():\n    assert double_char('.') == '..'\n\n\ndef test_double_char_9():\n    assert double_char('aa') == 'aaaa'",
+                "solution": "def double_char(string: str) -> str:\n\n    new_string = \"\"\n    for c in string:\n        new_string += c + c\n\n    return new_string"
             },
             {
                 "name": "count_hi",
@@ -3140,7 +3140,7 @@
                 "description": "Get any string from the user, output a string where for every char in the original, there are two chars.\n\nThis exercise was taken from [codingbat.com](https://codingbat.com/prob/p165312) and has been adapted for the Python language. There are many great programming exercises there, but the majority are created for Java.",
                 "starter_code": "",
                 "tests": "from exercise.fixtures import captured_output\n\n\ndef test_1(captured_output):\n    assert captured_output('The') == 'TThhee'\n\n\ndef test_2(captured_output):\n    assert captured_output('AAbb') == 'AAAAbbbb'\n\n\ndef test_3(captured_output):\n    assert captured_output('Hi-There') == 'HHii--TThheerree'\n\n\ndef test_4(captured_output):\n    assert captured_output('Word!') == 'WWoorrdd!!'\n\n\ndef test_5(captured_output):\n    assert captured_output('!!') == '!!!!'\n\n\ndef test_6(captured_output):\n    assert captured_output('') == ''\n\n\ndef test_7(captured_output):\n    assert captured_output('a') == 'aa'\n\n\ndef test_8(captured_output):\n    assert captured_output('.') == '..'\n\n\ndef test_9(captured_output):\n    assert captured_output('aa') == 'aaaa'",
-                "solution": "",
+                "solution": "string = input()\n\nnew_string = \"\"\nfor c in string:\n    new_string += c + c\n\nprint(new_string)",
                 "tests_io": [
                     [
                         [
