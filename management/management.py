@@ -340,6 +340,8 @@ class ChapterMenu(ItemMenu):
 
         exercise = ChapterMenu.create_exercise(*ChapterMenu.parse_exercise_form())
 
+        if "tests_io" in self.data[index].keys():
+            exercise["tests_io"] = self.data[index]["tests_io"]
         self.data[index] = exercise
         self.db.write_to_file()
         self.spawn_children()
