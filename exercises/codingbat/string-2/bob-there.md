@@ -7,9 +7,9 @@
 Return true if the given string contains a "bob" string, but where the middle 'o' char can be any char.
 
 ```
-bob_there("abcbob") → true
-bob_there("b9b") → true
-bob_there("bac") → false
+bob_there("abcbob") -> true
+bob_there("b9b") -> true
+bob_there("bac") -> false
 ```
 
 This exercise was taken from [codingbat.com](https://codingbat.com/prob/p175762) and has been adapted for the Python language. There are many great programming exercises there, but the majority are created for Java.

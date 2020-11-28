@@ -7,9 +7,9 @@
 Given a string of even length, return the first half. So the string "WooHoo" yields "Woo".
 
 ```
-first_half("WooHoo") → "Woo"
-first_half("HelloThere") → "Hello"
-first_half("abcdef") → "abc"
+first_half("WooHoo") -> "Woo"
+first_half("HelloThere") -> "Hello"
+first_half("abcdef") -> "abc"
 ```
 
 This exercise was taken from [codingbat.com](https://codingbat.com/prob/p172267) and has been adapted for the Python language. There are many great programming exercises there, but the majority are created for Java.

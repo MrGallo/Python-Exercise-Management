@@ -2,6 +2,13 @@
 
 
 
+**Requirements:**
+```eval_rst
+- :ref:`fundamentals:substrings and slicing`
+- :ref:`fundamentals:loop through a string (while)`
+- :ref:`fundamentals:loop with an accumulator variable`
+
+```
 
 
 Return the number of times that the string "hi" appears anywhere in the given string.

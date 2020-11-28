@@ -7,9 +7,9 @@
 The parameter weekday is true if it is a weekday, and the parameter vacation is true if we are on vacation. We sleep in if it is not a weekday or we're on vacation. Return true if we sleep in.
 
 ```
-sleep_in(false, false) → true
-sleep_in(true, false) → false
-sleep_in(false, true) → true
+sleep_in(false, false) -> true
+sleep_in(true, false) -> false
+sleep_in(false, true) -> true
 ```
 
 This exercise was taken from [codingbat.com](https://codingbat.com/prob/p187868) and has been adapted for the Python language. There are many great programming exercises there, but the majority are created for Java.

@@ -7,9 +7,9 @@
 Return true if the given string begins with "mix", except the 'm' can be anything, so "pix", "9ix" .. all count.
 
 ```
-mix_start("mix snacks") → true
-mix_start("pix snacks") → true
-mix_start("piz snacks") → false
+mix_start("mix snacks") -> true
+mix_start("pix snacks") -> true
+mix_start("piz snacks") -> false
 ```
 
 This exercise was taken from [codingbat.com](https://codingbat.com/prob/p151713) and has been adapted for the Python language. There are many great programming exercises there, but the majority are created for Java.

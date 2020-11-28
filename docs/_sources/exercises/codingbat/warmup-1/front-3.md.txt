@@ -7,9 +7,9 @@
 Given a string, we'll say that the front is the first 3 chars of the string. If the string length is less than 3, the front is whatever is there. Return a new string which is 3 copies of the front.
 
 ```
-front_3("Java") → "JavJavJav"
-front_3("Chocolate") → "ChoChoCho"
-front_3("abc") → "abcabcabc"
+front_3("Java") -> "JavJavJav"
+front_3("Chocolate") -> "ChoChoCho"
+front_3("abc") -> "abcabcabc"
 ```
 
 This exercise was taken from [codingbat.com](https://codingbat.com/prob/p136351) and has been adapted for the Python language. There are many great programming exercises there, but the majority are created for Java.

@@ -7,9 +7,9 @@
 Given a string, return true if it ends in "ly".
 
 ```
-ends_ly("oddly") → true
-ends_ly("y") → false
-ends_ly("oddy") → false
+ends_ly("oddly") -> true
+ends_ly("y") -> false
+ends_ly("oddy") -> false
 ```
 
 This exercise was taken from [codingbat.com](https://codingbat.com/prob/p103895) and has been adapted for the Python language. There are many great programming exercises there, but the majority are created for Java.

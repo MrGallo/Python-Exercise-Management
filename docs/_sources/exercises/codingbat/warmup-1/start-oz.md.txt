@@ -7,9 +7,9 @@
 Given a string, return a string made of the first 2 chars (if present), however include first char only if it is 'o' and include the second only if it is 'z', so "ozymandias" yields "oz".
 
 ```
-start_oz("ozymandias") → "oz"
-start_oz("bzoo") → "z"
-start_oz("oxx") → "o"
+start_oz("ozymandias") -> "oz"
+start_oz("bzoo") -> "z"
+start_oz("oxx") -> "o"
 ```
 
 This exercise was taken from [codingbat.com](https://codingbat.com/prob/p199720) and has been adapted for the Python language. There are many great programming exercises there, but the majority are created for Java.

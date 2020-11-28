@@ -7,9 +7,9 @@
 Given 2 int values, return whichever value is nearest to the value 10, or return 0 in the event of a tie. Note that Math.abs(n) returns the absolute value of a number.
 
 ```
-close_10(8, 13) → 8
-close_10(13, 8) → 8
-close_10(13, 7) → 0
+close_10(8, 13) -> 8
+close_10(13, 8) -> 8
+close_10(13, 7) -> 0
 ```
 
 This exercise was taken from [codingbat.com](https://codingbat.com/prob/p172021) and has been adapted for the Python language. There are many great programming exercises there, but the majority are created for Java.

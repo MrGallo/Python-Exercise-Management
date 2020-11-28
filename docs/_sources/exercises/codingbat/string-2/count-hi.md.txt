@@ -2,14 +2,21 @@
 
 
 
+**Requirements:**
+```eval_rst
+- :ref:`fundamentals:substrings and slicing`
+- :ref:`fundamentals:loop through a string (while)`
+- :ref:`fundamentals:loop with an accumulator variable`
+
+```
 
 
 Return the number of times that the string "hi" appears anywhere in the given string.
 
 ```
-count_hi("abc hi ho") → 1
-count_hi("ABChi hi") → 2
-count_hi("hihi") → 2
+count_hi("abc hi ho") -> 1
+count_hi("ABChi hi") -> 2
+count_hi("hihi") -> 2
 ```
 
 This exercise was taken from [codingbat.com](https://codingbat.com/prob/p147448) and has been adapted for the Python language. There are many great programming exercises there, but the majority are created for Java.

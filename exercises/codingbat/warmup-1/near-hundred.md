@@ -7,9 +7,9 @@
 Given an int n, return true if it is within 10 of 100 or 200. Note: Math.abs(num) computes the absolute value of a number.
 
 ```
-near_hundred(93) → true
-near_hundred(90) → true
-near_hundred(89) → false
+near_hundred(93) -> true
+near_hundred(90) -> true
+near_hundred(89) -> false
 ```
 
 This exercise was taken from [codingbat.com](https://codingbat.com/prob/p184004) and has been adapted for the Python language. There are many great programming exercises there, but the majority are created for Java.

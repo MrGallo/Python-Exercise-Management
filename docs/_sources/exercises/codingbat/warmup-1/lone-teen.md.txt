@@ -7,9 +7,9 @@
 We'll say that a number is "teen" if it is in the range 13..19 inclusive. Given 2 int values, return true if one or the other is teen, but not both.
 
 ```
-lone_teen(13, 99) → true
-lone_teen(21, 19) → true
-lone_teen(13, 13) → false
+lone_teen(13, 99) -> true
+lone_teen(21, 19) -> true
+lone_teen(13, 13) -> false
 ```
 
 This exercise was taken from [codingbat.com](https://codingbat.com/prob/p165701) and has been adapted for the Python language. There are many great programming exercises there, but the majority are created for Java.

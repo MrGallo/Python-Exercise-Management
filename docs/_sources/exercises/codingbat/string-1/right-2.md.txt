@@ -7,9 +7,9 @@
 Given a string, return a "rotated right 2" version where the last 2 chars are moved to the start. The string length will be at least 2.
 
 ```
-right_2("Hello") → "loHel"
-right_2("java") → "vaja"
-right_2("Hi") → "Hi"
+right_2("Hello") -> "loHel"
+right_2("java") -> "vaja"
+right_2("Hi") -> "Hi"
 ```
 
 This exercise was taken from [codingbat.com](https://codingbat.com/prob/p130781) and has been adapted for the Python language. There are many great programming exercises there, but the majority are created for Java.

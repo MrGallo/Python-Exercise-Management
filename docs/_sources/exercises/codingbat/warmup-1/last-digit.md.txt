@@ -7,9 +7,9 @@
 Given two non-negative int values, return true if they have the same last digit, such as with 27 and 57. Note that the % "mod" operator computes remainders, so 17 % 10 is 7.
 
 ```
-last_digit(7, 17) → true
-last_digit(6, 17) → false
-last_digit(3, 113) → true
+last_digit(7, 17) -> true
+last_digit(6, 17) -> false
+last_digit(3, 113) -> true
 ```
 
 This exercise was taken from [codingbat.com](https://codingbat.com/prob/p125339) and has been adapted for the Python language. There are many great programming exercises there, but the majority are created for Java.

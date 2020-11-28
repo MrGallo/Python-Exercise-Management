@@ -14,9 +14,9 @@
 Given a string and an int n, return a string made of the first n characters of the string, followed by the first n-1 characters of the string, and so on. You may assume that n is between 0 and the length of the string, inclusive (i.e. n &gt;= 0 and n &lt;= str.length()).
 
 ```
-repeat_front("Chocolate", 4) → "ChocChoChC"
-repeat_front("Chocolate", 3) → "ChoChC"
-repeat_front("Ice Cream", 2) → "IcI"
+repeat_front("Chocolate", 4) -> "ChocChoChC"
+repeat_front("Chocolate", 3) -> "ChoChC"
+repeat_front("Ice Cream", 2) -> "IcI"
 ```
 
 This exercise was taken from [codingbat.com](https://codingbat.com/prob/p128796) and has been adapted for the Python language. There are many great programming exercises there, but the majority are created for Java.

@@ -7,9 +7,9 @@
 Given a string of even length, return a string made of the middle two chars, so the string "string" yields "ri". The string length will be at least 2.
 
 ```
-middle_two("string") → "ri"
-middle_two("code") → "od"
-middle_two("Practice") → "ct"
+middle_two("string") -> "ri"
+middle_two("code") -> "od"
+middle_two("Practice") -> "ct"
 ```
 
 This exercise was taken from [codingbat.com](https://codingbat.com/prob/p137729) and has been adapted for the Python language. There are many great programming exercises there, but the majority are created for Java.

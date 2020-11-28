@@ -7,9 +7,9 @@
 Return true if the given string contains between 1 and 3 'e' chars.
 
 ```
-string_e("Hello") → true
-string_e("Heelle") → true
-string_e("Heelele") → false
+string_e("Hello") -> true
+string_e("Heelle") -> true
+string_e("Heelele") -> false
 ```
 
 This exercise was taken from [codingbat.com](https://codingbat.com/prob/p173784) and has been adapted for the Python language. There are many great programming exercises there, but the majority are created for Java.

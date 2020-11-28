@@ -7,9 +7,9 @@
 Given a string, return a new string where "not " has been added to the front. However, if the string already begins with "not", return the string unchanged. Note: use .equals() to compare 2 strings.
 
 ```
-not_string("candy") → "not candy"
-not_string("x") → "not x"
-not_string("not bad") → "not bad"
+not_string("candy") -> "not candy"
+not_string("x") -> "not x"
+not_string("not bad") -> "not bad"
 ```
 
 This exercise was taken from [codingbat.com](https://codingbat.com/prob/p191914) and has been adapted for the Python language. There are many great programming exercises there, but the majority are created for Java.
