@@ -523,7 +523,11 @@
             {
                 "name": "repeat_front",
                 "topic": "",
-                "requirements": [],
+                "requirements": [
+                    "substrings and slicing",
+                    "loop with a counter variable",
+                    "string building and filtering"
+                ],
                 "description": "Given a string and an int n, return a string made of the first n characters of the string, followed by the first n-1 characters of the string, and so on. You may assume that n is between 0 and the length of the string, inclusive (i.e. n &gt;= 0 and n &lt;= str.length()).\n\n```\nrepeat_front(\"Chocolate\", 4) \u00e2\u2020\u2019 \"ChocChoChC\"\nrepeat_front(\"Chocolate\", 3) \u00e2\u2020\u2019 \"ChoChC\"\nrepeat_front(\"Ice Cream\", 2) \u00e2\u2020\u2019 \"IcI\"\n```\n\nThis exercise was taken from [codingbat.com](https://codingbat.com/prob/p128796) and has been adapted for the Python language. There are many great programming exercises there, but the majority are created for Java.",
                 "starter_code": "def repeat_front(string: str, n: int) -> str:\n    pass\n\n\nresult = repeat_front('Chocolate', 4)\nprint(result)\n",
                 "tests": "from main import repeat_front\n\n\ndef test_repeat_front_1():\n    assert repeat_front('Chocolate', 4) == 'ChocChoChC'\n\n\ndef test_repeat_front_2():\n    assert repeat_front('Chocolate', 3) == 'ChoChC'\n\n\ndef test_repeat_front_3():\n    assert repeat_front('Ice Cream', 2) == 'IcI'\n\n\ndef test_repeat_front_4():\n    assert repeat_front('Ice Cream', 1) == 'I'\n\n\ndef test_repeat_front_5():\n    assert repeat_front('Ice Cream', 0) == ''\n\n\ndef test_repeat_front_6():\n    assert repeat_front('xyz', 3) == 'xyzxyx'\n\n\ndef test_repeat_front_7():\n    assert repeat_front('', 0) == ''\n\n\ndef test_repeat_front_8():\n    assert repeat_front('Java', 4) == 'JavaJavJaJ'\n\n\ndef test_repeat_front_9():\n    assert repeat_front('Java', 1) == 'J'\n\n\n",
@@ -4027,7 +4031,11 @@
             {
                 "name": "repeat_front",
                 "topic": "",
-                "requirements": [],
+                "requirements": [
+                    "substrings and slicing",
+                    "loop with a counter variable",
+                    "string building and filtering"
+                ],
                 "description": "Given a string and an int n, return a string made of the first n characters of the string, followed by the first n-1 characters of the string, and so on. You may assume that n is between 0 and the length of the string, inclusive (i.e. n &gt;= 0 and n &lt;= str.length()).\n\nThis exercise was taken from [codingbat.com](https://codingbat.com/prob/p128796) and has been adapted for the Python language. There are many great programming exercises there, but the majority are created for Java.",
                 "starter_code": "",
                 "tests": "from exercise.fixtures import captured_output\n\n\ndef test_1(captured_output):\n    assert captured_output('Chocolate\\n4') == 'ChocChoChC'\n\n\ndef test_2(captured_output):\n    assert captured_output('Chocolate\\n3') == 'ChoChC'\n\n\ndef test_3(captured_output):\n    assert captured_output('Ice Cream\\n2') == 'IcI'\n\n\ndef test_4(captured_output):\n    assert captured_output('Ice Cream\\n1') == 'I'\n\n\ndef test_5(captured_output):\n    assert captured_output('Ice Cream\\n0') == ''\n\n\ndef test_6(captured_output):\n    assert captured_output('xyz\\n3') == 'xyzxyx'\n\n\ndef test_7(captured_output):\n    assert captured_output('\\n0') == ''\n\n\ndef test_8(captured_output):\n    assert captured_output('Java\\n4') == 'JavaJavJaJ'\n\n\ndef test_9(captured_output):\n    assert captured_output('Java\\n1') == 'J'",
