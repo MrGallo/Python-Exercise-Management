@@ -2,6 +2,14 @@
 
 
 
+**Requirements:**
+```eval_rst
+- :ref:`fundamentals:substrings and slicing`
+- :ref:`fundamentals:if, elif, else`
+- :ref:`fundamentals:loop through a string (while)`
+- :ref:`fundamentals:loop with an accumulator variable`
+
+```
 
 
 Return true if the string "cat" and "dog" appear the same number of times in the given string.

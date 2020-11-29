@@ -2,6 +2,14 @@
 
 
 
+**Requirements:**
+```eval_rst
+- :ref:`fundamentals:substrings and slicing`
+- :ref:`fundamentals:if, else`
+- :ref:`fundamentals:loop through a string (while)`
+- :ref:`fundamentals:loop with an accumulator variable`
+
+```
 
 
 Return the number of times that the string "code" appears anywhere in the given string, except we'll accept any letter for the 'd', so "cope" and "cooe" count.

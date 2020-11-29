@@ -2,6 +2,13 @@
 
 
 
+**Requirements:**
+```eval_rst
+- :ref:`fundamentals:get a single character`
+- :ref:`fundamentals:if, else`
+- :ref:`fundamentals:loop through a string (while)`
+
+```
 
 
 Return true if the given string contains a "bob" string, but where the middle 'o' char can be any char.

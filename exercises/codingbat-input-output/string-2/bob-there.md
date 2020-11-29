@@ -2,9 +2,16 @@
 
 
 
+**Requirements:**
+```eval_rst
+- :ref:`fundamentals:get a single character`
+- :ref:`fundamentals:if, else`
+- :ref:`fundamentals:loop through a string (while)`
+
+```
 
 
-Return true if the given string contains a "bob" string, but where the middle 'o' char can be any char.
+Output `True` if the inputted string contains a `"bob"` string, but where the middle `'o'` character can be any character.
 
 This exercise was taken from [codingbat.com](https://codingbat.com/prob/p175762) and has been adapted for the Python language. There are many great programming exercises there, but the majority are created for Java.
 

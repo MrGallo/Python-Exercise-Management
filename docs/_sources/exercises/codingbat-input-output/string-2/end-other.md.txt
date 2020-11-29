@@ -2,9 +2,15 @@
 
 
 
+**Requirements:**
+```eval_rst
+- :ref:`fundamentals:substrings and slicing`
+- :ref:`fundamentals:if, elif, else`
+
+```
 
 
-Given two strings, return true if either of the strings appears at the very end of the other string, ignoring upper/lower case differences (in other words, the computation should not be "case sensitive"). Note:  str.toLowerCase() returns the lowercase version of a string.
+Take two strings as input, output `True` if either of the strings appears at the very end of the other string, ignoring upper/lower case differences (in other words, the computation should not be "case sensitive"). Output `False` otherwise. Note: `str.lower()` returns the lowercase version of a string.
 
 This exercise was taken from [codingbat.com](https://codingbat.com/prob/p126880) and has been adapted for the Python language. There are many great programming exercises there, but the majority are created for Java.
 

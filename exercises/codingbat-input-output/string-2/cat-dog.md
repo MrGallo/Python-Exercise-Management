@@ -2,9 +2,17 @@
 
 
 
+**Requirements:**
+```eval_rst
+- :ref:`fundamentals:substrings and slicing`
+- :ref:`fundamentals:if, elif, else`
+- :ref:`fundamentals:loop through a string (while)`
+- :ref:`fundamentals:loop with an accumulator variable`
+
+```
 
 
-Return true if the string "cat" and "dog" appear the same number of times in the given string.
+Output `True` if the substrings `"cat"` and `"dog"` appear the same number of times in a string input by the user. Otherwise, output `False`.
 
 This exercise was taken from [codingbat.com](https://codingbat.com/prob/p111624) and has been adapted for the Python language. There are many great programming exercises there, but the majority are created for Java.
 
