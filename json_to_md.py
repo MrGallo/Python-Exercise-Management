@@ -1,3 +1,4 @@
+from management.utils import calc_difficulty
 from typing import List, Optional
 import json
 from pathlib import PurePosixPath
@@ -8,6 +9,7 @@ from slugify import slugify
 
 import management.settings as settings
 from management.types import Series, Database, Exercise
+from management.concepts import concepts as CONCEPTS
 
 
 def main():
@@ -45,7 +47,8 @@ def write_index_rst(item_list: List[str],
                     max_depth: int = 2,
                     ref_path: str = "",
                     is_parent: bool = True,
-                    append_text: Optional[str] = None):
+                    append_text: Optional[str] = None,
+                    difficulties: Optional[List[str]] = None):
 
     content = f"""{title}
 {"=" * len(title)}
@@ -55,12 +58,15 @@ def write_index_rst(item_list: List[str],
 
 """
 
-    for item in item_list:
+    for i, item in enumerate(item_list):
         item_path = slugify(item)
         if is_parent:
             item_path = PurePosixPath(ref_path, slugify(item), "index")
 
-        content += f"    {item_path}\n"
+        if difficulties and difficulties[i] > 1:
+            content += f"    {item_path} ({difficulties[i]}) <{item_path}>\n"
+        else:
+            content += f"    {item_path}\n"
     
     if append_text is not None:
         content += "\n" + append_text
@@ -99,11 +105,13 @@ def write_chapter(series: Series, chapter_name: str, path: str) -> None:
         write_exercise(exercise, chapter_path)
     
     exercise_names = [ex["name"] for ex in exercises]
+    difficulties = [calc_difficulty(ex["requirements"], CONCEPTS) for ex in exercises]
     write_index_rst(exercise_names,
                     chapter_name.title(),
                     chapter_path,
                     max_depth=1,
-                    is_parent=False)
+                    is_parent=False,
+                    difficulties=difficulties)
 
 
 def write_exercise(exercise: Exercise, path: str) -> None:
