@@ -8,6 +8,7 @@
 - :ref:`fundamentals:if, elif, else`
 - :ref:`fundamentals:loop through a string (while)`
 - :ref:`fundamentals:loop with an accumulator variable`
+- :ref:`fundamentals:returning a value`
 
 ```
 

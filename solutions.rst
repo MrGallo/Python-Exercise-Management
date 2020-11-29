@@ -355,6 +355,22 @@ repeat_end
     
         return new_string
 
+repeat_separator
+****************
+.. code-block:: python
+    :linenos:
+
+    def repeat_separator(word: str, sep: str, count: int) -> str:
+        new_string = ""
+        i = 0
+        while i < count:
+            if i > 0:
+                new_string += sep
+            new_string += word
+            i += 1
+    
+        return new_string
+
 
 
 Codingbat (Input/Output)
@@ -560,6 +576,25 @@ repeat_front
     while slice_size > 0:
         new_string += string[0:slice_size]
         slice_size -= 1
+    
+    print(new_string)
+
+repeat_separator
+****************
+.. code-block:: python
+    :linenos:
+
+    word = input()
+    sep = input()
+    count = int(input())
+    
+    new_string = ""
+    i = 0
+    while i < count:
+        new_string += word
+        i += 1
+        if i != count:  # if it's not the last loop
+            new_string += sep
     
     print(new_string)
 

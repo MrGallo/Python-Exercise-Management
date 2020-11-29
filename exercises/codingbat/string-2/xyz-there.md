@@ -7,6 +7,7 @@
 - :ref:`fundamentals:substrings and slicing`
 - :ref:`fundamentals:if, else`
 - :ref:`fundamentals:loop through a string (while)`
+- :ref:`fundamentals:returning a value`
 
 ```
 

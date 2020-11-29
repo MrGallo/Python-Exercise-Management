@@ -7,6 +7,7 @@
 - :ref:`fundamentals:substrings and slicing`
 - :ref:`fundamentals:loop through a string (while)`
 - :ref:`fundamentals:loop with an accumulator variable`
+- :ref:`fundamentals:returning a value`
 
 ```
 

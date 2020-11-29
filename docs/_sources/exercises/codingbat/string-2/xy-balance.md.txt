@@ -7,6 +7,7 @@
 - :ref:`fundamentals:get a single character`
 - :ref:`fundamentals:loop through a string (while)`
 - :ref:`fundamentals:if, elif, else`
+- :ref:`fundamentals:returning a value`
 
 ```
 

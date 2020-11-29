@@ -6,6 +6,7 @@
 ```eval_rst
 - :ref:`fundamentals:substrings and slicing`
 - :ref:`fundamentals:if, elif, else`
+- :ref:`fundamentals:returning a value`
 
 ```
 

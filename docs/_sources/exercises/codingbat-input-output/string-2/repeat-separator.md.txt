@@ -2,9 +2,16 @@
 
 
 
+**Requirements:**
+```eval_rst
+- :ref:`fundamentals:if, else`
+- :ref:`fundamentals:loop with a counter variable`
+- :ref:`fundamentals:string building and filtering`
+
+```
 
 
-Given two strings, <b>word</b> and a separator <b>sep</b>, return a big string made of <b>count</b> occurrences of the word, separated by the separator string.
+Get two strings from the user, the first will be a `word` and the second a separator (call it `sep`). Get a third input from the user, an integer called `count`. Output a new string made of `count` occurrences of the word, separated by the separator string.
 
 This exercise was taken from [codingbat.com](https://codingbat.com/prob/p109637) and has been adapted for the Python language. There are many great programming exercises there, but the majority are created for Java.
 

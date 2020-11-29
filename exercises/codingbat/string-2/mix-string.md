@@ -7,6 +7,7 @@
 - :ref:`fundamentals:get a single character`
 - :ref:`fundamentals:substrings and slicing`
 - :ref:`fundamentals:string building and filtering`
+- :ref:`fundamentals:returning a value`
 
 ```
 

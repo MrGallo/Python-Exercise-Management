@@ -5,6 +5,7 @@
 **Requirements:**
 ```eval_rst
 - :ref:`fundamentals:string building and filtering`
+- :ref:`fundamentals:returning a value`
 
 ```
 

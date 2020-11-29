@@ -15,7 +15,7 @@ String-2
     mix-string (12) <mix-string>
     repeat-end (12) <repeat-end>
     repeat-front (12) <repeat-front>
-    repeat-separator
+    repeat-separator (11) <repeat-separator>
     prefix-again
     xyz-middle
     get-sandwich

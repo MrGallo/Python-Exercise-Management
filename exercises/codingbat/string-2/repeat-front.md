@@ -7,6 +7,7 @@
 - :ref:`fundamentals:substrings and slicing`
 - :ref:`fundamentals:loop with a counter variable`
 - :ref:`fundamentals:string building and filtering`
+- :ref:`fundamentals:returning a value`
 
 ```
 
