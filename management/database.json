@@ -600,20 +600,32 @@
             {
                 "name": "prefix_again",
                 "topic": "",
-                "requirements": [],
-                "description": "Given a string, consider the prefix string made of the first N chars of the string. Does that prefix string appear somewhere else in the string? Assume that the string is not empty and that N is in the range 1..str.length().\n\n```\nprefix_again(\"abXYabc\", 1) -> true\nprefix_again(\"abXYabc\", 2) -> true\nprefix_again(\"abXYabc\", 3) -> false\n```\n\nThis exercise was taken from [codingbat.com](https://codingbat.com/prob/p136417) and has been adapted for the Python language. There are many great programming exercises there, but the majority are created for Java.",
-                "starter_code": "def prefix_again(string: str, n: int) -> bool:\n    pass\n\n\nresult = prefix_again('abXYabc', 1)\nprint(result)\n",
-                "tests": "from main import prefix_again\n\n\ndef test_prefix_again_1():\n    assert prefix_again('abXYabc', 1) == True\n\n\ndef test_prefix_again_2():\n    assert prefix_again('abXYabc', 2) == True\n\n\ndef test_prefix_again_3():\n    assert prefix_again('abXYabc', 3) == False\n\n\ndef test_prefix_again_4():\n    assert prefix_again('xyzxyxyxy', 2) == True\n\n\ndef test_prefix_again_5():\n    assert prefix_again('xyzxyxyxy', 3) == False\n\n\ndef test_prefix_again_6():\n    assert prefix_again('Hi12345Hi6789Hi10', 1) == True\n\n\ndef test_prefix_again_7():\n    assert prefix_again('Hi12345Hi6789Hi10', 2) == True\n\n\ndef test_prefix_again_8():\n    assert prefix_again('Hi12345Hi6789Hi10', 3) == True\n\n\ndef test_prefix_again_9():\n    assert prefix_again('Hi12345Hi6789Hi10', 4) == False\n\n\ndef test_prefix_again_10():\n    assert prefix_again('a', 1) == False\n\n\ndef test_prefix_again_11():\n    assert prefix_again('aa', 1) == True\n\n\ndef test_prefix_again_12():\n    assert prefix_again('ab', 1) == False\n\n\n",
-                "solution": ""
+                "requirements": [
+                    "mathematical operations",
+                    "substrings and slicing",
+                    "loop with a counter variable",
+                    "if, else",
+                    "break",
+                    "returning a value"
+                ],
+                "description": "Given a `string`, consider the prefix string made of the first `n` chars of the string. Does that prefix string appear somewhere else in the string? Assume that the string is not empty and that `n` is in the range `1..len(str)`.\n\n```\nprefix_again(\"abXYabc\", 1) -> true\nprefix_again(\"abXYabc\", 2) -> true\nprefix_again(\"abXYabc\", 3) -> false\n```\n\nThis exercise was taken from [codingbat.com](https://codingbat.com/prob/p136417) and has been adapted for the Python language. There are many great programming exercises there, but the majority are created for Java.",
+                "starter_code": "def prefix_again(string: str, n: int) -> bool:\n    pass\n\n\nresult = prefix_again('abXYabc', 1)\nprint(result)",
+                "tests": "from main import prefix_again\n\n\ndef test_prefix_again_1():\n    assert prefix_again('abXYabc', 1) == True\n\n\ndef test_prefix_again_2():\n    assert prefix_again('abXYabc', 2) == True\n\n\ndef test_prefix_again_3():\n    assert prefix_again('abXYabc', 3) == False\n\n\ndef test_prefix_again_4():\n    assert prefix_again('xyzxyxyxy', 2) == True\n\n\ndef test_prefix_again_5():\n    assert prefix_again('xyzxyxyxy', 3) == False\n\n\ndef test_prefix_again_6():\n    assert prefix_again('Hi12345Hi6789Hi10', 1) == True\n\n\ndef test_prefix_again_7():\n    assert prefix_again('Hi12345Hi6789Hi10', 2) == True\n\n\ndef test_prefix_again_8():\n    assert prefix_again('Hi12345Hi6789Hi10', 3) == True\n\n\ndef test_prefix_again_9():\n    assert prefix_again('Hi12345Hi6789Hi10', 4) == False\n\n\ndef test_prefix_again_10():\n    assert prefix_again('a', 1) == False\n\n\ndef test_prefix_again_11():\n    assert prefix_again('aa', 1) == True\n\n\ndef test_prefix_again_12():\n    assert prefix_again('ab', 1) == False",
+                "solution": "def prefix_again(string: str, n: int) -> bool:\n    prefix = string[:n]\n    i = n\n    while i < len(string) - (n - 1):\n        if string[i:i+n] == prefix:\n            return True\n        i += 1\n\n    return False"
             },
             {
                 "name": "xyz_middle",
                 "topic": "",
-                "requirements": [],
+                "requirements": [
+                    "mathematical operations",
+                    "substrings and slicing",
+                    "loop with a counter variable",
+                    "returning a value"
+                ],
                 "description": "Given a string, does \"xyz\" appear in the middle of the string? To define middle, we'll say that the number of chars to the left and right of the \"xyz\" must differ by at most one. This problem is harder than it looks.\n\n```\nxyz_middle(\"AAxyzBB\") -> true\nxyz_middle(\"AxyzBB\") -> true\nxyz_middle(\"AxyzBBB\") -> false\n```\n\nThis exercise was taken from [codingbat.com](https://codingbat.com/prob/p159772) and has been adapted for the Python language. There are many great programming exercises there, but the majority are created for Java.",
-                "starter_code": "def xyz_middle(string: str) -> bool:\n    pass\n\n\nresult = xyz_middle('AAxyzBB')\nprint(result)\n",
-                "tests": "from main import xyz_middle\n\n\ndef test_xyz_middle_1():\n    assert xyz_middle('AAxyzBB') == True\n\n\ndef test_xyz_middle_2():\n    assert xyz_middle('AxyzBB') == True\n\n\ndef test_xyz_middle_3():\n    assert xyz_middle('AxyzBBB') == False\n\n\ndef test_xyz_middle_4():\n    assert xyz_middle('AxyzBBBB') == False\n\n\ndef test_xyz_middle_5():\n    assert xyz_middle('AAAxyzB') == False\n\n\ndef test_xyz_middle_6():\n    assert xyz_middle('AAAxyzBB') == True\n\n\ndef test_xyz_middle_7():\n    assert xyz_middle('AAAAxyzBB') == False\n\n\ndef test_xyz_middle_8():\n    assert xyz_middle('AAAAAxyzBBB') == False\n\n\ndef test_xyz_middle_9():\n    assert xyz_middle('1x345xyz12x4') == True\n\n\ndef test_xyz_middle_10():\n    assert xyz_middle('xyzAxyzBBB') == True\n\n\ndef test_xyz_middle_11():\n    assert xyz_middle('xyzAxyzBxyz') == True\n\n\ndef test_xyz_middle_12():\n    assert xyz_middle('xyzxyzAxyzBxyzxyz') == True\n\n\ndef test_xyz_middle_13():\n    assert xyz_middle('xyzxyzxyzBxyzxyz') == True\n\n\ndef test_xyz_middle_14():\n    assert xyz_middle('xyzxyzAxyzxyzxyz') == True\n\n\ndef test_xyz_middle_15():\n    assert xyz_middle('xyzxyzAxyzxyzxy') == False\n\n\ndef test_xyz_middle_16():\n    assert xyz_middle('AxyzxyzBB') == False\n\n\ndef test_xyz_middle_17():\n    assert xyz_middle('') == False\n\n\ndef test_xyz_middle_18():\n    assert xyz_middle('x') == False\n\n\ndef test_xyz_middle_19():\n    assert xyz_middle('xy') == False\n\n\ndef test_xyz_middle_20():\n    assert xyz_middle('xyz') == True\n\n\ndef test_xyz_middle_21():\n    assert xyz_middle('xyzz') == True\n\n\n",
-                "solution": ""
+                "starter_code": "def xyz_middle(string: str) -> bool:\n    pass\n\n\nresult = xyz_middle('AAxyzBB')\nprint(result)",
+                "tests": "from main import xyz_middle\n\n\ndef test_xyz_middle_1():\n    assert xyz_middle('AAxyzBB') == True\n\n\ndef test_xyz_middle_2():\n    assert xyz_middle('AxyzBB') == True\n\n\ndef test_xyz_middle_3():\n    assert xyz_middle('AxyzBBB') == False\n\n\ndef test_xyz_middle_4():\n    assert xyz_middle('AxyzBBBB') == False\n\n\ndef test_xyz_middle_5():\n    assert xyz_middle('AAAxyzB') == False\n\n\ndef test_xyz_middle_6():\n    assert xyz_middle('AAAxyzBB') == True\n\n\ndef test_xyz_middle_7():\n    assert xyz_middle('AAAAxyzBB') == False\n\n\ndef test_xyz_middle_8():\n    assert xyz_middle('AAAAAxyzBBB') == False\n\n\ndef test_xyz_middle_9():\n    assert xyz_middle('1x345xyz12x4') == True\n\n\ndef test_xyz_middle_10():\n    assert xyz_middle('xyzAxyzBBB') == True\n\n\ndef test_xyz_middle_11():\n    assert xyz_middle('xyzAxyzBxyz') == True\n\n\ndef test_xyz_middle_12():\n    assert xyz_middle('xyzxyzAxyzBxyzxyz') == True\n\n\ndef test_xyz_middle_13():\n    assert xyz_middle('xyzxyzxyzBxyzxyz') == True\n\n\ndef test_xyz_middle_14():\n    assert xyz_middle('xyzxyzAxyzxyzxyz') == True\n\n\ndef test_xyz_middle_15():\n    assert xyz_middle('xyzxyzAxyzxyzxy') == False\n\n\ndef test_xyz_middle_16():\n    assert xyz_middle('AxyzxyzBB') == False\n\n\ndef test_xyz_middle_17():\n    assert xyz_middle('') == False\n\n\ndef test_xyz_middle_18():\n    assert xyz_middle('x') == False\n\n\ndef test_xyz_middle_19():\n    assert xyz_middle('xy') == False\n\n\ndef test_xyz_middle_20():\n    assert xyz_middle('xyz') == True\n\n\ndef test_xyz_middle_21():\n    assert xyz_middle('xyzz') == True",
+                "solution": "def xyz_middle(string: str) -> bool:\n    clip = (len(string) - 3) // 2\n    clipped = string[clip:len(string)-clip]\n    return \"xyz\" in clipped"
             },
             {
                 "name": "get_sandwich",
@@ -4306,11 +4318,17 @@
             {
                 "name": "prefix_again",
                 "topic": "",
-                "requirements": [],
-                "description": "Given a string, consider the prefix string made of the first N chars of the string. Does that prefix string appear somewhere else in the string? Assume that the string is not empty and that N is in the range 1..str.length().\n\nThis exercise was taken from [codingbat.com](https://codingbat.com/prob/p136417) and has been adapted for the Python language. There are many great programming exercises there, but the majority are created for Java.",
+                "requirements": [
+                    "mathematical operations",
+                    "substrings and slicing",
+                    "loop with a counter variable",
+                    "if, else",
+                    "break"
+                ],
+                "description": "Get a `string` and a prefix length `n` from the user. Does a prefix of size `n` appear somewhere else in the string? Output `True` if it does, and `False` if not. Assume that `string` is not empty and that `n` is in the range `1..len(string)`.\n\nThis exercise was taken from [codingbat.com](https://codingbat.com/prob/p136417) and has been adapted for the Python language. There are many great programming exercises there, but the majority are created for Java.",
                 "starter_code": "",
                 "tests": "from exercise.fixtures import captured_output\n\n\ndef test_1(captured_output):\n    assert captured_output('abXYabc\\n1') == 'True'\n\n\ndef test_2(captured_output):\n    assert captured_output('abXYabc\\n2') == 'True'\n\n\ndef test_3(captured_output):\n    assert captured_output('abXYabc\\n3') == 'False'\n\n\ndef test_4(captured_output):\n    assert captured_output('xyzxyxyxy\\n2') == 'True'\n\n\ndef test_5(captured_output):\n    assert captured_output('xyzxyxyxy\\n3') == 'False'\n\n\ndef test_6(captured_output):\n    assert captured_output('Hi12345Hi6789Hi10\\n1') == 'True'\n\n\ndef test_7(captured_output):\n    assert captured_output('Hi12345Hi6789Hi10\\n2') == 'True'\n\n\ndef test_8(captured_output):\n    assert captured_output('Hi12345Hi6789Hi10\\n3') == 'True'\n\n\ndef test_9(captured_output):\n    assert captured_output('Hi12345Hi6789Hi10\\n4') == 'False'\n\n\ndef test_10(captured_output):\n    assert captured_output('a\\n1') == 'False'\n\n\ndef test_11(captured_output):\n    assert captured_output('aa\\n1') == 'True'\n\n\ndef test_12(captured_output):\n    assert captured_output('ab\\n1') == 'False'",
-                "solution": "",
+                "solution": "string = input()\nn = int(input())\n\nagain = False\nprefix = string[:n]\ni = n\nwhile i < len(string) - (n - 1):\n    if string[i:i+n] == prefix:\n        again = True\n        break\n    i += 1\n\nprint(again)",
                 "tests_io": [
                     [
                         [
@@ -4401,11 +4419,15 @@
             {
                 "name": "xyz_middle",
                 "topic": "",
-                "requirements": [],
-                "description": "Given a string, does \"xyz\" appear in the middle of the string? To define middle, we'll say that the number of chars to the left and right of the \"xyz\" must differ by at most one. This problem is harder than it looks.\n\nThis exercise was taken from [codingbat.com](https://codingbat.com/prob/p159772) and has been adapted for the Python language. There are many great programming exercises there, but the majority are created for Java.",
+                "requirements": [
+                    "mathematical operations",
+                    "substrings and slicing",
+                    "loop with a counter variable"
+                ],
+                "description": "Given a string, does `\"xyz\"` appear in the middle of the string? To define middle, we'll say that the number of chars to the left and right of the `\"xyz\"` must differ by at most one. This problem is harder than it looks.\n\nThis exercise was taken from [codingbat.com](https://codingbat.com/prob/p159772) and has been adapted for the Python language. There are many great programming exercises there, but the majority are created for Java.",
                 "starter_code": "",
                 "tests": "from exercise.fixtures import captured_output\n\n\ndef test_1(captured_output):\n    assert captured_output('AAxyzBB') == 'True'\n\n\ndef test_2(captured_output):\n    assert captured_output('AxyzBB') == 'True'\n\n\ndef test_3(captured_output):\n    assert captured_output('AxyzBBB') == 'False'\n\n\ndef test_4(captured_output):\n    assert captured_output('AxyzBBBB') == 'False'\n\n\ndef test_5(captured_output):\n    assert captured_output('AAAxyzB') == 'False'\n\n\ndef test_6(captured_output):\n    assert captured_output('AAAxyzBB') == 'True'\n\n\ndef test_7(captured_output):\n    assert captured_output('AAAAxyzBB') == 'False'\n\n\ndef test_8(captured_output):\n    assert captured_output('AAAAAxyzBBB') == 'False'\n\n\ndef test_9(captured_output):\n    assert captured_output('1x345xyz12x4') == 'True'\n\n\ndef test_10(captured_output):\n    assert captured_output('xyzAxyzBBB') == 'True'\n\n\ndef test_11(captured_output):\n    assert captured_output('xyzAxyzBxyz') == 'True'\n\n\ndef test_12(captured_output):\n    assert captured_output('xyzxyzAxyzBxyzxyz') == 'True'\n\n\ndef test_13(captured_output):\n    assert captured_output('xyzxyzxyzBxyzxyz') == 'True'\n\n\ndef test_14(captured_output):\n    assert captured_output('xyzxyzAxyzxyzxyz') == 'True'\n\n\ndef test_15(captured_output):\n    assert captured_output('xyzxyzAxyzxyzxy') == 'False'\n\n\ndef test_16(captured_output):\n    assert captured_output('AxyzxyzBB') == 'False'\n\n\ndef test_17(captured_output):\n    assert captured_output('') == 'False'\n\n\ndef test_18(captured_output):\n    assert captured_output('x') == 'False'\n\n\ndef test_19(captured_output):\n    assert captured_output('xy') == 'False'\n\n\ndef test_20(captured_output):\n    assert captured_output('xyz') == 'True'\n\n\ndef test_21(captured_output):\n    assert captured_output('xyzz') == 'True'",
-                "solution": "",
+                "solution": "string = input()\n\nclip = (len(string) - 3) // 2\nclipped = string[clip:len(string)-clip]\nif \"xyz\" in clipped:\n    print(True)\nelse:\n    print(False)",
                 "tests_io": [
                     [
                         [
