@@ -2,6 +2,11 @@
 
 
 
+**Requirements:**
+```eval_rst
+- :ref:`fundamentals:string building and filtering`
+
+```
 
 
 Get any string from the user, output a string where for every char in the original, there are two chars.

@@ -2,6 +2,13 @@
 
 
 
+**Requirements:**
+```eval_rst
+- :ref:`fundamentals:substrings and slicing`
+- :ref:`fundamentals:loop with a counter variable`
+- :ref:`fundamentals:string building and filtering`
+
+```
 
 
 Given a string and an int n, return a string made of n repetitions of the last n characters of the string. You may assume that n is between 0 and the length of the string, inclusive.

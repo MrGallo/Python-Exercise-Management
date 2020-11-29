@@ -4,7 +4,7 @@ String-1
 .. toctree::
     :maxdepth: 1
 
-    hello-name
+    hello-name (4) <hello-name>
     make-abba
     make-tags
     make-out-word
