@@ -497,38 +497,54 @@
             {
                 "name": "xyz_there",
                 "topic": "",
-                "requirements": [],
+                "requirements": [
+                    "substrings and slicing",
+                    "if, else",
+                    "loop through a string (while)"
+                ],
                 "description": "Return true if the given string contains an appearance of \"xyz\" where the xyz is not directly preceeded by a period (.). So \"xxyz\" counts but \"x.xyz\" does not.\n\n```\nxyz_there(\"abcxyz\") -> true\nxyz_there(\"abc.xyz\") -> false\nxyz_there(\"xyz.abc\") -> true\n```\n\nThis exercise was taken from [codingbat.com](https://codingbat.com/prob/p136594) and has been adapted for the Python language. There are many great programming exercises there, but the majority are created for Java.",
-                "starter_code": "def xyz_there(string: str) -> bool:\n    pass\n\n\nresult = xyz_there('abcxyz')\nprint(result)\n",
-                "tests": "from main import xyz_there\n\n\ndef test_xyz_there_1():\n    assert xyz_there('abcxyz') == True\n\n\ndef test_xyz_there_2():\n    assert xyz_there('abc.xyz') == False\n\n\ndef test_xyz_there_3():\n    assert xyz_there('xyz.abc') == True\n\n\ndef test_xyz_there_4():\n    assert xyz_there('abcxy') == False\n\n\ndef test_xyz_there_5():\n    assert xyz_there('xyz') == True\n\n\ndef test_xyz_there_6():\n    assert xyz_there('xy') == False\n\n\ndef test_xyz_there_7():\n    assert xyz_there('x') == False\n\n\ndef test_xyz_there_8():\n    assert xyz_there('') == False\n\n\ndef test_xyz_there_9():\n    assert xyz_there('abc.xyzxyz') == True\n\n\ndef test_xyz_there_10():\n    assert xyz_there('abc.xxyz') == True\n\n\ndef test_xyz_there_11():\n    assert xyz_there('.xyz') == False\n\n\ndef test_xyz_there_12():\n    assert xyz_there('12.xyz') == False\n\n\ndef test_xyz_there_13():\n    assert xyz_there('12xyz') == True\n\n\ndef test_xyz_there_14():\n    assert xyz_there('1.xyz.xyz2.xyz') == False\n\n\n",
-                "solution": ""
+                "starter_code": "def xyz_there(string: str) -> bool:\n    pass\n\n\nresult = xyz_there('abcxyz')\nprint(result)",
+                "tests": "from main import xyz_there\n\n\ndef test_xyz_there_1():\n    assert xyz_there('abcxyz') == True\n\n\ndef test_xyz_there_2():\n    assert xyz_there('abc.xyz') == False\n\n\ndef test_xyz_there_3():\n    assert xyz_there('xyz.abc') == True\n\n\ndef test_xyz_there_4():\n    assert xyz_there('abcxy') == False\n\n\ndef test_xyz_there_5():\n    assert xyz_there('xyz') == True\n\n\ndef test_xyz_there_6():\n    assert xyz_there('xy') == False\n\n\ndef test_xyz_there_7():\n    assert xyz_there('x') == False\n\n\ndef test_xyz_there_8():\n    assert xyz_there('') == False\n\n\ndef test_xyz_there_9():\n    assert xyz_there('abc.xyzxyz') == True\n\n\ndef test_xyz_there_10():\n    assert xyz_there('abc.xxyz') == True\n\n\ndef test_xyz_there_11():\n    assert xyz_there('.xyz') == False\n\n\ndef test_xyz_there_12():\n    assert xyz_there('12.xyz') == False\n\n\ndef test_xyz_there_13():\n    assert xyz_there('12xyz') == True\n\n\ndef test_xyz_there_14():\n    assert xyz_there('1.xyz.xyz2.xyz') == False",
+                "solution": "def xyz_there(string: str) -> bool:\n    i = 0\n    while i < len(string) - 2:\n        if string[i] == \".\":\n            i += 2\n        else:\n            if string[i:i+3] == \"xyz\":\n                return True\n            i += 1\n\n    return False"
             },
             {
                 "name": "bob_there",
                 "topic": "",
-                "requirements": [],
+                "requirements": [
+                    "get a single character",
+                    "if, else",
+                    "loop through a string (while)"
+                ],
                 "description": "Return true if the given string contains a \"bob\" string, but where the middle 'o' char can be any char.\n\n```\nbob_there(\"abcbob\") -> true\nbob_there(\"b9b\") -> true\nbob_there(\"bac\") -> false\n```\n\nThis exercise was taken from [codingbat.com](https://codingbat.com/prob/p175762) and has been adapted for the Python language. There are many great programming exercises there, but the majority are created for Java.",
-                "starter_code": "def bob_there(string: str) -> bool:\n    pass\n\n\nresult = bob_there('abcbob')\nprint(result)\n",
-                "tests": "from main import bob_there\n\n\ndef test_bob_there_1():\n    assert bob_there('abcbob') == True\n\n\ndef test_bob_there_2():\n    assert bob_there('b9b') == True\n\n\ndef test_bob_there_3():\n    assert bob_there('bac') == False\n\n\ndef test_bob_there_4():\n    assert bob_there('bbb') == True\n\n\ndef test_bob_there_5():\n    assert bob_there('abcdefb') == False\n\n\ndef test_bob_there_6():\n    assert bob_there('123abcbcdbabxyz') == True\n\n\ndef test_bob_there_7():\n    assert bob_there('b12') == False\n\n\ndef test_bob_there_8():\n    assert bob_there('b1b') == True\n\n\ndef test_bob_there_9():\n    assert bob_there('b12b1b') == True\n\n\ndef test_bob_there_10():\n    assert bob_there('bbc') == False\n\n\ndef test_bob_there_11():\n    assert bob_there('bbb') == True\n\n\ndef test_bob_there_12():\n    assert bob_there('bb') == False\n\n\ndef test_bob_there_13():\n    assert bob_there('b') == False\n\n\n",
-                "solution": ""
+                "starter_code": "def bob_there(string: str) -> bool:\n    pass\n\n\nresult = bob_there('abcbob')\nprint(result)",
+                "tests": "from main import bob_there\n\n\ndef test_bob_there_1():\n    assert bob_there('abcbob') == True\n\n\ndef test_bob_there_2():\n    assert bob_there('b9b') == True\n\n\ndef test_bob_there_3():\n    assert bob_there('bac') == False\n\n\ndef test_bob_there_4():\n    assert bob_there('bbb') == True\n\n\ndef test_bob_there_5():\n    assert bob_there('abcdefb') == False\n\n\ndef test_bob_there_6():\n    assert bob_there('123abcbcdbabxyz') == True\n\n\ndef test_bob_there_7():\n    assert bob_there('b12') == False\n\n\ndef test_bob_there_8():\n    assert bob_there('b1b') == True\n\n\ndef test_bob_there_9():\n    assert bob_there('b12b1b') == True\n\n\ndef test_bob_there_10():\n    assert bob_there('bbc') == False\n\n\ndef test_bob_there_11():\n    assert bob_there('bbb') == True\n\n\ndef test_bob_there_12():\n    assert bob_there('bb') == False\n\n\ndef test_bob_there_13():\n    assert bob_there('b') == False",
+                "solution": "def bob_there(string: str) -> bool:\n    i = 0\n    while i < len(string) - 2:\n        if string[i] == \"b\" and string[i+2] == \"b\":\n            return True\n        i += 1\n\n    return False"
             },
             {
                 "name": "xy_balance",
                 "topic": "",
-                "requirements": [],
+                "requirements": [
+                    "get a single character",
+                    "loop through a string (while)",
+                    "if, elif, else"
+                ],
                 "description": "We'll say that a String is xy-balanced if for all the 'x' chars in the string, there exists a 'y' char somewhere later in the string. So \"xxy\" is balanced, but \"xyx\" is not. One 'y' can balance multiple 'x's. Return true if the given string is xy-balanced.\n\n```\nxy_balance(\"aaxbby\") -> true\nxy_balance(\"aaxbb\") -> false\nxy_balance(\"yaaxbb\") -> false\n```\n\nThis exercise was taken from [codingbat.com](https://codingbat.com/prob/p134250) and has been adapted for the Python language. There are many great programming exercises there, but the majority are created for Java.",
-                "starter_code": "def xy_balance(string: str) -> bool:\n    pass\n\n\nresult = xy_balance('aaxbby')\nprint(result)\n",
-                "tests": "from main import xy_balance\n\n\ndef test_xy_balance_1():\n    assert xy_balance('aaxbby') == True\n\n\ndef test_xy_balance_2():\n    assert xy_balance('aaxbb') == False\n\n\ndef test_xy_balance_3():\n    assert xy_balance('yaaxbb') == False\n\n\ndef test_xy_balance_4():\n    assert xy_balance('yaaxbby') == True\n\n\ndef test_xy_balance_5():\n    assert xy_balance('xaxxbby') == True\n\n\ndef test_xy_balance_6():\n    assert xy_balance('xaxxbbyx') == False\n\n\ndef test_xy_balance_7():\n    assert xy_balance('xxbxy') == True\n\n\ndef test_xy_balance_8():\n    assert xy_balance('xxbx') == False\n\n\ndef test_xy_balance_9():\n    assert xy_balance('bbb') == True\n\n\ndef test_xy_balance_10():\n    assert xy_balance('bxbb') == False\n\n\ndef test_xy_balance_11():\n    assert xy_balance('bxyb') == True\n\n\ndef test_xy_balance_12():\n    assert xy_balance('xy') == True\n\n\ndef test_xy_balance_13():\n    assert xy_balance('y') == True\n\n\ndef test_xy_balance_14():\n    assert xy_balance('x') == False\n\n\ndef test_xy_balance_15():\n    assert xy_balance('') == True\n\n\ndef test_xy_balance_16():\n    assert xy_balance('yxyxyxyx') == False\n\n\ndef test_xy_balance_17():\n    assert xy_balance('yxyxyxyxy') == True\n\n\ndef test_xy_balance_18():\n    assert xy_balance('12xabxxydxyxyzz') == True\n\n\n",
-                "solution": ""
+                "starter_code": "def xy_balance(string: str) -> bool:\n    pass\n\n\nresult = xy_balance('aaxbby')\nprint(result)",
+                "tests": "from main import xy_balance\n\n\ndef test_xy_balance_1():\n    assert xy_balance('aaxbby') == True\n\n\ndef test_xy_balance_2():\n    assert xy_balance('aaxbb') == False\n\n\ndef test_xy_balance_3():\n    assert xy_balance('yaaxbb') == False\n\n\ndef test_xy_balance_4():\n    assert xy_balance('yaaxbby') == True\n\n\ndef test_xy_balance_5():\n    assert xy_balance('xaxxbby') == True\n\n\ndef test_xy_balance_6():\n    assert xy_balance('xaxxbbyx') == False\n\n\ndef test_xy_balance_7():\n    assert xy_balance('xxbxy') == True\n\n\ndef test_xy_balance_8():\n    assert xy_balance('xxbx') == False\n\n\ndef test_xy_balance_9():\n    assert xy_balance('bbb') == True\n\n\ndef test_xy_balance_10():\n    assert xy_balance('bxbb') == False\n\n\ndef test_xy_balance_11():\n    assert xy_balance('bxyb') == True\n\n\ndef test_xy_balance_12():\n    assert xy_balance('xy') == True\n\n\ndef test_xy_balance_13():\n    assert xy_balance('y') == True\n\n\ndef test_xy_balance_14():\n    assert xy_balance('x') == False\n\n\ndef test_xy_balance_15():\n    assert xy_balance('') == True\n\n\ndef test_xy_balance_16():\n    assert xy_balance('yxyxyxyx') == False\n\n\ndef test_xy_balance_17():\n    assert xy_balance('yxyxyxyxy') == True\n\n\ndef test_xy_balance_18():\n    assert xy_balance('12xabxxydxyxyzz') == True",
+                "solution": "def xy_balance(string: str) -> bool:\n    found_y = False\n    i = len(string) - 1\n    while i >= 0:\n        if string[i] == \"y\":\n            found_y = True\n        elif string[i] == \"x\":\n            if not found_y:\n                return False\n            break\n        i -= 1\n\n    return True"
             },
             {
                 "name": "mix_string",
                 "topic": "",
-                "requirements": [],
+                "requirements": [
+                    "get a single character",
+                    "substrings and slicing",
+                    "string building and filtering"
+                ],
                 "description": "Given two strings, <b>a</b> and <b>b</b>, create a bigger string made of the first char of a, the first char of b, the second char of a, the second char of b, and so on. Any leftover chars go at the end of the result.\n\n```\nmix_string(\"abc\", \"xyz\") -> \"axbycz\"\nmix_string(\"Hi\", \"There\") -> \"HTihere\"\nmix_string(\"xxxx\", \"There\") -> \"xTxhxexre\"\n```\n\nThis exercise was taken from [codingbat.com](https://codingbat.com/prob/p125185) and has been adapted for the Python language. There are many great programming exercises there, but the majority are created for Java.",
-                "starter_code": "def mix_string(a: str, b: str) -> str:\n    pass\n\n\nresult = mix_string('abc', 'xyz')\nprint(result)\n",
-                "tests": "from main import mix_string\n\n\ndef test_mix_string_1():\n    assert mix_string('abc', 'xyz') == 'axbycz'\n\n\ndef test_mix_string_2():\n    assert mix_string('Hi', 'There') == 'HTihere'\n\n\ndef test_mix_string_3():\n    assert mix_string('xxxx', 'There') == 'xTxhxexre'\n\n\ndef test_mix_string_4():\n    assert mix_string('xxx', 'X') == 'xXxx'\n\n\ndef test_mix_string_5():\n    assert mix_string('2/', '27 around') == '22/7 around'\n\n\ndef test_mix_string_6():\n    assert mix_string('', 'Hello') == 'Hello'\n\n\ndef test_mix_string_7():\n    assert mix_string('Abc', '') == 'Abc'\n\n\ndef test_mix_string_8():\n    assert mix_string('', '') == ''\n\n\ndef test_mix_string_9():\n    assert mix_string('a', 'b') == 'ab'\n\n\ndef test_mix_string_10():\n    assert mix_string('ax', 'b') == 'abx'\n\n\ndef test_mix_string_11():\n    assert mix_string('a', 'bx') == 'abx'\n\n\ndef test_mix_string_12():\n    assert mix_string('So', 'Long') == 'SLoong'\n\n\ndef test_mix_string_13():\n    assert mix_string('Long', 'So') == 'LSoong'\n\n\n",
-                "solution": ""
+                "starter_code": "def mix_string(a: str, b: str) -> str:\n    pass\n\n\nresult = mix_string('abc', 'xyz')\nprint(result)",
+                "tests": "from main import mix_string\n\n\ndef test_mix_string_1():\n    assert mix_string('abc', 'xyz') == 'axbycz'\n\n\ndef test_mix_string_2():\n    assert mix_string('Hi', 'There') == 'HTihere'\n\n\ndef test_mix_string_3():\n    assert mix_string('xxxx', 'There') == 'xTxhxexre'\n\n\ndef test_mix_string_4():\n    assert mix_string('xxx', 'X') == 'xXxx'\n\n\ndef test_mix_string_5():\n    assert mix_string('2/', '27 around') == '22/7 around'\n\n\ndef test_mix_string_6():\n    assert mix_string('', 'Hello') == 'Hello'\n\n\ndef test_mix_string_7():\n    assert mix_string('Abc', '') == 'Abc'\n\n\ndef test_mix_string_8():\n    assert mix_string('', '') == ''\n\n\ndef test_mix_string_9():\n    assert mix_string('a', 'b') == 'ab'\n\n\ndef test_mix_string_10():\n    assert mix_string('ax', 'b') == 'abx'\n\n\ndef test_mix_string_11():\n    assert mix_string('a', 'bx') == 'abx'\n\n\ndef test_mix_string_12():\n    assert mix_string('So', 'Long') == 'SLoong'\n\n\ndef test_mix_string_13():\n    assert mix_string('Long', 'So') == 'LSoong'",
+                "solution": "def mix_string(a: str, b: str) -> str:\n    new_string = \"\"\n    i = 0\n    while i < len(a) and i < len(b):\n        new_string += a[i] + b[i]\n        i += 1\n\n    new_string += a[i:]\n    new_string += b[i:]\n\n    return new_string"
             },
             {
                 "name": "repeat_end",
@@ -3595,11 +3611,15 @@
             {
                 "name": "xyz_there",
                 "topic": "",
-                "requirements": [],
-                "description": "Return true if the given string contains an appearance of \"xyz\" where the xyz is not directly preceeded by a period (.). So \"xxyz\" counts but \"x.xyz\" does not.\n\nThis exercise was taken from [codingbat.com](https://codingbat.com/prob/p136594) and has been adapted for the Python language. There are many great programming exercises there, but the majority are created for Java.",
+                "requirements": [
+                    "substrings and slicing",
+                    "if, else",
+                    "loop through a string (while)"
+                ],
+                "description": "Output `True` if the given string contains an appearance of `\"xyz\"` where the `xyz` is not directly preceeded by a period (`.`). So `\"xxyz\"` counts but `\"x.xyz\"` does not.\n\nThis exercise was taken from [codingbat.com](https://codingbat.com/prob/p136594) and has been adapted for the Python language. There are many great programming exercises there, but the majority are created for Java.",
                 "starter_code": "",
                 "tests": "from exercise.fixtures import captured_output\n\n\ndef test_1(captured_output):\n    assert captured_output('abcxyz') == 'True'\n\n\ndef test_2(captured_output):\n    assert captured_output('abc.xyz') == 'False'\n\n\ndef test_3(captured_output):\n    assert captured_output('xyz.abc') == 'True'\n\n\ndef test_4(captured_output):\n    assert captured_output('abcxy') == 'False'\n\n\ndef test_5(captured_output):\n    assert captured_output('xyz') == 'True'\n\n\ndef test_6(captured_output):\n    assert captured_output('xy') == 'False'\n\n\ndef test_7(captured_output):\n    assert captured_output('x') == 'False'\n\n\ndef test_8(captured_output):\n    assert captured_output('') == 'False'\n\n\ndef test_9(captured_output):\n    assert captured_output('abc.xyzxyz') == 'True'\n\n\ndef test_10(captured_output):\n    assert captured_output('abc.xxyz') == 'True'\n\n\ndef test_11(captured_output):\n    assert captured_output('.xyz') == 'False'\n\n\ndef test_12(captured_output):\n    assert captured_output('12.xyz') == 'False'\n\n\ndef test_13(captured_output):\n    assert captured_output('12xyz') == 'True'\n\n\ndef test_14(captured_output):\n    assert captured_output('1.xyz.xyz2.xyz') == 'False'",
-                "solution": "",
+                "solution": "string = input()\n\ncontains_xyz = \"False\"\ni = 0\nwhile i < len(string) - 2:\n    if string[i] == \".\":\n        i += 2\n    else:\n        if string[i:i+3] == \"xyz\":\n            contains_xyz = \"True\"\n        i += 1\n\nprint(contains_xyz)",
                 "tests_io": [
                     [
                         [
@@ -3690,11 +3710,15 @@
             {
                 "name": "bob_there",
                 "topic": "",
-                "requirements": [],
-                "description": "Return true if the given string contains a \"bob\" string, but where the middle 'o' char can be any char.\n\nThis exercise was taken from [codingbat.com](https://codingbat.com/prob/p175762) and has been adapted for the Python language. There are many great programming exercises there, but the majority are created for Java.",
+                "requirements": [
+                    "get a single character",
+                    "if, else",
+                    "loop through a string (while)"
+                ],
+                "description": "Output `True` if the inputted string contains a `\"bob\"` string, but where the middle `'o'` character can be any character.\n\nThis exercise was taken from [codingbat.com](https://codingbat.com/prob/p175762) and has been adapted for the Python language. There are many great programming exercises there, but the majority are created for Java.",
                 "starter_code": "",
                 "tests": "from exercise.fixtures import captured_output\n\n\ndef test_1(captured_output):\n    assert captured_output('abcbob') == 'True'\n\n\ndef test_2(captured_output):\n    assert captured_output('b9b') == 'True'\n\n\ndef test_3(captured_output):\n    assert captured_output('bac') == 'False'\n\n\ndef test_4(captured_output):\n    assert captured_output('bbb') == 'True'\n\n\ndef test_5(captured_output):\n    assert captured_output('abcdefb') == 'False'\n\n\ndef test_6(captured_output):\n    assert captured_output('123abcbcdbabxyz') == 'True'\n\n\ndef test_7(captured_output):\n    assert captured_output('b12') == 'False'\n\n\ndef test_8(captured_output):\n    assert captured_output('b1b') == 'True'\n\n\ndef test_9(captured_output):\n    assert captured_output('b12b1b') == 'True'\n\n\ndef test_10(captured_output):\n    assert captured_output('bbc') == 'False'\n\n\ndef test_11(captured_output):\n    assert captured_output('bbb') == 'True'\n\n\ndef test_12(captured_output):\n    assert captured_output('bb') == 'False'\n\n\ndef test_13(captured_output):\n    assert captured_output('b') == 'False'",
-                "solution": "",
+                "solution": "string = input()\n\ncontains_bob = \"False\"\ni = 0\nwhile i < len(string) - 2:\n    if string[i] == \"b\" and string[i+2] == \"b\":\n        contains_bob = \"True\"\n        break\n    i += 1\n\nprint(contains_bob)",
                 "tests_io": [
                     [
                         [
@@ -3779,11 +3803,15 @@
             {
                 "name": "xy_balance",
                 "topic": "",
-                "requirements": [],
-                "description": "We'll say that a String is xy-balanced if for all the 'x' chars in the string, there exists a 'y' char somewhere later in the string. So \"xxy\" is balanced, but \"xyx\" is not. One 'y' can balance multiple 'x's. Return true if the given string is xy-balanced.\n\nThis exercise was taken from [codingbat.com](https://codingbat.com/prob/p134250) and has been adapted for the Python language. There are many great programming exercises there, but the majority are created for Java.",
+                "requirements": [
+                    "get a single character",
+                    "loop through a string (while)",
+                    "if, elif, else"
+                ],
+                "description": "We'll say that a String is xy-balanced if for all the `'x'` chars in the string, there exists a `'y'` char somewhere later in the string. So `\"xxy\"` is balanced, but `\"xyx\"` is not. One `'y'` can balance multiple `'x'`s. Output `True` if the given string is xy-balanced. Output `False` otherwise.\n\nThis exercise was taken from [codingbat.com](https://codingbat.com/prob/p134250) and has been adapted for the Python language. There are many great programming exercises there, but the majority are created for Java.",
                 "starter_code": "",
                 "tests": "from exercise.fixtures import captured_output\n\n\ndef test_1(captured_output):\n    assert captured_output('aaxbby') == 'True'\n\n\ndef test_2(captured_output):\n    assert captured_output('aaxbb') == 'False'\n\n\ndef test_3(captured_output):\n    assert captured_output('yaaxbb') == 'False'\n\n\ndef test_4(captured_output):\n    assert captured_output('yaaxbby') == 'True'\n\n\ndef test_5(captured_output):\n    assert captured_output('xaxxbby') == 'True'\n\n\ndef test_6(captured_output):\n    assert captured_output('xaxxbbyx') == 'False'\n\n\ndef test_7(captured_output):\n    assert captured_output('xxbxy') == 'True'\n\n\ndef test_8(captured_output):\n    assert captured_output('xxbx') == 'False'\n\n\ndef test_9(captured_output):\n    assert captured_output('bbb') == 'True'\n\n\ndef test_10(captured_output):\n    assert captured_output('bxbb') == 'False'\n\n\ndef test_11(captured_output):\n    assert captured_output('bxyb') == 'True'\n\n\ndef test_12(captured_output):\n    assert captured_output('xy') == 'True'\n\n\ndef test_13(captured_output):\n    assert captured_output('y') == 'True'\n\n\ndef test_14(captured_output):\n    assert captured_output('x') == 'False'\n\n\ndef test_15(captured_output):\n    assert captured_output('') == 'True'\n\n\ndef test_16(captured_output):\n    assert captured_output('yxyxyxyx') == 'False'\n\n\ndef test_17(captured_output):\n    assert captured_output('yxyxyxyxy') == 'True'\n\n\ndef test_18(captured_output):\n    assert captured_output('12xabxxydxyxyzz') == 'True'",
-                "solution": "",
+                "solution": "string = input()\n\nbalanced = True\nfound_y = False\ni = len(string) - 1\nwhile i >= 0:\n    if string[i] == \"y\":\n        found_y = True\n    elif string[i] == \"x\":\n        if not found_y:\n            balanced = False\n        break\n\n    i -= 1\n\nprint(balanced)",
                 "tests_io": [
                     [
                         [
@@ -3898,11 +3926,15 @@
             {
                 "name": "mix_string",
                 "topic": "",
-                "requirements": [],
-                "description": "Given two strings, <b>a</b> and <b>b</b>, create a bigger string made of the first char of a, the first char of b, the second char of a, the second char of b, and so on. Any leftover chars go at the end of the result.\n\nThis exercise was taken from [codingbat.com](https://codingbat.com/prob/p125185) and has been adapted for the Python language. There are many great programming exercises there, but the majority are created for Java.",
+                "requirements": [
+                    "get a single character",
+                    "substrings and slicing",
+                    "string building and filtering"
+                ],
+                "description": "Get two strings from user input. Let's call them `a` and `b`. Create a bigger string made of the first char of `a`, the first char of `b`, the second char of `a`, the second char of `b`, and so on. Any leftover chars go at the end of the result.\n\nThis exercise was taken from [codingbat.com](https://codingbat.com/prob/p125185) and has been adapted for the Python language. There are many great programming exercises there, but the majority are created for Java.",
                 "starter_code": "",
                 "tests": "from exercise.fixtures import captured_output\n\n\ndef test_1(captured_output):\n    assert captured_output('abc\\nxyz') == 'axbycz'\n\n\ndef test_2(captured_output):\n    assert captured_output('Hi\\nThere') == 'HTihere'\n\n\ndef test_3(captured_output):\n    assert captured_output('xxxx\\nThere') == 'xTxhxexre'\n\n\ndef test_4(captured_output):\n    assert captured_output('xxx\\nX') == 'xXxx'\n\n\ndef test_5(captured_output):\n    assert captured_output('2/\\n27 around') == '22/7 around'\n\n\ndef test_6(captured_output):\n    assert captured_output('\\nHello') == 'Hello'\n\n\ndef test_7(captured_output):\n    assert captured_output('Abc\\n') == 'Abc'\n\n\ndef test_8(captured_output):\n    assert captured_output('\\n') == ''\n\n\ndef test_9(captured_output):\n    assert captured_output('a\\nb') == 'ab'\n\n\ndef test_10(captured_output):\n    assert captured_output('ax\\nb') == 'abx'\n\n\ndef test_11(captured_output):\n    assert captured_output('a\\nbx') == 'abx'\n\n\ndef test_12(captured_output):\n    assert captured_output('So\\nLong') == 'SLoong'\n\n\ndef test_13(captured_output):\n    assert captured_output('Long\\nSo') == 'LSoong'",
-                "solution": "",
+                "solution": "a = input()\nb = input()\n\nnew_string = \"\"\ni = 0\nwhile i < len(a) and i < len(b):\n    new_string += a[i] + b[i]\n    i += 1\n\nnew_string += a[i:]\nnew_string += b[i:]\n\nprint(new_string)",
                 "tests_io": [
                     [
                         [
