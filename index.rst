@@ -8,4 +8,6 @@ Python Exercises
     exercises/codingbat/index
     exercises/codingbat-input-output/index
 
+    solutions
+
 You can do these exercises and test them using my `Python Exercise Runner <https://repl.it/@DanielGallo/Python-Exercise-Runner>`_.
