@@ -549,11 +549,15 @@
             {
                 "name": "repeat_end",
                 "topic": "",
-                "requirements": [],
+                "requirements": [
+                    "substrings and slicing",
+                    "loop with a counter variable",
+                    "string building and filtering"
+                ],
                 "description": "Given a string and an int n, return a string made of n repetitions of the last n characters of the string. You may assume that n is between 0 and the length of the string, inclusive.\n\n```\nrepeat_end(\"Hello\", 3) -> \"llollollo\"\nrepeat_end(\"Hello\", 2) -> \"lolo\"\nrepeat_end(\"Hello\", 1) -> \"o\"\n```\n\nThis exercise was taken from [codingbat.com](https://codingbat.com/prob/p152339) and has been adapted for the Python language. There are many great programming exercises there, but the majority are created for Java.",
-                "starter_code": "def repeat_end(string: str, n: int) -> str:\n    pass\n\n\nresult = repeat_end('Hello', 3)\nprint(result)\n",
-                "tests": "from main import repeat_end\n\n\ndef test_repeat_end_1():\n    assert repeat_end('Hello', 3) == 'llollollo'\n\n\ndef test_repeat_end_2():\n    assert repeat_end('Hello', 2) == 'lolo'\n\n\ndef test_repeat_end_3():\n    assert repeat_end('Hello', 1) == 'o'\n\n\ndef test_repeat_end_4():\n    assert repeat_end('Hello', 0) == ''\n\n\ndef test_repeat_end_5():\n    assert repeat_end('abc', 3) == 'abcabcabc'\n\n\ndef test_repeat_end_6():\n    assert repeat_end('1234', 2) == '3434'\n\n\ndef test_repeat_end_7():\n    assert repeat_end('1234', 3) == '234234234'\n\n\ndef test_repeat_end_8():\n    assert repeat_end('', 0) == ''\n\n\n",
-                "solution": ""
+                "starter_code": "def repeat_end(string: str, n: int) -> str:\n    pass\n\n\nresult = repeat_end('Hello', 3)\nprint(result)",
+                "tests": "from main import repeat_end\n\n\ndef test_repeat_end_1():\n    assert repeat_end('Hello', 3) == 'llollollo'\n\n\ndef test_repeat_end_2():\n    assert repeat_end('Hello', 2) == 'lolo'\n\n\ndef test_repeat_end_3():\n    assert repeat_end('Hello', 1) == 'o'\n\n\ndef test_repeat_end_4():\n    assert repeat_end('Hello', 0) == ''\n\n\ndef test_repeat_end_5():\n    assert repeat_end('abc', 3) == 'abcabcabc'\n\n\ndef test_repeat_end_6():\n    assert repeat_end('1234', 2) == '3434'\n\n\ndef test_repeat_end_7():\n    assert repeat_end('1234', 3) == '234234234'\n\n\ndef test_repeat_end_8():\n    assert repeat_end('', 0) == ''",
+                "solution": "def repeat_end(string: str, n: int) -> str:\n    new_string = \"\"\n    i = 0\n    while i < n:\n        new_string += string[-n:]\n        i += 1\n\n    return new_string"
             },
             {
                 "name": "repeat_front",
@@ -3171,7 +3175,9 @@
             {
                 "name": "double_char",
                 "topic": "",
-                "requirements": [],
+                "requirements": [
+                    "string building and filtering"
+                ],
                 "description": "Get any string from the user, output a string where for every char in the original, there are two chars.\n\nThis exercise was taken from [codingbat.com](https://codingbat.com/prob/p165312) and has been adapted for the Python language. There are many great programming exercises there, but the majority are created for Java.",
                 "starter_code": "",
                 "tests": "from exercise.fixtures import captured_output\n\n\ndef test_1(captured_output):\n    assert captured_output('The') == 'TThhee'\n\n\ndef test_2(captured_output):\n    assert captured_output('AAbb') == 'AAAAbbbb'\n\n\ndef test_3(captured_output):\n    assert captured_output('Hi-There') == 'HHii--TThheerree'\n\n\ndef test_4(captured_output):\n    assert captured_output('Word!') == 'WWoorrdd!!'\n\n\ndef test_5(captured_output):\n    assert captured_output('!!') == '!!!!'\n\n\ndef test_6(captured_output):\n    assert captured_output('') == ''\n\n\ndef test_7(captured_output):\n    assert captured_output('a') == 'aa'\n\n\ndef test_8(captured_output):\n    assert captured_output('.') == '..'\n\n\ndef test_9(captured_output):\n    assert captured_output('aa') == 'aaaa'",
@@ -4032,11 +4038,15 @@
             {
                 "name": "repeat_end",
                 "topic": "",
-                "requirements": [],
-                "description": "Given a string and an int n, return a string made of n repetitions of the last n characters of the string. You may assume that n is between 0 and the length of the string, inclusive.\n\nThis exercise was taken from [codingbat.com](https://codingbat.com/prob/p152339) and has been adapted for the Python language. There are many great programming exercises there, but the majority are created for Java.",
+                "requirements": [
+                    "substrings and slicing",
+                    "loop with a counter variable",
+                    "string building and filtering"
+                ],
+                "description": "Get from user input a string and integer we will call `n`.  Output a string made of `n` repetitions of the last `n` characters of the string. You may assume that `n` is between `0` and the length of the string, inclusive.\n\nThis exercise was taken from [codingbat.com](https://codingbat.com/prob/p152339) and has been adapted for the Python language. There are many great programming exercises there, but the majority are created for Java.",
                 "starter_code": "",
                 "tests": "from exercise.fixtures import captured_output\n\n\ndef test_1(captured_output):\n    assert captured_output('Hello\\n3') == 'llollollo'\n\n\ndef test_2(captured_output):\n    assert captured_output('Hello\\n2') == 'lolo'\n\n\ndef test_3(captured_output):\n    assert captured_output('Hello\\n1') == 'o'\n\n\ndef test_4(captured_output):\n    assert captured_output('Hello\\n0') == ''\n\n\ndef test_5(captured_output):\n    assert captured_output('abc\\n3') == 'abcabcabc'\n\n\ndef test_6(captured_output):\n    assert captured_output('1234\\n2') == '3434'\n\n\ndef test_7(captured_output):\n    assert captured_output('1234\\n3') == '234234234'\n\n\ndef test_8(captured_output):\n    assert captured_output('\\n0') == ''",
-                "solution": "",
+                "solution": "string = input()\nn = int(input())\n\nnew_string = \"\"\ni = 0\nwhile i < n:\n    new_string += string[-n:]\n    i += 1\n\nprint(new_string)",
                 "tests_io": [
                     [
                         [
