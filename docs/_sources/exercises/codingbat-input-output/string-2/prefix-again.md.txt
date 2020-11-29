@@ -2,9 +2,18 @@
 
 
 
+**Requirements:**
+```eval_rst
+- :ref:`fundamentals:mathematical operations`
+- :ref:`fundamentals:substrings and slicing`
+- :ref:`fundamentals:loop with a counter variable`
+- :ref:`fundamentals:if, else`
+- :ref:`fundamentals:break`
+
+```
 
 
-Given a string, consider the prefix string made of the first N chars of the string. Does that prefix string appear somewhere else in the string? Assume that the string is not empty and that N is in the range 1..str.length().
+Get a `string` and a prefix length `n` from the user. Does a prefix of size `n` appear somewhere else in the string? Output `True` if it does, and `False` if not. Assume that `string` is not empty and that `n` is in the range `1..len(string)`.
 
 This exercise was taken from [codingbat.com](https://codingbat.com/prob/p136417) and has been adapted for the Python language. There are many great programming exercises there, but the majority are created for Java.
 

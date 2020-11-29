@@ -371,6 +371,31 @@ repeat_separator
     
         return new_string
 
+prefix_again
+************
+.. code-block:: python
+    :linenos:
+
+    def prefix_again(string: str, n: int) -> bool:
+        prefix = string[:n]
+        i = n
+        while i < len(string) - (n - 1):
+            if string[i:i+n] == prefix:
+                return True
+            i += 1
+    
+        return False
+
+xyz_middle
+**********
+.. code-block:: python
+    :linenos:
+
+    def xyz_middle(string: str) -> bool:
+        clip = (len(string) - 3) // 2
+        clipped = string[clip:len(string)-clip]
+        return "xyz" in clipped
+
 
 
 Codingbat (Input/Output)
@@ -597,6 +622,39 @@ repeat_separator
             new_string += sep
     
     print(new_string)
+
+prefix_again
+************
+.. code-block:: python
+    :linenos:
+
+    string = input()
+    n = int(input())
+    
+    again = False
+    prefix = string[:n]
+    i = n
+    while i < len(string) - (n - 1):
+        if string[i:i+n] == prefix:
+            again = True
+            break
+        i += 1
+    
+    print(again)
+
+xyz_middle
+**********
+.. code-block:: python
+    :linenos:
+
+    string = input()
+    
+    clip = (len(string) - 3) // 2
+    clipped = string[clip:len(string)-clip]
+    if "xyz" in clipped:
+        print(True)
+    else:
+        print(False)
 
 
 

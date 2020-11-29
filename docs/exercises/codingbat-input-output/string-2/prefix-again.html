@@ -104,7 +104,7 @@
 <li class="toctree-l3"><a class="reference internal" href="repeat-end.html">repeat-end (12)</a></li>
 <li class="toctree-l3"><a class="reference internal" href="repeat-front.html">repeat-front (12)</a></li>
 <li class="toctree-l3"><a class="reference internal" href="repeat-separator.html">repeat-separator (11)</a></li>
-<li class="toctree-l3 current"><a class="current reference internal" href="#">prefix_again</a><ul>
+<li class="toctree-l3 current"><a class="current reference internal" href="#">prefix-again (9)</a><ul>
 <li class="toctree-l4"><a class="reference internal" href="#test-1">Test 1</a></li>
 <li class="toctree-l4"><a class="reference internal" href="#test-2">Test 2</a></li>
 <li class="toctree-l4"><a class="reference internal" href="#test-3">Test 3</a></li>
@@ -119,7 +119,7 @@
 <li class="toctree-l4"><a class="reference internal" href="#test-12">Test 12</a></li>
 </ul>
 </li>
-<li class="toctree-l3"><a class="reference internal" href="xyz-middle.html">xyz_middle</a></li>
+<li class="toctree-l3"><a class="reference internal" href="xyz-middle.html">xyz-middle (6)</a></li>
 <li class="toctree-l3"><a class="reference internal" href="get-sandwich.html">get_sandwich</a></li>
 <li class="toctree-l3"><a class="reference internal" href="same-star-char.html">same_star_char</a></li>
 <li class="toctree-l3"><a class="reference internal" href="one-two.html">one_two</a></li>
@@ -203,7 +203,15 @@
             
   <div class="section" id="prefix-again">
 <h1>prefix_again<a class="headerlink" href="#prefix-again" title="Permalink to this headline">¶</a></h1>
-<p>Given a string, consider the prefix string made of the first N chars of the string. Does that prefix string appear somewhere else in the string? Assume that the string is not empty and that N is in the range 1..str.length().</p>
+<p><strong>Requirements:</strong></p>
+<ul class="simple">
+<li><p><a class="reference external" href="https://mrgallo.github.io/fundamentals/intro.html#mathematical-operations" title="(in Fundamentals)"><span>Mathematical operations</span></a></p></li>
+<li><p><a class="reference external" href="https://mrgallo.github.io/fundamentals/strings.html#substrings-and-slicing" title="(in Fundamentals)"><span>Substrings and slicing</span></a></p></li>
+<li><p><a class="reference external" href="https://mrgallo.github.io/fundamentals/loops.html#loop-with-a-counter-variable" title="(in Fundamentals)"><span>Loop with a counter variable</span></a></p></li>
+<li><p><a class="reference external" href="https://mrgallo.github.io/fundamentals/if_statements.html#if-else" title="(in Fundamentals)"><span>if, else</span></a></p></li>
+<li><p><a class="reference external" href="https://mrgallo.github.io/fundamentals/loops.html#break" title="(in Fundamentals)"><span>break</span></a></p></li>
+</ul>
+<p>Get a <code class="docutils literal notranslate"><span class="pre">string</span></code> and a prefix length <code class="docutils literal notranslate"><span class="pre">n</span></code> from the user. Does a prefix of size <code class="docutils literal notranslate"><span class="pre">n</span></code> appear somewhere else in the string? Output <code class="docutils literal notranslate"><span class="pre">True</span></code> if it does, and <code class="docutils literal notranslate"><span class="pre">False</span></code> if not. Assume that <code class="docutils literal notranslate"><span class="pre">string</span></code> is not empty and that <code class="docutils literal notranslate"><span class="pre">n</span></code> is in the range <code class="docutils literal notranslate"><span class="pre">1..len(string)</span></code>.</p>
 <p>This exercise was taken from <a class="reference external" href="https://codingbat.com/prob/p136417">codingbat.com</a> and has been adapted for the Python language. There are many great programming exercises there, but the majority are created for Java.</p>
 <div class="section" id="test-1">
 <h2>Test 1<a class="headerlink" href="#test-1" title="Permalink to this headline">¶</a></h2>

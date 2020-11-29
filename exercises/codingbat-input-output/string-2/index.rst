@@ -16,8 +16,8 @@ String-2
     repeat-end (12) <repeat-end>
     repeat-front (12) <repeat-front>
     repeat-separator (11) <repeat-separator>
-    prefix-again
-    xyz-middle
+    prefix-again (9) <prefix-again>
+    xyz-middle (6) <xyz-middle>
     get-sandwich
     same-star-char
     one-two

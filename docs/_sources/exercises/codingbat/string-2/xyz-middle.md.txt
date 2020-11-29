@@ -2,6 +2,14 @@
 
 
 
+**Requirements:**
+```eval_rst
+- :ref:`fundamentals:mathematical operations`
+- :ref:`fundamentals:substrings and slicing`
+- :ref:`fundamentals:loop with a counter variable`
+- :ref:`fundamentals:returning a value`
+
+```
 
 
 Given a string, does "xyz" appear in the middle of the string? To define middle, we'll say that the number of chars to the left and right of the "xyz" must differ by at most one. This problem is harder than it looks.
