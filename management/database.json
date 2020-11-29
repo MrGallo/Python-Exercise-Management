@@ -457,20 +457,30 @@
             {
                 "name": "cat_dog",
                 "topic": "",
-                "requirements": [],
+                "requirements": [
+                    "substrings and slicing",
+                    "if, elif, else",
+                    "loop through a string (while)",
+                    "loop with an accumulator variable"
+                ],
                 "description": "Return true if the string \"cat\" and \"dog\" appear the same number of times in the given string.\n\n```\ncat_dog(\"catdog\") -> true\ncat_dog(\"catcat\") -> false\ncat_dog(\"1cat1cadodog\") -> true\n```\n\nThis exercise was taken from [codingbat.com](https://codingbat.com/prob/p111624) and has been adapted for the Python language. There are many great programming exercises there, but the majority are created for Java.",
-                "starter_code": "def cat_dog(string: str) -> bool:\n    pass\n\n\nresult = cat_dog('catdog')\nprint(result)\n",
-                "tests": "from main import cat_dog\n\n\ndef test_cat_dog_1():\n    assert cat_dog('catdog') == True\n\n\ndef test_cat_dog_2():\n    assert cat_dog('catcat') == False\n\n\ndef test_cat_dog_3():\n    assert cat_dog('1cat1cadodog') == True\n\n\ndef test_cat_dog_4():\n    assert cat_dog('catxxdogxxxdog') == False\n\n\ndef test_cat_dog_5():\n    assert cat_dog('catxdogxdogxcat') == True\n\n\ndef test_cat_dog_6():\n    assert cat_dog('catxdogxdogxca') == False\n\n\ndef test_cat_dog_7():\n    assert cat_dog('dogdogcat') == False\n\n\ndef test_cat_dog_8():\n    assert cat_dog('dogogcat') == True\n\n\ndef test_cat_dog_9():\n    assert cat_dog('dog') == False\n\n\ndef test_cat_dog_10():\n    assert cat_dog('cat') == False\n\n\ndef test_cat_dog_11():\n    assert cat_dog('ca') == True\n\n\ndef test_cat_dog_12():\n    assert cat_dog('c') == True\n\n\ndef test_cat_dog_13():\n    assert cat_dog('') == True\n\n\n",
-                "solution": ""
+                "starter_code": "def cat_dog(string: str) -> bool:\n    pass\n\n\nresult = cat_dog('catdog')\nprint(result)",
+                "tests": "from main import cat_dog\n\n\ndef test_cat_dog_1():\n    assert cat_dog('catdog') == True\n\n\ndef test_cat_dog_2():\n    assert cat_dog('catcat') == False\n\n\ndef test_cat_dog_3():\n    assert cat_dog('1cat1cadodog') == True\n\n\ndef test_cat_dog_4():\n    assert cat_dog('catxxdogxxxdog') == False\n\n\ndef test_cat_dog_5():\n    assert cat_dog('catxdogxdogxcat') == True\n\n\ndef test_cat_dog_6():\n    assert cat_dog('catxdogxdogxca') == False\n\n\ndef test_cat_dog_7():\n    assert cat_dog('dogdogcat') == False\n\n\ndef test_cat_dog_8():\n    assert cat_dog('dogogcat') == True\n\n\ndef test_cat_dog_9():\n    assert cat_dog('dog') == False\n\n\ndef test_cat_dog_10():\n    assert cat_dog('cat') == False\n\n\ndef test_cat_dog_11():\n    assert cat_dog('ca') == True\n\n\ndef test_cat_dog_12():\n    assert cat_dog('c') == True\n\n\ndef test_cat_dog_13():\n    assert cat_dog('') == True",
+                "solution": "def cat_dog(string: str) -> bool:\n    cat_count = 0\n    dog_count = 0\n\n    i = 0\n    while i < len(string) - 2:\n        substring = string[i:i+3]\n        if substring == \"cat\":\n            cat_count += 1\n        elif substring == \"dog\":\n            dog_count += 1\n        i += 1\n\n    return cat_count == dog_count"
             },
             {
                 "name": "count_code",
                 "topic": "",
-                "requirements": [],
+                "requirements": [
+                    "substrings and slicing",
+                    "if, else",
+                    "loop through a string (while)",
+                    "loop with an accumulator variable"
+                ],
                 "description": "Return the number of times that the string \"code\" appears anywhere in the given string, except we'll accept any letter for the 'd', so \"cope\" and \"cooe\" count.\n\n```\ncount_code(\"aaacodebbb\") -> 1\ncount_code(\"codexxcode\") -> 2\ncount_code(\"cozexxcope\") -> 2\n```\n\nThis exercise was taken from [codingbat.com](https://codingbat.com/prob/p123614) and has been adapted for the Python language. There are many great programming exercises there, but the majority are created for Java.",
-                "starter_code": "def count_code(string: str) -> int:\n    pass\n\n\nresult = count_code('aaacodebbb')\nprint(result)\n",
-                "tests": "from main import count_code\n\n\ndef test_count_code_1():\n    assert count_code('aaacodebbb') == 1\n\n\ndef test_count_code_2():\n    assert count_code('codexxcode') == 2\n\n\ndef test_count_code_3():\n    assert count_code('cozexxcope') == 2\n\n\ndef test_count_code_4():\n    assert count_code('cozfxxcope') == 1\n\n\ndef test_count_code_5():\n    assert count_code('xxcozeyycop') == 1\n\n\ndef test_count_code_6():\n    assert count_code('cozcop') == 0\n\n\ndef test_count_code_7():\n    assert count_code('abcxyz') == 0\n\n\ndef test_count_code_8():\n    assert count_code('code') == 1\n\n\ndef test_count_code_9():\n    assert count_code('ode') == 0\n\n\ndef test_count_code_10():\n    assert count_code('c') == 0\n\n\ndef test_count_code_11():\n    assert count_code('') == 0\n\n\ndef test_count_code_12():\n    assert count_code('AAcodeBBcoleCCccoreDD') == 3\n\n\ndef test_count_code_13():\n    assert count_code('AAcodeBBcoleCCccorfDD') == 2\n\n\ndef test_count_code_14():\n    assert count_code('coAcodeBcoleccoreDD') == 3\n\n\n",
-                "solution": ""
+                "starter_code": "def count_code(string: str) -> int:\n    pass\n\n\nresult = count_code('aaacodebbb')\nprint(result)",
+                "tests": "from main import count_code\n\n\ndef test_count_code_1():\n    assert count_code('aaacodebbb') == 1\n\n\ndef test_count_code_2():\n    assert count_code('codexxcode') == 2\n\n\ndef test_count_code_3():\n    assert count_code('cozexxcope') == 2\n\n\ndef test_count_code_4():\n    assert count_code('cozfxxcope') == 1\n\n\ndef test_count_code_5():\n    assert count_code('xxcozeyycop') == 1\n\n\ndef test_count_code_6():\n    assert count_code('cozcop') == 0\n\n\ndef test_count_code_7():\n    assert count_code('abcxyz') == 0\n\n\ndef test_count_code_8():\n    assert count_code('code') == 1\n\n\ndef test_count_code_9():\n    assert count_code('ode') == 0\n\n\ndef test_count_code_10():\n    assert count_code('c') == 0\n\n\ndef test_count_code_11():\n    assert count_code('') == 0\n\n\ndef test_count_code_12():\n    assert count_code('AAcodeBBcoleCCccoreDD') == 3\n\n\ndef test_count_code_13():\n    assert count_code('AAcodeBBcoleCCccorfDD') == 2\n\n\ndef test_count_code_14():\n    assert count_code('coAcodeBcoleccoreDD') == 3",
+                "solution": "def count_code(string: str) -> int:\n    count = 0\n    i = 0\n    while i < len(string) - 3:\n        if string[i:i+2] == \"co\" and string[i+3] == \"e\":\n            count += 1\n        i += 1\n\n    return count"
             },
             {
                 "name": "end_other",
@@ -3276,11 +3286,16 @@
             {
                 "name": "cat_dog",
                 "topic": "",
-                "requirements": [],
-                "description": "Return true if the string \"cat\" and \"dog\" appear the same number of times in the given string.\n\nThis exercise was taken from [codingbat.com](https://codingbat.com/prob/p111624) and has been adapted for the Python language. There are many great programming exercises there, but the majority are created for Java.",
+                "requirements": [
+                    "substrings and slicing",
+                    "if, elif, else",
+                    "loop through a string (while)",
+                    "loop with an accumulator variable"
+                ],
+                "description": "Output `True` if the substrings `\"cat\"` and `\"dog\"` appear the same number of times in a string input by the user. Otherwise, output `False`.\n\nThis exercise was taken from [codingbat.com](https://codingbat.com/prob/p111624) and has been adapted for the Python language. There are many great programming exercises there, but the majority are created for Java.",
                 "starter_code": "",
                 "tests": "from exercise.fixtures import captured_output\n\n\ndef test_1(captured_output):\n    assert captured_output('catdog') == 'True'\n\n\ndef test_2(captured_output):\n    assert captured_output('catcat') == 'False'\n\n\ndef test_3(captured_output):\n    assert captured_output('1cat1cadodog') == 'True'\n\n\ndef test_4(captured_output):\n    assert captured_output('catxxdogxxxdog') == 'False'\n\n\ndef test_5(captured_output):\n    assert captured_output('catxdogxdogxcat') == 'True'\n\n\ndef test_6(captured_output):\n    assert captured_output('catxdogxdogxca') == 'False'\n\n\ndef test_7(captured_output):\n    assert captured_output('dogdogcat') == 'False'\n\n\ndef test_8(captured_output):\n    assert captured_output('dogogcat') == 'True'\n\n\ndef test_9(captured_output):\n    assert captured_output('dog') == 'False'\n\n\ndef test_10(captured_output):\n    assert captured_output('cat') == 'False'\n\n\ndef test_11(captured_output):\n    assert captured_output('ca') == 'True'\n\n\ndef test_12(captured_output):\n    assert captured_output('c') == 'True'\n\n\ndef test_13(captured_output):\n    assert captured_output('') == 'True'",
-                "solution": "",
+                "solution": "string = input()\n\ncat_count = 0\ndog_count = 0\n\ni = 0\nwhile i < len(string) - 2:\n    substring = string[i:i+3]\n    if substring == \"cat\":\n        cat_count += 1\n    elif substring == \"dog\":\n        dog_count += 1\n    i += 1\n\nif cat_count == dog_count:\n    print(\"True\")\nelse:\n    print(\"False\")",
                 "tests_io": [
                     [
                         [
@@ -3365,11 +3380,16 @@
             {
                 "name": "count_code",
                 "topic": "",
-                "requirements": [],
-                "description": "Return the number of times that the string \"code\" appears anywhere in the given string, except we'll accept any letter for the 'd', so \"cope\" and \"cooe\" count.\n\nThis exercise was taken from [codingbat.com](https://codingbat.com/prob/p123614) and has been adapted for the Python language. There are many great programming exercises there, but the majority are created for Java.",
+                "requirements": [
+                    "substrings and slicing",
+                    "if, else",
+                    "loop through a string (while)",
+                    "loop with an accumulator variable"
+                ],
+                "description": "Output the number of times that the string \"code\" appears anywhere in the inputted string, except we'll accept any letter for the `'d'`, so `\"cope\"` and `\"cooe\"` count.\n\nThis exercise was taken from [codingbat.com](https://codingbat.com/prob/p123614) and has been adapted for the Python language. There are many great programming exercises there, but the majority are created for Java.",
                 "starter_code": "",
                 "tests": "from exercise.fixtures import captured_output\n\n\ndef test_1(captured_output):\n    assert captured_output('aaacodebbb') == '1'\n\n\ndef test_2(captured_output):\n    assert captured_output('codexxcode') == '2'\n\n\ndef test_3(captured_output):\n    assert captured_output('cozexxcope') == '2'\n\n\ndef test_4(captured_output):\n    assert captured_output('cozfxxcope') == '1'\n\n\ndef test_5(captured_output):\n    assert captured_output('xxcozeyycop') == '1'\n\n\ndef test_6(captured_output):\n    assert captured_output('cozcop') == '0'\n\n\ndef test_7(captured_output):\n    assert captured_output('abcxyz') == '0'\n\n\ndef test_8(captured_output):\n    assert captured_output('code') == '1'\n\n\ndef test_9(captured_output):\n    assert captured_output('ode') == '0'\n\n\ndef test_10(captured_output):\n    assert captured_output('c') == '0'\n\n\ndef test_11(captured_output):\n    assert captured_output('') == '0'\n\n\ndef test_12(captured_output):\n    assert captured_output('AAcodeBBcoleCCccoreDD') == '3'\n\n\ndef test_13(captured_output):\n    assert captured_output('AAcodeBBcoleCCccorfDD') == '2'\n\n\ndef test_14(captured_output):\n    assert captured_output('coAcodeBcoleccoreDD') == '3'",
-                "solution": "",
+                "solution": "string = input()\n\ncount = 0\n\ni = 0\nwhile i < len(string) - 3:\n    if string[i:i+2] == \"co\" and string[i+3] == \"e\":\n        count += 1\n    i += 1\n\nprint(count)",
                 "tests_io": [
                     [
                         [
