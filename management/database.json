@@ -485,11 +485,14 @@
             {
                 "name": "end_other",
                 "topic": "",
-                "requirements": [],
+                "requirements": [
+                    "substrings and slicing",
+                    "if, elif, else"
+                ],
                 "description": "Given two strings, return true if either of the strings appears at the very end of the other string, ignoring upper/lower case differences (in other words, the computation should not be \"case sensitive\"). Note:  str.toLowerCase() returns the lowercase version of a string.\n\n```\nend_other(\"Hiabc\", \"abc\") -> true\nend_other(\"AbC\", \"HiaBc\") -> true\nend_other(\"abc\", \"abXabc\") -> true\n```\n\nThis exercise was taken from [codingbat.com](https://codingbat.com/prob/p126880) and has been adapted for the Python language. There are many great programming exercises there, but the majority are created for Java.",
-                "starter_code": "def end_other(a: str, b: str) -> bool:\n    pass\n\n\nresult = end_other('Hiabc', 'abc')\nprint(result)\n",
-                "tests": "from main import end_other\n\n\ndef test_end_other_1():\n    assert end_other('Hiabc', 'abc') == True\n\n\ndef test_end_other_2():\n    assert end_other('AbC', 'HiaBc') == True\n\n\ndef test_end_other_3():\n    assert end_other('abc', 'abXabc') == True\n\n\ndef test_end_other_4():\n    assert end_other('Hiabc', 'abcd') == False\n\n\ndef test_end_other_5():\n    assert end_other('Hiabc', 'bc') == True\n\n\ndef test_end_other_6():\n    assert end_other('Hiabcx', 'bc') == False\n\n\ndef test_end_other_7():\n    assert end_other('abc', 'abc') == True\n\n\ndef test_end_other_8():\n    assert end_other('xyz', '12xyz') == True\n\n\ndef test_end_other_9():\n    assert end_other('yz', '12xz') == False\n\n\ndef test_end_other_10():\n    assert end_other('Z', '12xz') == True\n\n\ndef test_end_other_11():\n    assert end_other('12', '12') == True\n\n\ndef test_end_other_12():\n    assert end_other('abcXYZ', 'abcDEF') == False\n\n\ndef test_end_other_13():\n    assert end_other('ab', 'ab12') == False\n\n\ndef test_end_other_14():\n    assert end_other('ab', '12ab') == True\n\n\n",
-                "solution": ""
+                "starter_code": "def end_other(a: str, b: str) -> bool:\n    pass\n\n\nresult = end_other('Hiabc', 'abc')\nprint(result)",
+                "tests": "from main import end_other\n\n\ndef test_end_other_1():\n    assert end_other('Hiabc', 'abc') == True\n\n\ndef test_end_other_2():\n    assert end_other('AbC', 'HiaBc') == True\n\n\ndef test_end_other_3():\n    assert end_other('abc', 'abXabc') == True\n\n\ndef test_end_other_4():\n    assert end_other('Hiabc', 'abcd') == False\n\n\ndef test_end_other_5():\n    assert end_other('Hiabc', 'bc') == True\n\n\ndef test_end_other_6():\n    assert end_other('Hiabcx', 'bc') == False\n\n\ndef test_end_other_7():\n    assert end_other('abc', 'abc') == True\n\n\ndef test_end_other_8():\n    assert end_other('xyz', '12xyz') == True\n\n\ndef test_end_other_9():\n    assert end_other('yz', '12xz') == False\n\n\ndef test_end_other_10():\n    assert end_other('Z', '12xz') == True\n\n\ndef test_end_other_11():\n    assert end_other('12', '12') == True\n\n\ndef test_end_other_12():\n    assert end_other('abcXYZ', 'abcDEF') == False\n\n\ndef test_end_other_13():\n    assert end_other('ab', 'ab12') == False\n\n\ndef test_end_other_14():\n    assert end_other('ab', '12ab') == True",
+                "solution": "def end_other(a: str, b: str) -> bool:\n    a = a.lower()\n    b = b.lower()\n\n    if a[-len(b):] == b:\n        return True\n    elif b[-len(a):] == a:\n        return True\n    else:\n        return False"
             },
             {
                 "name": "xyz_there",
@@ -3480,11 +3483,14 @@
             {
                 "name": "end_other",
                 "topic": "",
-                "requirements": [],
-                "description": "Given two strings, return true if either of the strings appears at the very end of the other string, ignoring upper/lower case differences (in other words, the computation should not be \"case sensitive\"). Note:  str.toLowerCase() returns the lowercase version of a string.\n\nThis exercise was taken from [codingbat.com](https://codingbat.com/prob/p126880) and has been adapted for the Python language. There are many great programming exercises there, but the majority are created for Java.",
+                "requirements": [
+                    "substrings and slicing",
+                    "if, elif, else"
+                ],
+                "description": "Take two strings as input, output `True` if either of the strings appears at the very end of the other string, ignoring upper/lower case differences (in other words, the computation should not be \"case sensitive\"). Output `False` otherwise. Note: `str.lower()` returns the lowercase version of a string.\n\nThis exercise was taken from [codingbat.com](https://codingbat.com/prob/p126880) and has been adapted for the Python language. There are many great programming exercises there, but the majority are created for Java.",
                 "starter_code": "",
                 "tests": "from exercise.fixtures import captured_output\n\n\ndef test_1(captured_output):\n    assert captured_output('Hiabc\\nabc') == 'True'\n\n\ndef test_2(captured_output):\n    assert captured_output('AbC\\nHiaBc') == 'True'\n\n\ndef test_3(captured_output):\n    assert captured_output('abc\\nabXabc') == 'True'\n\n\ndef test_4(captured_output):\n    assert captured_output('Hiabc\\nabcd') == 'False'\n\n\ndef test_5(captured_output):\n    assert captured_output('Hiabc\\nbc') == 'True'\n\n\ndef test_6(captured_output):\n    assert captured_output('Hiabcx\\nbc') == 'False'\n\n\ndef test_7(captured_output):\n    assert captured_output('abc\\nabc') == 'True'\n\n\ndef test_8(captured_output):\n    assert captured_output('xyz\\n12xyz') == 'True'\n\n\ndef test_9(captured_output):\n    assert captured_output('yz\\n12xz') == 'False'\n\n\ndef test_10(captured_output):\n    assert captured_output('Z\\n12xz') == 'True'\n\n\ndef test_11(captured_output):\n    assert captured_output('12\\n12') == 'True'\n\n\ndef test_12(captured_output):\n    assert captured_output('abcXYZ\\nabcDEF') == 'False'\n\n\ndef test_13(captured_output):\n    assert captured_output('ab\\nab12') == 'False'\n\n\ndef test_14(captured_output):\n    assert captured_output('ab\\n12ab') == 'True'",
-                "solution": "",
+                "solution": "str_1 = input().lower()\nstr_2 = input().lower()\n\nif str_1[-len(str_2):] == str_2:\n    print(\"True\")\nelif str_2[-len(str_1):] == str_1:\n    print(\"True\")\nelse:\n    print(\"False\")",
                 "tests_io": [
                     [
                         [
