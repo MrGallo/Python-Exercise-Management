@@ -434,7 +434,8 @@
                 "name": "double_char",
                 "topic": "",
                 "requirements": [
-                    "string building and filtering"
+                    "string building and filtering",
+                    "returning a value"
                 ],
                 "description": "Given a string, return a string where for every char in the original, there are two chars.\n\n```\ndouble_char(\"The\") -> \"TThhee\"\ndouble_char(\"AAbb\") -> \"AAAAbbbb\"\ndouble_char(\"Hi-There\") -> \"HHii--TThheerree\"\n```\n\nThis exercise was taken from [codingbat.com](https://codingbat.com/prob/p165312) and has been adapted for the Python language. There are many great programming exercises there, but the majority are created for Java.",
                 "starter_code": "def double_char(string: str) -> str:\n    pass\n\n\nresult = double_char('The')\nprint(result)",
@@ -447,7 +448,8 @@
                 "requirements": [
                     "substrings and slicing",
                     "loop through a string (while)",
-                    "loop with an accumulator variable"
+                    "loop with an accumulator variable",
+                    "returning a value"
                 ],
                 "description": "Return the number of times that the string \"hi\" appears anywhere in the given string.\n\n```\ncount_hi(\"abc hi ho\") -> 1\ncount_hi(\"ABChi hi\") -> 2\ncount_hi(\"hihi\") -> 2\n```\n\nThis exercise was taken from [codingbat.com](https://codingbat.com/prob/p147448) and has been adapted for the Python language. There are many great programming exercises there, but the majority are created for Java.",
                 "starter_code": "def count_hi(string: str) -> int:\n    pass\n\n\nresult = count_hi('abc hi ho')\nprint(result)",
@@ -461,7 +463,8 @@
                     "substrings and slicing",
                     "if, elif, else",
                     "loop through a string (while)",
-                    "loop with an accumulator variable"
+                    "loop with an accumulator variable",
+                    "returning a value"
                 ],
                 "description": "Return true if the string \"cat\" and \"dog\" appear the same number of times in the given string.\n\n```\ncat_dog(\"catdog\") -> true\ncat_dog(\"catcat\") -> false\ncat_dog(\"1cat1cadodog\") -> true\n```\n\nThis exercise was taken from [codingbat.com](https://codingbat.com/prob/p111624) and has been adapted for the Python language. There are many great programming exercises there, but the majority are created for Java.",
                 "starter_code": "def cat_dog(string: str) -> bool:\n    pass\n\n\nresult = cat_dog('catdog')\nprint(result)",
@@ -475,7 +478,8 @@
                     "substrings and slicing",
                     "if, else",
                     "loop through a string (while)",
-                    "loop with an accumulator variable"
+                    "loop with an accumulator variable",
+                    "returning a value"
                 ],
                 "description": "Return the number of times that the string \"code\" appears anywhere in the given string, except we'll accept any letter for the 'd', so \"cope\" and \"cooe\" count.\n\n```\ncount_code(\"aaacodebbb\") -> 1\ncount_code(\"codexxcode\") -> 2\ncount_code(\"cozexxcope\") -> 2\n```\n\nThis exercise was taken from [codingbat.com](https://codingbat.com/prob/p123614) and has been adapted for the Python language. There are many great programming exercises there, but the majority are created for Java.",
                 "starter_code": "def count_code(string: str) -> int:\n    pass\n\n\nresult = count_code('aaacodebbb')\nprint(result)",
@@ -487,7 +491,8 @@
                 "topic": "",
                 "requirements": [
                     "substrings and slicing",
-                    "if, elif, else"
+                    "if, elif, else",
+                    "returning a value"
                 ],
                 "description": "Given two strings, return true if either of the strings appears at the very end of the other string, ignoring upper/lower case differences (in other words, the computation should not be \"case sensitive\"). Note:  str.toLowerCase() returns the lowercase version of a string.\n\n```\nend_other(\"Hiabc\", \"abc\") -> true\nend_other(\"AbC\", \"HiaBc\") -> true\nend_other(\"abc\", \"abXabc\") -> true\n```\n\nThis exercise was taken from [codingbat.com](https://codingbat.com/prob/p126880) and has been adapted for the Python language. There are many great programming exercises there, but the majority are created for Java.",
                 "starter_code": "def end_other(a: str, b: str) -> bool:\n    pass\n\n\nresult = end_other('Hiabc', 'abc')\nprint(result)",
@@ -500,7 +505,8 @@
                 "requirements": [
                     "substrings and slicing",
                     "if, else",
-                    "loop through a string (while)"
+                    "loop through a string (while)",
+                    "returning a value"
                 ],
                 "description": "Return true if the given string contains an appearance of \"xyz\" where the xyz is not directly preceeded by a period (.). So \"xxyz\" counts but \"x.xyz\" does not.\n\n```\nxyz_there(\"abcxyz\") -> true\nxyz_there(\"abc.xyz\") -> false\nxyz_there(\"xyz.abc\") -> true\n```\n\nThis exercise was taken from [codingbat.com](https://codingbat.com/prob/p136594) and has been adapted for the Python language. There are many great programming exercises there, but the majority are created for Java.",
                 "starter_code": "def xyz_there(string: str) -> bool:\n    pass\n\n\nresult = xyz_there('abcxyz')\nprint(result)",
@@ -513,7 +519,8 @@
                 "requirements": [
                     "get a single character",
                     "if, else",
-                    "loop through a string (while)"
+                    "loop through a string (while)",
+                    "returning a value"
                 ],
                 "description": "Return true if the given string contains a \"bob\" string, but where the middle 'o' char can be any char.\n\n```\nbob_there(\"abcbob\") -> true\nbob_there(\"b9b\") -> true\nbob_there(\"bac\") -> false\n```\n\nThis exercise was taken from [codingbat.com](https://codingbat.com/prob/p175762) and has been adapted for the Python language. There are many great programming exercises there, but the majority are created for Java.",
                 "starter_code": "def bob_there(string: str) -> bool:\n    pass\n\n\nresult = bob_there('abcbob')\nprint(result)",
@@ -526,7 +533,8 @@
                 "requirements": [
                     "get a single character",
                     "loop through a string (while)",
-                    "if, elif, else"
+                    "if, elif, else",
+                    "returning a value"
                 ],
                 "description": "We'll say that a String is xy-balanced if for all the 'x' chars in the string, there exists a 'y' char somewhere later in the string. So \"xxy\" is balanced, but \"xyx\" is not. One 'y' can balance multiple 'x's. Return true if the given string is xy-balanced.\n\n```\nxy_balance(\"aaxbby\") -> true\nxy_balance(\"aaxbb\") -> false\nxy_balance(\"yaaxbb\") -> false\n```\n\nThis exercise was taken from [codingbat.com](https://codingbat.com/prob/p134250) and has been adapted for the Python language. There are many great programming exercises there, but the majority are created for Java.",
                 "starter_code": "def xy_balance(string: str) -> bool:\n    pass\n\n\nresult = xy_balance('aaxbby')\nprint(result)",
@@ -539,7 +547,8 @@
                 "requirements": [
                     "get a single character",
                     "substrings and slicing",
-                    "string building and filtering"
+                    "string building and filtering",
+                    "returning a value"
                 ],
                 "description": "Given two strings, <b>a</b> and <b>b</b>, create a bigger string made of the first char of a, the first char of b, the second char of a, the second char of b, and so on. Any leftover chars go at the end of the result.\n\n```\nmix_string(\"abc\", \"xyz\") -> \"axbycz\"\nmix_string(\"Hi\", \"There\") -> \"HTihere\"\nmix_string(\"xxxx\", \"There\") -> \"xTxhxexre\"\n```\n\nThis exercise was taken from [codingbat.com](https://codingbat.com/prob/p125185) and has been adapted for the Python language. There are many great programming exercises there, but the majority are created for Java.",
                 "starter_code": "def mix_string(a: str, b: str) -> str:\n    pass\n\n\nresult = mix_string('abc', 'xyz')\nprint(result)",
@@ -552,7 +561,8 @@
                 "requirements": [
                     "substrings and slicing",
                     "loop with a counter variable",
-                    "string building and filtering"
+                    "string building and filtering",
+                    "returning a value"
                 ],
                 "description": "Given a string and an int n, return a string made of n repetitions of the last n characters of the string. You may assume that n is between 0 and the length of the string, inclusive.\n\n```\nrepeat_end(\"Hello\", 3) -> \"llollollo\"\nrepeat_end(\"Hello\", 2) -> \"lolo\"\nrepeat_end(\"Hello\", 1) -> \"o\"\n```\n\nThis exercise was taken from [codingbat.com](https://codingbat.com/prob/p152339) and has been adapted for the Python language. There are many great programming exercises there, but the majority are created for Java.",
                 "starter_code": "def repeat_end(string: str, n: int) -> str:\n    pass\n\n\nresult = repeat_end('Hello', 3)\nprint(result)",
@@ -565,7 +575,8 @@
                 "requirements": [
                     "substrings and slicing",
                     "loop with a counter variable",
-                    "string building and filtering"
+                    "string building and filtering",
+                    "returning a value"
                 ],
                 "description": "Given a string and an int n, return a string made of the first n characters of the string, followed by the first n-1 characters of the string, and so on. You may assume that n is between 0 and the length of the string, inclusive (i.e. n &gt;= 0 and n &lt;= str.length()).\n\n```\nrepeat_front(\"Chocolate\", 4) -> \"ChocChoChC\"\nrepeat_front(\"Chocolate\", 3) -> \"ChoChC\"\nrepeat_front(\"Ice Cream\", 2) -> \"IcI\"\n```\n\nThis exercise was taken from [codingbat.com](https://codingbat.com/prob/p128796) and has been adapted for the Python language. There are many great programming exercises there, but the majority are created for Java.",
                 "starter_code": "def repeat_front(string: str, n: int) -> str:\n    pass\n\n\nresult = repeat_front('Chocolate', 4)\nprint(result)\n",
@@ -575,11 +586,16 @@
             {
                 "name": "repeat_separator",
                 "topic": "",
-                "requirements": [],
+                "requirements": [
+                    "if, else",
+                    "loop with a counter variable",
+                    "string building and filtering",
+                    "returning a value"
+                ],
                 "description": "Given two strings, <b>word</b> and a separator <b>sep</b>, return a big string made of <b>count</b> occurrences of the word, separated by the separator string.\n\n```\nrepeat_separator(\"Word\", \"X\", 3) -> \"WordXWordXWord\"\nrepeat_separator(\"This\", \"And\", 2) -> \"ThisAndThis\"\nrepeat_separator(\"This\", \"And\", 1) -> \"This\"\n```\n\nThis exercise was taken from [codingbat.com](https://codingbat.com/prob/p109637) and has been adapted for the Python language. There are many great programming exercises there, but the majority are created for Java.",
-                "starter_code": "def repeat_separator(word: str, sep: str, count: int) -> str:\n    pass\n\n\nresult = repeat_separator('Word', 'X', 3)\nprint(result)\n",
-                "tests": "from main import repeat_separator\n\n\ndef test_repeat_separator_1():\n    assert repeat_separator('Word', 'X', 3) == 'WordXWordXWord'\n\n\ndef test_repeat_separator_2():\n    assert repeat_separator('This', 'And', 2) == 'ThisAndThis'\n\n\ndef test_repeat_separator_3():\n    assert repeat_separator('This', 'And', 1) == 'This'\n\n\ndef test_repeat_separator_4():\n    assert repeat_separator('Hi', '-n-', 2) == 'Hi-n-Hi'\n\n\ndef test_repeat_separator_5():\n    assert repeat_separator('AAA', '', 1) == 'AAA'\n\n\ndef test_repeat_separator_6():\n    assert repeat_separator('AAA', '', 0) == ''\n\n\ndef test_repeat_separator_7():\n    assert repeat_separator('A', 'B', 5) == 'ABABABABA'\n\n\ndef test_repeat_separator_8():\n    assert repeat_separator('abc', 'XX', 3) == 'abcXXabcXXabc'\n\n\ndef test_repeat_separator_9():\n    assert repeat_separator('abc', 'XX', 2) == 'abcXXabc'\n\n\ndef test_repeat_separator_10():\n    assert repeat_separator('abc', 'XX', 1) == 'abc'\n\n\ndef test_repeat_separator_11():\n    assert repeat_separator('XYZ', 'a', 2) == 'XYZaXYZ'\n\n\n",
-                "solution": ""
+                "starter_code": "def repeat_separator(word: str, sep: str, count: int) -> str:\n    pass\n\n\nresult = repeat_separator('Word', 'X', 3)\nprint(result)",
+                "tests": "from main import repeat_separator\n\n\ndef test_repeat_separator_1():\n    assert repeat_separator('Word', 'X', 3) == 'WordXWordXWord'\n\n\ndef test_repeat_separator_2():\n    assert repeat_separator('This', 'And', 2) == 'ThisAndThis'\n\n\ndef test_repeat_separator_3():\n    assert repeat_separator('This', 'And', 1) == 'This'\n\n\ndef test_repeat_separator_4():\n    assert repeat_separator('Hi', '-n-', 2) == 'Hi-n-Hi'\n\n\ndef test_repeat_separator_5():\n    assert repeat_separator('AAA', '', 1) == 'AAA'\n\n\ndef test_repeat_separator_6():\n    assert repeat_separator('AAA', '', 0) == ''\n\n\ndef test_repeat_separator_7():\n    assert repeat_separator('A', 'B', 5) == 'ABABABABA'\n\n\ndef test_repeat_separator_8():\n    assert repeat_separator('abc', 'XX', 3) == 'abcXXabcXXabc'\n\n\ndef test_repeat_separator_9():\n    assert repeat_separator('abc', 'XX', 2) == 'abcXXabc'\n\n\ndef test_repeat_separator_10():\n    assert repeat_separator('abc', 'XX', 1) == 'abc'\n\n\ndef test_repeat_separator_11():\n    assert repeat_separator('XYZ', 'a', 2) == 'XYZaXYZ'",
+                "solution": "def repeat_separator(word: str, sep: str, count: int) -> str:\n    new_string = \"\"\n    i = 0\n    while i < count:\n        if i > 0:\n            new_string += sep\n        new_string += word\n        i += 1\n\n    return new_string"
             },
             {
                 "name": "prefix_again",
@@ -4187,11 +4203,15 @@
             {
                 "name": "repeat_separator",
                 "topic": "",
-                "requirements": [],
-                "description": "Given two strings, <b>word</b> and a separator <b>sep</b>, return a big string made of <b>count</b> occurrences of the word, separated by the separator string.\n\nThis exercise was taken from [codingbat.com](https://codingbat.com/prob/p109637) and has been adapted for the Python language. There are many great programming exercises there, but the majority are created for Java.",
+                "requirements": [
+                    "if, else",
+                    "loop with a counter variable",
+                    "string building and filtering"
+                ],
+                "description": "Get two strings from the user, the first will be a `word` and the second a separator (call it `sep`). Get a third input from the user, an integer called `count`. Output a new string made of `count` occurrences of the word, separated by the separator string.\n\nThis exercise was taken from [codingbat.com](https://codingbat.com/prob/p109637) and has been adapted for the Python language. There are many great programming exercises there, but the majority are created for Java.",
                 "starter_code": "",
                 "tests": "from exercise.fixtures import captured_output\n\n\ndef test_1(captured_output):\n    assert captured_output('Word\\nX\\n3') == 'WordXWordXWord'\n\n\ndef test_2(captured_output):\n    assert captured_output('This\\nAnd\\n2') == 'ThisAndThis'\n\n\ndef test_3(captured_output):\n    assert captured_output('This\\nAnd\\n1') == 'This'\n\n\ndef test_4(captured_output):\n    assert captured_output('Hi\\n-n-\\n2') == 'Hi-n-Hi'\n\n\ndef test_5(captured_output):\n    assert captured_output('AAA\\n\\n1') == 'AAA'\n\n\ndef test_6(captured_output):\n    assert captured_output('AAA\\n\\n0') == ''\n\n\ndef test_7(captured_output):\n    assert captured_output('A\\nB\\n5') == 'ABABABABA'\n\n\ndef test_8(captured_output):\n    assert captured_output('abc\\nXX\\n3') == 'abcXXabcXXabc'\n\n\ndef test_9(captured_output):\n    assert captured_output('abc\\nXX\\n2') == 'abcXXabc'\n\n\ndef test_10(captured_output):\n    assert captured_output('abc\\nXX\\n1') == 'abc'\n\n\ndef test_11(captured_output):\n    assert captured_output('XYZ\\na\\n2') == 'XYZaXYZ'",
-                "solution": "",
+                "solution": "word = input()\nsep = input()\ncount = int(input())\n\nnew_string = \"\"\ni = 0\nwhile i < count:\n    new_string += word\n    i += 1\n    if i != count:  # if it's not the last loop\n        new_string += sep\n\nprint(new_string)",
                 "tests_io": [
                     [
                         [
