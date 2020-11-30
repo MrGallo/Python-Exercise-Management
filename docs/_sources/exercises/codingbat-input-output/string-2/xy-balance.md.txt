@@ -4,7 +4,7 @@
 
 **Requirements:**
 ```eval_rst
-- :ref:`fundamentals:get a single character`
+- :ref:`fundamentals:access a single character`
 - :ref:`fundamentals:loop through a string (while)`
 - :ref:`fundamentals:if, elif, else`
 
