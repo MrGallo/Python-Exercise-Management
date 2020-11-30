@@ -517,7 +517,7 @@
                 "name": "bob_there",
                 "topic": "",
                 "requirements": [
-                    "get a single character",
+                    "access a single character",
                     "if, else",
                     "loop through a string (while)",
                     "returning a value"
@@ -531,7 +531,7 @@
                 "name": "xy_balance",
                 "topic": "",
                 "requirements": [
-                    "get a single character",
+                    "access a single character",
                     "loop through a string (while)",
                     "if, elif, else",
                     "returning a value"
@@ -545,7 +545,7 @@
                 "name": "mix_string",
                 "topic": "",
                 "requirements": [
-                    "get a single character",
+                    "access a single character",
                     "substrings and slicing",
                     "string building and filtering",
                     "returning a value"
@@ -3745,7 +3745,7 @@
                 "name": "bob_there",
                 "topic": "",
                 "requirements": [
-                    "get a single character",
+                    "access a single character",
                     "if, else",
                     "loop through a string (while)"
                 ],
@@ -3838,7 +3838,7 @@
                 "name": "xy_balance",
                 "topic": "",
                 "requirements": [
-                    "get a single character",
+                    "access a single character",
                     "loop through a string (while)",
                     "if, elif, else"
                 ],
@@ -3961,7 +3961,7 @@
                 "name": "mix_string",
                 "topic": "",
                 "requirements": [
-                    "get a single character",
+                    "access a single character",
                     "substrings and slicing",
                     "string building and filtering"
                 ],

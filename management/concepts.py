@@ -18,9 +18,9 @@ concepts = {
     },
     "strings": {
         "string concatenation": [],
-        "get a single character": [],
+        "access a single character": [],
         "substrings and slicing": [
-            "get a single character"],
+            "access a single character"],
         "convert to lower/upper case": [],
         "replace characters or substrings": [],
         "split a string into a list": []
@@ -46,7 +46,7 @@ concepts = {
             "break"],
         "loop through a string (while)": [
             "loop with a counter variable",
-            "get a single character"],
+            "access a single character"],
         "loop through a list (while)": [
             "accessing list elements",
             "loop with a counter variable"],
