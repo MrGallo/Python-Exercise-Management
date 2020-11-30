@@ -130,6 +130,28 @@
                 "starter_code": "def give_argument(argument: str) -> None:\n    print(\"The defense will commence with their opening arguments:\")\n    print(f\"Your Honour, {argument}.\")\n\n\ngive_argument()",
                 "tests": "from exercise.fixtures import captured_output\n\n\ndef test_give_argument(captured_output):\n    assert captured_output().endswith(\"Your Honour, my client is innocent.\")",
                 "solution": "def give_argument(argument: str) -> None:\n    print(\"The defense will commence with their opening arguments:\")\n    print(f\"Your Honour, {argument}.\")\n\n\ngive_argument(\"my client is innocent\")"
+            },
+            {
+                "name": "Do my homework",
+                "topic": "passing arguments",
+                "requirements": [
+                    "calling a function"
+                ],
+                "description": "Sometimes we can think of functions as our friends waiting to do some job for us. This function is a friend who is willing to complete your homework for you. You can't just say \"Hey friend, finish my homework\" because they would have no idea what class or chapter you want them to complete.\n\nPass the `get_friend_to_do_your_homework` function two arguments. The first should be a string of the name of the subject, the second argument should be a string, the name of the chapter you need them to complete.\n\nOnce you give your 'friend' that information, they can go and complete your homework for them. Try sending them `\"math\"` for the subject and `\"functions\"` for the chapter. The result output should be:\n\n```\nOk, I'll complete the functions chapter of your math work.\n```",
+                "starter_code": "def get_friend_to_do_your_homework(subject: str, chapter: str) -> None:\n    print(f\"Ok, I'll complete the {chapter} chapter of your {subject} work.\")\n\n\nget_friend_to_do_your_homework()",
+                "tests": "from exercise.fixtures import captured_output\n\n\ndef test_do_homework(captured_output):\n    assert captured_output() == \"Ok, I'll complete the functions chapter of your math work.\"",
+                "solution": "def get_friend_to_do_your_homework(subject: str, chapter: str) -> None:\n    print(f\"Ok, I'll complete the {chapter} chapter of your {subject} work.\")\n\n\nget_friend_to_do_your_homework(\"math\", \"functions\")"
+            },
+            {
+                "name": "The Answer",
+                "topic": "handling return values",
+                "requirements": [
+                    "calling a function"
+                ],
+                "description": "What is The Answer to the Ultimate Question of Life, The Universe, and Everything? Apparently, it's the number `42`. The starter code has defined a function `get_answer_to_everything` which returns the number `42`. Your job is to call the function and store it in a variable called `the_answer`. Then, print out `the_answer` in a message.",
+                "starter_code": "def get_answer_to_everything() -> int:\n    return 42\n\n\n# your code down here (outside of the function)",
+                "tests": "",
+                "solution": "def get_answer_to_everything() -> int:\n    return 42\n\n\nanswer = get_answer_to_everything()\nprint(f\"The answer to life is {answer}.\")"
             }
         ]
     },
