@@ -167,6 +167,41 @@ Hello, goodbye
     hello_goodbye()
     hello_goodbye()
 
+Opening arguments
+*****************
+.. code-block:: python
+    :linenos:
+
+    def give_argument(argument: str) -> None:
+        print("The defense will commence with their opening arguments:")
+        print(f"Your Honour, {argument}.")
+    
+    
+    give_argument("my client is innocent")
+
+Do my homework
+**************
+.. code-block:: python
+    :linenos:
+
+    def get_friend_to_do_your_homework(subject: str, chapter: str) -> None:
+        print(f"Ok, I'll complete the {chapter} chapter of your {subject} work.")
+    
+    
+    get_friend_to_do_your_homework("math", "functions")
+
+The Answer
+**********
+.. code-block:: python
+    :linenos:
+
+    def get_answer_to_everything() -> int:
+        return 42
+    
+    
+    answer = get_answer_to_everything()
+    print(f"The answer to life is {answer}.")
+
 
 
 Codingbat
