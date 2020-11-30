@@ -119,6 +119,17 @@
                 "starter_code": "def hello_goodbye():\n    print(\"Hello,\")\n    print(\"goodbye.\")\n\n\nhello_goodbye()",
                 "tests": "from exercise.fixtures import captured_output\n\n\ndef test_hello_goodbye(captured_output):\n    assert captured_output() == (\"Hello,\\ngoodbye.\\n\" * 4).strip()",
                 "solution": "def hello_goodbye():\n    print(\"Hello,\")\n    print(\"goodbye.\")\n\n\nhello_goodbye()\nhello_goodbye()\nhello_goodbye()\nhello_goodbye()"
+            },
+            {
+                "name": "Opening arguments",
+                "topic": "passing arguments",
+                "requirements": [
+                    "calling a function"
+                ],
+                "description": "The starter code defines a function that requires an argument to be passed to it when you call it. In programming, this information is literally called an **argument**, rergardless of what you are passing to the function.\n\nIf you run the code as-is, the error will tell you are missing one required positional argument. Be a good defense lawyer and pass the function an argument, the string `\"my client is innocent\"`.\n\nThe function should run and output the following:\n\n```\nThe defense will commence with their opening arguments:\nYour Honour, my client is innocent.\n```\n\nYou should experiment by passing the function different arguments and taking note how the output changes.",
+                "starter_code": "def give_argument(argument: str) -> None:\n    print(\"The defense will commence with their opening arguments:\")\n    print(f\"Your Honour, {argument}.\")\n\n\ngive_argument()",
+                "tests": "from exercise.fixtures import captured_output\n\n\ndef test_give_argument(captured_output):\n    assert captured_output().endswith(\"Your Honour, my client is innocent.\")",
+                "solution": "def give_argument(argument: str) -> None:\n    print(\"The defense will commence with their opening arguments:\")\n    print(f\"Your Honour, {argument}.\")\n\n\ngive_argument(\"my client is innocent\")"
             }
         ]
     },
