@@ -109,12 +109,19 @@ concepts = {
             "defining a function",
             "returning a value",
             "passing arguments"
+        ],
+        "docstrings": [
+            "defining parameters",
+            "defining a function",
+            "returning a value"
         ]
     },
     "testing": {},
     "dictionaries": {},
     "file r/w": {},
-    "classes": {},
+    "classes": {
+        "docstrings (classes)": []
+    },
     "algorithms": {}
 }
 

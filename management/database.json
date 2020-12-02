@@ -183,6 +183,48 @@
                 "starter_code": "# building A\nprint(\"-----------\")\nprint(\"**********|\")\nprint(\"**********|\")\nprint(\"-----------\")\n\n# building C\nprint(\"--------\")\nprint(\"' '' ''|\")\nprint(\"--------\")\n\n# building B\nprint(\"###############\")\nprint(\"###############\")\n\n# building A\nprint(\"-----------\")\nprint(\"**********|\")\nprint(\"**********|\")\nprint(\"-----------\")\n\n# building C\nprint(\"--------\")\nprint(\"' '' ''|\")\nprint(\"--------\")\n\n# building C\nprint(\"--------\")\nprint(\"' '' ''|\")\nprint(\"--------\")",
                 "tests": "from exercise.fixtures import captured_output, source_code_matches\n\n\ndef test_output(captured_output):\n    assert captured_output() == \"\"\"-----------\n**********|\n**********|\n-----------\n--------\n' '' ''|\n--------\n###############\n###############\n-----------\n**********|\n**********|\n-----------\n--------\n' '' ''|\n--------\n--------\n' '' ''|\n--------\"\"\"\n\ndef test_code_contains_functions():\n    assert source_code_matches(\"def building_a\")\n    assert source_code_matches(\"def building_b\")\n    assert source_code_matches(\"def building_c\")",
                 "solution": "def building_a():\n    print(\"-----------\")\n    print(\"**********|\")\n    print(\"**********|\")\n    print(\"-----------\")\n\n\ndef building_c():\n    print(\"--------\")\n    print(\"' '' ''|\")\n    print(\"--------\")\n\n\ndef building_b():\n    print(\"###############\")\n    print(\"###############\")\n    \n\nbuilding_a()\nbuilding_c()\nbuilding_b()\nbuilding_a()\nbuilding_c()\nbuilding_c()"
+            },
+            {
+                "name": "The Number N",
+                "topic": "returning a value",
+                "requirements": [
+                    "handling return values"
+                ],
+                "description": "The starter code makes several calls to two functions that are not returning the proper values. `the_sum` should be `5` and `the_product` should be `6`. Modify the functions to return `2` and `3` respectively.",
+                "starter_code": "def the_number_two():\n    return 0\n\n\ndef the_number_three():\n    return 0\n\n\nthe_sum = the_number_two() + the_number_three()\nthe_product = the_number_two() * the_number_three()\n\nprint(the_sum)  # should be 5\nprint(the_product)  # should be 6",
+                "tests": "from main import the_number_two, the_number_three\n\n\ndef test_the_number_two():\n    assert the_number_two() == 2\n\n\ndef test_the_number_three():\n    assert the_number_three() == 3",
+                "solution": "def the_number_two():\n    return 2\n\n\ndef the_number_three():\n    return 3\n\n\n\nthe_sum = the_number_two() + the_number_three()\nthe_product = the_number_two() * the_number_three()\n\nprint(the_sum)  # should be 5\nprint(the_product)  # should be 6"
+            },
+            {
+                "name": "Mystery Numbers",
+                "topic": "returning a value",
+                "requirements": [
+                    "handling return values"
+                ],
+                "description": "The starter code has two incomplete functions. They have the keyword `pass` as a place-holder. Remove `pass` and return the numbers they should return to solve the math riddle in the starter code. The tests are as follows:\n\n```\nassert mystery_number_a() + mystery_number_a() == 16\nassert mystery_number_a() * mystery_number_b() == 16\n```",
+                "starter_code": "def mystery_number_a():\n    pass\n\n\ndef mystery_number_b():\n    pass\n\n\nsixteen = mystery_number_a() + mystery_number_a()  # should be 16\nsixteen_again = mystery_number_a() * mystery_number_b()  # should be 16\n\nprint(sixteen)\nprint(sixteen_again)",
+                "tests": "from main import mystery_number_a, mystery_number_b\n\n\ndef test_mystery_number_a():\n    assert mystery_number_a() + mystery_number_a() == 16\n\n\ndef test_mystery_number_b():\n    assert mystery_number_a() * mystery_number_b() == 16",
+                "solution": "def mystery_number_a():\n    return 8\n\n\ndef mystery_number_b():\n    return 2"
+            },
+            {
+                "name": "Perimeter Parameter",
+                "topic": "defining parameters",
+                "requirements": [
+                    "passing arguments"
+                ],
+                "description": "The starter code is missing a parameter in the definition of the `side_length_from_perimeter` function. Notice if you run the code, it will give you a `TypeError`. \n\nPlease put, in its proper place, the perimeter parameter.",
+                "starter_code": "def side_length_from_perimeter() -> float:\n    \"\"\"Get the side length of a square by its perimeter.\n    \n    Args:\n        perimeter (float): The perimiter of the square.\n    \n    Returns:\n        The side length of the square.\n    \"\"\"\n    return perimeter / 4\n\n\nlength = side_length_from_perimeter(12)\nprint(length)  # should be 3",
+                "tests": "from main import side_length_from_perimeter\n\n\ndef test_side_length_from_perimeter():\n    assert side_length_from_perimeter(16) == 4\n    assert side_length_from_perimeter(12) == 3\n    assert side_length_from_perimeter(36) == 9",
+                "solution": "def side_length_from_perimeter(perimeter: float) -> float:\n    \"\"\"Get the side length of a square by its perimeter.\n    \n    Args:\n        perimeter (float): The perimiter of the square.\n    \n    Returns:\n        The side length of the square.\n    \"\"\"\n    return perimeter / 4"
+            },
+            {
+                "name": "String Times",
+                "topic": "defining parameters",
+                "requirements": [],
+                "description": "If you ran the function defined in the starter code, you would get a `NameError` for both the `n` and `string` variables used in the function. The body of the function is good as it is. What is missing from this function definition is its parameters. The question is \"what does this function require to do its job?\" Then the next question is \"how should we name those parameters?\"",
+                "starter_code": "def string_times() -> str:\n    \"\"\"Return a string repeated n times.\"\"\"\n    new_string = \"\"\n    for i in range(n):\n        new_string += string\n    return new_string",
+                "tests": "from main import string_times\n\n\ndef test_string_times():\n    assert string_times(\"hello\", 2) == \"hellohello\"\n    assert string_times(\"x\", 5) == \"xxxxx\"",
+                "solution": "def string_times(string: str, n: int) -> str:\n    \"\"\"Get a string repeated n times.\"\"\"\n    new_string = \"\"\n    for i in range(n):\n        new_string += string\n    return new_string"
             }
         ]
     },
