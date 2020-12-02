@@ -202,6 +202,58 @@ The Answer
     answer = get_answer_to_everything()
     print(f"The answer to life is {answer}.")
 
+Print Banner
+************
+.. code-block:: python
+    :linenos:
+
+    def print_banner():
+        print("  _    _      _ _         __          __        _     _ _ ")
+        print(" | |  | |    | | |        \ \        / /       | |   | | |")
+        print(" | |__| | ___| | | ___     \ \  /\  / /__  _ __| | __| | |")
+        print(" |  __  |/ _ \ | |/ _ \     \ \/  \/ / _ \| '__| |/ _` | |")
+        print(" | |  | |  __/ | | (_) |     \  /\  / (_) | |  | | (_| |_|")
+        print(" |_|  |_|\___|_|_|\___( )     \/  \/ \___/|_|  |_|\__,_(_)")
+        print("                      |/                                  ")
+
+FITB Average
+************
+.. code-block:: python
+    :linenos:
+
+    def calc_average(numbers):
+        return sum(numbers) / len(numbers)
+
+Skyline
+*******
+.. code-block:: python
+    :linenos:
+
+    def building_a():
+        print("-----------")
+        print("**********|")
+        print("**********|")
+        print("-----------")
+    
+    
+    def building_c():
+        print("--------")
+        print("' '' ''|")
+        print("--------")
+    
+    
+    def building_b():
+        print("###############")
+        print("###############")
+        
+    
+    building_a()
+    building_c()
+    building_b()
+    building_a()
+    building_c()
+    building_c()
+
 
 
 Codingbat

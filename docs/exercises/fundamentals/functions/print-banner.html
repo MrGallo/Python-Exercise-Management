@@ -7,7 +7,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>The Answer &mdash; Python Exercises  documentation</title>
+  <title>Print Banner &mdash; Python Exercises  documentation</title>
   
 
   
@@ -39,8 +39,8 @@
     
     <link rel="index" title="Index" href="../../../genindex.html" />
     <link rel="search" title="Search" href="../../../search.html" />
-    <link rel="next" title="Print Banner" href="print-banner.html" />
-    <link rel="prev" title="Do my homework" href="do-my-homework.html" /> 
+    <link rel="next" title="FITB Average" href="fitb-average.html" />
+    <link rel="prev" title="The Answer" href="the-answer.html" /> 
 </head>
 
 <body class="wy-body-for-nav">
@@ -93,12 +93,12 @@
 <li class="toctree-l3"><a class="reference internal" href="hello-goodbye.html">Hello, goodbye</a></li>
 <li class="toctree-l3"><a class="reference internal" href="opening-arguments.html">opening-arguments (2)</a></li>
 <li class="toctree-l3"><a class="reference internal" href="do-my-homework.html">do-my-homework (2)</a></li>
-<li class="toctree-l3 current"><a class="current reference internal" href="#">the-answer (2)</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="the-answer.html">the-answer (2)</a></li>
+<li class="toctree-l3 current"><a class="current reference internal" href="#">print-banner (2)</a><ul>
 <li class="toctree-l4"><a class="reference internal" href="#starter-code">Starter Code</a></li>
 <li class="toctree-l4"><a class="reference internal" href="#tests">Tests</a></li>
 </ul>
 </li>
-<li class="toctree-l3"><a class="reference internal" href="print-banner.html">print-banner (2)</a></li>
 <li class="toctree-l3"><a class="reference internal" href="fitb-average.html">FITB Average</a></li>
 <li class="toctree-l3"><a class="reference internal" href="skyline.html">skyline (2)</a></li>
 </ul>
@@ -158,13 +158,13 @@
         
           <li><a href="index.html">Functions</a> &raquo;</li>
         
-      <li>The Answer</li>
+      <li>Print Banner</li>
     
     
       <li class="wy-breadcrumbs-aside">
         
             
-            <a href="../../../_sources/exercises/fundamentals/functions/the-answer.md.txt" rel="nofollow"> View page source</a>
+            <a href="../../../_sources/exercises/fundamentals/functions/print-banner.md.txt" rel="nofollow"> View page source</a>
           
         
       </li>
@@ -177,28 +177,51 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
             
-  <div class="section" id="the-answer">
-<h1>The Answer<a class="headerlink" href="#the-answer" title="Permalink to this headline">¶</a></h1>
+  <div class="section" id="print-banner">
+<h1>Print Banner<a class="headerlink" href="#print-banner" title="Permalink to this headline">¶</a></h1>
 <p><strong>Topic:</strong></p>
-<p><a class="reference external" href="https://mrgallo.github.io/fundamentals/functions.html#handling-return-values" title="(in Fundamentals)"><span>Handling return values</span></a></p>
+<p><a class="reference external" href="https://mrgallo.github.io/fundamentals/functions.html#defining-a-function" title="(in Fundamentals)"><span>Defining a Function</span></a></p>
 <p><strong>Requirements:</strong></p>
 <ul class="simple">
 <li><p><a class="reference external" href="https://mrgallo.github.io/fundamentals/functions.html#calling-a-function" title="(in Fundamentals)"><span>Calling a function</span></a></p></li>
 </ul>
-<p>What is The Answer to the Ultimate Question of Life, The Universe, and Everything? Apparently, it’s the number <code class="docutils literal notranslate"><span class="pre">42</span></code>. The starter code has defined a function <code class="docutils literal notranslate"><span class="pre">get_answer_to_everything</span></code> which returns the number <code class="docutils literal notranslate"><span class="pre">42</span></code>. Your job is to call the function and store it in a variable called <code class="docutils literal notranslate"><span class="pre">the_answer</span></code>. Then, print out <code class="docutils literal notranslate"><span class="pre">the_answer</span></code> in a message.</p>
+<p>The starter text will print out a some ASCII art. Select all the lines and press tab to indent them all once. Right on top of the indented print statements, define a function called <code class="docutils literal notranslate"><span class="pre">print_banner</span></code>. The definition line should be <code class="docutils literal notranslate"><span class="pre">def</span> <span class="pre">print_banner():</span></code></p>
+<p>To ensure you did it correctly, call the function and run it.</p>
+<p>Check out the <a class="reference external" href="http://patorjk.com/software/taag">ASCII art generator</a>.</p>
 <div class="section" id="starter-code">
 <h2>Starter Code<a class="headerlink" href="#starter-code" title="Permalink to this headline">¶</a></h2>
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">get_answer_to_everything</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="nb">int</span><span class="p">:</span>
-    <span class="k">return</span> <span class="mi">42</span>
-
-
-<span class="c1"># your code down here (outside of the function)</span>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="s2">&quot;  _    _      _ _         __          __        _     _ _ &quot;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot; | |  | |    | | |        \ \        / /       | |   | | |&quot;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot; | |__| | ___| | | ___     \ \  /\  / /__  _ __| | __| | |&quot;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot; |  __  |/ _ \ | |/ _ \     \ \/  \/ / _ \| &#39;__| |/ _` | |&quot;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot; | |  | |  __/ | | (_) |     \  /\  / (_) | |  | | (_| |_|&quot;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot; |_|  |_|\___|_|_|\___( )     \/  \/ \___/|_|  |_|\__,_(_)&quot;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;                      |/                                  &quot;</span><span class="p">)</span>
 </pre></div>
 </div>
 </div>
 <div class="section" id="tests">
 <h2>Tests<a class="headerlink" href="#tests" title="Permalink to this headline">¶</a></h2>
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">exercise.fixtures</span> <span class="kn">import</span> <span class="n">captured_output</span><span class="p">,</span> <span class="n">source_code_matches</span>
+
+<span class="kn">from</span> <span class="nn">main</span> <span class="kn">import</span> <span class="n">print_banner</span>
+
+
+<span class="k">def</span> <span class="nf">test_function_defined_properly</span><span class="p">():</span>
+    <span class="k">assert</span> <span class="nb">len</span><span class="p">(</span><span class="n">source_code_matches</span><span class="p">(</span><span class="sa">r</span><span class="s1">&#39;def\s+print_banner\s*\(\s*\)\s*:\s*&#39;</span><span class="p">))</span> <span class="o">==</span> <span class="mi">1</span>
+
+
+<span class="k">def</span> <span class="nf">test_print_banner</span><span class="p">(</span><span class="n">capsys</span><span class="p">):</span>
+    <span class="n">print_banner</span><span class="p">()</span>
+    <span class="n">captured</span> <span class="o">=</span> <span class="n">capsys</span><span class="o">.</span><span class="n">readouterr</span><span class="p">()</span>
+    <span class="k">assert</span> <span class="n">captured</span><span class="o">.</span><span class="n">out</span> <span class="o">==</span> <span class="s2">&quot;&quot;&quot;  _    _      _ _         __          __        _     _ _ </span>
+<span class="s2"> | |  | |    | | |        \ \        / /       | |   | | |</span>
+<span class="s2"> | |__| | ___| | | ___     \ \  /\  / /__  _ __| | __| | |</span>
+<span class="s2"> |  __  |/ _ \ | |/ _ \     \ \/  \/ / _ \| &#39;__| |/ _` | |</span>
+<span class="s2"> | |  | |  __/ | | (_) |     \  /\  / (_) | |  | | (_| |_|</span>
+<span class="s2"> |_|  |_|\___|_|_|\___( )     \/  \/ \___/|_|  |_|\__,_(_)</span>
+<span class="s2">                      |/                                  </span>
+<span class="s2">&quot;&quot;&quot;</span>
 </pre></div>
 </div>
 </div>
@@ -212,10 +235,10 @@
   
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
       
-        <a href="print-banner.html" class="btn btn-neutral float-right" title="Print Banner" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+        <a href="fitb-average.html" class="btn btn-neutral float-right" title="FITB Average" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
       
       
-        <a href="do-my-homework.html" class="btn btn-neutral float-left" title="Do my homework" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+        <a href="the-answer.html" class="btn btn-neutral float-left" title="The Answer" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
       
     </div>
   

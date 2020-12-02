@@ -7,7 +7,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>The Answer &mdash; Python Exercises  documentation</title>
+  <title>FITB Average &mdash; Python Exercises  documentation</title>
   
 
   
@@ -39,8 +39,8 @@
     
     <link rel="index" title="Index" href="../../../genindex.html" />
     <link rel="search" title="Search" href="../../../search.html" />
-    <link rel="next" title="Print Banner" href="print-banner.html" />
-    <link rel="prev" title="Do my homework" href="do-my-homework.html" /> 
+    <link rel="next" title="Skyline" href="skyline.html" />
+    <link rel="prev" title="Print Banner" href="print-banner.html" /> 
 </head>
 
 <body class="wy-body-for-nav">
@@ -93,13 +93,13 @@
 <li class="toctree-l3"><a class="reference internal" href="hello-goodbye.html">Hello, goodbye</a></li>
 <li class="toctree-l3"><a class="reference internal" href="opening-arguments.html">opening-arguments (2)</a></li>
 <li class="toctree-l3"><a class="reference internal" href="do-my-homework.html">do-my-homework (2)</a></li>
-<li class="toctree-l3 current"><a class="current reference internal" href="#">the-answer (2)</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="the-answer.html">the-answer (2)</a></li>
+<li class="toctree-l3"><a class="reference internal" href="print-banner.html">print-banner (2)</a></li>
+<li class="toctree-l3 current"><a class="current reference internal" href="#">FITB Average</a><ul>
 <li class="toctree-l4"><a class="reference internal" href="#starter-code">Starter Code</a></li>
 <li class="toctree-l4"><a class="reference internal" href="#tests">Tests</a></li>
 </ul>
 </li>
-<li class="toctree-l3"><a class="reference internal" href="print-banner.html">print-banner (2)</a></li>
-<li class="toctree-l3"><a class="reference internal" href="fitb-average.html">FITB Average</a></li>
 <li class="toctree-l3"><a class="reference internal" href="skyline.html">skyline (2)</a></li>
 </ul>
 </li>
@@ -158,13 +158,13 @@
         
           <li><a href="index.html">Functions</a> &raquo;</li>
         
-      <li>The Answer</li>
+      <li>FITB Average</li>
     
     
       <li class="wy-breadcrumbs-aside">
         
             
-            <a href="../../../_sources/exercises/fundamentals/functions/the-answer.md.txt" rel="nofollow"> View page source</a>
+            <a href="../../../_sources/exercises/fundamentals/functions/fitb-average.md.txt" rel="nofollow"> View page source</a>
           
         
       </li>
@@ -177,28 +177,25 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
             
-  <div class="section" id="the-answer">
-<h1>The Answer<a class="headerlink" href="#the-answer" title="Permalink to this headline">¶</a></h1>
+  <div class="section" id="fitb-average">
+<h1>FITB Average<a class="headerlink" href="#fitb-average" title="Permalink to this headline">¶</a></h1>
 <p><strong>Topic:</strong></p>
-<p><a class="reference external" href="https://mrgallo.github.io/fundamentals/functions.html#handling-return-values" title="(in Fundamentals)"><span>Handling return values</span></a></p>
-<p><strong>Requirements:</strong></p>
-<ul class="simple">
-<li><p><a class="reference external" href="https://mrgallo.github.io/fundamentals/functions.html#calling-a-function" title="(in Fundamentals)"><span>Calling a function</span></a></p></li>
-</ul>
-<p>What is The Answer to the Ultimate Question of Life, The Universe, and Everything? Apparently, it’s the number <code class="docutils literal notranslate"><span class="pre">42</span></code>. The starter code has defined a function <code class="docutils literal notranslate"><span class="pre">get_answer_to_everything</span></code> which returns the number <code class="docutils literal notranslate"><span class="pre">42</span></code>. Your job is to call the function and store it in a variable called <code class="docutils literal notranslate"><span class="pre">the_answer</span></code>. Then, print out <code class="docutils literal notranslate"><span class="pre">the_answer</span></code> in a message.</p>
+<p><a class="reference external" href="https://mrgallo.github.io/fundamentals/functions.html#defining-a-function" title="(in Fundamentals)"><span>Defining a Function</span></a></p>
+<p>Whoever wrote the starter code could not think of a good name to call their function. We need to fix that. Give the function a name of <code class="docutils literal notranslate"><span class="pre">calc_average</span></code>.</p>
 <div class="section" id="starter-code">
 <h2>Starter Code<a class="headerlink" href="#starter-code" title="Permalink to this headline">¶</a></h2>
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">get_answer_to_everything</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="nb">int</span><span class="p">:</span>
-    <span class="k">return</span> <span class="mi">42</span>
-
-
-<span class="c1"># your code down here (outside of the function)</span>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">_____</span><span class="p">(</span><span class="n">numbers</span><span class="p">):</span>
+    <span class="k">return</span> <span class="nb">sum</span><span class="p">(</span><span class="n">numbers</span><span class="p">)</span> <span class="o">/</span> <span class="nb">len</span><span class="p">(</span><span class="n">numbers</span><span class="p">)</span>
 </pre></div>
 </div>
 </div>
 <div class="section" id="tests">
 <h2>Tests<a class="headerlink" href="#tests" title="Permalink to this headline">¶</a></h2>
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">main</span> <span class="kn">import</span> <span class="n">calc_average</span>
+
+
+<span class="k">def</span> <span class="nf">test_calc_average</span><span class="p">():</span>
+    <span class="k">assert</span> <span class="n">calc_average</span><span class="p">([</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">])</span> <span class="o">==</span> <span class="mi">2</span>
 </pre></div>
 </div>
 </div>
@@ -212,10 +209,10 @@
   
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
       
-        <a href="print-banner.html" class="btn btn-neutral float-right" title="Print Banner" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+        <a href="skyline.html" class="btn btn-neutral float-right" title="Skyline" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
       
       
-        <a href="do-my-homework.html" class="btn btn-neutral float-left" title="Do my homework" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+        <a href="print-banner.html" class="btn btn-neutral float-left" title="Print Banner" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
       
     </div>
   
