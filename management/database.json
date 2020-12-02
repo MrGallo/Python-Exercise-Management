@@ -152,6 +152,37 @@
                 "starter_code": "def get_answer_to_everything() -> int:\n    return 42\n\n\n# your code down here (outside of the function)",
                 "tests": "",
                 "solution": "def get_answer_to_everything() -> int:\n    return 42\n\n\nanswer = get_answer_to_everything()\nprint(f\"The answer to life is {answer}.\")"
+            },
+            {
+                "name": "Print Banner",
+                "topic": "defining a function",
+                "requirements": [
+                    "calling a function"
+                ],
+                "description": "The starter text will print out a some ASCII art. Select all the lines and press tab to indent them all once. Right on top of the indented print statements, define a function called `print_banner`. The definition line should be `def print_banner():`\n\nTo ensure you did it correctly, call the function and run it.\n\nCheck out the [ASCII art generator](http://patorjk.com/software/taag).",
+                "starter_code": "print(\"  _    _      _ _         __          __        _     _ _ \")\nprint(\" | |  | |    | | |        \\ \\        / /       | |   | | |\")\nprint(\" | |__| | ___| | | ___     \\ \\  /\\  / /__  _ __| | __| | |\")\nprint(\" |  __  |/ _ \\ | |/ _ \\     \\ \\/  \\/ / _ \\| '__| |/ _` | |\")\nprint(\" | |  | |  __/ | | (_) |     \\  /\\  / (_) | |  | | (_| |_|\")\nprint(\" |_|  |_|\\___|_|_|\\___( )     \\/  \\/ \\___/|_|  |_|\\__,_(_)\")\nprint(\"                      |/                                  \")",
+                "tests": "from exercise.fixtures import captured_output, source_code_matches\n\nfrom main import print_banner\n\n\ndef test_function_defined_properly():\n    assert len(source_code_matches(r'def\\s+print_banner\\s*\\(\\s*\\)\\s*:\\s*')) == 1\n\n\ndef test_print_banner(capsys):\n    print_banner()\n    captured = capsys.readouterr()\n    assert captured.out == \"\"\"  _    _      _ _         __          __        _     _ _ \n | |  | |    | | |        \\ \\        / /       | |   | | |\n | |__| | ___| | | ___     \\ \\  /\\  / /__  _ __| | __| | |\n |  __  |/ _ \\ | |/ _ \\     \\ \\/  \\/ / _ \\| '__| |/ _` | |\n | |  | |  __/ | | (_) |     \\  /\\  / (_) | |  | | (_| |_|\n |_|  |_|\\___|_|_|\\___( )     \\/  \\/ \\___/|_|  |_|\\__,_(_)\n                      |/                                  \n\"\"\"",
+                "solution": "def print_banner():\n    print(\"  _    _      _ _         __          __        _     _ _ \")\n    print(\" | |  | |    | | |        \\ \\        / /       | |   | | |\")\n    print(\" | |__| | ___| | | ___     \\ \\  /\\  / /__  _ __| | __| | |\")\n    print(\" |  __  |/ _ \\ | |/ _ \\     \\ \\/  \\/ / _ \\| '__| |/ _` | |\")\n    print(\" | |  | |  __/ | | (_) |     \\  /\\  / (_) | |  | | (_| |_|\")\n    print(\" |_|  |_|\\___|_|_|\\___( )     \\/  \\/ \\___/|_|  |_|\\__,_(_)\")\n    print(\"                      |/                                  \")"
+            },
+            {
+                "name": "FITB Average",
+                "topic": "defining a function",
+                "requirements": [],
+                "description": "Whoever wrote the starter code could not think of a good name to call their function. We need to fix that. Give the function a name of `calc_average`.",
+                "starter_code": "def _____(numbers):\n    return sum(numbers) / len(numbers)",
+                "tests": "from main import calc_average\n\n\ndef test_calc_average():\n    assert calc_average([1, 2, 3]) == 2",
+                "solution": "def calc_average(numbers):\n    return sum(numbers) / len(numbers)"
+            },
+            {
+                "name": "Skyline",
+                "topic": "defining a function",
+                "requirements": [
+                    "calling a function"
+                ],
+                "description": "The starter code has a sideways skyline of a city with ASCII art buildings. There are only three unique building types and some are repeated. This means we have a situation where each building can be converted into its own function. Create functions called `building_a`, `building_b` and `building_c`. Then call those functions in the order they originally appeared in the skyline (`ACBACC`).",
+                "starter_code": "# building A\nprint(\"-----------\")\nprint(\"**********|\")\nprint(\"**********|\")\nprint(\"-----------\")\n\n# building C\nprint(\"--------\")\nprint(\"' '' ''|\")\nprint(\"--------\")\n\n# building B\nprint(\"###############\")\nprint(\"###############\")\n\n# building A\nprint(\"-----------\")\nprint(\"**********|\")\nprint(\"**********|\")\nprint(\"-----------\")\n\n# building C\nprint(\"--------\")\nprint(\"' '' ''|\")\nprint(\"--------\")\n\n# building C\nprint(\"--------\")\nprint(\"' '' ''|\")\nprint(\"--------\")",
+                "tests": "from exercise.fixtures import captured_output, source_code_matches\n\n\ndef test_output(captured_output):\n    assert captured_output() == \"\"\"-----------\n**********|\n**********|\n-----------\n--------\n' '' ''|\n--------\n###############\n###############\n-----------\n**********|\n**********|\n-----------\n--------\n' '' ''|\n--------\n--------\n' '' ''|\n--------\"\"\"\n\ndef test_code_contains_functions():\n    assert source_code_matches(\"def building_a\")\n    assert source_code_matches(\"def building_b\")\n    assert source_code_matches(\"def building_c\")",
+                "solution": "def building_a():\n    print(\"-----------\")\n    print(\"**********|\")\n    print(\"**********|\")\n    print(\"-----------\")\n\n\ndef building_c():\n    print(\"--------\")\n    print(\"' '' ''|\")\n    print(\"--------\")\n\n\ndef building_b():\n    print(\"###############\")\n    print(\"###############\")\n    \n\nbuilding_a()\nbuilding_c()\nbuilding_b()\nbuilding_a()\nbuilding_c()\nbuilding_c()"
             }
         ]
     },
