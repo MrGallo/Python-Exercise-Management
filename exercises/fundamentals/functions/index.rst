@@ -12,3 +12,7 @@ Functions
     print-banner (2) <print-banner>
     fitb-average
     skyline (2) <skyline>
+    the-number-n (3) <the-number-n>
+    mystery-numbers (3) <mystery-numbers>
+    perimeter-parameter (3) <perimeter-parameter>
+    string-times

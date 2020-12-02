@@ -254,6 +254,66 @@ Skyline
     building_c()
     building_c()
 
+The Number N
+************
+.. code-block:: python
+    :linenos:
+
+    def the_number_two():
+        return 2
+    
+    
+    def the_number_three():
+        return 3
+    
+    
+    
+    the_sum = the_number_two() + the_number_three()
+    the_product = the_number_two() * the_number_three()
+    
+    print(the_sum)  # should be 5
+    print(the_product)  # should be 6
+
+Mystery Numbers
+***************
+.. code-block:: python
+    :linenos:
+
+    def mystery_number_a():
+        return 8
+    
+    
+    def mystery_number_b():
+        return 2
+
+Perimeter Parameter
+*******************
+.. code-block:: python
+    :linenos:
+
+    def side_length_from_perimeter(perimeter: float) -> float:
+        """Get the side length of a square by its perimeter.
+        
+        Args:
+            perimeter (float): The perimiter of the square.
+        
+        Returns:
+            The side length of the square.
+        """
+        return perimeter / 4
+
+String Times
+************
+.. code-block:: python
+    :linenos:
+
+    def string_times(string: str, n: int) -> str:
+        """Get a string repeated n times."""
+        new_string = ""
+        for i in range(n):
+            new_string += string
+        return new_string
+
 
 
 Codingbat
