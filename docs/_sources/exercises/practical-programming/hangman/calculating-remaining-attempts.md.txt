@@ -15,6 +15,9 @@ Complete the starter code. Details about how the function works are in the docst
 
 ## Starter Code
 ```python
+from typing import List
+
+
 def calc_attempts_remaining(attempts_allowed: int, incorrect: List[str]) -> int:
     """Determine the number of guesses remaining.
 
