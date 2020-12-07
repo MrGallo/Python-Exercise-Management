@@ -11,7 +11,7 @@
 ```
 
 
-Complete the starter code. Details about how the function works are in the docstring. *Hint: Use `len(list)` to check how many items are in a list.
+Complete the starter code. Details about how the function works are in the docstring. *Hint: Use `len(list)` to check how many items are in a list.*
 
 ## Starter Code
 ```python
