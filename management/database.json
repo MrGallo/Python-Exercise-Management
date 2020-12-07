@@ -1,6 +1,7 @@
 {
     "series_list": [
         "Fundamentals",
+        "Practical Programming",
         "Codingbat",
         "Codingbat (Input/Output)"
     ],
@@ -7682,6 +7683,62 @@
                         "C"
                     ]
                 ]
+            }
+        ]
+    },
+    "Practical Programming": {
+        "chapter_list": [
+            "Hangman"
+        ],
+        "Hangman": [
+            {
+                "name": "Hangman Introduction",
+                "topic": "",
+                "requirements": [
+                    "storing data in variables",
+                    "format output text",
+                    "get input from the user",
+                    "convert to lower/upper case",
+                    "if, elif, else",
+                    "loop through a string (for)",
+                    "loop through a list (for)",
+                    "string building and filtering",
+                    "appending elements to a list",
+                    "check if a value is in a list",
+                    "defining a function",
+                    "returning a value",
+                    "defining parameters",
+                    "docstrings"
+                ],
+                "description": "The purpose of this *Hangman* chapter is to give the programmer some practice working with and creating functions. You will be working on all the functions required to complete this particular game of *Hangman*. At the end, you will put together all the functions you created into one file and complete the entire program. Please see the requirements section for the knowledge covered for the whole series.\n\nOur first task is to look over the `main` function for *Hangman* (shown below) and make note of what custom functions we will be responsible for creating. The task is complete when you print out the names of each custom function in the order they appear in the `main` function. One function name per line. Don't include the `print` function in your list, you will not be creating that. Also, you can leave out the parentheses, so just print out `get_random_word`, for example.\n\n```python\ndef main():\n    ATTEMPTS_ALLOWED = 6\n\n    secret_word = get_random_word(WORD_LIST)\n\n    correct_guesses = []\n    incorrect_guesses = []\n    lives = calc_attempts_remaining(ATTEMPTS_ALLOWED, incorrect_guesses)\n\n    result = None\n    while result is None:\n\n        # display lives left\n        print_lives_left(lives, ATTEMPTS_ALLOWED)\n\n        # display hidden word\n        blanked_word = reveal_letters(secret_word, correct_guesses)\n        print(blanked_word)\n        print()\n\n        # get guess\n        guess = get_guess(correct_guesses + incorrect_guesses)\n\n        if letter_is_in_word(guess, secret_word):\n            print(\"That is correct!\")\n            correct_guesses.append(guess)\n        else:\n            print(\"Incorect.\")\n            incorrect_guesses.append(guess)\n        \n        lives = calc_attempts_remaining(ATTEMPTS_ALLOWED, incorrect_guesses)\n        \n        if all_letters_present_in_list(secret_word, correct_guesses):\n            result = \"win\"\n        elif lives <= 0:\n            result = \"lose\"\n\n    print(word_reveal_message(secret_word))\n    print(outcome_message(result))\n```",
+                "starter_code": "",
+                "tests": "def test_contains_function_names(capsys):\n    names = \"\"\"get_random_word\ncalc_attempts_remaining\nprint_lives_left\nreveal_letters\nget_guess\nletter_is_in_word\ncalc_attempts_remaining\nall_letters_present_in_list\nword_reveal_message\noutcome_message\"\"\".split(\"\\n\")\n\n    import main\n    captured = capsys.readouterr()\n    for name in names:\n        assert name in captured.out",
+                "solution": "print(\"get_random_word\")\nprint(\"calc_attempts_remaining\")\nprint(\"print_lives_left\")\nprint(\"reveal_letters\")\nprint(\"get_guess\")\nprint(\"letter_is_in_word\")\nprint(\"calc_attempts_remaining\")\nprint(\"all_letters_present_in_list\")\nprint(\"word_reveal_message\")\nprint(\"outcome_message\")"
+            },
+            {
+                "name": "Choosing the secret word",
+                "topic": "",
+                "requirements": [
+                    "accessing list elements",
+                    "returning a value"
+                ],
+                "description": "In the `main` function we have:\n\n```python\nsecret_word = get_random_word(WORD_LIST)\n```\n\nWhen we start the program, we need the computer to select a random word and save it as `secret_word`. Take note that this function requires a list of words be given to it so it can pick one at random. The function is supposed to return one of those words. Complete the function in the starter code. *Hint: use `random.choice` or `random.randint`.*",
+                "starter_code": "from typing import List\n\n\ndef get_random_word(word_list: List[str]) -> str:\n    \"\"\"Gets a random word.\n    \n    Args: \n        word_list: the list from which to get the word.\n    \n    Returns:\n        A single word.\n    \"\"\"\n    pass",
+                "tests": "from main import get_random_word\n\n\ndef test_get_random_word():\n    choices = list(\"abcdefg\")\n    chosen = set()\n    for _ in range(100):\n        chosen.add(get_random_word(choices))\n    assert chosen == set(choices)",
+                "solution": "from typing import List\n\nimport random\n\n\ndef get_random_word(word_list: List[str]) -> str:\n    \"\"\"Gets a random word.\n    \n    Args: \n        word_list: the list from which to get the word.\n    \n    Returns:\n        A single word.\n    \"\"\"\n    return random.choice(word_list)"
+            },
+            {
+                "name": "Calculating remaining attempts",
+                "topic": "",
+                "requirements": [
+                    "mathematical operations",
+                    "returning a value",
+                    "docstrings"
+                ],
+                "description": "Complete the starter code. Details about how the function works are in the docstring. *Hint: Use `len(list)` to check how many items are in a list.",
+                "starter_code": "def calc_attempts_remaining(attempts_allowed: int, incorrect: List[str]) -> int:\n    \"\"\"Determine the number of guesses remaining.\n\n    Based on the initial number of allowed attempts and the number\n    of incorrect guesses.\n    \n    Args:\n        attempts_allowed: The number of total allowed guesses.\n        incorrect: A list containing all the incorrect guesses.\n    \n    Returns:\n        How many remaining guesses the player has.\n    \"\"\"\n    pass",
+                "tests": "from main import calc_attempts_remaining\n\n\ndef test_calc_attempts_remaining():\n    assert calc_attempts_remaining(5, []) == 5\n    assert calc_attempts_remaining(5, ['a']) == 4\n    assert calc_attempts_remaining(5, list('12345')) == 0",
+                "solution": "from typing import List\n\n\ndef calc_attempts_remaining(attempts_allowed: int, incorrect: List[str]) -> int:\n    \"\"\"Determine the number of guesses remaining.\n\n    Based on the initial number of allowed attempts and the number\n    of incorrect guesses.\n    \n    Args:\n        attempts_allowed: The number of total allowed guesses.\n        incorrect: A list containing all the incorrect guesses.\n    \n    Returns:\n        How many remaining guesses the player has.\n    \"\"\"\n    return attempts_allowed - len(incorrect)"
             }
         ]
     }
