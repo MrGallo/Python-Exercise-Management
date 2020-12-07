@@ -6,13 +6,13 @@ Functions
 
     execute-order-66
     hello-goodbye
-    opening-arguments (2) <opening-arguments>
-    do-my-homework (2) <do-my-homework>
-    the-answer (2) <the-answer>
-    print-banner (2) <print-banner>
+    Opening arguments (2) <opening-arguments>
+    Do my homework (2) <do-my-homework>
+    The Answer (2) <the-answer>
+    Print Banner (2) <print-banner>
     fitb-average
-    skyline (2) <skyline>
-    the-number-n (3) <the-number-n>
-    mystery-numbers (3) <mystery-numbers>
-    perimeter-parameter (3) <perimeter-parameter>
+    Skyline (2) <skyline>
+    The Number N (3) <the-number-n>
+    Mystery Numbers (3) <mystery-numbers>
+    Perimeter Parameter (3) <perimeter-parameter>
     string-times

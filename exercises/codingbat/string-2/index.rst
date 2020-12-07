@@ -4,20 +4,20 @@ String-2
 .. toctree::
     :maxdepth: 1
 
-    double-char (15) <double-char>
-    count-hi (11) <count-hi>
-    cat-dog (14) <cat-dog>
-    count-code (13) <count-code>
-    end-other (10) <end-other>
-    xyz-there (12) <xyz-there>
-    bob-there (11) <bob-there>
-    xy-balance (12) <xy-balance>
-    mix-string (16) <mix-string>
-    repeat-end (16) <repeat-end>
-    repeat-front (16) <repeat-front>
-    repeat-separator (15) <repeat-separator>
-    prefix-again (13) <prefix-again>
-    xyz-middle (10) <xyz-middle>
+    double_char (15) <double-char>
+    count_hi (11) <count-hi>
+    cat_dog (14) <cat-dog>
+    count_code (13) <count-code>
+    end_other (10) <end-other>
+    xyz_there (12) <xyz-there>
+    bob_there (11) <bob-there>
+    xy_balance (12) <xy-balance>
+    mix_string (16) <mix-string>
+    repeat_end (16) <repeat-end>
+    repeat_front (16) <repeat-front>
+    repeat_separator (15) <repeat-separator>
+    prefix_again (13) <prefix-again>
+    xyz_middle (10) <xyz-middle>
     get-sandwich
     same-star-char
     one-two
