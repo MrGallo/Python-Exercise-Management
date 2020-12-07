@@ -5,6 +5,7 @@ Python Exercises
     :maxdepth: 2
 
     exercises/fundamentals/index
+    exercises/practical-programming/index
     exercises/codingbat/index
     exercises/codingbat-input-output/index
 

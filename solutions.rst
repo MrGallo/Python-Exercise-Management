@@ -316,6 +316,73 @@ String Times
 
 
 
+Practical Programming
+---------------------
+
+Hangman
+^^^^^^^
+Hangman Introduction
+********************
+.. code-block:: python
+    :linenos:
+
+    print("get_random_word")
+    print("calc_attempts_remaining")
+    print("print_lives_left")
+    print("reveal_letters")
+    print("get_guess")
+    print("letter_is_in_word")
+    print("calc_attempts_remaining")
+    print("all_letters_present_in_list")
+    print("word_reveal_message")
+    print("outcome_message")
+
+Choosing the secret word
+************************
+.. code-block:: python
+    :linenos:
+
+    from typing import List
+    
+    import random
+    
+    
+    def get_random_word(word_list: List[str]) -> str:
+        """Gets a random word.
+        
+        Args: 
+            word_list: the list from which to get the word.
+        
+        Returns:
+            A single word.
+        """
+        return random.choice(word_list)
+
+Calculating remaining attempts
+******************************
+.. code-block:: python
+    :linenos:
+
+    from typing import List
+    
+    
+    def calc_attempts_remaining(attempts_allowed: int, incorrect: List[str]) -> int:
+        """Determine the number of guesses remaining.
+    
+        Based on the initial number of allowed attempts and the number
+        of incorrect guesses.
+        
+        Args:
+            attempts_allowed: The number of total allowed guesses.
+            incorrect: A list containing all the incorrect guesses.
+        
+        Returns:
+            How many remaining guesses the player has.
+        """
+        return attempts_allowed - len(incorrect)
+
+
+
 Codingbat
 ---------
 
