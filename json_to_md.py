@@ -64,7 +64,7 @@ def write_index_rst(item_list: List[str],
             item_path = PurePosixPath(ref_path, slugify(item), "index")
 
         if difficulties and difficulties[i] > 1:
-            content += f"    {item_path} ({difficulties[i]}) <{item_path}>\n"
+            content += f"    {item} ({difficulties[i]}) <{item_path}>\n"
         else:
             content += f"    {item_path}\n"
     
