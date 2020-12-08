@@ -614,6 +614,9 @@ xyz_middle
 List-1
 ^^^^^^
 
+List-2
+^^^^^^
+
 
 Codingbat (Input/Output)
 ------------------------

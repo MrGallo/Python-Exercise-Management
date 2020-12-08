@@ -1,0 +1,109 @@
+# no_14
+
+
+
+
+
+Given an list of ints, return true if it contains no 1's or it contains no 4's.
+
+```
+no_14([1, 2, 3]) -> true
+no_14([1, 2, 3, 4]) -> false
+no_14([2, 3, 4]) -> true
+```
+
+This exercise was taken from [codingbat.com](https://codingbat.com/prob/p136648) and has been adapted for the Python language. There are many great programming exercises there, but the majority are created for Java.
+
+## Starter Code
+```python
+from typing import List
+
+
+def no_14(nums: List[int]) -> bool:
+    pass
+
+
+result = no_14([1, 2, 3])
+print(result)
+```
+
+## Tests
+```python
+from main import no_14
+
+
+def test_no_14_1():
+    assert no_14([1, 2, 3]) == True
+
+
+def test_no_14_2():
+    assert no_14([1, 2, 3, 4]) == False
+
+
+def test_no_14_3():
+    assert no_14([2, 3, 4]) == True
+
+
+def test_no_14_4():
+    assert no_14([1, 1, 4, 4]) == False
+
+
+def test_no_14_5():
+    assert no_14([2, 2, 4, 4]) == True
+
+
+def test_no_14_6():
+    assert no_14([2, 3, 4, 1]) == False
+
+
+def test_no_14_7():
+    assert no_14([2, 1, 1]) == True
+
+
+def test_no_14_8():
+    assert no_14([1, 4]) == False
+
+
+def test_no_14_9():
+    assert no_14([2]) == True
+
+
+def test_no_14_10():
+    assert no_14([2, 1]) == True
+
+
+def test_no_14_11():
+    assert no_14([1]) == True
+
+
+def test_no_14_12():
+    assert no_14([4]) == True
+
+
+def test_no_14_13():
+    assert no_14([]) == True
+
+
+def test_no_14_14():
+    assert no_14([1, 1, 1, 1]) == True
+
+
+def test_no_14_15():
+    assert no_14([9, 4, 4, 1]) == False
+
+
+def test_no_14_16():
+    assert no_14([4, 2, 3, 1]) == False
+
+
+def test_no_14_17():
+    assert no_14([4, 2, 3, 5]) == True
+
+
+def test_no_14_18():
+    assert no_14([4, 4, 2]) == True
+
+
+def test_no_14_19():
+    assert no_14([1, 4, 4]) == False
+```
