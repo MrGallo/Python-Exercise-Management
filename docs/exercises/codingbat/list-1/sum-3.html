@@ -1,0 +1,313 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>sum_3 &mdash; Python Exercises  documentation</title>
+  
+
+  
+  <link rel="stylesheet" href="../../../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../../../_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="../../../_static/copybutton.css" type="text/css" />
+
+  
+  
+  
+  
+
+  
+  <!--[if lt IE 9]>
+    <script src="../../../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../../../" src="../../../_static/documentation_options.js"></script>
+        <script src="../../../_static/jquery.js"></script>
+        <script src="../../../_static/underscore.js"></script>
+        <script src="../../../_static/doctools.js"></script>
+        <script src="../../../_static/language_data.js"></script>
+        <script src="../../../_static/clipboard.min.js"></script>
+        <script src="../../../_static/copybutton.js"></script>
+    
+    <script type="text/javascript" src="../../../_static/js/theme.js"></script>
+
+    
+    <link rel="index" title="Index" href="../../../genindex.html" />
+    <link rel="search" title="Search" href="../../../search.html" />
+    <link rel="next" title="rotate_left_3" href="rotate-left-3.html" />
+    <link rel="prev" title="common_end" href="common-end.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="../../../index.html" class="icon icon-home" alt="Documentation Home"> Python Exercises
+          
+
+          
+          </a>
+
+          
+            
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../../fundamentals/index.html">Fundamentals</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../practical-programming/index.html">Practical Programming</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="../index.html">Codingbat</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="../warmup-1/index.html">Warmup-1</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../string-1/index.html">String-1</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../string-2/index.html">String-2</a></li>
+<li class="toctree-l2 current"><a class="reference internal" href="index.html">List-1</a><ul class="current">
+<li class="toctree-l3"><a class="reference internal" href="first-last-6.html">first_last_6</a></li>
+<li class="toctree-l3"><a class="reference internal" href="same-first-last.html">same_first_last</a></li>
+<li class="toctree-l3"><a class="reference internal" href="make-pi.html">make_pi</a></li>
+<li class="toctree-l3"><a class="reference internal" href="common-end.html">common_end</a></li>
+<li class="toctree-l3 current"><a class="current reference internal" href="#">sum_3</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#starter-code">Starter Code</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#tests">Tests</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="rotate-left-3.html">rotate_left_3</a></li>
+<li class="toctree-l3"><a class="reference internal" href="reverse-3.html">reverse_3</a></li>
+<li class="toctree-l3"><a class="reference internal" href="max-end-3.html">max_end_3</a></li>
+<li class="toctree-l3"><a class="reference internal" href="sum-2.html">sum_2</a></li>
+<li class="toctree-l3"><a class="reference internal" href="middle-way.html">middle_way</a></li>
+<li class="toctree-l3"><a class="reference internal" href="make-ends.html">make_ends</a></li>
+<li class="toctree-l3"><a class="reference internal" href="has-23.html">has_23</a></li>
+<li class="toctree-l3"><a class="reference internal" href="no-23.html">no_23</a></li>
+<li class="toctree-l3"><a class="reference internal" href="make-last.html">make_last</a></li>
+<li class="toctree-l3"><a class="reference internal" href="double-23.html">double_23</a></li>
+<li class="toctree-l3"><a class="reference internal" href="fix-23.html">fix_23</a></li>
+<li class="toctree-l3"><a class="reference internal" href="start-1.html">start_1</a></li>
+<li class="toctree-l3"><a class="reference internal" href="bigger-two.html">bigger_two</a></li>
+<li class="toctree-l3"><a class="reference internal" href="make-middle.html">make_middle</a></li>
+<li class="toctree-l3"><a class="reference internal" href="plus-two.html">plus_two</a></li>
+<li class="toctree-l3"><a class="reference internal" href="swap-ends.html">swap_ends</a></li>
+<li class="toctree-l3"><a class="reference internal" href="mid-three.html">mid_three</a></li>
+<li class="toctree-l3"><a class="reference internal" href="max-triple.html">max_triple</a></li>
+<li class="toctree-l3"><a class="reference internal" href="front-piece.html">front_piece</a></li>
+<li class="toctree-l3"><a class="reference internal" href="unlucky-1.html">unlucky_1</a></li>
+<li class="toctree-l3"><a class="reference internal" href="make-2.html">make_2</a></li>
+<li class="toctree-l3"><a class="reference internal" href="front-11.html">front_11</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../../codingbat-input-output/index.html">Codingbat (Input/Output)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../solutions.html">Solutions</a></li>
+</ul>
+
+            
+          
+        </div>
+        
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../../index.html">Python Exercises</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../../../index.html" class="icon icon-home"></a> &raquo;</li>
+        
+          <li><a href="../index.html">Codingbat</a> &raquo;</li>
+        
+          <li><a href="index.html">List-1</a> &raquo;</li>
+        
+      <li>sum_3</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="../../../_sources/exercises/codingbat/list-1/sum-3.md.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="sum-3">
+<h1>sum_3<a class="headerlink" href="#sum-3" title="Permalink to this headline">¶</a></h1>
+<p>Given an list of ints length 3, return the sum of all the elements.</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">sum_3</span><span class="p">([</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">])</span> <span class="o">-&gt;</span> <span class="mi">6</span>
+<span class="n">sum_3</span><span class="p">([</span><span class="mi">5</span><span class="p">,</span> <span class="mi">11</span><span class="p">,</span> <span class="mi">2</span><span class="p">])</span> <span class="o">-&gt;</span> <span class="mi">18</span>
+<span class="n">sum_3</span><span class="p">([</span><span class="mi">7</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">])</span> <span class="o">-&gt;</span> <span class="mi">7</span>
+</pre></div>
+</div>
+<p>This exercise was taken from <a class="reference external" href="https://codingbat.com/prob/p175763">codingbat.com</a> and has been adapted for the Python language. There are many great programming exercises there, but the majority are created for Java.</p>
+<div class="section" id="starter-code">
+<h2>Starter Code<a class="headerlink" href="#starter-code" title="Permalink to this headline">¶</a></h2>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">typing</span> <span class="kn">import</span> <span class="n">List</span>
+
+
+<span class="k">def</span> <span class="nf">sum_3</span><span class="p">(</span><span class="n">nums</span><span class="p">:</span> <span class="n">List</span><span class="p">[</span><span class="nb">int</span><span class="p">])</span> <span class="o">-&gt;</span> <span class="nb">int</span><span class="p">:</span>
+    <span class="k">pass</span>
+
+
+<span class="n">result</span> <span class="o">=</span> <span class="n">sum_3</span><span class="p">([</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">])</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">result</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="tests">
+<h2>Tests<a class="headerlink" href="#tests" title="Permalink to this headline">¶</a></h2>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">main</span> <span class="kn">import</span> <span class="n">sum_3</span>
+
+
+<span class="k">def</span> <span class="nf">test_sum_3_1</span><span class="p">():</span>
+    <span class="k">assert</span> <span class="n">sum_3</span><span class="p">([</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">])</span> <span class="o">==</span> <span class="mi">6</span>
+
+
+<span class="k">def</span> <span class="nf">test_sum_3_2</span><span class="p">():</span>
+    <span class="k">assert</span> <span class="n">sum_3</span><span class="p">([</span><span class="mi">5</span><span class="p">,</span> <span class="mi">11</span><span class="p">,</span> <span class="mi">2</span><span class="p">])</span> <span class="o">==</span> <span class="mi">18</span>
+
+
+<span class="k">def</span> <span class="nf">test_sum_3_3</span><span class="p">():</span>
+    <span class="k">assert</span> <span class="n">sum_3</span><span class="p">([</span><span class="mi">7</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">])</span> <span class="o">==</span> <span class="mi">7</span>
+
+
+<span class="k">def</span> <span class="nf">test_sum_3_4</span><span class="p">():</span>
+    <span class="k">assert</span> <span class="n">sum_3</span><span class="p">([</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">1</span><span class="p">])</span> <span class="o">==</span> <span class="mi">4</span>
+
+
+<span class="k">def</span> <span class="nf">test_sum_3_5</span><span class="p">():</span>
+    <span class="k">assert</span> <span class="n">sum_3</span><span class="p">([</span><span class="mi">1</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">1</span><span class="p">])</span> <span class="o">==</span> <span class="mi">3</span>
+
+
+<span class="k">def</span> <span class="nf">test_sum_3_6</span><span class="p">():</span>
+    <span class="k">assert</span> <span class="n">sum_3</span><span class="p">([</span><span class="mi">2</span><span class="p">,</span> <span class="mi">7</span><span class="p">,</span> <span class="mi">2</span><span class="p">])</span> <span class="o">==</span> <span class="mi">11</span>
+</pre></div>
+</div>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="rotate-left-3.html" class="btn btn-neutral float-right" title="rotate_left_3" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="common-end.html" class="btn btn-neutral float-left" title="common_end" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        
+        &copy; Copyright 2020, Mr. Gallo
+
+    </p>
+  </div>
+    
+    
+    
+    Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a
+    
+    <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a>
+    
+    provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>

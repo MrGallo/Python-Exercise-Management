@@ -611,6 +611,9 @@ xyz_middle
         return "xyz" in clipped
 
 
+List-1
+^^^^^^
+
 
 Codingbat (Input/Output)
 ------------------------
