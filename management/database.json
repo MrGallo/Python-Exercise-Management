@@ -8294,6 +8294,44 @@
                 "starter_code": "from typing import List\n\n\ndef calc_attempts_remaining(attempts_allowed: int, incorrect: List[str]) -> int:\n    \"\"\"Determine the number of guesses remaining.\n\n    Based on the initial number of allowed attempts and the number\n    of incorrect guesses.\n    \n    Args:\n        attempts_allowed: The number of total allowed guesses.\n        incorrect: A list containing all the incorrect guesses.\n    \n    Returns:\n        How many remaining guesses the player has.\n    \"\"\"\n    pass",
                 "tests": "from main import calc_attempts_remaining\n\n\ndef test_calc_attempts_remaining():\n    assert calc_attempts_remaining(5, []) == 5\n    assert calc_attempts_remaining(5, ['a']) == 4\n    assert calc_attempts_remaining(5, list('12345')) == 0",
                 "solution": "from typing import List\n\n\ndef calc_attempts_remaining(attempts_allowed: int, incorrect: List[str]) -> int:\n    \"\"\"Determine the number of guesses remaining.\n\n    Based on the initial number of allowed attempts and the number\n    of incorrect guesses.\n    \n    Args:\n        attempts_allowed: The number of total allowed guesses.\n        incorrect: A list containing all the incorrect guesses.\n    \n    Returns:\n        How many remaining guesses the player has.\n    \"\"\"\n    return attempts_allowed - len(incorrect)"
+            },
+            {
+                "name": "Hide or reveal letters",
+                "topic": "",
+                "requirements": [
+                    "if, else",
+                    "string building and filtering"
+                ],
+                "description": "The function specifications are in the starter-code docstring.",
+                "starter_code": "from typing import List\n\n\ndef reveal_letters(word: str, visible_letters: List[str]) -> str:\n    \"\"\"Reveal the given letters in a hidden word.\n    \n    Args:\n        word: The word whose letters need to be revealed.\n        visible_letters: A list of letters that should be visible in the word.\n    \n    Returns:\n        The word with visible letters shown and all others blanked-out.\n    \n    Example:\n        If the word is \"hello\" and visible_letters is the list ['e', 'o'],\n        The resulting string would be \"_ e _ _ o\". Separate each character\n        with a space to make it easier to read.\n    \"\"\"\n    pass",
+                "tests": "from main import reveal_letters\n\n\ndef test_reveal_letters():\n    assert reveal_letters(\"hello\", ['e', 'o']) == \"_ e _ _ o\"\n    assert reveal_letters(\"hello\", []) == \"_ _ _ _ _\"\n    assert reveal_letters(\"abc\", ['a', 'b', 'c']) == \"a b c\"",
+                "solution": "from typing import List\n\n\ndef reveal_letters(word: str, visible_letters: List[str]) -> str:\n    \"\"\"Reveal the given letters in a hidden word.\n    \n    Args:\n        word: The word whose letters need to be revealed.\n        visible_letters: A list of letters that should be visible in the word.\n    \n    Returns:\n        The word with visible letters shown and all others blanked-out.\n    \n    Example:\n        If the word is \"hello\" and visible_letters is the list ['e', 'o'],\n        The resulting string would be \"_ e _ _ o\". Separate each character\n        with a space to make it easier to read.\n    \"\"\"\n    new_string = \"\"\n    for c in word:\n        if c in visible_letters:\n            new_string += c + \" \"\n        else:\n            new_string += \"_ \"\n\n    return new_string.strip()"
+            },
+            {
+                "name": "Word reveal",
+                "topic": "",
+                "requirements": [
+                    "defining a function",
+                    "defining parameters"
+                ],
+                "description": "When the player wins or loses, the game will output a message telling them what the secret word was. The function body is complete, it returns a message indicating the secret word. Your job is to complete the function definition. The function is supposed to be named `word_reveal_message` and it has a parameter-variable called `word`. Fill in those blanks after the word `def`.",
+                "starter_code": "def ________________(______):\n    \"\"\"Creates a message revealing the secret word.\n    \n    Args:\n        word: the word being revealed.\n    \n    Returns:\n        A message revealing the secret word.\n    \n    Example: \n        \"The secret word was 'orange'.\"\n    \"\"\"\n    return f\"The secret word was'{word}'.\"",
+                "tests": "from main import word_reveal_message\n\n\ndef test_word_reveal_message():\n    assert \"'orange'\" in word_reveal_message(\"orange\")\n    assert \"'blah'\" in word_reveal_message(\"blah\")\n    assert \"''\" in word_reveal_message(\"\")",
+                "solution": "def word_reveal_message(word: str) -> str:\n    \"\"\"Creates a message revealing the secret word.\n    \n    Args:\n        word: the word being revealed.\n    \n    Returns:\n        A message revealing the secret word.\n    \n    Example: \n        \"The secret word was 'orange'.\"\n    \"\"\"\n    return f\"The secret word was'{word}'\""
+            },
+            {
+                "name": "Outcome message",
+                "topic": "",
+                "requirements": [
+                    "if, else",
+                    "defining a function",
+                    "defining parameters",
+                    "returning a value"
+                ],
+                "description": "When the game is over, the player will recieve a message based on their outcome. The function will display the result message which is dependant on whether or not the player won or lost. The function is supposed to be called `outcome_message` and have a parameter-variable called `result`. Result will be a string containing `\"win\"` or `\"lose\"`. Fill in the function definition and complete the function. Return `\"Congratulations! You won!\"` if they won, otherwise return `\"Sorry. You lost.\"`.",
+                "starter_code": "def _____________(______):\n    \"\"\"Creates a message based on the player's outcome.\n    \n    Args:\n        result: Either 'win' or 'lose'.\n    \n    Returns:\n        An appropriate message based on the player's outcome.\n    \"\"\"\n    pass",
+                "tests": "from main import outcome_message\n\n\ndef test_outcome_message():\n    assert outcome_message(\"win\") == \"Congratulations! You won!\"\n    assert outcome_message(\"lose\") == \"Sorry. You lost.\"",
+                "solution": "def outcome_message(result: str) -> str:\n    \"\"\"Creates a message based on the player's outcome.\n    \n    Args:\n        result: Either 'win' or 'lose'.\n    \n    Returns:\n        An appropriate message based on the player's outcome.\n    \"\"\"\n    if result == \"win\":\n        return \"Congratulations! You won!\"\n    else:\n        return \"Sorry. You lost.\""
             }
         ]
     }
