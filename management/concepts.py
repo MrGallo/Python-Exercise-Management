@@ -61,6 +61,7 @@ concepts = {
             "loop through a string (for)"]
     },
     "lists": {
+        "creating a list": [],
         "accessing list elements": [],
         "slicing a list": ["accessing list elements"],
         "appending elements to a list": [],
