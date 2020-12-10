@@ -381,6 +381,76 @@ Calculating remaining attempts
         """
         return attempts_allowed - len(incorrect)
 
+Hide or reveal letters
+**********************
+.. code-block:: python
+    :linenos:
+
+    from typing import List
+    
+    
+    def reveal_letters(word: str, visible_letters: List[str]) -> str:
+        """Reveal the given letters in a hidden word.
+        
+        Args:
+            word: The word whose letters need to be revealed.
+            visible_letters: A list of letters that should be visible in the word.
+        
+        Returns:
+            The word with visible letters shown and all others blanked-out.
+        
+        Example:
+            If the word is "hello" and visible_letters is the list ['e', 'o'],
+            The resulting string would be "_ e _ _ o". Separate each character
+            with a space to make it easier to read.
+        """
+        new_string = ""
+        for c in word:
+            if c in visible_letters:
+                new_string += c + " "
+            else:
+                new_string += "_ "
+    
+        return new_string.strip()
+
+Word reveal
+***********
+.. code-block:: python
+    :linenos:
+
+    def word_reveal_message(word: str) -> str:
+        """Creates a message revealing the secret word.
+        
+        Args:
+            word: the word being revealed.
+        
+        Returns:
+            A message revealing the secret word.
+        
+        Example: 
+            "The secret word was 'orange'."
+        """
+        return f"The secret word was'{word}'"
+
+Outcome message
+***************
+.. code-block:: python
+    :linenos:
+
+    def outcome_message(result: str) -> str:
+        """Creates a message based on the player's outcome.
+        
+        Args:
+            result: Either 'win' or 'lose'.
+        
+        Returns:
+            An appropriate message based on the player's outcome.
+        """
+        if result == "win":
+            return "Congratulations! You won!"
+        else:
+            return "Sorry. You lost."
+
 
 
 Codingbat
@@ -613,9 +683,59 @@ xyz_middle
 
 List-1
 ^^^^^^
+common_end
+**********
+.. code-block:: python
+    :linenos:
+
+    from typing import List
+    
+    
+    def common_end(a: List[int], b: List[int]) -> bool:
+        if a[0] == b[0]:
+            return True
+        elif a[-1] == b[-1]:
+            return True
+        else:
+            return False
+
+max_end_3
+*********
+.. code-block:: python
+    :linenos:
+
+    from typing import List
+    
+    
+    def max_end_3(nums: List[int]) -> List[int]:
+        first = nums[0]
+        last = nums[-1]
+    
+        if first > last:
+            return [first, first, first]
+        else:
+            return [last, last, last]
+
 
 List-2
 ^^^^^^
+fizz_array
+**********
+.. code-block:: python
+    :linenos:
+
+    from typing import List
+    
+    
+    def fizz_array(n: int) -> List[int]:
+        new_list = []
+        i = 0
+        while i < n:
+            new_list.append(i)
+            i += 1
+    
+        return new_list
+
 
 
 Codingbat (Input/Output)

@@ -103,7 +103,7 @@
 <li class="toctree-l3"><a class="reference internal" href="lucky-13.html">lucky_13</a></li>
 <li class="toctree-l3"><a class="reference internal" href="sum-28.html">sum_28</a></li>
 <li class="toctree-l3"><a class="reference internal" href="more-14.html">more_14</a></li>
-<li class="toctree-l3 current"><a class="current reference internal" href="#">fizz_array</a><ul>
+<li class="toctree-l3 current"><a class="current reference internal" href="#">fizz_array (11)</a><ul>
 <li class="toctree-l4"><a class="reference internal" href="#starter-code">Starter Code</a></li>
 <li class="toctree-l4"><a class="reference internal" href="#tests">Tests</a></li>
 </ul>
@@ -209,7 +209,11 @@
             
   <div class="section" id="fizz-array">
 <h1>fizz_array<a class="headerlink" href="#fizz-array" title="Permalink to this headline">¶</a></h1>
-<p>Given a number n, create and return a new int list of length n, containing the numbers 0, 1, 2, … n-1. The given n may be 0, in which case just return a length 0 list. You do not need a separate if-statement for the length-0 case; the for-loop should naturally execute 0 times in that case, so it just works. The syntax to make a new int list is: new int[desired_length]    (See also: <a href=/doc/practice/fizzbuzz-code.html>FizzBuzz Code</a>)</p>
+<p><strong>Requirements:</strong></p>
+<ul class="simple">
+<li><p><a class="reference external" href="https://mrgallo.github.io/fundamentals/lists.html#list-building-and-filtering" title="(in Fundamentals)"><span>List building and filtering</span></a></p></li>
+</ul>
+<p>Given a number <code class="docutils literal notranslate"><span class="pre">n</span></code>, create and return a new int list of length <code class="docutils literal notranslate"><span class="pre">n</span></code>, containing the numbers <code class="docutils literal notranslate"><span class="pre">0,</span> <span class="pre">1,</span> <span class="pre">2,</span> <span class="pre">...</span> <span class="pre">n-1</span></code>. The given <code class="docutils literal notranslate"><span class="pre">n</span></code> may be <code class="docutils literal notranslate"><span class="pre">0</span></code>, in which case just return a length <code class="docutils literal notranslate"><span class="pre">0</span></code> list. You do not need a separate if-statement for the length-0 case; the for-loop should naturally execute <code class="docutils literal notranslate"><span class="pre">0</span></code> times in that case, so it just works.</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">fizzList</span><span class="p">(</span><span class="mi">4</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="p">[</span><span class="mi">0</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">]</span>
 <span class="n">fizzList</span><span class="p">(</span><span class="mi">1</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="p">[</span><span class="mi">0</span><span class="p">]</span>
 <span class="n">fizzList</span><span class="p">(</span><span class="mi">10</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="p">[</span><span class="mi">0</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="mi">6</span><span class="p">,</span> <span class="mi">7</span><span class="p">,</span> <span class="mi">8</span><span class="p">,</span> <span class="mi">9</span><span class="p">]</span>

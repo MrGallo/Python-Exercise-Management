@@ -2,6 +2,13 @@
 
 
 
+**Requirements:**
+```eval_rst
+- :ref:`fundamentals:if, else`
+- :ref:`fundamentals:creating a list`
+- :ref:`fundamentals:accessing list elements`
+
+```
 
 
 Given an list of ints length 3, figure out which is larger, the first or last element in the list, and set all the other elements to be that value. Return the changed list.

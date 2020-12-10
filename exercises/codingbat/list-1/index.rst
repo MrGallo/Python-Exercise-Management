@@ -7,11 +7,11 @@ List-1
     first-last-6
     same-first-last
     make-pi
-    common-end
+    common_end (5) <common-end>
     sum-3
     rotate-left-3
     reverse-3
-    max-end-3
+    max_end_3 (5) <max-end-3>
     sum-2
     middle-way
     make-ends

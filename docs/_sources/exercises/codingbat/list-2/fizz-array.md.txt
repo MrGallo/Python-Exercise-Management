@@ -2,9 +2,14 @@
 
 
 
+**Requirements:**
+```eval_rst
+- :ref:`fundamentals:list building and filtering`
+
+```
 
 
-Given a number n, create and return a new int list of length n, containing the numbers 0, 1, 2, ... n-1. The given n may be 0, in which case just return a length 0 list. You do not need a separate if-statement for the length-0 case; the for-loop should naturally execute 0 times in that case, so it just works. The syntax to make a new int list is: new int[desired_length]  &nbsp; (See also: <a href=/doc/practice/fizzbuzz-code.html>FizzBuzz Code</a>)
+Given a number `n`, create and return a new int list of length `n`, containing the numbers `0, 1, 2, ... n-1`. The given `n` may be `0`, in which case just return a length `0` list. You do not need a separate if-statement for the length-0 case; the for-loop should naturally execute `0` times in that case, so it just works.
 
 ```
 fizzList(4) -> [0, 1, 2, 3]

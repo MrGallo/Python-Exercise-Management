@@ -2,6 +2,12 @@
 
 
 
+**Requirements:**
+```eval_rst
+- :ref:`fundamentals:if, elif, else`
+- :ref:`fundamentals:accessing list elements`
+
+```
 
 
 Given 2 lists of ints, a and b, return true if they have the same first element or they have the same last element. Both lists will be length 1 or more.
