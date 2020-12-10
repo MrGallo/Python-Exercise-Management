@@ -77,10 +77,9 @@ std:label
 	4-7                                      Loop through a string (while)           : loops.html#id7
 	4-8                                      Loop through a list (while)             : loops.html#id8
 	4-9                                      Loop through a string (for)             : loops.html#id9
-	5-10                                     Check if a value is in a list           : lists.html#id9
-	5-11                                     Find the largest item in a list         : lists.html#id10
-	5-12                                     Filter a list                           : lists.html#id11
-	5-13                                     Insert a value in a sorted list         : lists.html#id12
+	5-10                                     Check if a value is in a list           : lists.html#id8
+	5-11                                     Find the largest item in a list         : lists.html#id9
+	5-13                                     Insert a value in a sorted list         : lists.html#id10
 	5-2                                      Slicing a list                          : lists.html#id1
 	5-3                                      Appending elements to a list            : lists.html#id2
 	5-4                                      Reassign element at list index          : lists.html#id3
@@ -88,7 +87,6 @@ std:label
 	5-6                                      Remove list element at index using del  : lists.html#id5
 	5-7                                      Insert element at index                 : lists.html#id6
 	5-8                                      Append user input to a list using a loop: lists.html#id7
-	5-9                                      Count words that start/end with a substring: lists.html#id8
 	[indiana jones](https://github.com/ics3u-gallo/cpt-2019-coka-cola) [Indiana Jones](https://github.com/ICS3U-Gallo/cpt-2019-coka-cola): cpt_hall_of_fame.html#indiana-jones-https-github-com-ics3u-gallo-cpt-2019-coka-cola
 	``__init__`` method                      __init__ method                         : classes.html#init-method
 	about-python-shell                       The Python Shell                        : python_shell.html#about-python-shell
@@ -97,6 +95,7 @@ std:label
 	accessing the python shell               Accessing the Python Shell              : python_shell.html#accessing-the-python-shell
 	aggregate class                          Aggregate class                         : classes.html#aggregate-class
 	algorithms                               Algorithms                              : algorithms.html#algorithms
+	anatomy of a function                    Anatomy of a Function                   : functions.html#anatomy-of-a-function
 	and                                      AND                                     : if_statements.html#and
 	append user input to a list using a loop Append user input to a list using a loop: lists.html#append-user-input-to-a-list-using-a-loop
 	appending elements to a list             Appending elements to a list            : lists.html#appending-elements-to-a-list
@@ -117,11 +116,13 @@ std:label
 	continue                                 loops.html#continue
 	convert strings to numbers               Convert strings to numbers              : intro.html#convert-strings-to-numbers
 	convert to lower/upper case              Convert to lower/upper case             : strings.html#convert-to-lower-upper-case
-	count words that start/end with a substring Count words that start/end with a substring: lists.html#count-words-that-start-end-with-a-substring
 	cpt hall of fame                         CPT Hall of Fame                        : cpt_hall_of_fame.html#cpt-hall-of-fame
+	creating a list                          Creating a list                         : lists.html#creating-a-list
 	defining a function                      Defining a Function                     : functions.html#defining-a-function
 	defining parameters                      Defining parameters                     : functions.html#defining-parameters
 	dictionaries                             Dictionaries                            : dictionaries.html#dictionaries
+	docstrings                               Docstrings                              : functions.html#docstrings
+	docstrings (classes)                     Docstrings (Classes)                    : classes.html#docstrings-classes
 	encapsulation                            Encapsulation                           : classes.html#encapsulation
 	exceptions                               Exceptions                              : exceptions.html#exceptions
 	exercise 105: reverse order              Exercise 105: Reverse Order             : python_work_book.html#exercise-105-reverse-order
@@ -138,7 +139,6 @@ std:label
 	exercises                                Exercises                               : exercises.html#exercises
 	exiting the python shell                 Exiting the Python Shell                : python_shell.html#exiting-the-python-shell
 	file r/w                                 File R/W                                : file-rw.html#file-r-w
-	filter a list                            Filter a list                           : lists.html#filter-a-list
 	find the largest item in a list          Find the largest item in a list         : lists.html#find-the-largest-item-in-a-list
 	format output text                       Format output text                      : intro.html#format-output-text
 	function/method overloading              Function/Method Overloading             : classes.html#function-method-overloading
@@ -149,7 +149,6 @@ std:label
 	get rear characters                      Get rear characters                     : strings.html#get-rear-characters
 	get user input in a loop                 Get user input in a loop                : loops.html#get-user-input-in-a-loop
 	handling return values                   Handling return values                  : functions.html#handling-return-values
-	home                                     Python Fundamentals                     : index.html#home
 	if statements                            If Statements                           : if_statements.html#if-statements
 	if statements - tpw                      If Statements - TPW                     : python_work_book.html#if-statements-tpw
 	if, elif, else                           if_statements.html#if-elif-else
@@ -215,5 +214,6 @@ std:label
 	testing object methods                   Testing Object Methods                  : testing.html#testing-object-methods
 	the python shell                         The Python Shell                        : python_shell.html#the-python-shell
 	the python workbook solutions            The Python Workbook Solutions           : python_work_book.html#the-python-workbook-solutions
+	type annotations                         Type annotations                        : functions.html#type-annotations
 	unified modeling language (uml)          Unified Modeling Language (UML)         : classes.html#unified-modeling-language-uml
 	use the ``len()`` function               Use the len() function                  : strings.html#use-the-len-function

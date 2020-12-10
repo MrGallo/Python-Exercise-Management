@@ -72,11 +72,6 @@ concepts = {
         "append user input to a list using a loop": [
             "appending elements to a list",
             "get user input in a loop",],
-        "count words that start/end with a substring": [
-            "loop through a list (for)",
-            "substrings and slicing",
-            "if, else",
-            "loop with an accumulator variable"],
         "check if a value is in a list": [
             "loop through a list (for)",
             "if, else"],
