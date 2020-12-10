@@ -719,6 +719,41 @@ max_end_3
 
 List-2
 ^^^^^^
+count_evens
+***********
+.. code-block:: python
+    :linenos:
+
+    from typing import List
+    
+    
+    def count_evens(nums: List[int]) -> int:
+        evens = 0
+        for n in nums:
+            if n % 2 == 0:
+                evens += 1
+        return evens
+
+big_diff
+********
+.. code-block:: python
+    :linenos:
+
+    from typing import List
+    
+    
+    def big_diff(nums: List[int]) -> int:
+        largest = nums[0]
+        smallest = nums[0]
+        
+        for n in nums:
+            if n > largest:
+                largest = n
+            elif n < smallest:
+                smallest = n
+        
+        return largest - smallest
+
 fizz_array
 **********
 .. code-block:: python

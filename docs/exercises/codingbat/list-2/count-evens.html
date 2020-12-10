@@ -94,12 +94,12 @@
 <li class="toctree-l2"><a class="reference internal" href="../string-2/index.html">String-2</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../list-1/index.html">List-1</a></li>
 <li class="toctree-l2 current"><a class="reference internal" href="index.html">List-2</a><ul class="current">
-<li class="toctree-l3 current"><a class="current reference internal" href="#">count_evens</a><ul>
+<li class="toctree-l3 current"><a class="current reference internal" href="#">count_evens (8)</a><ul>
 <li class="toctree-l4"><a class="reference internal" href="#starter-code">Starter Code</a></li>
 <li class="toctree-l4"><a class="reference internal" href="#tests">Tests</a></li>
 </ul>
 </li>
-<li class="toctree-l3"><a class="reference internal" href="big-diff.html">big_diff</a></li>
+<li class="toctree-l3"><a class="reference internal" href="big-diff.html">big_diff (9)</a></li>
 <li class="toctree-l3"><a class="reference internal" href="centered-average.html">centered_average</a></li>
 <li class="toctree-l3"><a class="reference internal" href="sum-13.html">sum_13</a></li>
 <li class="toctree-l3"><a class="reference internal" href="sum-67.html">sum_67</a></li>
@@ -209,7 +209,13 @@
             
   <div class="section" id="count-evens">
 <h1>count_evens<a class="headerlink" href="#count-evens" title="Permalink to this headline">¶</a></h1>
-<p>Return the number of even ints in the given list. Note: the % “mod” operator computes the remainder, e.g. 5 % 2 is 1.</p>
+<p><strong>Requirements:</strong></p>
+<ul class="simple">
+<li><p><a class="reference external" href="https://mrgallo.github.io/fundamentals/intro.html#mathematical-operations" title="(in Fundamentals)"><span>Mathematical operations</span></a></p></li>
+<li><p><a class="reference external" href="https://mrgallo.github.io/fundamentals/loops.html#loop-through-a-list-for" title="(in Fundamentals)"><span>Loop through a list (for)</span></a></p></li>
+<li><p><a class="reference external" href="https://mrgallo.github.io/fundamentals/loops.html#loop-with-an-accumulator-variable" title="(in Fundamentals)"><span>Loop with an accumulator variable</span></a></p></li>
+</ul>
+<p>Return the number of even ints in the given list. Note: the <code class="docutils literal notranslate"><span class="pre">%</span></code> “mod” operator computes the remainder, e.g. <code class="docutils literal notranslate"><span class="pre">5</span> <span class="pre">%</span> <span class="pre">2</span></code> is <code class="docutils literal notranslate"><span class="pre">1</span></code>.</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">count_evens</span><span class="p">([</span><span class="mi">2</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">4</span><span class="p">])</span> <span class="o">-&gt;</span> <span class="mi">3</span>
 <span class="n">count_evens</span><span class="p">([</span><span class="mi">2</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">0</span><span class="p">])</span> <span class="o">-&gt;</span> <span class="mi">3</span>
 <span class="n">count_evens</span><span class="p">([</span><span class="mi">1</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">5</span><span class="p">])</span> <span class="o">-&gt;</span> <span class="mi">0</span>

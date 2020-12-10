@@ -2,9 +2,15 @@
 
 
 
+**Requirements:**
+```eval_rst
+- :ref:`fundamentals:loop through a list (for)`
+- :ref:`fundamentals:if, elif, else`
+
+```
 
 
-Given an list length 1 or more of ints, return the difference between the largest and smallest values in the list. Note: the built-in Math.min(v1, v2) and Math.max(v1, v2) methods  return the smaller or larger of two values.
+Given an list length `1` or more of ints, return the difference between the largest and smallest values in the list. *Note: In the spirit of practice, do not use the built-in `min()` and `max()` functions use a loop to discover the largest and smallest values*.
 
 ```
 big_diff([10, 3, 5, 6]) -> 7

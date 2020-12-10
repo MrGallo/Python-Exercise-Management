@@ -4,8 +4,8 @@ List-2
 .. toctree::
     :maxdepth: 1
 
-    count-evens
-    big-diff
+    count_evens (8) <count-evens>
+    big_diff (9) <big-diff>
     centered-average
     sum-13
     sum-67

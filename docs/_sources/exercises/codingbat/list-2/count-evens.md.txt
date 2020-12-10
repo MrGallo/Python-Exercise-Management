@@ -2,9 +2,16 @@
 
 
 
+**Requirements:**
+```eval_rst
+- :ref:`fundamentals:mathematical operations`
+- :ref:`fundamentals:loop through a list (for)`
+- :ref:`fundamentals:loop with an accumulator variable`
+
+```
 
 
-Return the number of even ints in the given list. Note: the % "mod" operator computes the remainder, e.g. 5 % 2 is 1.
+Return the number of even ints in the given list. Note: the `%` "mod" operator computes the remainder, e.g. `5 % 2` is `1`.
 
 ```
 count_evens([2, 1, 2, 3, 4]) -> 3
