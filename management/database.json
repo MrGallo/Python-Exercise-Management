@@ -1112,11 +1112,14 @@
             {
                 "name": "common_end",
                 "topic": "",
-                "requirements": [],
+                "requirements": [
+                    "if, elif, else",
+                    "accessing list elements"
+                ],
                 "description": "Given 2 lists of ints, a and b, return true if they have the same first element or they have the same last element. Both lists will be length 1 or more.\n\n```\ncommon_end([1, 2, 3], [7, 3]) -> true\ncommon_end([1, 2, 3], [7, 3, 2]) -> false\ncommon_end([1, 2, 3], [1, 3]) -> true\n```\n\nThis exercise was taken from [codingbat.com](https://codingbat.com/prob/p191991) and has been adapted for the Python language. There are many great programming exercises there, but the majority are created for Java.",
-                "starter_code": "from typing import List\n\n\ndef common_end(a: List[int], b: List[int]) -> bool:\n    pass\n\n\nresult = common_end([1, 2, 3], [7, 3])\nprint(result)\n",
-                "tests": "from main import common_end\n\n\ndef test_common_end_1():\n    assert common_end([1, 2, 3], [7, 3]) == True\n\n\ndef test_common_end_2():\n    assert common_end([1, 2, 3], [7, 3, 2]) == False\n\n\ndef test_common_end_3():\n    assert common_end([1, 2, 3], [1, 3]) == True\n\n\ndef test_common_end_4():\n    assert common_end([1, 2, 3], [1]) == True\n\n\ndef test_common_end_5():\n    assert common_end([1, 2, 3], [2]) == False\n\n\n",
-                "solution": ""
+                "starter_code": "from typing import List\n\n\ndef common_end(a: List[int], b: List[int]) -> bool:\n    pass\n\n\nresult = common_end([1, 2, 3], [7, 3])\nprint(result)",
+                "tests": "from main import common_end\n\n\ndef test_common_end_1():\n    assert common_end([1, 2, 3], [7, 3]) == True\n\n\ndef test_common_end_2():\n    assert common_end([1, 2, 3], [7, 3, 2]) == False\n\n\ndef test_common_end_3():\n    assert common_end([1, 2, 3], [1, 3]) == True\n\n\ndef test_common_end_4():\n    assert common_end([1, 2, 3], [1]) == True\n\n\ndef test_common_end_5():\n    assert common_end([1, 2, 3], [2]) == False",
+                "solution": "from typing import List\n\n\ndef common_end(a: List[int], b: List[int]) -> bool:\n    if a[0] == b[0]:\n        return True\n    elif a[-1] == b[-1]:\n        return True\n    else:\n        return False"
             },
             {
                 "name": "sum_3",
@@ -1148,11 +1151,15 @@
             {
                 "name": "max_end_3",
                 "topic": "",
-                "requirements": [],
+                "requirements": [
+                    "if, else",
+                    "creating a list",
+                    "accessing list elements"
+                ],
                 "description": "Given an list of ints length 3, figure out which is larger, the first or last element in the list, and set all the other elements to be that value. Return the changed list.\n\n```\nmax_end_3([1, 2, 3]) -> [3, 3, 3]\nmax_end_3([11, 5, 9]) -> [11, 11, 11]\nmax_end_3([2, 11, 3]) -> [3, 3, 3]\n```\n\nThis exercise was taken from [codingbat.com](https://codingbat.com/prob/p146256) and has been adapted for the Python language. There are many great programming exercises there, but the majority are created for Java.",
-                "starter_code": "from typing import List\n\n\ndef max_end_3(nums: List[int]) -> List[int]:\n    pass\n\n\nresult = max_end_3([1, 2, 3])\nprint(result)\n",
-                "tests": "from main import max_end_3\n\n\ndef test_max_end_3_1():\n    assert max_end_3([1, 2, 3]) == [3, 3, 3]\n\n\ndef test_max_end_3_2():\n    assert max_end_3([11, 5, 9]) == [11, 11, 11]\n\n\ndef test_max_end_3_3():\n    assert max_end_3([2, 11, 3]) == [3, 3, 3]\n\n\ndef test_max_end_3_4():\n    assert max_end_3([11, 3, 3]) == [11, 11, 11]\n\n\ndef test_max_end_3_5():\n    assert max_end_3([3, 11, 11]) == [11, 11, 11]\n\n\ndef test_max_end_3_6():\n    assert max_end_3([2, 2, 2]) == [2, 2, 2]\n\n\ndef test_max_end_3_7():\n    assert max_end_3([2, 11, 2]) == [2, 2, 2]\n\n\ndef test_max_end_3_8():\n    assert max_end_3([0, 0, 1]) == [1, 1, 1]\n\n\n",
-                "solution": ""
+                "starter_code": "from typing import List\n\n\ndef max_end_3(nums: List[int]) -> List[int]:\n    pass\n\n\nresult = max_end_3([1, 2, 3])\nprint(result)",
+                "tests": "from main import max_end_3\n\n\ndef test_max_end_3_1():\n    assert max_end_3([1, 2, 3]) == [3, 3, 3]\n\n\ndef test_max_end_3_2():\n    assert max_end_3([11, 5, 9]) == [11, 11, 11]\n\n\ndef test_max_end_3_3():\n    assert max_end_3([2, 11, 3]) == [3, 3, 3]\n\n\ndef test_max_end_3_4():\n    assert max_end_3([11, 3, 3]) == [11, 11, 11]\n\n\ndef test_max_end_3_5():\n    assert max_end_3([3, 11, 11]) == [11, 11, 11]\n\n\ndef test_max_end_3_6():\n    assert max_end_3([2, 2, 2]) == [2, 2, 2]\n\n\ndef test_max_end_3_7():\n    assert max_end_3([2, 11, 2]) == [2, 2, 2]\n\n\ndef test_max_end_3_8():\n    assert max_end_3([0, 0, 1]) == [1, 1, 1]",
+                "solution": "from typing import List\n\n\ndef max_end_3(nums: List[int]) -> List[int]:\n    first = nums[0]\n    last = nums[-1]\n\n    if first > last:\n        return [first, first, first]\n    else:\n        return [last, last, last]"
             },
             {
                 "name": "sum_2",
