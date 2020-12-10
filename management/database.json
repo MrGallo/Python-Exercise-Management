@@ -1411,11 +1411,13 @@
             {
                 "name": "fizz_array",
                 "topic": "",
-                "requirements": [],
-                "description": "Given a number n, create and return a new int list of length n, containing the numbers 0, 1, 2, ... n-1. The given n may be 0, in which case just return a length 0 list. You do not need a separate if-statement for the length-0 case; the for-loop should naturally execute 0 times in that case, so it just works. The syntax to make a new int list is: new int[desired_length]  &nbsp; (See also: <a href=/doc/practice/fizzbuzz-code.html>FizzBuzz Code</a>)\n\n```\nfizzList(4) -> [0, 1, 2, 3]\nfizzList(1) -> [0]\nfizzList(10) -> [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]\n```\n\nThis exercise was taken from [codingbat.com](https://codingbat.com/prob/p180920) and has been adapted for the Python language. There are many great programming exercises there, but the majority are created for Java.",
-                "starter_code": "from typing import List\n\n\ndef fizz_array(n: int) -> List[int]:\n    pass\n\n\nresult = fizz_array(4)\nprint(result)\n",
-                "tests": "from main import fizz_array\n\n\ndef test_fizz_array_1():\n    assert fizz_array(4) == [0, 1, 2, 3]\n\n\ndef test_fizz_array_2():\n    assert fizz_array(1) == [0]\n\n\ndef test_fizz_array_3():\n    assert fizz_array(10) == [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]\n\n\ndef test_fizz_array_4():\n    assert fizz_array(0) == []\n\n\ndef test_fizz_array_5():\n    assert fizz_array(2) == [0, 1]\n\n\ndef test_fizz_array_6():\n    assert fizz_array(7) == [0, 1, 2, 3, 4, 5, 6]\n\n\n",
-                "solution": ""
+                "requirements": [
+                    "list building and filtering"
+                ],
+                "description": "Given a number `n`, create and return a new int list of length `n`, containing the numbers `0, 1, 2, ... n-1`. The given `n` may be `0`, in which case just return a length `0` list. You do not need a separate if-statement for the length-0 case; the for-loop should naturally execute `0` times in that case, so it just works.\n\n```\nfizzList(4) -> [0, 1, 2, 3]\nfizzList(1) -> [0]\nfizzList(10) -> [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]\n```\n\nThis exercise was taken from [codingbat.com](https://codingbat.com/prob/p180920) and has been adapted for the Python language. There are many great programming exercises there, but the majority are created for Java.",
+                "starter_code": "from typing import List\n\n\ndef fizz_array(n: int) -> List[int]:\n    pass\n\n\nresult = fizz_array(4)\nprint(result)",
+                "tests": "from main import fizz_array\n\n\ndef test_fizz_array_1():\n    assert fizz_array(4) == [0, 1, 2, 3]\n\n\ndef test_fizz_array_2():\n    assert fizz_array(1) == [0]\n\n\ndef test_fizz_array_3():\n    assert fizz_array(10) == [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]\n\n\ndef test_fizz_array_4():\n    assert fizz_array(0) == []\n\n\ndef test_fizz_array_5():\n    assert fizz_array(2) == [0, 1]\n\n\ndef test_fizz_array_6():\n    assert fizz_array(7) == [0, 1, 2, 3, 4, 5, 6]",
+                "solution": "from typing import List\n\n\ndef fizz_array(n: int) -> List[int]:\n    new_list = []\n    i = 0\n    while i < n:\n        new_list.append(i)\n        i += 1\n\n    return new_list"
             },
             {
                 "name": "only_14",
