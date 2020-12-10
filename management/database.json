@@ -1337,20 +1337,27 @@
             {
                 "name": "count_evens",
                 "topic": "",
-                "requirements": [],
-                "description": "Return the number of even ints in the given list. Note: the % \"mod\" operator computes the remainder, e.g. 5 % 2 is 1.\n\n```\ncount_evens([2, 1, 2, 3, 4]) -> 3\ncount_evens([2, 2, 0]) -> 3\ncount_evens([1, 3, 5]) -> 0\n```\n\nThis exercise was taken from [codingbat.com](https://codingbat.com/prob/p162010) and has been adapted for the Python language. There are many great programming exercises there, but the majority are created for Java.",
-                "starter_code": "from typing import List\n\n\ndef count_evens(nums: List[int]) -> int:\n    pass\n\n\nresult = count_evens([2, 1, 2, 3, 4])\nprint(result)\n",
-                "tests": "from main import count_evens\n\n\ndef test_count_evens_1():\n    assert count_evens([2, 1, 2, 3, 4]) == 3\n\n\ndef test_count_evens_2():\n    assert count_evens([2, 2, 0]) == 3\n\n\ndef test_count_evens_3():\n    assert count_evens([1, 3, 5]) == 0\n\n\ndef test_count_evens_4():\n    assert count_evens([]) == 0\n\n\ndef test_count_evens_5():\n    assert count_evens([11, 9, 0, 1]) == 1\n\n\ndef test_count_evens_6():\n    assert count_evens([2, 11, 9, 0]) == 2\n\n\ndef test_count_evens_7():\n    assert count_evens([2]) == 1\n\n\ndef test_count_evens_8():\n    assert count_evens([2, 5, 12]) == 2\n\n\n",
-                "solution": ""
+                "requirements": [
+                    "mathematical operations",
+                    "loop through a list (for)",
+                    "loop with an accumulator variable"
+                ],
+                "description": "Return the number of even ints in the given list. Note: the `%` \"mod\" operator computes the remainder, e.g. `5 % 2` is `1`.\n\n```\ncount_evens([2, 1, 2, 3, 4]) -> 3\ncount_evens([2, 2, 0]) -> 3\ncount_evens([1, 3, 5]) -> 0\n```\n\nThis exercise was taken from [codingbat.com](https://codingbat.com/prob/p162010) and has been adapted for the Python language. There are many great programming exercises there, but the majority are created for Java.",
+                "starter_code": "from typing import List\n\n\ndef count_evens(nums: List[int]) -> int:\n    pass\n\n\nresult = count_evens([2, 1, 2, 3, 4])\nprint(result)",
+                "tests": "from main import count_evens\n\n\ndef test_count_evens_1():\n    assert count_evens([2, 1, 2, 3, 4]) == 3\n\n\ndef test_count_evens_2():\n    assert count_evens([2, 2, 0]) == 3\n\n\ndef test_count_evens_3():\n    assert count_evens([1, 3, 5]) == 0\n\n\ndef test_count_evens_4():\n    assert count_evens([]) == 0\n\n\ndef test_count_evens_5():\n    assert count_evens([11, 9, 0, 1]) == 1\n\n\ndef test_count_evens_6():\n    assert count_evens([2, 11, 9, 0]) == 2\n\n\ndef test_count_evens_7():\n    assert count_evens([2]) == 1\n\n\ndef test_count_evens_8():\n    assert count_evens([2, 5, 12]) == 2",
+                "solution": "from typing import List\n\n\ndef count_evens(nums: List[int]) -> int:\n    evens = 0\n    for n in nums:\n        if n % 2 == 0:\n            evens += 1\n    return evens"
             },
             {
                 "name": "big_diff",
                 "topic": "",
-                "requirements": [],
-                "description": "Given an list length 1 or more of ints, return the difference between the largest and smallest values in the list. Note: the built-in Math.min(v1, v2) and Math.max(v1, v2) methods  return the smaller or larger of two values.\n\n```\nbig_diff([10, 3, 5, 6]) -> 7\nbig_diff([7, 2, 10, 9]) -> 8\nbig_diff([2, 10, 7, 2]) -> 8\n```\n\nThis exercise was taken from [codingbat.com](https://codingbat.com/prob/p196640) and has been adapted for the Python language. There are many great programming exercises there, but the majority are created for Java.",
-                "starter_code": "from typing import List\n\n\ndef big_diff(nums: List[int]) -> int:\n    pass\n\n\nresult = big_diff([10, 3, 5, 6])\nprint(result)\n",
-                "tests": "from main import big_diff\n\n\ndef test_big_diff_1():\n    assert big_diff([10, 3, 5, 6]) == 7\n\n\ndef test_big_diff_2():\n    assert big_diff([7, 2, 10, 9]) == 8\n\n\ndef test_big_diff_3():\n    assert big_diff([2, 10, 7, 2]) == 8\n\n\ndef test_big_diff_4():\n    assert big_diff([2, 10]) == 8\n\n\ndef test_big_diff_5():\n    assert big_diff([10, 2]) == 8\n\n\ndef test_big_diff_6():\n    assert big_diff([10, 0]) == 10\n\n\ndef test_big_diff_7():\n    assert big_diff([2, 3]) == 1\n\n\ndef test_big_diff_8():\n    assert big_diff([2, 2]) == 0\n\n\ndef test_big_diff_9():\n    assert big_diff([2]) == 0\n\n\ndef test_big_diff_10():\n    assert big_diff([5, 1, 6, 1, 9, 9]) == 8\n\n\ndef test_big_diff_11():\n    assert big_diff([7, 6, 8, 5]) == 3\n\n\ndef test_big_diff_12():\n    assert big_diff([7, 7, 6, 8, 5, 5, 6]) == 3\n\n\n",
-                "solution": ""
+                "requirements": [
+                    "loop through a list (for)",
+                    "if, elif, else"
+                ],
+                "description": "Given an list length `1` or more of ints, return the difference between the largest and smallest values in the list. *Note: In the spirit of practice, do not use the built-in `min()` and `max()` functions use a loop to discover the largest and smallest values*.\n\n```\nbig_diff([10, 3, 5, 6]) -> 7\nbig_diff([7, 2, 10, 9]) -> 8\nbig_diff([2, 10, 7, 2]) -> 8\n```\n\nThis exercise was taken from [codingbat.com](https://codingbat.com/prob/p196640) and has been adapted for the Python language. There are many great programming exercises there, but the majority are created for Java.",
+                "starter_code": "from typing import List\n\n\ndef big_diff(nums: List[int]) -> int:\n    pass\n\n\nresult = big_diff([10, 3, 5, 6])\nprint(result)",
+                "tests": "from main import big_diff\n\n\ndef test_big_diff_1():\n    assert big_diff([10, 3, 5, 6]) == 7\n\n\ndef test_big_diff_2():\n    assert big_diff([7, 2, 10, 9]) == 8\n\n\ndef test_big_diff_3():\n    assert big_diff([2, 10, 7, 2]) == 8\n\n\ndef test_big_diff_4():\n    assert big_diff([2, 10]) == 8\n\n\ndef test_big_diff_5():\n    assert big_diff([10, 2]) == 8\n\n\ndef test_big_diff_6():\n    assert big_diff([10, 0]) == 10\n\n\ndef test_big_diff_7():\n    assert big_diff([2, 3]) == 1\n\n\ndef test_big_diff_8():\n    assert big_diff([2, 2]) == 0\n\n\ndef test_big_diff_9():\n    assert big_diff([2]) == 0\n\n\ndef test_big_diff_10():\n    assert big_diff([5, 1, 6, 1, 9, 9]) == 8\n\n\ndef test_big_diff_11():\n    assert big_diff([7, 6, 8, 5]) == 3\n\n\ndef test_big_diff_12():\n    assert big_diff([7, 7, 6, 8, 5, 5, 6]) == 3",
+                "solution": "from typing import List\n\n\ndef big_diff(nums: List[int]) -> int:\n    largest = nums[0]\n    smallest = nums[0]\n    \n    for n in nums:\n        if n > largest:\n            largest = n\n        elif n < smallest:\n            smallest = n\n    \n    return largest - smallest"
             },
             {
                 "name": "centered_average",
