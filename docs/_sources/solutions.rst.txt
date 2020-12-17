@@ -1143,5 +1143,37 @@ How Sum
         memo[target_sum] = None
         return None
 
+Best Sum
+********
+.. code-block:: python
+    :linenos:
+
+    from typing import List, Dict
+    
+    
+    def best_sum(target_sum: int, numbers: List[int], memo: Dict = None) -> List[int]:
+        if memo is None:
+            memo = {}
+        
+        if target_sum in memo.keys():
+            return memo[target_sum]
+        
+        if target_sum == 0:
+            return []
+        elif target_sum < 0:
+            return None
+    
+        shortest = None
+        for n in numbers:
+            difference = target_sum - n
+            result = best_sum(difference, numbers, memo)
+            if result is not None:
+                combo = [n] + result
+                if shortest is None or len(combo) < len(shortest):
+                    shortest = combo
+        
+        memo[target_sum] = shortest
+        return shortest
+
 
 

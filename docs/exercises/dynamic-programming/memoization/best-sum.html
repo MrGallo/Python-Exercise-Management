@@ -7,7 +7,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>Grid Traveler &mdash; Python Exercises  documentation</title>
+  <title>Best Sum &mdash; Python Exercises  documentation</title>
   
 
   
@@ -39,8 +39,8 @@
     
     <link rel="index" title="Index" href="../../../genindex.html" />
     <link rel="search" title="Search" href="../../../search.html" />
-    <link rel="next" title="Can Sum" href="can-sum.html" />
-    <link rel="prev" title="Fibonacci" href="fibonacci.html" /> 
+    <link rel="next" title="Solutions" href="../../../solutions.html" />
+    <link rel="prev" title="How Sum" href="how-sum.html" /> 
 </head>
 
 <body class="wy-body-for-nav">
@@ -93,14 +93,14 @@
 <li class="toctree-l1 current"><a class="reference internal" href="../index.html">Dynamic Programming</a><ul class="current">
 <li class="toctree-l2 current"><a class="reference internal" href="index.html">Memoization</a><ul class="current">
 <li class="toctree-l3"><a class="reference internal" href="fibonacci.html">Fibonacci</a></li>
-<li class="toctree-l3 current"><a class="current reference internal" href="#">Grid Traveler</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="grid-traveler.html">Grid Traveler</a></li>
+<li class="toctree-l3"><a class="reference internal" href="can-sum.html">Can Sum</a></li>
+<li class="toctree-l3"><a class="reference internal" href="how-sum.html">How Sum</a></li>
+<li class="toctree-l3 current"><a class="current reference internal" href="#">Best Sum</a><ul>
 <li class="toctree-l4"><a class="reference internal" href="#starter-code">Starter Code</a></li>
 <li class="toctree-l4"><a class="reference internal" href="#tests">Tests</a></li>
 </ul>
 </li>
-<li class="toctree-l3"><a class="reference internal" href="can-sum.html">Can Sum</a></li>
-<li class="toctree-l3"><a class="reference internal" href="how-sum.html">How Sum</a></li>
-<li class="toctree-l3"><a class="reference internal" href="best-sum.html">Best Sum</a></li>
 </ul>
 </li>
 </ul>
@@ -156,13 +156,13 @@
         
           <li><a href="index.html">Memoization</a> &raquo;</li>
         
-      <li>Grid Traveler</li>
+      <li>Best Sum</li>
     
     
       <li class="wy-breadcrumbs-aside">
         
             
-            <a href="../../../_sources/exercises/dynamic-programming/memoization/grid-traveler.md.txt" rel="nofollow"> View page source</a>
+            <a href="../../../_sources/exercises/dynamic-programming/memoization/best-sum.md.txt" rel="nofollow"> View page source</a>
           
         
       </li>
@@ -175,42 +175,40 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
             
-  <div class="section" id="grid-traveler">
-<h1>Grid Traveler<a class="headerlink" href="#grid-traveler" title="Permalink to this headline">¶</a></h1>
-<p>Say that you are a traveler on a 2D grid. You begin in the top-left corner and your goal is to travel to the bottom-right corner. You may only move right or down.</p>
-<p>In how many ways can you travel to the goal on a grid with dimensions <code class="docutils literal notranslate"><span class="pre">m</span> <span class="pre">*</span> <span class="pre">n</span></code>?</p>
-<p>Write the function <code class="docutils literal notranslate"><span class="pre">grid_traveler(m,</span> <span class="pre">n)</span></code> to solve this. Use memoization to get the last tests to pass in a respectable about of time</p>
+  <div class="section" id="best-sum">
+<h1>Best Sum<a class="headerlink" href="#best-sum" title="Permalink to this headline">¶</a></h1>
+<p>Write a function <code class="docutils literal notranslate"><span class="pre">best_sum(target_sum,</span> <span class="pre">numbers)</span></code> that takes in a <code class="docutils literal notranslate"><span class="pre">target_sum</span></code> and a list of <code class="docutils literal notranslate"><span class="pre">numbers</span></code> as arguments.</p>
+<p>The function should return a list containing the shortest combination of numbers that add up to exactly the <code class="docutils literal notranslate"><span class="pre">target_sum</span></code>.</p>
+<p>If there is a tie for the shortest combination, you may return any one of the shortest.</p>
 <p>You can learn more from Free Code Camp’s <a class="reference external" href="https://www.youtube.com/watch?v=oBt53YbR9Kk">Dynamic Programming</a> video.</p>
 <div class="section" id="starter-code">
 <h2>Starter Code<a class="headerlink" href="#starter-code" title="Permalink to this headline">¶</a></h2>
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">grid_traveler</span><span class="p">(</span><span class="n">m</span><span class="p">:</span> <span class="nb">int</span><span class="p">,</span> <span class="n">n</span><span class="p">:</span> <span class="nb">int</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">int</span><span class="p">:</span>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">typing</span> <span class="kn">import</span> <span class="n">List</span>
+
+
+<span class="k">def</span> <span class="nf">best_sum</span><span class="p">(</span><span class="n">target_sum</span><span class="p">:</span> <span class="nb">int</span><span class="p">,</span> <span class="n">numbers</span><span class="p">:</span> <span class="n">List</span><span class="p">[</span><span class="nb">int</span><span class="p">])</span> <span class="o">-&gt;</span> <span class="n">List</span><span class="p">[</span><span class="nb">int</span><span class="p">]:</span>
     <span class="k">pass</span>
 </pre></div>
 </div>
 </div>
 <div class="section" id="tests">
 <h2>Tests<a class="headerlink" href="#tests" title="Permalink to this headline">¶</a></h2>
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">main</span> <span class="kn">import</span> <span class="n">grid_traveler</span>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">main</span> <span class="kn">import</span> <span class="n">best_sum</span>
 
 
-<span class="k">def</span> <span class="nf">test_grid_traveler_base_case</span><span class="p">():</span>
-    <span class="k">assert</span> <span class="n">grid_traveler</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">)</span> <span class="o">==</span> <span class="mi">0</span>
-    <span class="k">assert</span> <span class="n">grid_traveler</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">1</span><span class="p">)</span> <span class="o">==</span> <span class="mi">0</span>
-    <span class="k">assert</span> <span class="n">grid_traveler</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">0</span><span class="p">)</span> <span class="o">==</span> <span class="mi">0</span>
-    <span class="k">assert</span> <span class="n">grid_traveler</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">1</span><span class="p">)</span> <span class="o">==</span> <span class="mi">1</span>
+<span class="k">def</span> <span class="nf">test_best_sum_base_case</span><span class="p">():</span>
+    <span class="k">assert</span> <span class="n">best_sum</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">])</span> <span class="o">==</span> <span class="p">[]</span>
+    <span class="k">assert</span> <span class="n">best_sum</span><span class="p">(</span><span class="o">-</span><span class="mi">1</span><span class="p">,</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">])</span> <span class="o">==</span> <span class="kc">None</span>
 
 
-<span class="k">def</span> <span class="nf">test_grid_traveler</span><span class="p">():</span>
-    <span class="k">assert</span> <span class="n">grid_traveler</span><span class="p">(</span><span class="mi">2</span><span class="p">,</span> <span class="mi">2</span><span class="p">)</span> <span class="o">==</span> <span class="mi">2</span>
-    <span class="k">assert</span> <span class="n">grid_traveler</span><span class="p">(</span><span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">)</span> <span class="o">==</span> <span class="mi">3</span>
-    <span class="k">assert</span> <span class="n">grid_traveler</span><span class="p">(</span><span class="mi">3</span><span class="p">,</span> <span class="mi">3</span><span class="p">)</span> <span class="o">==</span> <span class="mi">6</span>
-    <span class="k">assert</span> <span class="n">grid_traveler</span><span class="p">(</span><span class="mi">3</span><span class="p">,</span> <span class="mi">8</span><span class="p">)</span> <span class="o">==</span> <span class="mi">36</span>
+<span class="k">def</span> <span class="nf">test_best_sum</span><span class="p">():</span>
+    <span class="k">assert</span> <span class="n">best_sum</span><span class="p">(</span><span class="mi">7</span><span class="p">,</span> <span class="p">[</span><span class="mi">5</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="mi">7</span><span class="p">])</span> <span class="o">==</span> <span class="p">[</span><span class="mi">7</span><span class="p">]</span>
+    <span class="k">assert</span> <span class="n">best_sum</span><span class="p">(</span><span class="mi">8</span><span class="p">,</span> <span class="p">[</span><span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">5</span><span class="p">])</span> <span class="o">==</span> <span class="p">[</span><span class="mi">3</span><span class="p">,</span> <span class="mi">5</span><span class="p">]</span>
+    <span class="k">assert</span> <span class="n">best_sum</span><span class="p">(</span><span class="mi">8</span><span class="p">,</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="mi">5</span><span class="p">])</span> <span class="o">==</span> <span class="p">[</span><span class="mi">4</span><span class="p">,</span> <span class="mi">4</span><span class="p">]</span>
 
 
-<span class="k">def</span> <span class="nf">test_grid_traveler_memo</span><span class="p">():</span>
-    <span class="k">assert</span> <span class="n">grid_traveler</span><span class="p">(</span><span class="mi">10</span><span class="p">,</span> <span class="mi">15</span><span class="p">)</span> <span class="o">==</span> <span class="mi">817190</span>
-    <span class="k">assert</span> <span class="n">grid_traveler</span><span class="p">(</span><span class="mi">30</span><span class="p">,</span> <span class="mi">30</span><span class="p">)</span> <span class="o">==</span> <span class="mi">30067266499541040</span>
-    <span class="k">assert</span> <span class="n">grid_traveler</span><span class="p">(</span><span class="mi">100</span><span class="p">,</span> <span class="mi">100</span><span class="p">)</span> <span class="o">==</span> <span class="mi">22750883079422934966181954039568885395604168260154104734000</span>
+<span class="k">def</span> <span class="nf">test_best_sum_memo</span><span class="p">():</span>
+    <span class="k">assert</span> <span class="n">best_sum</span><span class="p">(</span><span class="mi">100</span><span class="p">,</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="mi">25</span><span class="p">])</span> <span class="o">==</span> <span class="p">[</span><span class="mi">25</span><span class="p">,</span> <span class="mi">25</span><span class="p">,</span> <span class="mi">25</span><span class="p">,</span> <span class="mi">25</span><span class="p">]</span>
 </pre></div>
 </div>
 </div>
@@ -224,10 +222,10 @@
   
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
       
-        <a href="can-sum.html" class="btn btn-neutral float-right" title="Can Sum" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+        <a href="../../../solutions.html" class="btn btn-neutral float-right" title="Solutions" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
       
       
-        <a href="fibonacci.html" class="btn btn-neutral float-left" title="Fibonacci" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+        <a href="how-sum.html" class="btn btn-neutral float-left" title="How Sum" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
       
     </div>
   

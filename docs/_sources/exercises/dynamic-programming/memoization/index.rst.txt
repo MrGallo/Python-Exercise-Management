@@ -8,4 +8,4 @@ Memoization
     grid-traveler
     can-sum
     how-sum
-    best-sum-under-construction
+    best-sum
