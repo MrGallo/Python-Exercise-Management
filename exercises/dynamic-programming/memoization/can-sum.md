@@ -17,7 +17,7 @@ You can learn more from Free Code Camp's [Dynamic Programming](https://www.youtu
 from typing import List
 
 
-def can_sum(target_sum: int, numbers: List[int]):
+def can_sum(target_sum: int, numbers: List[int]) -> bool:
     pass
 ```
 
