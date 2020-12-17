@@ -8424,10 +8424,10 @@
                 "name": "All Construct",
                 "topic": "",
                 "requirements": [],
-                "description": "You can learn more from Free Code Camp's [Dynamic Programming](https://www.youtube.com/watch?v=oBt53YbR9Kk) video.",
+                "description": "Write a function `all_construct(target, wordbank)` that accepts a `target` string and a list of strings.\n\nThe function should return a 2D list containing **all of the ways** that the `target` can be constructed by concatenating elements of the `wordbank` list. Each element of the 2D list should represent one combination that constructs the `target`.\n\nYou may reuse elements of the `wordbank` as many times as needed.\n\nYou can learn more from Free Code Camp's [Dynamic Programming](https://www.youtube.com/watch?v=oBt53YbR9Kk) video.",
                 "starter_code": "from typing import List\n\n\ndef all_construct(target: str, wordbank: List[str]) -> List[List[str]]:\n    pass",
                 "tests": "from main import all_construct\n\n\ndef test_count_construct_base_case():\n    assert all_construct(\"\", []) == [[]]\n\n\ndef test_count_construct():\n    assert all_construct(\"hi\", []) == None\n    assert all_construct(\"skateboard\", \"bo rd ate t ska sk boar\".split()) == None\n    assert len(all_construct(\"purple\", \"purp p ur le purpl\".split())) == 2\n    assert len(all_construct(\"abcdef\", \"ab abc cd def abcd ef c\".split())) == 4\n    assert len(all_construct(\"enterapotentpot\", \"a p ent enter ot o t\".split())) == 4\n\n\ndef test_count_construct_memo():\n    assert all_construct(\"eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeef\",\n                         \"e ee eee eeee eeeee eeeeee eeeeeee\".split()) == None",
-                "solution": ""
+                "solution": "from typing import List, Dict\n\n\ndef all_construct(target: str, wordbank: List[str], memo: Dict = None) -> List[List[str]]:\n    if memo is None:\n        memo = {}\n    \n    if target in memo.keys():\n        return memo[target]\n\n    if target == \"\":\n        return [[]]\n    \n    combinations = []\n    for word in wordbank:\n        if target.startswith(word):\n            remaining = target[len(word):]\n            sub_combinations = all_construct(remaining, wordbank, memo)\n            combinations += [[word] + c for c in sub_combinations]\n\n    memo[target] = combinations\n    return combinations"
             }
         ]
     }
