@@ -7,7 +7,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>Fibonacci &mdash; Python Exercises  documentation</title>
+  <title>Can Construct &mdash; Python Exercises  documentation</title>
   
 
   
@@ -39,8 +39,8 @@
     
     <link rel="index" title="Index" href="../../../genindex.html" />
     <link rel="search" title="Search" href="../../../search.html" />
-    <link rel="next" title="Grid Traveler" href="grid-traveler.html" />
-    <link rel="prev" title="Memoization" href="index.html" /> 
+    <link rel="next" title="Solutions" href="../../../solutions.html" />
+    <link rel="prev" title="Best Sum" href="best-sum.html" /> 
 </head>
 
 <body class="wy-body-for-nav">
@@ -92,16 +92,16 @@
 <li class="toctree-l1"><a class="reference internal" href="../../codingbat-input-output/index.html">Codingbat (Input/Output)</a></li>
 <li class="toctree-l1 current"><a class="reference internal" href="../index.html">Dynamic Programming</a><ul class="current">
 <li class="toctree-l2 current"><a class="reference internal" href="index.html">Memoization</a><ul class="current">
-<li class="toctree-l3 current"><a class="current reference internal" href="#">Fibonacci</a><ul>
-<li class="toctree-l4"><a class="reference internal" href="#starter-code">Starter Code</a></li>
-<li class="toctree-l4"><a class="reference internal" href="#tests">Tests</a></li>
-</ul>
-</li>
+<li class="toctree-l3"><a class="reference internal" href="fibonacci.html">Fibonacci</a></li>
 <li class="toctree-l3"><a class="reference internal" href="grid-traveler.html">Grid Traveler</a></li>
 <li class="toctree-l3"><a class="reference internal" href="can-sum.html">Can Sum</a></li>
 <li class="toctree-l3"><a class="reference internal" href="how-sum.html">How Sum</a></li>
 <li class="toctree-l3"><a class="reference internal" href="best-sum.html">Best Sum</a></li>
-<li class="toctree-l3"><a class="reference internal" href="can-construct.html">Can Construct</a></li>
+<li class="toctree-l3 current"><a class="current reference internal" href="#">Can Construct</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#starter-code">Starter Code</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#tests">Tests</a></li>
+</ul>
+</li>
 </ul>
 </li>
 </ul>
@@ -157,13 +157,13 @@
         
           <li><a href="index.html">Memoization</a> &raquo;</li>
         
-      <li>Fibonacci</li>
+      <li>Can Construct</li>
     
     
       <li class="wy-breadcrumbs-aside">
         
             
-            <a href="../../../_sources/exercises/dynamic-programming/memoization/fibonacci.md.txt" rel="nofollow"> View page source</a>
+            <a href="../../../_sources/exercises/dynamic-programming/memoization/can-construct.md.txt" rel="nofollow"> View page source</a>
           
         
       </li>
@@ -176,35 +176,39 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
             
-  <div class="section" id="fibonacci">
-<h1>Fibonacci<a class="headerlink" href="#fibonacci" title="Permalink to this headline">¶</a></h1>
-<p>The Fibonacci sequence is <code class="docutils literal notranslate"><span class="pre">1,</span> <span class="pre">1,</span> <span class="pre">2,</span> <span class="pre">3,</span> <span class="pre">5,</span> <span class="pre">8,</span> <span class="pre">...</span></code>. Each successive number is found by adding the previous two. Create a recursive algorithm to compute the <code class="docutils literal notranslate"><span class="pre">n</span></code>th number in the Fibonacci sequence. Use memoization to get the last test to pass in a respectable about of time.</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">fib</span><span class="p">(</span><span class="mi">1</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="mi">1</span>
-<span class="n">fib</span><span class="p">(</span><span class="mi">2</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="mi">1</span>
-<span class="n">fib</span><span class="p">(</span><span class="mi">3</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="mi">2</span>
-<span class="n">fib</span><span class="p">(</span><span class="mi">4</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="mi">3</span>
-<span class="n">fib</span><span class="p">(</span><span class="mi">5</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="mi">5</span>
-</pre></div>
-</div>
+  <div class="section" id="can-construct">
+<h1>Can Construct<a class="headerlink" href="#can-construct" title="Permalink to this headline">¶</a></h1>
+<p>Write a function <code class="docutils literal notranslate"><span class="pre">can_construct(target,</span> <span class="pre">wordbank)</span></code> that accepts a target string and a list of strings.</p>
+<p>The function should return a boolean indicating whether or not the <code class="docutils literal notranslate"><span class="pre">target</span></code> can be constructed by concatenating elements of the <code class="docutils literal notranslate"><span class="pre">wordbank</span></code> list.</p>
+<p>You may reuse elements of <code class="docutils literal notranslate"><span class="pre">wordbank</span></code> as many times as needed.</p>
 <p>You can learn more from Free Code Camp’s <a class="reference external" href="https://www.youtube.com/watch?v=oBt53YbR9Kk">Dynamic Programming</a> video.</p>
 <div class="section" id="starter-code">
 <h2>Starter Code<a class="headerlink" href="#starter-code" title="Permalink to this headline">¶</a></h2>
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">fib</span><span class="p">(</span><span class="n">n</span><span class="p">:</span> <span class="nb">int</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">int</span><span class="p">:</span>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">typing</span> <span class="kn">import</span> <span class="n">List</span>
+
+
+<span class="k">def</span> <span class="nf">can_construct</span><span class="p">(</span><span class="n">target</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span> <span class="n">wordbank</span><span class="p">:</span> <span class="n">List</span><span class="p">[</span><span class="nb">str</span><span class="p">])</span> <span class="o">-&gt;</span> <span class="nb">bool</span><span class="p">:</span>
     <span class="k">pass</span>
 </pre></div>
 </div>
 </div>
 <div class="section" id="tests">
 <h2>Tests<a class="headerlink" href="#tests" title="Permalink to this headline">¶</a></h2>
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">main</span> <span class="kn">import</span> <span class="n">fib</span>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">main</span> <span class="kn">import</span> <span class="n">can_construct</span>
 
 
-<span class="k">def</span> <span class="nf">test_fib</span><span class="p">():</span>
-    <span class="k">assert</span> <span class="n">fib</span><span class="p">(</span><span class="mi">6</span><span class="p">)</span> <span class="o">==</span> <span class="mi">8</span>
-    <span class="k">assert</span> <span class="n">fib</span><span class="p">(</span><span class="mi">7</span><span class="p">)</span> <span class="o">==</span> <span class="mi">13</span>
-    <span class="k">assert</span> <span class="n">fib</span><span class="p">(</span><span class="mi">8</span><span class="p">)</span> <span class="o">==</span> <span class="mi">21</span>
-    <span class="k">assert</span> <span class="n">fib</span><span class="p">(</span><span class="mi">50</span><span class="p">)</span> <span class="o">==</span> <span class="mi">12586269025</span>
-    <span class="k">assert</span> <span class="n">fib</span><span class="p">(</span><span class="mi">100</span><span class="p">)</span> <span class="o">==</span> <span class="mi">354224848179261915075</span>
+<span class="k">def</span> <span class="nf">test_can_construct_base_case</span><span class="p">():</span>
+    <span class="k">assert</span> <span class="n">can_construct</span><span class="p">(</span><span class="s2">&quot;&quot;</span><span class="p">,</span> <span class="p">[])</span> <span class="o">==</span> <span class="kc">True</span>
+
+<span class="k">def</span> <span class="nf">test_best_sum</span><span class="p">():</span>
+    <span class="k">assert</span> <span class="n">can_construct</span><span class="p">(</span><span class="s2">&quot;abcdef&quot;</span><span class="p">,</span> <span class="s2">&quot;ab abc cd def abcd&quot;</span><span class="o">.</span><span class="n">split</span><span class="p">())</span> <span class="o">==</span> <span class="kc">True</span>
+    <span class="k">assert</span> <span class="n">can_construct</span><span class="p">(</span><span class="s2">&quot;skateboard&quot;</span><span class="p">,</span> <span class="s2">&quot;bo rd ate t ska sk boar&quot;</span><span class="o">.</span><span class="n">split</span><span class="p">())</span> <span class="o">==</span> <span class="kc">False</span>
+    <span class="k">assert</span> <span class="n">can_construct</span><span class="p">(</span><span class="s2">&quot;enterapotentpot&quot;</span><span class="p">,</span> <span class="s2">&quot;a p ent enter ot o t&quot;</span><span class="o">.</span><span class="n">split</span><span class="p">())</span> <span class="o">==</span> <span class="kc">True</span>
+
+
+<span class="k">def</span> <span class="nf">test_best_sum_memo</span><span class="p">():</span>
+    <span class="k">assert</span> <span class="n">can_construct</span><span class="p">(</span><span class="s2">&quot;eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeef&quot;</span><span class="p">,</span>
+                         <span class="s2">&quot;e ee eee eeee eeeee eeeeee eeeeeee eeeeeeee&quot;</span><span class="o">.</span><span class="n">split</span><span class="p">())</span> <span class="o">==</span> <span class="kc">False</span>
 </pre></div>
 </div>
 </div>
@@ -218,10 +222,10 @@
   
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
       
-        <a href="grid-traveler.html" class="btn btn-neutral float-right" title="Grid Traveler" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+        <a href="../../../solutions.html" class="btn btn-neutral float-right" title="Solutions" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
       
       
-        <a href="index.html" class="btn btn-neutral float-left" title="Memoization" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+        <a href="best-sum.html" class="btn btn-neutral float-left" title="Best Sum" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
       
     </div>
   

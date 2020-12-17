@@ -9,3 +9,4 @@ Memoization
     can-sum
     how-sum
     best-sum
+    can-construct

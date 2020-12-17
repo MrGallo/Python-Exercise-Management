@@ -1175,5 +1175,33 @@ Best Sum
         memo[target_sum] = shortest
         return shortest
 
+Can Construct
+*************
+.. code-block:: python
+    :linenos:
+
+    from typing import List, Dict
+    
+    
+    def can_construct(target: str, wordbank: List[str], memo: Dict = None) -> bool:
+        if memo is None:
+            memo = {}
+        
+        if target in memo.keys():
+            return memo[target]
+    
+        if target == "":
+            return True
+        
+        for word in wordbank:
+            if target.startswith(word):
+                remaining = target[len(word):]
+                if can_construct(remaining, wordbank, memo):
+                    memo[target] = True
+                    return True
+    
+        memo[target] = False
+        return False
+
 
 
