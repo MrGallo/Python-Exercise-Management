@@ -39,7 +39,7 @@
     
     <link rel="index" title="Index" href="../../../genindex.html" />
     <link rel="search" title="Search" href="../../../search.html" />
-    <link rel="next" title="Solutions" href="../../../solutions.html" />
+    <link rel="next" title="Count Construct" href="count-construct.html" />
     <link rel="prev" title="Best Sum" href="best-sum.html" /> 
 </head>
 
@@ -102,6 +102,8 @@
 <li class="toctree-l4"><a class="reference internal" href="#tests">Tests</a></li>
 </ul>
 </li>
+<li class="toctree-l3"><a class="reference internal" href="count-construct.html">Count Construct</a></li>
+<li class="toctree-l3"><a class="reference internal" href="all-construct.html">All Construct</a></li>
 </ul>
 </li>
 </ul>
@@ -200,13 +202,13 @@
 <span class="k">def</span> <span class="nf">test_can_construct_base_case</span><span class="p">():</span>
     <span class="k">assert</span> <span class="n">can_construct</span><span class="p">(</span><span class="s2">&quot;&quot;</span><span class="p">,</span> <span class="p">[])</span> <span class="o">==</span> <span class="kc">True</span>
 
-<span class="k">def</span> <span class="nf">test_best_sum</span><span class="p">():</span>
+<span class="k">def</span> <span class="nf">test_can_construct</span><span class="p">():</span>
     <span class="k">assert</span> <span class="n">can_construct</span><span class="p">(</span><span class="s2">&quot;abcdef&quot;</span><span class="p">,</span> <span class="s2">&quot;ab abc cd def abcd&quot;</span><span class="o">.</span><span class="n">split</span><span class="p">())</span> <span class="o">==</span> <span class="kc">True</span>
     <span class="k">assert</span> <span class="n">can_construct</span><span class="p">(</span><span class="s2">&quot;skateboard&quot;</span><span class="p">,</span> <span class="s2">&quot;bo rd ate t ska sk boar&quot;</span><span class="o">.</span><span class="n">split</span><span class="p">())</span> <span class="o">==</span> <span class="kc">False</span>
     <span class="k">assert</span> <span class="n">can_construct</span><span class="p">(</span><span class="s2">&quot;enterapotentpot&quot;</span><span class="p">,</span> <span class="s2">&quot;a p ent enter ot o t&quot;</span><span class="o">.</span><span class="n">split</span><span class="p">())</span> <span class="o">==</span> <span class="kc">True</span>
 
 
-<span class="k">def</span> <span class="nf">test_best_sum_memo</span><span class="p">():</span>
+<span class="k">def</span> <span class="nf">test_can_construct_memo</span><span class="p">():</span>
     <span class="k">assert</span> <span class="n">can_construct</span><span class="p">(</span><span class="s2">&quot;eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeef&quot;</span><span class="p">,</span>
                          <span class="s2">&quot;e ee eee eeee eeeee eeeeee eeeeeee eeeeeeee&quot;</span><span class="o">.</span><span class="n">split</span><span class="p">())</span> <span class="o">==</span> <span class="kc">False</span>
 </pre></div>
@@ -222,7 +224,7 @@
   
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
       
-        <a href="../../../solutions.html" class="btn btn-neutral float-right" title="Solutions" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+        <a href="count-construct.html" class="btn btn-neutral float-right" title="Count Construct" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
       
       
         <a href="best-sum.html" class="btn btn-neutral float-left" title="Best Sum" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>

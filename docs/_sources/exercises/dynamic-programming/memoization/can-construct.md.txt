@@ -29,13 +29,13 @@ from main import can_construct
 def test_can_construct_base_case():
     assert can_construct("", []) == True
 
-def test_best_sum():
+def test_can_construct():
     assert can_construct("abcdef", "ab abc cd def abcd".split()) == True
     assert can_construct("skateboard", "bo rd ate t ska sk boar".split()) == False
     assert can_construct("enterapotentpot", "a p ent enter ot o t".split()) == True
 
 
-def test_best_sum_memo():
+def test_can_construct_memo():
     assert can_construct("eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeef",
                          "e ee eee eeee eeeee eeeeee eeeeeee eeeeeeee".split()) == False
 ```

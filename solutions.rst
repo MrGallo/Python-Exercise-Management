@@ -771,6 +771,30 @@ fizz_array
     
         return new_list
 
+fizz_buzz
+*********
+.. code-block:: python
+    :linenos:
+
+    from typing import List
+    
+    
+    def fizz_buzz(start: int, end: int) -> List[str]:
+        new_list = []
+        i = start
+        while i < end:
+            if i % 3 == 0 and i % 5 == 0:
+                new_list.append("FizzBuzz")
+            elif i % 3 == 0:
+                new_list.append("Fizz")
+            elif i % 5 == 0:
+                new_list.append("Buzz")
+            else:
+                new_list.append(str(i))
+            i += 1
+        
+        return new_list
+
 
 
 Codingbat (Input/Output)
@@ -1202,6 +1226,33 @@ Can Construct
     
         memo[target] = False
         return False
+
+Count Construct
+***************
+.. code-block:: python
+    :linenos:
+
+    from typing import List, Dict
+    
+    
+    def count_construct(target: str, wordbank: List[str], memo: Dict = None) -> int:
+        if memo is None:
+            memo = {}
+        
+        if target in memo.keys():
+            return memo[target]
+    
+        if target == "":
+            return 1
+        
+        count = 0
+        for word in wordbank:
+            if target.startswith(word):
+                remaining = target[len(word):]
+                count += count_construct(remaining, wordbank, memo)
+        
+        memo[target] = count
+        return count
 
 
 

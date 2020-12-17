@@ -7,7 +7,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>Grid Traveler &mdash; Python Exercises  documentation</title>
+  <title>Count Construct &mdash; Python Exercises  documentation</title>
   
 
   
@@ -39,8 +39,8 @@
     
     <link rel="index" title="Index" href="../../../genindex.html" />
     <link rel="search" title="Search" href="../../../search.html" />
-    <link rel="next" title="Can Sum" href="can-sum.html" />
-    <link rel="prev" title="Fibonacci" href="fibonacci.html" /> 
+    <link rel="next" title="All Construct" href="all-construct.html" />
+    <link rel="prev" title="Can Construct" href="can-construct.html" /> 
 </head>
 
 <body class="wy-body-for-nav">
@@ -93,16 +93,16 @@
 <li class="toctree-l1 current"><a class="reference internal" href="../index.html">Dynamic Programming</a><ul class="current">
 <li class="toctree-l2 current"><a class="reference internal" href="index.html">Memoization</a><ul class="current">
 <li class="toctree-l3"><a class="reference internal" href="fibonacci.html">Fibonacci</a></li>
-<li class="toctree-l3 current"><a class="current reference internal" href="#">Grid Traveler</a><ul>
-<li class="toctree-l4"><a class="reference internal" href="#starter-code">Starter Code</a></li>
-<li class="toctree-l4"><a class="reference internal" href="#tests">Tests</a></li>
-</ul>
-</li>
+<li class="toctree-l3"><a class="reference internal" href="grid-traveler.html">Grid Traveler</a></li>
 <li class="toctree-l3"><a class="reference internal" href="can-sum.html">Can Sum</a></li>
 <li class="toctree-l3"><a class="reference internal" href="how-sum.html">How Sum</a></li>
 <li class="toctree-l3"><a class="reference internal" href="best-sum.html">Best Sum</a></li>
 <li class="toctree-l3"><a class="reference internal" href="can-construct.html">Can Construct</a></li>
-<li class="toctree-l3"><a class="reference internal" href="count-construct.html">Count Construct</a></li>
+<li class="toctree-l3 current"><a class="current reference internal" href="#">Count Construct</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#starter-code">Starter Code</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#tests">Tests</a></li>
+</ul>
+</li>
 <li class="toctree-l3"><a class="reference internal" href="all-construct.html">All Construct</a></li>
 </ul>
 </li>
@@ -159,13 +159,13 @@
         
           <li><a href="index.html">Memoization</a> &raquo;</li>
         
-      <li>Grid Traveler</li>
+      <li>Count Construct</li>
     
     
       <li class="wy-breadcrumbs-aside">
         
             
-            <a href="../../../_sources/exercises/dynamic-programming/memoization/grid-traveler.md.txt" rel="nofollow"> View page source</a>
+            <a href="../../../_sources/exercises/dynamic-programming/memoization/count-construct.md.txt" rel="nofollow"> View page source</a>
           
         
       </li>
@@ -178,42 +178,42 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
             
-  <div class="section" id="grid-traveler">
-<h1>Grid Traveler<a class="headerlink" href="#grid-traveler" title="Permalink to this headline">¶</a></h1>
-<p>Say that you are a traveler on a 2D grid. You begin in the top-left corner and your goal is to travel to the bottom-right corner. You may only move right or down.</p>
-<p>In how many ways can you travel to the goal on a grid with dimensions <code class="docutils literal notranslate"><span class="pre">m</span> <span class="pre">*</span> <span class="pre">n</span></code>?</p>
-<p>Write the function <code class="docutils literal notranslate"><span class="pre">grid_traveler(m,</span> <span class="pre">n)</span></code> to solve this. Use memoization to get the last tests to pass in a respectable about of time</p>
+  <div class="section" id="count-construct">
+<h1>Count Construct<a class="headerlink" href="#count-construct" title="Permalink to this headline">¶</a></h1>
+<p>Write a function <code class="docutils literal notranslate"><span class="pre">count_construct(target,</span> <span class="pre">wordbank)</span></code> that accepts a target string and an array of strings.</p>
+<p>The function should return the number of ways that the <code class="docutils literal notranslate"><span class="pre">target</span></code> can be constructed by concatenating elements of the <code class="docutils literal notranslate"><span class="pre">wordbank</span></code> list.</p>
+<p>You may reuse elements of <code class="docutils literal notranslate"><span class="pre">wordbank</span></code> as many times as needed.</p>
 <p>You can learn more from Free Code Camp’s <a class="reference external" href="https://www.youtube.com/watch?v=oBt53YbR9Kk">Dynamic Programming</a> video.</p>
 <div class="section" id="starter-code">
 <h2>Starter Code<a class="headerlink" href="#starter-code" title="Permalink to this headline">¶</a></h2>
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">grid_traveler</span><span class="p">(</span><span class="n">m</span><span class="p">:</span> <span class="nb">int</span><span class="p">,</span> <span class="n">n</span><span class="p">:</span> <span class="nb">int</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">int</span><span class="p">:</span>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">typing</span> <span class="kn">import</span> <span class="n">List</span>
+
+
+<span class="k">def</span> <span class="nf">count_construct</span><span class="p">(</span><span class="n">target</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span> <span class="n">wordbank</span><span class="p">:</span> <span class="n">List</span><span class="p">[</span><span class="nb">str</span><span class="p">])</span> <span class="o">-&gt;</span> <span class="nb">int</span><span class="p">:</span>
     <span class="k">pass</span>
 </pre></div>
 </div>
 </div>
 <div class="section" id="tests">
 <h2>Tests<a class="headerlink" href="#tests" title="Permalink to this headline">¶</a></h2>
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">main</span> <span class="kn">import</span> <span class="n">grid_traveler</span>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">main</span> <span class="kn">import</span> <span class="n">count_construct</span>
 
 
-<span class="k">def</span> <span class="nf">test_grid_traveler_base_case</span><span class="p">():</span>
-    <span class="k">assert</span> <span class="n">grid_traveler</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">)</span> <span class="o">==</span> <span class="mi">0</span>
-    <span class="k">assert</span> <span class="n">grid_traveler</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">1</span><span class="p">)</span> <span class="o">==</span> <span class="mi">0</span>
-    <span class="k">assert</span> <span class="n">grid_traveler</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">0</span><span class="p">)</span> <span class="o">==</span> <span class="mi">0</span>
-    <span class="k">assert</span> <span class="n">grid_traveler</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">1</span><span class="p">)</span> <span class="o">==</span> <span class="mi">1</span>
+<span class="k">def</span> <span class="nf">test_count_construct_base_case</span><span class="p">():</span>
+    <span class="k">assert</span> <span class="n">count_construct</span><span class="p">(</span><span class="s2">&quot;&quot;</span><span class="p">,</span> <span class="p">[])</span> <span class="o">==</span> <span class="mi">1</span>
 
 
-<span class="k">def</span> <span class="nf">test_grid_traveler</span><span class="p">():</span>
-    <span class="k">assert</span> <span class="n">grid_traveler</span><span class="p">(</span><span class="mi">2</span><span class="p">,</span> <span class="mi">2</span><span class="p">)</span> <span class="o">==</span> <span class="mi">2</span>
-    <span class="k">assert</span> <span class="n">grid_traveler</span><span class="p">(</span><span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">)</span> <span class="o">==</span> <span class="mi">3</span>
-    <span class="k">assert</span> <span class="n">grid_traveler</span><span class="p">(</span><span class="mi">3</span><span class="p">,</span> <span class="mi">3</span><span class="p">)</span> <span class="o">==</span> <span class="mi">6</span>
-    <span class="k">assert</span> <span class="n">grid_traveler</span><span class="p">(</span><span class="mi">3</span><span class="p">,</span> <span class="mi">8</span><span class="p">)</span> <span class="o">==</span> <span class="mi">36</span>
+<span class="k">def</span> <span class="nf">test_count_construct</span><span class="p">():</span>
+    <span class="k">assert</span> <span class="n">count_construct</span><span class="p">(</span><span class="s2">&quot;hi&quot;</span><span class="p">,</span> <span class="p">[])</span> <span class="o">==</span> <span class="mi">0</span>
+    <span class="k">assert</span> <span class="n">count_construct</span><span class="p">(</span><span class="s2">&quot;purple&quot;</span><span class="p">,</span> <span class="s2">&quot;purp p ur le purpl&quot;</span><span class="o">.</span><span class="n">split</span><span class="p">())</span> <span class="o">==</span> <span class="mi">2</span>
+    <span class="k">assert</span> <span class="n">count_construct</span><span class="p">(</span><span class="s2">&quot;abcdef&quot;</span><span class="p">,</span> <span class="s2">&quot;ab abc cd def abcd ef c&quot;</span><span class="o">.</span><span class="n">split</span><span class="p">())</span> <span class="o">==</span> <span class="mi">4</span>
+    <span class="k">assert</span> <span class="n">count_construct</span><span class="p">(</span><span class="s2">&quot;skateboard&quot;</span><span class="p">,</span> <span class="s2">&quot;bo rd ate t ska sk boar&quot;</span><span class="o">.</span><span class="n">split</span><span class="p">())</span> <span class="o">==</span> <span class="mi">0</span>
+    <span class="k">assert</span> <span class="n">count_construct</span><span class="p">(</span><span class="s2">&quot;enterapotentpot&quot;</span><span class="p">,</span> <span class="s2">&quot;a p ent enter ot o t&quot;</span><span class="o">.</span><span class="n">split</span><span class="p">())</span> <span class="o">==</span> <span class="mi">4</span>
 
 
-<span class="k">def</span> <span class="nf">test_grid_traveler_memo</span><span class="p">():</span>
-    <span class="k">assert</span> <span class="n">grid_traveler</span><span class="p">(</span><span class="mi">10</span><span class="p">,</span> <span class="mi">15</span><span class="p">)</span> <span class="o">==</span> <span class="mi">817190</span>
-    <span class="k">assert</span> <span class="n">grid_traveler</span><span class="p">(</span><span class="mi">30</span><span class="p">,</span> <span class="mi">30</span><span class="p">)</span> <span class="o">==</span> <span class="mi">30067266499541040</span>
-    <span class="k">assert</span> <span class="n">grid_traveler</span><span class="p">(</span><span class="mi">100</span><span class="p">,</span> <span class="mi">100</span><span class="p">)</span> <span class="o">==</span> <span class="mi">22750883079422934966181954039568885395604168260154104734000</span>
+<span class="k">def</span> <span class="nf">test_count_construct_memo</span><span class="p">():</span>
+    <span class="k">assert</span> <span class="n">count_construct</span><span class="p">(</span><span class="s2">&quot;eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeef&quot;</span><span class="p">,</span>
+                           <span class="s2">&quot;e ee eee eeee eeeee eeeeee eeeeeee&quot;</span><span class="o">.</span><span class="n">split</span><span class="p">())</span> <span class="o">==</span> <span class="mi">0</span>
 </pre></div>
 </div>
 </div>
@@ -227,10 +227,10 @@
   
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
       
-        <a href="can-sum.html" class="btn btn-neutral float-right" title="Can Sum" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+        <a href="all-construct.html" class="btn btn-neutral float-right" title="All Construct" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
       
       
-        <a href="fibonacci.html" class="btn btn-neutral float-left" title="Fibonacci" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+        <a href="can-construct.html" class="btn btn-neutral float-left" title="Can Construct" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
       
     </div>
   

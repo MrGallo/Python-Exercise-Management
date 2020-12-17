@@ -10,3 +10,5 @@ Memoization
     how-sum
     best-sum
     can-construct
+    count-construct
+    all-construct
