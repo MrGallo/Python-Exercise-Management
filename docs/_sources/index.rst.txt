@@ -8,6 +8,7 @@ Python Exercises
     exercises/practical-programming/index
     exercises/codingbat/index
     exercises/codingbat-input-output/index
+    exercises/dynamic-programming/index
 
     solutions
 

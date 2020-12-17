@@ -1033,3 +1033,115 @@ xyz_middle
 
 
 
+Dynamic Programming
+-------------------
+
+Memoization
+^^^^^^^^^^^
+Fibonacci
+*********
+.. code-block:: python
+    :linenos:
+
+    from typing import Dict, Optional
+    
+    
+    def fib(n: int, memo: Optional[Dict[int, int]] = None) -> int:
+        if memo is None:
+            memo = {}
+        
+        if n in memo.keys():
+            return memo[n]
+    
+        if n <= 2:
+            return 1
+        
+        memo[n] = fib(n-2, memo) + fib(n-1, memo)
+        return memo[n]
+
+Grid Traveler
+*************
+.. code-block:: python
+    :linenos:
+
+    from typing import Dict
+    
+    
+    def grid_traveler(m: int, n: int, memo: Dict = None) -> int:
+        if memo is None:
+            memo = {}
+        
+        key = (m, n)
+        if key in memo.keys():
+            return memo[key]
+        
+        if m == 0 or n == 0:
+            return 0
+        
+        if m == 1 and n == 1:
+            return 1
+    
+        memo[key] = grid_traveler(m-1, n, memo) + grid_traveler(m, n-1, memo)
+        return memo[key]
+
+Can Sum
+*******
+.. code-block:: python
+    :linenos:
+
+    from typing import List, Dict
+    
+    
+    def can_sum(target_sum: int, numbers: List[int], memo: Dict = None):
+        if memo is None:
+            memo = {}
+        
+        if target_sum in memo.keys():
+            return memo[target_sum]
+    
+        if target_sum == 0:
+            return True
+        elif target_sum < 0:
+            return False
+        
+        for n in numbers:
+            difference = target_sum - n
+            if can_sum(difference, numbers, memo):
+                memo[target_sum] = True
+                return True
+        
+        memo[target_sum] = False
+        return False
+
+How Sum
+*******
+.. code-block:: python
+    :linenos:
+
+    from typing import List, Dict
+    
+    
+    def how_sum(target_sum: int, numbers: List[int], memo: Dict = None) -> List[int]:
+        if memo is None:
+            memo = {}
+        
+        if target_sum in memo.keys():
+            return memo[target_sum]
+    
+        if target_sum == 0:
+            return []
+        elif target_sum < 0:
+            return None
+        
+        for n in numbers:
+            difference = target_sum - n
+            result = how_sum(difference, numbers, memo)
+            if result is not None:
+                memo[target_sum] = [n] + result
+                return memo[target_sum]
+        
+        memo[target_sum] = None
+        return None
+
+
+
