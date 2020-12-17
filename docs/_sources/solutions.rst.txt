@@ -1254,5 +1254,33 @@ Count Construct
         memo[target] = count
         return count
 
+All Construct
+*************
+.. code-block:: python
+    :linenos:
+
+    from typing import List, Dict
+    
+    
+    def all_construct(target: str, wordbank: List[str], memo: Dict = None) -> List[List[str]]:
+        if memo is None:
+            memo = {}
+        
+        if target in memo.keys():
+            return memo[target]
+    
+        if target == "":
+            return [[]]
+        
+        combinations = []
+        for word in wordbank:
+            if target.startswith(word):
+                remaining = target[len(word):]
+                sub_combinations = all_construct(remaining, wordbank, memo)
+                combinations += [[word] + c for c in sub_combinations]
+    
+        memo[target] = combinations
+        return combinations
+
 
 
