@@ -15,10 +15,10 @@ If Barley’s happiness score is `10` or greater then he is happy. Otherwise, he
 
 ### Input Specification
 There are three lines of input. Each line contains a non-negative integer less than `10`. The first line contains the number of small treats, `S`, the second line contains the number of medium treats, `M`,
-and the third line contains the number of large treats, `L, that Barley receives in a day.
+and the third line contains the number of large treats, `L`, that Barley receives in a day.
 
 ### Output Specification
-If Barley’s happiness score is 10 or greater, output happy. Otherwise, output sad.
+If Barley’s happiness score is `10` or greater, output `happy`. Otherwise, output `sad`.
 
 **Sample Input 1**
 ```
