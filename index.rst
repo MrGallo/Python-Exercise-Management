@@ -9,6 +9,7 @@ Python Exercises
     exercises/codingbat/index
     exercises/codingbat-input-output/index
     exercises/dynamic-programming/index
+    exercises/ccc-problems/index
 
     solutions
 
