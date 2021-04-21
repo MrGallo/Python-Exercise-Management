@@ -1,6 +1,8 @@
 Python Exercises
 ================
 
+You can do these exercises and test them using my `Python Exercise Runner <https://repl.it/@DanielGallo/Python-Exercise-Runner>`_.
+
 .. toctree::
     :maxdepth: 2
 
@@ -13,4 +15,3 @@ Python Exercises
 
     solutions
 
-You can do these exercises and test them using my `Python Exercise Runner <https://repl.it/@DanielGallo/Python-Exercise-Runner>`_.
