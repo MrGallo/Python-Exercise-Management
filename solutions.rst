@@ -1308,7 +1308,7 @@ f(x) = x + 4
         Returns:
             Another integer, x + 4
         """
-        return x
+        return x + 4
 
 
 
