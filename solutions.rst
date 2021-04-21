@@ -1310,5 +1310,108 @@ f(x) = x + 4
         """
         return x + 4
 
+say_hello
+*********
+.. code-block:: python
+    :linenos:
+
+    def say_hello(name: str) -> str:
+        """Creates a greeting for a friend.
+        
+        Args:
+            name: The name of someone to say hi to
+        Returns:
+            A greeting in the format "Hello, {name}!"
+        """
+        return f"Hello, {name}!"
+
+Sum of three numbers
+********************
+.. code-block:: python
+    :linenos:
+
+    def add(a: int, b: int, c: int) -> int:
+        """Returns the sum of three integers.
+        
+        Args:
+            a: a number
+            b: a number
+            c: a number
+        Returns:
+            Sum of the numbers
+        """
+        return a + b + c
+
+
+Lists
+^^^^^
+Empty List
+**********
+.. code-block:: python
+    :linenos:
+
+    from typing import List
+    
+    
+    def get_empty_list() -> List:
+        """Returns an empty list"""
+        return []
+
+Pi List
+*******
+.. code-block:: python
+    :linenos:
+
+    from typing import List
+    
+    
+    def get_pi() -> List:
+        """Returns the first three digits of Pi in a list"""
+        return [3, 1, 4]
+
+sum
+***
+.. code-block:: python
+    :linenos:
+
+    def sum_list(numbers: List[float]) -> float:
+        """Returns the sum of a list of numbers.
+    
+        Args:
+            numbers: A list of float numbers.
+        Returns:
+            The sum of the numbers.
+        
+        Note: Do NOT use the sum() built-in function to 
+              accomplish this. Use a loop.
+        """
+        total = 0
+        for n in numbers:
+            total += n
+        
+        return total
+
+Sum Even
+********
+.. code-block:: python
+    :linenos:
+
+    def sum_even(numbers: List[int]) -> int:
+        """Returns the sum all even numbers in a list.
+    
+        Args:
+            numbers: A list of integers.
+        Returns:
+            The sum of the even integers.
+        
+        Note: Use modulus (%) to discover even integers.
+        """
+        total = 0
+        for n in numbers:
+            if n % 2 == 0:
+                total += n
+        
+        return total
+
 
 

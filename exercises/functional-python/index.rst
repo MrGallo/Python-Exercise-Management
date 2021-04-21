@@ -5,3 +5,4 @@ Functional Python
     :maxdepth: 2
 
     intro/index
+    lists/index

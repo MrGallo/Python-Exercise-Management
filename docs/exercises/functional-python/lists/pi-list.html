@@ -7,7 +7,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>f(x) = x + 4 &mdash; Python Exercises  documentation</title>
+  <title>Pi List &mdash; Python Exercises  documentation</title>
   
 
   
@@ -39,8 +39,8 @@
     
     <link rel="index" title="Index" href="../../../genindex.html" />
     <link rel="search" title="Search" href="../../../search.html" />
-    <link rel="next" title="say_hello" href="say-hello.html" />
-    <link rel="prev" title="Intro" href="index.html" /> 
+    <link rel="next" title="sum" href="sum.html" />
+    <link rel="prev" title="Empty List" href="empty-list.html" /> 
 </head>
 
 <body class="wy-body-for-nav">
@@ -93,19 +93,18 @@
 <li class="toctree-l1"><a class="reference internal" href="../../dynamic-programming/index.html">Dynamic Programming</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../ccc-problems/index.html">Ccc Problems</a></li>
 <li class="toctree-l1 current"><a class="reference internal" href="../index.html">Functional Python</a><ul class="current">
-<li class="toctree-l2 current"><a class="reference internal" href="index.html">Intro</a><ul class="current">
-<li class="toctree-l3 current"><a class="current reference internal" href="#">f(x) = x + 4</a><ul>
-<li class="toctree-l4"><a class="reference internal" href="#your-task">Your task</a></li>
-<li class="toctree-l4"><a class="reference internal" href="#testing-your-code">Testing your code</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../intro/index.html">Intro</a></li>
+<li class="toctree-l2 current"><a class="reference internal" href="index.html">Lists</a><ul class="current">
+<li class="toctree-l3"><a class="reference internal" href="empty-list.html">Empty List</a></li>
+<li class="toctree-l3 current"><a class="current reference internal" href="#">Pi List</a><ul>
 <li class="toctree-l4"><a class="reference internal" href="#starter-code">Starter Code</a></li>
 <li class="toctree-l4"><a class="reference internal" href="#tests">Tests</a></li>
 </ul>
 </li>
-<li class="toctree-l3"><a class="reference internal" href="say-hello.html">say_hello</a></li>
-<li class="toctree-l3"><a class="reference internal" href="sum-of-three-numbers.html">Sum of three numbers</a></li>
+<li class="toctree-l3"><a class="reference internal" href="sum.html">sum</a></li>
+<li class="toctree-l3"><a class="reference internal" href="sum-even.html">Sum Even</a></li>
 </ul>
 </li>
-<li class="toctree-l2"><a class="reference internal" href="../lists/index.html">Lists</a></li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="../../../solutions.html">Solutions</a></li>
@@ -157,15 +156,15 @@
         
           <li><a href="../index.html">Functional Python</a> &raquo;</li>
         
-          <li><a href="index.html">Intro</a> &raquo;</li>
+          <li><a href="index.html">Lists</a> &raquo;</li>
         
-      <li>f(x) = x + 4</li>
+      <li>Pi List</li>
     
     
       <li class="wy-breadcrumbs-aside">
         
             
-            <a href="../../../_sources/exercises/functional-python/intro/f-x-x-4.md.txt" rel="nofollow"> View page source</a>
+            <a href="../../../_sources/exercises/functional-python/lists/pi-list.md.txt" rel="nofollow"> View page source</a>
           
         
       </li>
@@ -178,51 +177,27 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
             
-  <div class="section" id="f-x-x-4">
-<h1>f(x) = x + 4<a class="headerlink" href="#f-x-x-4" title="Permalink to this headline">¶</a></h1>
-<p>A function is defined using the keyword <code class="docutils literal notranslate"><span class="pre">def</span></code>. A function is a sub program that can be called into action whenever we (the programmer) want.</p>
-<p>In its simplest form, a function:</p>
-<ol class="simple">
-<li><p>takes input</p></li>
-<li><p>processes data, and</p></li>
-<li><p>returns a result.</p></li>
-</ol>
-<p>This is similar to math. Given the mathematical function <code class="docutils literal notranslate"><span class="pre">f(x)</span> <span class="pre">=</span> <span class="pre">x</span> <span class="pre">+</span> <span class="pre">4</span></code>, when we call the function with <code class="docutils literal notranslate"><span class="pre">f(6)</span></code> we get a result of 10. In programming we can define similar functions but use a variety of data for <code class="docutils literal notranslate"><span class="pre">x</span></code> and return more than just numbers.</p>
-<div class="section" id="your-task">
-<h2>Your task<a class="headerlink" href="#your-task" title="Permalink to this headline">¶</a></h2>
-<p>The function given is set up to receive an integer value for x. All you have to do is modify the return statement to <strong>have the function return <code class="docutils literal notranslate"><span class="pre">x</span> <span class="pre">+</span> <span class="pre">4</span></code> .</strong> The doc-string enclosed in the triple-quotes <code class="docutils literal notranslate"><span class="pre">&quot;&quot;&quot;</span></code> is optional and is there so that other programmers can quickly understand what the function needs to do its job and what it returns as a result.</p>
-</div>
-<div class="section" id="testing-your-code">
-<h2>Testing your code<a class="headerlink" href="#testing-your-code" title="Permalink to this headline">¶</a></h2>
-<p>After the function, and <strong>un-indented,</strong> call your function like above and print it out.</p>
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="n">f</span><span class="p">(</span><span class="mi">5</span><span class="p">))</span>
-</pre></div>
-</div>
-<p>Now hit run. The program will print the result of your function.</p>
-</div>
+  <div class="section" id="pi-list">
+<h1>Pi List<a class="headerlink" href="#pi-list" title="Permalink to this headline">¶</a></h1>
+<p>Complete the function so it returns a list of the first three digits of Pi. <em>Hint: don’t create a list of the number <code class="docutils literal notranslate"><span class="pre">314</span></code>, make a list of each digit separated.</em></p>
 <div class="section" id="starter-code">
 <h2>Starter Code<a class="headerlink" href="#starter-code" title="Permalink to this headline">¶</a></h2>
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">f</span><span class="p">(</span><span class="n">x</span><span class="p">:</span> <span class="nb">int</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">int</span><span class="p">:</span>
-    <span class="sd">&quot;&quot;&quot;Returns the value of x plus 4</span>
-<span class="sd">    </span>
-<span class="sd">    Args:</span>
-<span class="sd">        x: An integer</span>
-<span class="sd">    Returns:</span>
-<span class="sd">        Another integer, x + 4</span>
-<span class="sd">    &quot;&quot;&quot;</span>
-    <span class="k">return</span> <span class="n">x</span>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">typing</span> <span class="kn">import</span> <span class="n">List</span>
+
+
+<span class="k">def</span> <span class="nf">get_pi</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="n">List</span><span class="p">:</span>
+    <span class="sd">&quot;&quot;&quot;Returns the first three digits of Pi in a list&quot;&quot;&quot;</span>
+    <span class="k">return</span> <span class="kc">None</span>
 </pre></div>
 </div>
 </div>
 <div class="section" id="tests">
 <h2>Tests<a class="headerlink" href="#tests" title="Permalink to this headline">¶</a></h2>
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">main</span> <span class="kn">import</span> <span class="n">f</span>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">main</span> <span class="kn">import</span> <span class="n">get_pi</span>
 
 
-<span class="k">def</span> <span class="nf">test_f</span><span class="p">():</span>
-    <span class="k">assert</span> <span class="n">f</span><span class="p">(</span><span class="mi">5</span><span class="p">)</span> <span class="o">==</span> <span class="mi">9</span>
-    <span class="k">assert</span> <span class="n">f</span><span class="p">(</span><span class="mi">6</span><span class="p">)</span> <span class="o">==</span> <span class="mi">10</span>
-    <span class="k">assert</span> <span class="n">f</span><span class="p">(</span><span class="o">-</span><span class="mi">4</span><span class="p">)</span> <span class="o">==</span> <span class="mi">0</span>
+<span class="k">def</span> <span class="nf">test_get_pi</span><span class="p">():</span>
+    <span class="k">assert</span> <span class="n">get_pi</span><span class="p">()</span> <span class="o">==</span> <span class="p">[</span><span class="mi">3</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">4</span><span class="p">]</span>
 </pre></div>
 </div>
 </div>
@@ -236,10 +211,10 @@
   
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
       
-        <a href="say-hello.html" class="btn btn-neutral float-right" title="say_hello" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+        <a href="sum.html" class="btn btn-neutral float-right" title="sum" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
       
       
-        <a href="index.html" class="btn btn-neutral float-left" title="Intro" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+        <a href="empty-list.html" class="btn btn-neutral float-left" title="Empty List" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
       
     </div>
   

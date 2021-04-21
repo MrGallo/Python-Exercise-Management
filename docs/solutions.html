@@ -39,7 +39,7 @@
     
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
-    <link rel="prev" title="f(x) = x + 4" href="exercises/functional-python/intro/f-x-x-4.html" /> 
+    <link rel="prev" title="Sum Even" href="exercises/functional-python/lists/sum-even.html" /> 
 </head>
 
 <body class="wy-body-for-nav">
@@ -215,6 +215,15 @@
 <li class="toctree-l2"><a class="reference internal" href="#functional-python">Functional Python</a><ul>
 <li class="toctree-l3"><a class="reference internal" href="#intro">Intro</a><ul>
 <li class="toctree-l4"><a class="reference internal" href="#f-x-x-4">f(x) = x + 4</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#say-hello">say_hello</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#sum-of-three-numbers">Sum of three numbers</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="#lists">Lists</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#empty-list">Empty List</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#pi-list">Pi List</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#sum">sum</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#sum-even">Sum Even</a></li>
 </ul>
 </li>
 </ul>
@@ -429,6 +438,16 @@
 <li><p><a class="reference internal" href="#intro" id="id108">Intro</a></p>
 <ul>
 <li><p><a class="reference internal" href="#f-x-x-4" id="id109">f(x) = x + 4</a></p></li>
+<li><p><a class="reference internal" href="#say-hello" id="id110">say_hello</a></p></li>
+<li><p><a class="reference internal" href="#sum-of-three-numbers" id="id111">Sum of three numbers</a></p></li>
+</ul>
+</li>
+<li><p><a class="reference internal" href="#lists" id="id112">Lists</a></p>
+<ul>
+<li><p><a class="reference internal" href="#empty-list" id="id113">Empty List</a></p></li>
+<li><p><a class="reference internal" href="#pi-list" id="id114">Pi List</a></p></li>
+<li><p><a class="reference internal" href="#sum" id="id115">sum</a></p></li>
+<li><p><a class="reference internal" href="#sum-even" id="id116">Sum Even</a></p></li>
 </ul>
 </li>
 </ul>
@@ -2388,6 +2407,161 @@
 </pre></div>
 </td></tr></table></div>
 </div>
+<div class="section" id="say-hello">
+<h4><a class="toc-backref" href="#id110">say_hello</a><a class="headerlink" href="#say-hello" title="Permalink to this headline">¶</a></h4>
+<div class="highlight-python notranslate"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre>1
+2
+3
+4
+5
+6
+7
+8
+9</pre></div></td><td class="code"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">say_hello</span><span class="p">(</span><span class="n">name</span><span class="p">:</span> <span class="nb">str</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">str</span><span class="p">:</span>
+    <span class="sd">&quot;&quot;&quot;Creates a greeting for a friend.</span>
+
+<span class="sd">    Args:</span>
+<span class="sd">        name: The name of someone to say hi to</span>
+<span class="sd">    Returns:</span>
+<span class="sd">        A greeting in the format &quot;Hello, {name}!&quot;</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="k">return</span> <span class="sa">f</span><span class="s2">&quot;Hello, </span><span class="si">{</span><span class="n">name</span><span class="si">}</span><span class="s2">!&quot;</span>
+</pre></div>
+</td></tr></table></div>
+</div>
+<div class="section" id="sum-of-three-numbers">
+<h4><a class="toc-backref" href="#id111">Sum of three numbers</a><a class="headerlink" href="#sum-of-three-numbers" title="Permalink to this headline">¶</a></h4>
+<div class="highlight-python notranslate"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre> 1
+ 2
+ 3
+ 4
+ 5
+ 6
+ 7
+ 8
+ 9
+10
+11</pre></div></td><td class="code"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">add</span><span class="p">(</span><span class="n">a</span><span class="p">:</span> <span class="nb">int</span><span class="p">,</span> <span class="n">b</span><span class="p">:</span> <span class="nb">int</span><span class="p">,</span> <span class="n">c</span><span class="p">:</span> <span class="nb">int</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">int</span><span class="p">:</span>
+    <span class="sd">&quot;&quot;&quot;Returns the sum of three integers.</span>
+
+<span class="sd">    Args:</span>
+<span class="sd">        a: a number</span>
+<span class="sd">        b: a number</span>
+<span class="sd">        c: a number</span>
+<span class="sd">    Returns:</span>
+<span class="sd">        Sum of the numbers</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="k">return</span> <span class="n">a</span> <span class="o">+</span> <span class="n">b</span> <span class="o">+</span> <span class="n">c</span>
+</pre></div>
+</td></tr></table></div>
+</div>
+</div>
+<div class="section" id="lists">
+<h3><a class="toc-backref" href="#id112">Lists</a><a class="headerlink" href="#lists" title="Permalink to this headline">¶</a></h3>
+<div class="section" id="empty-list">
+<h4><a class="toc-backref" href="#id113">Empty List</a><a class="headerlink" href="#empty-list" title="Permalink to this headline">¶</a></h4>
+<div class="highlight-python notranslate"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre>1
+2
+3
+4
+5
+6</pre></div></td><td class="code"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">typing</span> <span class="kn">import</span> <span class="n">List</span>
+
+
+<span class="k">def</span> <span class="nf">get_empty_list</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="n">List</span><span class="p">:</span>
+    <span class="sd">&quot;&quot;&quot;Returns an empty list&quot;&quot;&quot;</span>
+    <span class="k">return</span> <span class="p">[]</span>
+</pre></div>
+</td></tr></table></div>
+</div>
+<div class="section" id="pi-list">
+<h4><a class="toc-backref" href="#id114">Pi List</a><a class="headerlink" href="#pi-list" title="Permalink to this headline">¶</a></h4>
+<div class="highlight-python notranslate"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre>1
+2
+3
+4
+5
+6</pre></div></td><td class="code"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">typing</span> <span class="kn">import</span> <span class="n">List</span>
+
+
+<span class="k">def</span> <span class="nf">get_pi</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="n">List</span><span class="p">:</span>
+    <span class="sd">&quot;&quot;&quot;Returns the first three digits of Pi in a list&quot;&quot;&quot;</span>
+    <span class="k">return</span> <span class="p">[</span><span class="mi">3</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">4</span><span class="p">]</span>
+</pre></div>
+</td></tr></table></div>
+</div>
+<div class="section" id="sum">
+<h4><a class="toc-backref" href="#id115">sum</a><a class="headerlink" href="#sum" title="Permalink to this headline">¶</a></h4>
+<div class="highlight-python notranslate"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre> 1
+ 2
+ 3
+ 4
+ 5
+ 6
+ 7
+ 8
+ 9
+10
+11
+12
+13
+14
+15
+16</pre></div></td><td class="code"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">sum_list</span><span class="p">(</span><span class="n">numbers</span><span class="p">:</span> <span class="n">List</span><span class="p">[</span><span class="nb">float</span><span class="p">])</span> <span class="o">-&gt;</span> <span class="nb">float</span><span class="p">:</span>
+    <span class="sd">&quot;&quot;&quot;Returns the sum of a list of numbers.</span>
+
+<span class="sd">    Args:</span>
+<span class="sd">        numbers: A list of float numbers.</span>
+<span class="sd">    Returns:</span>
+<span class="sd">        The sum of the numbers.</span>
+
+<span class="sd">    Note: Do NOT use the sum() built-in function to</span>
+<span class="sd">          accomplish this. Use a loop.</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="n">total</span> <span class="o">=</span> <span class="mi">0</span>
+    <span class="k">for</span> <span class="n">n</span> <span class="ow">in</span> <span class="n">numbers</span><span class="p">:</span>
+        <span class="n">total</span> <span class="o">+=</span> <span class="n">n</span>
+
+    <span class="k">return</span> <span class="n">total</span>
+</pre></div>
+</td></tr></table></div>
+</div>
+<div class="section" id="sum-even">
+<h4><a class="toc-backref" href="#id116">Sum Even</a><a class="headerlink" href="#sum-even" title="Permalink to this headline">¶</a></h4>
+<div class="highlight-python notranslate"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre> 1
+ 2
+ 3
+ 4
+ 5
+ 6
+ 7
+ 8
+ 9
+10
+11
+12
+13
+14
+15
+16</pre></div></td><td class="code"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">sum_even</span><span class="p">(</span><span class="n">numbers</span><span class="p">:</span> <span class="n">List</span><span class="p">[</span><span class="nb">int</span><span class="p">])</span> <span class="o">-&gt;</span> <span class="nb">int</span><span class="p">:</span>
+    <span class="sd">&quot;&quot;&quot;Returns the sum all even numbers in a list.</span>
+
+<span class="sd">    Args:</span>
+<span class="sd">        numbers: A list of integers.</span>
+<span class="sd">    Returns:</span>
+<span class="sd">        The sum of the even integers.</span>
+
+<span class="sd">    Note: Use modulus (%) to discover even integers.</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="n">total</span> <span class="o">=</span> <span class="mi">0</span>
+    <span class="k">for</span> <span class="n">n</span> <span class="ow">in</span> <span class="n">numbers</span><span class="p">:</span>
+        <span class="k">if</span> <span class="n">n</span> <span class="o">%</span> <span class="mi">2</span> <span class="o">==</span> <span class="mi">0</span><span class="p">:</span>
+            <span class="n">total</span> <span class="o">+=</span> <span class="n">n</span>
+
+    <span class="k">return</span> <span class="n">total</span>
+</pre></div>
+</td></tr></table></div>
+</div>
 </div>
 </div>
 </div>
@@ -2401,7 +2575,7 @@
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
       
       
-        <a href="exercises/functional-python/intro/f-x-x-4.html" class="btn btn-neutral float-left" title="f(x) = x + 4" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+        <a href="exercises/functional-python/lists/sum-even.html" class="btn btn-neutral float-left" title="Sum Even" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
       
     </div>
   
