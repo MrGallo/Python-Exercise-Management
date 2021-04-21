@@ -18,7 +18,6 @@ Hello, World!
 
     print("Hello,")
     print("World!")
-    
 
 Hello, Goodbye
 **************
@@ -1289,5 +1288,27 @@ CCC Problems
 
 Junior 2020
 ^^^^^^^^^^^
+
+
+Functional Python
+-----------------
+
+Intro
+^^^^^
+f(x) = x + 4
+************
+.. code-block:: python
+    :linenos:
+
+    def f(x: int) -> int:
+        """Returns the value of x plus 4
+        
+        Args:
+            x: An integer
+        Returns:
+            Another integer, x + 4
+        """
+        return x
+
 
 

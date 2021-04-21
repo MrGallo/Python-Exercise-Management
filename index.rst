@@ -1,8 +1,6 @@
 Python Exercises
 ================
 
-You can do these exercises and test them using my `Python Exercise Runner <https://repl.it/@DanielGallo/Python-Exercise-Runner>`_.
-
 .. toctree::
     :maxdepth: 2
 
@@ -12,6 +10,8 @@ You can do these exercises and test them using my `Python Exercise Runner <https
     exercises/codingbat-input-output/index
     exercises/dynamic-programming/index
     exercises/ccc-problems/index
+    exercises/functional-python/index
 
     solutions
 
+You can do these exercises and test them using my `Python Exercise Runner <https://repl.it/@DanielGallo/Python-Exercise-Runner>`_.

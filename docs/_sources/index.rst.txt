@@ -10,6 +10,7 @@ Python Exercises
     exercises/codingbat-input-output/index
     exercises/dynamic-programming/index
     exercises/ccc-problems/index
+    exercises/functional-python/index
 
     solutions
 
