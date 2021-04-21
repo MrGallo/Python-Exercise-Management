@@ -8451,7 +8451,8 @@
     },
     "Functional Python": {
         "chapter_list": [
-            "Intro"
+            "Intro",
+            "Lists"
         ],
         "Intro": [
             {
@@ -8461,7 +8462,63 @@
                 "description": "A function is defined using the keyword `def`. A function is a sub program that can be called into action whenever we (the programmer) want. \n\nIn its simplest form, a function:\n\n1. takes input\n2. processes data, and \n3. returns a result.\n\nThis is similar to math. Given the mathematical function `f(x) = x + 4`, when we call the function with `f(6)` we get a result of 10. In programming we can define similar functions but use a variety of data for `x` and return more than just numbers.\n\n## Your task\n\nThe function given is set up to receive an integer value for x. All you have to do is modify the return statement to **have the function return `x + 4` .** The doc-string enclosed in the triple-quotes `\"\"\"` is optional and is there so that other programmers can quickly understand what the function needs to do its job and what it returns as a result.\n\n## Testing your code\nAfter the function, and **un-indented,** call your function like above and print it out.\n\n```python\nprint(f(5))\n```\n\nNow hit run. The program will print the result of your function.",
                 "starter_code": "def f(x: int) -> int:\n    \"\"\"Returns the value of x plus 4\n    \n    Args:\n        x: An integer\n    Returns:\n        Another integer, x + 4\n    \"\"\"\n    return x",
                 "tests": "from main import f\n\n\ndef test_f():\n    assert f(5) == 9\n    assert f(6) == 10\n    assert f(-4) == 0",
-                "solution": "def f(x: int) -> int:\n    \"\"\"Returns the value of x plus 4\n    \n    Args:\n        x: An integer\n    Returns:\n        Another integer, x + 4\n    \"\"\"\n    return x"
+                "solution": "def f(x: int) -> int:\n    \"\"\"Returns the value of x plus 4\n    \n    Args:\n        x: An integer\n    Returns:\n        Another integer, x + 4\n    \"\"\"\n    return x + 4"
+            },
+            {
+                "name": "say_hello",
+                "topic": "",
+                "requirements": [],
+                "description": "Often, we need to include values into strings to make things easier to read whenever someone uses our program. For example, showing the value of the area of a rectangle by itself is not helpful.\n\n```\n45.5\n```\n\nHowever, if we included the value into a string, it would be easier to read.\n\n```\nThe area of the rectangle is 45.5 meters squared.\n```\n\nThere are a number of ways to include the values of variables in strings. The different approaches have pros and cons in different situations, but, their final result is identical. You can choose to learn and use them all, or stick to one.\n\n```python\nname = \"Frank\"\nage = 56\n\nf_strings_approach = f\"This is {name}. He is {age} years old.\"  # python 3.6+\ndot_format_approach = \"This is {}. He is {} years old.\".format(name, age)\nconcatenate_approach = \"This is \" + name + \". He is \" + str(age) + \" years old.\"\n```\n\n```python\n# All three approaches produce the identical string\n\"This is Frank. He is 56 years old.\"\n```\n\n## Your task\n\nThe function in the code window is set up to receive a `name` (string) and return a result that is a string. Create and return the message `\"Hello, {name}!\"` by inserting the variable `name` into the string using one of the approaches above.",
+                "starter_code": "def say_hello(name: str) -> str:\n    \"\"\"Creates a greeting for a friend.\n    \n    Args:\n        name: The name of someone to say hi to\n    Returns:\n        A greeting in the format \"Hello, {name}!\"\n    \"\"\"\n    return",
+                "tests": "from main import say_hello\n\n\ndef test_say_hello():\n    assert say_hello(\"Dave\") == \"Hello, Dave!\"\n    assert say_hello(\"\") == \"Hello, !\"\n    assert say_hello(\"Samuel\") == \"Hello, Samuel!\"",
+                "solution": "def say_hello(name: str) -> str:\n    \"\"\"Creates a greeting for a friend.\n    \n    Args:\n        name: The name of someone to say hi to\n    Returns:\n        A greeting in the format \"Hello, {name}!\"\n    \"\"\"\n    return f\"Hello, {name}!\""
+            },
+            {
+                "name": "Sum of three numbers",
+                "topic": "",
+                "requirements": [],
+                "description": "Write a function that takes three numbers as arguments and returns their sum.\n\n**Example function call**\n\n```\nadd(2, 3, 6)\n```\n\n**Example result**\n\n```\n11\n```\n\n**Credit**\nAdapted from www.snakify.org",
+                "starter_code": "# This function takes two numbers and returns their sum:\ndef add(a: int, b: int) -> int:\n    \"\"\"Returns the sum of two integers.\n    \n    Args:\n        a: a number\n        b: a number\n    Returns:\n        Sum of the numbers\n    \"\"\"\n    return a + b\n    \n\n# Can you change it so it can take and return the sum of three numbers?",
+                "tests": "from main import add\n\n\ndef test_add():\n    assert add(1, 1, 1) == 3\n    assert add(1, 2, 3) == 6\n    assert add(-1, 0, 1) == 0",
+                "solution": "def add(a: int, b: int, c: int) -> int:\n    \"\"\"Returns the sum of three integers.\n    \n    Args:\n        a: a number\n        b: a number\n        c: a number\n    Returns:\n        Sum of the numbers\n    \"\"\"\n    return a + b + c"
+            }
+        ],
+        "Lists": [
+            {
+                "name": "Empty List",
+                "topic": "",
+                "requirements": [],
+                "description": "Please read the docstring in the starter code.",
+                "starter_code": "from typing import List\n\n\ndef get_empty_list() -> List:\n    \"\"\"Returns an empty list\"\"\"\n    return None",
+                "tests": "from main import get_empty_list\n\n\ndef test_get_empty_list():\n    assert get_empty_list() == []",
+                "solution": "from typing import List\n\n\ndef get_empty_list() -> List:\n    \"\"\"Returns an empty list\"\"\"\n    return []"
+            },
+            {
+                "name": "Pi List",
+                "topic": "",
+                "requirements": [],
+                "description": "Complete the function so it returns a list of the first three digits of Pi. *Hint: don't create a list of the number `314`, make a list of each digit separated.*",
+                "starter_code": "from typing import List\n\n\ndef get_pi() -> List:\n    \"\"\"Returns the first three digits of Pi in a list\"\"\"\n    return None",
+                "tests": "from main import get_pi\n\n\ndef test_get_pi():\n    assert get_pi() == [3, 1, 4]",
+                "solution": "from typing import List\n\n\ndef get_pi() -> List:\n    \"\"\"Returns the first three digits of Pi in a list\"\"\"\n    return [3, 1, 4]"
+            },
+            {
+                "name": "sum",
+                "topic": "",
+                "requirements": [],
+                "description": "Please see starter code docstring for requirements.",
+                "starter_code": "from typing import List\n\n\ndef sum_list(numbers: List[float]) -> float:\n    \"\"\"Returns the sum of a list of numbers.\n\n    Args:\n        numbers: A list of float numbers.\n    Returns:\n        The sum of the numbers.\n    \n    Note: Do NOT use the sum() built-in function to \n          accomplish this. Use a loop.\n    \"\"\"\n    return 0",
+                "tests": "from main import sum_list\n\n\ndef test_sum_list():\n    assert sum_list([1.0, 1.0, 1.0]) == 3.0\n    assert sum_list([1.5, 1.5, 1.5]) == 4.5\n    assert sum_list([]) == 0\n    assert sum_list([-10, 10]) == 0",
+                "solution": "def sum_list(numbers: List[float]) -> float:\n    \"\"\"Returns the sum of a list of numbers.\n\n    Args:\n        numbers: A list of float numbers.\n    Returns:\n        The sum of the numbers.\n    \n    Note: Do NOT use the sum() built-in function to \n          accomplish this. Use a loop.\n    \"\"\"\n    total = 0\n    for n in numbers:\n        total += n\n    \n    return total"
+            },
+            {
+                "name": "Sum Even",
+                "topic": "",
+                "requirements": [],
+                "description": "See starter code docstring for requirements.",
+                "starter_code": "from typing import List\n\n\ndef sum_even(numbers: List[int]) -> int:\n    \"\"\"Returns the sum all even numbers in a list.\n\n    Args:\n        numbers: A list of integers.\n    Returns:\n        The sum of the even integers.\n    \n    Note: Use modulus (%) to discover even integers.\n    \"\"\"\n    return 0",
+                "tests": "from main import sum_even\n\n\ndef test_sum_even():\n    assert sum_even([1, 1, 1, 2]) == 2\n    assert sum_even([2, 1, 1, 2]) == 4\n    assert sum_even([4, 1, 1, 21]) == 4\n    assert sum_even([]) == 0\n    assert sum_even([1, 3, 5, 7, 9]) == 0\n    assert sum_even([-2]) == -2",
+                "solution": "def sum_even(numbers: List[int]) -> int:\n    \"\"\"Returns the sum all even numbers in a list.\n\n    Args:\n        numbers: A list of integers.\n    Returns:\n        The sum of the even integers.\n    \n    Note: Use modulus (%) to discover even integers.\n    \"\"\"\n    total = 0\n    for n in numbers:\n        if n % 2 == 0:\n            total += n\n    \n    return total"
             }
         ]
     }
