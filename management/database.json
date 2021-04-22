@@ -8519,6 +8519,24 @@
                 "starter_code": "from typing import List\n\n\ndef sum_even(numbers: List[int]) -> int:\n    \"\"\"Returns the sum all even numbers in a list.\n\n    Args:\n        numbers: A list of integers.\n    Returns:\n        The sum of the even integers.\n    \n    Note: Use modulus (%) to discover even integers.\n    \"\"\"\n    return 0",
                 "tests": "from main import sum_even\n\n\ndef test_sum_even():\n    assert sum_even([1, 1, 1, 2]) == 2\n    assert sum_even([2, 1, 1, 2]) == 4\n    assert sum_even([4, 1, 1, 21]) == 4\n    assert sum_even([]) == 0\n    assert sum_even([1, 3, 5, 7, 9]) == 0\n    assert sum_even([-2]) == -2",
                 "solution": "def sum_even(numbers: List[int]) -> int:\n    \"\"\"Returns the sum all even numbers in a list.\n\n    Args:\n        numbers: A list of integers.\n    Returns:\n        The sum of the even integers.\n    \n    Note: Use modulus (%) to discover even integers.\n    \"\"\"\n    total = 0\n    for n in numbers:\n        if n % 2 == 0:\n            total += n\n    \n    return total"
+            },
+            {
+                "name": "Sum even and 7",
+                "topic": "",
+                "requirements": [],
+                "description": "See starter code docstring for requirements.",
+                "starter_code": "from typing import List\n\n\ndef sum_even_and_7(numbers: List[int]) -> int:\n    \"\"\"Returns the sum all even numbers, and 7's, in a list.\n\n    Args:\n        numbers: A list of integers.\n    Returns:\n        The sum of the even integers, including all 7's.\n    \n    Note: Use modulus (%) to discover even integers.\n    \"\"\"\n    return 0",
+                "tests": "from main import sum_even_and_7\n\n\ndef test_sum_even_and_7():\n    assert sum_even_and_7([1, 2, 3, 4]) == 6\n    assert sum_even_and_7([7, 1, 2]) == 9\n    assert sum_even_and_7([5, 7, 9]) == 7\n    assert sum_even_and_7([1, 1, 1, -1]) == 0",
+                "solution": "from typing import List\n\n\ndef sum_even_and_7(numbers: List[int]) -> int:\n    \"\"\"Returns the sum all even numbers, and 7's, in a list.\n\n    Args:\n        numbers: A list of integers.\n    Returns:\n        The sum of the even integers, including all 7's.\n    \n    Note: Use modulus (%) to discover even integers.\n    \"\"\"\n    total = 0\n    for num in numbers:\n        if num % 2 == 0 or num == 7:\n            total += num\n    \n    return total"
+            },
+            {
+                "name": "Sum even and next neighbour",
+                "topic": "",
+                "requirements": [],
+                "description": "Requirements are in the starter code docstring.",
+                "starter_code": "from typing import List\n\n\ndef sum_even_and_next_neighbour(numbers: List[int]) -> int:\n    \"\"\"Returns the sum all even numbers and their next neighbour.\n\n    Args:\n        numbers: A list of integers.\n    Returns:\n        The sum of the even integers, including next neighbours of even numbers.\n    \n    Note: A next neighbour is an integer that appears after an integer in the list.\n          These numbers will be included in the total. Do not count even numbers twice.\n\n          e.g., [1, 2, 3, 4, 6, 7, 9, 11, 12]\n          In the example list, we need to include 3 into the total because it is\n          2's next neighbour. Same with 7 (6's next neighbour). \n          We also should not include 6 into the total twice.\n          The total for this list would be: 2 + 3 + 4 + 6 + 7 + 12 = 34\n    \"\"\"\n    return 0",
+                "tests": "from main import sum_even_and_next_neighbour\n\n\ndef test_sum_even_and_next_neighbour():\n    assert sum_even_and_next_neighbour([]) == 0\n    assert sum_even_and_next_neighbour([2, 2, 2]) == 6\n    assert sum_even_and_next_neighbour([1, 2, 3, 4]) == 9\n    assert sum_even_and_next_neighbour([2, 1, 2, 1]) == 6\n    assert sum_even_and_next_neighbour([1, 1, 1, 1]) == 0\n    assert sum_even_and_next_neighbour([2, 99]) == 101",
+                "solution": ""
             }
         ]
     }
