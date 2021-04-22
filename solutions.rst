@@ -1501,4 +1501,112 @@ Scary 13
         return total
 
 
+Dictionaries
+^^^^^^^^^^^^
+Empty Dict
+**********
+.. code-block:: python
+    :linenos:
+
+    from typing import Dict
+    
+    
+    def create_an_empty_dictionary() -> Dict:
+        """Creates an empty dictionary
+        
+        Args: 
+            None
+        Returns:
+            Empty dictionary
+        """
+        return {}
+
+Create Person
+*************
+.. code-block:: python
+    :linenos:
+
+    from typing import Dict
+    
+    
+    def create_person_dict(first_name: str, last_name:str) -> Dict:
+        """Creates a person dictionary with the given first and last name.
+        
+        Args:
+            first_name: The person's first name
+            last_name: The person's last name
+        Returns:
+            Person represented as a dictionary
+            with keys "first_name" and "last_name".
+        """
+        return {
+            "first_name": first_name,
+            "last_name": last_name
+        }
+
+Get First Name
+**************
+.. code-block:: python
+    :linenos:
+
+    from typing import Dict
+    
+    
+    def get_first_name(person: Dict[str, str]) -> str:
+        """Returns the first name from a person dict
+        
+        Args:
+            person: The person dict
+                    The dictionary has the keys 'first_name' and 'last_name'.
+        Returns:
+            The person's first name
+        """
+        return person["first_name"]
+
+Reverse Last Name
+*****************
+.. code-block:: python
+    :linenos:
+
+    from typing import Dict
+    
+    
+    def reverse_last_name(person: Dict[str, str]) -> str:
+        """Gets the person's last name reversed
+        Args:
+            person: Person dict with first and last name.
+                    The dictionary has the keys 'first_name' and 'last_name'.
+        Returns:
+            Last name reversed and capitalized
+        """
+        last_name = person["last_name"]
+        last_name_reversed = last_name[::-1]
+        return last_name_reversed.capitalize()
+
+Potentially Explosive
+*********************
+.. code-block:: python
+    :linenos:
+
+    from typing import Dict
+    
+    
+    def is_potentially_explosive(inventory: Dict) -> bool:
+        """Determines if your inventory is potentially explosive.
+        
+        An inventory is considered potentially explosive if it contains
+        even the mention of both "fire" and "propane" in the dictionary's keys.
+        The quantities of each element are irrevelant.
+        
+        Args:
+            inventory: A dictionary that may be explosive.
+        Returns:
+            True if potentially explosive, False otherwise.
+        """
+        fire_mentioned = "fire" in inventory
+        propane_mentioned = "propane" in inventory
+        
+        return fire_mentioned and propane_mentioned
+
+
 

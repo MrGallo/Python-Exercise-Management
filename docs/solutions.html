@@ -39,7 +39,7 @@
     
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
-    <link rel="prev" title="Scary 13" href="exercises/functional-python/lists/scary-13.html" /> 
+    <link rel="prev" title="Potentially Explosive" href="exercises/functional-python/dictionaries/potentially-explosive.html" /> 
 </head>
 
 <body class="wy-body-for-nav">
@@ -227,6 +227,14 @@
 <li class="toctree-l4"><a class="reference internal" href="#sum-even-and-7">Sum even and 7</a></li>
 <li class="toctree-l4"><a class="reference internal" href="#sum-even-and-next-neighbour">Sum even and next neighbour</a></li>
 <li class="toctree-l4"><a class="reference internal" href="#scary-13">Scary 13</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="#dictionaries">Dictionaries</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#empty-dict">Empty Dict</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#create-person">Create Person</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#get-first-name">Get First Name</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#reverse-last-name">Reverse Last Name</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#potentially-explosive">Potentially Explosive</a></li>
 </ul>
 </li>
 </ul>
@@ -454,6 +462,15 @@
 <li><p><a class="reference internal" href="#sum-even-and-7" id="id117">Sum even and 7</a></p></li>
 <li><p><a class="reference internal" href="#sum-even-and-next-neighbour" id="id118">Sum even and next neighbour</a></p></li>
 <li><p><a class="reference internal" href="#scary-13" id="id119">Scary 13</a></p></li>
+</ul>
+</li>
+<li><p><a class="reference internal" href="#dictionaries" id="id120">Dictionaries</a></p>
+<ul>
+<li><p><a class="reference internal" href="#empty-dict" id="id121">Empty Dict</a></p></li>
+<li><p><a class="reference internal" href="#create-person" id="id122">Create Person</a></p></li>
+<li><p><a class="reference internal" href="#get-first-name" id="id123">Get First Name</a></p></li>
+<li><p><a class="reference internal" href="#reverse-last-name" id="id124">Reverse Last Name</a></p></li>
+<li><p><a class="reference internal" href="#potentially-explosive" id="id125">Potentially Explosive</a></p></li>
 </ul>
 </li>
 </ul>
@@ -2719,6 +2736,179 @@
 </td></tr></table></div>
 </div>
 </div>
+<div class="section" id="dictionaries">
+<h3><a class="toc-backref" href="#id120">Dictionaries</a><a class="headerlink" href="#dictionaries" title="Permalink to this headline">¶</a></h3>
+<div class="section" id="empty-dict">
+<h4><a class="toc-backref" href="#id121">Empty Dict</a><a class="headerlink" href="#empty-dict" title="Permalink to this headline">¶</a></h4>
+<div class="highlight-python notranslate"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre> 1
+ 2
+ 3
+ 4
+ 5
+ 6
+ 7
+ 8
+ 9
+10
+11
+12</pre></div></td><td class="code"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">typing</span> <span class="kn">import</span> <span class="n">Dict</span>
+
+
+<span class="k">def</span> <span class="nf">create_an_empty_dictionary</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="n">Dict</span><span class="p">:</span>
+    <span class="sd">&quot;&quot;&quot;Creates an empty dictionary</span>
+
+<span class="sd">    Args:</span>
+<span class="sd">        None</span>
+<span class="sd">    Returns:</span>
+<span class="sd">        Empty dictionary</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="k">return</span> <span class="p">{}</span>
+</pre></div>
+</td></tr></table></div>
+</div>
+<div class="section" id="create-person">
+<h4><a class="toc-backref" href="#id122">Create Person</a><a class="headerlink" href="#create-person" title="Permalink to this headline">¶</a></h4>
+<div class="highlight-python notranslate"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre> 1
+ 2
+ 3
+ 4
+ 5
+ 6
+ 7
+ 8
+ 9
+10
+11
+12
+13
+14
+15
+16
+17</pre></div></td><td class="code"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">typing</span> <span class="kn">import</span> <span class="n">Dict</span>
+
+
+<span class="k">def</span> <span class="nf">create_person_dict</span><span class="p">(</span><span class="n">first_name</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span> <span class="n">last_name</span><span class="p">:</span><span class="nb">str</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">Dict</span><span class="p">:</span>
+    <span class="sd">&quot;&quot;&quot;Creates a person dictionary with the given first and last name.</span>
+
+<span class="sd">    Args:</span>
+<span class="sd">        first_name: The person&#39;s first name</span>
+<span class="sd">        last_name: The person&#39;s last name</span>
+<span class="sd">    Returns:</span>
+<span class="sd">        Person represented as a dictionary</span>
+<span class="sd">        with keys &quot;first_name&quot; and &quot;last_name&quot;.</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="k">return</span> <span class="p">{</span>
+        <span class="s2">&quot;first_name&quot;</span><span class="p">:</span> <span class="n">first_name</span><span class="p">,</span>
+        <span class="s2">&quot;last_name&quot;</span><span class="p">:</span> <span class="n">last_name</span>
+    <span class="p">}</span>
+</pre></div>
+</td></tr></table></div>
+</div>
+<div class="section" id="get-first-name">
+<h4><a class="toc-backref" href="#id123">Get First Name</a><a class="headerlink" href="#get-first-name" title="Permalink to this headline">¶</a></h4>
+<div class="highlight-python notranslate"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre> 1
+ 2
+ 3
+ 4
+ 5
+ 6
+ 7
+ 8
+ 9
+10
+11
+12
+13</pre></div></td><td class="code"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">typing</span> <span class="kn">import</span> <span class="n">Dict</span>
+
+
+<span class="k">def</span> <span class="nf">get_first_name</span><span class="p">(</span><span class="n">person</span><span class="p">:</span> <span class="n">Dict</span><span class="p">[</span><span class="nb">str</span><span class="p">,</span> <span class="nb">str</span><span class="p">])</span> <span class="o">-&gt;</span> <span class="nb">str</span><span class="p">:</span>
+    <span class="sd">&quot;&quot;&quot;Returns the first name from a person dict</span>
+
+<span class="sd">    Args:</span>
+<span class="sd">        person: The person dict</span>
+<span class="sd">                The dictionary has the keys &#39;first_name&#39; and &#39;last_name&#39;.</span>
+<span class="sd">    Returns:</span>
+<span class="sd">        The person&#39;s first name</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="k">return</span> <span class="n">person</span><span class="p">[</span><span class="s2">&quot;first_name&quot;</span><span class="p">]</span>
+</pre></div>
+</td></tr></table></div>
+</div>
+<div class="section" id="reverse-last-name">
+<h4><a class="toc-backref" href="#id124">Reverse Last Name</a><a class="headerlink" href="#reverse-last-name" title="Permalink to this headline">¶</a></h4>
+<div class="highlight-python notranslate"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre> 1
+ 2
+ 3
+ 4
+ 5
+ 6
+ 7
+ 8
+ 9
+10
+11
+12
+13
+14</pre></div></td><td class="code"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">typing</span> <span class="kn">import</span> <span class="n">Dict</span>
+
+
+<span class="k">def</span> <span class="nf">reverse_last_name</span><span class="p">(</span><span class="n">person</span><span class="p">:</span> <span class="n">Dict</span><span class="p">[</span><span class="nb">str</span><span class="p">,</span> <span class="nb">str</span><span class="p">])</span> <span class="o">-&gt;</span> <span class="nb">str</span><span class="p">:</span>
+    <span class="sd">&quot;&quot;&quot;Gets the person&#39;s last name reversed</span>
+<span class="sd">    Args:</span>
+<span class="sd">        person: Person dict with first and last name.</span>
+<span class="sd">                The dictionary has the keys &#39;first_name&#39; and &#39;last_name&#39;.</span>
+<span class="sd">    Returns:</span>
+<span class="sd">        Last name reversed and capitalized</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="n">last_name</span> <span class="o">=</span> <span class="n">person</span><span class="p">[</span><span class="s2">&quot;last_name&quot;</span><span class="p">]</span>
+    <span class="n">last_name_reversed</span> <span class="o">=</span> <span class="n">last_name</span><span class="p">[::</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span>
+    <span class="k">return</span> <span class="n">last_name_reversed</span><span class="o">.</span><span class="n">capitalize</span><span class="p">()</span>
+</pre></div>
+</td></tr></table></div>
+</div>
+<div class="section" id="potentially-explosive">
+<h4><a class="toc-backref" href="#id125">Potentially Explosive</a><a class="headerlink" href="#potentially-explosive" title="Permalink to this headline">¶</a></h4>
+<div class="highlight-python notranslate"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre> 1
+ 2
+ 3
+ 4
+ 5
+ 6
+ 7
+ 8
+ 9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19</pre></div></td><td class="code"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">typing</span> <span class="kn">import</span> <span class="n">Dict</span>
+
+
+<span class="k">def</span> <span class="nf">is_potentially_explosive</span><span class="p">(</span><span class="n">inventory</span><span class="p">:</span> <span class="n">Dict</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">bool</span><span class="p">:</span>
+    <span class="sd">&quot;&quot;&quot;Determines if your inventory is potentially explosive.</span>
+
+<span class="sd">    An inventory is considered potentially explosive if it contains</span>
+<span class="sd">    even the mention of both &quot;fire&quot; and &quot;propane&quot; in the dictionary&#39;s keys.</span>
+<span class="sd">    The quantities of each element are irrevelant.</span>
+
+<span class="sd">    Args:</span>
+<span class="sd">        inventory: A dictionary that may be explosive.</span>
+<span class="sd">    Returns:</span>
+<span class="sd">        True if potentially explosive, False otherwise.</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="n">fire_mentioned</span> <span class="o">=</span> <span class="s2">&quot;fire&quot;</span> <span class="ow">in</span> <span class="n">inventory</span>
+    <span class="n">propane_mentioned</span> <span class="o">=</span> <span class="s2">&quot;propane&quot;</span> <span class="ow">in</span> <span class="n">inventory</span>
+
+    <span class="k">return</span> <span class="n">fire_mentioned</span> <span class="ow">and</span> <span class="n">propane_mentioned</span>
+</pre></div>
+</td></tr></table></div>
+</div>
+</div>
 </div>
 </div>
 
@@ -2731,7 +2921,7 @@
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
       
       
-        <a href="exercises/functional-python/lists/scary-13.html" class="btn btn-neutral float-left" title="Scary 13" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+        <a href="exercises/functional-python/dictionaries/potentially-explosive.html" class="btn btn-neutral float-left" title="Potentially Explosive" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
       
     </div>
   

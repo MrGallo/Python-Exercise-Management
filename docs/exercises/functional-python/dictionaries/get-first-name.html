@@ -7,7 +7,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>Sum even and next neighbour &mdash; Python Exercises  documentation</title>
+  <title>Get First Name &mdash; Python Exercises  documentation</title>
   
 
   
@@ -39,8 +39,8 @@
     
     <link rel="index" title="Index" href="../../../genindex.html" />
     <link rel="search" title="Search" href="../../../search.html" />
-    <link rel="next" title="Scary 13" href="scary-13.html" />
-    <link rel="prev" title="Sum even and 7" href="sum-even-and-7.html" /> 
+    <link rel="next" title="Reverse Last Name" href="reverse-last-name.html" />
+    <link rel="prev" title="Create Person" href="create-person.html" /> 
 </head>
 
 <body class="wy-body-for-nav">
@@ -94,21 +94,19 @@
 <li class="toctree-l1"><a class="reference internal" href="../../ccc-problems/index.html">Ccc Problems</a></li>
 <li class="toctree-l1 current"><a class="reference internal" href="../index.html">Functional Python</a><ul class="current">
 <li class="toctree-l2"><a class="reference internal" href="../intro/index.html">Intro</a></li>
-<li class="toctree-l2 current"><a class="reference internal" href="index.html">Lists</a><ul class="current">
-<li class="toctree-l3"><a class="reference internal" href="empty-list.html">Empty List</a></li>
-<li class="toctree-l3"><a class="reference internal" href="pi-list.html">Pi List</a></li>
-<li class="toctree-l3"><a class="reference internal" href="sum.html">sum</a></li>
-<li class="toctree-l3"><a class="reference internal" href="sum-even.html">Sum Even</a></li>
-<li class="toctree-l3"><a class="reference internal" href="sum-even-and-7.html">Sum even and 7</a></li>
-<li class="toctree-l3 current"><a class="current reference internal" href="#">Sum even and next neighbour</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../lists/index.html">Lists</a></li>
+<li class="toctree-l2 current"><a class="reference internal" href="index.html">Dictionaries</a><ul class="current">
+<li class="toctree-l3"><a class="reference internal" href="empty-dict.html">Empty Dict</a></li>
+<li class="toctree-l3"><a class="reference internal" href="create-person.html">Create Person</a></li>
+<li class="toctree-l3 current"><a class="current reference internal" href="#">Get First Name</a><ul>
 <li class="toctree-l4"><a class="reference internal" href="#starter-code">Starter Code</a></li>
 <li class="toctree-l4"><a class="reference internal" href="#tests">Tests</a></li>
 </ul>
 </li>
-<li class="toctree-l3"><a class="reference internal" href="scary-13.html">Scary 13</a></li>
+<li class="toctree-l3"><a class="reference internal" href="reverse-last-name.html">Reverse Last Name (7)</a></li>
+<li class="toctree-l3"><a class="reference internal" href="potentially-explosive.html">Potentially Explosive</a></li>
 </ul>
 </li>
-<li class="toctree-l2"><a class="reference internal" href="../dictionaries/index.html">Dictionaries</a></li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="../../../solutions.html">Solutions</a></li>
@@ -160,15 +158,15 @@
         
           <li><a href="../index.html">Functional Python</a> &raquo;</li>
         
-          <li><a href="index.html">Lists</a> &raquo;</li>
+          <li><a href="index.html">Dictionaries</a> &raquo;</li>
         
-      <li>Sum even and next neighbour</li>
+      <li>Get First Name</li>
     
     
       <li class="wy-breadcrumbs-aside">
         
             
-            <a href="../../../_sources/exercises/functional-python/lists/sum-even-and-next-neighbour.md.txt" rel="nofollow"> View page source</a>
+            <a href="../../../_sources/exercises/functional-python/dictionaries/get-first-name.md.txt" rel="nofollow"> View page source</a>
           
         
       </li>
@@ -181,47 +179,51 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
             
-  <div class="section" id="sum-even-and-next-neighbour">
-<h1>Sum even and next neighbour<a class="headerlink" href="#sum-even-and-next-neighbour" title="Permalink to this headline">¶</a></h1>
-<p>Requirements are in the starter code docstring.</p>
+  <div class="section" id="get-first-name">
+<h1>Get First Name<a class="headerlink" href="#get-first-name" title="Permalink to this headline">¶</a></h1>
+<p>See starter code docstring for requirements.</p>
+<p>The person dictionary in this exercise will have the following structure:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="p">{</span>
+    <span class="s2">&quot;last_name&quot;</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span>
+    <span class="s2">&quot;first_name&quot;</span><span class="p">:</span> <span class="nb">str</span>
+<span class="p">}</span>
+</pre></div>
+</div>
 <div class="section" id="starter-code">
 <h2>Starter Code<a class="headerlink" href="#starter-code" title="Permalink to this headline">¶</a></h2>
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">typing</span> <span class="kn">import</span> <span class="n">List</span>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">typing</span> <span class="kn">import</span> <span class="n">Dict</span>
 
 
-<span class="k">def</span> <span class="nf">sum_even_and_next_neighbour</span><span class="p">(</span><span class="n">numbers</span><span class="p">:</span> <span class="n">List</span><span class="p">[</span><span class="nb">int</span><span class="p">])</span> <span class="o">-&gt;</span> <span class="nb">int</span><span class="p">:</span>
-    <span class="sd">&quot;&quot;&quot;Returns the sum all even numbers and their next neighbour.</span>
-
-<span class="sd">    Args:</span>
-<span class="sd">        numbers: A list of integers.</span>
-<span class="sd">    Returns:</span>
-<span class="sd">        The sum of the even integers, including next neighbours of even numbers.</span>
+<span class="k">def</span> <span class="nf">get_first_name</span><span class="p">(</span><span class="n">person</span><span class="p">:</span> <span class="n">Dict</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">str</span><span class="p">:</span>
+    <span class="sd">&quot;&quot;&quot;Returns the first name from a person dict</span>
 <span class="sd">    </span>
-<span class="sd">    Note: A next neighbour is an integer that appears after an integer in the list.</span>
-<span class="sd">          These numbers will be included in the total. Do not count even numbers twice.</span>
-
-<span class="sd">          e.g., [1, 2, 3, 4, 6, 7, 9, 11, 12]</span>
-<span class="sd">          In the example list, we need to include 3 into the total because it is</span>
-<span class="sd">          2&#39;s next neighbour. Same with 7 (6&#39;s next neighbour). </span>
-<span class="sd">          We also should not include 6 into the total twice.</span>
-<span class="sd">          The total for this list would be: 2 + 3 + 4 + 6 + 7 + 12 = 34</span>
+<span class="sd">    Args:</span>
+<span class="sd">        person: The person dict</span>
+<span class="sd">                The dictionary has the keys &#39;first_name&#39; and &#39;last_name&#39;.</span>
+<span class="sd">    Returns:</span>
+<span class="sd">        The person&#39;s first name</span>
 <span class="sd">    &quot;&quot;&quot;</span>
-    <span class="k">return</span> <span class="mi">0</span>
+    <span class="k">return</span> <span class="s2">&quot;&quot;</span>
 </pre></div>
 </div>
 </div>
 <div class="section" id="tests">
 <h2>Tests<a class="headerlink" href="#tests" title="Permalink to this headline">¶</a></h2>
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">main</span> <span class="kn">import</span> <span class="n">sum_even_and_next_neighbour</span>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">main</span> <span class="kn">import</span> <span class="n">get_first_name</span>
 
 
-<span class="k">def</span> <span class="nf">test_sum_even_and_next_neighbour</span><span class="p">():</span>
-    <span class="k">assert</span> <span class="n">sum_even_and_next_neighbour</span><span class="p">([])</span> <span class="o">==</span> <span class="mi">0</span>
-    <span class="k">assert</span> <span class="n">sum_even_and_next_neighbour</span><span class="p">([</span><span class="mi">2</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">2</span><span class="p">])</span> <span class="o">==</span> <span class="mi">6</span>
-    <span class="k">assert</span> <span class="n">sum_even_and_next_neighbour</span><span class="p">([</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">4</span><span class="p">])</span> <span class="o">==</span> <span class="mi">9</span>
-    <span class="k">assert</span> <span class="n">sum_even_and_next_neighbour</span><span class="p">([</span><span class="mi">2</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">1</span><span class="p">])</span> <span class="o">==</span> <span class="mi">6</span>
-    <span class="k">assert</span> <span class="n">sum_even_and_next_neighbour</span><span class="p">([</span><span class="mi">1</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">1</span><span class="p">])</span> <span class="o">==</span> <span class="mi">0</span>
-    <span class="k">assert</span> <span class="n">sum_even_and_next_neighbour</span><span class="p">([</span><span class="mi">2</span><span class="p">,</span> <span class="mi">99</span><span class="p">])</span> <span class="o">==</span> <span class="mi">101</span>
+<span class="k">def</span> <span class="nf">test_get_first_name</span><span class="p">():</span>
+    <span class="n">jeff_smith</span> <span class="o">=</span> <span class="p">{</span>
+        <span class="s2">&quot;first_name&quot;</span><span class="p">:</span> <span class="s2">&quot;Jeff&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;last_name&quot;</span><span class="p">:</span> <span class="s2">&quot;Smith&quot;</span>
+    <span class="p">}</span>
+    <span class="k">assert</span> <span class="n">get_first_name</span><span class="p">(</span><span class="n">jeff_smith</span><span class="p">)</span> <span class="o">==</span> <span class="s2">&quot;Jeff&quot;</span>
+
+    <span class="n">john_mark</span> <span class="o">=</span> <span class="p">{</span>
+        <span class="s2">&quot;first_name&quot;</span><span class="p">:</span> <span class="s2">&quot;John&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;last_name&quot;</span><span class="p">:</span> <span class="s2">&quot;Mark&quot;</span>
+    <span class="p">}</span>
+    <span class="k">assert</span> <span class="n">get_first_name</span><span class="p">(</span><span class="n">john_mark</span><span class="p">)</span> <span class="o">==</span> <span class="s2">&quot;John&quot;</span>
 </pre></div>
 </div>
 </div>
@@ -235,10 +237,10 @@
   
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
       
-        <a href="scary-13.html" class="btn btn-neutral float-right" title="Scary 13" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+        <a href="reverse-last-name.html" class="btn btn-neutral float-right" title="Reverse Last Name" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
       
       
-        <a href="sum-even-and-7.html" class="btn btn-neutral float-left" title="Sum even and 7" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+        <a href="create-person.html" class="btn btn-neutral float-left" title="Create Person" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
       
     </div>
   

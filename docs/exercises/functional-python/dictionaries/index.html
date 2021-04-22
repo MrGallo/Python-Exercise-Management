@@ -7,7 +7,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>Sum of three numbers &mdash; Python Exercises  documentation</title>
+  <title>Dictionaries &mdash; Python Exercises  documentation</title>
   
 
   
@@ -39,8 +39,8 @@
     
     <link rel="index" title="Index" href="../../../genindex.html" />
     <link rel="search" title="Search" href="../../../search.html" />
-    <link rel="next" title="Lists" href="../lists/index.html" />
-    <link rel="prev" title="say_hello" href="say-hello.html" /> 
+    <link rel="next" title="Empty Dict" href="empty-dict.html" />
+    <link rel="prev" title="Scary 13" href="../lists/scary-13.html" /> 
 </head>
 
 <body class="wy-body-for-nav">
@@ -93,18 +93,16 @@
 <li class="toctree-l1"><a class="reference internal" href="../../dynamic-programming/index.html">Dynamic Programming</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../ccc-problems/index.html">Ccc Problems</a></li>
 <li class="toctree-l1 current"><a class="reference internal" href="../index.html">Functional Python</a><ul class="current">
-<li class="toctree-l2 current"><a class="reference internal" href="index.html">Intro</a><ul class="current">
-<li class="toctree-l3"><a class="reference internal" href="f-x-x-4.html">f(x) = x + 4</a></li>
-<li class="toctree-l3"><a class="reference internal" href="say-hello.html">say_hello</a></li>
-<li class="toctree-l3 current"><a class="current reference internal" href="#">Sum of three numbers</a><ul>
-<li class="toctree-l4"><a class="reference internal" href="#starter-code">Starter Code</a></li>
-<li class="toctree-l4"><a class="reference internal" href="#tests">Tests</a></li>
-</ul>
-</li>
-</ul>
-</li>
+<li class="toctree-l2"><a class="reference internal" href="../intro/index.html">Intro</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../lists/index.html">Lists</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../dictionaries/index.html">Dictionaries</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="#">Dictionaries</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="empty-dict.html">Empty Dict</a></li>
+<li class="toctree-l3"><a class="reference internal" href="create-person.html">Create Person</a></li>
+<li class="toctree-l3"><a class="reference internal" href="get-first-name.html">Get First Name</a></li>
+<li class="toctree-l3"><a class="reference internal" href="reverse-last-name.html">Reverse Last Name (7)</a></li>
+<li class="toctree-l3"><a class="reference internal" href="potentially-explosive.html">Potentially Explosive</a></li>
+</ul>
+</li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="../../../solutions.html">Solutions</a></li>
@@ -156,15 +154,13 @@
         
           <li><a href="../index.html">Functional Python</a> &raquo;</li>
         
-          <li><a href="index.html">Intro</a> &raquo;</li>
-        
-      <li>Sum of three numbers</li>
+      <li>Dictionaries</li>
     
     
       <li class="wy-breadcrumbs-aside">
         
             
-            <a href="../../../_sources/exercises/functional-python/intro/sum-of-three-numbers.md.txt" rel="nofollow"> View page source</a>
+            <a href="../../../_sources/exercises/functional-python/dictionaries/index.rst.txt" rel="nofollow"> View page source</a>
           
         
       </li>
@@ -177,49 +173,16 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
             
-  <div class="section" id="sum-of-three-numbers">
-<h1>Sum of three numbers<a class="headerlink" href="#sum-of-three-numbers" title="Permalink to this headline">¶</a></h1>
-<p>Write a function that takes three numbers as arguments and returns their sum.</p>
-<p><strong>Example function call</strong></p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">add</span><span class="p">(</span><span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">6</span><span class="p">)</span>
-</pre></div>
-</div>
-<p><strong>Example result</strong></p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="mi">11</span>
-</pre></div>
-</div>
-<p><strong>Credit</strong>
-Adapted from www.snakify.org</p>
-<div class="section" id="starter-code">
-<h2>Starter Code<a class="headerlink" href="#starter-code" title="Permalink to this headline">¶</a></h2>
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># This function takes two numbers and returns their sum:</span>
-<span class="k">def</span> <span class="nf">add</span><span class="p">(</span><span class="n">a</span><span class="p">:</span> <span class="nb">int</span><span class="p">,</span> <span class="n">b</span><span class="p">:</span> <span class="nb">int</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">int</span><span class="p">:</span>
-    <span class="sd">&quot;&quot;&quot;Returns the sum of two integers.</span>
-<span class="sd">    </span>
-<span class="sd">    Args:</span>
-<span class="sd">        a: a number</span>
-<span class="sd">        b: a number</span>
-<span class="sd">    Returns:</span>
-<span class="sd">        Sum of the numbers</span>
-<span class="sd">    &quot;&quot;&quot;</span>
-    <span class="k">return</span> <span class="n">a</span> <span class="o">+</span> <span class="n">b</span>
-    
-
-<span class="c1"># Can you change it so it can take and return the sum of three numbers?</span>
-</pre></div>
-</div>
-</div>
-<div class="section" id="tests">
-<h2>Tests<a class="headerlink" href="#tests" title="Permalink to this headline">¶</a></h2>
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">main</span> <span class="kn">import</span> <span class="n">add</span>
-
-
-<span class="k">def</span> <span class="nf">test_add</span><span class="p">():</span>
-    <span class="k">assert</span> <span class="n">add</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">1</span><span class="p">)</span> <span class="o">==</span> <span class="mi">3</span>
-    <span class="k">assert</span> <span class="n">add</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">)</span> <span class="o">==</span> <span class="mi">6</span>
-    <span class="k">assert</span> <span class="n">add</span><span class="p">(</span><span class="o">-</span><span class="mi">1</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">1</span><span class="p">)</span> <span class="o">==</span> <span class="mi">0</span>
-</pre></div>
-</div>
+  <div class="section" id="dictionaries">
+<h1>Dictionaries<a class="headerlink" href="#dictionaries" title="Permalink to this headline">¶</a></h1>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="empty-dict.html">Empty Dict</a></li>
+<li class="toctree-l1"><a class="reference internal" href="create-person.html">Create Person</a></li>
+<li class="toctree-l1"><a class="reference internal" href="get-first-name.html">Get First Name</a></li>
+<li class="toctree-l1"><a class="reference internal" href="reverse-last-name.html">Reverse Last Name (7)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="potentially-explosive.html">Potentially Explosive</a></li>
+</ul>
 </div>
 </div>
 
@@ -231,10 +194,10 @@ Adapted from www.snakify.org</p>
   
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
       
-        <a href="../lists/index.html" class="btn btn-neutral float-right" title="Lists" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+        <a href="empty-dict.html" class="btn btn-neutral float-right" title="Empty Dict" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
       
       
-        <a href="say-hello.html" class="btn btn-neutral float-left" title="say_hello" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+        <a href="../lists/scary-13.html" class="btn btn-neutral float-left" title="Scary 13" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
       
     </div>
   
