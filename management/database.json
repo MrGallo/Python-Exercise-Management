@@ -8452,7 +8452,8 @@
     "Functional Python": {
         "chapter_list": [
             "Intro",
-            "Lists"
+            "Lists",
+            "Dictionaries"
         ],
         "Intro": [
             {
@@ -8546,6 +8547,71 @@
                 "starter_code": "from typing import List\n\n\ndef sum_scary_13(numbers: List[int]) -> int:\n    \"\"\"Returns the sum all numbers jumping over 13 and the next number.\n\n    Args:\n        numbers: A list of integers.\n    Returns:\n        The sum of all numbers, not including 13 and it's next neighbour.\n    \n    Note: A next neighbour is an integer that appears after an integer in the list.\n          Your program is afraid of the number 13, so it will add neither that number\n          nor the one next in the list to the toal.\n\n          E.g. 1, [5, 6, 13, 1, 7]\n          Will add 5 + 6 + 7 = 18\n\n          E.g. 2, [5, 6, 13, 13, 1, 7]\n          In this case, the program doesn't even notice the second 13 because\n          it jumped over because of the first 13.\n          The program will add 5 + 6 + 1 + 7 = 19\n    \"\"\"\n    return 0",
                 "tests": "from main import sum_scary_13\n\n\ndef test_example_1():\n    assert sum_scary_13([5, 6, 13, 1, 7]) == 18\n\n\ndef test_example_2():\n    assert sum_scary_13([5, 6, 13, 13, 1, 7]) == 19\n\n\ndef test_sum_scary_13():\n    assert sum_scary_13([]) == 0\n    assert sum_scary_13([13]) == 0\n    assert sum_scary_13([1, 2, 3]) == 6\n    assert sum_scary_13([0, 13, 99]) == 0\n    assert sum_scary_13([1, 2, 13, 3]) == 3",
                 "solution": "from typing import List\n\n\ndef sum_scary_13(numbers: List[int]) -> int:\n    \"\"\"Returns the sum all numbers jumping over 13 and the next number.\n\n    Args:\n        numbers: A list of integers.\n    Returns:\n        The sum of all numbers, not including 13 and it's next neighbour.\n    \"\"\"\n    total = 0\n    i = 0\n\n    while i < len(numbers):\n        num = numbers[i]\n\n        if num == 13:\n            i += 2\n        else:\n            total += num\n            i += 1\n    \n    return total"
+            }
+        ],
+        "Dictionaries": [
+            {
+                "name": "Empty Dict",
+                "topic": "",
+                "requirements": [],
+                "description": "Requirements in starter code docstring.",
+                "starter_code": "from typing import Dict\n\n\ndef create_an_empty_dictionary() -> Dict:\n    \"\"\"Creates an empty dictionary\n    \n    Args: \n        None\n    Returns:\n        Empty dictionary\n    \"\"\"\n    return None",
+                "tests": "from main import create_an_empty_dictionary\n\n\ndef test_create_an_empty_dictionary():\n    assert create_an_empty_dictionary() == {}",
+                "solution": "from typing import Dict\n\n\ndef create_an_empty_dictionary() -> Dict:\n    \"\"\"Creates an empty dictionary\n    \n    Args: \n        None\n    Returns:\n        Empty dictionary\n    \"\"\"\n    return {}"
+            },
+            {
+                "name": "Create Person",
+                "topic": "",
+                "requirements": [],
+                "description": "",
+                "starter_code": "from typing import Dict\n\n\ndef create_person_dict(first_name: str, last_name:str) -> Dict:\n    \"\"\"Creates a person dictionary with the given first and last name.\n    \n    Args:\n        first_name: The person's first name\n        last_name: The person's last name\n    Returns:\n        Person represented as a dictionary\n        with keys \"first_name\" and \"last_name\".\n    \"\"\"\n    return {}",
+                "tests": "from main import create_person_dict\n\n\ndef test_has_proper_keys():\n    result = create_person_dict(\"Jeff\", \"Smith\")\n\n    for key in result.keys():\n        assert key in (\"first_name\", \"last_name\")\n\n\ndef test_assigns_proper_values_to_keys_jeff_smith():\n    result = create_person_dict(\"Jeff\", \"Smith\")\n\n    expected = {\n        \"first_name\": \"Jeff\",\n        \"last_name\": \"Smith\"\n    }\n    \n    assert result == expected\n\n\ndef test_assigns_proper_values_to_keys_john_mark():\n    result = create_person_dict(\"John\", \"Mark\")\n\n    expected = {\n        \"first_name\": \"John\",\n        \"last_name\": \"Mark\"\n    }\n\n    assert result == expected",
+                "solution": "from typing import Dict\n\n\ndef create_person_dict(first_name: str, last_name:str) -> Dict:\n    \"\"\"Creates a person dictionary with the given first and last name.\n    \n    Args:\n        first_name: The person's first name\n        last_name: The person's last name\n    Returns:\n        Person represented as a dictionary\n        with keys \"first_name\" and \"last_name\".\n    \"\"\"\n    return {\n        \"first_name\": first_name,\n        \"last_name\": last_name\n    }"
+            },
+            {
+                "name": "Get First Name",
+                "topic": "",
+                "requirements": [],
+                "description": "See starter code docstring for requirements.\n\nThe person dictionary in this exercise will have the following structure:\n```\n{\n    \"last_name\": str,\n    \"first_name\": str\n}\n```",
+                "starter_code": "from typing import Dict\n\n\ndef get_first_name(person: Dict) -> str:\n    \"\"\"Returns the first name from a person dict\n    \n    Args:\n        person: The person dict\n                The dictionary has the keys 'first_name' and 'last_name'.\n    Returns:\n        The person's first name\n    \"\"\"\n    return \"\"",
+                "tests": "from main import get_first_name\n\n\ndef test_get_first_name():\n    jeff_smith = {\n        \"first_name\": \"Jeff\",\n        \"last_name\": \"Smith\"\n    }\n    assert get_first_name(jeff_smith) == \"Jeff\"\n\n    john_mark = {\n        \"first_name\": \"John\",\n        \"last_name\": \"Mark\"\n    }\n    assert get_first_name(john_mark) == \"John\"",
+                "solution": "from typing import Dict\n\n\ndef get_first_name(person: Dict[str, str]) -> str:\n    \"\"\"Returns the first name from a person dict\n    \n    Args:\n        person: The person dict\n                The dictionary has the keys 'first_name' and 'last_name'.\n    Returns:\n        The person's first name\n    \"\"\"\n    return person[\"first_name\"]"
+            },
+            {
+                "name": "Reverse Last Name",
+                "topic": "",
+                "requirements": [
+                    "defining a function",
+                    "defining parameters"
+                ],
+                "description": "### Important!\n\nFor this problem, you need to add the appropriate parameters to the `reverse_last_name` function definition **as well as** complete the code for the function body.\n\n### Dictionary Structure\n\nThe dictionary passed to the function will have the following structure:\n\n```\n{\n    \"first_name\": str,\n    \"last_name\": str\n}\n```",
+                "starter_code": "def reverse_last_name():\n    \"\"\"Gets the person's last name reversed\n\n    Args:\n        person: Person dict with first and last name.\n                The dictionary has the keys 'first_name' and 'last_name'.\n    Returns:\n        Last name reversed and capitalized (first letter only).\n        For example, \"Smith\" becomes \"Htims\".\n    \"\"\"\n    return \"\"",
+                "tests": "from main import reverse_last_name\n\n\ndef test_reverse_last_name():\n    jeff_smith = {\n        \"first_name\": \"Jeff\",\n        \"last_name\": \"Smith\"\n    }\n    assert reverse_last_name(jeff_smith) == \"Htims\"\n\n    john_mark = {\n        \"first_name\": \"John\",\n        \"last_name\": \"Mark\"\n    }\n    assert reverse_last_name(john_mark) == \"Kram\"",
+                "solution": "from typing import Dict\n\n\ndef reverse_last_name(person: Dict[str, str]) -> str:\n    \"\"\"Gets the person's last name reversed\n    Args:\n        person: Person dict with first and last name.\n                The dictionary has the keys 'first_name' and 'last_name'.\n    Returns:\n        Last name reversed and capitalized\n    \"\"\"\n    last_name = person[\"last_name\"]\n    last_name_reversed = last_name[::-1]\n    return last_name_reversed.capitalize()"
+            },
+            {
+                "name": "Potentially Explosive",
+                "topic": "",
+                "requirements": [
+                    "An inventory is considered \"potentially explosive\" if it contains",
+                    "even the mention of both \"fire\" and \"propane\" in the dictionary's keys.",
+                    "The quantities of each element are irrevelant.",
+                    "",
+                    "### Hint",
+                    "",
+                    "Use `dict.keys()` for a list of the dictionary's keys. e.g.,",
+                    "",
+                    "```python",
+                    "some_dict = {\"first_name\": \"Jeff\"}",
+                    "\"first_name\" in some_dict.keys()  # True",
+                    "\"age\" in some_dict.keys()  # False",
+                    "\"name\" in some_dict.keys()  # False",
+                    "```"
+                ],
+                "description": "",
+                "starter_code": "from typing import Dict\n\n\ndef is_potentially_explosive(inventory: Dict) -> bool:\n    \"\"\"Determines if your inventory is potentially explosive.\n    \n    An inventory is considered potentially explosive if it contains\n    even the mention of both \"fire\" and \"propane\" in the dictionary's keys.\n    The quantities of each element are irrevelant.\n    \n    Args:\n        inventory: A dictionary that may be explosive.\n    Returns:\n        True if potentially explosive, False otherwise.\n    \"\"\"\n    return None",
+                "tests": "from main import is_potentially_explosive\n\n\ndef test_no_mention_of_either_item():\n    inventory = {\n        \"apples\": 4,\n        \"oranges\": 5\n    }\n\n    assert is_potentially_explosive(inventory) is False\n\n\ndef test_only_propane_not_explosive():\n    inventory = {\n        \"apples\": 4,\n        \"propane\": 5\n    }\n\n    assert is_potentially_explosive(inventory) is False\n\n\ndef test_only_fire_not_explosive():\n    inventory = {\n        \"apples\": 4,\n        \"fire\": 5\n    }\n\n    assert is_potentially_explosive(inventory) is False\n\n\ndef test_both_fire_and_propane_is_potentially_explosive():\n    inventory = {\n        \"propane\": 4,\n        \"fire\": 5\n    }\n    assert is_potentially_explosive(inventory) is True\n\n\ndef test_also_potentially_explosive_if_quantity_is_0():\n    inventory = {\n        \"propane\": 0,\n        \"fire\": 0\n    }\n    assert is_potentially_explosive(inventory) is True",
+                "solution": "from typing import Dict\n\n\ndef is_potentially_explosive(inventory: Dict) -> bool:\n    \"\"\"Determines if your inventory is potentially explosive.\n    \n    An inventory is considered potentially explosive if it contains\n    even the mention of both \"fire\" and \"propane\" in the dictionary's keys.\n    The quantities of each element are irrevelant.\n    \n    Args:\n        inventory: A dictionary that may be explosive.\n    Returns:\n        True if potentially explosive, False otherwise.\n    \"\"\"\n    fire_mentioned = \"fire\" in inventory\n    propane_mentioned = \"propane\" in inventory\n    \n    return fire_mentioned and propane_mentioned"
             }
         ]
     }
