@@ -8544,8 +8544,8 @@
                 "requirements": [],
                 "description": "Requirements are in the starter code docstring.",
                 "starter_code": "from typing import List\n\n\ndef sum_scary_13(numbers: List[int]) -> int:\n    \"\"\"Returns the sum all numbers jumping over 13 and the next number.\n\n    Args:\n        numbers: A list of integers.\n    Returns:\n        The sum of all numbers, not including 13 and it's next neighbour.\n    \n    Note: A next neighbour is an integer that appears after an integer in the list.\n          Your program is afraid of the number 13, so it will add neither that number\n          nor the one next in the list to the toal.\n\n          E.g. 1, [5, 6, 13, 1, 7]\n          Will add 5 + 6 + 7 = 18\n\n          E.g. 2, [5, 6, 13, 13, 1, 7]\n          In this case, the program doesn't even notice the second 13 because\n          it jumped over because of the first 13.\n          The program will add 5 + 6 + 1 + 7 = 19\n    \"\"\"\n    return 0",
-                "tests": "",
-                "solution": ""
+                "tests": "from main import sum_scary_13\n\n\ndef test_example_1():\n    assert sum_scary_13([5, 6, 13, 1, 7]) == 18\n\n\ndef test_example_2():\n    assert sum_scary_13([5, 6, 13, 13, 1, 7]) == 19\n\n\ndef test_sum_scary_13():\n    assert sum_scary_13([]) == 0\n    assert sum_scary_13([13]) == 0\n    assert sum_scary_13([1, 2, 3]) == 6\n    assert sum_scary_13([0, 13, 99]) == 0\n    assert sum_scary_13([1, 2, 13, 3]) == 3",
+                "solution": "from typing import List\n\n\ndef sum_scary_13(numbers: List[int]) -> int:\n    \"\"\"Returns the sum all numbers jumping over 13 and the next number.\n\n    Args:\n        numbers: A list of integers.\n    Returns:\n        The sum of all numbers, not including 13 and it's next neighbour.\n    \"\"\"\n    total = 0\n    i = 0\n\n    while i < len(numbers):\n        num = numbers[i]\n\n        if num == 13:\n            i += 2\n        else:\n            total += num\n            i += 1\n    \n    return total"
             }
         ]
     }
