@@ -11,7 +11,7 @@ Complete the function so it returns a list of the first three digits of Pi. *Hin
 from typing import List
 
 
-def get_pi() -> List:
+def get_pi() -> List[int]:
     """Returns the first three digits of Pi in a list"""
     return None
 ```

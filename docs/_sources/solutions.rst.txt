@@ -1365,7 +1365,7 @@ Pi List
     from typing import List
     
     
-    def get_pi() -> List:
+    def get_pi() -> List[int]:
         """Returns the first three digits of Pi in a list"""
         return [3, 1, 4]
 
