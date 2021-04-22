@@ -7,7 +7,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>Empty List &mdash; Python Exercises  documentation</title>
+  <title>Sum even and 7 &mdash; Python Exercises  documentation</title>
   
 
   
@@ -39,8 +39,8 @@
     
     <link rel="index" title="Index" href="../../../genindex.html" />
     <link rel="search" title="Search" href="../../../search.html" />
-    <link rel="next" title="Pi List" href="pi-list.html" />
-    <link rel="prev" title="Lists" href="index.html" /> 
+    <link rel="next" title="Sum even and next neighbour" href="sum-even-and-next-neighbour.html" />
+    <link rel="prev" title="Sum Even" href="sum-even.html" /> 
 </head>
 
 <body class="wy-body-for-nav">
@@ -95,15 +95,15 @@
 <li class="toctree-l1 current"><a class="reference internal" href="../index.html">Functional Python</a><ul class="current">
 <li class="toctree-l2"><a class="reference internal" href="../intro/index.html">Intro</a></li>
 <li class="toctree-l2 current"><a class="reference internal" href="index.html">Lists</a><ul class="current">
-<li class="toctree-l3 current"><a class="current reference internal" href="#">Empty List</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="empty-list.html">Empty List</a></li>
+<li class="toctree-l3"><a class="reference internal" href="pi-list.html">Pi List</a></li>
+<li class="toctree-l3"><a class="reference internal" href="sum.html">sum</a></li>
+<li class="toctree-l3"><a class="reference internal" href="sum-even.html">Sum Even</a></li>
+<li class="toctree-l3 current"><a class="current reference internal" href="#">Sum even and 7</a><ul>
 <li class="toctree-l4"><a class="reference internal" href="#starter-code">Starter Code</a></li>
 <li class="toctree-l4"><a class="reference internal" href="#tests">Tests</a></li>
 </ul>
 </li>
-<li class="toctree-l3"><a class="reference internal" href="pi-list.html">Pi List</a></li>
-<li class="toctree-l3"><a class="reference internal" href="sum.html">sum</a></li>
-<li class="toctree-l3"><a class="reference internal" href="sum-even.html">Sum Even</a></li>
-<li class="toctree-l3"><a class="reference internal" href="sum-even-and-7.html">Sum even and 7</a></li>
 <li class="toctree-l3"><a class="reference internal" href="sum-even-and-next-neighbour.html">Sum even and next neighbour</a></li>
 <li class="toctree-l3"><a class="reference internal" href="scary-13.html">Scary 13</a></li>
 </ul>
@@ -161,13 +161,13 @@
         
           <li><a href="index.html">Lists</a> &raquo;</li>
         
-      <li>Empty List</li>
+      <li>Sum even and 7</li>
     
     
       <li class="wy-breadcrumbs-aside">
         
             
-            <a href="../../../_sources/exercises/functional-python/lists/empty-list.md.txt" rel="nofollow"> View page source</a>
+            <a href="../../../_sources/exercises/functional-python/lists/sum-even-and-7.md.txt" rel="nofollow"> View page source</a>
           
         
       </li>
@@ -180,27 +180,38 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
             
-  <div class="section" id="empty-list">
-<h1>Empty List<a class="headerlink" href="#empty-list" title="Permalink to this headline">¶</a></h1>
-<p>Please read the docstring in the starter code.</p>
+  <div class="section" id="sum-even-and-7">
+<h1>Sum even and 7<a class="headerlink" href="#sum-even-and-7" title="Permalink to this headline">¶</a></h1>
+<p>See starter code docstring for requirements.</p>
 <div class="section" id="starter-code">
 <h2>Starter Code<a class="headerlink" href="#starter-code" title="Permalink to this headline">¶</a></h2>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">typing</span> <span class="kn">import</span> <span class="n">List</span>
 
 
-<span class="k">def</span> <span class="nf">get_empty_list</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="n">List</span><span class="p">:</span>
-    <span class="sd">&quot;&quot;&quot;Returns an empty list&quot;&quot;&quot;</span>
-    <span class="k">return</span> <span class="kc">None</span>
+<span class="k">def</span> <span class="nf">sum_even_and_7</span><span class="p">(</span><span class="n">numbers</span><span class="p">:</span> <span class="n">List</span><span class="p">[</span><span class="nb">int</span><span class="p">])</span> <span class="o">-&gt;</span> <span class="nb">int</span><span class="p">:</span>
+    <span class="sd">&quot;&quot;&quot;Returns the sum all even numbers, and 7&#39;s, in a list.</span>
+
+<span class="sd">    Args:</span>
+<span class="sd">        numbers: A list of integers.</span>
+<span class="sd">    Returns:</span>
+<span class="sd">        The sum of the even integers, including all 7&#39;s.</span>
+<span class="sd">    </span>
+<span class="sd">    Note: Use modulus (%) to discover even integers.</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="k">return</span> <span class="mi">0</span>
 </pre></div>
 </div>
 </div>
 <div class="section" id="tests">
 <h2>Tests<a class="headerlink" href="#tests" title="Permalink to this headline">¶</a></h2>
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">main</span> <span class="kn">import</span> <span class="n">get_empty_list</span>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">main</span> <span class="kn">import</span> <span class="n">sum_even_and_7</span>
 
 
-<span class="k">def</span> <span class="nf">test_get_empty_list</span><span class="p">():</span>
-    <span class="k">assert</span> <span class="n">get_empty_list</span><span class="p">()</span> <span class="o">==</span> <span class="p">[]</span>
+<span class="k">def</span> <span class="nf">test_sum_even_and_7</span><span class="p">():</span>
+    <span class="k">assert</span> <span class="n">sum_even_and_7</span><span class="p">([</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">4</span><span class="p">])</span> <span class="o">==</span> <span class="mi">6</span>
+    <span class="k">assert</span> <span class="n">sum_even_and_7</span><span class="p">([</span><span class="mi">7</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">])</span> <span class="o">==</span> <span class="mi">9</span>
+    <span class="k">assert</span> <span class="n">sum_even_and_7</span><span class="p">([</span><span class="mi">5</span><span class="p">,</span> <span class="mi">7</span><span class="p">,</span> <span class="mi">9</span><span class="p">])</span> <span class="o">==</span> <span class="mi">7</span>
+    <span class="k">assert</span> <span class="n">sum_even_and_7</span><span class="p">([</span><span class="mi">1</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="o">-</span><span class="mi">1</span><span class="p">])</span> <span class="o">==</span> <span class="mi">0</span>
 </pre></div>
 </div>
 </div>
@@ -214,10 +225,10 @@
   
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
       
-        <a href="pi-list.html" class="btn btn-neutral float-right" title="Pi List" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+        <a href="sum-even-and-next-neighbour.html" class="btn btn-neutral float-right" title="Sum even and next neighbour" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
       
       
-        <a href="index.html" class="btn btn-neutral float-left" title="Lists" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+        <a href="sum-even.html" class="btn btn-neutral float-left" title="Sum Even" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
       
     </div>
   

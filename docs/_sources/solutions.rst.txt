@@ -1413,5 +1413,92 @@ Sum Even
         
         return total
 
+Sum even and 7
+**************
+.. code-block:: python
+    :linenos:
+
+    from typing import List
+    
+    
+    def sum_even_and_7(numbers: List[int]) -> int:
+        """Returns the sum all even numbers, and 7's, in a list.
+    
+        Args:
+            numbers: A list of integers.
+        Returns:
+            The sum of the even integers, including all 7's.
+        
+        Note: Use modulus (%) to discover even integers.
+        """
+        total = 0
+        for num in numbers:
+            if num % 2 == 0 or num == 7:
+                total += num
+        
+        return total
+
+Sum even and next neighbour
+***************************
+.. code-block:: python
+    :linenos:
+
+    from typing import List
+    
+    
+    def sum_even_and_next_neighbour(numbers: List[int]) -> int:
+        """Returns the sum all even numbers and their next neighbour.
+    
+        Args:
+            numbers: A list of integers.
+        Returns:
+            The sum of the even integers, including next neighbours of even numbers.
+        """
+        total = 0
+        i = 0
+        while i < len(numbers):
+            num = numbers[i]
+            if num % 2 == 0:
+                total += num
+    
+                if i + 1 < len(numbers):  # if there is a "next neighbour"
+                    neighbour = numbers[i + 1]
+                    total += neighbour
+                    i += 1
+           
+            i += 1
+            
+        return total
+
+Scary 13
+********
+.. code-block:: python
+    :linenos:
+
+    from typing import List
+    
+    
+    def sum_scary_13(numbers: List[int]) -> int:
+        """Returns the sum all numbers jumping over 13 and the next number.
+    
+        Args:
+            numbers: A list of integers.
+        Returns:
+            The sum of all numbers, not including 13 and it's next neighbour.
+        """
+        total = 0
+        i = 0
+    
+        while i < len(numbers):
+            num = numbers[i]
+    
+            if num == 13:
+                i += 2
+            else:
+                total += num
+                i += 1
+        
+        return total
+
 
 
