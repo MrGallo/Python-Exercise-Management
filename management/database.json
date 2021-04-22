@@ -8499,9 +8499,9 @@
                 "topic": "",
                 "requirements": [],
                 "description": "Complete the function so it returns a list of the first three digits of Pi. *Hint: don't create a list of the number `314`, make a list of each digit separated.*",
-                "starter_code": "from typing import List\n\n\ndef get_pi() -> List:\n    \"\"\"Returns the first three digits of Pi in a list\"\"\"\n    return None",
+                "starter_code": "from typing import List\n\n\ndef get_pi() -> List[int]:\n    \"\"\"Returns the first three digits of Pi in a list\"\"\"\n    return None",
                 "tests": "from main import get_pi\n\n\ndef test_get_pi():\n    assert get_pi() == [3, 1, 4]",
-                "solution": "from typing import List\n\n\ndef get_pi() -> List:\n    \"\"\"Returns the first three digits of Pi in a list\"\"\"\n    return [3, 1, 4]"
+                "solution": "from typing import List\n\n\ndef get_pi() -> List[int]:\n    \"\"\"Returns the first three digits of Pi in a list\"\"\"\n    return [3, 1, 4]"
             },
             {
                 "name": "sum",
@@ -8592,23 +8592,8 @@
             {
                 "name": "Potentially Explosive",
                 "topic": "",
-                "requirements": [
-                    "An inventory is considered \"potentially explosive\" if it contains",
-                    "even the mention of both \"fire\" and \"propane\" in the dictionary's keys.",
-                    "The quantities of each element are irrevelant.",
-                    "",
-                    "### Hint",
-                    "",
-                    "Use `dict.keys()` for a list of the dictionary's keys. e.g.,",
-                    "",
-                    "```python",
-                    "some_dict = {\"first_name\": \"Jeff\"}",
-                    "\"first_name\" in some_dict.keys()  # True",
-                    "\"age\" in some_dict.keys()  # False",
-                    "\"name\" in some_dict.keys()  # False",
-                    "```"
-                ],
-                "description": "",
+                "requirements": [],
+                "description": "An inventory is considered \"potentially explosive\" if it contains\neven the mention of both \"fire\" and \"propane\" in the dictionary's keys.\nThe quantities of each element are irrevelant.\n\n### Hint\n\nUse `dict.keys()` for a list of the dictionary's keys. e.g.,\n\n```python\nsome_dict = {\"first_name\": \"Jeff\"}\n\"first_name\" in some_dict.keys()  # True\n\"age\" in some_dict.keys()  # False\n\"name\" in some_dict.keys()  # False\n```",
                 "starter_code": "from typing import Dict\n\n\ndef is_potentially_explosive(inventory: Dict) -> bool:\n    \"\"\"Determines if your inventory is potentially explosive.\n    \n    An inventory is considered potentially explosive if it contains\n    even the mention of both \"fire\" and \"propane\" in the dictionary's keys.\n    The quantities of each element are irrevelant.\n    \n    Args:\n        inventory: A dictionary that may be explosive.\n    Returns:\n        True if potentially explosive, False otherwise.\n    \"\"\"\n    return None",
                 "tests": "from main import is_potentially_explosive\n\n\ndef test_no_mention_of_either_item():\n    inventory = {\n        \"apples\": 4,\n        \"oranges\": 5\n    }\n\n    assert is_potentially_explosive(inventory) is False\n\n\ndef test_only_propane_not_explosive():\n    inventory = {\n        \"apples\": 4,\n        \"propane\": 5\n    }\n\n    assert is_potentially_explosive(inventory) is False\n\n\ndef test_only_fire_not_explosive():\n    inventory = {\n        \"apples\": 4,\n        \"fire\": 5\n    }\n\n    assert is_potentially_explosive(inventory) is False\n\n\ndef test_both_fire_and_propane_is_potentially_explosive():\n    inventory = {\n        \"propane\": 4,\n        \"fire\": 5\n    }\n    assert is_potentially_explosive(inventory) is True\n\n\ndef test_also_potentially_explosive_if_quantity_is_0():\n    inventory = {\n        \"propane\": 0,\n        \"fire\": 0\n    }\n    assert is_potentially_explosive(inventory) is True",
                 "solution": "from typing import Dict\n\n\ndef is_potentially_explosive(inventory: Dict) -> bool:\n    \"\"\"Determines if your inventory is potentially explosive.\n    \n    An inventory is considered potentially explosive if it contains\n    even the mention of both \"fire\" and \"propane\" in the dictionary's keys.\n    The quantities of each element are irrevelant.\n    \n    Args:\n        inventory: A dictionary that may be explosive.\n    Returns:\n        True if potentially explosive, False otherwise.\n    \"\"\"\n    fire_mentioned = \"fire\" in inventory\n    propane_mentioned = \"propane\" in inventory\n    \n    return fire_mentioned and propane_mentioned"
