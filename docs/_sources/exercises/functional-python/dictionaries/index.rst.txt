@@ -9,3 +9,7 @@ Dictionaries
     get-first-name
     Reverse Last Name (7) <reverse-last-name>
     potentially-explosive
+    keys-with-target
+    values-above-ten
+    above-average
+    shopping-list

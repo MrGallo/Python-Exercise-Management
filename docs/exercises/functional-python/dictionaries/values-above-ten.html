@@ -7,7 +7,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>Empty Dict &mdash; Python Exercises  documentation</title>
+  <title>Values Above Ten &mdash; Python Exercises  documentation</title>
   
 
   
@@ -39,8 +39,8 @@
     
     <link rel="index" title="Index" href="../../../genindex.html" />
     <link rel="search" title="Search" href="../../../search.html" />
-    <link rel="next" title="Create Person" href="create-person.html" />
-    <link rel="prev" title="Dictionaries" href="index.html" /> 
+    <link rel="next" title="Above Average" href="above-average.html" />
+    <link rel="prev" title="Keys with Target" href="keys-with-target.html" /> 
 </head>
 
 <body class="wy-body-for-nav">
@@ -96,17 +96,17 @@
 <li class="toctree-l2"><a class="reference internal" href="../intro/index.html">Intro</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../lists/index.html">Lists</a></li>
 <li class="toctree-l2 current"><a class="reference internal" href="index.html">Dictionaries</a><ul class="current">
-<li class="toctree-l3 current"><a class="current reference internal" href="#">Empty Dict</a><ul>
-<li class="toctree-l4"><a class="reference internal" href="#starter-code">Starter Code</a></li>
-<li class="toctree-l4"><a class="reference internal" href="#tests">Tests</a></li>
-</ul>
-</li>
+<li class="toctree-l3"><a class="reference internal" href="empty-dict.html">Empty Dict</a></li>
 <li class="toctree-l3"><a class="reference internal" href="create-person.html">Create Person</a></li>
 <li class="toctree-l3"><a class="reference internal" href="get-first-name.html">Get First Name</a></li>
 <li class="toctree-l3"><a class="reference internal" href="reverse-last-name.html">Reverse Last Name (7)</a></li>
 <li class="toctree-l3"><a class="reference internal" href="potentially-explosive.html">Potentially Explosive</a></li>
 <li class="toctree-l3"><a class="reference internal" href="keys-with-target.html">Keys with Target</a></li>
-<li class="toctree-l3"><a class="reference internal" href="values-above-ten.html">Values Above Ten</a></li>
+<li class="toctree-l3 current"><a class="current reference internal" href="#">Values Above Ten</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#starter-code">Starter Code</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#tests">Tests</a></li>
+</ul>
+</li>
 <li class="toctree-l3"><a class="reference internal" href="above-average.html">Above Average</a></li>
 <li class="toctree-l3"><a class="reference internal" href="shopping-list.html">Shopping List</a></li>
 </ul>
@@ -164,13 +164,13 @@
         
           <li><a href="index.html">Dictionaries</a> &raquo;</li>
         
-      <li>Empty Dict</li>
+      <li>Values Above Ten</li>
     
     
       <li class="wy-breadcrumbs-aside">
         
             
-            <a href="../../../_sources/exercises/functional-python/dictionaries/empty-dict.md.txt" rel="nofollow"> View page source</a>
+            <a href="../../../_sources/exercises/functional-python/dictionaries/values-above-ten.md.txt" rel="nofollow"> View page source</a>
           
         
       </li>
@@ -183,21 +183,22 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
             
-  <div class="section" id="empty-dict">
-<h1>Empty Dict<a class="headerlink" href="#empty-dict" title="Permalink to this headline">¶</a></h1>
-<p>Requirements in starter code docstring.</p>
+  <div class="section" id="values-above-ten">
+<h1>Values Above Ten<a class="headerlink" href="#values-above-ten" title="Permalink to this headline">¶</a></h1>
+<p>See starter code docstring.</p>
 <div class="section" id="starter-code">
 <h2>Starter Code<a class="headerlink" href="#starter-code" title="Permalink to this headline">¶</a></h2>
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">typing</span> <span class="kn">import</span> <span class="n">Dict</span>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">typing</span> <span class="kn">import</span> <span class="n">Dict</span><span class="p">,</span> <span class="n">List</span>
 
 
-<span class="k">def</span> <span class="nf">create_an_empty_dictionary</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="n">Dict</span><span class="p">:</span>
-    <span class="sd">&quot;&quot;&quot;Creates an empty dictionary</span>
+<span class="k">def</span> <span class="nf">values_above_10</span><span class="p">(</span><span class="n">inventory</span><span class="p">:</span> <span class="n">Dict</span><span class="p">[</span><span class="nb">str</span><span class="p">,</span> <span class="nb">int</span><span class="p">])</span> <span class="o">-&gt;</span> <span class="n">List</span><span class="p">:</span>
+    <span class="sd">&quot;&quot;&quot;Gives a list of dictionary values greater than 10.</span>
 <span class="sd">    </span>
-<span class="sd">    Args: </span>
-<span class="sd">        None</span>
+<span class="sd">    Args:</span>
+<span class="sd">        inventory: Dictionary of inventory-like key value pairs.</span>
 <span class="sd">    Returns:</span>
-<span class="sd">        Empty dictionary</span>
+<span class="sd">        List of values (not keys) from the dictionary above 10.</span>
+
 <span class="sd">    &quot;&quot;&quot;</span>
     <span class="k">return</span> <span class="kc">None</span>
 </pre></div>
@@ -205,11 +206,28 @@
 </div>
 <div class="section" id="tests">
 <h2>Tests<a class="headerlink" href="#tests" title="Permalink to this headline">¶</a></h2>
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">main</span> <span class="kn">import</span> <span class="n">create_an_empty_dictionary</span>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">main</span> <span class="kn">import</span> <span class="n">values_above_10</span>
 
 
-<span class="k">def</span> <span class="nf">test_create_an_empty_dictionary</span><span class="p">():</span>
-    <span class="k">assert</span> <span class="n">create_an_empty_dictionary</span><span class="p">()</span> <span class="o">==</span> <span class="p">{}</span>
+<span class="k">def</span> <span class="nf">test_values_above_10_empty</span><span class="p">():</span>
+    <span class="n">inventory</span> <span class="o">=</span> <span class="p">{}</span>
+    <span class="k">assert</span> <span class="n">values_above_10</span><span class="p">(</span><span class="n">inventory</span><span class="p">)</span> <span class="o">==</span> <span class="p">[]</span>
+
+
+<span class="k">def</span> <span class="nf">test_values_above_10_doesnt_include_10</span><span class="p">():</span>
+    <span class="n">inventory</span> <span class="o">=</span> <span class="p">{</span><span class="s2">&quot;a&quot;</span><span class="p">:</span> <span class="mi">0</span><span class="p">,</span> <span class="s2">&quot;b&quot;</span><span class="p">:</span> <span class="mi">10</span><span class="p">}</span>
+    <span class="k">assert</span> <span class="n">values_above_10</span><span class="p">(</span><span class="n">inventory</span><span class="p">)</span> <span class="o">==</span> <span class="p">[]</span>
+
+
+<span class="k">def</span> <span class="nf">test_values_above_10</span><span class="p">():</span>
+    <span class="n">inventory</span> <span class="o">=</span> <span class="p">{</span><span class="s2">&quot;a&quot;</span><span class="p">:</span> <span class="mi">0</span><span class="p">,</span> <span class="s2">&quot;b&quot;</span><span class="p">:</span> <span class="mi">10</span><span class="p">,</span> <span class="s2">&quot;c&quot;</span><span class="p">:</span> <span class="mi">11</span><span class="p">,</span> <span class="s2">&quot;d&quot;</span><span class="p">:</span> <span class="o">-</span><span class="mi">10</span><span class="p">}</span>
+    <span class="k">assert</span> <span class="n">values_above_10</span><span class="p">(</span><span class="n">inventory</span><span class="p">)</span> <span class="o">==</span> <span class="p">[</span><span class="mi">11</span><span class="p">]</span>
+
+    <span class="n">inventory</span> <span class="o">=</span> <span class="p">{</span><span class="s2">&quot;a&quot;</span><span class="p">:</span> <span class="mi">55</span><span class="p">,</span> <span class="s2">&quot;b&quot;</span><span class="p">:</span> <span class="mi">11</span><span class="p">,</span> <span class="s2">&quot;c&quot;</span><span class="p">:</span> <span class="mi">11</span><span class="p">,</span> <span class="s2">&quot;d&quot;</span><span class="p">:</span> <span class="mi">23</span><span class="p">}</span>
+    <span class="k">assert</span> <span class="n">values_above_10</span><span class="p">(</span><span class="n">inventory</span><span class="p">)</span> <span class="o">==</span> <span class="p">[</span><span class="mi">55</span><span class="p">,</span> <span class="mi">11</span><span class="p">,</span> <span class="mi">11</span><span class="p">,</span> <span class="mi">23</span><span class="p">]</span>
+
+    <span class="n">inventory</span> <span class="o">=</span> <span class="p">{</span><span class="s2">&quot;d&quot;</span><span class="p">:</span> <span class="mi">55</span><span class="p">,</span> <span class="s2">&quot;c&quot;</span><span class="p">:</span> <span class="mi">11</span><span class="p">,</span> <span class="s2">&quot;b&quot;</span><span class="p">:</span> <span class="mi">11</span><span class="p">,</span> <span class="s2">&quot;a&quot;</span><span class="p">:</span> <span class="mi">23</span><span class="p">}</span>
+    <span class="k">assert</span> <span class="n">values_above_10</span><span class="p">(</span><span class="n">inventory</span><span class="p">)</span> <span class="o">==</span> <span class="p">[</span><span class="mi">55</span><span class="p">,</span> <span class="mi">11</span><span class="p">,</span> <span class="mi">11</span><span class="p">,</span> <span class="mi">23</span><span class="p">]</span>
 </pre></div>
 </div>
 </div>
@@ -223,10 +241,10 @@
   
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
       
-        <a href="create-person.html" class="btn btn-neutral float-right" title="Create Person" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+        <a href="above-average.html" class="btn btn-neutral float-right" title="Above Average" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
       
       
-        <a href="index.html" class="btn btn-neutral float-left" title="Dictionaries" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+        <a href="keys-with-target.html" class="btn btn-neutral float-left" title="Keys with Target" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
       
     </div>
   

@@ -1608,5 +1608,111 @@ Potentially Explosive
         
         return fire_mentioned and propane_mentioned
 
+Keys with Target
+****************
+.. code-block:: python
+    :linenos:
+
+    from typing import Dict, List
+    
+    
+    def get_keys_with(target: str, thing: Dict[str, str]) -> List[str]:
+        """Returns a list of keys in a dict which contain the target string.
+        Args:
+            target (str): The target substring to look for.
+            thing (dict): A dictionary whose keys we want to search.
+        Returns:
+            (list) A list of all keys in the dictionary that contain the 
+            target substring.
+        """
+        found_keys = []
+        for key in thing.keys():
+            if target in key:
+                found_keys.append(key)
+        
+        return found_keys
+
+Values Above Ten
+****************
+.. code-block:: python
+    :linenos:
+
+    from typing import Dict, List
+    
+    
+    def values_above_10(inventory: Dict[str, int]) -> List:
+        """Gives a list of dictionary values greater than 10.
+        
+        Args:
+            inventory: Dictionary of inventory-like key value pairs.
+        Returns:
+            List of values (not keys) from the dictionary above 10.
+    
+        """
+        target_values = []
+        for key, value in inventory.items():
+            if value > 10:
+                target_values.append(value)
+        
+        return target_values
+
+Above Average
+*************
+.. code-block:: python
+    :linenos:
+
+    from typing import List, Dict
+    
+    
+    def students_above_average(student_final_marks: Dict[str, int]) -> List[str]:
+        """Get a list of all student names whose mark is above average.
+    
+        Args:
+            student_final_marks: A dictionary mapping student names to final marks.
+        
+        Returns:
+            A list of student names.
+        """
+        # find average
+        total = 0
+        for mark in student_final_marks.values():
+            total += mark
+        
+        average = total / len(student_final_marks.values())
+    
+        # filter students into a new list
+        student_names = []
+        for name, mark in student_final_marks.items():
+            if mark > average:
+                student_names.append(name)
+        
+        return student_names
+
+Shopping List
+*************
+.. code-block:: python
+    :linenos:
+
+    from typing import List, Dict
+    
+    
+    def get_shopping_list(inventory: Dict[str, int], minimum_stock: Dict[str, int]) -> List[str]:
+        """Get a list of all items that are below the minimum stock threshold.
+    
+        Args:
+            inventory: A dictionary mapping item names to current stock levels.
+            minimum_stock: A dictionary mapping item names to their lowest allowed stock levels.
+    
+        Returns:
+            A list of item names that need to be purchased. These are items
+            whose stock levels are below their respective minimum stock threshold.
+        """
+        items = []
+        for item, current_stock in inventory.items():
+            if current_stock < minimum_stock[item]:
+                items.append(item)
+        
+        return items
+
 
 
