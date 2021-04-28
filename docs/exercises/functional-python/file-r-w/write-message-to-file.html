@@ -7,7 +7,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>Variable Filename &mdash; Python Exercises  documentation</title>
+  <title>Write Message to File &mdash; Python Exercises  documentation</title>
   
 
   
@@ -39,8 +39,8 @@
     
     <link rel="index" title="Index" href="../../../genindex.html" />
     <link rel="search" title="Search" href="../../../search.html" />
-    <link rel="next" title="Friendly File" href="friendly-file.html" />
-    <link rel="prev" title="Get Contents" href="get-contents.html" /> 
+    <link rel="next" title="Update High Score" href="update-high-score.html" />
+    <link rel="prev" title="Write to File" href="write-to-file.html" /> 
 </head>
 
 <body class="wy-body-for-nav">
@@ -99,14 +99,14 @@
 <li class="toctree-l2 current"><a class="reference internal" href="index.html">File R/W</a><ul class="current">
 <li class="toctree-l3"><a class="reference internal" href="get-contents.html">Get Contents</a></li>
 <li class="toctree-l3"><a class="reference internal" href="get-contents.html#what-to-do">What to do</a></li>
-<li class="toctree-l3 current"><a class="current reference internal" href="#">Variable Filename</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="variable-filename.html">Variable Filename</a></li>
+<li class="toctree-l3"><a class="reference internal" href="friendly-file.html">Friendly File</a></li>
+<li class="toctree-l3"><a class="reference internal" href="write-to-file.html">Write to File</a></li>
+<li class="toctree-l3 current"><a class="current reference internal" href="#">Write Message to File</a><ul>
 <li class="toctree-l4"><a class="reference internal" href="#starter-code">Starter Code</a></li>
 <li class="toctree-l4"><a class="reference internal" href="#tests">Tests</a></li>
 </ul>
 </li>
-<li class="toctree-l3"><a class="reference internal" href="friendly-file.html">Friendly File</a></li>
-<li class="toctree-l3"><a class="reference internal" href="write-to-file.html">Write to File</a></li>
-<li class="toctree-l3"><a class="reference internal" href="write-message-to-file.html">Write Message to File</a></li>
 <li class="toctree-l3"><a class="reference internal" href="update-high-score.html">Update High Score</a></li>
 <li class="toctree-l3"><a class="reference internal" href="read-multiple-lines.html">Read Multiple Lines</a></li>
 <li class="toctree-l3"><a class="reference internal" href="read-multiple-lines.html#how-to-do-it">How to do it</a></li>
@@ -165,13 +165,13 @@
         
           <li><a href="index.html">File R/W</a> &raquo;</li>
         
-      <li>Variable Filename</li>
+      <li>Write Message to File</li>
     
     
       <li class="wy-breadcrumbs-aside">
         
             
-            <a href="../../../_sources/exercises/functional-python/file-r-w/variable-filename.md.txt" rel="nofollow"> View page source</a>
+            <a href="../../../_sources/exercises/functional-python/file-r-w/write-message-to-file.md.txt" rel="nofollow"> View page source</a>
           
         
       </li>
@@ -184,20 +184,20 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
             
-  <div class="section" id="variable-filename">
-<h1>Variable Filename<a class="headerlink" href="#variable-filename" title="Permalink to this headline">¶</a></h1>
-<p>This will be the same as the last exercise, except you will be given the name of the file int the parameter variable <code class="docutils literal notranslate"><span class="pre">file_name</span></code>. Return the contents of the given file.</p>
+  <div class="section" id="write-message-to-file">
+<h1>Write Message to File<a class="headerlink" href="#write-message-to-file" title="Permalink to this headline">¶</a></h1>
+<p>Use the same pattern learned in the previous exercise to write to the file.</p>
+<p><code class="docutils literal notranslate"><span class="pre">open(file_name:</span> <span class="pre">str,</span> <span class="pre">mode:</span> <span class="pre">str)</span></code></p>
 <div class="section" id="starter-code">
 <h2>Starter Code<a class="headerlink" href="#starter-code" title="Permalink to this headline">¶</a></h2>
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">get_contents</span><span class="p">(</span><span class="n">file_name</span><span class="p">:</span> <span class="nb">str</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">str</span><span class="p">:</span>
-    <span class="sd">&quot;&quot;&quot;Returns the contents of the given file.</span>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">write_msg_to_file</span><span class="p">(</span><span class="n">msg</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span> <span class="n">file_name</span><span class="p">:</span> <span class="nb">str</span><span class="p">)</span> <span class="o">-&gt;&lt;</span> <span class="kc">None</span><span class="o">&gt;</span><span class="p">:</span>
+    <span class="sd">&quot;&quot;&quot;Will write a message to a file</span>
 <span class="sd">    </span>
 <span class="sd">    Args:</span>
-<span class="sd">        file_name: The name of the file to fetch the contents.</span>
-<span class="sd">    Returns:</span>
-<span class="sd">        The contents of the given file as a string.</span>
+<span class="sd">        msg: The message to write.</span>
+<span class="sd">        file_name: The name of the file to write the message in.</span>
 <span class="sd">    &quot;&quot;&quot;</span>
-    <span class="k">return</span> <span class="s2">&quot;&quot;</span>
+    <span class="k">pass</span>
 </pre></div>
 </div>
 </div>
@@ -208,7 +208,7 @@
 <span class="kn">import</span> <span class="nn">uuid</span>
 
 
-<span class="kn">from</span> <span class="nn">main</span> <span class="kn">import</span> <span class="n">get_contents</span>
+<span class="kn">from</span> <span class="nn">main</span> <span class="kn">import</span> <span class="n">write_msg_to_file</span>
 
 
 <span class="k">def</span> <span class="nf">remove_file</span><span class="p">(</span><span class="n">file_name</span><span class="p">:</span> <span class="nb">str</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kc">None</span><span class="p">:</span>
@@ -216,9 +216,9 @@
         <span class="n">os</span><span class="o">.</span><span class="n">remove</span><span class="p">(</span><span class="n">file_name</span><span class="p">)</span>
 
 
-<span class="k">def</span> <span class="nf">write_to_file</span><span class="p">(</span><span class="n">filename</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span> <span class="n">contents</span><span class="p">:</span> <span class="nb">str</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kc">None</span><span class="p">:</span>
-    <span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="n">filename</span><span class="p">,</span> <span class="s2">&quot;w&quot;</span><span class="p">)</span> <span class="k">as</span> <span class="n">f</span><span class="p">:</span>
-        <span class="n">f</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="n">contents</span><span class="p">)</span>
+<span class="k">def</span> <span class="nf">read_file</span><span class="p">(</span><span class="n">filename</span><span class="p">:</span> <span class="nb">str</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kc">None</span><span class="p">:</span>
+    <span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="n">filename</span><span class="p">,</span> <span class="s2">&quot;r&quot;</span><span class="p">)</span> <span class="k">as</span> <span class="n">f</span><span class="p">:</span>
+        <span class="k">return</span> <span class="n">f</span><span class="o">.</span><span class="n">read</span><span class="p">()</span><span class="o">.</span><span class="n">strip</span><span class="p">()</span>
 
 
 <span class="nd">@pytest</span><span class="o">.</span><span class="n">fixture</span><span class="p">(</span><span class="n">autouse</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
@@ -230,28 +230,19 @@
             <span class="n">os</span><span class="o">.</span><span class="n">remove</span><span class="p">(</span><span class="n">f</span><span class="p">)</span>
 
 
-<span class="k">def</span> <span class="nf">test_get_contents_hello</span><span class="p">():</span>
-    <span class="n">filename</span> <span class="o">=</span> <span class="s2">&quot;blah.test_txt&quot;</span>
-    <span class="n">write_to_file</span><span class="p">(</span><span class="n">filename</span><span class="p">,</span> <span class="s2">&quot;hello, world!&quot;</span><span class="p">)</span>
-    <span class="k">assert</span> <span class="n">get_contents</span><span class="p">(</span><span class="n">filename</span><span class="p">)</span> <span class="o">==</span> <span class="s2">&quot;hello, world!&quot;</span>
+<span class="k">def</span> <span class="nf">test_write_msg_to_file_hello</span><span class="p">():</span>
+    <span class="n">filename</span> <span class="o">=</span> <span class="s2">&quot;hello.test_txt&quot;</span>
+    <span class="n">contents</span> <span class="o">=</span> <span class="s2">&quot;hello world!&quot;</span>
+    <span class="n">write_msg_to_file</span><span class="p">(</span><span class="n">contents</span><span class="p">,</span> <span class="n">filename</span><span class="p">)</span>
+    <span class="k">assert</span> <span class="n">read_file</span><span class="p">(</span><span class="n">filename</span><span class="p">)</span> <span class="o">==</span> <span class="n">contents</span>
 
 
-<span class="k">def</span> <span class="nf">test_get_contents_goodbye</span><span class="p">():</span>
-    <span class="n">filename</span> <span class="o">=</span> <span class="s2">&quot;342fsafs6.test_txt&quot;</span>
-    <span class="n">write_to_file</span><span class="p">(</span><span class="n">filename</span><span class="p">,</span> <span class="s2">&quot;goodbye&quot;</span><span class="p">)</span>
-    <span class="k">assert</span> <span class="n">get_contents</span><span class="p">(</span><span class="n">filename</span><span class="p">)</span> <span class="o">==</span> <span class="s2">&quot;goodbye&quot;</span>
-
-
-<span class="k">def</span> <span class="nf">test_get_contents_goodbye</span><span class="p">():</span>
-    <span class="n">filename</span> <span class="o">=</span> <span class="s2">&quot;hello-goodbye.test_txt&quot;</span>
-    <span class="n">write_to_file</span><span class="p">(</span><span class="n">filename</span><span class="p">,</span> <span class="s2">&quot;hello, goodbye&quot;</span><span class="p">)</span>
-    <span class="k">assert</span> <span class="n">get_contents</span><span class="p">(</span><span class="n">filename</span><span class="p">)</span> <span class="o">==</span> <span class="s2">&quot;hello, goodbye&quot;</span>
-
-
-<span class="k">def</span> <span class="nf">test_get_contents_random_filename</span><span class="p">():</span>
-    <span class="n">filename</span> <span class="o">=</span> <span class="sa">f</span><span class="s2">&quot;</span><span class="si">{</span><span class="n">uuid</span><span class="o">.</span><span class="n">uuid4</span><span class="p">()</span><span class="o">.</span><span class="n">hex</span><span class="si">}</span><span class="s2">.test_txt&quot;</span>
-    <span class="n">write_to_file</span><span class="p">(</span><span class="n">filename</span><span class="p">,</span> <span class="s2">&quot;cant use if statements for this!&quot;</span><span class="p">)</span>
-    <span class="k">assert</span> <span class="n">get_contents</span><span class="p">(</span><span class="n">filename</span><span class="p">)</span> <span class="o">==</span> <span class="s2">&quot;cant use if statements for this!&quot;</span>
+<span class="k">def</span> <span class="nf">test_write_msg_to_file_acceptance</span><span class="p">():</span>
+    <span class="k">for</span> <span class="n">_</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">10</span><span class="p">):</span>
+        <span class="n">filename</span> <span class="o">=</span> <span class="sa">f</span><span class="s2">&quot;</span><span class="si">{</span><span class="n">uuid</span><span class="o">.</span><span class="n">uuid4</span><span class="p">()</span><span class="o">.</span><span class="n">hex</span><span class="si">}</span><span class="s2">.test_txt&quot;</span>
+        <span class="n">contents</span> <span class="o">=</span> <span class="sa">f</span><span class="s2">&quot;</span><span class="si">{</span><span class="n">uuid</span><span class="o">.</span><span class="n">uuid4</span><span class="p">()</span><span class="o">.</span><span class="n">hex</span><span class="si">}</span><span class="s2">&quot;</span>
+        <span class="n">write_msg_to_file</span><span class="p">(</span><span class="n">contents</span><span class="p">,</span> <span class="n">filename</span><span class="p">)</span>
+        <span class="k">assert</span> <span class="n">read_file</span><span class="p">(</span><span class="n">filename</span><span class="p">)</span> <span class="o">==</span> <span class="n">contents</span>
 </pre></div>
 </div>
 </div>
@@ -265,10 +256,10 @@
   
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
       
-        <a href="friendly-file.html" class="btn btn-neutral float-right" title="Friendly File" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+        <a href="update-high-score.html" class="btn btn-neutral float-right" title="Update High Score" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
       
       
-        <a href="get-contents.html" class="btn btn-neutral float-left" title="Get Contents" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+        <a href="write-to-file.html" class="btn btn-neutral float-left" title="Write to File" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
       
     </div>
   

@@ -1768,5 +1768,69 @@ Friendly File
         else:
             return "neutral"
 
+Write to File
+*************
+.. code-block:: python
+    :linenos:
+
+    def write_to_file():
+        """Writes "Hello, file!" to a file called "file.txt."""
+        
+        with open("file.txt", "w") as f:
+            f.write("Hello, file!")
+
+Write Message to File
+*********************
+.. code-block:: python
+    :linenos:
+
+    def write_msg_to_file(msg: str, file_name: str) -> None:
+        """Will write a message to a file
+        
+        Args:
+            msg: The message to write.
+            file_name: The name of the file to write the message in.
+        """
+        with open(file_name, "w") as f:
+            f.write(msg)
+
+Update High Score
+*****************
+.. code-block:: python
+    :linenos:
+
+    def check_and_update_high_score(current_score: int) -> None:
+        """Updates the high score file if the current score is larger.
+        
+        Args:
+            current_score: The score of the game that just ended.
+        """
+        with open('high_score.txt', 'r') as f:
+            high_score = int(f.read())
+        
+        if current_score > high_score:
+            with open('high_score.txt', 'w') as f:
+                f.write(str(current_score))
+
+Read Multiple Lines
+*******************
+.. code-block:: python
+    :linenos:
+
+    def add_nums_from_file(file_name: str) -> int:
+        """Returns the sum of all integers in the given file.
+        
+        Args:
+            file_name: The name of the file.
+        Returns:
+            Sum of all the numbers in the file.
+        """
+        total = 0
+        with open(file_name, "r") as f:
+            for line in f:
+                total += int(line)
+        
+        return total
+
 
 

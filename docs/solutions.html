@@ -39,7 +39,7 @@
     
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
-    <link rel="prev" title="Friendly File" href="exercises/functional-python/file-r-w/friendly-file.html" /> 
+    <link rel="prev" title="Read Multiple Lines" href="exercises/functional-python/file-r-w/read-multiple-lines.html" /> 
 </head>
 
 <body class="wy-body-for-nav">
@@ -245,6 +245,10 @@
 <li class="toctree-l4"><a class="reference internal" href="#get-contents">Get Contents</a></li>
 <li class="toctree-l4"><a class="reference internal" href="#variable-filename">Variable Filename</a></li>
 <li class="toctree-l4"><a class="reference internal" href="#friendly-file">Friendly File</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#write-to-file">Write to File</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#write-message-to-file">Write Message to File</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#update-high-score">Update High Score</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#read-multiple-lines">Read Multiple Lines</a></li>
 </ul>
 </li>
 </ul>
@@ -492,6 +496,10 @@
 <li><p><a class="reference internal" href="#get-contents" id="id131">Get Contents</a></p></li>
 <li><p><a class="reference internal" href="#variable-filename" id="id132">Variable Filename</a></p></li>
 <li><p><a class="reference internal" href="#friendly-file" id="id133">Friendly File</a></p></li>
+<li><p><a class="reference internal" href="#write-to-file" id="id134">Write to File</a></p></li>
+<li><p><a class="reference internal" href="#write-message-to-file" id="id135">Write Message to File</a></p></li>
+<li><p><a class="reference internal" href="#update-high-score" id="id136">Update High Score</a></p></li>
+<li><p><a class="reference internal" href="#read-multiple-lines" id="id137">Read Multiple Lines</a></p></li>
 </ul>
 </li>
 </ul>
@@ -3190,6 +3198,102 @@
 </pre></div>
 </td></tr></table></div>
 </div>
+<div class="section" id="write-to-file">
+<h4><a class="toc-backref" href="#id134">Write to File</a><a class="headerlink" href="#write-to-file" title="Permalink to this headline">¶</a></h4>
+<div class="highlight-python notranslate"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre>1
+2
+3
+4
+5</pre></div></td><td class="code"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">write_to_file</span><span class="p">():</span>
+    <span class="sd">&quot;&quot;&quot;Writes &quot;Hello, file!&quot; to a file called &quot;file.txt.&quot;&quot;&quot;</span>
+
+    <span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="s2">&quot;file.txt&quot;</span><span class="p">,</span> <span class="s2">&quot;w&quot;</span><span class="p">)</span> <span class="k">as</span> <span class="n">f</span><span class="p">:</span>
+        <span class="n">f</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="s2">&quot;Hello, file!&quot;</span><span class="p">)</span>
+</pre></div>
+</td></tr></table></div>
+</div>
+<div class="section" id="write-message-to-file">
+<h4><a class="toc-backref" href="#id135">Write Message to File</a><a class="headerlink" href="#write-message-to-file" title="Permalink to this headline">¶</a></h4>
+<div class="highlight-python notranslate"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre>1
+2
+3
+4
+5
+6
+7
+8
+9</pre></div></td><td class="code"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">write_msg_to_file</span><span class="p">(</span><span class="n">msg</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span> <span class="n">file_name</span><span class="p">:</span> <span class="nb">str</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kc">None</span><span class="p">:</span>
+    <span class="sd">&quot;&quot;&quot;Will write a message to a file</span>
+
+<span class="sd">    Args:</span>
+<span class="sd">        msg: The message to write.</span>
+<span class="sd">        file_name: The name of the file to write the message in.</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="n">file_name</span><span class="p">,</span> <span class="s2">&quot;w&quot;</span><span class="p">)</span> <span class="k">as</span> <span class="n">f</span><span class="p">:</span>
+        <span class="n">f</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="n">msg</span><span class="p">)</span>
+</pre></div>
+</td></tr></table></div>
+</div>
+<div class="section" id="update-high-score">
+<h4><a class="toc-backref" href="#id136">Update High Score</a><a class="headerlink" href="#update-high-score" title="Permalink to this headline">¶</a></h4>
+<div class="highlight-python notranslate"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre> 1
+ 2
+ 3
+ 4
+ 5
+ 6
+ 7
+ 8
+ 9
+10
+11
+12</pre></div></td><td class="code"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">check_and_update_high_score</span><span class="p">(</span><span class="n">current_score</span><span class="p">:</span> <span class="nb">int</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kc">None</span><span class="p">:</span>
+    <span class="sd">&quot;&quot;&quot;Updates the high score file if the current score is larger.</span>
+
+<span class="sd">    Args:</span>
+<span class="sd">        current_score: The score of the game that just ended.</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="s1">&#39;high_score.txt&#39;</span><span class="p">,</span> <span class="s1">&#39;r&#39;</span><span class="p">)</span> <span class="k">as</span> <span class="n">f</span><span class="p">:</span>
+        <span class="n">high_score</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="n">f</span><span class="o">.</span><span class="n">read</span><span class="p">())</span>
+
+    <span class="k">if</span> <span class="n">current_score</span> <span class="o">&gt;</span> <span class="n">high_score</span><span class="p">:</span>
+        <span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="s1">&#39;high_score.txt&#39;</span><span class="p">,</span> <span class="s1">&#39;w&#39;</span><span class="p">)</span> <span class="k">as</span> <span class="n">f</span><span class="p">:</span>
+            <span class="n">f</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="nb">str</span><span class="p">(</span><span class="n">current_score</span><span class="p">))</span>
+</pre></div>
+</td></tr></table></div>
+</div>
+<div class="section" id="read-multiple-lines">
+<h4><a class="toc-backref" href="#id137">Read Multiple Lines</a><a class="headerlink" href="#read-multiple-lines" title="Permalink to this headline">¶</a></h4>
+<div class="highlight-python notranslate"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre> 1
+ 2
+ 3
+ 4
+ 5
+ 6
+ 7
+ 8
+ 9
+10
+11
+12
+13
+14</pre></div></td><td class="code"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">add_nums_from_file</span><span class="p">(</span><span class="n">file_name</span><span class="p">:</span> <span class="nb">str</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">int</span><span class="p">:</span>
+    <span class="sd">&quot;&quot;&quot;Returns the sum of all integers in the given file.</span>
+
+<span class="sd">    Args:</span>
+<span class="sd">        file_name: The name of the file.</span>
+<span class="sd">    Returns:</span>
+<span class="sd">        Sum of all the numbers in the file.</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="n">total</span> <span class="o">=</span> <span class="mi">0</span>
+    <span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="n">file_name</span><span class="p">,</span> <span class="s2">&quot;r&quot;</span><span class="p">)</span> <span class="k">as</span> <span class="n">f</span><span class="p">:</span>
+        <span class="k">for</span> <span class="n">line</span> <span class="ow">in</span> <span class="n">f</span><span class="p">:</span>
+            <span class="n">total</span> <span class="o">+=</span> <span class="nb">int</span><span class="p">(</span><span class="n">line</span><span class="p">)</span>
+
+    <span class="k">return</span> <span class="n">total</span>
+</pre></div>
+</td></tr></table></div>
+</div>
 </div>
 </div>
 </div>
@@ -3203,7 +3307,7 @@
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
       
       
-        <a href="exercises/functional-python/file-r-w/friendly-file.html" class="btn btn-neutral float-left" title="Friendly File" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+        <a href="exercises/functional-python/file-r-w/read-multiple-lines.html" class="btn btn-neutral float-left" title="Read Multiple Lines" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
       
     </div>
   

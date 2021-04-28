@@ -7,3 +7,7 @@ File R/W
     get-contents
     variable-filename
     friendly-file
+    write-to-file
+    write-message-to-file
+    update-high-score
+    read-multiple-lines

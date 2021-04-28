@@ -7,7 +7,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>Friendly File &mdash; Python Exercises  documentation</title>
+  <title>Update High Score &mdash; Python Exercises  documentation</title>
   
 
   
@@ -39,8 +39,8 @@
     
     <link rel="index" title="Index" href="../../../genindex.html" />
     <link rel="search" title="Search" href="../../../search.html" />
-    <link rel="next" title="Write to File" href="write-to-file.html" />
-    <link rel="prev" title="Variable Filename" href="variable-filename.html" /> 
+    <link rel="next" title="Read Multiple Lines" href="read-multiple-lines.html" />
+    <link rel="prev" title="Write Message to File" href="write-message-to-file.html" /> 
 </head>
 
 <body class="wy-body-for-nav">
@@ -100,14 +100,14 @@
 <li class="toctree-l3"><a class="reference internal" href="get-contents.html">Get Contents</a></li>
 <li class="toctree-l3"><a class="reference internal" href="get-contents.html#what-to-do">What to do</a></li>
 <li class="toctree-l3"><a class="reference internal" href="variable-filename.html">Variable Filename</a></li>
-<li class="toctree-l3 current"><a class="current reference internal" href="#">Friendly File</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="friendly-file.html">Friendly File</a></li>
+<li class="toctree-l3"><a class="reference internal" href="write-to-file.html">Write to File</a></li>
+<li class="toctree-l3"><a class="reference internal" href="write-message-to-file.html">Write Message to File</a></li>
+<li class="toctree-l3 current"><a class="current reference internal" href="#">Update High Score</a><ul>
 <li class="toctree-l4"><a class="reference internal" href="#starter-code">Starter Code</a></li>
 <li class="toctree-l4"><a class="reference internal" href="#tests">Tests</a></li>
 </ul>
 </li>
-<li class="toctree-l3"><a class="reference internal" href="write-to-file.html">Write to File</a></li>
-<li class="toctree-l3"><a class="reference internal" href="write-message-to-file.html">Write Message to File</a></li>
-<li class="toctree-l3"><a class="reference internal" href="update-high-score.html">Update High Score</a></li>
 <li class="toctree-l3"><a class="reference internal" href="read-multiple-lines.html">Read Multiple Lines</a></li>
 <li class="toctree-l3"><a class="reference internal" href="read-multiple-lines.html#how-to-do-it">How to do it</a></li>
 </ul>
@@ -165,13 +165,13 @@
         
           <li><a href="index.html">File R/W</a> &raquo;</li>
         
-      <li>Friendly File</li>
+      <li>Update High Score</li>
     
     
       <li class="wy-breadcrumbs-aside">
         
             
-            <a href="../../../_sources/exercises/functional-python/file-r-w/friendly-file.md.txt" rel="nofollow"> View page source</a>
+            <a href="../../../_sources/exercises/functional-python/file-r-w/update-high-score.md.txt" rel="nofollow"> View page source</a>
           
         
       </li>
@@ -184,34 +184,24 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
             
-  <div class="section" id="friendly-file">
-<h1>Friendly File<a class="headerlink" href="#friendly-file" title="Permalink to this headline">¶</a></h1>
-<p>Imagine that there are a number of files on the hard disk. Some files are <strong>friendly</strong> and some files are <strong>MEAN</strong> and some are neutral. All the files will contain only one word. Depending on which word, we can determine if they are <code class="docutils literal notranslate"><span class="pre">friendly</span></code>, <code class="docutils literal notranslate"><span class="pre">mean</span></code>, or <code class="docutils literal notranslate"><span class="pre">neutral</span></code>.</p>
-<p>A <strong>friendly file</strong> has one the following words:</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">hello</span>
-<span class="n">howdy</span>
-<span class="n">hi</span>
+  <div class="section" id="update-high-score">
+<h1>Update High Score<a class="headerlink" href="#update-high-score" title="Permalink to this headline">¶</a></h1>
+<p>There is a file in the same directory of this code called <code class="docutils literal notranslate"><span class="pre">high_score.txt</span></code> and it stores the all-time high score for some game. The contents of the file are a simple integer.</p>
+<p>Example of the contents of <code class="docutils literal notranslate"><span class="pre">high_score.txt</span></code>:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="mi">57</span>
 </pre></div>
 </div>
-<p>A <strong>mean</strong> file has one of the following words:</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">boo</span>
-<span class="n">leave</span>
-<span class="n">blah</span>
-</pre></div>
-</div>
-<p>A <strong>neutral</strong> file will contain any other word.</p>
-<p>See the starter code docstring for more information.</p>
+<p>Write the function that will take a <code class="docutils literal notranslate"><span class="pre">current_score</span></code> and compare it to the score in <code class="docutils literal notranslate"><span class="pre">high_score.txt</span></code>. If the current score is larger, that becomes the new high score. Over-write the previous high score by writing to the file.</p>
+<p><strong>Remember</strong>: File contents are stored as strings, even if they contain what appears to be integers.</p>
 <div class="section" id="starter-code">
 <h2>Starter Code<a class="headerlink" href="#starter-code" title="Permalink to this headline">¶</a></h2>
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">friendly_mean_or_neutral</span><span class="p">(</span><span class="n">file_name</span><span class="p">:</span> <span class="nb">str</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">str</span><span class="p">:</span>
-    <span class="sd">&quot;&quot;&quot;Determines if a file is friendly, mean, or neutral.</span>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">check_and_update_high_score</span><span class="p">(</span><span class="n">current_score</span><span class="p">:</span> <span class="nb">int</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kc">None</span><span class="p">:</span>
+    <span class="sd">&quot;&quot;&quot;Updates the high score file if the current score is larger.</span>
 <span class="sd">    </span>
 <span class="sd">    Args:</span>
-<span class="sd">        file_name: The name of the file to check.</span>
-<span class="sd">    Returns:</span>
-<span class="sd">        &quot;friendly&quot;, &quot;mean&quot; or &quot;neutral&quot; depending on the contents.</span>
+<span class="sd">        current_score: The score of the game that just ended.</span>
 <span class="sd">    &quot;&quot;&quot;</span>
-    <span class="k">return</span> <span class="kc">None</span>
+    <span class="k">pass</span>
 </pre></div>
 </div>
 </div>
@@ -219,15 +209,19 @@
 <h2>Tests<a class="headerlink" href="#tests" title="Permalink to this headline">¶</a></h2>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">pytest</span>
 <span class="kn">import</span> <span class="nn">os</span>
-<span class="kn">import</span> <span class="nn">uuid</span>
+<span class="kn">import</span> <span class="nn">random</span>
 
-
-<span class="kn">from</span> <span class="nn">main</span> <span class="kn">import</span> <span class="n">friendly_mean_or_neutral</span>
+<span class="kn">from</span> <span class="nn">main</span> <span class="kn">import</span> <span class="n">check_and_update_high_score</span>
 
 
 <span class="k">def</span> <span class="nf">remove_file</span><span class="p">(</span><span class="n">file_name</span><span class="p">:</span> <span class="nb">str</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kc">None</span><span class="p">:</span>
     <span class="k">if</span> <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">exists</span><span class="p">(</span><span class="n">file_name</span><span class="p">):</span>
         <span class="n">os</span><span class="o">.</span><span class="n">remove</span><span class="p">(</span><span class="n">file_name</span><span class="p">)</span>
+
+
+<span class="k">def</span> <span class="nf">read_file</span><span class="p">(</span><span class="n">filename</span><span class="p">:</span> <span class="nb">str</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kc">None</span><span class="p">:</span>
+    <span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="n">filename</span><span class="p">,</span> <span class="s2">&quot;r&quot;</span><span class="p">)</span> <span class="k">as</span> <span class="n">f</span><span class="p">:</span>
+        <span class="k">return</span> <span class="n">f</span><span class="o">.</span><span class="n">read</span><span class="p">()</span><span class="o">.</span><span class="n">strip</span><span class="p">()</span>
 
 
 <span class="k">def</span> <span class="nf">write_to_file</span><span class="p">(</span><span class="n">filename</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span> <span class="n">contents</span><span class="p">:</span> <span class="nb">str</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kc">None</span><span class="p">:</span>
@@ -238,38 +232,48 @@
 <span class="nd">@pytest</span><span class="o">.</span><span class="n">fixture</span><span class="p">(</span><span class="n">autouse</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
 <span class="k">def</span> <span class="nf">clear_test_files</span><span class="p">():</span>
     <span class="k">yield</span>
-    <span class="n">files</span> <span class="o">=</span> <span class="n">os</span><span class="o">.</span><span class="n">listdir</span><span class="p">()</span>
-    <span class="k">for</span> <span class="n">f</span> <span class="ow">in</span> <span class="n">files</span><span class="p">:</span>
-        <span class="k">if</span> <span class="n">f</span><span class="o">.</span><span class="n">endswith</span><span class="p">(</span><span class="s2">&quot;.test_txt&quot;</span><span class="p">):</span>
-            <span class="n">os</span><span class="o">.</span><span class="n">remove</span><span class="p">(</span><span class="n">f</span><span class="p">)</span>
+    <span class="k">if</span> <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">exists</span><span class="p">(</span><span class="s2">&quot;high_score.txt&quot;</span><span class="p">):</span>
+        <span class="n">os</span><span class="o">.</span><span class="n">remove</span><span class="p">(</span><span class="s2">&quot;high_score.txt&quot;</span><span class="p">)</span>
 
 
-<span class="k">def</span> <span class="nf">test_friendly_mean_or_neutral_friendly</span><span class="p">():</span>
-    <span class="n">friendly_msgs</span> <span class="o">=</span> <span class="p">[</span><span class="s2">&quot;hello&quot;</span><span class="p">,</span> <span class="s2">&quot;howdy&quot;</span><span class="p">,</span> <span class="s2">&quot;hi&quot;</span><span class="p">]</span>
+<span class="k">def</span> <span class="nf">test_check_and_update_high_score_should_not_update_with_lower_score</span><span class="p">():</span>
+    <span class="n">filename</span> <span class="o">=</span> <span class="s2">&quot;high_score.txt&quot;</span>
+    <span class="n">previous_high_score</span> <span class="o">=</span> <span class="s2">&quot;50&quot;</span>
+    <span class="n">write_to_file</span><span class="p">(</span><span class="n">filename</span><span class="p">,</span> <span class="n">previous_high_score</span><span class="p">)</span>
 
-    <span class="k">for</span> <span class="n">msg</span> <span class="ow">in</span> <span class="n">friendly_msgs</span><span class="p">:</span>
-        <span class="n">filename</span> <span class="o">=</span> <span class="sa">f</span><span class="s2">&quot;</span><span class="si">{</span><span class="n">uuid</span><span class="o">.</span><span class="n">uuid4</span><span class="p">()</span><span class="o">.</span><span class="n">hex</span><span class="si">}</span><span class="s2">.test_txt&quot;</span>
-        <span class="n">write_to_file</span><span class="p">(</span><span class="n">filename</span><span class="p">,</span> <span class="n">msg</span><span class="p">)</span>
-        <span class="k">assert</span> <span class="n">friendly_mean_or_neutral</span><span class="p">(</span><span class="n">filename</span><span class="p">)</span> <span class="o">==</span> <span class="s2">&quot;friendly&quot;</span>
-
-
-<span class="k">def</span> <span class="nf">test_friendly_mean_or_neutral_mean</span><span class="p">():</span>
-    <span class="n">mean_msgs</span> <span class="o">=</span> <span class="p">[</span><span class="s2">&quot;boo&quot;</span><span class="p">,</span> <span class="s2">&quot;leave&quot;</span><span class="p">,</span> <span class="s2">&quot;blah&quot;</span><span class="p">]</span>
-
-    <span class="k">for</span> <span class="n">msg</span> <span class="ow">in</span> <span class="n">mean_msgs</span><span class="p">:</span>
-        <span class="n">filename</span> <span class="o">=</span> <span class="sa">f</span><span class="s2">&quot;</span><span class="si">{</span><span class="n">uuid</span><span class="o">.</span><span class="n">uuid4</span><span class="p">()</span><span class="o">.</span><span class="n">hex</span><span class="si">}</span><span class="s2">.test_txt&quot;</span>
-        <span class="n">write_to_file</span><span class="p">(</span><span class="n">filename</span><span class="p">,</span> <span class="n">msg</span><span class="p">)</span>
-        <span class="k">assert</span> <span class="n">friendly_mean_or_neutral</span><span class="p">(</span><span class="n">filename</span><span class="p">)</span> <span class="o">==</span> <span class="s2">&quot;mean&quot;</span>
+    <span class="n">current_score</span> <span class="o">=</span> <span class="mi">40</span>
+    <span class="n">check_and_update_high_score</span><span class="p">(</span><span class="n">current_score</span><span class="p">)</span>
+    <span class="k">assert</span> <span class="n">read_file</span><span class="p">(</span><span class="n">filename</span><span class="p">)</span> <span class="o">==</span> <span class="s2">&quot;50&quot;</span>
 
 
+<span class="k">def</span> <span class="nf">test_check_and_update_high_score_should_update_with_higher_score</span><span class="p">():</span>
+    <span class="n">filename</span> <span class="o">=</span> <span class="s2">&quot;high_score.txt&quot;</span>
+    <span class="n">previous_high_score</span> <span class="o">=</span> <span class="s2">&quot;50&quot;</span>
+    <span class="n">write_to_file</span><span class="p">(</span><span class="n">filename</span><span class="p">,</span> <span class="n">previous_high_score</span><span class="p">)</span>
 
-<span class="k">def</span> <span class="nf">test_friendly_mean_or_neutral_neutral</span><span class="p">():</span>
-    <span class="n">neutral_msgs</span> <span class="o">=</span> <span class="p">[</span><span class="s2">&quot;apples&quot;</span><span class="p">,</span> <span class="s2">&quot;oranges&quot;</span><span class="p">,</span> <span class="s2">&quot;bananas&quot;</span><span class="p">]</span>
+    <span class="n">current_score</span> <span class="o">=</span> <span class="mi">100</span>
+    <span class="n">check_and_update_high_score</span><span class="p">(</span><span class="n">current_score</span><span class="p">)</span>
+    <span class="k">assert</span> <span class="n">read_file</span><span class="p">(</span><span class="n">filename</span><span class="p">)</span> <span class="o">==</span> <span class="s2">&quot;100&quot;</span>
 
-    <span class="k">for</span> <span class="n">msg</span> <span class="ow">in</span> <span class="n">neutral_msgs</span><span class="p">:</span>
-        <span class="n">filename</span> <span class="o">=</span> <span class="sa">f</span><span class="s2">&quot;</span><span class="si">{</span><span class="n">uuid</span><span class="o">.</span><span class="n">uuid4</span><span class="p">()</span><span class="o">.</span><span class="n">hex</span><span class="si">}</span><span class="s2">.test_txt&quot;</span>
-        <span class="n">write_to_file</span><span class="p">(</span><span class="n">filename</span><span class="p">,</span> <span class="n">msg</span><span class="p">)</span>
-        <span class="k">assert</span> <span class="n">friendly_mean_or_neutral</span><span class="p">(</span><span class="n">filename</span><span class="p">)</span> <span class="o">==</span> <span class="s2">&quot;neutral&quot;</span>
+
+<span class="k">def</span> <span class="nf">test_random_high_score</span><span class="p">():</span>
+    <span class="n">filename</span> <span class="o">=</span> <span class="s2">&quot;high_score.txt&quot;</span>
+    <span class="n">previous_high_score</span> <span class="o">=</span> <span class="s2">&quot;50&quot;</span>
+    <span class="n">write_to_file</span><span class="p">(</span><span class="n">filename</span><span class="p">,</span> <span class="n">previous_high_score</span><span class="p">)</span>
+
+    <span class="n">current_score</span> <span class="o">=</span> <span class="n">random</span><span class="o">.</span><span class="n">randrange</span><span class="p">(</span><span class="mi">51</span><span class="p">,</span> <span class="mi">101</span><span class="p">)</span>
+    <span class="n">check_and_update_high_score</span><span class="p">(</span><span class="n">current_score</span><span class="p">)</span>
+    <span class="k">assert</span> <span class="n">read_file</span><span class="p">(</span><span class="n">filename</span><span class="p">)</span> <span class="o">==</span> <span class="nb">str</span><span class="p">(</span><span class="n">current_score</span><span class="p">)</span>
+
+
+<span class="k">def</span> <span class="nf">test_random_low_score</span><span class="p">():</span>
+    <span class="n">filename</span> <span class="o">=</span> <span class="s2">&quot;high_score.txt&quot;</span>
+    <span class="n">previous_high_score</span> <span class="o">=</span> <span class="s2">&quot;50&quot;</span>
+    <span class="n">write_to_file</span><span class="p">(</span><span class="n">filename</span><span class="p">,</span> <span class="n">previous_high_score</span><span class="p">)</span>
+
+    <span class="n">current_score</span> <span class="o">=</span> <span class="n">random</span><span class="o">.</span><span class="n">randrange</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">50</span><span class="p">)</span>
+    <span class="n">check_and_update_high_score</span><span class="p">(</span><span class="n">current_score</span><span class="p">)</span>
+    <span class="k">assert</span> <span class="n">read_file</span><span class="p">(</span><span class="n">filename</span><span class="p">)</span> <span class="o">==</span> <span class="n">previous_high_score</span>
 </pre></div>
 </div>
 </div>
@@ -283,10 +287,10 @@
   
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
       
-        <a href="write-to-file.html" class="btn btn-neutral float-right" title="Write to File" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+        <a href="read-multiple-lines.html" class="btn btn-neutral float-right" title="Read Multiple Lines" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
       
       
-        <a href="variable-filename.html" class="btn btn-neutral float-left" title="Variable Filename" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+        <a href="write-message-to-file.html" class="btn btn-neutral float-left" title="Write Message to File" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
       
     </div>
   
