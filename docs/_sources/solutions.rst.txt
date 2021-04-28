@@ -1715,4 +1715,58 @@ Shopping List
         return items
 
 
+File R/W
+^^^^^^^^
+Get Contents
+************
+.. code-block:: python
+    :linenos:
+
+    def get_contents() -> str:
+        with open("file.txt", "r") as f:
+            contents = f.read()
+        
+        return contents
+
+Variable Filename
+*****************
+.. code-block:: python
+    :linenos:
+
+    def get_contents(file_name: str) -> str:
+        """Returns the contents of the given file.
+        
+        Args:
+            file_name: The name of the file to fetch the contents.
+        Returns:
+            The contents of the given file as a string.
+        """
+        with open(file_name, "r") as f:
+            contents = f.read()
+        return contents
+
+Friendly File
+*************
+.. code-block:: python
+    :linenos:
+
+    def friendly_mean_or_neutral(file_name: str) -> str:
+        """Determines if a file is friendly, mean, or neutral.
+        
+        Args:
+            file_name: The name of the file to check.
+        Returns:
+            "friendly", "mean" or "neutral" depending on the contents.
+        """
+        with open(file_name, "r") as f:
+            contents = f.read()
+        
+        if contents in ["hello", "hi", "howdy"]:
+            return "friendly"
+        elif contents in ["boo", "leave", "blah"]:
+            return "mean"
+        else:
+            return "neutral"
+
+
 

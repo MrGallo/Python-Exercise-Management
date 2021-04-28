@@ -7,3 +7,4 @@ Functional Python
     intro/index
     lists/index
     dictionaries/index
+    file-r-w/index
