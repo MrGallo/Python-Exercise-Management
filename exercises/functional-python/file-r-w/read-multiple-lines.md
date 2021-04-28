@@ -25,7 +25,7 @@ In this case, the answer would be:
 321
 ```
 
-# How to do it
+### How to do it
 
 This is accomplished the same way as reading in one line, except you need to **use a for loop** to iterate through each line of the file.
 
