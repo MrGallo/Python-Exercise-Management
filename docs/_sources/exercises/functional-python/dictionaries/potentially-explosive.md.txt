@@ -2,6 +2,13 @@
 
 
 
+**Requirements:**
+```eval_rst
+- :ref:`fundamentals:iterating through dictionary keys`
+- :ref:`fundamentals:if, else`
+- :ref:`fundamentals:returning a value`
+
+```
 
 
 An inventory is considered "potentially explosive" if it contains

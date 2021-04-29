@@ -2,6 +2,16 @@
 
 
 
+**Requirements:**
+```eval_rst
+- :ref:`fundamentals:defining a function`
+- :ref:`fundamentals:defining parameters`
+- :ref:`fundamentals:loop through a list (for)`
+- :ref:`fundamentals:loop with an accumulator variable`
+- :ref:`fundamentals:list building and filtering`
+- :ref:`fundamentals:returning a value`
+
+```
 
 
 From scratch, code the function given the description below:

@@ -2,6 +2,12 @@
 
 
 
+**Requirements:**
+```eval_rst
+- :ref:`fundamentals:creating a list`
+- :ref:`fundamentals:returning a value`
+
+```
 
 
 Please read the docstring in the starter code.

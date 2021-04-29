@@ -2,6 +2,11 @@
 
 
 
+**Requirements:**
+```eval_rst
+- :ref:`fundamentals:format output text`
+
+```
 
 
 Often, we need to include values into strings to make things easier to read whenever someone uses our program. For example, showing the value of the area of a rectangle by itself is not helpful.

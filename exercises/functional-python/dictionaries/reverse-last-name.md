@@ -4,7 +4,6 @@
 
 **Requirements:**
 ```eval_rst
-- :ref:`fundamentals:defining a function`
 - :ref:`fundamentals:defining parameters`
 
 ```

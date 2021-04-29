@@ -2,6 +2,14 @@
 
 
 
+**Requirements:**
+```eval_rst
+- :ref:`fundamentals:if, else`
+- :ref:`fundamentals:loop with an accumulator variable`
+- :ref:`fundamentals:loop through a list (while)`
+- :ref:`fundamentals:returning a value`
+
+```
 
 
 Requirements are in the starter code docstring.

@@ -2,6 +2,13 @@
 
 
 
+**Requirements:**
+```eval_rst
+- :ref:`fundamentals:iterating through dictionary values`
+- :ref:`fundamentals:list building and filtering`
+- :ref:`fundamentals:returning a value`
+
+```
 
 
 See starter code docstring.

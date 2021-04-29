@@ -2,6 +2,12 @@
 
 
 
+**Requirements:**
+```eval_rst
+- :ref:`fundamentals:mathematical operations`
+- :ref:`fundamentals:defining parameters`
+
+```
 
 
 Write a function that takes three numbers as arguments and returns their sum.

@@ -2,6 +2,12 @@
 
 
 
+**Requirements:**
+```eval_rst
+- :ref:`fundamentals:creating a list`
+- :ref:`fundamentals:returning a value`
+
+```
 
 
 Complete the function so it returns a list of the first three digits of Pi. *Hint: don't create a list of the number `314`, make a list of each digit separated.*

@@ -2,6 +2,12 @@
 
 
 
+**Requirements:**
+```eval_rst
+- :ref:`fundamentals:accessing a value in a dictionary`
+- :ref:`fundamentals:returning a value`
+
+```
 
 
 See starter code docstring for requirements.

@@ -2,6 +2,11 @@
 
 
 
+**Requirements:**
+```eval_rst
+- :ref:`fundamentals:mathematical operations`
+
+```
 
 
 A function is defined using the keyword `def`. A function is a sub program that can be called into action whenever we (the programmer) want. 

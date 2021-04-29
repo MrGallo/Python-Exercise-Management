@@ -2,6 +2,16 @@
 
 
 
+**Requirements:**
+```eval_rst
+- :ref:`fundamentals:defining a function`
+- :ref:`fundamentals:defining parameters`
+- :ref:`fundamentals:iterating through dictionary keys and values`
+- :ref:`fundamentals:accessing a value in a dictionary`
+- :ref:`fundamentals:list building and filtering`
+- :ref:`fundamentals:returning a value`
+
+```
 
 
 From scratch, code the function as described below:

@@ -5,7 +5,7 @@ List-2
     :maxdepth: 1
 
     count_evens (8) <count-evens>
-    big_diff (9) <big-diff>
+    big_diff (10) <big-diff>
     centered-average
     sum-13
     sum-67
@@ -13,7 +13,7 @@ List-2
     lucky-13
     sum-28
     more-14
-    fizz_array (11) <fizz-array>
+    fizz_array (12) <fizz-array>
     only-14
     fizz-array-2
     no-14

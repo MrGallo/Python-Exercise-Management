@@ -2,6 +2,12 @@
 
 
 
+**Requirements:**
+```eval_rst
+- :ref:`fundamentals:creating a dictionary`
+- :ref:`fundamentals:returning a value`
+
+```
 
 
 
