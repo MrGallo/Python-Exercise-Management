@@ -18,6 +18,7 @@ std:doc
 	intro                                    Introduction to Programming             : intro.html
 	lists                                    Lists                                   : lists.html
 	loops                                    Loops                                   : loops.html
+	pygame/index                             Pygame                                  : pygame/index.html
 	python_shell                             The Python Shell                        : python_shell.html
 	python_work_book                         The Python Workbook Solutions           : python_work_book.html
 	sandbox                                  Sandbox                                 : sandbox.html
@@ -50,7 +51,7 @@ std:label
 	2-5                                      Replace characters or substrings        : strings.html#id5
 	2-6                                      Split a string into a list              : strings.html#id6
 	2-7                                      Parsing                                 : strings.html#id7
-	2019-2020                                cpt_hall_of_fame.html#id2
+	2019-2020                                cpt_hall_of_fame.html#id7
 	2020 j1: dog treats                      2020 J1: Dog Treats                     : ccc/2020-j1.html#j1-dog-treats
 	2020 j2: epidemiology                    2020 J2: Epidemiology                   : ccc/2020-j2.html#j2-epidemiology
 	2020 j3: art                             2020 J3: Art                            : ccc/2020-j3.html#j3-art
@@ -89,16 +90,23 @@ std:label
 	5-8                                      Append user input to a list using a loop: lists.html#id7
 	[indiana jones](https://github.com/ics3u-gallo/cpt-2019-coka-cola) [Indiana Jones](https://github.com/ICS3U-Gallo/cpt-2019-coka-cola): cpt_hall_of_fame.html#indiana-jones-https-github-com-ics3u-gallo-cpt-2019-coka-cola
 	``__init__`` method                      __init__ method                         : classes.html#init-method
+	a complete test file                     A complete test file                    : testing.html#a-complete-test-file
 	about-python-shell                       The Python Shell                        : python_shell.html#about-python-shell
 	access a single character                Access a single character               : strings.html#access-a-single-character
+	accessing a value in a dictionary        Accessing a value in a dictionary       : dictionaries.html#accessing-a-value-in-a-dictionary
 	accessing list elements                  Accessing list elements                 : lists.html#accessing-list-elements
 	accessing the python shell               Accessing the Python Shell              : python_shell.html#accessing-the-python-shell
+	adding a value to a dictionary           Adding a value to a dictionary          : dictionaries.html#adding-a-value-to-a-dictionary
 	aggregate class                          Aggregate class                         : classes.html#aggregate-class
 	algorithms                               Algorithms                              : algorithms.html#algorithms
+	among one                                Among One                               : cpt_hall_of_fame.html#among-one
 	anatomy of a function                    Anatomy of a Function                   : functions.html#anatomy-of-a-function
 	and                                      AND                                     : if_statements.html#and
+	append to a file                         Append to a file                        : file-rw.html#append-to-a-file
 	append user input to a list using a loop Append user input to a list using a loop: lists.html#append-user-input-to-a-list-using-a-loop
 	appending elements to a list             Appending elements to a list            : lists.html#appending-elements-to-a-list
+	assertions                               Assertions                              : testing.html#assertions
+	bill - spaceship mini-games              Bill - Spaceship Mini-Games             : cpt_hall_of_fame.html#bill-spaceship-mini-games
 	boolean operators                        Boolean operators                       : if_statements.html#boolean-operators
 	boolean operators in if statements       Boolean operators in if statements      : if_statements.html#boolean-operators-in-if-statements
 	boolean values in variables              Boolean values in variables             : if_statements.html#boolean-values-in-variables
@@ -117,12 +125,15 @@ std:label
 	convert strings to numbers               Convert strings to numbers              : intro.html#convert-strings-to-numbers
 	convert to lower/upper case              Convert to lower/upper case             : strings.html#convert-to-lower-upper-case
 	cpt hall of fame                         CPT Hall of Fame                        : cpt_hall_of_fame.html#cpt-hall-of-fame
+	creating a dictionary                    Creating a dictionary                   : dictionaries.html#creating-a-dictionary
 	creating a list                          Creating a list                         : lists.html#creating-a-list
+	creating a test file                     Creating a test file                    : testing.html#creating-a-test-file
 	defining a function                      Defining a Function                     : functions.html#defining-a-function
 	defining parameters                      Defining parameters                     : functions.html#defining-parameters
 	dictionaries                             Dictionaries                            : dictionaries.html#dictionaries
 	docstrings                               Docstrings                              : functions.html#docstrings
 	docstrings (classes)                     Docstrings (Classes)                    : classes.html#docstrings-classes
+	dungeon survivor                         Dungeon Survivor                        : cpt_hall_of_fame.html#dungeon-survivor
 	encapsulation                            Encapsulation                           : classes.html#encapsulation
 	exceptions                               Exceptions                              : exceptions.html#exceptions
 	exercise 105: reverse order              Exercise 105: Reverse Order             : python_work_book.html#exercise-105-reverse-order
@@ -138,6 +149,7 @@ std:label
 	exercise 82: taxi fare                   Exercise 82: Taxi Fare                  : python_work_book.html#exercise-82-taxi-fare
 	exercises                                Exercises                               : exercises.html#exercises
 	exiting the python shell                 Exiting the Python Shell                : python_shell.html#exiting-the-python-shell
+	faction defence                          Faction Defence                         : cpt_hall_of_fame.html#faction-defence
 	file r/w                                 File R/W                                : file-rw.html#file-r-w
 	find the largest item in a list          Find the largest item in a list         : lists.html#find-the-largest-item-in-a-list
 	format output text                       Format output text                      : intro.html#format-output-text
@@ -156,13 +168,19 @@ std:label
 	inheritance                              Inheritance                             : classes.html#inheritance
 	insert a value in a sorted list          Insert a value in a sorted list         : lists.html#insert-a-value-in-a-sorted-list
 	insert element at index                  Insert element at index                 : lists.html#insert-element-at-index
+	installing pytest                        Installing Pytest                       : testing.html#installing-pytest
 	instance method                          Instance method                         : classes.html#instance-method
 	introduction to programming              Introduction to Programming             : intro.html#introduction-to-programming
 	introduction to programming - tpw        Introduction to Programming - TPW       : python_work_book.html#introduction-to-programming-tpw
+	iterating through dictionary keys        Iterating through dictionary keys       : dictionaries.html#iterating-through-dictionary-keys
+	iterating through dictionary keys and values Iterating through dictionary keys and values: dictionaries.html#iterating-through-dictionary-keys-and-values
+	iterating through dictionary values      Iterating through dictionary values     : dictionaries.html#iterating-through-dictionary-values
+	jing yi - spaceship mini-games           Jing Yi - Spaceship Mini-Games          : cpt_hall_of_fame.html#jing-yi-spaceship-mini-games
 	linear search                            Linear Search                           : algorithms.html#linear-search
 	list building and filtering              List building and filtering             : lists.html#list-building-and-filtering
 	lists                                    Lists                                   : lists.html#lists
 	lists - tpw                              Lists - TPW                             : python_work_book.html#lists-tpw
+	load json data from a file               Load JSON data from a file              : file-rw.html#load-json-data-from-a-file
 	loop through a list (for)                Loop through a list (for)               : loops.html#loop-through-a-list-for
 	loop through a list (while)              Loop through a list (while)             : loops.html#loop-through-a-list-while
 	loop through a list of objects           Loop through a list of objects          : classes.html#loop-through-a-list-of-objects
@@ -176,7 +194,9 @@ std:label
 	make getters and setters                 Make getters and setters                : classes.html#make-getters-and-setters
 	making attributes private                Making attributes private               : classes.html#making-attributes-private
 	mathematical operations                  Mathematical operations                 : intro.html#mathematical-operations
+	modifying a value in a dictionary        Modifying a value in a dictionary       : dictionaries.html#modifying-a-value-in-a-dictionary
 	modindex                                 Module Index                            : py-modindex.html
+	monopoly with a twist                    Monopoly With a Twist                   : cpt_hall_of_fame.html#monopoly-with-a-twist
 	multiple elif                            Multiple elif                           : if_statements.html#multiple-elif
 	negative index                           Negative Index                          : strings.html#negative-index
 	not                                      NOT                                     : if_statements.html#not
@@ -189,19 +209,25 @@ std:label
 	problems                                 Problems                                : ccc/index.html#problems
 	provide data validation                  Provide data validation                 : classes.html#provide-data-validation
 	py-modindex                              Python Module Index                     : py-modindex.html
+	pygame                                   Pygame                                  : pygame/index.html#pygame
 	python fundamentals                      Python Fundamentals                     : index.html#python-fundamentals
 	quit loop with sentinel value            Quit loop with sentinel value           : loops.html#quit-loop-with-sentinel-value
+	read from a file                         Read from a file                        : file-rw.html#read-from-a-file
+	read multiple lines from a file          Read multiple lines from a file         : file-rw.html#read-multiple-lines-from-a-file
 	reassign element at list index           Reassign element at list index          : lists.html#reassign-element-at-list-index
 	refactor multiple classes                Refactor multiple classes               : classes.html#refactor-multiple-classes
 	remove list element at index using del   Remove list element at index using del  : lists.html#remove-list-element-at-index-using-del
 	remove list element using .remove        Remove list element using .remove       : lists.html#remove-list-element-using-remove
+	removing a value from a dictionary       Removing a value from a dictionary      : dictionaries.html#removing-a-value-from-a-dictionary
 	replace characters or substrings         Replace characters or substrings        : strings.html#replace-characters-or-substrings
 	returning a value                        Returning a value                       : functions.html#returning-a-value
 	running commands                         Running commands                        : python_shell.html#running-commands
+	running pytest                           Running Pytest                          : testing.html#running-pytest
 	sandbox                                  Sandbox                                 : sandbox.html#sandbox
 	search                                   Search Page                             : search.html
 	slice by step                            Slice by step                           : strings.html#slice-by-step
 	slicing a list                           Slicing a list                          : lists.html#slicing-a-list
+	space fighters                           Space Fighters                          : cpt_hall_of_fame.html#space-fighters
 	split a string into a list               Split a string into a list              : strings.html#split-a-string-into-a-list
 	storing data in variables                Storing data in variables               : intro.html#storing-data-in-variables
 	string building and filtering            String building and filtering           : loops.html#string-building-and-filtering
@@ -217,3 +243,7 @@ std:label
 	type annotations                         Type annotations                        : functions.html#type-annotations
 	unified modeling language (uml)          Unified Modeling Language (UML)         : classes.html#unified-modeling-language-uml
 	use the ``len()`` function               Use the len() function                  : strings.html#use-the-len-function
+	write json data to a file                Write JSON data to a file               : file-rw.html#write-json-data-to-a-file
+	write multiple lines to a file           Write multiple lines to a file          : file-rw.html#write-multiple-lines-to-a-file
+	write to a file                          Write to a file                         : file-rw.html#write-to-a-file
+	writing tests                            Writing tests                           : testing.html#writing-tests

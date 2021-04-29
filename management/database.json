@@ -8460,7 +8460,9 @@
             {
                 "name": "f(x) = x + 4",
                 "topic": "",
-                "requirements": [],
+                "requirements": [
+                    "mathematical operations"
+                ],
                 "description": "A function is defined using the keyword `def`. A function is a sub program that can be called into action whenever we (the programmer) want. \n\nIn its simplest form, a function:\n\n1. takes input\n2. processes data, and \n3. returns a result.\n\nThis is similar to math. Given the mathematical function `f(x) = x + 4`, when we call the function with `f(6)` we get a result of 10. In programming we can define similar functions but use a variety of data for `x` and return more than just numbers.\n\n## Your task\n\nThe function given is set up to receive an integer value for x. All you have to do is modify the return statement to **have the function return `x + 4` .** The doc-string enclosed in the triple-quotes `\"\"\"` is optional and is there so that other programmers can quickly understand what the function needs to do its job and what it returns as a result.\n\n## Testing your code\nAfter the function, and **un-indented,** call your function like above and print it out.\n\n```python\nprint(f(5))\n```\n\nNow hit run. The program will print the result of your function.",
                 "starter_code": "def f(x: int) -> int:\n    \"\"\"Returns the value of x plus 4\n    \n    Args:\n        x: An integer\n    Returns:\n        Another integer, x + 4\n    \"\"\"\n    return x",
                 "tests": "from main import f\n\n\ndef test_f():\n    assert f(5) == 9\n    assert f(6) == 10\n    assert f(-4) == 0",
@@ -8469,7 +8471,9 @@
             {
                 "name": "say_hello",
                 "topic": "",
-                "requirements": [],
+                "requirements": [
+                    "format output text"
+                ],
                 "description": "Often, we need to include values into strings to make things easier to read whenever someone uses our program. For example, showing the value of the area of a rectangle by itself is not helpful.\n\n```\n45.5\n```\n\nHowever, if we included the value into a string, it would be easier to read.\n\n```\nThe area of the rectangle is 45.5 meters squared.\n```\n\nThere are a number of ways to include the values of variables in strings. The different approaches have pros and cons in different situations, but, their final result is identical. You can choose to learn and use them all, or stick to one.\n\n```python\nname = \"Frank\"\nage = 56\n\nf_strings_approach = f\"This is {name}. He is {age} years old.\"  # python 3.6+\ndot_format_approach = \"This is {}. He is {} years old.\".format(name, age)\nconcatenate_approach = \"This is \" + name + \". He is \" + str(age) + \" years old.\"\n```\n\n```python\n# All three approaches produce the identical string\n\"This is Frank. He is 56 years old.\"\n```\n\n## Your task\n\nThe function in the code window is set up to receive a `name` (string) and return a result that is a string. Create and return the message `\"Hello, {name}!\"` by inserting the variable `name` into the string using one of the approaches above.",
                 "starter_code": "def say_hello(name: str) -> str:\n    \"\"\"Creates a greeting for a friend.\n    \n    Args:\n        name: The name of someone to say hi to\n    Returns:\n        A greeting in the format \"Hello, {name}!\"\n    \"\"\"\n    return",
                 "tests": "from main import say_hello\n\n\ndef test_say_hello():\n    assert say_hello(\"Dave\") == \"Hello, Dave!\"\n    assert say_hello(\"\") == \"Hello, !\"\n    assert say_hello(\"Samuel\") == \"Hello, Samuel!\"",
@@ -8478,7 +8482,10 @@
             {
                 "name": "Sum of three numbers",
                 "topic": "",
-                "requirements": [],
+                "requirements": [
+                    "mathematical operations",
+                    "defining parameters"
+                ],
                 "description": "Write a function that takes three numbers as arguments and returns their sum.\n\n**Example function call**\n\n```\nadd(2, 3, 6)\n```\n\n**Example result**\n\n```\n11\n```\n\n**Credit**\nAdapted from www.snakify.org",
                 "starter_code": "# This function takes two numbers and returns their sum:\ndef add(a: int, b: int) -> int:\n    \"\"\"Returns the sum of two integers.\n    \n    Args:\n        a: a number\n        b: a number\n    Returns:\n        Sum of the numbers\n    \"\"\"\n    return a + b\n    \n\n# Can you change it so it can take and return the sum of three numbers?",
                 "tests": "from main import add\n\n\ndef test_add():\n    assert add(1, 1, 1) == 3\n    assert add(1, 2, 3) == 6\n    assert add(-1, 0, 1) == 0",
@@ -8489,7 +8496,10 @@
             {
                 "name": "Empty List",
                 "topic": "",
-                "requirements": [],
+                "requirements": [
+                    "creating a list",
+                    "returning a value"
+                ],
                 "description": "Please read the docstring in the starter code.",
                 "starter_code": "from typing import List\n\n\ndef get_empty_list() -> List:\n    \"\"\"Returns an empty list\"\"\"\n    return None",
                 "tests": "from main import get_empty_list\n\n\ndef test_get_empty_list():\n    assert get_empty_list() == []",
@@ -8498,7 +8508,10 @@
             {
                 "name": "Pi List",
                 "topic": "",
-                "requirements": [],
+                "requirements": [
+                    "creating a list",
+                    "returning a value"
+                ],
                 "description": "Complete the function so it returns a list of the first three digits of Pi. *Hint: don't create a list of the number `314`, make a list of each digit separated.*",
                 "starter_code": "from typing import List\n\n\ndef get_pi() -> List[int]:\n    \"\"\"Returns the first three digits of Pi in a list\"\"\"\n    return None",
                 "tests": "from main import get_pi\n\n\ndef test_get_pi():\n    assert get_pi() == [3, 1, 4]",
@@ -8507,7 +8520,11 @@
             {
                 "name": "sum",
                 "topic": "",
-                "requirements": [],
+                "requirements": [
+                    "loop with an accumulator variable",
+                    "loop through a list (for)",
+                    "returning a value"
+                ],
                 "description": "Please see starter code docstring for requirements.",
                 "starter_code": "from typing import List\n\n\ndef sum_list(numbers: List[float]) -> float:\n    \"\"\"Returns the sum of a list of numbers.\n\n    Args:\n        numbers: A list of float numbers.\n    Returns:\n        The sum of the numbers.\n    \n    Note: Do NOT use the sum() built-in function to \n          accomplish this. Use a loop.\n    \"\"\"\n    return 0",
                 "tests": "from main import sum_list\n\n\ndef test_sum_list():\n    assert sum_list([1.0, 1.0, 1.0]) == 3.0\n    assert sum_list([1.5, 1.5, 1.5]) == 4.5\n    assert sum_list([]) == 0\n    assert sum_list([-10, 10]) == 0",
@@ -8516,7 +8533,12 @@
             {
                 "name": "Sum Even",
                 "topic": "",
-                "requirements": [],
+                "requirements": [
+                    "loop with an accumulator variable",
+                    "loop through a list (for)",
+                    "if, else",
+                    "returning a value"
+                ],
                 "description": "See starter code docstring for requirements.",
                 "starter_code": "from typing import List\n\n\ndef sum_even(numbers: List[int]) -> int:\n    \"\"\"Returns the sum all even numbers in a list.\n\n    Args:\n        numbers: A list of integers.\n    Returns:\n        The sum of the even integers.\n    \n    Note: Use modulus (%) to discover even integers.\n    \"\"\"\n    return 0",
                 "tests": "from main import sum_even\n\n\ndef test_sum_even():\n    assert sum_even([1, 1, 1, 2]) == 2\n    assert sum_even([2, 1, 1, 2]) == 4\n    assert sum_even([4, 1, 1, 21]) == 4\n    assert sum_even([]) == 0\n    assert sum_even([1, 3, 5, 7, 9]) == 0\n    assert sum_even([-2]) == -2",
@@ -8525,7 +8547,13 @@
             {
                 "name": "Sum even and 7",
                 "topic": "",
-                "requirements": [],
+                "requirements": [
+                    "mathematical operations",
+                    "if, else",
+                    "loop with an accumulator variable",
+                    "loop through a list (for)",
+                    "returning a value"
+                ],
                 "description": "See starter code docstring for requirements.",
                 "starter_code": "from typing import List\n\n\ndef sum_even_and_7(numbers: List[int]) -> int:\n    \"\"\"Returns the sum all even numbers, and 7's, in a list.\n\n    Args:\n        numbers: A list of integers.\n    Returns:\n        The sum of the even integers, including all 7's.\n    \n    Note: Use modulus (%) to discover even integers.\n    \"\"\"\n    return 0",
                 "tests": "from main import sum_even_and_7\n\n\ndef test_sum_even_and_7():\n    assert sum_even_and_7([1, 2, 3, 4]) == 6\n    assert sum_even_and_7([7, 1, 2]) == 9\n    assert sum_even_and_7([5, 7, 9]) == 7\n    assert sum_even_and_7([1, 1, 1, -1]) == 0",
@@ -8534,7 +8562,12 @@
             {
                 "name": "Sum even and next neighbour",
                 "topic": "",
-                "requirements": [],
+                "requirements": [
+                    "if, else",
+                    "loop with an accumulator variable",
+                    "loop through a list (while)",
+                    "returning a value"
+                ],
                 "description": "Requirements are in the starter code docstring.",
                 "starter_code": "from typing import List\n\n\ndef sum_even_and_next_neighbour(numbers: List[int]) -> int:\n    \"\"\"Returns the sum all even numbers and their next neighbour.\n\n    Args:\n        numbers: A list of integers.\n    Returns:\n        The sum of the even integers, including next neighbours of even numbers.\n    \n    Note: A next neighbour is an integer that appears after an integer in the list.\n          These numbers will be included in the total. Do not count even numbers twice.\n\n          e.g., [1, 2, 3, 4, 6, 7, 9, 11, 12]\n          In the example list, we need to include 3 into the total because it is\n          2's next neighbour. Same with 7 (6's next neighbour). \n          We also should not include 6 into the total twice.\n          The total for this list would be: 2 + 3 + 4 + 6 + 7 + 12 = 34\n    \"\"\"\n    return 0",
                 "tests": "from main import sum_even_and_next_neighbour\n\n\ndef test_sum_even_and_next_neighbour():\n    assert sum_even_and_next_neighbour([]) == 0\n    assert sum_even_and_next_neighbour([2, 2, 2]) == 6\n    assert sum_even_and_next_neighbour([1, 2, 3, 4]) == 9\n    assert sum_even_and_next_neighbour([2, 1, 2, 1]) == 6\n    assert sum_even_and_next_neighbour([1, 1, 1, 1]) == 0\n    assert sum_even_and_next_neighbour([2, 99]) == 101",
@@ -8543,7 +8576,12 @@
             {
                 "name": "Scary 13",
                 "topic": "",
-                "requirements": [],
+                "requirements": [
+                    "if, else",
+                    "loop with an accumulator variable",
+                    "loop through a list (while)",
+                    "returning a value"
+                ],
                 "description": "Requirements are in the starter code docstring.",
                 "starter_code": "from typing import List\n\n\ndef sum_scary_13(numbers: List[int]) -> int:\n    \"\"\"Returns the sum all numbers jumping over 13 and the next number.\n\n    Args:\n        numbers: A list of integers.\n    Returns:\n        The sum of all numbers, not including 13 and it's next neighbour.\n    \n    Note: A next neighbour is an integer that appears after an integer in the list.\n          Your program is afraid of the number 13, so it will add neither that number\n          nor the one next in the list to the toal.\n\n          E.g. 1, [5, 6, 13, 1, 7]\n          Will add 5 + 6 + 7 = 18\n\n          E.g. 2, [5, 6, 13, 13, 1, 7]\n          In this case, the program doesn't even notice the second 13 because\n          it jumped over because of the first 13.\n          The program will add 5 + 6 + 1 + 7 = 19\n    \"\"\"\n    return 0",
                 "tests": "from main import sum_scary_13\n\n\ndef test_example_1():\n    assert sum_scary_13([5, 6, 13, 1, 7]) == 18\n\n\ndef test_example_2():\n    assert sum_scary_13([5, 6, 13, 13, 1, 7]) == 19\n\n\ndef test_sum_scary_13():\n    assert sum_scary_13([]) == 0\n    assert sum_scary_13([13]) == 0\n    assert sum_scary_13([1, 2, 3]) == 6\n    assert sum_scary_13([0, 13, 99]) == 0\n    assert sum_scary_13([1, 2, 13, 3]) == 3",
@@ -8554,7 +8592,10 @@
             {
                 "name": "Empty Dict",
                 "topic": "",
-                "requirements": [],
+                "requirements": [
+                    "creating a dictionary",
+                    "returning a value"
+                ],
                 "description": "Requirements in starter code docstring.",
                 "starter_code": "from typing import Dict\n\n\ndef create_an_empty_dictionary() -> Dict:\n    \"\"\"Creates an empty dictionary\n    \n    Args: \n        None\n    Returns:\n        Empty dictionary\n    \"\"\"\n    return None",
                 "tests": "from main import create_an_empty_dictionary\n\n\ndef test_create_an_empty_dictionary():\n    assert create_an_empty_dictionary() == {}",
@@ -8563,7 +8604,10 @@
             {
                 "name": "Create Person",
                 "topic": "",
-                "requirements": [],
+                "requirements": [
+                    "creating a dictionary",
+                    "returning a value"
+                ],
                 "description": "",
                 "starter_code": "from typing import Dict\n\n\ndef create_person_dict(first_name: str, last_name:str) -> Dict:\n    \"\"\"Creates a person dictionary with the given first and last name.\n    \n    Args:\n        first_name: The person's first name\n        last_name: The person's last name\n    Returns:\n        Person represented as a dictionary\n        with keys \"first_name\" and \"last_name\".\n    \"\"\"\n    return {}",
                 "tests": "from main import create_person_dict\n\n\ndef test_has_proper_keys():\n    result = create_person_dict(\"Jeff\", \"Smith\")\n\n    for key in result.keys():\n        assert key in (\"first_name\", \"last_name\")\n\n\ndef test_assigns_proper_values_to_keys_jeff_smith():\n    result = create_person_dict(\"Jeff\", \"Smith\")\n\n    expected = {\n        \"first_name\": \"Jeff\",\n        \"last_name\": \"Smith\"\n    }\n    \n    assert result == expected\n\n\ndef test_assigns_proper_values_to_keys_john_mark():\n    result = create_person_dict(\"John\", \"Mark\")\n\n    expected = {\n        \"first_name\": \"John\",\n        \"last_name\": \"Mark\"\n    }\n\n    assert result == expected",
@@ -8572,7 +8616,10 @@
             {
                 "name": "Get First Name",
                 "topic": "",
-                "requirements": [],
+                "requirements": [
+                    "accessing a value in a dictionary",
+                    "returning a value"
+                ],
                 "description": "See starter code docstring for requirements.\n\nThe person dictionary in this exercise will have the following structure:\n```\n{\n    \"last_name\": str,\n    \"first_name\": str\n}\n```",
                 "starter_code": "from typing import Dict\n\n\ndef get_first_name(person: Dict) -> str:\n    \"\"\"Returns the first name from a person dict\n    \n    Args:\n        person: The person dict\n                The dictionary has the keys 'first_name' and 'last_name'.\n    Returns:\n        The person's first name\n    \"\"\"\n    return \"\"",
                 "tests": "from main import get_first_name\n\n\ndef test_get_first_name():\n    jeff_smith = {\n        \"first_name\": \"Jeff\",\n        \"last_name\": \"Smith\"\n    }\n    assert get_first_name(jeff_smith) == \"Jeff\"\n\n    john_mark = {\n        \"first_name\": \"John\",\n        \"last_name\": \"Mark\"\n    }\n    assert get_first_name(john_mark) == \"John\"",
@@ -8582,7 +8629,6 @@
                 "name": "Reverse Last Name",
                 "topic": "",
                 "requirements": [
-                    "defining a function",
                     "defining parameters"
                 ],
                 "description": "### Important!\n\nFor this problem, you need to add the appropriate parameters to the `reverse_last_name` function definition **as well as** complete the code for the function body.\n\n### Dictionary Structure\n\nThe dictionary passed to the function will have the following structure:\n\n```\n{\n    \"first_name\": str,\n    \"last_name\": str\n}\n```",
@@ -8593,7 +8639,11 @@
             {
                 "name": "Potentially Explosive",
                 "topic": "",
-                "requirements": [],
+                "requirements": [
+                    "iterating through dictionary keys",
+                    "if, else",
+                    "returning a value"
+                ],
                 "description": "An inventory is considered \"potentially explosive\" if it contains\neven the mention of both \"fire\" and \"propane\" in the dictionary's keys.\nThe quantities of each element are irrevelant.\n\n### Hint\n\nUse `dict.keys()` for a list of the dictionary's keys. e.g.,\n\n```python\nsome_dict = {\"first_name\": \"Jeff\"}\n\"first_name\" in some_dict.keys()  # True\n\"age\" in some_dict.keys()  # False\n\"name\" in some_dict.keys()  # False\n```",
                 "starter_code": "from typing import Dict\n\n\ndef is_potentially_explosive(inventory: Dict) -> bool:\n    \"\"\"Determines if your inventory is potentially explosive.\n    \n    An inventory is considered potentially explosive if it contains\n    even the mention of both \"fire\" and \"propane\" in the dictionary's keys.\n    The quantities of each element are irrevelant.\n    \n    Args:\n        inventory: A dictionary that may be explosive.\n    Returns:\n        True if potentially explosive, False otherwise.\n    \"\"\"\n    return None",
                 "tests": "from main import is_potentially_explosive\n\n\ndef test_no_mention_of_either_item():\n    inventory = {\n        \"apples\": 4,\n        \"oranges\": 5\n    }\n\n    assert is_potentially_explosive(inventory) is False\n\n\ndef test_only_propane_not_explosive():\n    inventory = {\n        \"apples\": 4,\n        \"propane\": 5\n    }\n\n    assert is_potentially_explosive(inventory) is False\n\n\ndef test_only_fire_not_explosive():\n    inventory = {\n        \"apples\": 4,\n        \"fire\": 5\n    }\n\n    assert is_potentially_explosive(inventory) is False\n\n\ndef test_both_fire_and_propane_is_potentially_explosive():\n    inventory = {\n        \"propane\": 4,\n        \"fire\": 5\n    }\n    assert is_potentially_explosive(inventory) is True\n\n\ndef test_also_potentially_explosive_if_quantity_is_0():\n    inventory = {\n        \"propane\": 0,\n        \"fire\": 0\n    }\n    assert is_potentially_explosive(inventory) is True",
@@ -8602,7 +8652,11 @@
             {
                 "name": "Keys with Target",
                 "topic": "",
-                "requirements": [],
+                "requirements": [
+                    "iterating through dictionary keys",
+                    "list building and filtering",
+                    "returning a value"
+                ],
                 "description": "The function's requirements are in the starter code docstring.\n\n**Important**: The function's parameters need to be completed. Please look at the docstring to see what they should be called and what their data type is.\n\n*Hint*:\nUse the `in` operator and `dict.keys().` You can also use the `string.find()` method.",
                 "starter_code": "def get_keys_with():\n    \"\"\"Returns a list of keys in a dict which contain the target string.\n    Args:\n        target (str): The target substring to look for.\n        thing (dict): A dictionary whose keys we want to search.\n    Returns:\n        (list) A list of all keys in the dictionary that contain the \n        target substring.\n    \"\"\"\n    return None",
                 "tests": "from main import get_keys_with\n\n\ndef test_get_keys_with_has_proper_arguments():\n    get_keys_with(target=\"blah\", thing={\"a\": 1})\n\n\ndef test_get_keys_with():\n    thing = {\"a\": 1, \"b\": 2, \"aa\": 3}\n    result = get_keys_with(\"a\", thing)\n    assert result == [\"a\", \"aa\"]\n\n\ndef test_get_keys_with_nothing_found():\n    thing = {\"a\": 1, \"b\": 2, \"aa\": 3}\n    result = get_keys_with(\"c\", thing)\n    assert result == []\n\n\ndef test_get_keys_with_not_at_front_of_key_name():\n    thing = {\"aba\": 0, \"cbc\": 1, \"ddc\": 2, \"aab\": 3}\n    result = get_keys_with(\"b\", thing)\n    assert result == [\"aba\", \"cbc\", \"aab\"]\n\n\ndef test_get_keys_with_name():\n    person = {\n        \"first_name\": \"Jeff\",\n        \"last_name\": \"McNally\",\n        \"age\": 45,\n        \"eye_color\": \"blue\",\n        \"name_of_pet\": \"Fluffy\",\n        \"nickname\": \"Jeffy McNizzle\"\n    }\n    result = get_keys_with(\"name\", person)\n    assert result == [\"first_name\", \"last_name\", \"name_of_pet\", \"nickname\"]",
@@ -8611,7 +8665,11 @@
             {
                 "name": "Values Above Ten",
                 "topic": "",
-                "requirements": [],
+                "requirements": [
+                    "iterating through dictionary values",
+                    "list building and filtering",
+                    "returning a value"
+                ],
                 "description": "See starter code docstring.",
                 "starter_code": "from typing import Dict, List\n\n\ndef values_above_10(inventory: Dict[str, int]) -> List:\n    \"\"\"Gives a list of dictionary values greater than 10.\n    \n    Args:\n        inventory: Dictionary of inventory-like key value pairs.\n    Returns:\n        List of values (not keys) from the dictionary above 10.\n\n    \"\"\"\n    return None",
                 "tests": "from main import values_above_10\n\n\ndef test_values_above_10_empty():\n    inventory = {}\n    assert values_above_10(inventory) == []\n\n\ndef test_values_above_10_doesnt_include_10():\n    inventory = {\"a\": 0, \"b\": 10}\n    assert values_above_10(inventory) == []\n\n\ndef test_values_above_10():\n    inventory = {\"a\": 0, \"b\": 10, \"c\": 11, \"d\": -10}\n    assert values_above_10(inventory) == [11]\n\n    inventory = {\"a\": 55, \"b\": 11, \"c\": 11, \"d\": 23}\n    assert values_above_10(inventory) == [55, 11, 11, 23]\n\n    inventory = {\"d\": 55, \"c\": 11, \"b\": 11, \"a\": 23}\n    assert values_above_10(inventory) == [55, 11, 11, 23]",
@@ -8620,7 +8678,14 @@
             {
                 "name": "Above Average",
                 "topic": "",
-                "requirements": [],
+                "requirements": [
+                    "defining a function",
+                    "defining parameters",
+                    "loop through a list (for)",
+                    "loop with an accumulator variable",
+                    "list building and filtering",
+                    "returning a value"
+                ],
                 "description": "From scratch, code the function given the description below:\n\n```\nstudents_above_average(student_final_marks: Dict) -> List\n```\n\nThe function will determine what the average mark is, based on all the marks in the given dictionary. It will then return a list of all students whose marks are *above* that average. The dictionary has the structure of:\n\n```\nkey: value\nname (str): mark (int)\n```\n\nFor example:\n```python\n{\n    \"Jeff\": 60,\n    \"Sally\": 70,\n    \"Bob\": 80\n}\n```\n\nAnswer:\n\n```\n[\"Bob\"]\n```\n\nIn this instance, the average is `70`, so only Bob would make the list of above average students.",
                 "starter_code": "",
                 "tests": "from itertools import count\n\nfrom main import students_above_average\n\n\ndef test_students_above_average_example():\n    students = {\n        \"Jeff\": 60,\n        \"Sally\": 70,\n        \"Bob\": 80\n    }\n\n    assert students_above_average(students) == [\"Bob\"]\n\n\ndef test_students_above_average_empty():\n    students = {\"Jeff\": 60}\n    assert students_above_average(students) == []\n\n\ndef test_students_above_average():\n    students = {\n        \"a\": 0,\n        \"b\": 1,\n        \"c\": 2,\n        \"d\": 3,\n        \"e\": 4,\n        \"f\": 5,\n        \"g\": 6,\n    }\n    assert students_above_average(students) == [\"e\", \"f\", \"g\"]",
@@ -8629,7 +8694,14 @@
             {
                 "name": "Shopping List",
                 "topic": "",
-                "requirements": [],
+                "requirements": [
+                    "defining a function",
+                    "defining parameters",
+                    "iterating through dictionary keys and values",
+                    "accessing a value in a dictionary",
+                    "list building and filtering",
+                    "returning a value"
+                ],
                 "description": "From scratch, code the function as described below:\n\n```\nget_shopping_list(inventory: Dict[str, int], minimum_stock: Dict[str, int]) -> List[str]\n```\n\nThis function will take an inventory dictionary and a dictionary of minimum stock associated with each item in the fridge.\n\nThe function will determine if we need to purchase more of any  particular item based on its current inventory value and its minimum stock value.\n\n```\ninventory = {\n    \"apples\": 5,\n    \"oranges\": 5\n}\n\nminimum_stock = {\n    \"apples\": 10,\n    \"oranges\": 5\n}\n```\n\nAs shown in the example above, the current inventory value of apples is `5`. Apples have a minimum stock level of `10`, therefore, we need to order more apples.\n\nOur inventory level of oranges is `5`, but the minimum allowed stock is `5`, so we *do not* have to buy more oranges.\n\nTherefore the shopping list for this particular scenario will be:\n\n```\n[\"apples\"]\n```\n\nAll we need is a list of items to buy, not how many of each to buy. *Note:* for the sake of simplicity, you can assume\nboth dictionaries contain the exact same keys.",
                 "starter_code": "",
                 "tests": "from main import get_shopping_list\n\n\ndef test_get_shopping_list_example():\n    inventory = {\n        \"apples\": 5,\n        \"oranges\": 5\n    }\n\n    min_stock_allowed = {\n        \"apples\": 10,\n        \"oranges\": 5\n    }\n\n    assert get_shopping_list(inventory, min_stock_allowed) == [\"apples\"]\n\n\ndef test_get_shopping_list_empty():\n    inventory = {\n        \"apples\": 25,\n        \"oranges\": 50\n    }\n\n    min_stock_allowed = {\n        \"apples\": 10,\n        \"oranges\": 5\n    }\n\n    assert get_shopping_list(inventory, min_stock_allowed) == []\n\n\ndef test_get_shopping_list_empty():\n    inventory = {\n        \"apples\": 25,\n        \"oranges\": 50,\n        \"bananas\": 32,\n        \"propane\": 3,\n        \"fire\": 11\n    }\n\n    min_stock_allowed = {\n        \"apples\": 27,\n        \"oranges\": 50,\n        \"bananas\": 52,\n        \"propane\": 7,\n        \"fire\": 5\n    }\n\n    assert get_shopping_list(inventory, min_stock_allowed) == [\"apples\", \"bananas\", \"propane\"]",
@@ -8695,7 +8767,7 @@
                 "name": "Read Multiple Lines",
                 "topic": "",
                 "requirements": [],
-                "description": "The files that will be read as part of this exercise contain multiple lines, one integer per line.\n\nFor example, this could be the contents of a file:\n\n```\n56\n12\n8\n234\n8\n3\n```\n\nYour program needs to read those integers in and return the sum of the numbers.\n\nIn this case, the answer would be:\n\n```\n321\n```\n\n# How to do it\n\nThis is accomplished the same way as reading in one line, except you need to **use a for loop** to iterate through each line of the file.\n\nHere is a working piece of code, assuming a file called `file.txt` exists and has integers on each line.\n\n**file.txt**\n\n```\n1\n2\n3\n4\n```\n**example_code.py**\n\n```\nwith open(\"file.txt\", \"r\") as f:\n    for line in f:\n        print(line)\n```\n\n**output**\n\n```\n1\n2\n3\n4\n```\n\nInstead of printing the numbers, add them to a total.",
+                "description": "The files that will be read as part of this exercise contain multiple lines, one integer per line.\n\nFor example, this could be the contents of a file:\n\n```\n56\n12\n8\n234\n8\n3\n```\n\nYour program needs to read those integers in and return the sum of the numbers.\n\nIn this case, the answer would be:\n\n```\n321\n```\n\n### How to do it\n\nThis is accomplished the same way as reading in one line, except you need to **use a for loop** to iterate through each line of the file.\n\nHere is a working piece of code, assuming a file called `file.txt` exists and has integers on each line.\n\n**file.txt**\n\n```\n1\n2\n3\n4\n```\n**example_code.py**\n\n```\nwith open(\"file.txt\", \"r\") as f:\n    for line in f:\n        print(line)\n```\n\n**output**\n\n```\n1\n2\n3\n4\n```\n\nInstead of printing the numbers, add them to a total.",
                 "starter_code": "def add_nums_from_file(file_name: str) -> int:\n    \"\"\"Returns the sum of all integers in the given file.\n    \n    Args:\n        file_name: The name of the file.\n    Returns:\n        Sum of all the numbers in the file.\n    \"\"\"\n    return 0",
                 "tests": "import pytest\nimport os\nimport random\n\n\nfrom main import add_nums_from_file\n\n\ndef remove_file(file_name: str) -> None:\n    if os.path.exists(file_name):\n        os.remove(file_name)\n\n\ndef read_file(filename: str) -> None:\n    with open(filename, \"r\") as f:\n        return f.read().strip()\n\ndef write_to_file(filename: str, contents: str) -> None:\n    with open(filename, \"w\") as f:\n        f.write(contents)\n\n\n@pytest.fixture(autouse=True)\ndef clear_test_files():\n    yield\n    files = os.listdir()\n    for f in files:\n        if f.endswith(\".test_txt\"):\n            os.remove(f)\n\n\ndef test_add_nums_from_file_1():\n    filename = \"numbers.test_txt\"\n    numbers = [1, 2, 3]\n    content = \"\\n\".join(map(str, numbers))\n    write_to_file(filename, content)\n\n    assert add_nums_from_file(filename) == 6\n\n\ndef test_add_nums_from_file_2():\n    filename = \"numbers_2.test_txt\"\n    numbers = [0, 0, 0, 0, 0]\n    content = \"\\n\".join(map(str, numbers))\n    write_to_file(filename, content)\n\n    assert add_nums_from_file(filename) == 0\n\n\ndef test_add_nums_from_file_3():\n    filename = \"numbers_2.test_txt\"\n    numbers = [2, 4, 6, 8, 10]\n    content = \"\\n\".join(map(str, numbers))\n    write_to_file(filename, content)\n\n    assert add_nums_from_file(filename) == 30\n\n\ndef test_add_nums_from_file_random():\n    filename = \"numbers_2.test_txt\"\n    numbers = [random.randrange(0, 101) for _ in range(10)]\n    content = \"\\n\".join(map(str, numbers))\n    write_to_file(filename, content)\n\n    assert add_nums_from_file(filename) == sum(numbers)",
                 "solution": "def add_nums_from_file(file_name: str) -> int:\n    \"\"\"Returns the sum of all integers in the given file.\n    \n    Args:\n        file_name: The name of the file.\n    Returns:\n        Sum of all the numbers in the file.\n    \"\"\"\n    total = 0\n    with open(file_name, \"r\") as f:\n        for line in f:\n            total += int(line)\n    \n    return total"

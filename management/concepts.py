@@ -34,7 +34,10 @@ concepts = {
         "boolean operators": ["if, else"]
     },
     "loops": {
-        "loop with a counter variable": ["storing data in variables"],
+        "loop with a counter variable": [
+            "storing data in variables",
+            "mathematical operations"
+        ],
         "loop with an accumulator variable": ["loop with a counter variable"],
         "break": ["loop with a counter variable", "if, else"],
         "continue": ["loop with a counter variable", "if, else"],
@@ -113,8 +116,54 @@ concepts = {
         ]
     },
     "testing": {},
-    "dictionaries": {},
-    "file r/w": {},
+    "dictionaries": {
+        "creating a dictionary": [],
+        "accessing a value in a dictionary": [
+            "creating a dictionary",
+        ],
+        "adding a value to a dictionary": [
+            "creating a dictionary",
+        ],
+        "modifying a value in a dictionary": [
+            "accessing a value in a dictionary",
+        ],
+        "removing a value in a dictionary": [
+            "accessing a value in a dictionary",
+        ],
+        "iterating through dictionary keys": [
+            "loop through a list (for)",
+            "accessing a value in a dictionary",
+        ],
+        "iterating through dictionary values": [
+            "loop through a list (for)",
+            "accessing a value in a dictionary",
+        ],
+        "iterating through dictionary keys and values": [
+            "iterating through dictionary keys",
+            "iterating through dictionary values",
+        ],
+    },
+    "file r/w": {
+        "read from a file": [],
+        "read multiple lines from a file": [
+            "loop through a list (for)",
+            "read from a file"
+        ],
+        "write to a file": [],
+        "append to a file": [
+            "write to a file"
+        ],
+        "write multiple lines to a file": [
+            "loop through a list (for)",
+            "write to a file"
+        ],
+        "load json data from a file": [
+            "read from a file"
+        ],
+        "write json data to a file": [
+            "write to a file"
+        ]
+    },
     "classes": {
         "docstrings (classes)": []
     },
