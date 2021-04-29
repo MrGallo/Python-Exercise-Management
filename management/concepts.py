@@ -127,7 +127,7 @@ concepts = {
         "modifying a value in a dictionary": [
             "accessing a value in a dictionary",
         ],
-        "removing a value in a dictionary": [
+        "removing a value from a dictionary": [
             "accessing a value in a dictionary",
         ],
         "iterating through dictionary keys": [
