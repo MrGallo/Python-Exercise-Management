@@ -144,12 +144,19 @@ concepts = {
         ],
     },
     "file r/w": {
-        "read from a file": [],
+        "read from a file": [
+            "storing data in variables",
+            "if, else"
+        ],
         "read multiple lines from a file": [
             "loop through a list (for)",
             "read from a file"
         ],
-        "write to a file": [],
+        "write to a file": [
+            "storing data in variables",
+            "output a message",
+            "if, else"
+        ],
         "append to a file": [
             "write to a file"
         ],
