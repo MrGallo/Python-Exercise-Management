@@ -115,6 +115,7 @@ std:label
 	calling a function                       Calling a function                      : functions.html#calling-a-function
 	canadian computing competition (ccc)     Canadian Computing Competition (CCC)    : ccc/index.html#canadian-computing-competition-ccc
 	ccc-index                                Canadian Computing Competition (CCC)    : ccc/index.html#ccc-index
+	changing the contents of a file          Changing the contents of a file         : file-rw.html#changing-the-contents-of-a-file
 	check if a value is in a list            Check if a value is in a list           : lists.html#check-if-a-value-is-in-a-list
 	class field (variable)                   Class field (variable)                  : classes.html#class-field-variable
 	class method                             Class method                            : classes.html#class-method
