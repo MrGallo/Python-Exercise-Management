@@ -2,6 +2,14 @@
 
 
 
+**Requirements:**
+```eval_rst
+- :ref:`fundamentals:read from a file`
+- :ref:`fundamentals:convert strings to numbers`
+- :ref:`fundamentals:if, else`
+- :ref:`fundamentals:write to a file`
+
+```
 
 
 There is a file in the same directory of this code called `high_score.txt` and it stores the all-time high score for some game. The contents of the file are a simple integer.

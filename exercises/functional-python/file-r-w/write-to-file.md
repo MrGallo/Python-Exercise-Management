@@ -2,6 +2,11 @@
 
 
 
+**Requirements:**
+```eval_rst
+- :ref:`fundamentals:write to a file`
+
+```
 
 
 When you write to a file, you need to open the file in the "write" mode using the string `"w"`.

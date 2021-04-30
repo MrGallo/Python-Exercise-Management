@@ -2,6 +2,11 @@
 
 
 
+**Requirements:**
+```eval_rst
+- :ref:`fundamentals:write to a file`
+
+```
 
 
 Use the same pattern learned in the previous exercise to write to the file.

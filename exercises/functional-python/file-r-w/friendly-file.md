@@ -2,6 +2,13 @@
 
 
 
+**Requirements:**
+```eval_rst
+- :ref:`fundamentals:read from a file`
+- :ref:`fundamentals:if, elif, else`
+- :ref:`fundamentals:returning a value`
+
+```
 
 
 Imagine that there are a number of files on the hard disk. Some files are **friendly** and some files are **MEAN** and some are neutral. All the files will contain only one word. Depending on which word, we can determine if they are `friendly`, `mean`, or `neutral`.
