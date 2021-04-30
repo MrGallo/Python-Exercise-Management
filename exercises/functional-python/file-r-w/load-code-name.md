@@ -13,7 +13,7 @@
 
 There is a JSON file that stores information about a secret operative. Your task is to load the JSON file using the python `json` library and find this secret operative's `code_name`. Your function will extract and return their code name.
 
-If doing this exercise manually, here is a [pre-made JSON](https://github.com/mrgallo/python-exercises/assets/exercise-files/file-rw-code-name.json) file to practice with.
+If doing this exercise manually, here is a [pre-made JSON](https://github.com/mrgallo/python-exercises/blob/master/assets/exercise-files/file-rw-code-name.json) file to practice with.
 
 ## Starter Code
 ```python

@@ -82,7 +82,7 @@ operative = {
 Happy Dropout
 ```
 
-If testing manually, here is a [pre-made JSON file](https://github.com/mrgallo/python-exercises/assets/exercise-files/file-rw-generate-code-name.json) you can use. Change the relevant values to test the different outcomes.
+If testing manually, here is a [pre-made JSON file](https://github.com/mrgallo/python-exercises/blob/master/assets/exercise-files/file-rw-generate-code-name.json) you can use. Change the relevant values to test the different outcomes.
 
 ## Starter Code
 ```python
