@@ -2,6 +2,11 @@
 
 
 
+**Requirements:**
+```eval_rst
+- :ref:`fundamentals:read from a file`
+
+```
 
 
 Files are saved on the hard drive so you can access them at a later date. All the data, even numbers, are stored as strings in files. We can have Python read from files. Let's assume for this problem that all the files have only one line of text in them.

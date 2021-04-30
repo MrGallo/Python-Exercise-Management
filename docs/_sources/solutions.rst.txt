@@ -1832,5 +1832,78 @@ Read Multiple Lines
         
         return total
 
+Load Code Name
+**************
+.. code-block:: python
+    :linenos:
+
+    import json
+    
+    
+    def extract_code_name(file_name: str) -> str:
+        """Extracts the operative's code name from a JSON file.
+        
+        Args:
+            file_name: The name of the file with the operative's information.
+        Returns:
+            The operative's code name. The dictionary loaded from the JSON
+            file will have a key of "code_name".
+        """
+        with open(file_name, "r") as f:
+            agent_dict = json.load(f)
+        
+        code_name = agent_dict["code_name"]
+        return code_name
+
+Generate Code Name
+******************
+.. code-block:: python
+    :linenos:
+
+    import json
+    
+    
+    def generate_code_name(file_name: str) -> str:
+        """Generates a code-name using information within the file of an operative.
+        
+        Args:
+            file_name: The name of the operative's secret file.
+            The file contains a JSON representation of the operative.
+            See the "Dictionary Specification" section in the description.
+            
+        Returns:
+            A generated code-name for the operative.
+        """
+        adjective_map = {
+            "White": "Happy",
+            "Blue": "Sad",
+            "Red": "Angry",
+            "Pink": "Manly"
+        }
+    
+        with open(file_name, "r") as f:
+            operative = json.load(f)
+        
+        # ADJECTIVE
+        fav_color = operative["fav_color"]
+        adjective = adjective_map[fav_color]
+    
+        # NOUN
+        score = operative["academy_score"]
+        if score >= 90:
+            noun = "Beast"
+        elif score >= 80:
+            noun = "Warlock"
+        elif score >= 70:
+            noun = "Mountain"
+        elif score >= 60:
+            noun = "Guppy"
+        elif score >= 50:
+            noun = "Sloth"
+        else:
+            noun = "Dropout"
+        
+        return f"{adjective} {noun}"
+
 
 

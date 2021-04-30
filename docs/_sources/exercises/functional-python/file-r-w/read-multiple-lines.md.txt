@@ -2,6 +2,14 @@
 
 
 
+**Requirements:**
+```eval_rst
+- :ref:`fundamentals:read multiple lines from a file`
+- :ref:`fundamentals:convert strings to numbers`
+- :ref:`fundamentals:loop with an accumulator variable`
+- :ref:`fundamentals:returning a value`
+
+```
 
 
 The files that will be read as part of this exercise contain multiple lines, one integer per line.

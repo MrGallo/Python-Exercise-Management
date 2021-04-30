@@ -2,6 +2,12 @@
 
 
 
+**Requirements:**
+```eval_rst
+- :ref:`fundamentals:read from a file`
+- :ref:`fundamentals:returning a value`
+
+```
 
 
 This will be the same as the last exercise, except you will be given the name of the file int the parameter variable `file_name`. Return the contents of the given file.

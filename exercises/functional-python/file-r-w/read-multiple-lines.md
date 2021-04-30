@@ -7,7 +7,7 @@
 - :ref:`fundamentals:read multiple lines from a file`
 - :ref:`fundamentals:convert strings to numbers`
 - :ref:`fundamentals:loop with an accumulator variable`
-- :ref:`fundamentals:return a value`
+- :ref:`fundamentals:returning a value`
 
 ```
 
