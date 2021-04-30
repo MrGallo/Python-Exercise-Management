@@ -34,7 +34,7 @@ The modes important for now are:
 
 The string data is then stored in a variable called `contents`. This can be called whatever.
 
-# What to do
+### What to do
 
 Assuming a file called `file.txt` already exists, open and read that file and return the contents.  The automated tests will create it for you, otherwise you have to create this file to test your solution.
 
