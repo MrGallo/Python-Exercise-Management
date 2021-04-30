@@ -8788,7 +8788,7 @@
                     "read multiple lines from a file",
                     "convert strings to numbers",
                     "loop with an accumulator variable",
-                    "return a value"
+                    "returning a value"
                 ],
                 "description": "The files that will be read as part of this exercise contain multiple lines, one integer per line.\n\nFor example, this could be the contents of a file:\n\n```\n56\n12\n8\n234\n8\n3\n```\n\nYour program needs to read those integers in and return the sum of the numbers.\n\nIn this case, the answer would be:\n\n```\n321\n```\n\n### How to do it\n\nThis is accomplished the same way as reading in one line, except you need to **use a for loop** to iterate through each line of the file.\n\nHere is a working piece of code, assuming a file called `file.txt` exists and has integers on each line.\n\n**file.txt**\n\n```\n1\n2\n3\n4\n```\n**example_code.py**\n\n```\nwith open(\"file.txt\", \"r\") as f:\n    for line in f:\n        print(line)\n```\n\n**output**\n\n```\n1\n2\n3\n4\n```\n\nInstead of printing the numbers, add them to a total.",
                 "starter_code": "def add_nums_from_file(file_name: str) -> int:\n    \"\"\"Returns the sum of all integers in the given file.\n    \n    Args:\n        file_name: The name of the file.\n    Returns:\n        Sum of all the numbers in the file.\n    \"\"\"\n    return 0",
