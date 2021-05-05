@@ -68,4 +68,10 @@ def test_person_class_has_name_attribute_properly_assigned():
 def test_person_class_has_age_attribute_properly_assigned():
     p = Person("Jimmy", 10)
     assert p.age == 10
+
+
+def test_person_acceptance():
+    person = Person("Jimbo", 55)
+    assert person.name == "Jimbo"
+    assert person.age == 55
 ```
