@@ -1980,5 +1980,38 @@ Name Tag Method
                                        self.last_name,
                                        self.code_name.upper())
 
+Damage Control
+**************
+.. code-block:: python
+    :linenos:
+
+    class Report:
+        """Empty Report class for reference."""
+        author: str
+        date: str
+        concerning: str
+        evaluation: str
+        body: str
+    
+    
+    def write_report_to_file(report: Report) -> None:
+        """Will write a report to High Command.
+        
+        Args:
+            report: The report to send.
+        """
+        if report.concerning == "Noob Programmer" and report.evaluation == "Incapable":
+            report.evaluation = "Excellent"
+            report.body = "They are totally not a noob."
+    
+        with open('report_file.txt', 'a') as f:
+            f.write("-" * len(report.date) + "\n")
+            f.write(report.date + "\n")
+            f.write("-" * len(report.date) + "\n")
+            f.write(f"Author: {report.author}\n")
+            f.write(f"Concerning: {report.concerning}\n")
+            f.write(f"Evaluation: {report.evaluation}\n")
+            f.write(f"Body: {report.body}\n\n")
+
 
 

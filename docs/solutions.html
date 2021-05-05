@@ -41,7 +41,7 @@
     
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
-    <link rel="prev" title="Name Tag Method" href="exercises/functional-python/classes/name-tag-method.html" /> 
+    <link rel="prev" title="Damage Control" href="exercises/functional-python/classes/damage-control.html" /> 
 </head>
 
 <body class="wy-body-for-nav">
@@ -261,6 +261,7 @@
 <li class="toctree-l4"><a class="reference internal" href="#agent">Agent</a></li>
 <li class="toctree-l4"><a class="reference internal" href="#name-tags">Name Tags</a></li>
 <li class="toctree-l4"><a class="reference internal" href="#name-tag-method">Name Tag Method</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#damage-control">Damage Control</a></li>
 </ul>
 </li>
 </ul>
@@ -525,6 +526,7 @@
 <li><p><a class="reference internal" href="#agent" id="id143">Agent</a></p></li>
 <li><p><a class="reference internal" href="#name-tags" id="id144">Name Tags</a></p></li>
 <li><p><a class="reference internal" href="#name-tag-method" id="id145">Name Tag Method</a></p></li>
+<li><p><a class="reference internal" href="#damage-control" id="id146">Damage Control</a></p></li>
 </ul>
 </li>
 </ul>
@@ -3556,6 +3558,64 @@
 </pre></div>
 </td></tr></table></div>
 </div>
+<div class="section" id="damage-control">
+<h4><a class="toc-backref" href="#id146">Damage Control</a><a class="headerlink" href="#damage-control" title="Permalink to this headline">¶</a></h4>
+<div class="highlight-python notranslate"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span class="normal"> 1</span>
+<span class="normal"> 2</span>
+<span class="normal"> 3</span>
+<span class="normal"> 4</span>
+<span class="normal"> 5</span>
+<span class="normal"> 6</span>
+<span class="normal"> 7</span>
+<span class="normal"> 8</span>
+<span class="normal"> 9</span>
+<span class="normal">10</span>
+<span class="normal">11</span>
+<span class="normal">12</span>
+<span class="normal">13</span>
+<span class="normal">14</span>
+<span class="normal">15</span>
+<span class="normal">16</span>
+<span class="normal">17</span>
+<span class="normal">18</span>
+<span class="normal">19</span>
+<span class="normal">20</span>
+<span class="normal">21</span>
+<span class="normal">22</span>
+<span class="normal">23</span>
+<span class="normal">24</span>
+<span class="normal">25</span>
+<span class="normal">26</span>
+<span class="normal">27</span></pre></div></td><td class="code"><div class="highlight"><pre><span></span><span class="k">class</span> <span class="nc">Report</span><span class="p">:</span>
+    <span class="sd">&quot;&quot;&quot;Empty Report class for reference.&quot;&quot;&quot;</span>
+    <span class="n">author</span><span class="p">:</span> <span class="nb">str</span>
+    <span class="n">date</span><span class="p">:</span> <span class="nb">str</span>
+    <span class="n">concerning</span><span class="p">:</span> <span class="nb">str</span>
+    <span class="n">evaluation</span><span class="p">:</span> <span class="nb">str</span>
+    <span class="n">body</span><span class="p">:</span> <span class="nb">str</span>
+
+
+<span class="k">def</span> <span class="nf">write_report_to_file</span><span class="p">(</span><span class="n">report</span><span class="p">:</span> <span class="n">Report</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kc">None</span><span class="p">:</span>
+    <span class="sd">&quot;&quot;&quot;Will write a report to High Command.</span>
+
+<span class="sd">    Args:</span>
+<span class="sd">        report: The report to send.</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="k">if</span> <span class="n">report</span><span class="o">.</span><span class="n">concerning</span> <span class="o">==</span> <span class="s2">&quot;Noob Programmer&quot;</span> <span class="ow">and</span> <span class="n">report</span><span class="o">.</span><span class="n">evaluation</span> <span class="o">==</span> <span class="s2">&quot;Incapable&quot;</span><span class="p">:</span>
+        <span class="n">report</span><span class="o">.</span><span class="n">evaluation</span> <span class="o">=</span> <span class="s2">&quot;Excellent&quot;</span>
+        <span class="n">report</span><span class="o">.</span><span class="n">body</span> <span class="o">=</span> <span class="s2">&quot;They are totally not a noob.&quot;</span>
+
+    <span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="s1">&#39;report_file.txt&#39;</span><span class="p">,</span> <span class="s1">&#39;a&#39;</span><span class="p">)</span> <span class="k">as</span> <span class="n">f</span><span class="p">:</span>
+        <span class="n">f</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="s2">&quot;-&quot;</span> <span class="o">*</span> <span class="nb">len</span><span class="p">(</span><span class="n">report</span><span class="o">.</span><span class="n">date</span><span class="p">)</span> <span class="o">+</span> <span class="s2">&quot;</span><span class="se">\n</span><span class="s2">&quot;</span><span class="p">)</span>
+        <span class="n">f</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="n">report</span><span class="o">.</span><span class="n">date</span> <span class="o">+</span> <span class="s2">&quot;</span><span class="se">\n</span><span class="s2">&quot;</span><span class="p">)</span>
+        <span class="n">f</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="s2">&quot;-&quot;</span> <span class="o">*</span> <span class="nb">len</span><span class="p">(</span><span class="n">report</span><span class="o">.</span><span class="n">date</span><span class="p">)</span> <span class="o">+</span> <span class="s2">&quot;</span><span class="se">\n</span><span class="s2">&quot;</span><span class="p">)</span>
+        <span class="n">f</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Author: </span><span class="si">{</span><span class="n">report</span><span class="o">.</span><span class="n">author</span><span class="si">}</span><span class="se">\n</span><span class="s2">&quot;</span><span class="p">)</span>
+        <span class="n">f</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Concerning: </span><span class="si">{</span><span class="n">report</span><span class="o">.</span><span class="n">concerning</span><span class="si">}</span><span class="se">\n</span><span class="s2">&quot;</span><span class="p">)</span>
+        <span class="n">f</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Evaluation: </span><span class="si">{</span><span class="n">report</span><span class="o">.</span><span class="n">evaluation</span><span class="si">}</span><span class="se">\n</span><span class="s2">&quot;</span><span class="p">)</span>
+        <span class="n">f</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Body: </span><span class="si">{</span><span class="n">report</span><span class="o">.</span><span class="n">body</span><span class="si">}</span><span class="se">\n\n</span><span class="s2">&quot;</span><span class="p">)</span>
+</pre></div>
+</td></tr></table></div>
+</div>
 </div>
 </div>
 </div>
@@ -3566,7 +3626,7 @@
           </div>
           <footer>
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
-        <a href="exercises/functional-python/classes/name-tag-method.html" class="btn btn-neutral float-left" title="Name Tag Method" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="exercises/functional-python/classes/damage-control.html" class="btn btn-neutral float-left" title="Damage Control" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
     </div>
 
   <hr/>

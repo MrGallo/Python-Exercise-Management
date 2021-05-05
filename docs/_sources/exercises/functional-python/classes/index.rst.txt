@@ -9,3 +9,4 @@ Classes
     Agent (9) <agent>
     Name Tags (12) <name-tags>
     Name Tag Method (10) <name-tag-method>
+    Damage Control (7) <damage-control>
