@@ -172,10 +172,28 @@ concepts = {
         ]
     },
     "classes": {
-        "docstrings (classes)": []
+        "unified modeling language (uml)": [],
+        "__init__ method": [
+            "unified modeling language (uml)",
+            "defining parameters"
+        ],
+        "classes vs. objects": [],
+        "object pointers": ["__init__ method"],
+        "loop through a list of objects": ["loop through a list (for)"],
+        "instance method": ["__init__ method"],
+        "encapsulation": [],
+        "aggregate class": [],
+        "class field (variable)": [],
+        "class method": [],
+        "inheritance": [],
+        "polymorphism": [],
+        "refactor multiple classes": [],
+        "function/method overloading": [],
+        "docstrings (classes)": [],
     },
     "algorithms": {}
 }
+
 
 
 

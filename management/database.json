@@ -8830,7 +8830,7 @@
                 "name": "Person Class",
                 "topic": "",
                 "requirements": [],
-                "description": "A well dressed character with an air of importance pulls you aside in a busy marketplace.\n\n\"We have heard about you and your capabilities.\"\n\nYou look quizically at the gentleman who could comically pass of as come James Bond, secret agent type.\n\n\"A great test of your abilities will be incoming to prove your worth. All I can tell you is that you better brush up on your Python classes knowledge\" the gentleman says.\n\nWhen you get back home, you decide to prove to yourself that you know all there is to know about Python classes.\n\nCode an empty `Person` class. That should be a good start.",
+                "description": "A well dressed character with an air of importance pulls you aside in a busy marketplace.\n\n\"We have heard about you and your capabilities.\"\n\nYou look quizically at the gentleman who could comically pass of as some James Bond, secret agent type.\n\n\"A great test of your abilities will be incoming to prove your worth. All I can tell you is that you better brush up on your Python classes knowledge\" the gentleman says.\n\nWhen you get back home, you decide to prove to yourself that you know all there is to know about Python classes.\n\nCode an empty `Person` class. That should be a good start.",
                 "starter_code": "",
                 "tests": "from main import Person\n\n\ndef test_can_create_person_object():\n    p = Person()\n    assert type(p) is Person",
                 "solution": "class Person:\n    pass"
