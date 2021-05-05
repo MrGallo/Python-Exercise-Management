@@ -1,0 +1,296 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" />
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  
+  <title>The Interview &mdash; Python Exercises  documentation</title>
+  
+
+  
+  <link rel="stylesheet" href="../../../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../../../_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="../../../_static/copybutton.css" type="text/css" />
+
+  
+  
+
+  
+  
+
+  
+
+  
+  <!--[if lt IE 9]>
+    <script src="../../../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../../../" src="../../../_static/documentation_options.js"></script>
+        <script src="../../../_static/jquery.js"></script>
+        <script src="../../../_static/underscore.js"></script>
+        <script src="../../../_static/doctools.js"></script>
+        <script src="../../../_static/clipboard.min.js"></script>
+        <script src="../../../_static/copybutton.js"></script>
+    
+    <script type="text/javascript" src="../../../_static/js/theme.js"></script>
+
+    
+    <link rel="index" title="Index" href="../../../genindex.html" />
+    <link rel="search" title="Search" href="../../../search.html" />
+    <link rel="next" title="Agent" href="agent.html" />
+    <link rel="prev" title="Person Class" href="person-class.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="../../../index.html" class="icon icon-home"> Python Exercises
+          
+
+          
+          </a>
+
+          
+            
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../../fundamentals/index.html">Fundamentals</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../practical-programming/index.html">Practical Programming</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../codingbat/index.html">Codingbat</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../codingbat-input-output/index.html">Codingbat (Input/Output)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../dynamic-programming/index.html">Dynamic Programming</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../ccc-problems/index.html">Ccc Problems</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="../index.html">Functional Python</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="../intro/index.html">Intro</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../lists/index.html">Lists</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../dictionaries/index.html">Dictionaries</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../file-r-w/index.html">File R/W</a></li>
+<li class="toctree-l2 current"><a class="reference internal" href="index.html">Classes</a><ul class="current">
+<li class="toctree-l3"><a class="reference internal" href="person-class.html">Person Class</a></li>
+<li class="toctree-l3 current"><a class="current reference internal" href="#">The Interview (9)</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#starter-code">Starter Code</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#tests">Tests</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="agent.html">Agent (9)</a></li>
+<li class="toctree-l3"><a class="reference internal" href="name-tags.html">Name Tags (12)</a></li>
+<li class="toctree-l3"><a class="reference internal" href="name-tag-method.html">Name Tag Method (10)</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../../../solutions.html">Solutions</a></li>
+</ul>
+
+            
+          
+        </div>
+        
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../../index.html">Python Exercises</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../../../index.html" class="icon icon-home"></a> &raquo;</li>
+        
+          <li><a href="../index.html">Functional Python</a> &raquo;</li>
+        
+          <li><a href="index.html">Classes</a> &raquo;</li>
+        
+      <li>The Interview</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+          
+            <a href="../../../_sources/exercises/functional-python/classes/the-interview.md.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="the-interview">
+<h1>The Interview<a class="headerlink" href="#the-interview" title="Permalink to this headline">¶</a></h1>
+<p><strong>Requirements:</strong></p>
+<ul class="simple">
+<li><p><a class="reference external" href="https://mrgallo.github.io/fundamentals/classes.html#unified-modeling-language-uml" title="(in Fundamentals)"><span>Unified Modeling Language (UML)</span></a></p></li>
+<li><p><span class="xref std std-ref">__init__ method</span></p></li>
+</ul>
+<p>After studying for a couple minutes, you decided to call it a night and go to sleep.</p>
+<p>In the morning, your phone rings and wakes you up. A call at this time wouldn’t be so bad if you actually went to bed at a decent hour. The number is blocked, but something is telling you to answer it.</p>
+<p>“Hello?”</p>
+<p>“Greetings. You have been selected” a woman’s voice greets you, a mixture of confidence and amusement, “to interview for a position in an elite intelligence agency.”</p>
+<p>“Wow! Like the CIA or the FBI?!” you excitedly exclaim. The woman scoffs and you wonder if perhaps you sound a bit <em>too</em> excited.</p>
+<p>“Please. That’s child’s-play” responds the woman on the other line. She continues, “My superiors require you to prove your advanced programming capabilities by creating a <code class="docutils literal notranslate"><span class="pre">Person</span></code> class with the a couple attributes. Your failure to do so will prove to everyone your utter lack of capability. However, if you prove successful, you will be formally invited to join <em>The Agency</em>.”</p>
+<p><em>The Agency</em>? She says it as though that’s what the agency is actually called. You inwardly chuckle as you assure yourself that it couldn’t possibly be the actual name of the agency. These intelligence types like to play it close to the chest. They wouldn’t dare reveal to you the <em>real</em> name of the agency! Would they? At least not yet.</p>
+<p>She continues to explain the specifications of the <code class="docutils literal notranslate"><span class="pre">Person</span></code> class as you grab a pen and a napkin (which happens to be stained by the pad thai sauce from last night’s dinner).
+You write out the specifications for the class in UML.</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="c1"># the napkin.</span>
+
+<span class="n">Person</span>
+<span class="o">---------</span>
+<span class="n">name</span><span class="p">:</span> <span class="nb">str</span>
+<span class="n">age</span><span class="p">:</span> <span class="nb">int</span>
+
+<span class="c1"># sauce stain -----&gt; %$*(*&amp;$*&amp;())</span>
+</pre></div>
+</div>
+<p>You recognize that these attributes will have to be set by an <code class="docutils literal notranslate"><span class="pre">__init__</span></code> method referencing the <code class="docutils literal notranslate"><span class="pre">self</span></code> pointer.</p>
+<p>You didn’t study much, but thankfully, <a class="reference external" href="https://stackoverflow.com/">StackOverflow</a> has your back and you find some nice <a class="reference external" href="https://stackoverflow.com/questions/8609153/why-do-we-use-init-in-python-classes/8609238#8609238">boilerplate for creating a class</a>.</p>
+<div class="section" id="starter-code">
+<h2>Starter Code<a class="headerlink" href="#starter-code" title="Permalink to this headline">¶</a></h2>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">class</span> <span class="nc">______</span><span class="p">:</span>
+    <span class="k">def</span> <span class="nf">________</span><span class="p">(</span><span class="n">____</span><span class="p">,</span> <span class="n">_____</span><span class="p">,</span> <span class="n">___</span><span class="p">):</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">name</span> <span class="o">=</span> <span class="n">____</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">age</span> <span class="o">=</span> <span class="n">___</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="tests">
+<h2>Tests<a class="headerlink" href="#tests" title="Permalink to this headline">¶</a></h2>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">main</span> <span class="kn">import</span> <span class="n">Person</span>
+
+
+<span class="k">def</span> <span class="nf">test_can_create_person_object</span><span class="p">():</span>
+    <span class="n">p</span> <span class="o">=</span> <span class="n">Person</span><span class="p">(</span><span class="s2">&quot;Jimmy&quot;</span><span class="p">,</span> <span class="mi">10</span><span class="p">)</span>
+    <span class="k">assert</span> <span class="nb">type</span><span class="p">(</span><span class="n">p</span><span class="p">)</span> <span class="ow">is</span> <span class="n">Person</span>
+
+
+<span class="k">def</span> <span class="nf">test_person_class_has_name_attribute_properly_assigned</span><span class="p">():</span>
+    <span class="n">p</span> <span class="o">=</span> <span class="n">Person</span><span class="p">(</span><span class="s2">&quot;Jimmy&quot;</span><span class="p">,</span> <span class="mi">10</span><span class="p">)</span>
+    <span class="k">assert</span> <span class="n">p</span><span class="o">.</span><span class="n">name</span> <span class="o">==</span> <span class="s2">&quot;Jimmy&quot;</span>
+
+
+<span class="k">def</span> <span class="nf">test_person_class_has_age_attribute_properly_assigned</span><span class="p">():</span>
+    <span class="n">p</span> <span class="o">=</span> <span class="n">Person</span><span class="p">(</span><span class="s2">&quot;Jimmy&quot;</span><span class="p">,</span> <span class="mi">10</span><span class="p">)</span>
+    <span class="k">assert</span> <span class="n">p</span><span class="o">.</span><span class="n">age</span> <span class="o">==</span> <span class="mi">10</span>
+</pre></div>
+</div>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+        <a href="agent.html" class="btn btn-neutral float-right" title="Agent" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+        <a href="person-class.html" class="btn btn-neutral float-left" title="Person Class" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &#169; Copyright 2020, Mr. Gallo.
+
+    </p>
+  </div>
+    
+    
+    
+    Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    
+    provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>

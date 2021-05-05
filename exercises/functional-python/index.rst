@@ -8,3 +8,4 @@ Functional Python
     lists/index
     dictionaries/index
     file-r-w/index
+    classes/index

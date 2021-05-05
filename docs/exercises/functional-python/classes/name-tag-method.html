@@ -1,0 +1,329 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" />
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  
+  <title>Name Tag Method &mdash; Python Exercises  documentation</title>
+  
+
+  
+  <link rel="stylesheet" href="../../../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../../../_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="../../../_static/copybutton.css" type="text/css" />
+
+  
+  
+
+  
+  
+
+  
+
+  
+  <!--[if lt IE 9]>
+    <script src="../../../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../../../" src="../../../_static/documentation_options.js"></script>
+        <script src="../../../_static/jquery.js"></script>
+        <script src="../../../_static/underscore.js"></script>
+        <script src="../../../_static/doctools.js"></script>
+        <script src="../../../_static/clipboard.min.js"></script>
+        <script src="../../../_static/copybutton.js"></script>
+    
+    <script type="text/javascript" src="../../../_static/js/theme.js"></script>
+
+    
+    <link rel="index" title="Index" href="../../../genindex.html" />
+    <link rel="search" title="Search" href="../../../search.html" />
+    <link rel="next" title="Solutions" href="../../../solutions.html" />
+    <link rel="prev" title="Name Tags" href="name-tags.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="../../../index.html" class="icon icon-home"> Python Exercises
+          
+
+          
+          </a>
+
+          
+            
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../../fundamentals/index.html">Fundamentals</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../practical-programming/index.html">Practical Programming</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../codingbat/index.html">Codingbat</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../codingbat-input-output/index.html">Codingbat (Input/Output)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../dynamic-programming/index.html">Dynamic Programming</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../ccc-problems/index.html">Ccc Problems</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="../index.html">Functional Python</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="../intro/index.html">Intro</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../lists/index.html">Lists</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../dictionaries/index.html">Dictionaries</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../file-r-w/index.html">File R/W</a></li>
+<li class="toctree-l2 current"><a class="reference internal" href="index.html">Classes</a><ul class="current">
+<li class="toctree-l3"><a class="reference internal" href="person-class.html">Person Class</a></li>
+<li class="toctree-l3"><a class="reference internal" href="the-interview.html">The Interview (9)</a></li>
+<li class="toctree-l3"><a class="reference internal" href="agent.html">Agent (9)</a></li>
+<li class="toctree-l3"><a class="reference internal" href="name-tags.html">Name Tags (12)</a></li>
+<li class="toctree-l3 current"><a class="current reference internal" href="#">Name Tag Method (10)</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#starter-code">Starter Code</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#tests">Tests</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../../../solutions.html">Solutions</a></li>
+</ul>
+
+            
+          
+        </div>
+        
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../../index.html">Python Exercises</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../../../index.html" class="icon icon-home"></a> &raquo;</li>
+        
+          <li><a href="../index.html">Functional Python</a> &raquo;</li>
+        
+          <li><a href="index.html">Classes</a> &raquo;</li>
+        
+      <li>Name Tag Method</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+          
+            <a href="../../../_sources/exercises/functional-python/classes/name-tag-method.md.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="name-tag-method">
+<h1>Name Tag Method<a class="headerlink" href="#name-tag-method" title="Permalink to this headline">¶</a></h1>
+<p><strong>Requirements:</strong></p>
+<ul class="simple">
+<li><p><a class="reference external" href="https://mrgallo.github.io/fundamentals/classes.html#instance-method" title="(in Fundamentals)"><span>Instance method</span></a></p></li>
+</ul>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>MYSTERIOUS MESSAGE
+From: UNKNOWN
+To: You
+
+The Agency hired you because they thought you knew
+what you were doing. If they see the answer to your
+last solution, you will be outed as a fraud. You must 
+modify your noob code before they see it.
+
+The function you made is outside of the Agent class.
+You must convert that outside function to a &quot;method&quot;
+INSIDE of the Agent class.
+
+We must be able to access this method by saying:
+
+agent.create_name_tag()
+
+See how much nicer that looks?
+
+Relax. Everything stays the same except the points
+below. Follow my instructions exactly or else they
+will find you out.
+
+1. Indent the entire function so it falls under the
+Agent class.
+
+2. Remove the parameter variable and put the `self`
+variable in there.
+
+3. In the doc-string, remove the &#39;Args&#39; section.
+
+4. In the create_name_tag function body, you referenced
+an agent object variable. Replace that with `self`.
+
+I have rigged the system to replace your previous code
+as soon as you pass all the tests I have provided.
+
+I hope this reaches you in time.
+- GL
+</pre></div>
+</div>
+<div class="section" id="starter-code">
+<h2>Starter Code<a class="headerlink" href="#starter-code" title="Permalink to this headline">¶</a></h2>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">class</span> <span class="nc">Agent</span><span class="p">:</span>
+    <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">first_name</span><span class="p">,</span> <span class="n">last_name</span><span class="p">,</span> <span class="n">code_name</span><span class="p">):</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">first_name</span> <span class="o">=</span> <span class="n">first_name</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">last_name</span> <span class="o">=</span> <span class="n">last_name</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">code_name</span> <span class="o">=</span> <span class="n">code_name</span>
+
+
+<span class="k">def</span> <span class="nf">create_name_tag</span><span class="p">(</span><span class="n">agent</span><span class="p">:</span> <span class="n">Agent</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">str</span><span class="p">:</span>
+    <span class="sd">&quot;&quot;&quot;Creates a name-tag for an Agent.</span>
+<span class="sd">    </span>
+<span class="sd">    Args:</span>
+<span class="sd">        agent: an Agent object</span>
+<span class="sd">    Returns:</span>
+<span class="sd">        The agent&#39;s name-tag.</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="k">return</span> <span class="s2">&quot;</span><span class="si">{}</span><span class="s2"> </span><span class="si">{}</span><span class="s2">, </span><span class="si">{}</span><span class="s2">.&quot;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">agent</span><span class="o">.</span><span class="n">first_name</span><span class="p">,</span>
+                               <span class="n">agent</span><span class="o">.</span><span class="n">last_name</span><span class="p">,</span>
+                               <span class="n">agent</span><span class="o">.</span><span class="n">code_name</span><span class="o">.</span><span class="n">upper</span><span class="p">())</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="tests">
+<h2>Tests<a class="headerlink" href="#tests" title="Permalink to this headline">¶</a></h2>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">main</span> <span class="kn">import</span> <span class="n">Agent</span>
+
+
+<span class="k">def</span> <span class="nf">test_john_smith_happy_ghost</span><span class="p">():</span>
+    <span class="n">happy_ghost</span> <span class="o">=</span> <span class="n">Agent</span><span class="p">(</span><span class="s2">&quot;John&quot;</span><span class="p">,</span> <span class="s2">&quot;Smith&quot;</span><span class="p">,</span> <span class="s2">&quot;Happy Ghost&quot;</span><span class="p">)</span>
+    <span class="k">assert</span> <span class="n">happy_ghost</span><span class="o">.</span><span class="n">create_name_tag</span><span class="p">()</span> <span class="o">==</span> <span class="s2">&quot;John Smith, HAPPY GHOST.&quot;</span>
+
+
+<span class="k">def</span> <span class="nf">test_jordan_peterson_misunderstood_professor</span><span class="p">():</span>
+    <span class="n">jbp</span> <span class="o">=</span> <span class="n">Agent</span><span class="p">(</span><span class="s2">&quot;Jordan&quot;</span><span class="p">,</span> <span class="s2">&quot;Peterson&quot;</span><span class="p">,</span> <span class="s2">&quot;Misunderstood Professor&quot;</span><span class="p">)</span>
+    <span class="k">assert</span> <span class="n">jbp</span><span class="o">.</span><span class="n">create_name_tag</span><span class="p">()</span> <span class="o">==</span> <span class="s2">&quot;Jordan Peterson, MISUNDERSTOOD PROFESSOR.&quot;</span>
+
+
+<span class="k">def</span> <span class="nf">test_simon_johnson_first_pope</span><span class="p">():</span>
+    <span class="n">peter</span> <span class="o">=</span> <span class="n">Agent</span><span class="p">(</span><span class="s2">&quot;Simon&quot;</span><span class="p">,</span> <span class="s2">&quot;Johnson&quot;</span><span class="p">,</span> <span class="s2">&quot;First Pope&quot;</span><span class="p">)</span>
+    <span class="k">assert</span> <span class="n">peter</span><span class="o">.</span><span class="n">create_name_tag</span><span class="p">()</span> <span class="o">==</span> <span class="s2">&quot;Simon Johnson, FIRST POPE.&quot;</span>
+</pre></div>
+</div>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+        <a href="../../../solutions.html" class="btn btn-neutral float-right" title="Solutions" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+        <a href="name-tags.html" class="btn btn-neutral float-left" title="Name Tags" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &#169; Copyright 2020, Mr. Gallo.
+
+    </p>
+  </div>
+    
+    
+    
+    Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    
+    provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>

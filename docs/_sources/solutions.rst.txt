@@ -1906,4 +1906,79 @@ Generate Code Name
         return f"{adjective} {noun}"
 
 
+Classes
+^^^^^^^
+Person Class
+************
+.. code-block:: python
+    :linenos:
+
+    class Person:
+        pass
+
+The Interview
+*************
+.. code-block:: python
+    :linenos:
+
+    class Person:
+        def __init__(self, name, age):
+            self.name = name
+            self.age = age
+
+Agent
+*****
+.. code-block:: python
+    :linenos:
+
+    class Agent:
+        def __init__(self, first_name: str, last_name: str, code_name:str):
+            self.first_name = first_name
+            self.last_name = last_name
+            self.code_name = code_name
+
+Name Tags
+*********
+.. code-block:: python
+    :linenos:
+
+    class Agent:
+        def __init__(self, first_name: str, last_name: str, code_name:str):
+            self.first_name = first_name
+            self.last_name = last_name
+            self.code_name = code_name
+    
+    
+    def create_name_tag(agent: Agent) -> str:
+        """Creates a name-tag for an Agent.
+        
+        Args:
+            agent: an Agent object
+        Returns:
+            The agent's name-tag.
+        """
+        return f"{agent.first_name} {agent.last_name}, {agent.code_name.upper()}."
+
+Name Tag Method
+***************
+.. code-block:: python
+    :linenos:
+
+    class Agent:
+        def __init__(self, first_name, last_name, code_name):
+            self.first_name = first_name
+            self.last_name = last_name
+            self.code_name = code_name
+    
+        def create_name_tag(self) -> str:
+            """Creates a name-tag for the Agent.
+            
+            Returns:
+                The agent's name-tag.
+            """
+            return "{} {}, {}.".format(self.first_name,
+                                       self.last_name,
+                                       self.code_name.upper())
+
+
 
