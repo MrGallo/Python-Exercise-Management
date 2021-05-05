@@ -20,7 +20,7 @@ In the morning, your phone rings and wakes you up. A call at this time wouldn't 
 
 "Wow! Like the CIA or the FBI?!" you excitedly exclaim. The woman scoffs and you wonder if perhaps you sound a bit *too* excited.
 
-"Please. That's child's-play" responds the woman on the other line. She continues, "My superiors require you to prove your advanced programming capabilities by creating a `Person` class with the a couple attributes. Your failure to do so will prove to everyone your utter lack of capability. However, if you prove successful, you will be formally invited to join *The Agency*."
+"Please. That's child's-play" responds the woman on the other line. She continues, "My superiors require you to prove your advanced programming capabilities by creating a `Person` class with a couple of specific attributes. Your failure to do so will prove to everyone your utter lack of capability. However, if you prove successful, you will be formally invited to join *The Agency*."
 
 *The Agency*? She says it as though that's what the agency is actually called. You inwardly chuckle as you assure yourself that it couldn't possibly be the actual name of the agency. These intelligence types like to play it close to the chest. They wouldn't dare reveal to you the *real* name of the agency! Would they? At least not yet.
 
