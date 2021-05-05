@@ -8,7 +8,7 @@ A well dressed character with an air of importance pulls you aside in a busy mar
 
 "We have heard about you and your capabilities."
 
-You look quizically at the gentleman who could comically pass of as come James Bond, secret agent type.
+You look quizically at the gentleman who could comically pass of as some James Bond, secret agent type.
 
 "A great test of your abilities will be incoming to prove your worth. All I can tell you is that you better brush up on your Python classes knowledge" the gentleman says.
 
