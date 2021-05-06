@@ -1,0 +1,380 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" />
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  
+  <title>Neutralization Pt. 3 &mdash; Python Exercises  documentation</title>
+  
+
+  
+  <link rel="stylesheet" href="../../../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../../../_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="../../../_static/copybutton.css" type="text/css" />
+
+  
+  
+
+  
+  
+
+  
+
+  
+  <!--[if lt IE 9]>
+    <script src="../../../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../../../" src="../../../_static/documentation_options.js"></script>
+        <script src="../../../_static/jquery.js"></script>
+        <script src="../../../_static/underscore.js"></script>
+        <script src="../../../_static/doctools.js"></script>
+        <script src="../../../_static/clipboard.min.js"></script>
+        <script src="../../../_static/copybutton.js"></script>
+    
+    <script type="text/javascript" src="../../../_static/js/theme.js"></script>
+
+    
+    <link rel="index" title="Index" href="../../../genindex.html" />
+    <link rel="search" title="Search" href="../../../search.html" />
+    <link rel="next" title="Neutralization: End Game" href="neutralization-end-game.html" />
+    <link rel="prev" title="Neutralization Pt. 2" href="neutralization-pt-2.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="../../../index.html" class="icon icon-home"> Python Exercises
+          
+
+          
+          </a>
+
+          
+            
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../../fundamentals/index.html">Fundamentals</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../practical-programming/index.html">Practical Programming</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../codingbat/index.html">Codingbat</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../codingbat-input-output/index.html">Codingbat (Input/Output)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../dynamic-programming/index.html">Dynamic Programming</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../ccc-problems/index.html">Ccc Problems</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="../index.html">Functional Python</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="../intro/index.html">Intro</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../lists/index.html">Lists</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../dictionaries/index.html">Dictionaries</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../file-r-w/index.html">File R/W</a></li>
+<li class="toctree-l2 current"><a class="reference internal" href="index.html">Classes</a><ul class="current">
+<li class="toctree-l3"><a class="reference internal" href="person-class.html">Person Class</a></li>
+<li class="toctree-l3"><a class="reference internal" href="the-interview.html">The Interview (9)</a></li>
+<li class="toctree-l3"><a class="reference internal" href="agent.html">Agent (9)</a></li>
+<li class="toctree-l3"><a class="reference internal" href="name-tags.html">Name Tags (12)</a></li>
+<li class="toctree-l3"><a class="reference internal" href="name-tag-method.html">Name Tag Method (10)</a></li>
+<li class="toctree-l3"><a class="reference internal" href="damage-control.html">Damage Control (8)</a></li>
+<li class="toctree-l3"><a class="reference internal" href="neutralization-pt-1.html">Neutralization Pt. 1</a></li>
+<li class="toctree-l3"><a class="reference internal" href="neutralization-pt-2.html">Neutralization Pt. 2 (19)</a></li>
+<li class="toctree-l3 current"><a class="current reference internal" href="#">Neutralization Pt. 3</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#class-variable">Class-variable</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#static-method">Static Method</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#starter-code">Starter Code</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#tests">Tests</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="neutralization-end-game.html">Neutralization: End Game</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../../../solutions.html">Solutions</a></li>
+</ul>
+
+            
+          
+        </div>
+        
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../../index.html">Python Exercises</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../../../index.html" class="icon icon-home"></a> &raquo;</li>
+        
+          <li><a href="../index.html">Functional Python</a> &raquo;</li>
+        
+          <li><a href="index.html">Classes</a> &raquo;</li>
+        
+      <li>Neutralization Pt. 3</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+          
+            <a href="../../../_sources/exercises/functional-python/classes/neutralization-pt-3.md.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="neutralization-pt-3">
+<h1>Neutralization Pt. 3<a class="headerlink" href="#neutralization-pt-3" title="Permalink to this headline">¶</a></h1>
+<p>OK, so now you remember <strong>a)</strong> how the <code class="docutils literal notranslate"><span class="pre">Agent</span></code> class stores <code class="docutils literal notranslate"><span class="pre">MissionReview</span></code> objects and <strong>b)</strong> how it calculates their latest-five mission average.</p>
+<p>Before we can target the Agent’s profile, we need to be able to do a search for the agent based on their various attributes. You need to update the agent class code to include the following:</p>
+<ol class="simple">
+<li><p>An <code class="docutils literal notranslate"><span class="pre">all_agents</span></code> class-variable.</p></li>
+<li><p>A <code class="docutils literal notranslate"><span class="pre">find_by_eye_color()</span></code> class-method or <strong>static method</strong>.</p></li>
+</ol>
+<div class="section" id="class-variable">
+<h2>Class-variable<a class="headerlink" href="#class-variable" title="Permalink to this headline">¶</a></h2>
+<p>In an object, the <code class="docutils literal notranslate"><span class="pre">self</span></code> pointer refers to one single object in particular. The <code class="docutils literal notranslate"><span class="pre">self</span></code> attributes are unique to the specific object.</p>
+<p>We can also store central data that pertains to the Class as a whole. In this case, we are going to store a class-variable called <code class="docutils literal notranslate"><span class="pre">all_agents</span></code>, which, will store all The Agency’s agents. It will be a list that will be updated each time an <code class="docutils literal notranslate"><span class="pre">Agent</span></code> object is created.</p>
+<p>Steps:</p>
+<ol class="simple">
+<li><p>Fill in the blank at location <code class="docutils literal notranslate"><span class="pre">#1</span></code>. <code class="docutils literal notranslate"><span class="pre">all_agents</span></code> will be initialized as an empty list.</p></li>
+<li><p>The last thing you do in the <code class="docutils literal notranslate"><span class="pre">__init__</span></code> method is append that newly created agent to the list of <code class="docutils literal notranslate"><span class="pre">all_agents</span></code>. The way you reference the list of <code class="docutils literal notranslate"><span class="pre">all_agents</span></code> from anywhere in the program is: <code class="docutils literal notranslate"><span class="pre">Agent.all_agents</span></code>. Append <code class="docutils literal notranslate"><span class="pre">self</span></code> to the list <code class="docutils literal notranslate"><span class="pre">all_agents</span></code>.</p></li>
+</ol>
+<p>Run the tests at this point. The first two tests will verify what you just did. The other tests will fail, so don’t be sad.</p>
+</div>
+<div class="section" id="static-method">
+<h2>Static Method<a class="headerlink" href="#static-method" title="Permalink to this headline">¶</a></h2>
+<p>This is a method that applies to the <code class="docutils literal notranslate"><span class="pre">Agent</span></code> class as a whole. It does not operate on one <code class="docutils literal notranslate"><span class="pre">Agent</span></code> object in particular. As such, we don’t have to pass <code class="docutils literal notranslate"><span class="pre">self</span></code> to it. We will just pass some <code class="docutils literal notranslate"><span class="pre">color</span></code> to it to search the list of <code class="docutils literal notranslate"><span class="pre">Agent.all_agents</span></code> and return a list of all matching agents.</p>
+<p>In the <code class="docutils literal notranslate"><span class="pre">find_by_eye_color</span></code> static method, create a loop to run through <code class="docutils literal notranslate"><span class="pre">Agent.all_agents</span></code> and compare the given <code class="docutils literal notranslate"><span class="pre">color</span></code> to the <code class="docutils literal notranslate"><span class="pre">eye_color</span></code> of each <code class="docutils literal notranslate"><span class="pre">Agent</span></code> object. When you find a match, append that <code class="docutils literal notranslate"><span class="pre">Agent</span></code> to a list of matches.</p>
+<p>Why am I helping you so much? You got yourself into this mess!</p>
+</div>
+<div class="section" id="starter-code">
+<h2>Starter Code<a class="headerlink" href="#starter-code" title="Permalink to this headline">¶</a></h2>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">typing</span> <span class="kn">import</span> <span class="n">List</span>
+
+
+<span class="k">class</span> <span class="nc">Agent</span><span class="p">:</span>
+    <span class="n">_________</span> <span class="o">=</span> <span class="n">__</span>
+
+    <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">first_name</span><span class="p">,</span> <span class="n">last_name</span><span class="p">,</span> <span class="n">eye_color</span><span class="p">,</span> <span class="n">code_name</span><span class="p">):</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">first_name</span> <span class="o">=</span> <span class="n">first_name</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">last_name</span> <span class="o">=</span> <span class="n">last_name</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">eye_color</span> <span class="o">=</span> <span class="n">eye_color</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">code_name</span> <span class="o">=</span> <span class="n">code_name</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">mission_reviews</span> <span class="o">=</span> <span class="p">[]</span>
+        
+    
+    <span class="nd">@staticmethod</span>
+    <span class="k">def</span> <span class="nf">find_by_eye_color</span><span class="p">(</span><span class="n">color</span><span class="p">:</span> <span class="nb">str</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">List</span><span class="p">[</span><span class="s2">&quot;Agent&quot;</span><span class="p">]:</span>
+        <span class="sd">&quot;&quot;&quot;Searches for all agents with the given eye_color.</span>
+<span class="sd">        </span>
+<span class="sd">        The method should find people whose eye color CONTAINS</span>
+<span class="sd">        the search color. For example, when searching for &quot;Blue&quot; eyes, the</span>
+<span class="sd">        method should find matches for both &quot;Blue&quot; eyes exactly</span>
+<span class="sd">        any variation like &quot;Icy-blue&quot;, or &quot;Light blue&quot; eyes.</span>
+<span class="sd">        </span>
+<span class="sd">        Args:</span>
+<span class="sd">            color: The color. E.g., &quot;Blue&quot;.</span>
+<span class="sd">        </span>
+<span class="sd">        Returns:</span>
+<span class="sd">            A list of agents that match the given eye color.</span>
+<span class="sd">            Empty list if no matches.</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">pass</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="tests">
+<h2>Tests<a class="headerlink" href="#tests" title="Permalink to this headline">¶</a></h2>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">pytest</span>
+
+<span class="kn">from</span> <span class="nn">main</span> <span class="kn">import</span> <span class="n">Agent</span>
+
+
+<span class="nd">@pytest</span><span class="o">.</span><span class="n">fixture</span><span class="p">(</span><span class="n">autouse</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+<span class="k">def</span> <span class="nf">reset_class_variable</span><span class="p">():</span>
+    <span class="k">yield</span>
+    <span class="n">Agent</span><span class="o">.</span><span class="n">all_agents</span> <span class="o">=</span> <span class="p">[]</span>
+
+
+<span class="k">def</span> <span class="nf">test_agent_class_has_class_variable_all_agents</span><span class="p">():</span>
+    <span class="k">assert</span> <span class="n">Agent</span><span class="o">.</span><span class="n">all_agents</span> <span class="o">==</span> <span class="p">[]</span>
+
+
+<span class="k">def</span> <span class="nf">test_agent_constructor_adds_new_agent_to_all_agents</span><span class="p">():</span>
+    <span class="n">new_agent</span> <span class="o">=</span> <span class="n">Agent</span><span class="p">(</span><span class="s2">&quot;John&quot;</span><span class="p">,</span> <span class="s2">&quot;Smith&quot;</span><span class="p">,</span> <span class="s2">&quot;Blue&quot;</span><span class="p">,</span> <span class="s2">&quot;Super Dude&quot;</span><span class="p">)</span>
+    <span class="k">assert</span> <span class="n">new_agent</span> <span class="ow">in</span> <span class="n">Agent</span><span class="o">.</span><span class="n">all_agents</span>
+
+    <span class="n">another_new_agent</span> <span class="o">=</span> <span class="n">Agent</span><span class="p">(</span><span class="s2">&quot;Sally&quot;</span><span class="p">,</span> <span class="s2">&quot;Johanson&quot;</span><span class="p">,</span> <span class="s2">&quot;Red&quot;</span><span class="p">,</span> <span class="s2">&quot;Strong Like Bull&quot;</span><span class="p">)</span>
+    <span class="k">assert</span> <span class="n">another_new_agent</span> <span class="ow">in</span> <span class="n">Agent</span><span class="o">.</span><span class="n">all_agents</span>
+    
+    <span class="k">assert</span> <span class="nb">len</span><span class="p">(</span><span class="n">Agent</span><span class="o">.</span><span class="n">all_agents</span><span class="p">)</span> <span class="o">==</span> <span class="mi">2</span>
+
+
+<span class="k">def</span> <span class="nf">test_find_by_eye_color_empty_list</span><span class="p">():</span>
+    <span class="k">assert</span> <span class="n">Agent</span><span class="o">.</span><span class="n">find_by_eye_color</span><span class="p">(</span><span class="s2">&quot;no agents yet&quot;</span><span class="p">)</span> <span class="o">==</span> <span class="p">[]</span>
+
+
+<span class="k">def</span> <span class="nf">test_find_by_eye_color_case_insensitive</span><span class="p">():</span>
+    <span class="n">colors</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;blue&#39;</span><span class="p">,</span> <span class="s1">&#39;blue&#39;</span><span class="p">,</span> <span class="s1">&#39;green&#39;</span><span class="p">,</span> <span class="s1">&#39;BLUE&#39;</span><span class="p">]</span>
+
+    <span class="n">agents</span> <span class="o">=</span> <span class="p">[]</span>
+    <span class="k">for</span> <span class="n">i</span><span class="p">,</span> <span class="n">c</span> <span class="ow">in</span> <span class="nb">enumerate</span><span class="p">(</span><span class="n">colors</span><span class="p">):</span>
+        <span class="n">a</span> <span class="o">=</span> <span class="n">Agent</span><span class="p">(</span><span class="s2">&quot;&quot;</span><span class="p">,</span> <span class="s2">&quot;&quot;</span><span class="p">,</span> <span class="n">c</span><span class="p">,</span> <span class="s2">&quot;&quot;</span><span class="p">)</span>
+        <span class="n">agents</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">a</span><span class="p">)</span>
+    
+    <span class="n">result_list</span> <span class="o">=</span> <span class="n">Agent</span><span class="o">.</span><span class="n">find_by_eye_color</span><span class="p">(</span><span class="s2">&quot;blue&quot;</span><span class="p">)</span>
+    <span class="k">assert</span> <span class="n">agents</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="ow">in</span> <span class="n">result_list</span>
+    <span class="k">assert</span> <span class="n">agents</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span> <span class="ow">in</span> <span class="n">result_list</span>
+    <span class="k">assert</span> <span class="n">agents</span><span class="p">[</span><span class="mi">2</span><span class="p">]</span> <span class="ow">not</span> <span class="ow">in</span> <span class="n">result_list</span>
+
+    <span class="c1"># The search should be case-insensitive</span>
+    <span class="k">assert</span> <span class="n">agents</span><span class="p">[</span><span class="mi">3</span><span class="p">]</span> <span class="ow">in</span> <span class="n">result_list</span>
+    <span class="k">assert</span> <span class="nb">len</span><span class="p">(</span><span class="n">result_list</span><span class="p">)</span> <span class="o">==</span> <span class="mi">3</span>
+
+
+<span class="k">def</span> <span class="nf">test_find_by_eye_color_not_found_returns_empyt_list</span><span class="p">():</span>
+    <span class="n">colors</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;blue&#39;</span><span class="p">,</span> <span class="s1">&#39;blue&#39;</span><span class="p">,</span> <span class="s1">&#39;blue&#39;</span><span class="p">,</span> <span class="s1">&#39;blue&#39;</span><span class="p">]</span>
+
+    <span class="n">agents</span> <span class="o">=</span> <span class="p">[]</span>
+    <span class="k">for</span> <span class="n">i</span><span class="p">,</span> <span class="n">c</span> <span class="ow">in</span> <span class="nb">enumerate</span><span class="p">(</span><span class="n">colors</span><span class="p">):</span>
+        <span class="n">a</span> <span class="o">=</span> <span class="n">Agent</span><span class="p">(</span><span class="s2">&quot;&quot;</span><span class="p">,</span> <span class="s2">&quot;&quot;</span><span class="p">,</span> <span class="n">c</span><span class="p">,</span> <span class="s2">&quot;&quot;</span><span class="p">)</span>
+        <span class="n">agents</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">a</span><span class="p">)</span>
+    
+    <span class="n">result_list</span> <span class="o">=</span> <span class="n">Agent</span><span class="o">.</span><span class="n">find_by_eye_color</span><span class="p">(</span><span class="s2">&quot;rainbow&quot;</span><span class="p">)</span>
+    <span class="k">assert</span> <span class="n">result_list</span> <span class="o">==</span> <span class="p">[]</span>
+
+
+<span class="k">def</span> <span class="nf">test_agent_find_by_eye_color_should_not_modify_all_agents_list</span><span class="p">():</span>
+    <span class="k">for</span> <span class="n">_</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">3</span><span class="p">):</span>
+        <span class="n">Agent</span><span class="p">(</span><span class="s2">&quot;&quot;</span><span class="p">,</span> <span class="s2">&quot;&quot;</span><span class="p">,</span> <span class="s2">&quot;blue&quot;</span><span class="p">,</span> <span class="s2">&quot;&quot;</span><span class="p">)</span>
+    
+    <span class="n">result_list</span> <span class="o">=</span> <span class="n">Agent</span><span class="o">.</span><span class="n">find_by_eye_color</span><span class="p">(</span><span class="s2">&quot;red&quot;</span><span class="p">)</span>
+    <span class="k">assert</span> <span class="n">result_list</span> <span class="o">==</span> <span class="p">[]</span>
+
+    <span class="c1"># The algorithm should not remove agents</span>
+    <span class="c1"># from Agent.all_agents</span>
+    <span class="k">assert</span> <span class="nb">len</span><span class="p">(</span><span class="n">Agent</span><span class="o">.</span><span class="n">all_agents</span><span class="p">)</span> <span class="o">==</span> <span class="mi">3</span>
+</pre></div>
+</div>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+        <a href="neutralization-end-game.html" class="btn btn-neutral float-right" title="Neutralization: End Game" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+        <a href="neutralization-pt-2.html" class="btn btn-neutral float-left" title="Neutralization Pt. 2" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &#169; Copyright 2020, Mr. Gallo.
+
+    </p>
+  </div>
+    
+    
+    
+    Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    
+    provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>

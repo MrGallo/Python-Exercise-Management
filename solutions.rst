@@ -2013,5 +2013,110 @@ Damage Control
             f.write(f"Evaluation: {report.evaluation}\n")
             f.write(f"Body: {report.body}\n\n")
 
+Neutralization Pt. 1
+********************
+.. code-block:: python
+    :linenos:
+
+    class MissionReview:
+        def __init__(self, mission_name: str, agent_code_name: str,
+                     grade: int, text: str) -> None:
+            self.mission_name = mission_name
+            self.agent_code_name = agent_code_name
+            self.grade = grade
+            self.text = text
+
+Neutralization Pt. 2
+********************
+.. code-block:: python
+    :linenos:
+
+    from typing import List, Optional
+    
+    
+    class MissionReview:
+        """Stub for typing"""
+        pass
+    
+    
+    class Agent:
+        def __init__(self, first_name: str, last_name: str, code_name: str) -> None:
+            self.first_name = first_name
+            self.last_name = last_name
+            self.code_name = code_name
+            self.mission_reviews: List[MissionReview] = []
+        
+        
+        def calc_performance_rating(self) -> Optional[float]:
+            """Calculates average Mission Review preformance grade (last five).
+            
+            Returns:
+                The average grade (float) of the Agent's 
+                last five mission review grades.
+    
+                Returns None if there are no reviews.
+                
+            Hints:
+                1. Use list slicing to get the last 5 elements.
+                   e.g., marks[-2:] gets the last two
+                2. When you find the average don't forget
+                   that the original list might not even
+                   have 5 reviews in it.
+            """
+            if len(self.mission_reviews) == 0:
+                return None
+    
+            last_five_reviews = self.mission_reviews[-5:]
+            total = 0
+            for review in last_five_reviews:
+                total += review.grade
+            
+            average = total / len(last_five_reviews)
+            return average
+
+Neutralization Pt. 3
+********************
+.. code-block:: python
+    :linenos:
+
+    from typing import List
+    
+    
+    class Agent:
+        all_agents: List["Agent"] = []
+    
+        def __init__(self, first_name, last_name, eye_color, code_name):
+            self.first_name = first_name
+            self.last_name = last_name
+            self.eye_color = eye_color
+            self.code_name = code_name
+            self.mission_reviews = []
+    
+            Agent.all_agents.append(self)
+            
+        
+        @staticmethod
+        def find_by_eye_color(color: str) -> List["Agent"]:
+            """Searches for all agents with the given eye_color.
+            
+            The method should find people whose eye color CONTAINS
+            the search color. For example, when searching for "Blue" eyes, the
+            method should find matches for both "Blue" eyes exactly
+            any variation like "Icy-blue", or "Light blue" eyes.
+            
+            Args:
+                color: The color. E.g., "Blue".
+            
+            Returns:
+                A list of agents that match the given eye color.
+                Empty list if no matches.
+            """
+            filtered = []
+            for agent in Agent.all_agents:
+                if agent.eye_color.lower() == color.lower():
+                    filtered.append(agent)
+            
+            return filtered
+
 
 

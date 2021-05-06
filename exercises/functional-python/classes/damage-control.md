@@ -5,6 +5,7 @@
 **Requirements:**
 ```eval_rst
 - :ref:`fundamentals:write to a file`
+- :ref:`fundamentals:accessing object attributes`
 - :ref:`fundamentals:boolean operators`
 
 ```
