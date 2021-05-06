@@ -177,6 +177,7 @@ concepts = {
             "unified modeling language (uml)",
             "defining parameters"
         ],
+        "accessing object attributes": [],
         "classes vs. objects": [],
         "object pointers": ["__init__ method"],
         "loop through a list of objects": ["loop through a list (for)"],
