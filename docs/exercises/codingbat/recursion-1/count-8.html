@@ -1,0 +1,362 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" />
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  
+  <title>count_8 &mdash; Python Exercises  documentation</title>
+  
+
+  
+  <link rel="stylesheet" href="../../../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../../../_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="../../../_static/copybutton.css" type="text/css" />
+
+  
+  
+
+  
+  
+
+  
+
+  
+  <!--[if lt IE 9]>
+    <script src="../../../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../../../" src="../../../_static/documentation_options.js"></script>
+        <script src="../../../_static/jquery.js"></script>
+        <script src="../../../_static/underscore.js"></script>
+        <script src="../../../_static/doctools.js"></script>
+        <script src="../../../_static/clipboard.min.js"></script>
+        <script src="../../../_static/copybutton.js"></script>
+    
+    <script type="text/javascript" src="../../../_static/js/theme.js"></script>
+
+    
+    <link rel="index" title="Index" href="../../../genindex.html" />
+    <link rel="search" title="Search" href="../../../search.html" />
+    <link rel="next" title="power_n" href="power-n.html" />
+    <link rel="prev" title="count_7" href="count-7.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="../../../index.html" class="icon icon-home"> Python Exercises
+          
+
+          
+          </a>
+
+          
+            
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../../fundamentals/index.html">Fundamentals</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../practical-programming/index.html">Practical Programming</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="../index.html">Codingbat</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="../warmup-1/index.html">Warmup-1</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../string-1/index.html">String-1</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../string-2/index.html">String-2</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../list-1/index.html">List-1</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../list-2/index.html">List-2</a></li>
+<li class="toctree-l2 current"><a class="reference internal" href="index.html">Recursion-1</a><ul class="current">
+<li class="toctree-l3"><a class="reference internal" href="factorial.html">factorial</a></li>
+<li class="toctree-l3"><a class="reference internal" href="bunny-ears.html">bunny_ears</a></li>
+<li class="toctree-l3"><a class="reference internal" href="fibonacci.html">fibonacci</a></li>
+<li class="toctree-l3"><a class="reference internal" href="bunny-ears-2.html">bunny_ears_2</a></li>
+<li class="toctree-l3"><a class="reference internal" href="triangle.html">triangle</a></li>
+<li class="toctree-l3"><a class="reference internal" href="sum-digits.html">sum_digits</a></li>
+<li class="toctree-l3"><a class="reference internal" href="count-7.html">count_7</a></li>
+<li class="toctree-l3 current"><a class="current reference internal" href="#">count_8</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#starter-code">Starter Code</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#tests">Tests</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="power-n.html">power_n</a></li>
+<li class="toctree-l3"><a class="reference internal" href="count-x.html">count_x</a></li>
+<li class="toctree-l3"><a class="reference internal" href="count-hi.html">count_hi</a></li>
+<li class="toctree-l3"><a class="reference internal" href="change-xy.html">change_xy</a></li>
+<li class="toctree-l3"><a class="reference internal" href="change-pi.html">change_pi</a></li>
+<li class="toctree-l3"><a class="reference internal" href="no-x.html">no_x</a></li>
+<li class="toctree-l3"><a class="reference internal" href="array-6.html">array_6</a></li>
+<li class="toctree-l3"><a class="reference internal" href="array-11.html">array_11</a></li>
+<li class="toctree-l3"><a class="reference internal" href="array-220.html">array_220</a></li>
+<li class="toctree-l3"><a class="reference internal" href="all-star.html">all_star</a></li>
+<li class="toctree-l3"><a class="reference internal" href="pair-star.html">pair_star</a></li>
+<li class="toctree-l3"><a class="reference internal" href="end-x.html">end_x</a></li>
+<li class="toctree-l3"><a class="reference internal" href="count-pairs.html">count_pairs</a></li>
+<li class="toctree-l3"><a class="reference internal" href="count-abc.html">count_abc</a></li>
+<li class="toctree-l3"><a class="reference internal" href="count-11.html">count_11</a></li>
+<li class="toctree-l3"><a class="reference internal" href="string-clean.html">string_clean</a></li>
+<li class="toctree-l3"><a class="reference internal" href="count-hi-2.html">count_hi_2</a></li>
+<li class="toctree-l3"><a class="reference internal" href="paren-bit.html">paren_bit</a></li>
+<li class="toctree-l3"><a class="reference internal" href="nest-paren.html">nest_paren</a></li>
+<li class="toctree-l3"><a class="reference internal" href="str-count.html">str_count</a></li>
+<li class="toctree-l3"><a class="reference internal" href="str-copies.html">str_copies</a></li>
+<li class="toctree-l3"><a class="reference internal" href="str-dist.html">str_dist</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../../codingbat-input-output/index.html">Codingbat (Input/Output)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../dynamic-programming/index.html">Dynamic Programming</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../ccc-problems/index.html">Ccc Problems</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../functional-python/index.html">Functional Python</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../solutions.html">Solutions</a></li>
+</ul>
+
+            
+          
+        </div>
+        
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../../index.html">Python Exercises</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../../../index.html" class="icon icon-home"></a> &raquo;</li>
+        
+          <li><a href="../index.html">Codingbat</a> &raquo;</li>
+        
+          <li><a href="index.html">Recursion-1</a> &raquo;</li>
+        
+      <li>count_8</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+          
+            <a href="../../../_sources/exercises/codingbat/recursion-1/count-8.md.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="count-8">
+<h1>count_8<a class="headerlink" href="#count-8" title="Permalink to this headline">¶</a></h1>
+<p>Given a non-negative int n, compute recursively (no loops) the count of the occurrences of 8 as a digit, except that an 8 with another 8 immediately to its left counts double, so 8818 yields 4. Note that mod (%) by 10 yields the rightmost digit (126 % 10 is 6), while divide (/) by 10 removes the rightmost digit (126 / 10 is 12).</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">count_8</span><span class="p">(</span><span class="mi">8</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="mi">1</span>
+<span class="n">count_8</span><span class="p">(</span><span class="mi">818</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="mi">2</span>
+<span class="n">count_8</span><span class="p">(</span><span class="mi">8818</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="mi">4</span>
+</pre></div>
+</div>
+<p>This exercise was taken from <a class="reference external" href="https://codingbat.com/prob/p192383">codingbat.com</a> and has been adapted for the Python language. There are many great programming exercises there, but the majority are created for Java.</p>
+<div class="section" id="starter-code">
+<h2>Starter Code<a class="headerlink" href="#starter-code" title="Permalink to this headline">¶</a></h2>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">count_8</span><span class="p">(</span><span class="n">n</span><span class="p">:</span> <span class="nb">int</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">int</span><span class="p">:</span>
+    <span class="k">pass</span>
+
+
+<span class="n">result</span> <span class="o">=</span> <span class="n">count_8</span><span class="p">(</span><span class="mi">8</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">result</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="tests">
+<h2>Tests<a class="headerlink" href="#tests" title="Permalink to this headline">¶</a></h2>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">main</span> <span class="kn">import</span> <span class="n">count_8</span>
+
+
+<span class="k">def</span> <span class="nf">test_count_8_1</span><span class="p">():</span>
+    <span class="k">assert</span> <span class="n">count_8</span><span class="p">(</span><span class="mi">8</span><span class="p">)</span> <span class="o">==</span> <span class="mi">1</span>
+
+
+<span class="k">def</span> <span class="nf">test_count_8_2</span><span class="p">():</span>
+    <span class="k">assert</span> <span class="n">count_8</span><span class="p">(</span><span class="mi">818</span><span class="p">)</span> <span class="o">==</span> <span class="mi">2</span>
+
+
+<span class="k">def</span> <span class="nf">test_count_8_3</span><span class="p">():</span>
+    <span class="k">assert</span> <span class="n">count_8</span><span class="p">(</span><span class="mi">8818</span><span class="p">)</span> <span class="o">==</span> <span class="mi">4</span>
+
+
+<span class="k">def</span> <span class="nf">test_count_8_4</span><span class="p">():</span>
+    <span class="k">assert</span> <span class="n">count_8</span><span class="p">(</span><span class="mi">8088</span><span class="p">)</span> <span class="o">==</span> <span class="mi">4</span>
+
+
+<span class="k">def</span> <span class="nf">test_count_8_5</span><span class="p">():</span>
+    <span class="k">assert</span> <span class="n">count_8</span><span class="p">(</span><span class="mi">123</span><span class="p">)</span> <span class="o">==</span> <span class="mi">0</span>
+
+
+<span class="k">def</span> <span class="nf">test_count_8_6</span><span class="p">():</span>
+    <span class="k">assert</span> <span class="n">count_8</span><span class="p">(</span><span class="mi">81238</span><span class="p">)</span> <span class="o">==</span> <span class="mi">2</span>
+
+
+<span class="k">def</span> <span class="nf">test_count_8_7</span><span class="p">():</span>
+    <span class="k">assert</span> <span class="n">count_8</span><span class="p">(</span><span class="mi">88788</span><span class="p">)</span> <span class="o">==</span> <span class="mi">6</span>
+
+
+<span class="k">def</span> <span class="nf">test_count_8_8</span><span class="p">():</span>
+    <span class="k">assert</span> <span class="n">count_8</span><span class="p">(</span><span class="mi">8234</span><span class="p">)</span> <span class="o">==</span> <span class="mi">1</span>
+
+
+<span class="k">def</span> <span class="nf">test_count_8_9</span><span class="p">():</span>
+    <span class="k">assert</span> <span class="n">count_8</span><span class="p">(</span><span class="mi">2348</span><span class="p">)</span> <span class="o">==</span> <span class="mi">1</span>
+
+
+<span class="k">def</span> <span class="nf">test_count_8_10</span><span class="p">():</span>
+    <span class="k">assert</span> <span class="n">count_8</span><span class="p">(</span><span class="mi">23884</span><span class="p">)</span> <span class="o">==</span> <span class="mi">3</span>
+
+
+<span class="k">def</span> <span class="nf">test_count_8_11</span><span class="p">():</span>
+    <span class="k">assert</span> <span class="n">count_8</span><span class="p">(</span><span class="mi">0</span><span class="p">)</span> <span class="o">==</span> <span class="mi">0</span>
+
+
+<span class="k">def</span> <span class="nf">test_count_8_12</span><span class="p">():</span>
+    <span class="k">assert</span> <span class="n">count_8</span><span class="p">(</span><span class="mi">1818188</span><span class="p">)</span> <span class="o">==</span> <span class="mi">5</span>
+
+
+<span class="k">def</span> <span class="nf">test_count_8_13</span><span class="p">():</span>
+    <span class="k">assert</span> <span class="n">count_8</span><span class="p">(</span><span class="mi">8818181</span><span class="p">)</span> <span class="o">==</span> <span class="mi">5</span>
+
+
+<span class="k">def</span> <span class="nf">test_count_8_14</span><span class="p">():</span>
+    <span class="k">assert</span> <span class="n">count_8</span><span class="p">(</span><span class="mi">1080</span><span class="p">)</span> <span class="o">==</span> <span class="mi">1</span>
+
+
+<span class="k">def</span> <span class="nf">test_count_8_15</span><span class="p">():</span>
+    <span class="k">assert</span> <span class="n">count_8</span><span class="p">(</span><span class="mi">188</span><span class="p">)</span> <span class="o">==</span> <span class="mi">3</span>
+
+
+<span class="k">def</span> <span class="nf">test_count_8_16</span><span class="p">():</span>
+    <span class="k">assert</span> <span class="n">count_8</span><span class="p">(</span><span class="mi">88888</span><span class="p">)</span> <span class="o">==</span> <span class="mi">9</span>
+
+
+<span class="k">def</span> <span class="nf">test_count_8_17</span><span class="p">():</span>
+    <span class="k">assert</span> <span class="n">count_8</span><span class="p">(</span><span class="mi">9898</span><span class="p">)</span> <span class="o">==</span> <span class="mi">2</span>
+
+
+<span class="k">def</span> <span class="nf">test_count_8_18</span><span class="p">():</span>
+    <span class="k">assert</span> <span class="n">count_8</span><span class="p">(</span><span class="mi">78</span><span class="p">)</span> <span class="o">==</span> <span class="mi">1</span>
+</pre></div>
+</div>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+        <a href="power-n.html" class="btn btn-neutral float-right" title="power_n" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+        <a href="count-7.html" class="btn btn-neutral float-left" title="count_7" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &#169; Copyright 2020, Mr. Gallo.
+
+    </p>
+  </div>
+    
+    
+    
+    Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    
+    provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>
