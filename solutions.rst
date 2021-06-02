@@ -797,6 +797,149 @@ fizz_buzz
 
 Recursion-1
 ^^^^^^^^^^^
+factorial
+*********
+.. code-block:: python
+    :linenos:
+
+    def factorial(n: int) -> int:
+        # base case
+        if n == 0:
+            return 1
+    
+        # recursive step
+        return n * factorial(n - 1)
+
+bunny_ears
+**********
+.. code-block:: python
+    :linenos:
+
+    def bunny_ears(bunnies: int) -> int:
+        # base case
+        if bunnies == 0:
+            return 0
+        
+        # recursive step
+        return 2 + bunny_ears(bunnies - 1)
+
+fibonacci
+*********
+.. code-block:: python
+    :linenos:
+
+    def fibonacci(n: int) -> int:
+        if n == 0:
+            return 0
+        elif n == 1:
+            return 1
+        
+        return fibonacci(n - 1) + fibonacci(n - 2)
+
+bunny_ears_2
+************
+.. code-block:: python
+    :linenos:
+
+    def bunny_ears_2(bunnies: int) -> int:
+        if bunnies == 0:
+            return 0
+        
+        if bunnies % 2 == 0:  # even numbered bunnies
+            return 3 + bunny_ears_2(bunnies - 1)
+        else:  # odd numbered bunnies
+            return 2 + bunny_ears_2(bunnies - 1)
+
+triangle
+********
+.. code-block:: python
+    :linenos:
+
+    def triangle(rows: int) -> int:
+        if rows == 0:
+            return 0
+    
+        return rows + triangle(rows - 1)
+
+sum_digits
+**********
+.. code-block:: python
+    :linenos:
+
+    def sum_digits(n: int) -> int:
+        if n == 0:
+            return 0
+        
+        last_digit = n % 10
+        the_rest = n // 10
+    
+        return last_digit + sum_digits(the_rest)
+
+count_7
+*******
+.. code-block:: python
+    :linenos:
+
+    def count_7(n: int) -> int:
+        if n == 0:
+            return 0
+        
+        last_digit = n % 10
+        remaining_digits = n // 10
+    
+        if last_digit == 7:
+            return 1 + count_7(remaining_digits)
+        else:
+            return 0 + count_7(remaining_digits)
+
+count_8
+*******
+.. code-block:: python
+    :linenos:
+
+    def count_8(n: int) -> int:
+        if n == 0:
+            return 0
+    
+        last_digit = n % 10
+        remaining = n // 10
+        second_last_digit = remaining % 10
+    
+        if last_digit != 8:
+            return 0 + count_8(remaining)
+        elif second_last_digit == 8:
+            return 2 + count_8(remaining)
+        else:
+            return 1 + count_8(remaining)
+
+power_n
+*******
+.. code-block:: python
+    :linenos:
+
+    def power_n(base: int, n: int) -> int:
+        if n == 0:
+            return 1
+    
+        return base * power_n(base, n - 1)
+
+count_x
+*******
+.. code-block:: python
+    :linenos:
+
+    def count_x(string: str) -> int:
+        if string == '':
+            return 0
+        
+        first_char = string[0]
+        the_rest = string[1:]
+    
+        if first_char == 'x':
+            return 1 + count_x(the_rest)
+        
+        return 0 + count_x(the_rest)
+
 
 
 Codingbat (Input/Output)

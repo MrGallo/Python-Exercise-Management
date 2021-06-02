@@ -4,7 +4,7 @@
 
 
 
-Given <b>base</b> and <b>n</b> that are both 1 or more, compute recursively (no loops) the value of base to the n power, so power_n(3, 2) is 9 (3 squared).
+Given `base` and `n` that are both `1` or more, compute recursively (no loops) the value of base to the n power, so `power_n(3, 2)` is `9` (`3` squared).
 
 ```
 power_n(3, 1) -> 3
