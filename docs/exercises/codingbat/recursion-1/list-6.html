@@ -7,7 +7,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   
-  <title>factorial &mdash; Python Exercises  documentation</title>
+  <title>list_6 &mdash; Python Exercises  documentation</title>
   
 
   
@@ -41,8 +41,8 @@
     
     <link rel="index" title="Index" href="../../../genindex.html" />
     <link rel="search" title="Search" href="../../../search.html" />
-    <link rel="next" title="bunny_ears" href="bunny-ears.html" />
-    <link rel="prev" title="Recursion-1" href="index.html" /> 
+    <link rel="next" title="array_11" href="array-11.html" />
+    <link rel="prev" title="no_x" href="no-x.html" /> 
 </head>
 
 <body class="wy-body-for-nav">
@@ -97,11 +97,7 @@
 <li class="toctree-l2"><a class="reference internal" href="../list-1/index.html">List-1</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../list-2/index.html">List-2</a></li>
 <li class="toctree-l2 current"><a class="reference internal" href="index.html">Recursion-1</a><ul class="current">
-<li class="toctree-l3 current"><a class="current reference internal" href="#">factorial</a><ul>
-<li class="toctree-l4"><a class="reference internal" href="#starter-code">Starter Code</a></li>
-<li class="toctree-l4"><a class="reference internal" href="#tests">Tests</a></li>
-</ul>
-</li>
+<li class="toctree-l3"><a class="reference internal" href="factorial.html">factorial</a></li>
 <li class="toctree-l3"><a class="reference internal" href="bunny-ears.html">bunny_ears</a></li>
 <li class="toctree-l3"><a class="reference internal" href="fibonacci.html">fibonacci</a></li>
 <li class="toctree-l3"><a class="reference internal" href="bunny-ears-2.html">bunny_ears_2</a></li>
@@ -115,7 +111,11 @@
 <li class="toctree-l3"><a class="reference internal" href="change-xy.html">change_xy</a></li>
 <li class="toctree-l3"><a class="reference internal" href="change-pi.html">change_pi</a></li>
 <li class="toctree-l3"><a class="reference internal" href="no-x.html">no_x</a></li>
-<li class="toctree-l3"><a class="reference internal" href="list-6.html">list_6</a></li>
+<li class="toctree-l3 current"><a class="current reference internal" href="#">list_6</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#starter-code">Starter Code</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#tests">Tests</a></li>
+</ul>
+</li>
 <li class="toctree-l3"><a class="reference internal" href="array-11.html">array_11</a></li>
 <li class="toctree-l3"><a class="reference internal" href="array-220.html">array_220</a></li>
 <li class="toctree-l3"><a class="reference internal" href="all-star.html">all_star</a></li>
@@ -192,13 +192,13 @@
         
           <li><a href="index.html">Recursion-1</a> &raquo;</li>
         
-      <li>factorial</li>
+      <li>list_6</li>
     
     
       <li class="wy-breadcrumbs-aside">
         
           
-            <a href="../../../_sources/exercises/codingbat/recursion-1/factorial.md.txt" rel="nofollow"> View page source</a>
+            <a href="../../../_sources/exercises/codingbat/recursion-1/list-6.md.txt" rel="nofollow"> View page source</a>
           
         
       </li>
@@ -211,65 +211,64 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
             
-  <div class="section" id="factorial">
-<h1>factorial<a class="headerlink" href="#factorial" title="Permalink to this headline">¶</a></h1>
-<p>Given n of 1 or more, return the factorial of n, which is n * (n-1) * (n-2) … 1. Compute the result recursively (without loops).</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">factorial</span><span class="p">(</span><span class="mi">1</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="mi">1</span>
-<span class="n">factorial</span><span class="p">(</span><span class="mi">2</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="mi">2</span>
-<span class="n">factorial</span><span class="p">(</span><span class="mi">3</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="mi">6</span>
+  <div class="section" id="list-6">
+<h1>list_6<a class="headerlink" href="#list-6" title="Permalink to this headline">¶</a></h1>
+<p>Given an list of ints, compute recursively if the list contains a <code class="docutils literal notranslate"><span class="pre">6</span></code>. We’ll use the convention of considering only the part of the list that begins at the given index. In this way, a recursive call can pass <code class="docutils literal notranslate"><span class="pre">index</span> <span class="pre">+</span> <span class="pre">1</span></code> to move down the list. The initial call will pass in index as <code class="docutils literal notranslate"><span class="pre">0</span></code>.</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">list_6</span><span class="p">([</span><span class="mi">1</span><span class="p">,</span> <span class="mi">6</span><span class="p">,</span> <span class="mi">4</span><span class="p">],</span> <span class="mi">0</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">true</span>
+<span class="n">list_6</span><span class="p">([</span><span class="mi">1</span><span class="p">,</span> <span class="mi">4</span><span class="p">],</span> <span class="mi">0</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">false</span>
+<span class="n">list_6</span><span class="p">([</span><span class="mi">6</span><span class="p">],</span> <span class="mi">0</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">true</span>
 </pre></div>
 </div>
-<p>This exercise was taken from <a class="reference external" href="https://codingbat.com/prob/p154669">codingbat.com</a> and has been adapted for the Python language. There are many great programming exercises there, but the majority are created for Java.</p>
+<p>This exercise was taken from <a class="reference external" href="https://codingbat.com/prob/p108997">codingbat.com</a> and has been adapted for the Python language. There are many great programming exercises there, but the majority are created for Java.</p>
 <div class="section" id="starter-code">
 <h2>Starter Code<a class="headerlink" href="#starter-code" title="Permalink to this headline">¶</a></h2>
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">factorial</span><span class="p">(</span><span class="n">n</span><span class="p">:</span> <span class="nb">int</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">int</span><span class="p">:</span>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">typing</span> <span class="kn">import</span> <span class="n">List</span>
+
+
+<span class="k">def</span> <span class="nf">list_6</span><span class="p">(</span><span class="n">nums</span><span class="p">:</span> <span class="n">List</span><span class="p">[</span><span class="nb">int</span><span class="p">],</span> <span class="n">index</span><span class="p">:</span> <span class="nb">int</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">bool</span><span class="p">:</span>
     <span class="k">pass</span>
 
 
-<span class="n">result</span> <span class="o">=</span> <span class="n">factorial</span><span class="p">(</span><span class="mi">1</span><span class="p">)</span>
+<span class="n">result</span> <span class="o">=</span> <span class="n">list_6</span><span class="p">([</span><span class="mi">1</span><span class="p">,</span> <span class="mi">6</span><span class="p">,</span> <span class="mi">4</span><span class="p">],</span> <span class="mi">0</span><span class="p">)</span>
 <span class="nb">print</span><span class="p">(</span><span class="n">result</span><span class="p">)</span>
 </pre></div>
 </div>
 </div>
 <div class="section" id="tests">
 <h2>Tests<a class="headerlink" href="#tests" title="Permalink to this headline">¶</a></h2>
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">main</span> <span class="kn">import</span> <span class="n">factorial</span>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">main</span> <span class="kn">import</span> <span class="n">list_6</span>
 
 
-<span class="k">def</span> <span class="nf">test_factorial_1</span><span class="p">():</span>
-    <span class="k">assert</span> <span class="n">factorial</span><span class="p">(</span><span class="mi">1</span><span class="p">)</span> <span class="o">==</span> <span class="mi">1</span>
+<span class="k">def</span> <span class="nf">test_list_6_1</span><span class="p">():</span>
+    <span class="k">assert</span> <span class="n">list_6</span><span class="p">([</span><span class="mi">1</span><span class="p">,</span> <span class="mi">6</span><span class="p">,</span> <span class="mi">4</span><span class="p">],</span> <span class="mi">0</span><span class="p">)</span> <span class="o">==</span> <span class="kc">True</span>
 
 
-<span class="k">def</span> <span class="nf">test_factorial_2</span><span class="p">():</span>
-    <span class="k">assert</span> <span class="n">factorial</span><span class="p">(</span><span class="mi">2</span><span class="p">)</span> <span class="o">==</span> <span class="mi">2</span>
+<span class="k">def</span> <span class="nf">test_list_6_2</span><span class="p">():</span>
+    <span class="k">assert</span> <span class="n">list_6</span><span class="p">([</span><span class="mi">1</span><span class="p">,</span> <span class="mi">4</span><span class="p">],</span> <span class="mi">0</span><span class="p">)</span> <span class="o">==</span> <span class="kc">False</span>
 
 
-<span class="k">def</span> <span class="nf">test_factorial_3</span><span class="p">():</span>
-    <span class="k">assert</span> <span class="n">factorial</span><span class="p">(</span><span class="mi">3</span><span class="p">)</span> <span class="o">==</span> <span class="mi">6</span>
+<span class="k">def</span> <span class="nf">test_list_6_3</span><span class="p">():</span>
+    <span class="k">assert</span> <span class="n">list_6</span><span class="p">([</span><span class="mi">6</span><span class="p">],</span> <span class="mi">0</span><span class="p">)</span> <span class="o">==</span> <span class="kc">True</span>
 
 
-<span class="k">def</span> <span class="nf">test_factorial_4</span><span class="p">():</span>
-    <span class="k">assert</span> <span class="n">factorial</span><span class="p">(</span><span class="mi">4</span><span class="p">)</span> <span class="o">==</span> <span class="mi">24</span>
+<span class="k">def</span> <span class="nf">test_list_6_4</span><span class="p">():</span>
+    <span class="k">assert</span> <span class="n">list_6</span><span class="p">([],</span> <span class="mi">0</span><span class="p">)</span> <span class="o">==</span> <span class="kc">False</span>
 
 
-<span class="k">def</span> <span class="nf">test_factorial_5</span><span class="p">():</span>
-    <span class="k">assert</span> <span class="n">factorial</span><span class="p">(</span><span class="mi">5</span><span class="p">)</span> <span class="o">==</span> <span class="mi">120</span>
+<span class="k">def</span> <span class="nf">test_list_6_5</span><span class="p">():</span>
+    <span class="k">assert</span> <span class="n">list_6</span><span class="p">([</span><span class="mi">6</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">2</span><span class="p">],</span> <span class="mi">0</span><span class="p">)</span> <span class="o">==</span> <span class="kc">True</span>
 
 
-<span class="k">def</span> <span class="nf">test_factorial_6</span><span class="p">():</span>
-    <span class="k">assert</span> <span class="n">factorial</span><span class="p">(</span><span class="mi">6</span><span class="p">)</span> <span class="o">==</span> <span class="mi">720</span>
+<span class="k">def</span> <span class="nf">test_list_6_6</span><span class="p">():</span>
+    <span class="k">assert</span> <span class="n">list_6</span><span class="p">([</span><span class="mi">2</span><span class="p">,</span> <span class="mi">5</span><span class="p">],</span> <span class="mi">0</span><span class="p">)</span> <span class="o">==</span> <span class="kc">False</span>
 
 
-<span class="k">def</span> <span class="nf">test_factorial_7</span><span class="p">():</span>
-    <span class="k">assert</span> <span class="n">factorial</span><span class="p">(</span><span class="mi">7</span><span class="p">)</span> <span class="o">==</span> <span class="mi">5040</span>
+<span class="k">def</span> <span class="nf">test_list_6_7</span><span class="p">():</span>
+    <span class="k">assert</span> <span class="n">list_6</span><span class="p">([</span><span class="mi">1</span><span class="p">,</span> <span class="mi">9</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="mi">6</span><span class="p">,</span> <span class="mi">6</span><span class="p">],</span> <span class="mi">0</span><span class="p">)</span> <span class="o">==</span> <span class="kc">True</span>
 
 
-<span class="k">def</span> <span class="nf">test_factorial_8</span><span class="p">():</span>
-    <span class="k">assert</span> <span class="n">factorial</span><span class="p">(</span><span class="mi">8</span><span class="p">)</span> <span class="o">==</span> <span class="mi">40320</span>
-
-
-<span class="k">def</span> <span class="nf">test_factorial_9</span><span class="p">():</span>
-    <span class="k">assert</span> <span class="n">factorial</span><span class="p">(</span><span class="mi">12</span><span class="p">)</span> <span class="o">==</span> <span class="mi">479001600</span>
+<span class="k">def</span> <span class="nf">test_list_6_8</span><span class="p">():</span>
+    <span class="k">assert</span> <span class="n">list_6</span><span class="p">([</span><span class="mi">2</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="mi">6</span><span class="p">],</span> <span class="mi">0</span><span class="p">)</span> <span class="o">==</span> <span class="kc">True</span>
 </pre></div>
 </div>
 </div>
@@ -281,8 +280,8 @@
           </div>
           <footer>
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
-        <a href="bunny-ears.html" class="btn btn-neutral float-right" title="bunny_ears" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
-        <a href="index.html" class="btn btn-neutral float-left" title="Recursion-1" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="array-11.html" class="btn btn-neutral float-right" title="array_11" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+        <a href="no-x.html" class="btn btn-neutral float-left" title="no_x" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
     </div>
 
   <hr/>

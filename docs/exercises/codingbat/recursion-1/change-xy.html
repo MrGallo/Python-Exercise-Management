@@ -115,7 +115,7 @@
 </li>
 <li class="toctree-l3"><a class="reference internal" href="change-pi.html">change_pi</a></li>
 <li class="toctree-l3"><a class="reference internal" href="no-x.html">no_x</a></li>
-<li class="toctree-l3"><a class="reference internal" href="array-6.html">array_6</a></li>
+<li class="toctree-l3"><a class="reference internal" href="list-6.html">list_6</a></li>
 <li class="toctree-l3"><a class="reference internal" href="array-11.html">array_11</a></li>
 <li class="toctree-l3"><a class="reference internal" href="array-220.html">array_220</a></li>
 <li class="toctree-l3"><a class="reference internal" href="all-star.html">all_star</a></li>
@@ -213,7 +213,7 @@
             
   <div class="section" id="change-xy">
 <h1>change_xy<a class="headerlink" href="#change-xy" title="Permalink to this headline">¶</a></h1>
-<p>Given a string, compute recursively (no loops) a new string where all the lowercase ‘x’ chars have been changed to ‘y’ chars.</p>
+<p>Given a string, compute recursively (no loops) a new string where all the lowercase <code class="docutils literal notranslate"><span class="pre">'x'</span></code> chars have been changed to <code class="docutils literal notranslate"><span class="pre">'y'</span></code> chars.</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">change_xy</span><span class="p">(</span><span class="s2">&quot;codex&quot;</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="s2">&quot;codey&quot;</span>
 <span class="n">change_xy</span><span class="p">(</span><span class="s2">&quot;xxhixx&quot;</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="s2">&quot;yyhiyy&quot;</span>
 <span class="n">change_xy</span><span class="p">(</span><span class="s2">&quot;xhixhix&quot;</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="s2">&quot;yhiyhiy&quot;</span>
@@ -274,6 +274,10 @@
 
 <span class="k">def</span> <span class="nf">test_change_xy_10</span><span class="p">():</span>
     <span class="k">assert</span> <span class="n">change_xy</span><span class="p">(</span><span class="s1">&#39;hihi&#39;</span><span class="p">)</span> <span class="o">==</span> <span class="s1">&#39;hihi&#39;</span>
+
+
+<span class="k">def</span> <span class="nf">test_change_xy_11</span><span class="p">():</span>
+    <span class="k">assert</span> <span class="n">change_xy</span><span class="p">(</span><span class="s1">&#39;XxXx&#39;</span><span class="p">)</span> <span class="o">==</span> <span class="s1">&#39;XyXy&#39;</span>
 </pre></div>
 </div>
 </div>

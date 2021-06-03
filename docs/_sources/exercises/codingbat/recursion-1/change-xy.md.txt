@@ -4,7 +4,7 @@
 
 
 
-Given a string, compute recursively (no loops) a new string where all the lowercase 'x' chars have been changed to 'y' chars.
+Given a string, compute recursively (no loops) a new string where all the lowercase `'x'` chars have been changed to `'y'` chars.
 
 ```
 change_xy("codex") -> "codey"
@@ -67,4 +67,8 @@ def test_change_xy_9():
 
 def test_change_xy_10():
     assert change_xy('hihi') == 'hihi'
+
+
+def test_change_xy_11():
+    assert change_xy('XxXx') == 'XyXy'
 ```

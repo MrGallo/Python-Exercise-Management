@@ -940,6 +940,79 @@ count_x
         
         return 0 + count_x(the_rest)
 
+count_hi
+********
+.. code-block:: python
+    :linenos:
+
+    def count_hi(string: str) -> int:
+        if string == "":
+            return 0
+    
+        if string[:2] == "hi":
+            return 1 + count_hi(string[2:])
+    
+        return 0 + count_hi(string[1:])
+
+change_xy
+*********
+.. code-block:: python
+    :linenos:
+
+    def change_xy(string: str) -> str:
+        if string == "":
+            return ""
+        
+        first_char = string[0]
+        remaining = string[1:]
+    
+        if first_char == 'x':
+            return 'y' + change_xy(remaining)
+        
+        return first_char + change_xy(remaining)
+
+change_pi
+*********
+.. code-block:: python
+    :linenos:
+
+    def change_pi(string: str) -> str:
+        if string == "":
+            return ""
+        
+        if string[:2] == 'pi':
+            return "3.14" + change_pi(string[2:])
+        
+        return string[0] + change_pi(string[1:])
+
+no_x
+****
+.. code-block:: python
+    :linenos:
+
+    def no_x(string: str) -> str:
+        if string == "":
+            return ""
+        
+        if string[0] == "x":
+            return no_x(string[1:])
+    
+        return string[0] + no_x(string[1:])
+
+list_6
+******
+.. code-block:: python
+    :linenos:
+
+    def list_6(nums: List[int], index: int) -> bool:
+        if index >= len(nums):
+            return False
+        
+        if nums[index] == 6:
+            return True
+        
+        return list_6(nums, index + 1)
+
 
 
 Codingbat (Input/Output)

@@ -4,7 +4,7 @@
 
 
 
-Given a string, compute recursively (no loops) a new string where all appearances of "pi" have been replaced by "3.14".
+Given a string, compute recursively (no loops) a new string where all appearances of "pi" have been replaced by `"3.14"`.
 
 ```
 change_pi("xpix") -> "x3.14x"
@@ -67,4 +67,16 @@ def test_change_pi_9():
 
 def test_change_pi_10():
     assert change_pi('xyzzy') == 'xyzzy'
+
+
+def test_change_pi_11():
+    assert change_pi('Pixx') == 'Pixx'
+
+
+def test_change_pi_12():
+    assert change_pi('pIxx') == 'pIxx'
+
+
+def test_change_pi_13():
+    assert change_pi('PIxx') == 'PIxx'
 ```

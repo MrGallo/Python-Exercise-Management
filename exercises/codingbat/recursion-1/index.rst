@@ -18,7 +18,7 @@ Recursion-1
     change-xy
     change-pi
     no-x
-    array-6
+    list-6
     array-11
     array-220
     all-star

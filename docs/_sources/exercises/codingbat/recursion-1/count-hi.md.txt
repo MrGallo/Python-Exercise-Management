@@ -4,7 +4,7 @@
 
 
 
-Given a string, compute recursively (no loops) the number of times lowercase "hi" appears in the string.
+Given a string, compute recursively (no loops) the number of times lowercase `"hi"` appears in the string.
 
 ```
 count_hi("xxhixx") -> 1
