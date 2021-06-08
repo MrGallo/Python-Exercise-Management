@@ -189,13 +189,16 @@
   <div class="section" id="enemy-ship-distance">
 <h1>Enemy Ship Distance<a class="headerlink" href="#enemy-ship-distance" title="Permalink to this headline">¶</a></h1>
 <p>You are the sensors officer on a spaceship in enemy territory. You notice an incoming enemy fleet coming to attack you. Your commander is overwhelmed with which enemy vessel to attack first. You decide it might be helpful to attack the closest enemies first, so naturally, you decide to create a bubble-sort algorithm so you can hand off the sorted list to the weapons officer. All the enemy ships have an <code class="docutils literal notranslate"><span class="pre">x</span></code>, <code class="docutils literal notranslate"><span class="pre">y</span></code>, and <code class="docutils literal notranslate"><span class="pre">z</span></code> comonent, which is the distance from them to your current location. For some strange reason, they are all converging from the same plane making the <code class="docutils literal notranslate"><span class="pre">z</span></code> component irrevelant. (It’s almost like they exist in a top-down space-shooter game, weird). Create a function that will sort a list of enemies based on their relative distances, their <code class="docutils literal notranslate"><span class="pre">(x,</span> <span class="pre">y)</span></code> co-ordinates. The function will take a list of <code class="docutils literal notranslate"><span class="pre">Ship</span></code> objects and return a new list sorted.</p>
+<p>For the <code class="docutils literal notranslate"><span class="pre">Ship</span></code> class, create a method called <code class="docutils literal notranslate"><span class="pre">get_xy_distance</span></code> to help you easily calculate the distance. <strong>Hint</strong> Use pythagorean theorem.</p>
 <div class="section" id="starter-code">
 <h2>Starter Code<a class="headerlink" href="#starter-code" title="Permalink to this headline">¶</a></h2>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">typing</span> <span class="kn">import</span> <span class="n">List</span>
 
 
 <span class="k">class</span> <span class="nc">Ship</span><span class="p">:</span>
-    <span class="k">pass</span>
+    <span class="o">...</span>
+    <span class="k">def</span> <span class="nf">get_xy_distance</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">float</span><span class="p">:</span>
+        <span class="k">pass</span>
 
 
 <span class="k">def</span> <span class="nf">sort_by_distance</span><span class="p">(</span><span class="n">ships</span><span class="p">:</span> <span class="n">List</span><span class="p">[</span><span class="n">Ship</span><span class="p">])</span> <span class="o">-&gt;</span> <span class="n">List</span><span class="p">[</span><span class="n">Ship</span><span class="p">]:</span>

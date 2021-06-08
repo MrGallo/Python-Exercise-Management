@@ -6,13 +6,17 @@
 
 You are the sensors officer on a spaceship in enemy territory. You notice an incoming enemy fleet coming to attack you. Your commander is overwhelmed with which enemy vessel to attack first. You decide it might be helpful to attack the closest enemies first, so naturally, you decide to create a bubble-sort algorithm so you can hand off the sorted list to the weapons officer. All the enemy ships have an `x`, `y`, and `z` comonent, which is the distance from them to your current location. For some strange reason, they are all converging from the same plane making the `z` component irrevelant. (It's almost like they exist in a top-down space-shooter game, weird). Create a function that will sort a list of enemies based on their relative distances, their `(x, y)` co-ordinates. The function will take a list of `Ship` objects and return a new list sorted.
 
+For the `Ship` class, create a method called `get_xy_distance` to help you easily calculate the distance. **Hint** Use pythagorean theorem.
+
 ## Starter Code
 ```python
 from typing import List
 
 
 class Ship:
-    pass
+    ...
+    def get_xy_distance(self) -> float:
+        pass
 
 
 def sort_by_distance(ships: List[Ship]) -> List[Ship]:
