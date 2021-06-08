@@ -2338,4 +2338,217 @@ Neutralization Pt. 3
             return filtered
 
 
+Linear Search
+^^^^^^^^^^^^^
+Get Index
+*********
+.. code-block:: python
+    :linenos:
+
+    def get_index(numbers: List[int], target: int) -> int:
+        """Get the index of the first occurance of the specified target value.
+        
+        Args:
+            numbers: the list to search.
+            target: the value to search for.
+        
+        Returns:
+            The index of the found element. -1 if not found.
+    
+        Note: do not use the .index or .find method.
+        """
+        for i, num in enumerate(numbers):
+            if num == target:
+                return i
+    
+        return -1
+
+
+Bubble Sort Space Wars
+^^^^^^^^^^^^^^^^^^^^^^
+Enemy Ship Distance
+*******************
+.. code-block:: python
+    :linenos:
+
+    from typing import List
+    import math
+    
+    
+    class Ship:
+        def __init__(self, x: int, y: int, z: int):
+            self.x = x
+            self.y = y
+            self.z = z  # irrelevant (but part of spec.)
+        
+        def get_xy_distance(self) -> float:
+            # pythagorean theorem
+            a = self.x
+            b = self.y
+            c = math.sqrt(a**2 + b**2)
+            return c
+    
+    
+    def sort_by_distance(enemies: List[Ship]) -> List[Ship]:
+        # Bubble sort
+        for _ in range(len(enemies) - 1):
+            i = 0
+            while i < len(enemies) - 1:
+                enemy_a = enemies[i]
+                enemy_b = enemies[i+1]
+    
+                if enemy_a.get_xy_distance() > enemy_b.get_xy_distance():
+                    enemies[i] = enemy_b
+                    enemies[i + 1] = enemy_a
+                i += 1
+    
+        return enemies
+
+Threat Level
+************
+.. code-block:: python
+    :linenos:
+
+    from typing import List
+    import math
+    
+    
+    class Ship:
+        def __init__(self, x: int, y: int, z: int, firepower: int = 0):
+            self.x = x
+            self.y = y
+            self.z = z  # irrelevant (but part of spec.)
+            self.firepower = firepower
+        
+        def get_xy_distance(self) -> float:
+            # pythagorean theorem
+            a = self.x
+            b = self.y
+            c = math.sqrt(a**2 + b**2)
+            return c
+        
+        def calc_threat_level(self) -> float:
+            try:
+                return self.firepower * 3 / self.get_xy_distance()
+            except ZeroDivisionError:
+                return self.firepower * 3
+    
+    
+    def sort_by_threat(enemies: List[Ship]) -> List[Ship]:
+        # Bubble sort
+        for _ in range(len(enemies) - 1):
+            i = 0
+            while i < len(enemies) - 1:
+                enemy_a = enemies[i]
+                enemy_b = enemies[i+1]
+    
+                if enemy_a.calc_threat_level() < enemy_b.calc_threat_level():
+                    enemies[i] = enemy_b
+                    enemies[i+1] = enemy_a
+                i += 1
+    
+        return enemies
+
+Within Range
+************
+.. code-block:: python
+    :linenos:
+
+    from typing import List
+    import math
+    
+    
+    class Ship:
+        def __init__(self, x: int, y: int, z: int, firepower: int = 0):
+            self.x = x
+            self.y = y
+            self.z = z  # irrelevant (but part of spec.)
+            self.firepower = firepower
+        
+        def get_xy_distance(self) -> float:
+            # pythagorean theorem
+            a = self.x
+            b = self.y
+            c = math.sqrt(a**2 + b**2)
+            return c
+        
+        def calc_threat_level(self) -> float:
+            try:
+                return self.firepower * 3 / self.get_xy_distance()
+            except ZeroDivisionError:
+                return self.firepower * 3
+    
+    
+    def filter_by_distance(ships: List[Ship], distance: int) -> List[Ship]:
+        filtered = []
+        for s in ships:
+            if s.get_xy_distance() <= distance:
+                filtered.append(s) 
+        return filtered
+
+Highest Threat Within Range
+***************************
+.. code-block:: python
+    :linenos:
+
+    from typing import List
+    import math
+    
+    
+    class Ship:
+        def __init__(self, x: int, y: int, z: int, firepower: int = 0):
+            self.x = x
+            self.y = y
+            self.z = z  # irrelevant (but part of spec.)
+            self.firepower = firepower
+        
+        def get_xy_distance(self) -> float:
+            # pythagorean theorem
+            a = self.x
+            b = self.y
+            c = math.sqrt(a**2 + b**2)
+            return c
+        
+        def calc_threat_level(self) -> float:
+            try:
+                return self.firepower * 3 / self.get_xy_distance()
+            except ZeroDivisionError:
+                return self.firepower * 3
+    
+    
+    def sort_by_threat(enemies: List[Ship]) -> List[Ship]:
+        # BUBBLE!!!!!
+        for _ in range(len(enemies) - 1):
+            i = 0
+            while i < len(enemies) - 1:
+                enemy_a = enemies[i]
+                enemy_b = enemies[i+1]
+    
+                if enemy_a.calc_threat_level() < enemy_b.calc_threat_level():
+                    enemies[i] = enemy_b
+                    enemies[i+1] = enemy_a
+                i += 1
+    
+        return enemies
+    
+    
+    def filter_by_distance(ships: List[Ship], distance: int) -> List[Ship]:
+        filtered = []
+        for s in ships:
+            if s.get_xy_distance() <= distance:
+                filtered.append(s) 
+        return filtered
+    
+    
+    
+    def sort_by_high_threat_within_weapons_range(enemies: List[Ship], weapons_range: int) -> List[Ship]:
+        # first filter by distance.
+        # then sort by threat level.
+    
+        within_range = filter_by_distance(enemies, weapons_range)
+        within_range_by_highest_threat = sort_by_threat(within_range)
+    
+        return within_range_by_highest_threat  # cross fingers. BOOOM!!
+
+
 

@@ -9,3 +9,5 @@ Functional Python
     dictionaries/index
     file-r-w/index
     classes/index
+    linear-search/index
+    bubble-sort-space-wars/index
