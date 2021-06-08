@@ -900,17 +900,18 @@ count_8
     def count_8(n: int) -> int:
         if n == 0:
             return 0
+        
+        right = n % 10
+        leftover = n // 10
+        right_two = n % 100
     
-        last_digit = n % 10
-        remaining = n // 10
-        second_last_digit = remaining % 10
     
-        if last_digit != 8:
-            return 0 + count_8(remaining)
-        elif second_last_digit == 8:
-            return 2 + count_8(remaining)
+        if right_two == 88:
+            return 2 + count_8(leftover)
+        elif right == 8:
+            return 1 + count_8(leftover)
         else:
-            return 1 + count_8(remaining)
+            return 0 + count_8(leftover)
 
 power_n
 *******
@@ -1012,6 +1013,23 @@ list_6
             return True
         
         return list_6(nums, index + 1)
+
+nest_paren
+**********
+.. code-block:: python
+    :linenos:
+
+    def nest_paren(string: str) -> bool:
+        if string == "":
+            return True
+        
+        first = string[0]
+        last = string[-1]
+    
+        if first == "(" and last == ")":
+            return nest_paren(string[1:-1])
+    
+        return False
 
 
 
