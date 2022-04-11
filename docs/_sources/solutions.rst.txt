@@ -1292,6 +1292,9 @@ xyz_middle
         print(False)
 
 
+List-1
+^^^^^^
+
 
 Dynamic Programming
 -------------------
