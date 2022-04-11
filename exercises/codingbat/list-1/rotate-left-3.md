@@ -4,7 +4,7 @@
 
 
 
-Given an list of ints length 3, return an list with the elements "rotated left" so {1, 2, 3} yields {2, 3, 1}.
+Given a list of ints length 3, return a list with the elements "rotated left" so {1, 2, 3} yields {2, 3, 1}.
 
 ```
 rotate_left_3([1, 2, 3]) -> [2, 3, 1]

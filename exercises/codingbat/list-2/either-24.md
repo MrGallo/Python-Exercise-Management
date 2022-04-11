@@ -4,7 +4,7 @@
 
 
 
-Given an list of ints, return true if the list contains a 2 next to a 2 or a 4 next to a 4, but not both.
+Given a list of ints, return true if the list contains a 2 next to a 2 or a 4 next to a 4, but not both.
 
 ```
 either_24([1, 2, 2]) -> true

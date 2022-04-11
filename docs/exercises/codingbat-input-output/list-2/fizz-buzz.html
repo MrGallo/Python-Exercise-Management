@@ -1,0 +1,425 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" />
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  
+  <title>fizz_buzz &mdash; Python Exercises  documentation</title>
+  
+
+  
+  <link rel="stylesheet" href="../../../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../../../_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="../../../_static/copybutton.css" type="text/css" />
+
+  
+  
+
+  
+  
+
+  
+
+  
+  <!--[if lt IE 9]>
+    <script src="../../../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../../../" src="../../../_static/documentation_options.js"></script>
+        <script src="../../../_static/jquery.js"></script>
+        <script src="../../../_static/underscore.js"></script>
+        <script src="../../../_static/doctools.js"></script>
+        <script src="../../../_static/clipboard.min.js"></script>
+        <script src="../../../_static/copybutton.js"></script>
+    
+    <script type="text/javascript" src="../../../_static/js/theme.js"></script>
+
+    
+    <link rel="index" title="Index" href="../../../genindex.html" />
+    <link rel="search" title="Search" href="../../../search.html" />
+    <link rel="next" title="Dynamic Programming" href="../../dynamic-programming/index.html" />
+    <link rel="prev" title="even_odd" href="even-odd.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="../../../index.html" class="icon icon-home"> Python Exercises
+          
+
+          
+          </a>
+
+          
+            
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../../fundamentals/index.html">Fundamentals</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../practical-programming/index.html">Practical Programming</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../codingbat/index.html">Codingbat</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="../index.html">Codingbat (Input/Output)</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="../warmup-1/index.html">Warmup-1</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../string-1/index.html">String-1</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../string-2/index.html">String-2</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../list-1/index.html">List-1</a></li>
+<li class="toctree-l2 current"><a class="reference internal" href="index.html">List-2</a><ul class="current">
+<li class="toctree-l3"><a class="reference internal" href="count-evens.html">count_evens</a></li>
+<li class="toctree-l3"><a class="reference internal" href="big-diff.html">big_diff</a></li>
+<li class="toctree-l3"><a class="reference internal" href="centered-average.html">centered_average</a></li>
+<li class="toctree-l3"><a class="reference internal" href="sum-13.html">sum_13</a></li>
+<li class="toctree-l3"><a class="reference internal" href="sum-67.html">sum_67</a></li>
+<li class="toctree-l3"><a class="reference internal" href="has-22.html">has_22</a></li>
+<li class="toctree-l3"><a class="reference internal" href="lucky-13.html">lucky_13</a></li>
+<li class="toctree-l3"><a class="reference internal" href="sum-28.html">sum_28</a></li>
+<li class="toctree-l3"><a class="reference internal" href="more-14.html">more_14</a></li>
+<li class="toctree-l3"><a class="reference internal" href="fizz-array.html">fizz_array</a></li>
+<li class="toctree-l3"><a class="reference internal" href="only-14.html">only_14</a></li>
+<li class="toctree-l3"><a class="reference internal" href="fizz-array-2.html">fizz_array_2</a></li>
+<li class="toctree-l3"><a class="reference internal" href="no-14.html">no_14</a></li>
+<li class="toctree-l3"><a class="reference internal" href="is-everywhere.html">is_everywhere</a></li>
+<li class="toctree-l3"><a class="reference internal" href="either-24.html">either_24</a></li>
+<li class="toctree-l3"><a class="reference internal" href="match-up.html">match_up</a></li>
+<li class="toctree-l3"><a class="reference internal" href="has-77.html">has_77</a></li>
+<li class="toctree-l3"><a class="reference internal" href="has-12.html">has_12</a></li>
+<li class="toctree-l3"><a class="reference internal" href="mod-three.html">mod_three</a></li>
+<li class="toctree-l3"><a class="reference internal" href="have-three.html">have_three</a></li>
+<li class="toctree-l3"><a class="reference internal" href="two-two.html">two_two</a></li>
+<li class="toctree-l3"><a class="reference internal" href="same-ends.html">same_ends</a></li>
+<li class="toctree-l3"><a class="reference internal" href="triple-up.html">triple_up</a></li>
+<li class="toctree-l3"><a class="reference internal" href="fizz-array-3.html">fizz_array_3</a></li>
+<li class="toctree-l3"><a class="reference internal" href="shift-left.html">shift_left</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ten-run.html">ten_run</a></li>
+<li class="toctree-l3"><a class="reference internal" href="pre-4.html">pre_4</a></li>
+<li class="toctree-l3"><a class="reference internal" href="post-4.html">post_4</a></li>
+<li class="toctree-l3"><a class="reference internal" href="not-alone.html">not_alone</a></li>
+<li class="toctree-l3"><a class="reference internal" href="zero-front.html">zero_front</a></li>
+<li class="toctree-l3"><a class="reference internal" href="without-ten.html">without_ten</a></li>
+<li class="toctree-l3"><a class="reference internal" href="zero-max.html">zero_max</a></li>
+<li class="toctree-l3"><a class="reference internal" href="even-odd.html">even_odd</a></li>
+<li class="toctree-l3 current"><a class="current reference internal" href="#">fizz_buzz</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#test-1">Test 1</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#test-2">Test 2</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#test-3">Test 3</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#test-4">Test 4</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#test-5">Test 5</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#test-6">Test 6</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#test-7">Test 7</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#test-8">Test 8</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#test-9">Test 9</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#test-10">Test 10</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#test-11">Test 11</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#test-12">Test 12</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../../dynamic-programming/index.html">Dynamic Programming</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../ccc-problems/index.html">Ccc Problems</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../functional-python/index.html">Functional Python</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../solutions.html">Solutions</a></li>
+</ul>
+
+            
+          
+        </div>
+        
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../../index.html">Python Exercises</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../../../index.html" class="icon icon-home"></a> &raquo;</li>
+        
+          <li><a href="../index.html">Codingbat (Input/Output)</a> &raquo;</li>
+        
+          <li><a href="index.html">List-2</a> &raquo;</li>
+        
+      <li>fizz_buzz</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+          
+            <a href="../../../_sources/exercises/codingbat-input-output/list-2/fizz-buzz.md.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="fizz-buzz">
+<h1>fizz_buzz<a class="headerlink" href="#fizz-buzz" title="Permalink to this headline">¶</a></h1>
+<p>This is slightly more difficult version of the famous FizzBuzz problem which is sometimes given as a first problem for job interviews. (See also: <a href=/doc/practice/fizzbuzz-code.html>FizzBuzz Code</a>.) Consider the series of numbers beginning at <b>start</b> and running up to but not including <b>end</b>, so for example start=1 and end=5 gives the series 1, 2, 3, 4. Return a new String[] list containing the string form of these numbers, except for multiples of 3, use “Fizz” instead of the number, for multiples of 5 use “Buzz”, and for multiples of both 3 and 5 use “FizzBuzz”. In Java, String.valueOf(xxx) will make the String form of an int or other type. This version is a little more complicated than the usual version since you have to allocate and index into a list instead of just printing, and we vary the start/end instead of just always doing 1..100.</p>
+<p>This exercise was taken from <a class="reference external" href="https://codingbat.com/prob/p153059">codingbat.com</a> and has been adapted for the Python language. There are many great programming exercises there, but the majority are created for Java.</p>
+<div class="section" id="test-1">
+<h2>Test 1<a class="headerlink" href="#test-1" title="Permalink to this headline">¶</a></h2>
+<p><strong>Input:</strong></p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="mi">1</span>
+<span class="mi">6</span>
+</pre></div>
+</div>
+<p><strong>Output:</strong></p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="p">[</span><span class="s1">&#39;1&#39;</span><span class="p">,</span> <span class="s1">&#39;2&#39;</span><span class="p">,</span> <span class="s1">&#39;Fizz&#39;</span><span class="p">,</span> <span class="s1">&#39;4&#39;</span><span class="p">,</span> <span class="s1">&#39;Buzz&#39;</span><span class="p">]</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="test-2">
+<h2>Test 2<a class="headerlink" href="#test-2" title="Permalink to this headline">¶</a></h2>
+<p><strong>Input:</strong></p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="mi">1</span>
+<span class="mi">8</span>
+</pre></div>
+</div>
+<p><strong>Output:</strong></p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="p">[</span><span class="s1">&#39;1&#39;</span><span class="p">,</span> <span class="s1">&#39;2&#39;</span><span class="p">,</span> <span class="s1">&#39;Fizz&#39;</span><span class="p">,</span> <span class="s1">&#39;4&#39;</span><span class="p">,</span> <span class="s1">&#39;Buzz&#39;</span><span class="p">,</span> <span class="s1">&#39;Fizz&#39;</span><span class="p">,</span> <span class="s1">&#39;7&#39;</span><span class="p">]</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="test-3">
+<h2>Test 3<a class="headerlink" href="#test-3" title="Permalink to this headline">¶</a></h2>
+<p><strong>Input:</strong></p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="mi">1</span>
+<span class="mi">11</span>
+</pre></div>
+</div>
+<p><strong>Output:</strong></p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="p">[</span><span class="s1">&#39;1&#39;</span><span class="p">,</span> <span class="s1">&#39;2&#39;</span><span class="p">,</span> <span class="s1">&#39;Fizz&#39;</span><span class="p">,</span> <span class="s1">&#39;4&#39;</span><span class="p">,</span> <span class="s1">&#39;Buzz&#39;</span><span class="p">,</span> <span class="s1">&#39;Fizz&#39;</span><span class="p">,</span> <span class="s1">&#39;7&#39;</span><span class="p">,</span> <span class="s1">&#39;8&#39;</span><span class="p">,</span> <span class="s1">&#39;Fizz&#39;</span><span class="p">,</span> <span class="s1">&#39;Buzz&#39;</span><span class="p">]</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="test-4">
+<h2>Test 4<a class="headerlink" href="#test-4" title="Permalink to this headline">¶</a></h2>
+<p><strong>Input:</strong></p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="mi">1</span>
+<span class="mi">16</span>
+</pre></div>
+</div>
+<p><strong>Output:</strong></p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="p">[</span><span class="s1">&#39;1&#39;</span><span class="p">,</span> <span class="s1">&#39;2&#39;</span><span class="p">,</span> <span class="s1">&#39;Fizz&#39;</span><span class="p">,</span> <span class="s1">&#39;4&#39;</span><span class="p">,</span> <span class="s1">&#39;Buzz&#39;</span><span class="p">,</span> <span class="s1">&#39;Fizz&#39;</span><span class="p">,</span> <span class="s1">&#39;7&#39;</span><span class="p">,</span> <span class="s1">&#39;8&#39;</span><span class="p">,</span> <span class="s1">&#39;Fizz&#39;</span><span class="p">,</span> <span class="s1">&#39;Buzz&#39;</span><span class="p">,</span> <span class="s1">&#39;11&#39;</span><span class="p">,</span> <span class="s1">&#39;Fizz&#39;</span><span class="p">,</span> <span class="s1">&#39;13&#39;</span><span class="p">,</span> <span class="s1">&#39;14&#39;</span><span class="p">,</span> <span class="s1">&#39;FizzBuzz&#39;</span><span class="p">]</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="test-5">
+<h2>Test 5<a class="headerlink" href="#test-5" title="Permalink to this headline">¶</a></h2>
+<p><strong>Input:</strong></p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="mi">1</span>
+<span class="mi">4</span>
+</pre></div>
+</div>
+<p><strong>Output:</strong></p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="p">[</span><span class="s1">&#39;1&#39;</span><span class="p">,</span> <span class="s1">&#39;2&#39;</span><span class="p">,</span> <span class="s1">&#39;Fizz&#39;</span><span class="p">]</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="test-6">
+<h2>Test 6<a class="headerlink" href="#test-6" title="Permalink to this headline">¶</a></h2>
+<p><strong>Input:</strong></p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="mi">1</span>
+<span class="mi">2</span>
+</pre></div>
+</div>
+<p><strong>Output:</strong></p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="p">[</span><span class="s1">&#39;1&#39;</span><span class="p">]</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="test-7">
+<h2>Test 7<a class="headerlink" href="#test-7" title="Permalink to this headline">¶</a></h2>
+<p><strong>Input:</strong></p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="mi">50</span>
+<span class="mi">56</span>
+</pre></div>
+</div>
+<p><strong>Output:</strong></p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="p">[</span><span class="s1">&#39;Buzz&#39;</span><span class="p">,</span> <span class="s1">&#39;Fizz&#39;</span><span class="p">,</span> <span class="s1">&#39;52&#39;</span><span class="p">,</span> <span class="s1">&#39;53&#39;</span><span class="p">,</span> <span class="s1">&#39;Fizz&#39;</span><span class="p">,</span> <span class="s1">&#39;Buzz&#39;</span><span class="p">]</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="test-8">
+<h2>Test 8<a class="headerlink" href="#test-8" title="Permalink to this headline">¶</a></h2>
+<p><strong>Input:</strong></p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="mi">15</span>
+<span class="mi">17</span>
+</pre></div>
+</div>
+<p><strong>Output:</strong></p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="p">[</span><span class="s1">&#39;FizzBuzz&#39;</span><span class="p">,</span> <span class="s1">&#39;16&#39;</span><span class="p">]</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="test-9">
+<h2>Test 9<a class="headerlink" href="#test-9" title="Permalink to this headline">¶</a></h2>
+<p><strong>Input:</strong></p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="mi">30</span>
+<span class="mi">36</span>
+</pre></div>
+</div>
+<p><strong>Output:</strong></p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="p">[</span><span class="s1">&#39;FizzBuzz&#39;</span><span class="p">,</span> <span class="s1">&#39;31&#39;</span><span class="p">,</span> <span class="s1">&#39;32&#39;</span><span class="p">,</span> <span class="s1">&#39;Fizz&#39;</span><span class="p">,</span> <span class="s1">&#39;34&#39;</span><span class="p">,</span> <span class="s1">&#39;Buzz&#39;</span><span class="p">]</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="test-10">
+<h2>Test 10<a class="headerlink" href="#test-10" title="Permalink to this headline">¶</a></h2>
+<p><strong>Input:</strong></p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="mi">1000</span>
+<span class="mi">1006</span>
+</pre></div>
+</div>
+<p><strong>Output:</strong></p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="p">[</span><span class="s1">&#39;Buzz&#39;</span><span class="p">,</span> <span class="s1">&#39;1001&#39;</span><span class="p">,</span> <span class="s1">&#39;Fizz&#39;</span><span class="p">,</span> <span class="s1">&#39;1003&#39;</span><span class="p">,</span> <span class="s1">&#39;1004&#39;</span><span class="p">,</span> <span class="s1">&#39;FizzBuzz&#39;</span><span class="p">]</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="test-11">
+<h2>Test 11<a class="headerlink" href="#test-11" title="Permalink to this headline">¶</a></h2>
+<p><strong>Input:</strong></p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="mi">99</span>
+<span class="mi">102</span>
+</pre></div>
+</div>
+<p><strong>Output:</strong></p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="p">[</span><span class="s1">&#39;Fizz&#39;</span><span class="p">,</span> <span class="s1">&#39;Buzz&#39;</span><span class="p">,</span> <span class="s1">&#39;101&#39;</span><span class="p">]</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="test-12">
+<h2>Test 12<a class="headerlink" href="#test-12" title="Permalink to this headline">¶</a></h2>
+<p><strong>Input:</strong></p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="mi">14</span>
+<span class="mi">20</span>
+</pre></div>
+</div>
+<p><strong>Output:</strong></p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="p">[</span><span class="s1">&#39;14&#39;</span><span class="p">,</span> <span class="s1">&#39;FizzBuzz&#39;</span><span class="p">,</span> <span class="s1">&#39;16&#39;</span><span class="p">,</span> <span class="s1">&#39;17&#39;</span><span class="p">,</span> <span class="s1">&#39;Fizz&#39;</span><span class="p">,</span> <span class="s1">&#39;19&#39;</span><span class="p">]</span>
+</pre></div>
+</div>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+        <a href="../../dynamic-programming/index.html" class="btn btn-neutral float-right" title="Dynamic Programming" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+        <a href="even-odd.html" class="btn btn-neutral float-left" title="even_odd" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &#169; Copyright 2020, Mr. Gallo.
+
+    </p>
+  </div>
+    
+    
+    
+    Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    
+    provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>

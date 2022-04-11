@@ -1,0 +1,187 @@
+# no_14
+
+
+
+
+
+Given a list of ints, return true if it contains no 1's or it contains no 4's.
+
+This exercise was taken from [codingbat.com](https://codingbat.com/prob/p136648) and has been adapted for the Python language. There are many great programming exercises there, but the majority are created for Java.
+
+
+
+
+
+
+### Test 1
+**Input:**
+```
+[1, 2, 3]
+```
+**Output:**
+```
+True
+```
+### Test 2
+**Input:**
+```
+[1, 2, 3, 4]
+```
+**Output:**
+```
+False
+```
+### Test 3
+**Input:**
+```
+[2, 3, 4]
+```
+**Output:**
+```
+True
+```
+### Test 4
+**Input:**
+```
+[1, 1, 4, 4]
+```
+**Output:**
+```
+False
+```
+### Test 5
+**Input:**
+```
+[2, 2, 4, 4]
+```
+**Output:**
+```
+True
+```
+### Test 6
+**Input:**
+```
+[2, 3, 4, 1]
+```
+**Output:**
+```
+False
+```
+### Test 7
+**Input:**
+```
+[2, 1, 1]
+```
+**Output:**
+```
+True
+```
+### Test 8
+**Input:**
+```
+[1, 4]
+```
+**Output:**
+```
+False
+```
+### Test 9
+**Input:**
+```
+[2]
+```
+**Output:**
+```
+True
+```
+### Test 10
+**Input:**
+```
+[2, 1]
+```
+**Output:**
+```
+True
+```
+### Test 11
+**Input:**
+```
+[1]
+```
+**Output:**
+```
+True
+```
+### Test 12
+**Input:**
+```
+[4]
+```
+**Output:**
+```
+True
+```
+### Test 13
+**Input:**
+```
+[]
+```
+**Output:**
+```
+True
+```
+### Test 14
+**Input:**
+```
+[1, 1, 1, 1]
+```
+**Output:**
+```
+True
+```
+### Test 15
+**Input:**
+```
+[9, 4, 4, 1]
+```
+**Output:**
+```
+False
+```
+### Test 16
+**Input:**
+```
+[4, 2, 3, 1]
+```
+**Output:**
+```
+False
+```
+### Test 17
+**Input:**
+```
+[4, 2, 3, 5]
+```
+**Output:**
+```
+True
+```
+### Test 18
+**Input:**
+```
+[4, 4, 2]
+```
+**Output:**
+```
+True
+```
+### Test 19
+**Input:**
+```
+[1, 4, 4]
+```
+**Output:**
+```
+False
+```
+

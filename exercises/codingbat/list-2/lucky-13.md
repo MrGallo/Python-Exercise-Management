@@ -4,7 +4,7 @@
 
 
 
-Given an list of ints, return true if the list contains no 1's and no 3's.
+Given a list of ints, return true if the list contains no 1's and no 3's.
 
 ```
 lucky_13([0, 2, 4]) -> true

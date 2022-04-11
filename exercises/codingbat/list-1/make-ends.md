@@ -4,7 +4,7 @@
 
 
 
-Given an list of ints, return a new list length 2 containing the first and last elements from the original list. The original list will be length 1 or more.
+Given a list of ints, return a new list length 2 containing the first and last elements from the original list. The original list will be length 1 or more.
 
 ```
 make_ends([1, 2, 3]) -> [1, 3]

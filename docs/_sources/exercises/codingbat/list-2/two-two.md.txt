@@ -4,7 +4,7 @@
 
 
 
-Given an list of ints, return true if every 2 that appears in the list is next to another 2.
+Given a list of ints, return true if every 2 that appears in the list is next to another 2.
 
 ```
 two_two([4, 2, 2, 3]) -> true

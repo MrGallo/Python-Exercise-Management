@@ -4,7 +4,7 @@
 
 
 
-Given an list of ints of odd length, look at the first, last, and middle values in the list and return the largest. The list length will be a least 1.
+Given a list of ints of odd length, look at the first, last, and middle values in the list and return the largest. The list length will be a least 1.
 
 ```
 max_triple([1, 2, 3]) -> 3

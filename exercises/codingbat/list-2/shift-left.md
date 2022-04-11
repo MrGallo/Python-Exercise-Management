@@ -4,7 +4,7 @@
 
 
 
-Return an list that is "left shifted" by one -- so {6, 2, 5, 3} returns {2, 5, 3, 6}. You may modify and return the given list, or return a new list.
+Return a list that is "left shifted" by one -- so {6, 2, 5, 3} returns {2, 5, 3, 6}. You may modify and return the given list, or return a new list.
 
 ```
 shift_left([6, 2, 5, 3]) -> [2, 5, 3, 6]

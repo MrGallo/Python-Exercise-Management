@@ -4,7 +4,7 @@
 
 
 
-Given an list of ints, return true if there is a 1 in the list with a 2 somewhere later in the list.
+Given a list of ints, return true if there is a 1 in the list with a 2 somewhere later in the list.
 
 ```
 has_12([1, 3, 2]) -> true

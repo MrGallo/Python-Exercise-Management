@@ -4,7 +4,7 @@
 
 
 
-Given an list of ints length 3, return the sum of all the elements.
+Given a list of ints length 3, return the sum of all the elements.
 
 This exercise was taken from [codingbat.com](https://codingbat.com/prob/p175763) and has been adapted for the Python language. There are many great programming exercises there, but the majority are created for Java.
 

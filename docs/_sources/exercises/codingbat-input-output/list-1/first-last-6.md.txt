@@ -4,7 +4,7 @@
 
 
 
-Given an list of ints, return true if 6 appears as either the first or last element in the list. The list will be length 1 or more.
+Given a list of ints, return true if 6 appears as either the first or last element in the list. The list will be length 1 or more.
 
 This exercise was taken from [codingbat.com](https://codingbat.com/prob/p185685) and has been adapted for the Python language. There are many great programming exercises there, but the majority are created for Java.
 

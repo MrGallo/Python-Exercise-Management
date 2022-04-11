@@ -4,7 +4,7 @@
 
 
 
-Given an list of ints, return true if the list contains a 2 next to a 2 somewhere.
+Given a list of ints, return true if the list contains a 2 next to a 2 somewhere.
 
 ```
 has_22([1, 2, 2]) -> true

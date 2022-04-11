@@ -4,7 +4,7 @@
 
 
 
-We'll say that a 1 immediately followed by a 3 in an list is an "unlucky" 1. Return true if the given list contains an unlucky 1 in the first 2 or last 2 positions in the list.
+We'll say that a 1 immediately followed by a 3 in a list is an "unlucky" 1. Return true if the given list contains an unlucky 1 in the first 2 or last 2 positions in the list.
 
 ```
 unlucky_1([1, 3, 4, 5]) -> true

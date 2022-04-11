@@ -4,7 +4,7 @@
 
 
 
-Given an list of ints, return true if the list contains either 3 even or 3 odd values all next to each other.
+Given a list of ints, return true if the list contains either 3 even or 3 odd values all next to each other.
 
 ```
 mod_three([2, 1, 3, 5]) -> true

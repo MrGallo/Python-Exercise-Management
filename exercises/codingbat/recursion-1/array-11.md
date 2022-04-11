@@ -4,7 +4,7 @@
 
 
 
-Given an list of ints, compute recursively the number of times that the value 11 appears in the list. We'll use the convention of considering only the part of the list that begins at the given index. In this way, a recursive call can pass index+1 to move down the list. The initial call will pass in index as 0.
+Given a list of ints, compute recursively the number of times that the value 11 appears in the list. We'll use the convention of considering only the part of the list that begins at the given index. In this way, a recursive call can pass index+1 to move down the list. The initial call will pass in index as 0.
 
 ```
 list11([1, 2, 11], 0) -> 1

@@ -11,7 +11,7 @@
 ```
 
 
-Given an list of ints length 3, figure out which is larger, the first or last element in the list, and set all the other elements to be that value. Return the changed list.
+Given a list of ints length 3, figure out which is larger, the first or last element in the list, and set all the other elements to be that value. Return the changed list.
 
 ```
 max_end_3([1, 2, 3]) -> [3, 3, 3]

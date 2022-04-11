@@ -4,7 +4,7 @@
 
 
 
-Given an list of ints, return true if the list is length 1 or more, and the first element and the last element are equal.
+Given a list of ints, return true if the list is length 1 or more, and the first element and the last element are equal.
 
 ```
 same_first_last([1, 2, 3]) -> false

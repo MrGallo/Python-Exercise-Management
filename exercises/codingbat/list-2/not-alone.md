@@ -4,7 +4,7 @@
 
 
 
-We'll say that an element in an list is "alone" if there are values before and after it, and those values are different from it. Return a version of the given list where every instance of the given value which is alone is replaced by whichever value to its left or right is larger.
+We'll say that an element in a list is "alone" if there are values before and after it, and those values are different from it. Return a version of the given list where every instance of the given value which is alone is replaced by whichever value to its left or right is larger.
 
 ```
 not_alone([1, 2, 3], 2) -> [1, 3, 3]

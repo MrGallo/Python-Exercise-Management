@@ -8,3 +8,4 @@ Codingbat (Input/Output)
     string-1/index
     string-2/index
     list-1/index
+    list-2/index

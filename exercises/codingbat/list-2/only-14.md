@@ -4,7 +4,7 @@
 
 
 
-Given an list of ints, return true if every element is a 1 or a 4.
+Given a list of ints, return true if every element is a 1 or a 4.
 
 ```
 only_14([1, 4, 1, 4]) -> true

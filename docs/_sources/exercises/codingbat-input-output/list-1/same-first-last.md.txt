@@ -4,7 +4,7 @@
 
 
 
-Given an list of ints, return true if the list is length 1 or more, and the first element and the last element are equal.
+Given a list of ints, return true if the list is length 1 or more, and the first element and the last element are equal.
 
 This exercise was taken from [codingbat.com](https://codingbat.com/prob/p118976) and has been adapted for the Python language. There are many great programming exercises there, but the majority are created for Java.
 

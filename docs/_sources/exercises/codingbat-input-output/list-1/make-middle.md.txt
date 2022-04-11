@@ -4,7 +4,7 @@
 
 
 
-Given an list of ints of even length, return a new list length 2 containing the middle two elements from the original list. The original list will be length 2 or more.
+Given a list of ints of even length, return a new list length 2 containing the middle two elements from the original list. The original list will be length 2 or more.
 
 This exercise was taken from [codingbat.com](https://codingbat.com/prob/p199519) and has been adapted for the Python language. There are many great programming exercises there, but the majority are created for Java.
 

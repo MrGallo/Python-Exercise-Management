@@ -4,7 +4,7 @@
 
 
 
-Given an list of ints, return true if the number of 1's is greater than the number of 4's
+Given a list of ints, return true if the number of 1's is greater than the number of 4's
 
 ```
 more_14([1, 4, 1]) -> true

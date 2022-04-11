@@ -4,7 +4,7 @@
 
 
 
-Return an int list length 3 containing the first 3 digits of pi, {3, 1, 4}.
+Return an int list length 3 containing the first 3 digits of pi, `[3, 1, 4]`.
 
 ```
 make_pi() -> [3, 1, 4]

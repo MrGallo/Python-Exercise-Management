@@ -4,7 +4,7 @@
 
 
 
-Given an list of ints of odd length, return a new list length 3 containing the elements from the middle of the list. The list length will be at least 3.
+Given a list of ints of odd length, return a new list length 3 containing the elements from the middle of the list. The list length will be at least 3.
 
 ```
 mid_three([1, 2, 3, 4, 5]) -> [2, 3, 4]

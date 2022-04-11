@@ -4,7 +4,7 @@
 
 
 
-Given an list of ints, swap the first and last elements in the list. Return the modified list. The list length will be at least 1.
+Given a list of ints, swap the first and last elements in the list. Return the modified list. The list length will be at least 1.
 
 This exercise was taken from [codingbat.com](https://codingbat.com/prob/p118044) and has been adapted for the Python language. There are many great programming exercises there, but the majority are created for Java.
 

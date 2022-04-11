@@ -4,7 +4,7 @@
 
 
 
-Given an list of ints, swap the first and last elements in the list. Return the modified list. The list length will be at least 1.
+Given a list of ints, swap the first and last elements in the list. Return the modified list. The list length will be at least 1.
 
 ```
 swap_ends([1, 2, 3, 4]) -> [4, 2, 3, 1]

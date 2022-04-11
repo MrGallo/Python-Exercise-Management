@@ -4,7 +4,7 @@
 
 
 
-Given an list of ints of even length, return a new list length 2 containing the middle two elements from the original list. The original list will be length 2 or more.
+Given a list of ints of even length, return a new list length 2 containing the middle two elements from the original list. The original list will be length 2 or more.
 
 ```
 make_middle([1, 2, 3, 4]) -> [2, 3]

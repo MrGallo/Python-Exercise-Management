@@ -4,7 +4,7 @@
 
 
 
-Given an list of ints of odd length, return a new list length 3 containing the elements from the middle of the list. The list length will be at least 3.
+Given a list of ints of odd length, return a new list length 3 containing the elements from the middle of the list. The list length will be at least 3.
 
 This exercise was taken from [codingbat.com](https://codingbat.com/prob/p155713) and has been adapted for the Python language. There are many great programming exercises there, but the majority are created for Java.
 

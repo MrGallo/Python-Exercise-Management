@@ -4,7 +4,7 @@
 
 
 
-Given an list of ints length 3, figure out which is larger, the first or last element in the list, and set all the other elements to be that value. Return the changed list.
+Given a list of ints length 3, figure out which is larger, the first or last element in the list, and set all the other elements to be that value. Return the changed list.
 
 This exercise was taken from [codingbat.com](https://codingbat.com/prob/p146256) and has been adapted for the Python language. There are many great programming exercises there, but the majority are created for Java.
 

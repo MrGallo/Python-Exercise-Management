@@ -4,7 +4,7 @@
 
 
 
-Given an list of ints length 3, return the sum of all the elements.
+Given a list of ints length 3, return the sum of all the elements.
 
 ```
 sum_3([1, 2, 3]) -> 6

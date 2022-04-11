@@ -4,7 +4,7 @@
 
 
 
-Return the "centered" average of an list of ints, which we'll say is the mean average of the values, except ignoring the largest and smallest values in the list. If there are multiple copies of the smallest value, ignore just one copy, and likewise for the largest value. Use int division to produce the final average. You may assume that the list is length 3 or more.
+Return the "centered" average of a list of ints, which we'll say is the mean average of the values, except ignoring the largest and smallest values in the list. If there are multiple copies of the smallest value, ignore just one copy, and likewise for the largest value. Use int division to produce the final average. You may assume that the list is length 3 or more.
 
 ```
 centered_average([1, 2, 3, 4, 100]) -> 3

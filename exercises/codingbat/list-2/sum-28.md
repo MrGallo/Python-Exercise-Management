@@ -4,7 +4,7 @@
 
 
 
-Given an list of ints, return true if the sum of all the 2's in the list is exactly 8.
+Given a list of ints, return true if the sum of all the 2's in the list is exactly 8.
 
 ```
 sum_28([2, 3, 2, 2, 4, 2]) -> true

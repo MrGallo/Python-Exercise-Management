@@ -4,7 +4,7 @@
 
 
 
-Given an list of ints, return true if 6 appears as either the first or last element in the list. The list will be length 1 or more.
+Given a list of ints, return true if 6 appears as either the first or last element in the list. The list will be length 1 or more.
 
 ```
 first_last_6([1, 2, 6]) -> true

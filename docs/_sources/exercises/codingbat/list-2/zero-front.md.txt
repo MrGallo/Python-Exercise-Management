@@ -4,7 +4,7 @@
 
 
 
-Return an list that contains the exact same numbers as the given list, but rearranged so that all the zeros are grouped at the start of the list. The order of the non-zero numbers does not matter. So {1, 0, 0, 1} becomes {0 ,0, 1, 1}. You may modify and return the given list or make a new list.
+Return a list that contains the exact same numbers as the given list, but rearranged so that all the zeros are grouped at the start of the list. The order of the non-zero numbers does not matter. So {1, 0, 0, 1} becomes {0 ,0, 1, 1}. You may modify and return the given list or make a new list.
 
 ```
 zero_front([1, 0, 0, 1]) -> [0, 0, 1, 1]

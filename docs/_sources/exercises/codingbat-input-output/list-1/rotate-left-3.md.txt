@@ -4,7 +4,7 @@
 
 
 
-Given an list of ints length 3, return an list with the elements "rotated left" so {1, 2, 3} yields {2, 3, 1}.
+Given a list of ints length 3, return a list with the elements "rotated left" so {1, 2, 3} yields {2, 3, 1}.
 
 This exercise was taken from [codingbat.com](https://codingbat.com/prob/p185139) and has been adapted for the Python language. There are many great programming exercises there, but the majority are created for Java.
 

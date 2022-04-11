@@ -4,7 +4,7 @@
 
 
 
-Given an list of ints, return the sum of the first 2 elements in the list. If the list length is less than 2, just sum up the elements that exist, returning 0 if the list is length 0.
+Given a list of ints, return the sum of the first 2 elements in the list. If the list length is less than 2, just sum up the elements that exist, returning 0 if the list is length 0.
 
 This exercise was taken from [codingbat.com](https://codingbat.com/prob/p190968) and has been adapted for the Python language. There are many great programming exercises there, but the majority are created for Java.
 

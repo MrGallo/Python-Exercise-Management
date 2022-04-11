@@ -4,7 +4,7 @@
 
 
 
-We'll say that a value is "everywhere" in an list if for every pair of adjacent elements in the list, at least one of the pair is that value. Return true if the given value is everywhere in the list.
+We'll say that a value is "everywhere" in a list if for every pair of adjacent elements in the list, at least one of the pair is that value. Return true if the given value is everywhere in the list.
 
 ```
 is_everywhere([1, 2, 1, 3], 1) -> true

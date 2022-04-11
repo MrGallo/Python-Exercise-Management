@@ -4,7 +4,7 @@
 
 
 
-Given a non-empty list of ints, return a new list containing the elements from the original list that come after the last 4 in the original list. The original list will contain at least one 4. Note that it is valid in java to create an list of length 0.
+Given a non-empty list of ints, return a new list containing the elements from the original list that come after the last 4 in the original list. The original list will contain at least one 4. Note that it is valid in java to create a list of length 0.
 
 ```
 post_4([2, 4, 1, 2]) -> [1, 2]

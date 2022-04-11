@@ -4,7 +4,7 @@
 
 
 
-Given an list of ints of odd length, look at the first, last, and middle values in the list and return the largest. The list length will be a least 1.
+Given a list of ints of odd length, look at the first, last, and middle values in the list and return the largest. The list length will be a least 1.
 
 This exercise was taken from [codingbat.com](https://codingbat.com/prob/p185176) and has been adapted for the Python language. There are many great programming exercises there, but the majority are created for Java.
 

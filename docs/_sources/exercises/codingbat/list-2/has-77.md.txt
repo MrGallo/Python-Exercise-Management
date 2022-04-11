@@ -4,7 +4,7 @@
 
 
 
-Given an list of ints, return true if the list contains two 7's next to each other, or there are two 7's separated by one element, such as with {7, 1, 7}.
+Given a list of ints, return true if the list contains two 7's next to each other, or there are two 7's separated by one element, such as with {7, 1, 7}.
 
 ```
 has_77([1, 7, 7]) -> true

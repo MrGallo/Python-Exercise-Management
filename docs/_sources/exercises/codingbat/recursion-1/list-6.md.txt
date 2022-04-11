@@ -4,7 +4,7 @@
 
 
 
-Given an list of ints, compute recursively if the list contains a `6`. We'll use the convention of considering only the part of the list that begins at the given index. In this way, a recursive call can pass `index + 1` to move down the list. The initial call will pass in index as `0`.
+Given a list of ints, compute recursively if the list contains a `6`. We'll use the convention of considering only the part of the list that begins at the given index. In this way, a recursive call can pass `index + 1` to move down the list. The initial call will pass in index as `0`.
 
 ```
 list_6([1, 6, 4], 0) -> true
